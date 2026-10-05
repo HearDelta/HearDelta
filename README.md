@@ -181,11 +181,13 @@ abweichende SHA-256, ein anderes Audioformat, ein fehlender gespeicherter
 WASAPI-Endpunkt oder eine geänderte Endpunktkonfiguration blockiert die
 Wiedergabe.
 
+Die selbst erzeugten Stimuli einschließlich der Azure-Audiodateien stehen wie
+der übrige Code unter `GPL-3.0-or-later` (siehe Abschnitt „Lizenz“).
+
 Lizenz- und API-Quellen: [Azure Speech Text-to-Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech),
 [Piper (MIT)](https://github.com/rhasspy/piper/blob/master/LICENSE.md),
 [Thorsten-Modellkarte](https://huggingface.co/rhasspy/piper-voices/blob/39ab474be869e9181350af6a65e4953eef67aaa0/de/de_DE/thorsten/high/MODEL_CARD),
-[Thorsten-Voice (CC0)](https://github.com/thorstenMueller/Thorsten-Voice/blob/master/LICENSE)
-und [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/).
+und [Thorsten-Voice (CC0)](https://github.com/thorstenMueller/Thorsten-Voice/blob/master/LICENSE).
 
 Die lokale Datenbank liegt unter
 `%LOCALAPPDATA%\HearDelta\heardelta.db`.
@@ -705,3 +707,19 @@ Der Test kann mit jedem Kopfhörer durchgeführt werden. Vor der ersten Messung
 wird ein Messprofil mit Kopfhörer, Audioausgang, Verstärkerausgang und Gain
 angelegt. Nur Messungen mit kompatiblen gespeicherten Hardware-Snapshots sind
 direkt vergleichbar.
+
+## Lizenz
+
+HearDelta steht unter der GNU General Public License, Version 3 oder (nach Wahl)
+jeder späteren Version (SPDX: `GPL-3.0-or-later`); der vollständige Text der
+Version 3 liegt in [`LICENSE`](LICENSE). Das umfasst Quellcode, Tests,
+Skripte, Dokumentation sowie die selbst zusammengestellten Stimuluslisten und
+die daraus erzeugten Audiodateien.
+
+Ausgenommen sind übernommene Fremddaten, die ihre ursprüngliche Lizenz
+behalten: Die AutoEq-Zielkurven und der daraus abgeleitete Katalog unter
+`hardware/headphone-equalization/autoeq-7ae0f56-diffuse-field/` stehen unter
+der MIT-Lizenz (siehe die dortige `LICENSE`).
+
+HearDelta ist kein Medizinprodukt. Die Software wird ohne jede Gewährleistung
+bereitgestellt; Einzelheiten regeln die Abschnitte 15 und 16 der GPL-3.0.

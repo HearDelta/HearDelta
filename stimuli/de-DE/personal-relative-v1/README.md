@@ -14,7 +14,8 @@ SHA-256 gebunden; eine fehlende oder veränderte Datei blockiert die Wiedergabe.
 ## Lizenz und Herkunft
 
 - Die in `catalog-source.csv` zusammengestellten Texte und die daraus für
-  dieses Repository erzeugten WAV-Dateien stehen unter CC0-1.0.
+  dieses Repository erzeugten WAV-Dateien stehen wie das gesamte Projekt unter
+  `GPL-3.0-or-later` (siehe `LICENSE` im Repository-Stamm).
 - Die WAV-Dateien sind synthetische Sprache, keine menschlichen Aufnahmen.
 - Generator: Piper `2023.11.14-2`, MIT-Lizenz.
 - Stimme: `de_DE-thorsten-high` aus `rhasspy/piper-voices`, gepinnt auf

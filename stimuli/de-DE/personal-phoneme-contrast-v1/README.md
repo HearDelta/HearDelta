@@ -39,9 +39,10 @@ tatsächlichen Peaks. Stille wird nicht automatisch entfernt. Die Rohdateien
 werden nur als Provenienznachweis versioniert und nicht mit der Anwendung
 ausgeliefert.
 
-Die Wortlisten und Metadaten stehen unter CC0-1.0. Erzeugung und Nutzung der
-Audiodateien erfolgen zusätzlich unter den jeweils geltenden Microsoft-Azure-
-Dienstbedingungen. Modellgewichte und Trainingsdaten werden nicht verteilt.
+Wortlisten, Metadaten und Audiodateien stehen wie das gesamte Projekt unter der
+`GPL-3.0-or-later` (siehe `LICENSE` im Repository-Stamm). Die Weitergabe der mit Azure
+Speech erzeugten Audiodateien ist geklärt und zulässig. Modellgewichte und
+Trainingsdaten werden nicht verteilt.
 
 ## Erzeugung und Prüfung
 
