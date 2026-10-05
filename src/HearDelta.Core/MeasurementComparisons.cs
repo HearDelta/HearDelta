@@ -81,13 +81,13 @@ public static class MeasurementComparisonRules
         var differences = new List<string>();
 
         if (first.CompletedAt is null || second.CompletedAt is null)
-            differences.Add("Nur abgeschlossene Sitzungen können gegenübergestellt werden.");
+            differences.Add(CoreStrings.Compare_OnlyCompleted);
         if (first.Ear != second.Ear)
-            differences.Add("Das geprüfte Ohr ist unterschiedlich.");
+            differences.Add(CoreStrings.Compare_Ear);
         if (first.Material != second.Material)
-            differences.Add("Das Sprachmaterial ist unterschiedlich.");
+            differences.Add(CoreStrings.Compare_Material);
         if (first.Environment != second.Environment)
-            differences.Add("Die Hörumgebung ist unterschiedlich.");
+            differences.Add(CoreStrings.Compare_Environment);
 
         // Beim adaptiven Sprachpegel in Ruhe ist die Startlautstärke nur der Ausgangspunkt der Suche und kein Messpegel.
         var adaptiveSpeechLevel = first.AdaptiveTrack?.Parameter == AdaptiveTrackParameter.SpeechLevel &&
@@ -96,13 +96,13 @@ public static class MeasurementComparisonRules
         var secondTrack = adaptiveSpeechLevel ? second.AdaptiveTrack! with { StartValueDb = 0m } : second.AdaptiveTrack;
         if (firstTrack != secondTrack)
             differences.Add(first.IsAdaptive != second.IsAdaptive
-                ? "Eine Messung verwendet einen festen, die andere einen adaptiven Pegel."
-                : "Die Regel des adaptiven Verfahrens (Größe, Startwert, Schrittweiten oder Grenzen) ist unterschiedlich.");
+                ? CoreStrings.Compare_FixedVsAdaptive
+                : CoreStrings.Compare_AdaptiveRule);
 
         if (first.ContinuousNoise != second.ContinuousNoise)
             differences.Add((first.ContinuousNoise is null) != (second.ContinuousNoise is null)
-                ? "Eine Messung verwendet Dauerrauschen, die andere Rauschen nur während der Stimuli."
-                : "Der Pegel des Dauerrauschens ist unterschiedlich.");
+                ? CoreStrings.Compare_ContinuousVsStimulusNoise
+                : CoreStrings.Compare_ContinuousNoiseLevel);
 
         CompareMaterialIdentity(first.MaterialIdentity, second.MaterialIdentity, differences);
         differences.AddRange(MeasurementProfileRules.GetComparisonDifferences(
@@ -119,12 +119,12 @@ public static class MeasurementComparisonRules
     {
         if (first is null || second is null)
         {
-            differences.Add("Die vollständige Materialidentität fehlt in mindestens einer Sitzung.");
+            differences.Add(CoreStrings.Compare_MaterialIdentityMissing);
             return;
         }
 
         if (!string.Equals(first.FingerprintSha256, second.FingerprintSha256, StringComparison.OrdinalIgnoreCase))
-            differences.Add("Der unveränderliche Fingerabdruck des Stimuluspakets ist unterschiedlich.");
+            differences.Add(CoreStrings.Compare_PackFingerprint);
     }
 
     private static void ComparePresentationConditions(
@@ -145,7 +145,7 @@ public static class MeasurementComparisonRules
 
         if (firstPresentations.Length == 0 || secondPresentations.Length == 0)
         {
-            differences.Add("Mindestens ein Katalog- oder Wiedergabenachweis fehlt.");
+            differences.Add(CoreStrings.Compare_RecordMissing);
             return;
         }
 
@@ -158,7 +158,7 @@ public static class MeasurementComparisonRules
             .Distinct()
             .ToArray();
         if (firstCatalogs.Length != 1 || secondCatalogs.Length != 1 || firstCatalogs[0] != secondCatalogs[0])
-            differences.Add("Stimuluspaket oder Katalogversion sind unterschiedlich.");
+            differences.Add(CoreStrings.Compare_PackOrCatalog);
 
         // Die adaptiv veränderte Größe variiert innerhalb der Messung; verglichen wird dann nur die feste Größe.
         var snrIsAdaptive = first.AdaptiveTrack?.Parameter == AdaptiveTrackParameter.SignalToNoiseRatio &&
@@ -175,7 +175,7 @@ public static class MeasurementComparisonRules
             .Distinct()
             .ToArray();
         if (firstSnr.Length != 1 || secondSnr.Length != 1 || firstSnr[0] != secondSnr[0])
-            differences.Add("Der Signal-Rausch-Abstand ist unterschiedlich oder nicht eindeutig dokumentiert.");
+            differences.Add(CoreStrings.Compare_Snr);
 
         var firstRenderConditions = firstPresentations.Select(presentation => new
             {
@@ -201,6 +201,6 @@ public static class MeasurementComparisonRules
             .ToArray();
         if (firstRenderConditions.Length != 1 || secondRenderConditions.Length != 1 ||
             !firstRenderConditions[0].Equals(secondRenderConditions[0]))
-            differences.Add("Renderverfahren, Normalisierung oder tatsächlicher Digitalpegel sind unterschiedlich.");
+            differences.Add(CoreStrings.Compare_Render);
     }
 }

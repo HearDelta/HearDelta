@@ -114,7 +114,7 @@ public sealed class EqualizationCurve : FrameworkElement
     {
         var formatted = new FormattedText(
             text,
-            CultureInfo.GetCultureInfo("de-DE"),
+            CultureInfo.CurrentUICulture,
             FlowDirection.LeftToRight,
             new Typeface("Segoe UI"),
             10,

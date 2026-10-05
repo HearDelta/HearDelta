@@ -7,7 +7,7 @@ namespace HearDelta.App.Controls;
 /// <summary>Schrittanzeige „1 Einrichten · 2 Durchführen · 3 Ergebnis“.</summary>
 public sealed class StepIndicator : StackPanel
 {
-    private static readonly string[] Labels = ["Einrichten", "Durchführen", "Ergebnis"];
+    private static string[] Labels => [Strings.Step_Setup, Strings.Step_Run, Strings.Step_Result];
 
     public static readonly DependencyProperty StepProperty = DependencyProperty.Register(
         nameof(Step), typeof(int), typeof(StepIndicator),

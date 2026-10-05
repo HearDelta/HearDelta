@@ -76,12 +76,12 @@ public static partial class HeadphoneEqualizer
             if (PreampLine().Match(line) is { Success: true } preampMatch)
             {
                 if (preamp is not null)
-                    throw new FormatException($"Zeile {lineNumber}: Die Preamp-Angabe ist doppelt.");
+                    throw new FormatException(string.Format(CoreStrings.Equalization_DuplicatePreamp, lineNumber));
                 preamp = ParseNumber(preampMatch.Groups[1].Value);
                 continue;
             }
             if (FilterLine().Match(line) is not { Success: true } filterMatch)
-                throw new FormatException($"Zeile {lineNumber}: „{line}“ ist keine gültige AutoEq-Filterzeile.");
+                throw new FormatException(string.Format(CoreStrings.Equalization_InvalidLine, lineNumber, line));
             if (filterMatch.Groups[1].Value == "OFF")
                 continue;
             filters.Add(new ParametricEqFilter(
@@ -97,7 +97,7 @@ public static partial class HeadphoneEqualizer
         }
 
         if (preamp is null)
-            throw new FormatException("Die Preamp-Angabe fehlt.");
+            throw new FormatException(CoreStrings.Equalization_PreampMissing);
         var equalization = new HeadphoneEqualization(
             source,
             sourceId,
@@ -122,22 +122,22 @@ public static partial class HeadphoneEqualizer
         ArgumentNullException.ThrowIfNull(equalization);
         var errors = new List<string>();
         if (!string.Equals(ComputeSha256(equalization.SourceText), equalization.SourceSha256, StringComparison.Ordinal))
-            errors.Add("Die Prüfsumme der Kopfhörerentzerrung stimmt nicht.");
+            errors.Add(CoreStrings.Equalization_Checksum);
         if (equalization.Filters.Count is 0 or > MaximumFilterCount)
-            errors.Add($"Die Kopfhörerentzerrung muss 1 bis {MaximumFilterCount} aktive Filter enthalten.");
+            errors.Add(string.Format(CoreStrings.Equalization_FilterCount, MaximumFilterCount));
         if (!double.IsFinite(equalization.PreampDb) || Math.Abs(equalization.PreampDb) > MaximumAbsoluteGainDb)
-            errors.Add("Die Preamp-Angabe liegt außerhalb von ±30 dB.");
+            errors.Add(CoreStrings.Equalization_PreampRange);
         var nyquistLimit = sampleRate is { } rate ? rate * 0.49 : 20_000;
         foreach (var filter in equalization.Filters)
         {
             if (!Enum.IsDefined(filter.Type))
-                errors.Add("Ein Filtertyp ist ungültig.");
+                errors.Add(CoreStrings.Equalization_FilterType);
             if (!double.IsFinite(filter.FrequencyHz) || filter.FrequencyHz < MinimumFrequencyHz || filter.FrequencyHz > nyquistLimit)
-                errors.Add($"Die Filterfrequenz {filter.FrequencyHz.ToString(CultureInfo.InvariantCulture)} Hz ist bei dieser Abtastrate nicht darstellbar.");
+                errors.Add(string.Format(CoreStrings.Equalization_FilterFrequency, filter.FrequencyHz.ToString(CultureInfo.InvariantCulture)));
             if (!double.IsFinite(filter.GainDb) || Math.Abs(filter.GainDb) > MaximumAbsoluteGainDb)
-                errors.Add("Eine Filterverstärkung liegt außerhalb von ±30 dB.");
+                errors.Add(CoreStrings.Equalization_FilterGain);
             if (!double.IsFinite(filter.Q) || filter.Q < MinimumQ || filter.Q > MaximumQ)
-                errors.Add("Eine Filtergüte liegt außerhalb von 0,05 bis 20.");
+                errors.Add(CoreStrings.Equalization_FilterQ);
         }
         return errors.Distinct(StringComparer.Ordinal).ToArray();
     }

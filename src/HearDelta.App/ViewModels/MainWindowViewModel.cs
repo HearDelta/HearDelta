@@ -1,6 +1,8 @@
 ﻿using System.Collections.Specialized;
+using System.Globalization;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using HearDelta.App.Localization;
 using HearDelta.App.Services;
 using HearDelta.Core;
 
@@ -17,9 +19,13 @@ public enum ShellPage
     Settings
 }
 
+/// <summary>Eintrag im Sprachmenü; die Sprachen selbst stehen immer in ihrer eigenen Sprache.</summary>
+public sealed record LanguageOption(UiLanguagePreference Preference, string Label, bool IsSelected);
+
 public partial class MainWindowViewModel : ObservableObject
 {
     private readonly IUserConfirmationService? confirmation;
+    private readonly UiLanguagePreference languagePreference;
 
     public MainWindowViewModel(
         MeasurementViewModel measurement,
@@ -28,7 +34,9 @@ public partial class MainWindowViewModel : ObservableObject
         HistoryViewModel history,
         SettingsViewModel settings,
         PersonsViewModel persons,
-        IUserConfirmationService? confirmation = null)
+        IUserConfirmationService? confirmation = null,
+        UiLanguagePreference languagePreference = UiLanguagePreference.Automatic,
+        CultureInfo? systemUiCulture = null)
     {
         Measurement = measurement;
         Practice = practice;
@@ -37,6 +45,15 @@ public partial class MainWindowViewModel : ObservableObject
         Settings = settings;
         Persons = persons;
         this.confirmation = confirmation;
+        this.languagePreference = languagePreference;
+        var automatic = UiLanguage.Resolve(UiLanguagePreference.Automatic, systemUiCulture ?? CultureInfo.CurrentUICulture);
+        LanguageOptions =
+        [
+            new(UiLanguagePreference.Automatic, string.Format(Strings.Shell_LanguageAutomatic, LanguageName(automatic)),
+                languagePreference == UiLanguagePreference.Automatic),
+            new(UiLanguagePreference.German, LanguageName(UiLanguage.German), languagePreference == UiLanguagePreference.German),
+            new(UiLanguagePreference.English, LanguageName(UiLanguage.English), languagePreference == UiLanguagePreference.English)
+        ];
         History.ResultRequested += ShowStoredMeasurementResult;
         Persons.Detail.HistoryRequested += () => NavigateToHistory(reload: false);
         Persons.Detail.PlanStepRequested += StartPlanStep;
@@ -81,15 +98,43 @@ public partial class MainWindowViewModel : ObservableObject
     public bool IsSettingsVisible => CurrentPage == ShellPage.Settings;
 
     public bool HasSelectedPersonValue => HasSelectedPerson();
-    public string ContextText => Persons.List.SelectedPerson?.DisplayName ?? "Keine Person";
+    public string ContextText => Persons.List.SelectedPerson?.DisplayName ?? Strings.Shell_NoPerson;
     public string ContextInitials => PersonInitials.From(Persons.List.SelectedPerson?.DisplayName);
     public bool HasProfiles => Settings.Profiles.Count > 0;
     public string ProfileStatusText => Settings.Profiles.Count switch
     {
-        0 => "Kein Messprofil",
+        0 => Strings.Shell_NoProfile,
         1 => Settings.Profiles[0].Name,
-        _ => $"{Settings.Profiles.Count} Messprofile"
+        _ => string.Format(Strings.Shell_ProfileCount, Settings.Profiles.Count)
     };
+
+    public IReadOnlyList<LanguageOption> LanguageOptions { get; }
+
+    /// <summary>Beschriftung der Sprachschaltfläche: die aktuell gewählte Option.</summary>
+    public string LanguageText => LanguageOptions.Single(option => option.IsSelected).Label;
+
+    /// <summary>
+    /// Meldet eine neue Oberflächensprache; das Fenster baut sich darauf neu auf. Laufende Tests werden wie bei
+    /// einem Seitenwechsel nach Rückfrage abgebrochen, offene Profiländerungen wie beim Schließen behandelt.
+    /// </summary>
+    public event Action<UiLanguagePreference>? LanguageChangeRequested;
+
+    [RelayCommand]
+    private void ChangeLanguage(UiLanguagePreference preference)
+    {
+        if (preference == languagePreference || !ConfirmLeavingRunningTest(ShellPage.Persons))
+            return;
+        if (!Settings.ConfirmLanguageChange())
+        {
+            ShowSettingsUnlessTestRunning();
+            return;
+        }
+        CancelRunningTests(ShellPage.Persons);
+        LanguageChangeRequested?.Invoke(preference);
+    }
+
+    private static string LanguageName(CultureInfo culture) =>
+        culture.TwoLetterISOLanguageName == "de" ? "Deutsch" : "English (US)";
 
     [RelayCommand]
     private void ShowPersons()
@@ -197,11 +242,11 @@ public partial class MainWindowViewModel : ObservableObject
     public string? RunningTestLeftBy(ShellPage target)
     {
         if (target != ShellPage.Measurement && (Measurement.IsPreparation || Measurement.IsActiveTest))
-            return "Der laufende Worttest";
+            return Strings.Shell_RunningWordTest;
         if (target != ShellPage.HearingThreshold && HearingThreshold.IsActiveTest)
-            return "Der laufende Hörschwellentest";
+            return Strings.Shell_RunningHearingThreshold;
         if (target != ShellPage.Practice && Practice.IsActive)
-            return "Die laufende Übung";
+            return Strings.Shell_RunningPractice;
         return null;
     }
 
@@ -210,8 +255,8 @@ public partial class MainWindowViewModel : ObservableObject
         if (RunningTestLeftBy(target) is not { } running || confirmation is null)
             return true;
         return confirmation.Confirm(
-            "Test abbrechen?",
-            $"{running} wird abgebrochen. Bereits gegebene Antworten bleiben als Teilergebnis gespeichert.\n\nTrotzdem wechseln?");
+            Strings.Shell_CancelTestTitle,
+            string.Format(Strings.Shell_CancelTestMessage, running));
     }
 
     private void CancelRunningTests(ShellPage target)

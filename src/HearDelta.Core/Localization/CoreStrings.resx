@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Adaptive_MaximumReached" xml:space="preserve">
+    <value>Die Obergrenze wurde erreicht; die tatsächliche Schwelle kann höher liegen.</value>
+  </data>
+  <data name="Adaptive_NoAnswer" xml:space="preserve">
+    <value>Noch keine Antwort erfasst.</value>
+  </data>
+  <data name="Adaptive_NoWrongAnswer" xml:space="preserve">
+    <value>Keine falsche Antwort – die Schwelle liegt unterhalb des leisesten erreichten Werts.</value>
+  </data>
+  <data name="Adaptive_TooFewTrials" xml:space="preserve">
+    <value>Zu wenige Darbietungen nach der ersten falschen Antwort ({0} von mindestens {1}).</value>
+  </data>
+  <data name="Annotation_CommentLength" xml:space="preserve">
+    <value>Der Kommentar darf höchstens 4.000 Zeichen enthalten.</value>
+  </data>
+  <data name="Annotation_NameLength" xml:space="preserve">
+    <value>Der Name der Messung muss 1 bis {0} Zeichen enthalten.</value>
+  </data>
+  <data name="Compare_AdaptiveRule" xml:space="preserve">
+    <value>Die Regel des adaptiven Verfahrens (Größe, Startwert, Schrittweiten oder Grenzen) ist unterschiedlich.</value>
+  </data>
+  <data name="Compare_ContinuousNoiseLevel" xml:space="preserve">
+    <value>Der Pegel des Dauerrauschens ist unterschiedlich.</value>
+  </data>
+  <data name="Compare_ContinuousVsStimulusNoise" xml:space="preserve">
+    <value>Eine Messung verwendet Dauerrauschen, die andere Rauschen nur während der Stimuli.</value>
+  </data>
+  <data name="Compare_Ear" xml:space="preserve">
+    <value>Das geprüfte Ohr ist unterschiedlich.</value>
+  </data>
+  <data name="Compare_Environment" xml:space="preserve">
+    <value>Die Hörumgebung ist unterschiedlich.</value>
+  </data>
+  <data name="Compare_FixedVsAdaptive" xml:space="preserve">
+    <value>Eine Messung verwendet einen festen, die andere einen adaptiven Pegel.</value>
+  </data>
+  <data name="Compare_Material" xml:space="preserve">
+    <value>Das Sprachmaterial ist unterschiedlich.</value>
+  </data>
+  <data name="Compare_MaterialIdentityMissing" xml:space="preserve">
+    <value>Die vollständige Materialidentität fehlt in mindestens einer Sitzung.</value>
+  </data>
+  <data name="Compare_OnlyCompleted" xml:space="preserve">
+    <value>Nur abgeschlossene Sitzungen können gegenübergestellt werden.</value>
+  </data>
+  <data name="Compare_PackFingerprint" xml:space="preserve">
+    <value>Der unveränderliche Fingerabdruck des Stimuluspakets ist unterschiedlich.</value>
+  </data>
+  <data name="Compare_PackOrCatalog" xml:space="preserve">
+    <value>Stimuluspaket oder Katalogversion sind unterschiedlich.</value>
+  </data>
+  <data name="Compare_RecordMissing" xml:space="preserve">
+    <value>Mindestens ein Katalog- oder Wiedergabenachweis fehlt.</value>
+  </data>
+  <data name="Compare_Render" xml:space="preserve">
+    <value>Renderverfahren, Normalisierung oder tatsächlicher Digitalpegel sind unterschiedlich.</value>
+  </data>
+  <data name="Compare_Snr" xml:space="preserve">
+    <value>Der Signal-Rausch-Abstand ist unterschiedlich oder nicht eindeutig dokumentiert.</value>
+  </data>
+  <data name="Equalization_Checksum" xml:space="preserve">
+    <value>Die Prüfsumme der Kopfhörerentzerrung stimmt nicht.</value>
+  </data>
+  <data name="Equalization_DuplicatePreamp" xml:space="preserve">
+    <value>Zeile {0}: Die Preamp-Angabe ist doppelt.</value>
+  </data>
+  <data name="Equalization_FilterCount" xml:space="preserve">
+    <value>Die Kopfhörerentzerrung muss 1 bis {0} aktive Filter enthalten.</value>
+  </data>
+  <data name="Equalization_FilterFrequency" xml:space="preserve">
+    <value>Die Filterfrequenz {0} Hz ist bei dieser Abtastrate nicht darstellbar.</value>
+  </data>
+  <data name="Equalization_FilterGain" xml:space="preserve">
+    <value>Eine Filterverstärkung liegt außerhalb von ±30 dB.</value>
+  </data>
+  <data name="Equalization_FilterQ" xml:space="preserve">
+    <value>Eine Filtergüte liegt außerhalb von 0,05 bis 20.</value>
+  </data>
+  <data name="Equalization_FilterType" xml:space="preserve">
+    <value>Ein Filtertyp ist ungültig.</value>
+  </data>
+  <data name="Equalization_InvalidLine" xml:space="preserve">
+    <value>Zeile {0}: „{1}“ ist keine gültige AutoEq-Filterzeile.</value>
+  </data>
+  <data name="Equalization_PreampMissing" xml:space="preserve">
+    <value>Die Preamp-Angabe fehlt.</value>
+  </data>
+  <data name="Equalization_PreampRange" xml:space="preserve">
+    <value>Die Preamp-Angabe liegt außerhalb von ±30 dB.</value>
+  </data>
+  <data name="Level_Combined" xml:space="preserve">
+    <value>{0} · {1}</value>
+  </data>
+  <data name="Level_DateSuffix" xml:space="preserve">
+    <value>vom {0:dd.MM.}</value>
+  </data>
+  <data name="Level_EstimatedQuietThreshold" xml:space="preserve">
+    <value>geschätzte Ruheschwelle {0:0.#} dB (Tonmittel {1:0.#} dBFS{2} {3} dB)</value>
+  </data>
+  <data name="Level_NoNoisePretest" xml:space="preserve">
+    <value>SNR: kein Störgeräusch-Vortest – bisheriger Wert</value>
+  </data>
+  <data name="Level_NoNoisePretestStart" xml:space="preserve">
+    <value>Start-SNR: kein Störgeräusch-Vortest – 0 dB</value>
+  </data>
+  <data name="Level_NoPretest" xml:space="preserve">
+    <value>Kein passender Vortest – Startpegel des Messprofils.</value>
+  </data>
+  <data name="Level_NoQuietPretest" xml:space="preserve">
+    <value>Lautstärke: kein Ruhe-Vortest – Startpegel des Messprofils</value>
+  </data>
+  <data name="Level_QuietThreshold" xml:space="preserve">
+    <value>Ruheschwelle {0:0.#} dB{1}</value>
+  </data>
+  <data name="Level_SnrSource" xml:space="preserve">
+    <value>SNR: Störgeräuschschwelle {0} dB{1} {2} dB</value>
+  </data>
+  <data name="Level_SourceOffset" xml:space="preserve">
+    <value>{0} {1} dB</value>
+  </data>
+  <data name="Level_SpeechSource" xml:space="preserve">
+    <value>Lautstärke: {0} {1} dB</value>
+  </data>
+  <data name="Profile_BitDepthChanged" xml:space="preserve">
+    <value>Die Bittiefe des gespeicherten Audioausgangs hat sich geändert.</value>
+  </data>
+  <data name="Profile_BitDepthInvalid" xml:space="preserve">
+    <value>Die Bittiefe ist ungültig.</value>
+  </data>
+  <data name="Profile_ChannelsChanged" xml:space="preserve">
+    <value>Die Kanalzahl des gespeicherten Audioausgangs hat sich geändert.</value>
+  </data>
+  <data name="Profile_DiffAmplifier" xml:space="preserve">
+    <value>Der Verstärkerausgang ist unterschiedlich.</value>
+  </data>
+  <data name="Profile_DiffCalibration" xml:space="preserve">
+    <value>Der dokumentierte Kalibrierstatus ist unterschiedlich.</value>
+  </data>
+  <data name="Profile_DiffEndpoint" xml:space="preserve">
+    <value>Der gespeicherte WASAPI-Ausgang ist unterschiedlich.</value>
+  </data>
+  <data name="Profile_DiffEqualization" xml:space="preserve">
+    <value>Die Kopfhörerentzerrung ist unterschiedlich.</value>
+  </data>
+  <data name="Profile_DiffFormat" xml:space="preserve">
+    <value>Das gespeicherte Audioformat ist unterschiedlich.</value>
+  </data>
+  <data name="Profile_DiffGain" xml:space="preserve">
+    <value>Die Gain-Einstellung ist unterschiedlich.</value>
+  </data>
+  <data name="Profile_DiffHeadphone" xml:space="preserve">
+    <value>Der Kopfhörer-Snapshot ist unterschiedlich.</value>
+  </data>
+  <data name="Profile_DiffLevel" xml:space="preserve">
+    <value>Digitaler Messpegel oder Pegelobergrenze sind unterschiedlich.</value>
+  </data>
+  <data name="Profile_DiffMode" xml:space="preserve">
+    <value>Der WASAPI-Ausgabemodus ist unterschiedlich.</value>
+  </data>
+  <data name="Profile_EndpointUnavailable" xml:space="preserve">
+    <value>Der gespeicherte Audioausgang ist nicht verfügbar. Es wurde kein Ersatzgerät gewählt.</value>
+  </data>
+  <data name="Profile_HeadphoneManufacturerMissing" xml:space="preserve">
+    <value>Der Kopfhörerhersteller fehlt.</value>
+  </data>
+  <data name="Profile_HeadphoneModelMissing" xml:space="preserve">
+    <value>Das Kopfhörermodell fehlt.</value>
+  </data>
+  <data name="Profile_MaximumAboveZero" xml:space="preserve">
+    <value>Die digitale Pegelobergrenze darf 0 dB nicht überschreiten.</value>
+  </data>
+  <data name="Profile_NameRequired" xml:space="preserve">
+    <value>Das Messprofil benötigt einen Namen.</value>
+  </data>
+  <data name="Profile_OutputRequired" xml:space="preserve">
+    <value>Ein erkannter Audioausgang muss ausgewählt werden.</value>
+  </data>
+  <data name="Profile_SampleRateChanged" xml:space="preserve">
+    <value>Die Abtastrate des gespeicherten Audioausgangs hat sich geändert.</value>
+  </data>
+  <data name="Profile_SampleRateInvalid" xml:space="preserve">
+    <value>Die Abtastrate ist ungültig.</value>
+  </data>
+  <data name="Profile_StartAboveMaximum" xml:space="preserve">
+    <value>Die Startlautstärke darf die Obergrenze nicht überschreiten.</value>
+  </data>
+  <data name="Profile_TwoChannels" xml:space="preserve">
+    <value>Der Audioausgang muss mindestens zwei Kanäle bereitstellen.</value>
+  </data>
+  <data name="Series_TwoLists" xml:space="preserve">
+    <value>Eine Messserie benötigt mindestens zwei getrennte Stimuluslisten.</value>
+  </data>
+  <data name="ThresholdCompare_LegacyAid" xml:space="preserve">
+    <value>Mindestens ein älterer Test wurde mit Hörgerät gemessen; Hörgeräte unterdrücken Sinustöne.</value>
+  </data>
+  <data name="ThresholdCompare_Masking" xml:space="preserve">
+    <value>Die Vertäubung des Gegenohrs ist unterschiedlich.</value>
+  </data>
+  <data name="ThresholdCompare_Maximum" xml:space="preserve">
+    <value>Die Pegelobergrenze ist unterschiedlich.</value>
+  </data>
+  <data name="ThresholdCompare_Protocol" xml:space="preserve">
+    <value>Die Protokollversion und damit das Messverfahren sind unterschiedlich.</value>
+  </data>
+  <data name="ThresholdCompare_Signal" xml:space="preserve">
+    <value>Tonsignal oder Pegelschritt sind unterschiedlich (Protokollversion).</value>
+  </data>
+  <data name="ThresholdCompare_Start" xml:space="preserve">
+    <value>Der Startpegel ist unterschiedlich.</value>
+  </data>
+  <data name="ThresholdCompare_ToneCatalog" xml:space="preserve">
+    <value>Der Tonkatalog ist unterschiedlich.</value>
+  </data>
+  <data name="Threshold_MaximumAboveZero" xml:space="preserve">
+    <value>Die Pegelobergrenze des Messprofils darf 0 dBFS nicht überschreiten.</value>
+  </data>
+  <data name="Threshold_StartTooHigh" xml:space="preserve">
+    <value>Der Startpegel darf höchstens {0:0.##} dBFS betragen ({1:0} dB unter der Pegelobergrenze).</value>
+  </data>
+</root>

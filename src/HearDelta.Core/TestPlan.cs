@@ -76,17 +76,17 @@ public static class TestLevelRules
         if (environment == ListeningEnvironment.Quiet)
         {
             if (quiet is null)
-                return new LevelRecommendation(null, null, "Kein passender Vortest – Startpegel des Messprofils.");
+                return new LevelRecommendation(null, null, CoreStrings.Level_NoPretest);
             var offset = material == SpeechMaterial.Numbers
                 ? adaptive ? QuietAdaptiveStartAboveThresholdDb : NumbersQuietFixedAboveThresholdDb
                 : PhonemesQuietAboveThresholdDb;
-            return new LevelRecommendation(Round(quiet.Value.Db + offset), null, $"{quiet.Value.Source} {Signed(offset)} dB");
+            return new LevelRecommendation(Round(quiet.Value.Db + offset), null, string.Format(CoreStrings.Level_SourceOffset, quiet.Value.Source, Signed(offset)));
         }
 
         var speech = quiet is null ? (decimal?)null : Round(quiet.Value.Db + NoiseSpeechAboveQuietThresholdDb);
         var speechSource = quiet is null
-            ? "Lautstärke: kein Ruhe-Vortest – Startpegel des Messprofils"
-            : $"Lautstärke: {quiet.Value.Source} {Signed(NoiseSpeechAboveQuietThresholdDb)} dB";
+            ? CoreStrings.Level_NoQuietPretest
+            : string.Format(CoreStrings.Level_SpeechSource, quiet.Value.Source, Signed(NoiseSpeechAboveQuietThresholdDb));
         decimal? snr;
         string snrSource;
         if (pretests.NoiseSnrThresholdDb is { } snrThreshold)
@@ -95,28 +95,33 @@ public static class TestLevelRules
                 ? adaptive ? NoiseAdaptiveStartAboveSnrThresholdDb : NumbersNoiseFixedAboveSnrThresholdDb
                 : PhonemesNoiseAboveSnrThresholdDb;
             snr = Round(snrThreshold + offset);
-            snrSource = $"SNR: Störgeräuschschwelle {Signed(snrThreshold)} dB{Date(pretests.NoiseTestedAt)} {Signed(offset)} dB";
+            snrSource = string.Format(CoreStrings.Level_SnrSource, Signed(snrThreshold), Date(pretests.NoiseTestedAt), Signed(offset));
         }
         else if (material == SpeechMaterial.Numbers && adaptive)
         {
             snr = DefaultNoiseStartSnrDb;
-            snrSource = "Start-SNR: kein Störgeräusch-Vortest – 0 dB";
+            snrSource = CoreStrings.Level_NoNoisePretestStart;
         }
         else
         {
             snr = null;
-            snrSource = "SNR: kein Störgeräusch-Vortest – bisheriger Wert";
+            snrSource = CoreStrings.Level_NoNoisePretest;
         }
-        return new LevelRecommendation(speech, snr, $"{speechSource} · {snrSource}");
+        return new LevelRecommendation(speech, snr, string.Format(CoreStrings.Level_Combined, speechSource, snrSource));
     }
 
     /// <summary>Gemessene Ruheschwelle, sonst Schätzung aus dem Tonmittel der Hörschwelle.</summary>
     public static (decimal Db, string Source)? QuietThreshold(PretestResults pretests) =>
         pretests.QuietSpeechThresholdDb is { } measured
-            ? (measured, $"Ruheschwelle {measured:0.#} dB{Date(pretests.QuietTestedAt)}")
+            ? (measured, string.Format(CoreStrings.Level_QuietThreshold, measured, Date(pretests.QuietTestedAt)))
             : pretests.ToneAverageThresholdDbfs is { } tone
                 ? (tone + ToneToSpeechThresholdOffsetDb,
-                    $"geschätzte Ruheschwelle {tone + ToneToSpeechThresholdOffsetDb:0.#} dB (Tonmittel {tone:0.#} dBFS{Date(pretests.ToneTestedAt)} {Signed(ToneToSpeechThresholdOffsetDb)} dB)")
+                    string.Format(
+                        CoreStrings.Level_EstimatedQuietThreshold,
+                        tone + ToneToSpeechThresholdOffsetDb,
+                        tone,
+                        Date(pretests.ToneTestedAt),
+                        Signed(ToneToSpeechThresholdOffsetDb)))
                 : null;
 
     /// <summary>Mittel der gehörten Tonschwellen zwischen 400 Hz und 2,5 kHz; mindestens zwei Töne.</summary>
@@ -131,8 +136,8 @@ public static class TestLevelRules
 
     private static decimal Round(decimal value) => Math.Round(value, 0, MidpointRounding.AwayFromZero);
 
-    private static string Signed(decimal value) => value.ToString("+0.#;-0.#;0", System.Globalization.CultureInfo.GetCultureInfo("de-DE"));
+    private static string Signed(decimal value) => value.ToString("+0.#;-0.#;0", System.Globalization.CultureInfo.CurrentCulture);
 
     private static string Date(DateTimeOffset? at) =>
-        at is { } value ? $" vom {value.ToLocalTime():dd.MM.}" : string.Empty;
+        at is { } value ? string.Format(CoreStrings.Level_DateSuffix, value.ToLocalTime()) : string.Empty;
 }

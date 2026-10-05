@@ -17,8 +17,6 @@ public sealed record WordResultSummary(
 /// <summary>Stellt die druckbaren Berichte für Ergebnisse und Diagramme zusammen.</summary>
 public static class ResultReports
 {
-    private static readonly CultureInfo German = CultureInfo.GetCultureInfo("de-DE");
-
     /// <summary>Druckt und liefert die neue Statusmeldung; ein abgebrochener Druckdialog lässt sie unverändert.</summary>
     public static string Print(IReportPrinter? printer, PrintReport report, string currentStatus)
     {
@@ -27,12 +25,12 @@ public static class ResultReports
         try
         {
             return printer.Print(report)
-                ? $"„{report.Title}“ an den Drucker übergeben."
+                ? string.Format(Strings.Report_SentToPrinter, report.Title)
                 : currentStatus;
         }
         catch (Exception exception)
         {
-            return $"Drucken fehlgeschlagen: {exception.Message}";
+            return string.Format(Strings.Report_PrintFailed, exception.Message);
         }
     }
 
@@ -47,22 +45,23 @@ public static class ResultReports
         {
             new PrintFacts(
             [
-                new("Person", personName),
-                new("Kommentar", item.Comment),
-                new("Ohr", item.EarText),
-                new("Vertäubung", session.IsLegacyWithHearingAid ? null : item.ConditionText),
-                new("Hörgerät", session.IsLegacyWithHearingAid ? $"{session.HearingAid?.DisplayName} (älteres Protokoll)" : null),
-                new("Status", item.StatusText),
-                new("Ergebnis", item.ResultText),
-                new("Ablauf", $"Protokoll v{session.ProtocolVersion} · {FormatToneOrder(session.ToneOrder)} · Pegelobergrenze {FormatDb(session.MaximumAttenuationDbfs)} dBFS")
+                new(Strings.Report_Person, personName),
+                new(Strings.Report_Comment, item.Comment),
+                new(Strings.Report_Ear, item.EarText),
+                new(Strings.Report_Masking, session.IsLegacyWithHearingAid ? null : item.ConditionText),
+                new(Strings.Report_Aid, session.IsLegacyWithHearingAid ? string.Format(Strings.Report_LegacyAid, session.HearingAid?.DisplayName) : null),
+                new(Strings.Report_Status, item.StatusText),
+                new(Strings.Report_Result, item.ResultText),
+                new(Strings.Report_Procedure, string.Format(
+                    Strings.Report_ThresholdProcedure, session.ProtocolVersion, FormatToneOrder(session.ToneOrder), FormatDb(session.MaximumAttenuationDbfs)))
             ]),
             new PrintThresholdChart(session.Ear, rows, [], item.MaximumAttenuationDbfs),
-            new PrintHeading("Hörschwellen je Frequenz"),
-            new PrintTable(["Frequenz", "Hörschwelle"], rows.Select(row => (IReadOnlyList<string>)[row.Frequency, row.Threshold]).ToArray(), [1d, 3d]),
-            new PrintHeading("Messaufbau"),
+            new PrintHeading(Strings.Report_ThresholdsPerFrequency),
+            new PrintTable([Strings.Report_Frequency, Strings.Report_Threshold], rows.Select(row => (IReadOnlyList<string>)[row.Frequency, row.Threshold]).ToArray(), [1d, 3d]),
+            new PrintHeading(Strings.Report_Setup),
             new PrintFacts(HardwareFacts(session.Hardware))
         };
-        return new PrintReport(item.Name, $"Hörschwellentest vom {item.StartedAtText}", WithFooter(blocks, printedAt));
+        return new PrintReport(item.Name, string.Format(Strings.History_ThresholdTestFrom, item.StartedAtText), WithFooter(blocks, printedAt));
     }
 
     public static PrintReport ThresholdComparison(
@@ -76,9 +75,9 @@ public static class ResultReports
     {
         var blocks = new List<PrintBlock>();
         if (personName is not null)
-            blocks.Add(new PrintFacts([new("Person", personName)]));
+            blocks.Add(new PrintFacts([new(Strings.Report_Person, personName)]));
         blocks.Add(new PrintTable(
-            ["Test", "Name", "Bedingung", "Messprofil", "Status"],
+            [Strings.Report_Test, Strings.Report_Name, Strings.Report_Condition, Strings.Report_Profile, Strings.Report_Status],
             tests.Select((item, index) => (IReadOnlyList<string>)
             [
                 series.ElementAtOrDefault(index)?.Label ?? $"{index + 1}",
@@ -89,31 +88,31 @@ public static class ResultReports
             ]).ToArray(),
             [2.2d, 2d, 1.4d, 1.2d, 1d]));
         if (!string.IsNullOrWhiteSpace(warningText))
-            blocks.Add(new PrintParagraph($"Unterschiedlicher Messaufbau: {warningText}", PrintTextStyle.Warning));
+            blocks.Add(new PrintParagraph(string.Format(Strings.Report_DifferentSetup, warningText), PrintTextStyle.Warning));
         blocks.Add(new PrintThresholdChart(TestedEar.Left, [], series, maximumAttenuationDbfs));
-        blocks.Add(new PrintParagraph("Ohr als Symbol wie im Audiogramm: X links, O rechts. Farben unterscheiden die Tests.", PrintTextStyle.Muted));
+        blocks.Add(new PrintParagraph(Strings.History_SymbolNote, PrintTextStyle.Muted));
 
-        blocks.Add(new PrintHeading("Hörschwellen je Frequenz"));
+        blocks.Add(new PrintHeading(Strings.Report_ThresholdsPerFrequency));
         if (differenceRows.Count > 0)
         {
             blocks.Add(new PrintTable(
-                ["Frequenz", "Test 1", "Test 2", "Test 2 gegenüber Test 1"],
+                [Strings.Report_Frequency, Strings.History_ColTest1, Strings.History_ColTest2, Strings.History_ColTest2VsTest1],
                 differenceRows.Select(row => (IReadOnlyList<string>)[row.FrequencyText, row.FirstText, row.SecondText, row.DifferenceText]).ToArray(),
                 [1d, 1.4d, 1.4d, 1.8d]));
-            blocks.Add(new PrintParagraph("„Besser“ heißt: Test 2 hat einen leiseren Ton gehört.", PrintTextStyle.Muted));
+            blocks.Add(new PrintParagraph(Strings.Report_BetterNote, PrintTextStyle.Muted));
         }
         else
         {
             var frequencies = series.SelectMany(curve => curve.Rows).Select(row => row.FrequencyHz).Distinct().Order().ToArray();
             blocks.Add(new PrintTable(
-                ["Frequenz", .. series.Select((_, index) => $"Test {index + 1}")],
+                [Strings.Report_Frequency, .. series.Select((_, index) => string.Format(Strings.Report_TestN, index + 1))],
                 frequencies.Select(frequency => (IReadOnlyList<string>)
                 [
                     series.SelectMany(curve => curve.Rows).First(row => row.FrequencyHz == frequency).Frequency,
-                    .. series.Select(curve => curve.Rows.FirstOrDefault(row => row.FrequencyHz == frequency)?.Threshold ?? "nicht geprüft")
+                    .. series.Select(curve => curve.Rows.FirstOrDefault(row => row.FrequencyHz == frequency)?.Threshold ?? Strings.History_NotTested)
                 ]).ToArray()));
         }
-        return new PrintReport("Vergleich der Hörschwellen", $"{tests.Count} Hörschwellentests", WithFooter(blocks, printedAt));
+        return new PrintReport(Strings.History_ThresholdComparison, string.Format(Strings.Report_ThresholdTestCount, tests.Count), WithFooter(blocks, printedAt));
     }
 
     public static PrintReport WordResult(
@@ -126,13 +125,13 @@ public static class ResultReports
     {
         var blocks = new List<PrintBlock>
         {
-            new PrintFacts([.. WordSessionFacts(item, personName), new("Status", item.StatusText)]),
-            new PrintHeading("Ergebnis"),
+            new PrintFacts([.. WordSessionFacts(item, personName), new(Strings.Report_Status, item.StatusText)]),
+            new PrintHeading(Strings.Report_Result),
             new PrintTable(
-                ["Bedingung", "Ergebnis", "Einzelheiten"],
+                [Strings.Report_Condition, Strings.Report_Result, Strings.Report_Details],
                 [
-                    ["Ohne Hörgerät", summary.WithoutResult, summary.WithoutDetail],
-                    ["Mit Hörgerät", summary.WithResult, summary.WithDetail],
+                    [Strings.Common_WithoutAid, summary.WithoutResult, summary.WithoutDetail],
+                    [Strings.Common_WithAid, summary.WithResult, summary.WithDetail],
                     [summary.DifferenceLabel, summary.DifferenceText, string.Empty]
                 ],
                 [1.6d, 1.2d, 2.4d]),
@@ -140,22 +139,22 @@ public static class ResultReports
         };
         if (confusions.Count > 0)
         {
-            blocks.Add(new PrintHeading("Verwechslungen im Phonemtest"));
+            blocks.Add(new PrintHeading(Strings.Measure_Confusions));
             blocks.Add(new PrintTable(
-                ["Bedingung", "Position", "Gruppe", "Ziel", "Auswahl", "n"],
+                [Strings.Measure_ColCondition, Strings.Measure_ColPosition, Strings.Measure_ColGroup, Strings.Measure_ColTarget, Strings.Measure_ColChoice, "n"],
                 confusions.Select(cell => (IReadOnlyList<string>)
                 [
-                    cell.Condition == HearingAidCondition.WithHearingAid ? "mit Hörgerät" : "ohne Hörgerät",
+                    Controls.HearingAidConditionLabelConverter.Label(cell.Condition),
                     cell.ContrastPosition,
                     cell.ContrastGroupId,
                     cell.TargetResponse,
-                    cell.SelectedResponse,
-                    cell.Count.ToString(German)
+                    MeasurementViewModel.ConfusionResponseLabel(cell.SelectedResponse),
+                    cell.Count.ToString(CultureInfo.CurrentCulture)
                 ]).ToArray(),
                 [1.2d, 1d, 1.1d, 1d, 1.2d, 0.4d]));
-            blocks.Add(new PrintParagraph("Fallzahlen je Ziel und Auswahl. Eine Beschreibung der Antworten, keine Frequenzdiagnose oder Verstärkungsempfehlung.", PrintTextStyle.Muted));
+            blocks.Add(new PrintParagraph(Strings.Measure_ConfusionsIntro, PrintTextStyle.Muted));
         }
-        blocks.Add(new PrintHeading("Messaufbau"));
+        blocks.Add(new PrintHeading(Strings.Report_Setup));
         blocks.Add(new PrintFacts(HardwareFacts(item.Session.Hardware)));
         return new PrintReport(item.Name, $"{title} · {item.StartedAtText}", WithFooter(blocks, printedAt));
     }
@@ -173,51 +172,51 @@ public static class ResultReports
 
         var blocks = new List<PrintBlock>();
         if (personName is not null)
-            blocks.Add(new PrintFacts([new("Person", personName)]));
+            blocks.Add(new PrintFacts([new(Strings.Report_Person, personName)]));
         blocks.Add(new PrintParagraph(
-            isDirectlyComparable ? assessmentText : $"Nicht direkt vergleichbar: {assessmentText}",
+            isDirectlyComparable ? assessmentText : string.Format(Strings.Report_NotDirectlyComparable, assessmentText),
             isDirectlyComparable ? PrintTextStyle.Normal : PrintTextStyle.Warning));
         blocks.Add(new PrintTable(
-            ["", "Messung 1", "Messung 2"],
+            ["", Strings.Report_Measurement1, Strings.Report_Measurement2],
             [
-                Row("Name", item => item.Name),
-                Row("Kommentar", item => item.Comment),
-                Row("Datum · Ohr · Umgebung", item => item.ComparisonSubtitle),
-                Row("Material", item => item.MaterialEnvironmentText),
-                Row("Hörgerät", item => item.HearingAidText),
-                Row("Ohne Hörgerät", item => item.WithoutEstimateText),
-                Row("Mit Hörgerät", item => item.WithEstimateText),
+                Row(Strings.Report_Name, item => item.Name),
+                Row(Strings.Report_Comment, item => item.Comment),
+                Row(Strings.Report_DateEarEnvironment, item => item.ComparisonSubtitle),
+                Row(Strings.Report_Material, item => item.MaterialEnvironmentText),
+                Row(Strings.Report_Aid, item => item.HearingAidText),
+                Row(Strings.Common_WithoutAid, item => item.WithoutEstimateText),
+                Row(Strings.Common_WithAid, item => item.WithEstimateText),
                 Row(first.DifferenceCaption, item => item.DifferenceEstimateText),
-                Row("Messprofil", item => item.HardwareText)
+                Row(Strings.Report_Profile, item => item.HardwareText)
             ],
             [1.3d, 2d, 2d]));
         blocks.Add(new PrintParagraph(
-            "Prozentwerte: 95-%-Intervalle der jeweils 25 Antworten. Adaptive Zahlentests: Schwelle für 50 % richtig mit Streuung der gemittelten Werte. Beides ist eine deskriptive Orientierung, kein Nachweis eines Geräteunterschieds.",
+            Strings.History_IntervalNote,
             PrintTextStyle.Muted));
-        return new PrintReport("Vergleich zweier Worttests", $"{first.StartedAtText} und {second.StartedAtText}", WithFooter(blocks, printedAt));
+        return new PrintReport(Strings.Report_WordComparisonTitle, string.Format(Strings.Report_AndDates, first.StartedAtText, second.StartedAtText), WithFooter(blocks, printedAt));
     }
 
     private static IEnumerable<PrintFact> WordSessionFacts(HistorySessionItemViewModel item, string? personName) =>
     [
-        new("Person", personName),
-        new("Kommentar", item.Comment),
-        new("Ohr", item.Session.Ear == TestedEar.Left ? "Linkes Ohr" : "Rechtes Ohr"),
-        new("Hörgerät", item.HearingAidText),
-        new("Material", item.MaterialEnvironmentText),
-        new("Katalog", item.Session.MaterialIdentity.CatalogId)
+        new(Strings.Report_Person, personName),
+        new(Strings.Report_Comment, item.Comment),
+        new(Strings.Report_Ear, item.Session.Ear == TestedEar.Left ? Strings.Common_LeftEar : Strings.Common_RightEar),
+        new(Strings.Report_Aid, item.HearingAidText),
+        new(Strings.Report_Material, item.MaterialEnvironmentText),
+        new(Strings.Report_Catalog, item.Session.MaterialIdentity.CatalogId)
     ];
 
     private static IReadOnlyList<PrintFact> HardwareFacts(MeasurementHardwareSnapshot hardware) =>
     [
-        new("Messprofil", hardware.ProfileName),
-        new("Audioausgang", $"{hardware.EndpointName} · {hardware.SampleRate.ToString(German)} Hz · {hardware.BitsPerSample} bit"),
-        new("Kopfhörer", JoinNonEmpty(
+        new(Strings.Report_Profile, hardware.ProfileName),
+        new(Strings.Report_AudioOutput, string.Format(Strings.Report_AudioOutputValue, hardware.EndpointName, hardware.SampleRate, hardware.BitsPerSample)),
+        new(Strings.Report_Headphones, JoinNonEmpty(
             $"{hardware.HeadphoneManufacturer} {hardware.HeadphoneModel}".Trim(),
-            hardware.HeadphoneDesign,
+            string.IsNullOrWhiteSpace(hardware.HeadphoneDesign) ? null : SettingsViewModel.DesignLabel(hardware.HeadphoneDesign),
             hardware.HeadphoneImpedanceOhms is { } ohms ? $"{ohms} Ω" : null)),
-        new("Verstärker", JoinNonEmpty(hardware.AmplifierOutput, string.IsNullOrWhiteSpace(hardware.Gain) ? null : $"Gain {hardware.Gain}")),
-        new("Lautstärke", $"{FormatDb(hardware.StartVolumeDb)} dB · Obergrenze {FormatDb(hardware.MaximumVolumeDb)} dB (digitale Absenkung)"),
-        new("Kopfhörerentzerrung", hardware.HeadphoneEqualization?.Label ?? "keine")
+        new(Strings.Report_Amplifier, JoinNonEmpty(hardware.AmplifierOutput, string.IsNullOrWhiteSpace(hardware.Gain) ? null : string.Format(Strings.Report_Gain, hardware.Gain))),
+        new(Strings.Report_Volume, string.Format(Strings.Report_VolumeValue, FormatDb(hardware.StartVolumeDb), FormatDb(hardware.MaximumVolumeDb))),
+        new(Strings.Report_Equalization, hardware.HeadphoneEqualization?.Label ?? Strings.Report_NoEqualization)
     ];
 
     private static IReadOnlyList<PrintBlock> WithFooter(List<PrintBlock> blocks, DateTimeOffset printedAt)
@@ -229,11 +228,11 @@ public static class ResultReports
     private static string JoinNonEmpty(params string?[] values) =>
         string.Join(" · ", values.Where(value => !string.IsNullOrWhiteSpace(value)));
 
-    private static string FormatDb(decimal value) => value.ToString("0.##", German).Replace('-', '−');
+    private static string FormatDb(decimal value) => value.ToString("0.##", CultureInfo.CurrentCulture).Replace('-', '−');
 
     private static string FormatToneOrder(ThresholdToneOrder order) => order switch
     {
-        ThresholdToneOrder.Random => "zufällige Reihenfolge nach 500 Hz",
-        _ => "vom 500-Hz-Zentrum nach außen"
+        ThresholdToneOrder.Random => Strings.History_OrderRandom,
+        _ => Strings.History_OrderCenterOut
     };
 }

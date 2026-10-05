@@ -29,14 +29,28 @@ public partial class SettingsViewModel : ObservableObject
 
     private const string OnEarDesign = "Ohraufliegend";
 
+    /// <summary>
+    /// Anzeigename einer Bauform. Gespeichert und verglichen wird immer der deutsche Wert aus
+    /// <see cref="StandardDesigns"/>; ältere Freitextwerte erscheinen unverändert.
+    /// </summary>
+    public static string DesignLabel(string? design) => design switch
+    {
+        null or "" => Strings.Settings_DesignNotSpecified,
+        "Ohrumschließend, offen" => Strings.Settings_DesignOpen,
+        "Ohrumschließend, halboffen" => Strings.Settings_DesignSemiOpen,
+        "Ohrumschließend, geschlossen" => Strings.Settings_DesignClosed,
+        OnEarDesign => Strings.Settings_DesignOnEar,
+        _ => design
+    };
+
     /// <summary>Auswahl für die Bauform: „nicht angegeben“ (leer), die festen Bauformen und ein älterer Freitextwert.</summary>
     public ObservableCollection<string> DesignOptions { get; } = ["", .. StandardDesigns];
 
     public string DesignHint => Design switch
     {
-        OnEarDesign => "Ohraufliegende Kopfhörer drücken auf ein Hinter-dem-Ohr-Hörgerät; Sitz und Rückkopplung sind kaum reproduzierbar. Für Messungen mit Hörgerät ohrumschließende Kopfhörer verwenden.",
+        OnEarDesign => Strings.Settings_DesignHintOnEar,
         "" => "",
-        var value when !StandardDesigns.Contains(value) => $"„{value}“ ist ein älterer Freitextwert. Bitte eine der festen Bauformen wählen.",
+        var value when !StandardDesigns.Contains(value) => string.Format(Strings.Settings_DesignHintLegacy, value),
         _ => ""
     };
 
@@ -59,7 +73,7 @@ public partial class SettingsViewModel : ObservableObject
 
     [ObservableProperty] private AudioEndpointDescriptor? selectedEndpoint;
     [ObservableProperty] private MeasurementProfile? selectedProfile;
-    [ObservableProperty] private string profileName = "Neues Messprofil";
+    [ObservableProperty] private string profileName = Strings.Settings_NewProfile;
     [ObservableProperty] private string manufacturer = "";
     [ObservableProperty] private string model = "";
     [ObservableProperty]
@@ -71,7 +85,7 @@ public partial class SettingsViewModel : ObservableObject
     [ObservableProperty] private decimal startVolumeDb = -60;
     [ObservableProperty] private decimal maximumVolumeDb = -30;
     [ObservableProperty] private bool exclusiveMode = true;
-    [ObservableProperty] private string statusMessage = "Audioausgänge werden ermittelt …";
+    [ObservableProperty] private string statusMessage = Strings.Settings_DetectingOutputs;
     [ObservableProperty] private bool isBusy;
     [ObservableProperty] private string equalizationSearchText = "";
     [ObservableProperty] private string equalizationSearchStatus = "";
@@ -88,10 +102,10 @@ public partial class SettingsViewModel : ObservableObject
     public int EqualizationSampleRate => SelectedEndpoint?.SampleRate ?? 48_000;
 
     public string EqualizationDetails => Equalization is not { } value
-        ? "Ohne Entzerrung: Die Signale werden unverändert ausgegeben."
+        ? Strings.Settings_NoEqualizationDetails
         : string.Format(
-            CultureInfo.GetCultureInfo("de-DE"),
-            "{0} Filter · Vorabsenkung {1:0.0} dB bei {2:0.#} kHz (Datei: {3:0.0} dB)",
+            CultureInfo.CurrentCulture,
+            Strings.Settings_EqualizationDetails,
             value.Filters.Count,
             HeadphoneEqualizer.GetEffectivePreampDb(value, EqualizationSampleRate),
             EqualizationSampleRate / 1000d,
@@ -127,7 +141,7 @@ public partial class SettingsViewModel : ObservableObject
 
     private void SwitchToProfile(MeasurementProfile requested)
     {
-        if (!ReferenceEquals(requested, SelectedProfile) && Profiles.Contains(requested) && ConfirmLeavingCurrentProfile("wechseln", "beim aktuellen Profil bleiben"))
+        if (!ReferenceEquals(requested, SelectedProfile) && Profiles.Contains(requested) && ConfirmLeavingCurrentProfile(Strings.Settings_ActionSwitch, Strings.Settings_ActionStay))
             SelectedProfile = requested;
         SyncProfileList();
     }
@@ -153,10 +167,10 @@ public partial class SettingsViewModel : ObservableObject
     }
 
     public string SaveStateText => SelectedProfile is null
-        ? "Neues Messprofil, noch nicht gespeichert"
+        ? Strings.Settings_SaveStateNew
         : HasUnsavedChanges
-            ? "Nicht gespeicherte Änderungen"
-            : "Alle Änderungen sind gespeichert";
+            ? Strings.Settings_SaveStateUnsaved
+            : Strings.Settings_SaveStateSaved;
 
     public SettingsViewModel(
         IAudioEndpointService audio,
@@ -205,8 +219,8 @@ public partial class SettingsViewModel : ObservableObject
         Equalization = value.Headphone.Equalization;
         SelectedEndpoint = AudioEndpoints.FirstOrDefault(endpoint => endpoint.Id == value.EndpointId);
         StatusMessage = SelectedEndpoint is null
-            ? "Der gespeicherte Audioausgang fehlt. Bitte bewusst neu auswählen; es erfolgt kein automatischer Wechsel."
-            : "Messprofil geladen. Der gespeicherte Audioausgang ist verfügbar.";
+            ? Strings.Settings_EndpointMissing
+            : Strings.Settings_ProfileLoaded;
     }
 
     partial void OnSelectedEndpointChanged(AudioEndpointDescriptor? value)
@@ -216,7 +230,7 @@ public partial class SettingsViewModel : ObservableObject
         if (value is not null)
         {
             AmplifierOutput = value.Name;
-            StatusMessage = $"Audioausgang „{value.Name}“ ausgewählt ({value.Channels} Kanäle, {value.SampleRate} Hz, {value.BitsPerSample} Bit).";
+            StatusMessage = string.Format(Strings.Settings_EndpointSelected, value.Name, value.Channels, value.SampleRate, value.BitsPerSample);
         }
     }
 
@@ -228,18 +242,18 @@ public partial class SettingsViewModel : ObservableObject
         foreach (var endpoint in audio.GetActiveOutputs()) AudioEndpoints.Add(endpoint);
         SelectedEndpoint = AudioEndpoints.FirstOrDefault(endpoint => endpoint.Id == previousId);
         StatusMessage = AudioEndpoints.Count == 0
-            ? "Keine aktiven Audioausgänge gefunden."
-            : $"{AudioEndpoints.Count} aktive Audioausgänge gefunden. Bitte den Messausgang bewusst auswählen.";
+            ? Strings.Settings_NoOutputs
+            : string.Format(Strings.Settings_OutputsFound, AudioEndpoints.Count);
     }
 
     [RelayCommand]
     private void NewProfile()
     {
-        if (!ConfirmLeavingCurrentProfile("neues Profil anlegen", "beim aktuellen Profil bleiben"))
+        if (!ConfirmLeavingCurrentProfile(Strings.Settings_ActionNewProfile, Strings.Settings_ActionStay))
             return;
         SelectedProfile = null;
         newProfileBaseline = CaptureFormState();
-        StatusMessage = "Neues, noch nicht gespeichertes Messprofil.";
+        StatusMessage = Strings.Settings_NewProfileStatus;
     }
 
     protected override void OnPropertyChanged(PropertyChangedEventArgs e)
@@ -331,19 +345,20 @@ public partial class SettingsViewModel : ObservableObject
     /// Vor dem Schließen der App: Fragt bei nicht gespeicherten Änderungen nach. False bedeutet, dass die App offen
     /// bleiben soll (abgebrochen oder Speichern gescheitert).
     /// </summary>
-    public bool ConfirmClose() => ConfirmLeavingCurrentProfile("Anwendung schließen", "Anwendung nicht schließen");
+    public bool ConfirmClose() => ConfirmLeavingCurrentProfile(Strings.Settings_ActionClose, Strings.Settings_ActionCloseCancel);
+
+    /// <summary>Vor dem Neuaufbau in einer anderen Sprache; Rückgabe wie bei <see cref="ConfirmClose"/>.</summary>
+    public bool ConfirmLanguageChange() =>
+        ConfirmLeavingCurrentProfile(Strings.Settings_ActionLanguage, Strings.Settings_ActionLanguageCancel);
 
     private bool ConfirmLeavingCurrentProfile(string action, string cancelMeaning)
     {
         if (!HasEditsToLose || unsavedChangesPrompt is null)
             return true;
-        var name = ProfileName.Trim().Length > 0 ? ProfileName.Trim() : "Neues Messprofil";
+        var name = ProfileName.Trim().Length > 0 ? ProfileName.Trim() : Strings.Settings_NewProfile;
         var decision = unsavedChangesPrompt.Ask(
-            "Nicht gespeicherte Änderungen",
-            $"Das Messprofil „{name}“ enthält nicht gespeicherte Änderungen.\n\n" +
-            $"Ja: Änderungen speichern und {action}\n" +
-            $"Nein: Änderungen verwerfen und {action}\n" +
-            $"Abbrechen: {cancelMeaning}");
+            Strings.Settings_UnsavedTitle,
+            string.Format(Strings.Settings_UnsavedMessage, name, action, cancelMeaning));
         switch (decision)
         {
             case UnsavedChangesDecision.Save:
@@ -363,7 +378,7 @@ public partial class SettingsViewModel : ObservableObject
     {
         if (SelectedEndpoint is null)
         {
-            StatusMessage = "Speichern nicht möglich: Ein erkannter Audioausgang muss ausgewählt werden.";
+            StatusMessage = Strings.Settings_SaveNeedsOutput;
             return;
         }
         int? impedanceOhms = int.TryParse(Impedance, out var parsed) ? parsed : null;
@@ -379,12 +394,12 @@ public partial class SettingsViewModel : ObservableObject
         if (existing is not null) Profiles.Remove(existing);
         Profiles.Insert(0, profile);
         SelectedProfile = profile;
-        StatusMessage = "Messprofil lokal gespeichert.";
+        StatusMessage = Strings.Settings_ProfileSaved;
     }
 
     private string DefaultEqualizationSearchStatus => equalizationCatalog is null
-        ? "Kein Entzerrungskatalog verfügbar."
-        : "Modell eingeben, z. B. „HD 600“. Quelle: AutoEq.";
+        ? Strings.Settings_NoCatalog
+        : Strings.Settings_SearchHint;
 
     partial void OnEqualizationSearchTextChanged(string value)
     {
@@ -402,7 +417,7 @@ public partial class SettingsViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            EqualizationSearchStatus = $"Der Entzerrungskatalog konnte nicht geladen werden: {exception.Message}";
+            EqualizationSearchStatus = string.Format(Strings.Settings_CatalogLoadFailed, exception.Message);
             return;
         }
 
@@ -417,9 +432,9 @@ public partial class SettingsViewModel : ObservableObject
             EqualizationMatches.Add(match);
         EqualizationSearchStatus = matches.Length switch
         {
-            0 => "Kein Eintrag gefunden. Eine eigene AutoEq-Datei importieren oder ohne Entzerrung messen.",
-            > MaximumEqualizationMatches => $"{matches.Length} Treffer, die ersten {MaximumEqualizationMatches} werden gezeigt.",
-            _ => $"{matches.Length} Treffer."
+            0 => Strings.Settings_NoMatches,
+            > MaximumEqualizationMatches => string.Format(Strings.Settings_ManyMatches, matches.Length, MaximumEqualizationMatches),
+            _ => string.Format(Strings.Settings_Matches, matches.Length)
         };
     }
 
@@ -433,7 +448,7 @@ public partial class SettingsViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Die Entzerrung konnte nicht übernommen werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Settings_EqualizationFailed, exception.Message);
             return;
         }
 
@@ -443,7 +458,7 @@ public partial class SettingsViewModel : ObservableObject
             Manufacturer = separator > 0 ? value.Name[..separator] : value.Name;
             Model = separator > 0 ? value.Name[(separator + 1)..] : "";
         }
-        StatusMessage = $"Entzerrung „{value.Name}“ ({value.MeasurementLabel}) übernommen. Wirksam nach dem Speichern des Messprofils.";
+        StatusMessage = string.Format(Strings.Settings_EqualizationApplied, value.Name, value.MeasurementLabel);
     }
 
     [RelayCommand]
@@ -451,7 +466,7 @@ public partial class SettingsViewModel : ObservableObject
     {
         Equalization = null;
         SelectedEqualizationMatch = null;
-        StatusMessage = "Entzerrung entfernt. Wirksam nach dem Speichern des Messprofils.";
+        StatusMessage = Strings.Settings_EqualizationRemoved;
     }
 
     [RelayCommand]
@@ -463,11 +478,11 @@ public partial class SettingsViewModel : ObservableObject
         {
             Equalization = equalizationCatalog.Import(path);
             SelectedEqualizationMatch = null;
-            StatusMessage = $"Entzerrung aus „{System.IO.Path.GetFileName(path)}“ importiert. Wirksam nach dem Speichern des Messprofils.";
+            StatusMessage = string.Format(Strings.Settings_EqualizationImported, System.IO.Path.GetFileName(path));
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Die Datei ist keine gültige AutoEq-Datei: {exception.Message}";
+            StatusMessage = string.Format(Strings.Settings_InvalidAutoEq, exception.Message);
         }
     }
 
@@ -478,15 +493,14 @@ public partial class SettingsViewModel : ObservableObject
         IsBusy = true;
         try
         {
-            var channelLabel = channel == 0 ? "Linker" : "Rechter";
-            StatusMessage = $"{channelLabel} Kanal wird mit digitaler Absenkung {StartVolumeDb:0.##} dB geprüft …";
+            StatusMessage = string.Format(channel == 0 ? Strings.Settings_TestingLeft : Strings.Settings_TestingRight, StartVolumeDb);
             await audio.PlayChannelTestAsync(
                 SelectedEndpoint.Id,
                 ExclusiveMode,
                 channel,
                 StartVolumeDb,
                 MaximumVolumeDb);
-            StatusMessage = "Kanalprüfung abgeschlossen.";
+            StatusMessage = Strings.Settings_ChannelTestDone;
         }
         catch (Exception exception) { StatusMessage = exception.Message; }
         finally { IsBusy = false; }

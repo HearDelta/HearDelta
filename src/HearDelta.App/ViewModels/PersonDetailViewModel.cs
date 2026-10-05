@@ -19,9 +19,7 @@ public sealed record RecentMeasurementItem(
     HistorySessionItemViewModel? WordTest,
     HearingThresholdHistoryItem? ThresholdTest)
 {
-    private static readonly CultureInfo German = CultureInfo.GetCultureInfo("de-DE");
-
-    public string DateText => StartedAt.ToLocalTime().ToString("dd.MM.yyyy", German);
+    public string DateText => StartedAt.ToLocalTime().ToString("d", CultureInfo.CurrentCulture);
     public string EarLetter => BadgeTones.EarLetter(Ear);
     public BadgeTone EarTone => BadgeTones.ForEar(Ear);
     public bool HasDifference => DifferenceText is { Length: > 0 } and not "–";
@@ -38,13 +36,12 @@ public sealed record TestPlanStepItem(
 {
     public int Number => (int)Step;
     public string NumberText => IsDone ? "✓" : Number.ToString(CultureInfo.InvariantCulture);
-    public string StartButtonText => IsDone ? "Wiederholen" : "Starten";
+    public string StartButtonText => IsDone ? Strings.Overview_Repeat : Strings.Overview_Start;
 }
 
 public partial class PersonDetailViewModel : ObservableObject
 {
     public const int RecentLimit = 6;
-    private static readonly CultureInfo German = CultureInfo.GetCultureInfo("de-DE");
 
     private readonly Func<Guid, IReadOnlyList<PersonHearingAid>> loadHearingAids;
     private readonly Func<Guid, TestedEar, IReadOnlyList<TestPlanStatus>> loadPlanStatus;
@@ -64,8 +61,8 @@ public partial class PersonDetailViewModel : ObservableObject
 
     public IReadOnlyList<SelectionOption<TestedEar>> PlanEarOptions { get; } =
     [
-        new(TestedEar.Left, "Linkes Ohr"),
-        new(TestedEar.Right, "Rechtes Ohr")
+        new(TestedEar.Left, Strings.Common_LeftEar),
+        new(TestedEar.Right, Strings.Common_RightEar)
     ];
 
     [ObservableProperty]
@@ -77,8 +74,8 @@ public partial class PersonDetailViewModel : ObservableObject
     public event Action<TestPlanStep, TestedEar>? PlanStepRequested;
 
     public string PlanHint => PlanSteps.FirstOrDefault(step => step.IsRecommended) is { } next
-        ? $"Als Nächstes empfohlen: Schritt {next.Number}. Jeder Schritt lässt sich jederzeit starten oder überspringen."
-        : "Alle Schritte für dieses Ohr sind durchgeführt. Wiederholungen übernehmen jeweils die neuesten Vortestwerte.";
+        ? string.Format(Strings.Overview_NextRecommended, next.Number)
+        : Strings.Overview_AllDone;
 
     partial void OnPlanEarChanged(SelectionOption<TestedEar> value) => RefreshPlan();
 
@@ -115,8 +112,8 @@ public partial class PersonDetailViewModel : ObservableObject
                     TestPlanTexts.Title(step),
                     TestPlanTexts.Description(step),
                     done
-                        ? $"Zuletzt am {status!.LastCompletedAt!.Value.ToLocalTime().ToString("dd.MM.yyyy", German)}: {status.ResultText}"
-                        : "Noch nicht durchgeführt",
+                        ? string.Format(Strings.Overview_LastDone, status!.LastCompletedAt!.Value.ToLocalTime(), status.ResultText)
+                        : Strings.Overview_NotDone,
                     done,
                     recommended));
             }
@@ -142,7 +139,7 @@ public partial class PersonDetailViewModel : ObservableObject
     public bool HasPerson => Person is not null;
     public bool HasRecentMeasurements => RecentMeasurements.Count > 0;
     public bool HasNoRecentMeasurements => HasPerson && RecentMeasurements.Count == 0;
-    public string Heading => Person?.DisplayName ?? "Keine Person ausgewählt";
+    public string Heading => Person?.DisplayName ?? Strings.Overview_NoPerson;
     public string Initials => PersonInitials.From(Person?.DisplayName);
 
     public string Subtitle
@@ -150,18 +147,18 @@ public partial class PersonDetailViewModel : ObservableObject
         get
         {
             if (Person is null)
-                return "Wähle oder lege eine Person an, um Tests zu starten.";
+                return Strings.Overview_NoPersonHint;
             var parts = new List<string>();
             if (Person.DateOfBirth is { } birth)
-                parts.Add($"geboren {birth.ToString("dd.MM.yyyy", German)}");
+                parts.Add(string.Format(Strings.Overview_Born, birth));
             parts.Add(MeasurementCount switch
             {
-                0 => "noch keine Messungen",
-                1 => "1 Messung",
-                _ => $"{MeasurementCount} Messungen"
+                0 => Strings.Overview_NoMeasurements,
+                1 => Strings.Overview_OneMeasurement,
+                _ => string.Format(Strings.Overview_Measurements, MeasurementCount)
             });
             if (RecentMeasurements.FirstOrDefault() is { } latest)
-                parts.Add($"letzte am {latest.DateText}");
+                parts.Add(string.Format(Strings.Overview_LatestOn, latest.DateText));
             return string.Join(" · ", parts);
         }
     }
@@ -220,7 +217,7 @@ public partial class PersonDetailViewModel : ObservableObject
             item.Session.StartedAt,
             item.Session.Ear,
             $"{item.Name} · {item.MaterialText} · {ShortEnvironment(item.Session.Environment)}",
-            !item.HasScores ? "Keine Antworten erfasst" : item.IsAdaptive ? item.ScoreText : $"{item.ScoreText} richtig",
+            !item.HasScores ? Strings.Overview_NoAnswers : item.IsAdaptive ? item.ScoreText : string.Format(Strings.Overview_Correct, item.ScoreText),
             item.DifferenceText,
             item.StatusText,
             item.StatusTone,
@@ -229,7 +226,7 @@ public partial class PersonDetailViewModel : ObservableObject
         var thresholds = History.HearingThresholdTests.Select(item => new RecentMeasurementItem(
             item.Session.StartedAt,
             item.Ear,
-            $"Hörschwelle · {item.Name}",
+            string.Format(Strings.Overview_ThresholdTitle, item.Name),
             item.ResultText,
             string.Empty,
             item.StatusText,
@@ -248,7 +245,7 @@ public partial class PersonDetailViewModel : ObservableObject
     }
 
     private static string ShortEnvironment(ListeningEnvironment environment) =>
-        environment == ListeningEnvironment.Quiet ? "Ruhe" : "Störgeräusch";
+        environment == ListeningEnvironment.Quiet ? Strings.Common_Quiet : Strings.Common_Noise;
 }
 
 public static class PersonInitials

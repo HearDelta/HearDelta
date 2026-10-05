@@ -136,15 +136,15 @@ public static class AdaptiveTrackRules
         if (firstIncorrect < 0)
             return new AdaptiveTrackResult(null, 0, null, reachedMaximum,
                 trials.Count == 0
-                    ? "Noch keine Antwort erfasst."
-                    : "Keine falsche Antwort – die Schwelle liegt unterhalb des leisesten erreichten Werts.");
+                    ? CoreStrings.Adaptive_NoAnswer
+                    : CoreStrings.Adaptive_NoWrongAnswer);
 
         var values = trials.Skip(firstIncorrect).Select(trial => trial.ValueDb)
             .Append(NextValue(settings, trials))
             .ToArray();
         if (values.Length < AdaptiveTrackProtocol.MinimumAveragedTrials)
             return new AdaptiveTrackResult(null, values.Length, null, reachedMaximum,
-                $"Zu wenige Darbietungen nach der ersten falschen Antwort ({values.Length} von mindestens {AdaptiveTrackProtocol.MinimumAveragedTrials}).");
+                string.Format(CoreStrings.Adaptive_TooFewTrials, values.Length, AdaptiveTrackProtocol.MinimumAveragedTrials));
 
         var mean = values.Average();
         var variance = values.Sum(value => (value - mean) * (value - mean)) / (values.Length - 1);
@@ -154,7 +154,7 @@ public static class AdaptiveTrackRules
             values.Length,
             Math.Round(standardDeviation, 1, MidpointRounding.AwayFromZero),
             reachedMaximum,
-            reachedMaximum ? "Die Obergrenze wurde erreicht; die tatsächliche Schwelle kann höher liegen." : null);
+            reachedMaximum ? CoreStrings.Adaptive_MaximumReached : null);
     }
 
     /// <summary>Adaptiv veränderter Wert einer gespeicherten Darbietung.</summary>

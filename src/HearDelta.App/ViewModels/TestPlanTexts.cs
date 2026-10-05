@@ -7,26 +7,26 @@ public static class TestPlanTexts
 {
     public static string Title(TestPlanStep step) => step switch
     {
-        TestPlanStep.HearingThreshold => "Hörschwelle",
-        TestPlanStep.NumbersQuiet => "Zahlen in Ruhe (adaptiv)",
-        TestPlanStep.NumbersNoise => "Zahlen im Störgeräusch (adaptiv)",
-        TestPlanStep.PhonemesQuiet => "Phonemkontraste in Ruhe",
-        TestPlanStep.PhonemesNoise => "Phonemkontraste im Störgeräusch",
+        TestPlanStep.HearingThreshold => Strings.Plan_HearingThreshold,
+        TestPlanStep.NumbersQuiet => Strings.Plan_NumbersQuiet,
+        TestPlanStep.NumbersNoise => Strings.Plan_NumbersNoise,
+        TestPlanStep.PhonemesQuiet => Strings.Plan_PhonemesQuiet,
+        TestPlanStep.PhonemesNoise => Strings.Plan_PhonemesNoise,
         _ => step.ToString()
     };
 
     public static string Description(TestPlanStep step) => step switch
     {
-        TestPlanStep.HearingThreshold =>
-            "Sinustöne ohne Hörgerät, optional mit Vertäubung des Gegenohrs. Liefert einen Startwert für Schritt 2, solange dort noch keine Messung vorliegt.",
+        TestPlanStep.HearingThreshold => Strings.Plan_HearingThresholdDescription,
         TestPlanStep.NumbersQuiet =>
-            $"Ruheschwelle ohne und mit Hörgerät. Start {TestLevelRules.QuietAdaptiveStartAboveThresholdDb:0} dB über der (geschätzten) Ruheschwelle; Grundlage für alle folgenden Lautstärken.",
+            string.Format(Strings.Plan_NumbersQuietDescription, TestLevelRules.QuietAdaptiveStartAboveThresholdDb),
         TestPlanStep.NumbersNoise =>
-            $"SNR-Schwelle ohne und mit Hörgerät. Sprache {TestLevelRules.NoiseSpeechAboveQuietThresholdDb:0} dB über der Ruheschwelle, Dauerrauschen.",
+            string.Format(Strings.Plan_NumbersNoiseDescription, TestLevelRules.NoiseSpeechAboveQuietThresholdDb),
         TestPlanStep.PhonemesQuiet =>
-            $"Prozent richtig bei {TestLevelRules.PhonemesQuietAboveThresholdDb:0} dB über der Ruheschwelle.",
+            string.Format(Strings.Plan_PhonemesQuietDescription, TestLevelRules.PhonemesQuietAboveThresholdDb),
         TestPlanStep.PhonemesNoise =>
-            $"Prozent richtig: Sprache {TestLevelRules.NoiseSpeechAboveQuietThresholdDb:0} dB über der Ruheschwelle, SNR {TestLevelRules.PhonemesNoiseAboveSnrThresholdDb:0} dB über der SNR-Schwelle.",
+            string.Format(Strings.Plan_PhonemesNoiseDescription, TestLevelRules.NoiseSpeechAboveQuietThresholdDb,
+                TestLevelRules.PhonemesNoiseAboveSnrThresholdDb),
         _ => string.Empty
     };
 }

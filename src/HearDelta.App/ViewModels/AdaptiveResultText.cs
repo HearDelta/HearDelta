@@ -6,8 +6,6 @@ namespace HearDelta.App.ViewModels;
 /// <summary>Einheitliche Texte für Ergebnisse des adaptiven Zahlentests.</summary>
 public static class AdaptiveResultText
 {
-    private static readonly CultureInfo German = CultureInfo.GetCultureInfo("de-DE");
-
     public static string Threshold(AdaptiveTrackResult? result, AdaptiveTrackParameter? parameter) =>
         result?.ThresholdDb is { } threshold
             ? $"{Signed(threshold)} dB{(parameter == AdaptiveTrackParameter.SignalToNoiseRatio ? " SNR" : string.Empty)}"
@@ -15,16 +13,16 @@ public static class AdaptiveResultText
 
     public static string ThresholdWithSpread(AdaptiveTrackResult? result, AdaptiveTrackParameter? parameter) =>
         result?.StandardDeviationDb is { } spread
-            ? $"{Threshold(result, parameter)}  ·  Streuung ±{spread.ToString("0.0", German)} dB"
+            ? string.Format(Strings.Adaptive_Spread, Threshold(result, parameter), spread)
             : Threshold(result, parameter);
 
     /// <summary>Positiv heißt: mit Hörgerät genügt ein leiserer Pegel bzw. ein ungünstigerer SNR.</summary>
     public static string Improvement(decimal? improvementDb) => improvementDb switch
     {
         null => "–",
-        > 0 => $"{improvementDb.Value.ToString("0.0", German)} dB besser",
-        < 0 => $"{(-improvementDb.Value).ToString("0.0", German)} dB schlechter",
-        _ => "gleich"
+        > 0 => string.Format(Strings.Adaptive_Better, improvementDb.Value),
+        < 0 => string.Format(Strings.Adaptive_Worse, -improvementDb.Value),
+        _ => Strings.History_Same
     };
 
     public static string ShortImprovement(decimal? improvementDb) =>
@@ -32,23 +30,20 @@ public static class AdaptiveResultText
 
     public static string ParameterLabel(AdaptiveTrackParameter? parameter) =>
         parameter == AdaptiveTrackParameter.SignalToNoiseRatio
-            ? "Signal-Rausch-Abstand für 50 % richtig"
-            : "Digitaler Sprachpegel für 50 % richtig";
+            ? Strings.Adaptive_SnrLabel
+            : Strings.Adaptive_LevelLabel;
 
     public static string Detail(MeasurementBlockResult block, AdaptiveTrackParameter? parameter)
     {
         if (block.TotalResponses == 0)
-            return "Noch keine Antwort erfasst";
-        var counts = $"{block.CorrectResponses} von {block.TotalResponses} richtig";
+            return Strings.Measure_NoAnswerYet;
+        var counts = string.Format(Strings.Adaptive_Counts, block.CorrectResponses, block.TotalResponses);
         return block.Adaptive is { ThresholdDb: not null, Note: null }
             ? $"{ParameterLabel(parameter)} · {counts}"
             : $"{block.Adaptive?.Note ?? ParameterLabel(parameter)} · {counts}";
     }
 
-    public const string Explanation =
-        "Adaptiv (1-hoch/1-runter): Nach einer richtigen Antwort wird es um eine Stufe schwerer, nach einer falschen leichter – " +
-        "6 dB bis zur ersten falschen Antwort, danach 2 dB. Die Schwelle ist der Mittelwert der Werte ab der ersten falschen Antwort " +
-        "und entspricht etwa 50 % richtig. Pegel sind digitale dB, keine dB SPL.";
+    public static string Explanation => Strings.Adaptive_Explanation;
 
-    private static string Signed(decimal value) => value.ToString("+0.0;-0.0;0.0", German);
+    private static string Signed(decimal value) => value.ToString("+0.0;-0.0;0.0", CultureInfo.CurrentCulture);
 }

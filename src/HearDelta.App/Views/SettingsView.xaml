@@ -2,7 +2,8 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:sys="clr-namespace:System;assembly=System.Runtime"
-             xmlns:controls="clr-namespace:HearDelta.App.Controls">
+             xmlns:controls="clr-namespace:HearDelta.App.Controls"
+             xmlns:l="clr-namespace:HearDelta.App.Localization">
     <Grid Background="{StaticResource PageBrush}">
         <Grid.RowDefinitions><RowDefinition Height="*" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
         <Grid>
@@ -13,10 +14,10 @@
                 <Grid>
                     <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="Auto" /><RowDefinition Height="*" /></Grid.RowDefinitions>
                     <Grid Margin="24,28,20,6">
-                        <TextBlock Text="Messprofile" Style="{StaticResource PageTitle}" VerticalAlignment="Center" />
-                        <Button Content="+ Neues Profil" Command="{Binding NewProfileCommand}" HorizontalAlignment="Right" Padding="12,4" MinHeight="32" FontSize="14" />
+                        <TextBlock Text="{x:Static l:Strings.Settings_ProfilesTitle}" Style="{StaticResource PageTitle}" VerticalAlignment="Center" />
+                        <Button Content="{x:Static l:Strings.Settings_NewProfileButton}" Command="{Binding NewProfileCommand}" HorizontalAlignment="Right" Padding="12,4" MinHeight="32" FontSize="14" />
                     </Grid>
-                    <TextBlock Grid.Row="1" Text="Ein Messprofil hält Ausgang, Kopfhörer und Pegel fest. Messungen sind nur mit gleichem Profil direkt vergleichbar." Style="{StaticResource Caption}" FontSize="13" Margin="24,0,20,14" />
+                    <TextBlock Grid.Row="1" Text="{x:Static l:Strings.Settings_ProfilesIntro}" Style="{StaticResource Caption}" FontSize="13" Margin="24,0,20,14" />
                     <ListBox Grid.Row="2" Margin="16,0,12,12" ItemsSource="{Binding Profiles}" SelectedItem="{Binding ProfileListSelection}" BorderThickness="0" Background="Transparent"
                              HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                         <ListBox.ItemContainerStyle>
@@ -40,14 +41,14 @@
                                 <StackPanel>
                                     <TextBlock Text="{Binding Name}" FontSize="15" FontWeight="SemiBold" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" />
                                     <TextBlock Text="{Binding EndpointName}" Style="{StaticResource Caption}" FontSize="13" Margin="0,2,0,0" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" />
-                                    <TextBlock Text="{Binding UpdatedAt, StringFormat='Geändert {0:dd.MM.yyyy HH:mm}'}" Style="{StaticResource Caption}" />
+                                    <TextBlock Text="{Binding UpdatedAt, StringFormat={x:Static l:Strings.Settings_ChangedAt}}" Style="{StaticResource Caption}" />
                                 </StackPanel>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
                     <StackPanel Grid.Row="2" Margin="24,24,20,0" VerticalAlignment="Top" Visibility="{Binding HasNoProfiles, Converter={StaticResource BooleanToVisibilityConverter}}">
-                        <TextBlock Text="Noch keine Messprofile" FontSize="18" FontWeight="SemiBold" />
-                        <TextBlock Text="Rechts Ausgang, Kopfhörer und Pegel eintragen und „Messprofil speichern“ wählen. Ohne Messprofil lassen sich keine Tests starten." Style="{StaticResource Caption}" FontSize="14" TextWrapping="Wrap" Margin="0,6,0,0" />
+                        <TextBlock Text="{x:Static l:Strings.Settings_NoProfilesTitle}" FontSize="18" FontWeight="SemiBold" />
+                        <TextBlock Text="{x:Static l:Strings.Settings_NoProfilesText}" Style="{StaticResource Caption}" FontSize="14" TextWrapping="Wrap" Margin="0,6,0,0" />
                     </StackPanel>
                 </Grid>
             </Border>
@@ -55,54 +56,60 @@
             <!-- Profil bearbeiten -->
             <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto">
                 <StackPanel Margin="40,28,40,36" MaxWidth="820" HorizontalAlignment="Left">
-                    <TextBlock Text="Profilname" Style="{StaticResource FieldLabel}" />
-                    <TextBox Text="{Binding ProfileName, UpdateSourceTrigger=PropertyChanged}" FontSize="20" FontWeight="SemiBold" AutomationProperties.Name="Profilname" Margin="0,0,0,18" />
+                    <TextBlock Text="{x:Static l:Strings.Settings_ProfileName}" Style="{StaticResource FieldLabel}" />
+                    <TextBox Text="{Binding ProfileName, UpdateSourceTrigger=PropertyChanged}" FontSize="20" FontWeight="SemiBold" AutomationProperties.Name="{x:Static l:Strings.Settings_ProfileName}" Margin="0,0,0,18" />
 
                     <!-- 1 Ausgang -->
                     <Border Style="{StaticResource Card}" Margin="0,0,0,14">
                         <StackPanel>
                             <DockPanel Margin="0,0,0,10">
-                                <Button DockPanel.Dock="Right" Content="Ausgänge aktualisieren" Style="{StaticResource LinkButton}" FontSize="13" Command="{Binding RefreshEndpointsCommand}" VerticalAlignment="Center" />
-                                <TextBlock Text="1 · Audioausgang" Style="{StaticResource SectionHeading}" Margin="0" />
+                                <Button DockPanel.Dock="Right" Content="{x:Static l:Strings.Settings_RefreshOutputs}" Style="{StaticResource LinkButton}" FontSize="13" Command="{Binding RefreshEndpointsCommand}" VerticalAlignment="Center" />
+                                <TextBlock Text="{x:Static l:Strings.Settings_OutputSection}" Style="{StaticResource SectionHeading}" Margin="0" />
                             </DockPanel>
-                            <TextBlock Text="Verstärkerausgang (WASAPI)" Style="{StaticResource FieldLabel}" />
-                            <ComboBox ItemsSource="{Binding AudioEndpoints}" SelectedItem="{Binding SelectedEndpoint}" DisplayMemberPath="Name" AutomationProperties.Name="Verstärkerausgang" />
+                            <TextBlock Text="{x:Static l:Strings.Settings_AmplifierOutput}" Style="{StaticResource FieldLabel}" />
+                            <ComboBox ItemsSource="{Binding AudioEndpoints}" SelectedItem="{Binding SelectedEndpoint}" DisplayMemberPath="Name" AutomationProperties.Name="{x:Static l:Strings.Settings_AmplifierOutputName}" />
                             <TextBlock Style="{StaticResource Caption}" FontSize="13" Margin="0,6,0,0">
-                                <Run Text="{Binding SelectedEndpoint.Channels, TargetNullValue=–, Mode=OneWay}" /><Run Text=" Kanäle · " /><Run Text="{Binding SelectedEndpoint.SampleRate, TargetNullValue=–, Mode=OneWay}" /><Run Text=" Hz · " /><Run Text="{Binding SelectedEndpoint.BitsPerSample, TargetNullValue=–, Mode=OneWay}" /><Run Text=" Bit" />
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="{x:Static l:Strings.Settings_ChannelsSuffix}">
+                                        <Binding Path="SelectedEndpoint.Channels" TargetNullValue="–" FallbackValue="–" />
+                                        <Binding Path="SelectedEndpoint.SampleRate" TargetNullValue="–" FallbackValue="–" />
+                                        <Binding Path="SelectedEndpoint.BitsPerSample" TargetNullValue="–" FallbackValue="–" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
                             </TextBlock>
-                            <CheckBox Content="Exklusivmodus verwenden" IsChecked="{Binding ExclusiveMode}" Margin="0,12,0,14" />
-                            <TextBlock Text="Kanalprüfung (leise, nacheinander)" Style="{StaticResource FieldLabel}" />
+                            <CheckBox Content="{x:Static l:Strings.Settings_ExclusiveMode}" IsChecked="{Binding ExclusiveMode}" Margin="0,12,0,14" />
+                            <TextBlock Text="{x:Static l:Strings.Settings_ChannelTest}" Style="{StaticResource FieldLabel}" />
                             <StackPanel Orientation="Horizontal">
-                                <Button Command="{Binding TestChannelCommand}" Background="{StaticResource EarLeftSoftBrush}" BorderBrush="{StaticResource EarLeftBrush}" Foreground="{StaticResource EarLeftBrush}" FontWeight="SemiBold" MinWidth="170" Margin="0,0,10,0" Content="Linken Kanal prüfen">
+                                <Button Command="{Binding TestChannelCommand}" Background="{StaticResource EarLeftSoftBrush}" BorderBrush="{StaticResource EarLeftBrush}" Foreground="{StaticResource EarLeftBrush}" FontWeight="SemiBold" MinWidth="170" Margin="0,0,10,0" Content="{x:Static l:Strings.Settings_TestLeft}">
                                     <Button.CommandParameter><sys:Int32>0</sys:Int32></Button.CommandParameter>
                                 </Button>
-                                <Button Command="{Binding TestChannelCommand}" Background="{StaticResource EarRightSoftBrush}" BorderBrush="{StaticResource EarRightBrush}" Foreground="{StaticResource EarRightBrush}" FontWeight="SemiBold" MinWidth="170" Content="Rechten Kanal prüfen">
+                                <Button Command="{Binding TestChannelCommand}" Background="{StaticResource EarRightSoftBrush}" BorderBrush="{StaticResource EarRightBrush}" Foreground="{StaticResource EarRightBrush}" FontWeight="SemiBold" MinWidth="170" Content="{x:Static l:Strings.Settings_TestRight}">
                                     <Button.CommandParameter><sys:Int32>1</sys:Int32></Button.CommandParameter>
                                 </Button>
                             </StackPanel>
-                            <TextBlock Text="Der gespeicherte Ausgang muss vor jeder Messung verfügbar sein; es gibt keinen automatischen Wechsel zum Windows-Standardgerät." Style="{StaticResource Caption}" FontSize="13" Margin="0,10,0,0" />
+                            <TextBlock Text="{x:Static l:Strings.Settings_OutputRequired}" Style="{StaticResource Caption}" FontSize="13" Margin="0,10,0,0" />
                         </StackPanel>
                     </Border>
 
                     <!-- 2 Kopfhörer -->
                     <Border Style="{StaticResource Card}" Margin="0,0,0,14">
                         <StackPanel>
-                            <TextBlock Text="2 · Kopfhörer" Style="{StaticResource SectionHeading}" />
+                            <TextBlock Text="{x:Static l:Strings.Settings_HeadphoneSection}" Style="{StaticResource SectionHeading}" />
                             <Grid>
                                 <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="12" /><ColumnDefinition Width="*" /><ColumnDefinition Width="12" /><ColumnDefinition Width="*" /><ColumnDefinition Width="12" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
-                                <StackPanel><TextBlock Text="Hersteller" Style="{StaticResource FieldLabel}" /><TextBox Text="{Binding Manufacturer, UpdateSourceTrigger=PropertyChanged}" AutomationProperties.Name="Kopfhörer-Hersteller" /></StackPanel>
-                                <StackPanel Grid.Column="2"><TextBlock Text="Modell" Style="{StaticResource FieldLabel}" /><TextBox Text="{Binding Model, UpdateSourceTrigger=PropertyChanged}" AutomationProperties.Name="Kopfhörer-Modell" /></StackPanel>
+                                <StackPanel><TextBlock Text="{x:Static l:Strings.Settings_Manufacturer}" Style="{StaticResource FieldLabel}" /><TextBox Text="{Binding Manufacturer, UpdateSourceTrigger=PropertyChanged}" AutomationProperties.Name="{x:Static l:Strings.Settings_HeadphoneManufacturer}" /></StackPanel>
+                                <StackPanel Grid.Column="2"><TextBlock Text="{x:Static l:Strings.Settings_Model}" Style="{StaticResource FieldLabel}" /><TextBox Text="{Binding Model, UpdateSourceTrigger=PropertyChanged}" AutomationProperties.Name="{x:Static l:Strings.Settings_HeadphoneModel}" /></StackPanel>
                                 <StackPanel Grid.Column="4">
-                                    <TextBlock Text="Bauform" Style="{StaticResource FieldLabel}" />
-                                    <ComboBox ItemsSource="{Binding DesignOptions}" SelectedItem="{Binding Design}" AutomationProperties.Name="Bauform">
+                                    <TextBlock Text="{x:Static l:Strings.Settings_Design}" Style="{StaticResource FieldLabel}" />
+                                    <ComboBox ItemsSource="{Binding DesignOptions}" SelectedItem="{Binding Design}" AutomationProperties.Name="{x:Static l:Strings.Settings_Design}">
                                         <ComboBox.ItemTemplate>
                                             <DataTemplate>
                                                 <TextBlock>
                                                     <TextBlock.Style>
                                                         <Style TargetType="TextBlock">
-                                                            <Setter Property="Text" Value="{Binding}" />
+                                                            <Setter Property="Text" Value="{Binding Converter={StaticResource HeadphoneDesignLabel}}" />
                                                             <Style.Triggers>
-                                                                <DataTrigger Binding="{Binding}" Value=""><Setter Property="Text" Value="Nicht angegeben" /><Setter Property="Foreground" Value="{StaticResource MutedBrush}" /></DataTrigger>
+                                                                <DataTrigger Binding="{Binding}" Value=""><Setter Property="Foreground" Value="{StaticResource MutedBrush}" /></DataTrigger>
                                                             </Style.Triggers>
                                                         </Style>
                                                     </TextBlock.Style>
@@ -111,39 +118,39 @@
                                         </ComboBox.ItemTemplate>
                                     </ComboBox>
                                 </StackPanel>
-                                <StackPanel Grid.Column="6"><TextBlock Text="Impedanz (optional)" Style="{StaticResource FieldLabel}" /><TextBox Text="{Binding Impedance, UpdateSourceTrigger=PropertyChanged}" AutomationProperties.Name="Impedanz" /></StackPanel>
+                                <StackPanel Grid.Column="6"><TextBlock Text="{x:Static l:Strings.Settings_Impedance}" Style="{StaticResource FieldLabel}" /><TextBox Text="{Binding Impedance, UpdateSourceTrigger=PropertyChanged}" AutomationProperties.Name="{x:Static l:Strings.Settings_ImpedanceName}" /></StackPanel>
                             </Grid>
                             <Border Style="{StaticResource WarningBox}" Margin="0,10,0,0" Visibility="{Binding HasDesignHint, Converter={StaticResource BooleanToVisibilityConverter}}">
                                 <TextBlock Text="{Binding DesignHint}" Foreground="{StaticResource WarningBrush}" TextWrapping="Wrap" />
                             </Border>
-                            <TextBlock Text="Die Angaben dokumentieren den Aufbau; sie bewirken keine SPL-Kalibrierung." Style="{StaticResource Caption}" FontSize="13" Margin="0,8,0,0" />
+                            <TextBlock Text="{x:Static l:Strings.Settings_NoCalibration}" Style="{StaticResource Caption}" FontSize="13" Margin="0,8,0,0" />
 
                             <Separator Margin="0,18,0,14" />
                             <DockPanel Margin="0,0,0,8">
                                 <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" VerticalAlignment="Center">
-                                    <Button Content="AutoEq-Datei importieren …" Style="{StaticResource LinkButton}" FontSize="13" Command="{Binding ImportEqualizationCommand}" Margin="0,0,16,0" Visibility="{Binding IsEqualizationCatalogAvailable, Converter={StaticResource BooleanToVisibilityConverter}}" />
-                                    <Button Content="Ohne Entzerrung" Style="{StaticResource LinkButton}" FontSize="13" Command="{Binding ClearEqualizationCommand}" Visibility="{Binding HasEqualization, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                                    <Button Content="{x:Static l:Strings.Settings_ImportAutoEq}" Style="{StaticResource LinkButton}" FontSize="13" Command="{Binding ImportEqualizationCommand}" Margin="0,0,16,0" Visibility="{Binding IsEqualizationCatalogAvailable, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                                    <Button Content="{x:Static l:Strings.Settings_WithoutEqualization}" Style="{StaticResource LinkButton}" FontSize="13" Command="{Binding ClearEqualizationCommand}" Visibility="{Binding HasEqualization, Converter={StaticResource BooleanToVisibilityConverter}}" />
                                 </StackPanel>
-                                <TextBlock Text="Kopfhörerentzerrung" FontSize="15" FontWeight="SemiBold" VerticalAlignment="Center" />
+                                <TextBlock Text="{x:Static l:Strings.Settings_Equalization}" FontSize="15" FontWeight="SemiBold" VerticalAlignment="Center" />
                             </DockPanel>
                             <Border Style="{StaticResource InfoBox}">
                                 <StackPanel>
-                                    <TextBlock Text="{Binding Equalization.Label, TargetNullValue='Keine Entzerrung', FallbackValue='Keine Entzerrung'}" FontSize="15" FontWeight="SemiBold" />
+                                    <TextBlock Text="{Binding Equalization.Label, TargetNullValue={x:Static l:Strings.Settings_NoEqualization}, FallbackValue={x:Static l:Strings.Settings_NoEqualization}}" FontSize="15" FontWeight="SemiBold" />
                                     <TextBlock Text="{Binding Equalization.Source}" Style="{StaticResource Caption}" FontSize="13" Margin="0,2,0,0" TextWrapping="Wrap" Visibility="{Binding HasEqualization, Converter={StaticResource BooleanToVisibilityConverter}}" />
                                     <TextBlock Text="{Binding EqualizationDetails}" Style="{StaticResource Caption}" FontSize="13" Margin="0,2,0,0" TextWrapping="Wrap" />
                                     <TextBlock Style="{StaticResource Caption}" FontSize="13" Margin="0,2,0,0" TextWrapping="Wrap" Visibility="{Binding HasEqualization, Converter={StaticResource BooleanToVisibilityConverter}}">
-                                        <Run Text="Ziel: " /><Run Text="{Binding Equalization.Target, Mode=OneWay}" />
+                                        <Run Text="{x:Static l:Strings.Settings_Target}" /><Run Text=" " /><Run Text="{Binding Equalization.Target, Mode=OneWay}" />
                                     </TextBlock>
                                     <controls:EqualizationCurve Height="130" Margin="0,10,0,0" Equalization="{Binding Equalization}" SampleRate="{Binding EqualizationSampleRate}" Visibility="{Binding HasEqualization, Converter={StaticResource BooleanToVisibilityConverter}}" />
                                 </StackPanel>
                             </Border>
                             <StackPanel Visibility="{Binding IsEqualizationCatalogAvailable, Converter={StaticResource BooleanToVisibilityConverter}}">
-                                <TextBlock Text="Aus dem AutoEq-Katalog wählen (ohrumschließende, passiv betriebene Kopfhörer)" Style="{StaticResource FieldLabel}" Margin="0,14,0,4" />
-                                <TextBox Text="{Binding EqualizationSearchText, UpdateSourceTrigger=PropertyChanged, Delay=250}" AutomationProperties.Name="Kopfhörer im AutoEq-Katalog suchen" />
+                                <TextBlock Text="{x:Static l:Strings.Settings_CatalogPick}" Style="{StaticResource FieldLabel}" Margin="0,14,0,4" />
+                                <TextBox Text="{Binding EqualizationSearchText, UpdateSourceTrigger=PropertyChanged, Delay=250}" AutomationProperties.Name="{x:Static l:Strings.Settings_CatalogSearch}" />
                                 <TextBlock Text="{Binding EqualizationSearchStatus}" Style="{StaticResource Caption}" FontSize="13" Margin="0,4,0,4" TextWrapping="Wrap" />
                                 <ListBox ItemsSource="{Binding EqualizationMatches}" SelectedItem="{Binding SelectedEqualizationMatch}" MaxHeight="220" BorderBrush="{StaticResource BorderBrush}"
                                          HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" VirtualizingPanel.IsVirtualizing="True"
-                                         AutomationProperties.Name="Treffer im AutoEq-Katalog">
+                                         AutomationProperties.Name="{x:Static l:Strings.Settings_CatalogMatches}">
                                     <ListBox.Style>
                                         <Style TargetType="ListBox">
                                             <Style.Triggers>
@@ -162,28 +169,28 @@
                                 </ListBox>
                             </StackPanel>
                             <TextBlock Style="{StaticResource Caption}" FontSize="13" Margin="0,10,0,0" TextWrapping="Wrap"
-                                       Text="Die Entzerrung bringt den Kopfhörer näherungsweise auf ein Diffusfeld-Ziel (mit AutoEq berechnet, ohne Bassanhebung), nicht auf einen linearen Frequenzgang. Sie gehört zum Messprofil; Messungen mit unterschiedlicher Entzerrung sind nicht direkt vergleichbar. Pegel bleiben digitale dBFS-Werte." />
+                                       Text="{x:Static l:Strings.Settings_EqualizationNote}" />
                         </StackPanel>
                     </Border>
 
                     <!-- 3 Pegel -->
                     <Border Style="{StaticResource Card}" Margin="0,0,0,20">
                         <StackPanel>
-                            <TextBlock Text="3 · Pegel" Style="{StaticResource SectionHeading}" />
+                            <TextBlock Text="{x:Static l:Strings.Settings_LevelSection}" Style="{StaticResource SectionHeading}" />
                             <Grid>
                                 <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="12" /><ColumnDefinition Width="*" /><ColumnDefinition Width="12" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
-                                <StackPanel><TextBlock Text="Gain am Verstärker" Style="{StaticResource FieldLabel}" /><TextBox Text="{Binding Gain, UpdateSourceTrigger=PropertyChanged}" AutomationProperties.Name="Gain" /></StackPanel>
-                                <StackPanel Grid.Column="2"><TextBlock Text="Startlautstärke (dB)" Style="{StaticResource FieldLabel}" /><TextBox Text="{Binding StartVolumeDb}" AutomationProperties.Name="Startlautstärke" /></StackPanel>
-                                <StackPanel Grid.Column="4"><TextBlock Text="Obergrenze (dB)" Style="{StaticResource FieldLabel}" /><TextBox Text="{Binding MaximumVolumeDb}" AutomationProperties.Name="Obergrenze" /></StackPanel>
+                                <StackPanel><TextBlock Text="{x:Static l:Strings.Settings_Gain}" Style="{StaticResource FieldLabel}" /><TextBox Text="{Binding Gain, UpdateSourceTrigger=PropertyChanged}" AutomationProperties.Name="{x:Static l:Strings.Settings_GainName}" /></StackPanel>
+                                <StackPanel Grid.Column="2"><TextBlock Text="{x:Static l:Strings.Settings_StartVolume}" Style="{StaticResource FieldLabel}" /><TextBox Text="{Binding StartVolumeDb}" AutomationProperties.Name="{x:Static l:Strings.Settings_StartVolumeName}" /></StackPanel>
+                                <StackPanel Grid.Column="4"><TextBlock Text="{x:Static l:Strings.Settings_MaximumVolume}" Style="{StaticResource FieldLabel}" /><TextBox Text="{Binding MaximumVolumeDb}" AutomationProperties.Name="{x:Static l:Strings.Settings_MaximumVolumeName}" /></StackPanel>
                             </Grid>
                             <Border Style="{StaticResource WarningBox}" Margin="0,12,0,0">
-                                <TextBlock Text="Noch nicht mit Kalibrierkuppler kalibriert: Die Werte sind digitale Absenkungen in dB, keine dB SPL." Foreground="{StaticResource WarningBrush}" />
+                                <TextBlock Text="{x:Static l:Strings.Settings_NotCalibrated}" Foreground="{StaticResource WarningBrush}" />
                             </Border>
                         </StackPanel>
                     </Border>
 
                     <StackPanel Orientation="Horizontal">
-                        <Button Content="Messprofil speichern" Style="{StaticResource PrimaryButton}" Command="{Binding SaveProfileCommand}" MinWidth="220" MinHeight="44" Margin="0,0,16,0" />
+                        <Button Content="{x:Static l:Strings.Settings_SaveProfile}" Style="{StaticResource PrimaryButton}" Command="{Binding SaveProfileCommand}" MinWidth="220" MinHeight="44" Margin="0,0,16,0" />
                         <TextBlock VerticalAlignment="Center" FontSize="14" AutomationProperties.LiveSetting="Polite">
                             <TextBlock.Style>
                                 <Style TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">

@@ -348,13 +348,13 @@ public static class HearingThresholdSessionFactory
         // Jeder Ton steigt bis zur Pegelobergrenze des Messprofils.
         var maximumAttenuation = hardware.MaximumVolumeDb;
         if (maximumAttenuation > 0)
-            throw new ArgumentOutOfRangeException(nameof(hardware), "Die Pegelobergrenze des Messprofils darf 0 dBFS nicht überschreiten.");
+            throw new ArgumentOutOfRangeException(nameof(hardware), CoreStrings.Threshold_MaximumAboveZero);
         var startAttenuation = startAttenuationDbfs ?? HearingThresholdProtocol.DefaultStartAttenuationFor(hardware);
         var highestStart = HearingThresholdProtocol.HighestStartAttenuationFor(maximumAttenuation);
         if (startAttenuation > highestStart)
             throw new ArgumentOutOfRangeException(
                 nameof(startAttenuationDbfs),
-                $"Der Startpegel darf höchstens {highestStart:0.##} dBFS betragen ({HearingThresholdProtocol.MinimumRampDb:0} dB unter der Pegelobergrenze).");
+                string.Format(CoreStrings.Threshold_StartTooHigh, highestStart, HearingThresholdProtocol.MinimumRampDb));
 
         return new HearingThresholdSession(
             HearingThresholdProtocol.CurrentVersion,

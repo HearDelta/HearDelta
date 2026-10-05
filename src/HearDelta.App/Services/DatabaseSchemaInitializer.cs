@@ -49,11 +49,7 @@ public sealed class DatabaseSchemaInitializer(DatabaseConnectionFactory connecti
     public string? BackupPath { get; private set; }
 
     public static string BuildBackupNotice(string databasePath, string backupPath) =>
-        "Die vorhandene Datenbank passte nicht zum aktuellen Datenbankschema dieser Version.\n\n" +
-        $"Sie wurde unverändert gesichert unter:\n{backupPath}\n\n" +
-        $"Unter {databasePath} wurde eine neue, leere Datenbank angelegt. " +
-        "Bisherige Personen, Messprofile und Messungen erscheinen daher nicht mehr in der Anwendung; " +
-        "sie sind in der Sicherungsdatei weiterhin vorhanden.";
+        string.Format(Strings.Database_BackupNotice, databasePath, backupPath);
 
     /// <summary>
     /// Benennt die Datenbank samt WAL-/SHM-Begleitdateien in
@@ -82,8 +78,7 @@ public sealed class DatabaseSchemaInitializer(DatabaseConnectionFactory connecti
         catch (Exception ex) when (ex is IOException or UnauthorizedAccessException)
         {
             throw new InvalidOperationException(
-                $"Die vorhandene Datenbank '{dbPath}' entspricht nicht dem aktuellen Schema und konnte nicht nach '{backupPath}' gesichert werden: {ex.Message} " +
-                "Lösche oder verschiebe sie manuell und starte die Anwendung anschließend erneut.", ex);
+                string.Format(Strings.Database_BackupFailed, dbPath, backupPath, ex.Message), ex);
         }
 
         return backupPath;

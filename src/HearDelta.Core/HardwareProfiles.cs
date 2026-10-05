@@ -80,15 +80,15 @@ public static class MeasurementProfileRules
     public static IReadOnlyList<string> Validate(MeasurementProfile profile)
     {
         var errors = new List<string>();
-        if (string.IsNullOrWhiteSpace(profile.Name)) errors.Add("Das Messprofil benötigt einen Namen.");
-        if (string.IsNullOrWhiteSpace(profile.EndpointId)) errors.Add("Ein erkannter Audioausgang muss ausgewählt werden.");
-        if (profile.Channels < 2) errors.Add("Der Audioausgang muss mindestens zwei Kanäle bereitstellen.");
-        if (profile.SampleRate <= 0) errors.Add("Die Abtastrate ist ungültig.");
-        if (profile.BitsPerSample <= 0) errors.Add("Die Bittiefe ist ungültig.");
-        if (string.IsNullOrWhiteSpace(profile.Headphone.Manufacturer)) errors.Add("Der Kopfhörerhersteller fehlt.");
-        if (string.IsNullOrWhiteSpace(profile.Headphone.Model)) errors.Add("Das Kopfhörermodell fehlt.");
-        if (profile.MaximumVolumeDb > 0) errors.Add("Die digitale Pegelobergrenze darf 0 dB nicht überschreiten.");
-        if (profile.StartVolumeDb > profile.MaximumVolumeDb) errors.Add("Die Startlautstärke darf die Obergrenze nicht überschreiten.");
+        if (string.IsNullOrWhiteSpace(profile.Name)) errors.Add(CoreStrings.Profile_NameRequired);
+        if (string.IsNullOrWhiteSpace(profile.EndpointId)) errors.Add(CoreStrings.Profile_OutputRequired);
+        if (profile.Channels < 2) errors.Add(CoreStrings.Profile_TwoChannels);
+        if (profile.SampleRate <= 0) errors.Add(CoreStrings.Profile_SampleRateInvalid);
+        if (profile.BitsPerSample <= 0) errors.Add(CoreStrings.Profile_BitDepthInvalid);
+        if (string.IsNullOrWhiteSpace(profile.Headphone.Manufacturer)) errors.Add(CoreStrings.Profile_HeadphoneManufacturerMissing);
+        if (string.IsNullOrWhiteSpace(profile.Headphone.Model)) errors.Add(CoreStrings.Profile_HeadphoneModelMissing);
+        if (profile.MaximumVolumeDb > 0) errors.Add(CoreStrings.Profile_MaximumAboveZero);
+        if (profile.StartVolumeDb > profile.MaximumVolumeDb) errors.Add(CoreStrings.Profile_StartAboveMaximum);
         if (profile.Headphone.Equalization is { } equalization)
             errors.AddRange(HeadphoneEqualizer.Validate(equalization, profile.SampleRate));
         return errors;
@@ -109,28 +109,28 @@ public static class MeasurementProfileRules
 
         var differences = new List<string>();
         if (!string.Equals(left.EndpointId, right.EndpointId, StringComparison.Ordinal))
-            differences.Add("Der gespeicherte WASAPI-Ausgang ist unterschiedlich.");
+            differences.Add(CoreStrings.Profile_DiffEndpoint);
         if (left.ExclusiveMode != right.ExclusiveMode)
-            differences.Add("Der WASAPI-Ausgabemodus ist unterschiedlich.");
+            differences.Add(CoreStrings.Profile_DiffMode);
         if (left.SampleRate != right.SampleRate ||
             left.BitsPerSample != right.BitsPerSample ||
             left.Channels != right.Channels)
-            differences.Add("Das gespeicherte Audioformat ist unterschiedlich.");
+            differences.Add(CoreStrings.Profile_DiffFormat);
         if (!SameText(left.HeadphoneManufacturer, right.HeadphoneManufacturer) ||
             !SameText(left.HeadphoneModel, right.HeadphoneModel) ||
             !SameText(left.HeadphoneDesign, right.HeadphoneDesign) ||
             left.HeadphoneImpedanceOhms != right.HeadphoneImpedanceOhms)
-            differences.Add("Der Kopfhörer-Snapshot ist unterschiedlich.");
+            differences.Add(CoreStrings.Profile_DiffHeadphone);
         if (!string.Equals(left.HeadphoneEqualization?.SourceSha256, right.HeadphoneEqualization?.SourceSha256, StringComparison.Ordinal))
-            differences.Add("Die Kopfhörerentzerrung ist unterschiedlich.");
+            differences.Add(CoreStrings.Profile_DiffEqualization);
         if (!SameText(left.AmplifierOutput, right.AmplifierOutput))
-            differences.Add("Der Verstärkerausgang ist unterschiedlich.");
+            differences.Add(CoreStrings.Profile_DiffAmplifier);
         if (!SameText(left.Gain, right.Gain))
-            differences.Add("Die Gain-Einstellung ist unterschiedlich.");
+            differences.Add(CoreStrings.Profile_DiffGain);
         if (left.StartVolumeDb != right.StartVolumeDb || left.MaximumVolumeDb != right.MaximumVolumeDb)
-            differences.Add("Digitaler Messpegel oder Pegelobergrenze sind unterschiedlich.");
+            differences.Add(CoreStrings.Profile_DiffLevel);
         if (left.IsCouplerCalibrated != right.IsCouplerCalibrated)
-            differences.Add("Der dokumentierte Kalibrierstatus ist unterschiedlich.");
+            differences.Add(CoreStrings.Profile_DiffCalibration);
         return differences;
     }
 
@@ -147,15 +147,15 @@ public static class AudioEndpointBindingRules
         var endpoint = activeEndpoints.SingleOrDefault(candidate =>
             string.Equals(candidate.Id, hardware.EndpointId, StringComparison.Ordinal));
         if (endpoint is null)
-            return ["Der gespeicherte Audioausgang ist nicht verfügbar. Es wurde kein Ersatzgerät gewählt."];
+            return [CoreStrings.Profile_EndpointUnavailable];
 
         var errors = new List<string>();
         if (endpoint.Channels != hardware.Channels)
-            errors.Add("Die Kanalzahl des gespeicherten Audioausgangs hat sich geändert.");
+            errors.Add(CoreStrings.Profile_ChannelsChanged);
         if (endpoint.SampleRate != hardware.SampleRate)
-            errors.Add("Die Abtastrate des gespeicherten Audioausgangs hat sich geändert.");
+            errors.Add(CoreStrings.Profile_SampleRateChanged);
         if (endpoint.BitsPerSample != hardware.BitsPerSample)
-            errors.Add("Die Bittiefe des gespeicherten Audioausgangs hat sich geändert.");
+            errors.Add(CoreStrings.Profile_BitDepthChanged);
         return errors;
     }
 }

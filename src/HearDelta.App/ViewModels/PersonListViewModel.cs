@@ -55,15 +55,15 @@ public partial class PersonListViewModel : ObservableObject
 
     public bool HasPeople => People.Count > 0;
     public bool IsEditingExisting => SelectedPerson is not null;
-    public string EditorTitle => IsEditingExisting ? "Person bearbeiten" : "Neue Person";
-    public string SaveButtonText => IsEditingExisting ? "Änderungen speichern" : "Person anlegen";
+    public string EditorTitle => IsEditingExisting ? Strings.Persons_EditPerson : Strings.Persons_NewPerson;
+    public string SaveButtonText => IsEditingExisting ? Strings.Common_SaveChanges : Strings.Persons_CreateButton;
 
     // Hörgeräte der ausgewählten Person
     public ObservableCollection<HearingAidItem> HearingAids { get; } = [];
     public IReadOnlyList<SelectionOption<TestedEar>> EarOptions { get; } =
     [
-        new(TestedEar.Left, "Linkes Ohr"),
-        new(TestedEar.Right, "Rechtes Ohr")
+        new(TestedEar.Left, Strings.Common_LeftEar),
+        new(TestedEar.Right, Strings.Common_RightEar)
     ];
     public bool HasHearingAids => HearingAids.Count > 0;
     public bool HasNoHearingAids => HearingAids.Count == 0;
@@ -92,8 +92,8 @@ public partial class PersonListViewModel : ObservableObject
     private HearingAidItem? editingHearingAid;
 
     public bool IsEditingHearingAid => EditingHearingAid is not null;
-    public string HearingAidFormTitle => IsEditingHearingAid ? "Hörgerät bearbeiten" : "Hörgerät hinzufügen";
-    public string HearingAidSaveButtonText => IsEditingHearingAid ? "Änderungen speichern" : "Hinzufügen";
+    public string HearingAidFormTitle => IsEditingHearingAid ? Strings.Persons_EditAid : Strings.Persons_AddAid;
+    public string HearingAidSaveButtonText => IsEditingHearingAid ? Strings.Common_SaveChanges : Strings.Persons_Add;
 
     [RelayCommand]
     private void AddHearingAid()
@@ -102,7 +102,7 @@ public partial class PersonListViewModel : ObservableObject
             return;
         if (NewAidEar is null)
         {
-            StatusMessage = "Bitte das Ohr des Hörgeräts wählen.";
+            StatusMessage = Strings.Persons_ChooseAidEar;
             return;
         }
         var manufacturer = NewAidManufacturer.Trim();
@@ -125,14 +125,14 @@ public partial class PersonListViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Hörgerät konnte nicht gespeichert werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Persons_AidSaveFailed, exception.Message);
             return;
         }
         ResetHearingAidForm();
         LoadHearingAids();
         StatusMessage = existing is null
-            ? $"Hörgerät „{aid.DisplayName}“ hinzugefügt."
-            : $"Hörgerät „{aid.DisplayName}“ gespeichert. Bisherige Messungen behalten ihre gespeicherten Gerätedaten.";
+            ? string.Format(Strings.Persons_AidAdded, aid.DisplayName)
+            : string.Format(Strings.Persons_AidSaved, aid.DisplayName);
         HearingAidsChanged?.Invoke();
     }
 
@@ -147,7 +147,7 @@ public partial class PersonListViewModel : ObservableObject
         NewAidModel = aid.Model;
         NewAidDisplayName = aid.DisplayName == $"{aid.Manufacturer} {aid.Model}".Trim() ? string.Empty : aid.DisplayName;
         NewAidEar = EarOptions.First(option => option.Value == aid.Ear);
-        StatusMessage = $"„{aid.DisplayName}“ wird bearbeitet.";
+        StatusMessage = string.Format(Strings.Persons_AidEditing, aid.DisplayName);
     }
 
     [RelayCommand]
@@ -163,9 +163,8 @@ public partial class PersonListViewModel : ObservableObject
         if (item is null)
             return;
         if (confirmation is not null && !confirmation.Confirm(
-                "Hörgerät löschen",
-                $"Soll das Hörgerät „{item.Aid.DisplayName}“ aus der Liste der Person gelöscht werden?\n\n" +
-                "Bisherige Messungen bleiben unverändert und behalten ihre gespeicherten Gerätedaten."))
+                Strings.Persons_DeleteAidTitle,
+                string.Format(Strings.Persons_DeleteAidMessage, item.Aid.DisplayName)))
             return;
         try
         {
@@ -173,13 +172,13 @@ public partial class PersonListViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Hörgerät konnte nicht gelöscht werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Persons_AidDeleteFailed, exception.Message);
             return;
         }
         if (EditingHearingAid?.Aid.Id == item.Aid.Id)
             ResetHearingAidForm();
         LoadHearingAids();
-        StatusMessage = $"Hörgerät „{item.Aid.DisplayName}“ gelöscht. Bisherige Messungen bleiben unverändert.";
+        StatusMessage = string.Format(Strings.Persons_AidDeleted, item.Aid.DisplayName);
         HearingAidsChanged?.Invoke();
     }
 
@@ -227,7 +226,7 @@ public partial class PersonListViewModel : ObservableObject
         allPeople.AddRange(repository.LoadAll());
         ApplyFilter();
         SelectedPerson = People.FirstOrDefault(person => person.Id == selectedId) ?? People.FirstOrDefault();
-        StatusMessage = allPeople.Count == 0 ? "Noch keine Person angelegt." : $"{allPeople.Count} Person(en) geladen.";
+        StatusMessage = allPeople.Count == 0 ? Strings.Persons_NoneCreated : string.Format(Strings.Persons_Loaded, allPeople.Count);
     }
 
     [RelayCommand]
@@ -255,8 +254,8 @@ public partial class PersonListViewModel : ObservableObject
         selectionBeforeNew = null;
         IsEditorOpen = false;
         StatusMessage = existing is null
-            ? $"Person „{person.DisplayName.Trim()}“ angelegt."
-            : $"Änderungen für „{person.DisplayName.Trim()}“ gespeichert.";
+            ? string.Format(Strings.Persons_Created, person.DisplayName.Trim())
+            : string.Format(Strings.Persons_Saved, person.DisplayName.Trim());
     }
 
     [RelayCommand]
@@ -265,7 +264,7 @@ public partial class PersonListViewModel : ObservableObject
         selectionBeforeNew = SelectedPerson ?? selectionBeforeNew;
         SelectedPerson = null;
         IsEditorOpen = true;
-        StatusMessage = "Neue Person: Nur der Name ist erforderlich.";
+        StatusMessage = Strings.Persons_NewPersonHint;
     }
 
     [RelayCommand]

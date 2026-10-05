@@ -16,10 +16,11 @@ public sealed class HearingThresholdChart : Control
     private const double MinimumLevelDbfs = -100d;
     private const double DefaultMaximumLevelDbfs = -6d;
 
-    private static readonly (double FrequencyHz, string Label)[] FrequencyTicks =
+    /// <summary>Hauptteilung; ohne Beschriftung wird die Frequenz in der Oberflächensprache formatiert.</summary>
+    private static readonly (double FrequencyHz, string? Label)[] FrequencyTicks =
     [
-        (31.25d, "31,25"),
-        (62.5d, "62,5"),
+        (31.25d, null),
+        (62.5d, null),
         (125d, "125"),
         (250d, "250"),
         (500d, "500"),
@@ -148,21 +149,21 @@ public sealed class HearingThresholdChart : Control
                 continue;
             var x = MapFrequency(tick.FrequencyHz, plot, minimumFrequencyHz, maximumFrequencyHz);
             drawingContext.DrawLine(majorGrid, new Point(x, plot.Top), new Point(x, plot.Bottom));
-            DrawText(drawingContext, tick.Label, 13, muted, x, plot.Bottom + 12, TextAnchor.CenterTop);
+            DrawText(drawingContext, tick.Label ?? tick.FrequencyHz.ToString("0.##", CultureInfo.CurrentCulture), 13, muted, x, plot.Bottom + 12, TextAnchor.CenterTop);
         }
 
         drawingContext.DrawLine(axis, plot.TopLeft, plot.BottomLeft);
         drawingContext.DrawLine(axis, plot.BottomLeft, plot.BottomRight);
-        DrawText(drawingContext, "Frequenz (Hz)", 14, ink, plot.Left + plot.Width / 2, ActualHeight - 8, TextAnchor.CenterBottom);
+        DrawText(drawingContext, Strings.Chart_FrequencyAxis, 14, ink, plot.Left + plot.Width / 2, ActualHeight - 8, TextAnchor.CenterBottom);
 
-        var yLabel = CreateText("Digitalpegel (dBFS) · lauter nach unten", 14, ink);
+        var yLabel = CreateText(Strings.Chart_LevelAxis, 14, ink);
         drawingContext.PushTransform(new RotateTransform(-90, 18, plot.Top + plot.Height / 2));
         drawingContext.DrawText(yLabel, new Point(18 - yLabel.Width / 2, plot.Top + plot.Height / 2 - yLabel.Height / 2));
         drawingContext.Pop();
 
         if (points.Length == 0)
         {
-            DrawText(drawingContext, "Noch keine Frequenzmessungen vorhanden.", 16, muted, plot.Left + plot.Width / 2, plot.Top + plot.Height / 2, TextAnchor.Center);
+            DrawText(drawingContext, Strings.Chart_NoData, 16, muted, plot.Left + plot.Width / 2, plot.Top + plot.Height / 2, TextAnchor.Center);
             return;
         }
 
@@ -207,7 +208,7 @@ public sealed class HearingThresholdChart : Control
             ? FindBrush("EarLeftBrush", Color.FromRgb(31, 90, 166))
             : FindBrush("EarRightBrush", Color.FromRgb(193, 58, 69));
         var rows = ItemsSource?.OfType<HearingThresholdResultRow>().OrderBy(item => item.FrequencyHz).ToArray() ?? [];
-        return [new Curve(Ear == TestedEar.Left ? "Linkes Ohr" : "Rechtes Ohr", Ear, new Pen(brush, 2.2d), rows)];
+        return [new Curve(Ear == TestedEar.Left ? Strings.Common_LeftEar : Strings.Common_RightEar, Ear, new Pen(brush, 2.2d), rows)];
     }
 
     private static void OnItemsSourceChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs eventArgs)
@@ -229,7 +230,7 @@ public sealed class HearingThresholdChart : Control
     {
         foreach (var curve in curves)
             yield return (curve, curve.Label, 22 + CreateText(curve.Label, 14, Brushes.Black).Width + 24);
-        var noResponse = $"nicht gehört bis {FormatLevel(maximumLevelDbfs)} dBFS";
+        var noResponse = string.Format(Strings.Chart_NotHeardUpTo, FormatLevel(maximumLevelDbfs));
         yield return (null, noResponse, 22 + CreateText(noResponse, 14, Brushes.Black).Width);
     }
 
@@ -325,7 +326,7 @@ public sealed class HearingThresholdChart : Control
     }
 
     private static string FormatLevel(double levelDbfs) =>
-        levelDbfs.ToString("0.##", CultureInfo.InvariantCulture).Replace('-', '−');
+        levelDbfs.ToString("0.##", CultureInfo.CurrentCulture).Replace('-', '−');
 
     private Brush FindBrush(string resourceKey, Color fallback) =>
         TryFindResource(resourceKey) as Brush ?? new SolidColorBrush(fallback);
@@ -354,7 +355,7 @@ public sealed class HearingThresholdChart : Control
 
     private FormattedText CreateText(string text, double fontSize, Brush brush) => new(
         text,
-        CultureInfo.GetCultureInfo("de-DE"),
+        CultureInfo.CurrentUICulture,
         FlowDirection.LeftToRight,
         new Typeface(FontFamily, FontStyle, FontWeight, FontStretch),
         fontSize,

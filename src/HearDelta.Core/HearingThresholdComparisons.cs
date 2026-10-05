@@ -29,23 +29,23 @@ public static class HearingThresholdComparisonRules
         var reference = sessions[0];
         var differences = new List<string>();
         if (sessions.Any(session => session.IsLegacyWithHearingAid))
-            differences.Add("Mindestens ein älterer Test wurde mit Hörgerät gemessen; Hörgeräte unterdrücken Sinustöne.");
+            differences.Add(CoreStrings.ThresholdCompare_LegacyAid);
         foreach (var other in sessions.Skip(1))
         {
             differences.AddRange(MeasurementProfileRules.GetComparisonDifferences(reference.Hardware, other.Hardware));
             if (!string.Equals(reference.ToneCatalogVersion, other.ToneCatalogVersion, StringComparison.Ordinal))
-                differences.Add("Der Tonkatalog ist unterschiedlich.");
+                differences.Add(CoreStrings.ThresholdCompare_ToneCatalog);
             if (reference.MaximumAttenuationDbfs != other.MaximumAttenuationDbfs)
-                differences.Add("Die Pegelobergrenze ist unterschiedlich.");
+                differences.Add(CoreStrings.ThresholdCompare_Maximum);
             if (reference.StartAttenuationDbfs != other.StartAttenuationDbfs)
-                differences.Add("Der Startpegel ist unterschiedlich.");
+                differences.Add(CoreStrings.ThresholdCompare_Start);
             if (reference.SignalPattern != other.SignalPattern || reference.LevelStepDb != other.LevelStepDb)
-                differences.Add("Tonsignal oder Pegelschritt sind unterschiedlich (Protokollversion).");
+                differences.Add(CoreStrings.ThresholdCompare_Signal);
             if (reference.Masking?.LevelDbfs != other.Masking?.LevelDbfs ||
                 reference.Masking?.Algorithm != other.Masking?.Algorithm)
-                differences.Add("Die Vertäubung des Gegenohrs ist unterschiedlich.");
+                differences.Add(CoreStrings.ThresholdCompare_Masking);
             if (reference.ProtocolVersion != other.ProtocolVersion)
-                differences.Add("Die Protokollversion und damit das Messverfahren sind unterschiedlich.");
+                differences.Add(CoreStrings.ThresholdCompare_Protocol);
         }
         return differences.Distinct(StringComparer.Ordinal).ToArray();
     }

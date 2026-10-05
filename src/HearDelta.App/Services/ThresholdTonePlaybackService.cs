@@ -65,7 +65,7 @@ public sealed class ThresholdTonePlaybackService : IThresholdTonePlaybackService
                 $"{request.FrequencyHz:0.##} Hz, Pegel {attenuationDbfs:0.##} dBFS."));
         var (endpoint, startedAt) = await PlayToEndAsync(provider, hardware, stopSignal);
         if (!provider.ReachedMaximum && !stopSignal.IsCancellationRequested)
-            throw new InvalidOperationException("Die WASAPI-Tonwiedergabe wurde vor der Pegelobergrenze beendet.");
+            throw new InvalidOperationException(Strings.Audio_ToneStoppedEarly);
 
         return new ThresholdTonePlaybackReceipt(
             endpoint.Id,
@@ -122,7 +122,7 @@ public sealed class ThresholdTonePlaybackService : IThresholdTonePlaybackService
         var amplitude = Math.Pow(10d, ((double)levelDbfs + correctionDb) / 20d);
         var peak = noiseLoop.Max(value => Math.Abs(value)) * amplitude;
         if (peak > Math.Pow(10d, (double)maximumAttenuationDbfs / 20d))
-            throw new InvalidOperationException("Das Vertäubungsrauschen würde die Pegelobergrenze überschreiten.");
+            throw new InvalidOperationException(Strings.Audio_MaskingAboveLimit);
         return amplitude;
     }
 
@@ -136,7 +136,7 @@ public sealed class ThresholdTonePlaybackService : IThresholdTonePlaybackService
             .EnumerateAudioEndPoints(DataFlow.Render, DeviceState.Active)
             .SingleOrDefault(candidate => string.Equals(candidate.ID, hardware.EndpointId, StringComparison.Ordinal))
             ?? throw new InvalidOperationException(
-                "Der gespeicherte Audioausgang ist nicht verfügbar. Es wurde kein Ersatzgerät gewählt.");
+                Strings.Audio_EndpointUnavailable);
         using var audioClient = device.CreateAudioClient();
         var endpoint = new AudioEndpointDescriptor(
             device.ID,
@@ -175,7 +175,7 @@ public sealed class ThresholdTonePlaybackService : IThresholdTonePlaybackService
 
         var stoppedEvent = await stopped.Task;
         if (stoppedEvent.Exception is not null)
-            throw new InvalidOperationException("Die WASAPI-Tonwiedergabe ist fehlgeschlagen.", stoppedEvent.Exception);
+            throw new InvalidOperationException(Strings.Audio_ToneFailed, stoppedEvent.Exception);
         return (endpoint, startedAt);
     }
 

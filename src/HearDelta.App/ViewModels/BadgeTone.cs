@@ -35,6 +35,6 @@ public sealed record HearingAidItem(PersonHearingAid Aid)
 {
     public BadgeTone EarTone => BadgeTones.ForEar(Aid.Ear);
     public string EarLetter => BadgeTones.EarLetter(Aid.Ear);
-    public string EarText => Aid.Ear == TestedEar.Left ? "Links" : "Rechts";
+    public string EarText => Aid.Ear == TestedEar.Left ? Strings.Common_Left : Strings.Common_Right;
     public string Label => $"{EarText} · {Aid.DisplayName}";
 }

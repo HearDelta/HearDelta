@@ -73,23 +73,23 @@ public partial class MeasurementViewModel : ObservableObject
     public IReadOnlyList<MeasurementMaterialOption> MaterialOptions { get; }
     public IReadOnlyList<SelectionOption<TestedEar>> EarOptions { get; } =
     [
-        new(TestedEar.Left, "Linkes Ohr"),
-        new(TestedEar.Right, "Rechtes Ohr")
+        new(TestedEar.Left, Strings.Common_LeftEar),
+        new(TestedEar.Right, Strings.Common_RightEar)
     ];
     public IReadOnlyList<SelectionOption<ListeningEnvironment>> EnvironmentOptions { get; } =
     [
-        new(ListeningEnvironment.Quiet, "Ruhe"),
-        new(ListeningEnvironment.BackgroundNoise, "Störgeräusch")
+        new(ListeningEnvironment.Quiet, Strings.Common_Quiet),
+        new(ListeningEnvironment.BackgroundNoise, Strings.Common_Noise)
     ];
     public IReadOnlyList<SelectionOption<bool>> LevelModeOptions { get; } =
     [
-        new(true, "Adaptiv"),
-        new(false, "Fester Pegel")
+        new(true, Strings.Measure_Adaptive),
+        new(false, Strings.Measure_FixedLevel)
     ];
     public IReadOnlyList<SelectionOption<bool>> ModeOptions { get; } =
     [
-        new(false, "Einzelmessung"),
-        new(true, "Messreihe")
+        new(false, Strings.Measure_Single),
+        new(true, Strings.Measure_Series)
     ];
     public ObservableCollection<HearingAidChoice> HearingAidChoices { get; } = [];
 
@@ -115,16 +115,16 @@ public partial class MeasurementViewModel : ObservableObject
     /// <summary>Das adaptive Verfahren gibt es vorerst nur für den Zahlentest.</summary>
     public bool IsAdaptiveAvailable => SelectedMaterialOption.Material == SpeechMaterial.Numbers;
     public bool UsesAdaptiveLevel => IsAdaptiveAvailable && SelectedLevelMode.Value;
-    public string SignalToNoiseLabel => UsesAdaptiveLevel ? "Start-SNR" : "Signal-Rausch-Abstand";
+    public string SignalToNoiseLabel => UsesAdaptiveLevel ? Strings.Measure_StartSnr : Strings.Measure_Snr;
     public string LevelModeDescription => !UsesAdaptiveLevel
-        ? "Alle Zahlen werden mit der eingestellten Lautstärke dargeboten; Ergebnis in Prozent richtig."
+        ? Strings.Measure_FixedLevelDescription
         : IsBackgroundNoise
-            ? "Das Störgeräusch läuft während des ganzen Blocks mit festem Pegel; die Sprache wird leiser oder lauter (Start bei der eingestellten Lautstärke und dem Start-SNR). Ergebnis: SNR für 50 % richtig."
-            : "Start bei der eingestellten Lautstärke (deutlich hörbar wählen), höchstens bis zur Pegelobergrenze; der Pegel passt sich an. Ergebnis: Pegel für 50 % richtig.";
+            ? Strings.Measure_AdaptiveNoiseDescription
+            : Strings.Measure_AdaptiveQuietDescription;
 
     public bool IsManualHearingAid => SelectedHearingAidChoice?.Aid is null;
     public bool IsSeriesMode => SelectedMode.Value;
-    public string StartButtonText => IsSeriesMode && measurementSeriesPlan is null ? "Messreihe planen und starten" : "Messung vorbereiten";
+    public string StartButtonText => IsSeriesMode && measurementSeriesPlan is null ? Strings.Measure_PlanSeries : Strings.Measure_Prepare;
     public BadgeTone EarTone => BadgeTones.ForEar(SelectedEar.Value);
     public string EarLabel => SelectedEar.Label;
     public BadgeTone CurrentConditionTone => BadgeTones.ForCondition(CurrentBlock?.Condition ?? HearingAidCondition.WithoutHearingAid);
@@ -164,10 +164,10 @@ public partial class MeasurementViewModel : ObservableObject
 
     public double PresentationVolumeMaximumDb => (double)(SelectedProfile?.MaximumVolumeDb ?? 0m);
     public double PresentationVolumeMinimumDb => Math.Min((double)AdaptiveTrackProtocol.MinimumSpeechLevelDb, PresentationVolumeMaximumDb);
-    public string PresentationVolumeText => $"{PresentationVolumeDb:0} dB";
+    public string PresentationVolumeText => string.Format(Strings.Measure_VolumeValue, PresentationVolumeDb);
     public string PresentationVolumeLabel => UsesAdaptiveLevel && !IsBackgroundNoise
-        ? "Startlautstärke (digital, keine dB SPL)"
-        : "Lautstärke der Sprache (digital, keine dB SPL)";
+        ? Strings.Measure_StartVolumeLabel
+        : Strings.Measure_SpeechVolumeLabel;
 
     [ObservableProperty]
     [NotifyPropertyChangedFor(nameof(CurrentMaterialLabel))]
@@ -197,10 +197,10 @@ public partial class MeasurementViewModel : ObservableObject
     private string hearingAidDisplayName = string.Empty;
 
     [ObservableProperty]
-    private string hearingAidProgramName = "Nicht dokumentiert";
+    private string hearingAidProgramName = Strings.Measure_NotDocumented;
 
     [ObservableProperty]
-    private string hearingAidVolumeState = "Nicht dokumentiert";
+    private string hearingAidVolumeState = Strings.Measure_NotDocumented;
 
     [ObservableProperty]
     private decimal signalToNoiseRatioDb = 5m;
@@ -289,7 +289,7 @@ public partial class MeasurementViewModel : ObservableObject
     public bool IsLiveResult => !IsStoredResult;
 
     [ObservableProperty]
-    private string statusMessage = "Messprofil und Hörseite auswählen.";
+    private string statusMessage = Strings.Measure_InitialStatus;
 
     public MeasurementViewModel(
         LoadedStimulusPack pack,
@@ -324,9 +324,9 @@ public partial class MeasurementViewModel : ObservableObject
         this.now = now ?? (() => DateTimeOffset.UtcNow);
         this.createSeed = createSeed ?? (() => RandomNumberGenerator.GetInt32(int.MaxValue));
         MaterialOptions = [
-            new MeasurementMaterialOption("Phonemkontraste · 5 Antworten", SpeechMaterial.PhonemeContrasts, pack, false),
+            new MeasurementMaterialOption(Strings.Measure_PhonemeMaterial, SpeechMaterial.PhonemeContrasts, pack, false),
             .. (numberPacks ?? []).Select(numberPack => new MeasurementMaterialOption(
-                $"Zahlen · {numberPack.AudioIndex.Generator.Voice}", SpeechMaterial.Numbers, numberPack, true))
+                string.Format(Strings.Measure_NumberMaterial, numberPack.AudioIndex.Generator.Voice), SpeechMaterial.Numbers, numberPack, true))
         ];
         selectedMaterialOption = MaterialOptions[0];
         selectedEar = EarOptions[0];
@@ -349,43 +349,50 @@ public partial class MeasurementViewModel : ObservableObject
     public bool CanAnswer => IsAwaitingAnswer && !IsBusy && !IsPaused;
     public bool CanSubmitNumericAnswer => CanAnswer && UsesFreeNumericResponse && CardinalNumberProtocol.IsCanonicalResponse(NumericAnswer);
     public bool CanPause => IsActiveTest && (IsPaused || !IsBusy || currentPlaybackStopSignal is not null);
-    public string PauseButtonText => IsPaused ? "Test fortsetzen" : "Test pausieren";
+    public string PauseButtonText => IsPaused ? Strings.Test_Resume : Strings.Test_Pause;
     public int CurrentBlockNumber => CurrentBlockIndex + 1;
     public string CurrentConditionLabel => CurrentBlock?.Condition == HearingAidCondition.WithHearingAid
-        ? "mit Hörgerät"
-        : "ohne Hörgerät";
-    public string PreparationTitle => $"Block {CurrentBlockNumber} von 2 · {CurrentConditionLabel}";
-    public string BlockTitle => $"Block {CurrentBlockNumber} von 2";
-    public string PreparationInstruction => CurrentBlock?.Condition == HearingAidCondition.WithHearingAid
-        ? $"Das Hörgerät am {EarLabelLower} einsetzen."
-        : $"Für diesen Block kein Hörgerät tragen. Geprüft wird ausschließlich das {EarLabelLower}.";
+        ? Strings.Condition_WithAidLower
+        : Strings.Condition_WithoutAidLower;
+    public string PreparationTitle => string.Format(Strings.Measure_PreparationTitle, CurrentBlockNumber, CurrentConditionLabel);
+    public string BlockTitle => string.Format(Strings.Measure_BlockTitle, CurrentBlockNumber);
+    public string PreparationInstruction => (CurrentBlock?.Condition == HearingAidCondition.WithHearingAid, IsLeftEar) switch
+    {
+        (true, true) => Strings.Measure_InsertAidLeft,
+        (true, false) => Strings.Measure_InsertAidRight,
+        (false, true) => Strings.Measure_NoAidLeft,
+        (false, false) => Strings.Measure_NoAidRight
+    };
     public string ProgressText => runPlan is null
-        ? $"0 von {pack.Catalog.ItemsPerList * 2}"
-        : $"{Math.Min(runPlan.Blocks.Sum(block => block.Stimuli.Count), (CurrentBlockIndex * pack.Catalog.ItemsPerList) + CurrentStimulusIndex + 1)} von {runPlan.Blocks.Sum(block => block.Stimuli.Count)}";
+        ? string.Format(Strings.Measure_Progress, 0, pack.Catalog.ItemsPerList * 2)
+        : string.Format(
+            Strings.Measure_Progress,
+            Math.Min(runPlan.Blocks.Sum(block => block.Stimuli.Count), (CurrentBlockIndex * pack.Catalog.ItemsPerList) + CurrentStimulusIndex + 1),
+            runPlan.Blocks.Sum(block => block.Stimuli.Count));
     public double ProgressPercent => runPlan is null
         ? 0
         : 100d * ((CurrentBlockIndex * pack.Catalog.ItemsPerList) + CurrentStimulusIndex) /
           runPlan.Blocks.Sum(block => block.Stimuli.Count);
     public string AiVoiceDisclosure => pack.AudioIndex.Generator.AiGeneratedVoiceDisclosure ??
-        "Die Stimuli verwenden eine synthetisch erzeugte Stimme.";
+        Strings.Measure_AiVoice;
     public string ResultsTitle => IsStoredResult
-        ? WasAborted ? "Gespeichertes Teilergebnis" : "Gespeichertes Messergebnis"
-        : WasAborted ? "Messung abgebrochen" : "Ergebnis der gepaarten Messung";
+        ? WasAborted ? Strings.Measure_StoredPartial : Strings.Measure_StoredResult
+        : WasAborted ? Strings.Measure_Aborted : Strings.Measure_ResultTitle;
     public string ResultsDescription => IsStoredResult && CurrentSession is { } session
-        ? $"{session.StartedAt.ToLocalTime().ToString("dd.MM.yyyy HH:mm", CultureInfo.GetCultureInfo("de-DE"))} · {FormatEar(session.Ear)} · {session.HearingAid.DisplayName} · keine klinische Bewertung"
+        ? string.Format(Strings.Measure_StoredDescription, session.StartedAt.ToLocalTime(), FormatEar(session.Ear), session.HearingAid.DisplayName)
         : WasAborted
-            ? "Teilergebnis bis zum Abbruch · keine klinische Bewertung"
-            : "Deskriptiver persönlicher Vergleich · keine klinische Bewertung";
+            ? Strings.Measure_PartialDescription
+            : Strings.Measure_ResultDescription;
     public bool IsAdaptiveResult => Result?.AdaptiveParameter is not null;
     public string WithoutResultText => IsAdaptiveResult
         ? AdaptiveResultText.Threshold(Result!.WithoutHearingAid.Adaptive, Result.AdaptiveParameter)
         : Result?.WithoutHearingAid.TotalResponses > 0
-            ? $"{Result.WithoutHearingAid.PercentCorrect:0.#} %"
+            ? string.Format(Strings.Measure_Percent, Result.WithoutHearingAid.PercentCorrect)
             : "–";
     public string WithResultText => IsAdaptiveResult
         ? AdaptiveResultText.Threshold(Result!.WithHearingAid.Adaptive, Result.AdaptiveParameter)
         : Result?.WithHearingAid.TotalResponses > 0
-            ? $"{Result.WithHearingAid.PercentCorrect:0.#} %"
+            ? string.Format(Strings.Measure_Percent, Result.WithHearingAid.PercentCorrect)
             : "–";
     public string DifferenceText => IsAdaptiveResult
         ? AdaptiveResultText.Improvement(Result!.ThresholdImprovementDb)
@@ -393,31 +400,31 @@ public partial class MeasurementViewModel : ObservableObject
           Result.WithoutHearingAid.TotalResponses == 0 ||
           Result.WithHearingAid.TotalResponses == 0
             ? "–"
-            : $"{Result.DifferencePercentagePoints:+0.#;-0.#;0} Prozentpunkte";
+            : string.Format(Strings.Measure_PercentagePoints, Result.DifferencePercentagePoints);
     public string DifferenceLabel => IsAdaptiveResult
-        ? "Gewinn mit Hörgerät (Schwelle ohne minus mit)"
-        : "Differenz mit minus ohne Hörgerät";
+        ? Strings.Measure_GainLabel
+        : Strings.Measure_DifferenceLabel;
     public string ResultExplanationText => IsAdaptiveResult ? AdaptiveResultText.Explanation : ChanceLevelText;
     public string WithoutDetailText => Result is null
         ? string.Empty
         : IsAdaptiveResult
             ? AdaptiveResultText.Detail(Result.WithoutHearingAid, Result.AdaptiveParameter)
             : Result.WithoutHearingAid.TotalResponses == 0
-                ? "Noch keine Antwort erfasst"
-                : $"{Result.WithoutHearingAid.CorrectResponses} von {Result.WithoutHearingAid.TotalResponses} Antworten richtig";
+                ? Strings.Measure_NoAnswerYet
+                : string.Format(Strings.Measure_CorrectOf, Result.WithoutHearingAid.CorrectResponses, Result.WithoutHearingAid.TotalResponses);
     public string WithDetailText => Result is null
         ? string.Empty
         : IsAdaptiveResult
             ? AdaptiveResultText.Detail(Result.WithHearingAid, Result.AdaptiveParameter)
             : Result.WithHearingAid.TotalResponses == 0
-                ? "Noch keine Antwort erfasst"
-                : $"{Result.WithHearingAid.CorrectResponses} von {Result.WithHearingAid.TotalResponses} Antworten richtig";
+                ? Strings.Measure_NoAnswerYet
+                : string.Format(Strings.Measure_CorrectOf, Result.WithHearingAid.CorrectResponses, Result.WithHearingAid.TotalResponses);
     public string CurrentMaterialLabel => SelectedMaterialOption.Label;
     public bool UsesFreeNumericResponse => SelectedMaterialOption.FreeNumericResponse;
     public string ChanceLevelText => pack.Catalog.ChanceLevelPercent is { } chance
         ? UsesFreeNumericResponse
-            ? $"Freie dreistellige Zahleneingabe · Zufallstrefferquote 1/900 ({chance:0.###} %)."
-            : $"Zufallstrefferquote bei fünf Alternativen: {chance:0} %."
+            ? string.Format(Strings.Measure_ChanceNumbers, chance)
+            : string.Format(Strings.Measure_ChanceFive, chance)
         : string.Empty;
     public bool HasConfusionCells => ConfusionCells.Count > 0;
     public bool HasPreparedSeries => measurementSeriesPlan is not null;
@@ -425,12 +432,15 @@ public partial class MeasurementViewModel : ObservableObject
         CurrentSession is { CompletedAt: not null, AbortedAt: null };
     public string AdvanceSeriesButtonText => measurementSeriesPlan is not null &&
         currentSeriesRoundIndex + 1 >= measurementSeriesPlan.Rounds.Count
-        ? "Messserie abschließen"
-        : "Nächstes Serienpaar vorbereiten";
+        ? Strings.Measure_FinishSeries
+        : Strings.Measure_NextPair;
     public string SeriesPlanSummary => measurementSeriesPlan is null
-        ? "Optional: Eine Serie plant mehrere Paare mit ausbalancierter Bedingungsfolge und getrennten Listen."
-        : $"Serie vorbereitet · Paar {currentSeriesRoundIndex + 1} von {measurementSeriesPlan.Rounds.Count} · " +
-          $"zuerst {FormatCondition(measurementSeriesPlan.Rounds[currentSeriesRoundIndex].FirstCondition)}.";
+        ? Strings.Measure_SeriesOptional
+        : string.Format(
+            Strings.Measure_SeriesPrepared,
+            currentSeriesRoundIndex + 1,
+            measurementSeriesPlan.Rounds.Count,
+            FormatCondition(measurementSeriesPlan.Rounds[currentSeriesRoundIndex].FirstCondition));
 
     public void ReplaceProfiles(IEnumerable<MeasurementProfile> profiles)
     {
@@ -450,8 +460,8 @@ public partial class MeasurementViewModel : ObservableObject
         personId = person?.Id;
         personName = person?.DisplayName;
         StatusMessage = person is null
-            ? "Vor einer Messung muss eine Person ausgewählt werden."
-            : $"Messung für {person.DisplayName} vorbereiten.";
+            ? Strings.Measure_NeedsPerson
+            : string.Format(Strings.Measure_PrepareFor, person.DisplayName);
         if (personChanged)
         {
             measurementSeriesPlan = null;
@@ -518,7 +528,8 @@ public partial class MeasurementViewModel : ObservableObject
             SelectedEar = EarOptions.First(value => value.Value == ear);
             if (measurementSeriesPlan is null)
                 SelectedMode = ModeOptions[0];
-            PlanStepText = $"Schritt {(int)step} von 5 des empfohlenen Ablaufs: {TestPlanTexts.Title(step)}, {(ear == TestedEar.Left ? "linkes" : "rechtes")} Ohr.";
+            PlanStepText = string.Format(
+                ear == TestedEar.Left ? Strings.Measure_PlanStepLeft : Strings.Measure_PlanStepRight, (int)step, TestPlanTexts.Title(step));
         }
         finally
         {
@@ -552,7 +563,7 @@ public partial class MeasurementViewModel : ObservableObject
             var capped = Math.Min(level, SelectedProfile.MaximumVolumeDb);
             SetPresentationVolumeSilently((double)capped);
             if (capped < level)
-                source += $" · auf die Pegelobergrenze {SelectedProfile.MaximumVolumeDb:0.#} dB begrenzt";
+                source += string.Format(Strings.Measure_CappedToLimit, SelectedProfile.MaximumVolumeDb);
         }
         if (IsBackgroundNoise && recommendation.SignalToNoiseRatioDb is { } snr)
             SignalToNoiseRatioDb = Math.Clamp(snr, AdaptiveTrackProtocol.MinimumSignalToNoiseRatioDb, AdaptiveTrackProtocol.MaximumSignalToNoiseRatioDb);
@@ -592,7 +603,7 @@ public partial class MeasurementViewModel : ObservableObject
         if (!suppressTestWord && Stage == MeasurementStage.Setup)
         {
             if (recommendationSource.Length > 0)
-                LevelSourceText = $"Von Hand eingestellt. Vorschlag war: {recommendationSource}";
+                LevelSourceText = string.Format(Strings.Measure_ManualLevel, recommendationSource);
             _ = PlayTestWordAsync();
         }
     }
@@ -629,7 +640,7 @@ public partial class MeasurementViewModel : ObservableObject
                 await Task.Delay(testWordDelay, stopSignal.Token);
             if (SelectedProfile is null)
             {
-                StatusMessage = "Für das Testwort zuerst ein Messprofil wählen.";
+                StatusMessage = Strings.Measure_ChooseProfileForTestWord;
                 return;
             }
             var hardware = SelectedProfile.CreateSnapshot() with { StartVolumeDb = (decimal)PresentationVolumeDb };
@@ -657,14 +668,14 @@ public partial class MeasurementViewModel : ObservableObject
                     0,
                     hardware.SampleRate),
                 stopSignal.Token);
-            StatusMessage = $"Testwort mit {PresentationVolumeText} auf dem {EarLabelLower} abgespielt.";
+            StatusMessage = string.Format(IsLeftEar ? Strings.Measure_TestWordPlayedLeft : Strings.Measure_TestWordPlayedRight, PresentationVolumeText);
         }
         catch (OperationCanceledException) when (stopSignal.IsCancellationRequested)
         {
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Testwort konnte nicht abgespielt werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Measure_TestWordFailed, exception.Message);
         }
         finally
         {
@@ -708,7 +719,7 @@ public partial class MeasurementViewModel : ObservableObject
         HearingAidChoices.Clear();
         foreach (var aid in personHearingAids.Where(aid => aid.Ear == SelectedEar.Value))
             HearingAidChoices.Add(new HearingAidChoice(aid, aid.DisplayName));
-        HearingAidChoices.Add(new HearingAidChoice(null, "Anderes Gerät eingeben"));
+        HearingAidChoices.Add(new HearingAidChoice(null, Strings.Measure_OtherDevice));
 
         if (keepFields)
         {
@@ -822,7 +833,7 @@ public partial class MeasurementViewModel : ObservableObject
         IsStoredResult = true;
         Stage = MeasurementStage.Results;
         NotifyResultProperties();
-        StatusMessage = $"Gespeichertes Ergebnis vom {session.StartedAt.ToLocalTime().ToString("dd.MM.yyyy HH:mm", CultureInfo.GetCultureInfo("de-DE"))}.";
+        StatusMessage = string.Format(Strings.Measure_StoredResultStatus, session.StartedAt.ToLocalTime());
     }
 
     private PlannedMeasurementBlock? CurrentBlock => runPlan is not null && CurrentBlockIndex < runPlan.Blocks.Count
@@ -831,19 +842,19 @@ public partial class MeasurementViewModel : ObservableObject
     private PlannedStimulus? CurrentStimulus => CurrentBlock is not null && CurrentStimulusIndex < CurrentBlock.Stimuli.Count
         ? CurrentBlock.Stimuli[CurrentStimulusIndex]
         : null;
-    private string EarLabelLower => SelectedEar.Value == TestedEar.Left ? "linke Ohr" : "rechte Ohr";
+    private bool IsLeftEar => SelectedEar.Value == TestedEar.Left;
 
     [RelayCommand]
     private void StartMeasurement()
     {
         if (personId is null)
         {
-            StatusMessage = "Vor der Messung muss eine Person ausgewählt werden.";
+            StatusMessage = Strings.Measure_NeedsPersonBefore;
             return;
         }
         if (SelectedProfile is null)
         {
-            StatusMessage = "Vor der Messung muss ein gespeichertes Messprofil ausgewählt werden.";
+            StatusMessage = Strings.Measure_NeedsProfile;
             return;
         }
 
@@ -862,7 +873,7 @@ public partial class MeasurementViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Audioausgänge konnten nicht geprüft werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Test_OutputsCheckFailed, exception.Message);
             return;
         }
         if (endpointErrors.Count > 0)
@@ -876,26 +887,26 @@ public partial class MeasurementViewModel : ObservableObject
             string.IsNullOrWhiteSpace(HearingAidProgramName) ||
             string.IsNullOrWhiteSpace(HearingAidVolumeState))
         {
-            StatusMessage = "Bitte das Hörgerät wählen oder Hersteller, Modell und Bezeichnung eingeben; Programm und Lautstärkezustand werden ebenfalls benötigt.";
+            StatusMessage = Strings.Measure_NeedsAid;
             return;
         }
         if (SelectedMaterialOption.Material == SpeechMaterial.Numbers &&
             IsBackgroundNoise &&
             pack.CardinalNoiseProfile is null)
         {
-            StatusMessage = "Das geprüfte materialgebundene Rauschprofil fehlt; der Kardinalzahltest im Störgeräusch bleibt gesperrt.";
+            StatusMessage = Strings.Measure_NoiseProfileMissing;
             return;
         }
         if (SelectedMaterialOption.Material == SpeechMaterial.Numbers &&
             IsBackgroundNoise &&
             !pack.CardinalNoiseProfile!.FirCoefficientsBySampleRate.ContainsKey(SelectedProfile.SampleRate))
         {
-            StatusMessage = "Das materialgebundene Rauschprofil unterstützt die gespeicherte Ausgabe-Abtastrate nicht.";
+            StatusMessage = Strings.Measure_NoiseProfileSampleRate;
             return;
         }
         if (IsBackgroundNoise && SignalToNoiseRatioDb is < -20m or > 30m)
         {
-            StatusMessage = "Der Signal-Rausch-Abstand muss zwischen -20 dB und +30 dB liegen.";
+            StatusMessage = Strings.Measure_SnrRange;
             return;
         }
 
@@ -917,15 +928,14 @@ public partial class MeasurementViewModel : ObservableObject
                 var maximumSnr = ContinuousNoiseProtocol.MaximumSignalToNoiseRatioDb(settings, statistics, hardware.MaximumVolumeDb);
                 if (maximumSnr < SignalToNoiseRatioDb)
                 {
-                    StatusMessage = $"Die Lautstärke ist für den Störgeräuschtest um {SignalToNoiseRatioDb - maximumSnr:0.#} dB zu hoch: " +
-                        "der leiseste Stimulus würde sonst die Pegelobergrenze überschreiten.";
+                    StatusMessage = string.Format(Strings.Measure_VolumeTooHigh, SignalToNoiseRatioDb - maximumSnr);
                     return;
                 }
                 noiseSettings = (settings, maximumSnr);
             }
             catch (Exception exception)
             {
-                StatusMessage = $"Das Dauerrauschen konnte nicht vorbereitet werden: {exception.Message}";
+                StatusMessage = string.Format(Strings.Measure_NoiseFailed, exception.Message);
                 return;
             }
         }
@@ -984,7 +994,7 @@ public partial class MeasurementViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Messung konnte nicht lokal angelegt werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Measure_CreateFailed, exception.Message);
             return;
         }
         var annotationWarning = SaveAnnotation(session.Id);
@@ -997,8 +1007,8 @@ public partial class MeasurementViewModel : ObservableObject
         ResetPreparationChecks();
         Stage = MeasurementStage.Preparation;
         StatusMessage = plannedRound is null
-            ? "Die randomisierte Messung wurde lokal angelegt. Bitte den ersten Block vorbereiten."
-            : $"Serienpaar {plannedRound.PairNumber} von {measurementSeriesPlan!.Rounds.Count} wurde lokal angelegt. Bitte den ersten Block vorbereiten.";
+            ? Strings.Measure_Created
+            : string.Format(Strings.Measure_SeriesPairCreated, plannedRound.PairNumber, measurementSeriesPlan!.Rounds.Count);
         StatusMessage += annotationWarning;
     }
 
@@ -1012,7 +1022,7 @@ public partial class MeasurementViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            return $" Name und Kommentar konnten nicht gespeichert werden: {exception.Message}";
+            return string.Format(Strings.Annotation_SaveFailedSuffix, exception.Message);
         }
     }
 
@@ -1021,7 +1031,7 @@ public partial class MeasurementViewModel : ObservableObject
     {
         if (!CanStartBlock || CurrentSession is null)
         {
-            StatusMessage = "Bitte alle drei Vorbereitungsprüfungen bestätigen.";
+            StatusMessage = Strings.Measure_ConfirmAll;
             return;
         }
         IReadOnlyList<string> endpointErrors;
@@ -1033,7 +1043,7 @@ public partial class MeasurementViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Audioausgänge konnten nicht geprüft werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Test_OutputsCheckFailed, exception.Message);
             return;
         }
         if (endpointErrors.Count > 0)
@@ -1062,7 +1072,7 @@ public partial class MeasurementViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Aufbauzustand konnte nicht lokal gespeichert werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Measure_SetupSaveFailed, exception.Message);
             return;
         }
         CurrentSession = updatedSession;
@@ -1086,7 +1096,7 @@ public partial class MeasurementViewModel : ObservableObject
     {
         if (!CanSubmitNumericAnswer)
         {
-            StatusMessage = "Bitte eine dreistellige Zahl von 100 bis 999 eingeben oder Nicht verstanden wählen.";
+            StatusMessage = Strings.Measure_EnterValidNumber;
             return;
         }
         var response = NumericAnswer;
@@ -1109,7 +1119,7 @@ public partial class MeasurementViewModel : ObservableObject
         if (IsPaused)
         {
             IsPaused = false;
-            StatusMessage = "Messung wird mit dem aktuellen Wort fortgesetzt.";
+            StatusMessage = Strings.Measure_Resumed;
             await PlayCurrentStimulusAsync();
             return;
         }
@@ -1126,7 +1136,7 @@ public partial class MeasurementViewModel : ObservableObject
         OnPropertyChanged(nameof(CanPause));
         stopSignal?.Cancel();
         IsBusy = false;
-        StatusMessage = "Messung pausiert. Das aktuelle Wort wird beim Fortsetzen erneut abgespielt.";
+        StatusMessage = Strings.Measure_Paused;
     }
 
     public void CancelActiveTest()
@@ -1153,11 +1163,11 @@ public partial class MeasurementViewModel : ObservableObject
         try
         {
             sessions.Save(personId!.Value, abortedSession);
-            StatusMessage = "Messung abgebrochen. Die bis dahin erzielten Ergebnisse wurden lokal gespeichert.";
+            StatusMessage = Strings.Measure_AbortedSaved;
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Messung abgebrochen, der Abbruchstatus konnte aber nicht gespeichert werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Measure_AbortSaveFailed, exception.Message);
         }
 
         CurrentSession = abortedSession;
@@ -1218,8 +1228,8 @@ public partial class MeasurementViewModel : ObservableObject
         PlaybackFailed = false;
         Stage = MeasurementStage.Setup;
         StatusMessage = measurementSeriesPlan is null
-            ? "Neue Messung vorbereiten."
-            : $"Serienpaar {currentSeriesRoundIndex + 1} von {measurementSeriesPlan.Rounds.Count} vorbereiten.";
+            ? Strings.Measure_PrepareNew
+            : string.Format(Strings.Measure_PreparePair, currentSeriesRoundIndex + 1, measurementSeriesPlan.Rounds.Count);
         NotifySeriesProperties();
         // Innerhalb einer Messreihe bleiben Lautstärke und SNR unverändert, damit die Paare vergleichbar bleiben.
         if (measurementSeriesPlan is null)
@@ -1231,13 +1241,13 @@ public partial class MeasurementViewModel : ObservableObject
     {
         if (personId is null)
         {
-            StatusMessage = "Vor der Serienplanung muss eine Person ausgewählt werden.";
+            StatusMessage = Strings.Measure_SeriesNeedsPerson;
             return;
         }
 
         if (SeriesPairCount is < 2 or > 12)
         {
-            StatusMessage = "Eine Messserie kann derzeit 2 bis 12 Paare enthalten.";
+            StatusMessage = Strings.Measure_SeriesPairRange;
             return;
         }
 
@@ -1256,7 +1266,7 @@ public partial class MeasurementViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Messserie konnte nicht geplant werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Measure_SeriesPlanFailed, exception.Message);
         }
     }
 
@@ -1274,7 +1284,7 @@ public partial class MeasurementViewModel : ObservableObject
             currentSeriesRoundIndex = 0;
             SelectedMode = ModeOptions[0];
             NewMeasurement();
-            StatusMessage = "Messserie abgeschlossen. Neue Einzelmessung vorbereiten.";
+            StatusMessage = Strings.Measure_SeriesFinished;
             return;
         }
 
@@ -1290,7 +1300,7 @@ public partial class MeasurementViewModel : ObservableObject
         measurementSeriesPlan = null;
         currentSeriesRoundIndex = 0;
         SelectedMode = ModeOptions[0];
-        StatusMessage = "Serienplanung verworfen. Einzelmessung vorbereiten.";
+        StatusMessage = Strings.Measure_SeriesDiscarded;
         NotifySeriesProperties();
     }
 
@@ -1300,8 +1310,8 @@ public partial class MeasurementViewModel : ObservableObject
             : null;
 
     private static string FormatCondition(HearingAidCondition condition) => condition == HearingAidCondition.WithHearingAid
-        ? "mit Hörgerät"
-        : "ohne Hörgerät";
+        ? Strings.Condition_WithAidLower
+        : Strings.Condition_WithoutAidLower;
 
     private void NotifySeriesProperties()
     {
@@ -1345,12 +1355,12 @@ public partial class MeasurementViewModel : ObservableObject
             measurementSeriesPlan = persisted.Plan;
             currentSeriesRoundIndex = persisted.CurrentRoundIndex;
             SelectedMode = ModeOptions[1];
-            StatusMessage = $"Gespeicherte {SeriesPlanSummary.ToLowerInvariant()} wiederhergestellt.";
+            StatusMessage = string.Format(Strings.Measure_SeriesRestored, SeriesPlanSummary);
             NotifySeriesProperties();
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Gespeicherte Messserie konnte nicht geladen werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Measure_SeriesLoadFailed, exception.Message);
         }
     }
 
@@ -1368,7 +1378,7 @@ public partial class MeasurementViewModel : ObservableObject
         currentPlaybackStopSignal = playbackStopSignal;
         OnPropertyChanged(nameof(CanPause));
         ResponseAlternatives.Clear();
-        StatusMessage = "Stimulus wird über den gespeicherten Ausgang abgespielt …";
+        StatusMessage = Strings.Measure_Playing;
         try
         {
             var (speechLevelDb, signalToNoiseRatioDb) = GetPresentationValues(CurrentSession);
@@ -1397,7 +1407,7 @@ public partial class MeasurementViewModel : ObservableObject
             foreach (var alternative in (stimulus.ResponseAlternatives ?? []).OrderBy(value => value.Index))
                 ResponseAlternatives.Add(new ResponseAlternativeOption(alternative.Index, alternative.Text));
             IsAwaitingAnswer = true;
-            StatusMessage = "Bitte genau eine Antwort auswählen. Der Stimulus wird nicht wiederholt.";
+            StatusMessage = Strings.Measure_ChooseOne;
         }
         catch (OperationCanceledException) when (playbackStopSignal.IsCancellationRequested)
         {
@@ -1408,7 +1418,7 @@ public partial class MeasurementViewModel : ObservableObject
                 Stage == MeasurementStage.ActiveTest)
             {
                 PlaybackFailed = true;
-                StatusMessage = $"Wiedergabe blockiert: {exception.Message}";
+                StatusMessage = string.Format(Strings.Test_PlaybackBlocked, exception.Message);
             }
         }
         finally
@@ -1475,7 +1485,7 @@ public partial class MeasurementViewModel : ObservableObject
                 if (timing.InterStimulusPause > TimeSpan.Zero)
                 {
                     var stimulusIndex = CurrentStimulusIndex;
-                    StatusMessage = "Antwort gespeichert. Das nächste Wort folgt gleich …";
+                    StatusMessage = Strings.Measure_AnswerSaved;
                     await Task.Delay(timing.InterStimulusPause);
                     // Während der Pause kann pausiert, fortgesetzt oder abgebrochen worden sein.
                     if (Stage != MeasurementStage.ActiveTest || IsPaused || IsBusy || IsAwaitingAnswer ||
@@ -1494,7 +1504,7 @@ public partial class MeasurementViewModel : ObservableObject
                 ResponseAlternatives.Clear();
                 ResetPreparationChecks();
                 Stage = MeasurementStage.Preparation;
-                StatusMessage = "Erster Block gespeichert. Bitte die Hörgerätebedingung für Block 2 wechseln.";
+                StatusMessage = Strings.Measure_FirstBlockSaved;
                 return;
             }
 
@@ -1503,12 +1513,12 @@ public partial class MeasurementViewModel : ObservableObject
             ResponseAlternatives.Clear();
             Stage = MeasurementStage.Results;
             NotifyResultProperties();
-            StatusMessage = "Messung vollständig und lokal gespeichert.";
+            StatusMessage = Strings.Measure_Completed;
         }
         catch (Exception exception)
         {
             IsAwaitingAnswer = true;
-            StatusMessage = $"Antwort konnte nicht gespeichert werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Measure_AnswerSaveFailed, exception.Message);
         }
         finally
         {
@@ -1528,9 +1538,9 @@ public partial class MeasurementViewModel : ObservableObject
         if (Result is not null)
         {
             foreach (var cell in PhonemeConfusionAnalysis.Analyze(Result.WithoutHearingAid).Cells)
-                ConfusionCells.Add(cell);
+                ConfusionCells.Add(cell with { SelectedResponse = ConfusionResponseLabel(cell.SelectedResponse) });
             foreach (var cell in PhonemeConfusionAnalysis.Analyze(Result.WithHearingAid).Cells)
-                ConfusionCells.Add(cell);
+                ConfusionCells.Add(cell with { SelectedResponse = ConfusionResponseLabel(cell.SelectedResponse) });
         }
         OnPropertyChanged(nameof(HasConfusionCells));
         OnPropertyChanged(nameof(WasAborted));
@@ -1578,7 +1588,7 @@ public partial class MeasurementViewModel : ObservableObject
         var session = CurrentSession!;
         if (noiseBed is null)
         {
-            StatusMessage = "Störgeräusch läuft an …";
+            StatusMessage = Strings.Measure_NoiseStarting;
             var started = await continuousNoise!.StartAsync(
                 pack,
                 session.Hardware,
@@ -1595,7 +1605,7 @@ public partial class MeasurementViewModel : ObservableObject
             noiseBed = started;
             if (timing.NoiseLeadIn > TimeSpan.Zero)
                 await Task.Delay(timing.NoiseLeadIn, cancellationToken);
-            StatusMessage = "Stimulus wird über den gespeicherten Ausgang abgespielt …";
+            StatusMessage = Strings.Measure_Playing;
         }
         return await noiseBed.PlayAsync(stimulusId, signalToNoiseRatioDb, cancellationToken);
     }
@@ -1637,8 +1647,19 @@ public partial class MeasurementViewModel : ObservableObject
         OnPropertyChanged(nameof(ProgressPercent));
     }
 
+    /// <summary>
+    /// Anzeigetext einer Auswahl in der Verwechslungstabelle. Gewählte Stimuluswörter bleiben in der Sprache des
+    /// Stimuluspakets; nur die Sammelkategorien werden übersetzt.
+    /// </summary>
+    internal static string ConfusionResponseLabel(string selectedResponse) => selectedResponse switch
+    {
+        PhonemeConfusionAnalysis.NotUnderstood => Strings.Measure_NotUnderstood,
+        PhonemeConfusionAnalysis.OtherResponse => Strings.Confusion_OtherResponse,
+        _ => selectedResponse
+    };
+
     private static int CreateNoiseSeed(int sessionSeed, int blockNumber, int presentationOrder) =>
         unchecked((sessionSeed * 397) ^ (blockNumber * 101) ^ presentationOrder);
 
-    private static string FormatEar(TestedEar ear) => ear == TestedEar.Left ? "linkes Ohr" : "rechtes Ohr";
+    private static string FormatEar(TestedEar ear) => ear == TestedEar.Left ? Strings.Common_LeftEarLower : Strings.Common_RightEarLower;
 }

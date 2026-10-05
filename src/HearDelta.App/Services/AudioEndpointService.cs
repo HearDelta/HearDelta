@@ -30,16 +30,16 @@ public sealed class AudioEndpointService : IAudioEndpointService
         CancellationToken cancellationToken = default)
     {
         if (channel is < 0 or > 1)
-            throw new ArgumentOutOfRangeException(nameof(channel), "Die Kanalprüfung unterstützt nur links oder rechts.");
+            throw new ArgumentOutOfRangeException(nameof(channel), Strings.Audio_ChannelTestSides);
         if (maximumVolumeDb is > 0 or < -96)
-            throw new ArgumentOutOfRangeException(nameof(maximumVolumeDb), "Die digitale Pegelobergrenze muss zwischen -96 dB und 0 dB liegen.");
+            throw new ArgumentOutOfRangeException(nameof(maximumVolumeDb), Strings.Audio_MaximumRange);
         if (digitalAttenuationDb < -96 || digitalAttenuationDb > maximumVolumeDb)
-            throw new ArgumentOutOfRangeException(nameof(digitalAttenuationDb), "Die digitale Absenkung überschreitet die gespeicherte Pegelobergrenze.");
+            throw new ArgumentOutOfRangeException(nameof(digitalAttenuationDb), Strings.Audio_AttenuationAboveLimit);
 
         using var enumerator = new MMDeviceEnumerator();
         using var device = enumerator.EnumerateAudioEndPoints(DataFlow.Render, DeviceState.Active)
             .SingleOrDefault(candidate => string.Equals(candidate.ID, endpointId, StringComparison.Ordinal))
-            ?? throw new InvalidOperationException("Der gespeicherte Audioausgang ist nicht verfügbar. Es wurde kein Ersatzgerät gewählt.");
+            ?? throw new InvalidOperationException(Strings.Audio_EndpointUnavailable);
 
         using var client = device.CreateAudioClient();
         var provider = new ChannelToneProvider(client.MixFormat.SampleRate, channel, digitalAttenuationDb);
@@ -60,7 +60,7 @@ public sealed class AudioEndpointService : IAudioEndpointService
         output.Stop();
         var stoppedEvent = await stopped.Task.WaitAsync(cancellationToken);
         if (stoppedEvent.Exception is not null)
-            throw new InvalidOperationException("Die WASAPI-Kanalprüfung ist fehlgeschlagen.", stoppedEvent.Exception);
+            throw new InvalidOperationException(Strings.Audio_ChannelTestFailed, stoppedEvent.Exception);
     }
 
     internal sealed class ChannelToneProvider : ISampleProvider

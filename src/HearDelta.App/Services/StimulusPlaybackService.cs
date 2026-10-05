@@ -51,7 +51,7 @@ public sealed class StimulusPlaybackService : IStimulusPlaybackService
             .EnumerateAudioEndPoints(DataFlow.Render, DeviceState.Active)
             .SingleOrDefault(candidate => string.Equals(candidate.ID, hardware.EndpointId, StringComparison.Ordinal))
             ?? throw new InvalidOperationException(
-                "Der gespeicherte Audioausgang ist nicht verfügbar. Es wurde kein Ersatzgerät gewählt.");
+                Strings.Audio_EndpointUnavailable);
         using var audioClient = device.CreateAudioClient();
         var endpoint = new AudioEndpointDescriptor(
             device.ID,
@@ -86,7 +86,7 @@ public sealed class StimulusPlaybackService : IStimulusPlaybackService
         {
             var prematureStop = await stopped.Task.WaitAsync(cancellationToken);
             if (prematureStop.Exception is not null)
-                throw new InvalidOperationException("Die WASAPI-Wiedergabe ist fehlgeschlagen.", prematureStop.Exception);
+                throw new InvalidOperationException(Strings.Audio_PlaybackFailed, prematureStop.Exception);
             throw new InvalidOperationException("Die WASAPI-Wiedergabe wurde vor dem Ende des Stimulus beendet.");
         }
 
@@ -96,7 +96,7 @@ public sealed class StimulusPlaybackService : IStimulusPlaybackService
         output.Stop();
         var stoppedEvent = await stopped.Task.WaitAsync(cancellationToken);
         if (stoppedEvent.Exception is not null)
-            throw new InvalidOperationException("Die WASAPI-Wiedergabe ist fehlgeschlagen.", stoppedEvent.Exception);
+            throw new InvalidOperationException(Strings.Audio_PlaybackFailed, stoppedEvent.Exception);
 
         var asset = pack.GetAudioAsset(stimulusId);
         return new StimulusPlaybackReceipt(

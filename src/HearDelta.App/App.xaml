@@ -1,13 +1,14 @@
 <Application x:Class="HearDelta.App.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:controls="clr-namespace:HearDelta.App.Controls"
-             StartupUri="MainWindow.xaml">
+             xmlns:controls="clr-namespace:HearDelta.App.Controls">
     <Application.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
         <controls:ToneBrushConverter x:Key="ToneBackground" Part="Background" />
         <controls:ToneBrushConverter x:Key="ToneForeground" Part="Foreground" />
         <controls:InitialsConverter x:Key="Initials" />
+        <controls:HeadphoneDesignLabelConverter x:Key="HeadphoneDesignLabel" />
+        <controls:HearingAidConditionLabelConverter x:Key="HearingAidConditionLabel" />
 
         <!-- Marke: nur diese beiden Werte ändern, um die Markenfarbe zu tauschen. -->
         <Color x:Key="AccentColor">#5B47C8</Color>

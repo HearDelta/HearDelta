@@ -100,8 +100,8 @@ public sealed class HeadphoneEqualizationCatalogService(string? catalogPath = nu
     {
         var dialog = new Microsoft.Win32.OpenFileDialog
         {
-            Title = "AutoEq-Datei „ParametricEQ.txt“ importieren",
-            Filter = "AutoEq Parametric EQ (*.txt)|*.txt|Alle Dateien (*.*)|*.*"
+            Title = Strings.Equalization_ImportTitle,
+            Filter = Strings.Equalization_ImportFilter
         };
         return dialog.ShowDialog() == true ? dialog.FileName : null;
     }

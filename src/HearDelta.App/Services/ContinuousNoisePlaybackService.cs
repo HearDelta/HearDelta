@@ -49,7 +49,7 @@ public sealed class ContinuousNoisePlaybackService : IContinuousNoisePlaybackSer
                 .EnumerateAudioEndPoints(DataFlow.Render, DeviceState.Active)
                 .SingleOrDefault(candidate => string.Equals(candidate.ID, hardware.EndpointId, StringComparison.Ordinal))
                 ?? throw new InvalidOperationException(
-                    "Der gespeicherte Audioausgang ist nicht verfügbar. Es wurde kein Ersatzgerät gewählt.");
+                    Strings.Audio_EndpointUnavailable);
             AudioEndpointDescriptor endpoint;
             using (var audioClient = device.CreateAudioClient())
             {

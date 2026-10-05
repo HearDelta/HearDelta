@@ -21,9 +21,13 @@ comparisons only and does not replace clinical audiometry or a hearing aid
 fitting. Without coupler calibration, levels are digital attenuations in dB,
 not dB SPL.
 
-The user interface, the documentation below and the speech material are
-currently German only. Contributions of word lists and speech material for
-other languages are welcome.
+The user interface is available in German and English (US). It follows the
+Windows display language (German for German, English otherwise) and can be
+switched at any time via the language button at the bottom of the navigation
+bar. Stimulus packs are language-specific and are never translated: the German
+speech material stays German in the English interface. The documentation below
+and the speech material are currently German only. Contributions of word lists
+and speech material for other languages are welcome.
 
 To build: install the .NET 10 SDK and [Git LFS](https://git-lfs.com) (the
 stimulus audio is stored in LFS), clone the repository and run
@@ -145,6 +149,33 @@ abgesicherte Stimulus-/Audio-Pipeline und der geführte gepaarte Testablauf:
 Der reale WASAPI-Treiberpfad ist mit einem Topping DX3 Pro+ sowie weiteren
 aktiven Ausgängen geprüft. Die Anwendung speichert den jeweils
 verwendeten Kopfhörer im Messprofil.
+
+## Sprache der Oberfläche
+
+Die Oberfläche gibt es auf Deutsch und Englisch (USA). Ohne eigene Wahl folgt
+sie der Windows-Anzeigesprache: Deutsch bei einer deutschen Anzeigesprache,
+sonst Englisch. Über die Sprachschaltfläche unten in der Navigationsleiste
+lässt sich jederzeit `Automatisch`, `Deutsch` oder `English (US)` wählen; die
+Wahl wird je Windows-Benutzer in `%LOCALAPPDATA%\HearDelta\ui-language.txt`
+gespeichert, nicht in der Messdatenbank. Beim Umschalten wird das Fenster in
+der neuen Sprache neu aufgebaut; ein laufender Test wird wie bei einem
+Seitenwechsel nach Rückfrage abgebrochen, offene Profiländerungen werden wie
+beim Schließen abgefragt. Zahlen und Datumsangaben folgen der gewählten
+Sprache.
+
+Übersetzt wird nur die Bedienoberfläche. Stimuluspakete werden je Sprache
+erzeugt und nie übersetzt: Stimuluswörter, Antwortalternativen und Paketangaben
+bleiben in der Sprache des Pakets. Gespeicherte Protokollwerte (z. B. feste
+Kopfhörerbauformen, Frequenzbeschriftungen des Tonplans, die Rohantwort
+`Nicht verstanden`) bleiben unabhängig von der Oberflächensprache unverändert
+und werden nur für die Anzeige übersetzt. Interne Integritäts- und
+Diagnosemeldungen beschädigter Daten oder Stimuluspakete sind weiterhin
+deutsch.
+
+Die Texte liegen in `src/HearDelta.App/Localization/Strings.resx` bzw.
+`src/HearDelta.Core/Localization/CoreStrings.resx` (Deutsch, neutral) und den
+zugehörigen `*.en.resx`; ein Test prüft, dass jede Übersetzung vorhanden ist und
+dieselben Platzhalter verwendet.
 
 ## Technik
 

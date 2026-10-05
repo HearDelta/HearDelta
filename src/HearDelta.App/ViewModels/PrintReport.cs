@@ -6,12 +6,10 @@ namespace HearDelta.App.ViewModels;
 /// <summary>Druckbarer Bericht aus Ergebnissen und Diagrammen, unabhängig von der Bildschirmdarstellung.</summary>
 public sealed record PrintReport(string Title, string Subtitle, IReadOnlyList<PrintBlock> Blocks)
 {
-    public const string Disclaimer =
-        "Persönlicher relativer Vergleich. Pegel sind digitale Absenkungen in dBFS ohne Kupplerkalibrierung, keine dB SPL. " +
-        "Kein klinisches Audiogramm, keine validierte Sprachaudiometrie und kein Ersatz für eine medizinische Untersuchung.";
+    public static string Disclaimer => Strings.Report_Disclaimer;
 
     public static string PrintedAtText(DateTimeOffset printedAt) =>
-        $"Gedruckt am {printedAt.ToLocalTime().ToString("dd.MM.yyyy HH:mm", CultureInfo.GetCultureInfo("de-DE"))}";
+        string.Format(CultureInfo.CurrentCulture, Strings.Report_PrintedAt, printedAt.ToLocalTime());
 }
 
 public abstract record PrintBlock;

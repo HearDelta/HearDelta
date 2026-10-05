@@ -21,7 +21,7 @@ public sealed class StimulusRenderService
             string.Equals(pack.Catalog.Paradigm, CardinalNumberProtocol.Paradigm, StringComparison.Ordinal);
         if (usesCardinalNoise && pack.CardinalNoiseProfile is null)
             throw new InvalidOperationException(
-                "Das materialgebundene Rauschprofil fehlt; der Kardinalzahlstimulus wurde nicht gerendert.");
+                Strings.Audio_NoiseProfileMissing);
         return StimulusAudioRenderer.Render(
             source,
             sourceSampleRate,
@@ -80,7 +80,7 @@ public sealed class StimulusRenderService
         !IsCardinal(pack)
             ? null
             : pack.CardinalNoiseProfile ?? throw new InvalidOperationException(
-                "Das materialgebundene Rauschprofil fehlt; der Kardinalzahlstimulus wurde nicht gerendert.");
+                Strings.Audio_NoiseProfileMissing);
 
     private static float[] ReadSource(LoadedStimulusPack pack, string stimulusId, out int sourceSampleRate)
     {
@@ -104,7 +104,7 @@ public sealed class StimulusRenderService
     {
         using var reader = new WaveFileReader(audioPath);
         if (reader.WaveFormat.Channels != 1)
-            throw new InvalidOperationException("Der Stimulus ist nicht mono und wurde blockiert.");
+            throw new InvalidOperationException(Strings.Audio_NotMono);
         sampleRate = reader.WaveFormat.SampleRate;
         var provider = reader.ToSampleProvider();
         var samples = new List<float>();

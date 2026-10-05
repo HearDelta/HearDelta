@@ -21,6 +21,9 @@ public sealed record PracticeListOption(string Id, string Label, SpeechMaterial 
 /// </summary>
 public partial class PracticeViewModel : ObservableObject
 {
+    /// <summary>Gespeicherte Rohantwort ohne Eingabe; bleibt unabhängig von der Oberflächensprache unverändert.</summary>
+    private const string NotUnderstoodResponse = "Nicht verstanden";
+
     private readonly LoadedStimulusPack pack;
     private readonly IAudioEndpointService audioEndpoints;
     private readonly IStimulusPlaybackService playback;
@@ -35,8 +38,8 @@ public partial class PracticeViewModel : ObservableObject
     public ObservableCollection<MeasurementProfile> Profiles { get; } = [];
     public IReadOnlyList<SelectionOption<TestedEar>> EarOptions { get; } =
     [
-        new(TestedEar.Left, "Linkes Ohr"),
-        new(TestedEar.Right, "Rechtes Ohr")
+        new(TestedEar.Left, Strings.Common_LeftEar),
+        new(TestedEar.Right, Strings.Common_RightEar)
     ];
     public IReadOnlyList<PracticeListOption> Lists { get; }
 
@@ -125,7 +128,7 @@ public partial class PracticeViewModel : ObservableObject
     private string feedbackText = "";
 
     [ObservableProperty]
-    private string statusMessage = "Übungsmaterial, Hörseite und Messprofil auswählen.";
+    private string statusMessage = Strings.Practice_InitialStatus;
 
     [ObservableProperty]
     [NotifyPropertyChangedFor(nameof(ProgressText))]
@@ -167,7 +170,7 @@ public partial class PracticeViewModel : ObservableObject
     public bool IsResults => Stage == PracticeStage.Results;
     public BadgeTone EarTone => BadgeTones.ForEar(SelectedEar.Value);
     public bool HasNoProfiles => Profiles.Count == 0;
-    public BadgeTone FeedbackTone => FeedbackTitle == "Richtig" ? BadgeTone.Success : BadgeTone.Warning;
+    public BadgeTone FeedbackTone => FeedbackTitle == Strings.Practice_Correct ? BadgeTone.Success : BadgeTone.Warning;
     public int StepNumber => Stage switch
     {
         PracticeStage.Setup => 1,
@@ -181,12 +184,12 @@ public partial class PracticeViewModel : ObservableObject
         CurrentSession?.CompletedAt is null && Stage == PracticeStage.Active;
     public bool CanPause => Stage == PracticeStage.Active && (IsPaused || !IsBusy || playbackStopSignal is not null);
     public bool CanReplayStimulus => Stage == PracticeStage.Active && !IsBusy && !IsPaused && !HasFeedback;
-    public string PauseButtonText => IsPaused ? "Übung fortsetzen" : "Übung pausieren";
-    public string SubmitButtonText => string.IsNullOrWhiteSpace(EnteredResponse) ? "Nicht verstanden" : "Antwort prüfen";
+    public string PauseButtonText => IsPaused ? Strings.Practice_Resume : Strings.Practice_Pause;
+    public string SubmitButtonText => string.IsNullOrWhiteSpace(EnteredResponse) ? Strings.Practice_NotUnderstood : Strings.Practice_CheckAnswer;
     public double PracticeVolumeMaximumDb => (double)(SelectedProfile?.MaximumVolumeDb ?? 0m);
     public double PracticeVolumeMinimumDb => Math.Min(-96, PracticeVolumeMaximumDb);
-    public string PracticeVolumeText => $"{PracticeVolumeDb:0} dBFS";
-    public string ProgressText => orderedStimuli.Count == 0 ? "0 von 0" : $"{Math.Min(CurrentStimulusIndex + 1, orderedStimuli.Count)} von {orderedStimuli.Count}";
+    public string PracticeVolumeText => string.Format(Strings.Practice_Volume_Value, PracticeVolumeDb);
+    public string ProgressText => string.Format(Strings.Practice_Progress, orderedStimuli.Count == 0 ? 0 : Math.Min(CurrentStimulusIndex + 1, orderedStimuli.Count), orderedStimuli.Count);
     public double ProgressPercent
     {
         get => orderedStimuli.Count == 0 ? 0 : 100d * CurrentStimulusIndex / orderedStimuli.Count;
@@ -198,15 +201,15 @@ public partial class PracticeViewModel : ObservableObject
             CurrentStimulusIndex = idx;
         }
     }
-    public string ResultsTitle => CurrentSession?.AbortedAt is null ? "Übung abgeschlossen" : "Übung abgebrochen";
+    public string ResultsTitle => CurrentSession?.AbortedAt is null ? Strings.Practice_Completed : Strings.Practice_Aborted;
     public string ResultsDescription => CurrentSession?.AbortedAt is null
-        ? "Die Rückmeldungen und Rohantworten bleiben getrennt von allen Messwerten lokal gespeichert."
-        : "Die bis zum Abbruch erfassten Übungsantworten bleiben getrennt von allen Messwerten lokal gespeichert.";
+        ? Strings.Practice_CompletedDescription
+        : Strings.Practice_AbortedDescription;
     public string CurrentPrompt => PlaybackFailed
-        ? "Wiedergabe blockiert – bitte Statusmeldung prüfen"
+        ? Strings.Practice_PlaybackBlockedPrompt
         : IsAwaitingResponse
-            ? "Was haben Sie gehört?"
-            : "Stimulus wird abgespielt …";
+            ? Strings.Practice_WhatDidYouHear
+            : Strings.Practice_Playing;
 
     public void ReplaceProfiles(IEnumerable<MeasurementProfile> profiles)
     {
@@ -222,8 +225,8 @@ public partial class PracticeViewModel : ObservableObject
     {
         personId = person?.Id;
         StatusMessage = person is null
-            ? "Vor einer Übung muss eine Person ausgewählt werden."
-            : $"Übung für {person.DisplayName} vorbereiten.";
+            ? Strings.Practice_NeedsPerson
+            : string.Format(Strings.Practice_Prepare, person.DisplayName);
         OnPropertyChanged(nameof(CanStartPractice));
     }
 
@@ -250,7 +253,7 @@ public partial class PracticeViewModel : ObservableObject
             string.Equals(endpoint.Id, SelectedProfile.EndpointId, StringComparison.Ordinal));
         if (!endpointAvailable)
         {
-            StatusMessage = "Der im Messprofil gespeicherte Ausgang ist nicht verfügbar. Die Übung verwendet kein Ersatzgerät.";
+            StatusMessage = Strings.Practice_OutputUnavailable;
             return;
         }
 
@@ -280,7 +283,7 @@ public partial class PracticeViewModel : ObservableObject
         catch (Exception exception)
         {
             CurrentSession = null;
-            StatusMessage = $"Übung konnte nicht vorbereitet werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Practice_PrepareFailed, exception.Message);
             return;
         }
 
@@ -291,7 +294,7 @@ public partial class PracticeViewModel : ObservableObject
         PlaybackFailed = false;
         IsPaused = false;
         Stage = PracticeStage.Active;
-        StatusMessage = "Übung gestartet. Nach jeder Antwort erscheint eine Rückmeldung; sie geht nie in Messwerte ein.";
+        StatusMessage = Strings.Practice_Started;
         await PlayCurrentStimulusAsync();
     }
 
@@ -305,7 +308,7 @@ public partial class PracticeViewModel : ObservableObject
         IsAwaitingResponse = false;
         var stimulus = orderedStimuli[CurrentStimulusIndex];
         var enteredText = string.IsNullOrWhiteSpace(EnteredResponse)
-            ? "Nicht verstanden"
+            ? NotUnderstoodResponse
             : EnteredResponse.Trim();
         var response = new PracticeResponse(
             CurrentStimulusIndex + 1,
@@ -333,26 +336,29 @@ public partial class PracticeViewModel : ObservableObject
             sessions.Save(personId!.Value, updated);
             CurrentSession = updated;
             var correct = string.Equals(response.EnteredText.Trim(), stimulus.CanonicalResponse.Trim(), StringComparison.OrdinalIgnoreCase);
-            FeedbackTitle = correct ? "Richtig" : "Noch einmal merken";
+            FeedbackTitle = correct ? Strings.Practice_Correct : Strings.Practice_Remember;
             FeedbackText = correct
-                ? $"Die Zielantwort war „{stimulus.CanonicalResponse}“."
-                : $"Ihre Antwort: „{response.EnteredText}“ · Zielantwort: „{stimulus.CanonicalResponse}“.";
+                ? string.Format(Strings.Practice_TargetWas, stimulus.CanonicalResponse)
+                : string.Format(
+                    Strings.Practice_YourAnswer,
+                    response.EnteredText == NotUnderstoodResponse ? Strings.Practice_NotUnderstood : response.EnteredText,
+                    stimulus.CanonicalResponse);
             currentPlayback = null;
             EnteredResponse = string.Empty;
             if (completed)
             {
                 Stage = PracticeStage.Results;
-                StatusMessage = "Übung vollständig und getrennt von Messungen lokal gespeichert.";
+                StatusMessage = Strings.Practice_SavedComplete;
                 return;
             }
 
             CurrentStimulusIndex++;
-            StatusMessage = "Rückmeldung angezeigt. Mit „Nächster Stimulus“ fortsetzen.";
+            StatusMessage = Strings.Practice_FeedbackShown;
         }
         catch (Exception exception)
         {
             IsAwaitingResponse = true;
-            StatusMessage = $"Übungsantwort konnte nicht gespeichert werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Practice_SaveFailed, exception.Message);
         }
         finally
         {
@@ -373,7 +379,7 @@ public partial class PracticeViewModel : ObservableObject
             IsPaused = false;
             FeedbackTitle = string.Empty;
             FeedbackText = string.Empty;
-            StatusMessage = "Übung wird mit dem aktuellen Wort fortgesetzt.";
+            StatusMessage = Strings.Practice_Resumed;
             await PlayCurrentStimulusAsync();
             return;
         }
@@ -381,7 +387,7 @@ public partial class PracticeViewModel : ObservableObject
         IsPaused = true;
         PlaybackFailed = false;
         CancelPlayback();
-        StatusMessage = "Übung pausiert. Das aktuelle Wort wird beim Fortsetzen erneut abgespielt.";
+        StatusMessage = Strings.Practice_Paused;
     }
 
     [RelayCommand(CanExecute = nameof(CanContinuePractice))]
@@ -409,7 +415,7 @@ public partial class PracticeViewModel : ObservableObject
         IsPaused = false;
         IsAwaitingResponse = false;
         Stage = PracticeStage.Setup;
-        StatusMessage = "Neue Übung vorbereiten.";
+        StatusMessage = Strings.Practice_PrepareNew;
     }
 
     public void CancelActivePractice()
@@ -425,12 +431,12 @@ public partial class PracticeViewModel : ObservableObject
         {
             sessions.Save(personId!.Value, aborted);
             CurrentSession = aborted;
-            StatusMessage = "Übung abgebrochen. Die bisherigen Antworten wurden getrennt lokal gespeichert.";
+            StatusMessage = Strings.Practice_AbortedSaved;
         }
         catch (Exception exception)
         {
             CurrentSession = aborted;
-            StatusMessage = $"Übung abgebrochen, aber der Abbruchstatus konnte nicht gespeichert werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Practice_AbortSaveFailed, exception.Message);
         }
         Stage = PracticeStage.Results;
     }
@@ -466,7 +472,7 @@ public partial class PracticeViewModel : ObservableObject
                 return;
             currentPlayback = receipt;
             IsAwaitingResponse = true;
-            StatusMessage = "Bitte die gehörte Zielantwort eingeben. Danach folgt sofort die Rückmeldung.";
+            StatusMessage = Strings.Practice_EnterAnswer;
         }
         catch (OperationCanceledException) when (stopSignal.IsCancellationRequested)
         {
@@ -476,7 +482,7 @@ public partial class PracticeViewModel : ObservableObject
             if (ReferenceEquals(playbackStopSignal, stopSignal) && Stage == PracticeStage.Active)
             {
                 PlaybackFailed = true;
-                StatusMessage = $"Wiedergabe blockiert: {exception.Message}";
+                StatusMessage = string.Format(Strings.Test_PlaybackBlocked, exception.Message);
             }
         }
         finally
@@ -501,9 +507,9 @@ public partial class PracticeViewModel : ObservableObject
 
     private static string FormatMaterial(SpeechMaterial material) => material switch
     {
-        SpeechMaterial.Monosyllables => "Einsilber",
-        SpeechMaterial.Polysyllables => "Mehrsilber",
-        SpeechMaterial.Numbers => "Zahlen",
+        SpeechMaterial.Monosyllables => Strings.Material_Monosyllables,
+        SpeechMaterial.Polysyllables => Strings.Material_Polysyllables,
+        SpeechMaterial.Numbers => Strings.Material_Numbers,
         _ => material.ToString()
     };
 }

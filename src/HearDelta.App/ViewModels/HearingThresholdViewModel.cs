@@ -32,13 +32,13 @@ public partial class HearingThresholdViewModel : ObservableObject
     public ObservableCollection<HearingThresholdResultRow> Results { get; } = [];
     public IReadOnlyList<SelectionOption<TestedEar>> EarOptions { get; } =
     [
-        new(TestedEar.Left, "Linkes Ohr"),
-        new(TestedEar.Right, "Rechtes Ohr")
+        new(TestedEar.Left, Strings.Common_LeftEar),
+        new(TestedEar.Right, Strings.Common_RightEar)
     ];
     public IReadOnlyList<SelectionOption<ThresholdToneOrder>> OrderOptions { get; } =
     [
-        new(ThresholdToneOrder.Ascending, "Vom Zentrum nach außen"),
-        new(ThresholdToneOrder.Random, "Zufällig")
+        new(ThresholdToneOrder.Ascending, Strings.Threshold_OrderCenterOut),
+        new(ThresholdToneOrder.Random, Strings.Threshold_OrderRandom)
     ];
 
     /// <summary>Name und Kommentar des nächsten Hörschwellentests.</summary>
@@ -149,7 +149,7 @@ public partial class HearingThresholdViewModel : ObservableObject
     private HearingThresholdSession? currentSession;
 
     [ObservableProperty]
-    private string statusMessage = "Messprofil, Hörseite, Vertäubung und Reihenfolge auswählen.";
+    private string statusMessage = Strings.Threshold_InitialStatus;
 
     public HearingThresholdViewModel(
         IEnumerable<MeasurementProfile> profiles,
@@ -180,13 +180,13 @@ public partial class HearingThresholdViewModel : ObservableObject
     public bool IsActiveTest => Stage == HearingThresholdStage.ActiveTest;
     public bool IsResults => Stage == HearingThresholdStage.Results;
     public string MaskedEarText => SelectedEar.Value == TestedEar.Left
-        ? "Rauschen auf dem rechten Ohr"
-        : "Rauschen auf dem linken Ohr";
-    public string MaskingLevelText => $"{HearingThresholdResultPresentation.FormatDbfs(SelectedMaskingLevelDbfs)} dBFS (RMS)";
+        ? Strings.Threshold_NoiseOnRight
+        : Strings.Threshold_NoiseOnLeft;
+    public string MaskingLevelText => string.Format(Strings.Threshold_MaskingLevelText, HearingThresholdResultPresentation.FormatDbfs(SelectedMaskingLevelDbfs));
     public double MinimumMaskingLevelDbfs => (double)ThresholdMaskingProtocol.MinimumLevelDbfs;
     public double MaximumMaskingLevelDbfs => (double)ThresholdMaskingProtocol.MaximumLevelDbfs;
     public bool CanPreviewMasking => IsMaskingEnabled && SelectedProfile is not null && !IsBusy && IsSetup;
-    public string MaskingPreviewButtonText => IsMaskingPreviewPlaying ? "Hörprobe beenden" : "Rauschen anhören";
+    public string MaskingPreviewButtonText => IsMaskingPreviewPlaying ? Strings.Threshold_StopPreview : Strings.Threshold_PlayPreview;
 
     /// <summary>Bedingung des vorbereiteten Tests für die Anzeige.</summary>
     public string SetupConditionText => HearingThresholdResultPresentation.MaskingText(
@@ -215,7 +215,7 @@ public partial class HearingThresholdViewModel : ObservableObject
         !IsMaskingPreviewPlaying;
     public bool CanReportHeard => IsTonePlaying && !IsBusy && !IsPaused;
     public bool CanPause => IsActiveTest && (!IsBusy || IsTonePlaying || IsPaused);
-    public string PauseButtonText => IsPaused ? "Test fortsetzen" : "Test pausieren";
+    public string PauseButtonText => IsPaused ? Strings.Test_Resume : Strings.Test_Pause;
     public bool CanRepeatLastMeasurement =>
         Stage is HearingThresholdStage.ActiveTest or HearingThresholdStage.Results &&
         !WasAborted &&
@@ -224,21 +224,28 @@ public partial class HearingThresholdViewModel : ObservableObject
         session.Observations.LastOrDefault()?.Heard == true;
     public bool WasAborted => CurrentSession?.AbortedAt is not null;
     public int CurrentToneNumber => CurrentToneIndex + 1;
-    public string TestPhaseTitle => "Hörschwelle";
-    public string ProgressText => $"Ton {Math.Min(CurrentToneNumber, ToneCount)} von {ToneCount}";
+    public string TestPhaseTitle => Strings.Shell_HearingThreshold;
+    public string ProgressText => string.Format(Strings.Threshold_Progress, Math.Min(CurrentToneNumber, ToneCount), ToneCount);
     public double ProgressPercent => 100d * CurrentToneIndex / ToneCount;
     public string RampDescription =>
-        $"Jede Pegelstufe erklingt zweimal als Signal „3 kurze Töne · {HearingThresholdProtocol.SignalPattern.GroupPauseMilliseconds} ms Pause · 3 kurze Töne“ ({HearingThresholdProtocol.SignalPattern.ToneMilliseconds} ms je Ton, {HearingThresholdProtocol.SignalPattern.SignalPauseMilliseconds} ms Pause nach jedem Signal). Danach steigt der Pegel um {HearingThresholdProtocol.LevelStepDb:0} dB. Nach dem Knopfdruck wird der Ton zur Bestätigung wiederholt, beginnend {HearingThresholdProtocol.ConfirmationStartOffsetDb:0} dB unter dem erkannten Pegel; gespeichert wird der Wert der Wiederholung. Folgetöne starten {HearingThresholdProtocol.ToneStartOffsetDb:0} dB unter dem nächsten bereits gehörten Ton in Richtung 500 Hz.";
+        string.Format(
+            Strings.Threshold_RampDescription,
+            HearingThresholdProtocol.SignalPattern.GroupPauseMilliseconds,
+            HearingThresholdProtocol.SignalPattern.ToneMilliseconds,
+            HearingThresholdProtocol.SignalPattern.SignalPauseMilliseconds,
+            HearingThresholdProtocol.LevelStepDb,
+            HearingThresholdProtocol.ConfirmationStartOffsetDb,
+            HearingThresholdProtocol.ToneStartOffsetDb);
     public string MaskingDescription =>
-        $"Gemessen wird immer ohne Hörgerät, weil Hörgeräte gleichbleibende Sinustöne als Rückkopplung oder Störgeräusch unterdrücken. Bei Vertäubung läuft während jedes Tons auf dem Gegenohr terzbreites Schmalbandrauschen um die Prüffrequenz mit festem Pegel; es beginnt {ThresholdMaskingProtocol.LeadInMilliseconds / 1000d:0.#} s vor dem ersten Ton. So wird verhindert, dass ein laut dargebotener Ton über den Kopf zum besseren Ohr hinübergehört wird. Das Rauschen soll deutlich hörbar, aber nicht unangenehm sein.";
+        string.Format(Strings.Threshold_MaskingDescription, ThresholdMaskingProtocol.LeadInMilliseconds / 1000d);
     public string PresentationDisclosure =>
-        "500 Hz wird zuerst geprüft. Frequenz und aktueller Digitalpegel bleiben während des Tons verborgen; jeder Wert wird mit Endpunkt- und Hardware-Snapshot lokal protokolliert.";
+        Strings.Threshold_Disclosure;
     public int ToneCount => HearingThresholdToneCatalog.Create(ThresholdToneOrder.Ascending, 0).Count;
     public string StartAttenuationText => $"{SelectedStartLevelDbfs:0.##}";
     public string StartLevelText => $"{HearingThresholdResultPresentation.FormatDbfs(SelectedStartLevelDbfs)} dBFS";
     public double MinimumStartLevelDbfs => (double)LowestStartLevel;
     public double MaximumStartLevelDbfs => (double)HighestStartLevel;
-    public string DefaultStartLevelText => $"Vorgabe {HearingThresholdResultPresentation.FormatDbfs(DefaultStartLevel)} dBFS";
+    public string DefaultStartLevelText => string.Format(Strings.Threshold_DefaultStart, HearingThresholdResultPresentation.FormatDbfs(DefaultStartLevel));
     public bool IsStartLevelRaised => SelectedStartLevelDbfs != DefaultStartLevel;
 
     /// <summary>Obergrenze der Pegelrampe: die Pegelobergrenze des gewählten Messprofils.</summary>
@@ -271,19 +278,19 @@ public partial class HearingThresholdViewModel : ObservableObject
     /// <summary>Obergrenze des angezeigten Ergebnisses für das Diagramm.</summary>
     public double ResultMaximumAttenuationDbfs => (double)(CurrentSession?.MaximumAttenuationDbfs ?? MaximumLevel);
     public string ResultsTitle => WasAborted
-        ? "Hörschwellentest abgebrochen"
-        : "Ergebnis des Hörschwellentests";
+        ? Strings.Threshold_Aborted
+        : Strings.Threshold_ResultTitle;
     public string ResultSummary => CurrentSession is null
         ? string.Empty
         : WasAborted
-            ? $"{CurrentSession.Observations.Count(observation => observation.Heard)} von {CurrentSession.Observations.Count} geprüften Spektrumstönen gehört"
-            : $"{CurrentSession.Observations.Count(observation => observation.Heard)} von {ToneCount} Tönen gehört";
+            ? string.Format(Strings.Threshold_HeardOfTested, CurrentSession.Observations.Count(observation => observation.Heard), CurrentSession.Observations.Count)
+            : string.Format(Strings.Threshold_HeardOfAll, CurrentSession.Observations.Count(observation => observation.Heard), ToneCount);
     public string CenterResultText => CurrentSession is { } session &&
                                       session.Observations.FirstOrDefault() is { } center
         ? center.ThresholdAttenuationDbfs is { } threshold
-            ? $"Zentrumston 500 Hz: {threshold:0.##} dBFS"
-            : $"Zentrumston 500 Hz: nicht gehört bis {session.MaximumAttenuationDbfs:0.##} dBFS"
-        : "Zentrumston 500 Hz: nicht geprüft";
+            ? string.Format(Strings.Threshold_CenterValue, threshold)
+            : string.Format(Strings.Threshold_CenterNotHeard, session.MaximumAttenuationDbfs)
+        : Strings.Threshold_CenterNotTested;
 
     public void ReplaceProfiles(IEnumerable<MeasurementProfile> profiles)
     {
@@ -309,8 +316,8 @@ public partial class HearingThresholdViewModel : ObservableObject
         personId = person?.Id;
         personName = person?.DisplayName;
         StatusMessage = person is null
-            ? "Vor einem Hörschwellentest muss eine Person ausgewählt werden."
-            : $"Hörschwellentest für {person.DisplayName} vorbereiten.";
+            ? Strings.Threshold_NeedsPerson
+            : string.Format(Strings.Threshold_Prepare, person.DisplayName);
         if (personChanged && Stage == HearingThresholdStage.Setup)
             ApplyLastSessionOfPerson();
         OnPropertyChanged(nameof(CanStartTest));
@@ -384,14 +391,14 @@ public partial class HearingThresholdViewModel : ObservableObject
         {
             var maskedEar = SelectedEar.Value == TestedEar.Left ? TestedEar.Right : TestedEar.Left;
             await playback.PlayMaskingPreviewAsync(maskedEar, SelectedMaskingLevelDbfs, SelectedProfile.CreateSnapshot(), stop.Token);
-            StatusMessage = $"Hörprobe des Vertäubungsrauschens ({MaskingLevelText}) beendet.";
+            StatusMessage = string.Format(Strings.Threshold_PreviewEnded, MaskingLevelText);
         }
         catch (OperationCanceledException)
         {
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Hörprobe blockiert: {exception.Message}";
+            StatusMessage = string.Format(Strings.Threshold_PreviewBlocked, exception.Message);
         }
         finally
         {
@@ -428,11 +435,11 @@ public partial class HearingThresholdViewModel : ObservableObject
         try
         {
             sessions.Save(personId!.Value, abortedSession);
-            StatusMessage = "Hörschwellentest abgebrochen. Die bis dahin erzielten Ergebnisse wurden lokal gespeichert.";
+            StatusMessage = Strings.Threshold_AbortedSaved;
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Hörschwellentest abgebrochen, der Abbruchstatus konnte aber nicht gespeichert werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Threshold_AbortSaveFailed, exception.Message);
         }
         CurrentSession = abortedSession;
         PopulateResults(abortedSession);
@@ -445,7 +452,7 @@ public partial class HearingThresholdViewModel : ObservableObject
     {
         if (!CanStartTest || SelectedProfile is null)
         {
-            StatusMessage = "Bitte Messprofil wählen und alle drei Prüfungen bestätigen.";
+            StatusMessage = Strings.Threshold_ConfirmAll;
             return;
         }
 
@@ -465,7 +472,7 @@ public partial class HearingThresholdViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Audioausgänge konnten nicht geprüft werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Test_OutputsCheckFailed, exception.Message);
             return;
         }
         if (endpointErrors.Count > 0)
@@ -511,7 +518,7 @@ public partial class HearingThresholdViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Hörschwellensitzung konnte nicht lokal angelegt werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Threshold_SessionCreateFailed, exception.Message);
             return;
         }
         var annotationWarning = string.Empty;
@@ -521,7 +528,7 @@ public partial class HearingThresholdViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            annotationWarning = $" Name und Kommentar konnten nicht gespeichert werden: {exception.Message}";
+            annotationWarning = string.Format(Strings.Annotation_SaveFailedSuffix, exception.Message);
         }
 
         Results.Clear();
@@ -529,7 +536,7 @@ public partial class HearingThresholdViewModel : ObservableObject
         CurrentToneIndex = 0;
         Stage = HearingThresholdStage.ActiveTest;
         IsPaused = false;
-        StatusMessage = "Der Hörschwellentest beginnt mit dem Zentrumston bei 500 Hz." + annotationWarning;
+        StatusMessage = Strings.Threshold_Starting + annotationWarning;
         await BeginSystematicToneAsync();
     }
 
@@ -607,7 +614,7 @@ public partial class HearingThresholdViewModel : ObservableObject
         catch (Exception exception)
         {
             IsBusy = false;
-            StatusMessage = $"Die letzte Messung konnte nicht zurückgesetzt werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Threshold_ResetFailed, exception.Message);
             return;
         }
 
@@ -615,7 +622,7 @@ public partial class HearingThresholdViewModel : ObservableObject
         Results.Clear();
         IsBusy = false;
         Stage = HearingThresholdStage.ActiveTest;
-        StatusMessage = "Die letzte Frequenzmessung wird wiederholt.";
+        StatusMessage = Strings.Threshold_RepeatingLast;
         await BeginSystematicToneAsync();
     }
 
@@ -631,7 +638,7 @@ public partial class HearingThresholdViewModel : ObservableObject
         if (IsPaused)
         {
             IsPaused = false;
-            StatusMessage = "Der Hörschwellentest wird mit der aktuellen Frequenz fortgesetzt.";
+            StatusMessage = Strings.Threshold_Resumed;
             await BeginSystematicToneAsync();
             return;
         }
@@ -662,7 +669,7 @@ public partial class HearingThresholdViewModel : ObservableObject
             }
         }
         IsBusy = false;
-        StatusMessage = "Hörschwellentest pausiert. Die aktuelle Frequenz wird beim Fortsetzen neu begonnen.";
+        StatusMessage = Strings.Threshold_Paused;
     }
 
     /// <summary>Druckbarer Bericht des angezeigten Ergebnisses; <c>null</c> ohne Ergebnis.</summary>
@@ -690,7 +697,7 @@ public partial class HearingThresholdViewModel : ObservableObject
         IsPaused = false;
         ResetConfirmations();
         Stage = HearingThresholdStage.Setup;
-        StatusMessage = "Neuen Hörschwellentest vorbereiten.";
+        StatusMessage = Strings.Threshold_PrepareNew;
     }
 
     /// <param name="firstDetection">
@@ -721,8 +728,8 @@ public partial class HearingThresholdViewModel : ObservableObject
         var operation = new TonePlaybackOperation(tone, stopSignal, playbackTask, firstDetection);
         currentOperation = operation;
         StatusMessage = firstDetection is null
-            ? "Jede Pegelstufe erklingt zweimal als Folge kurzer Töne. Drücken, sobald etwas hörbar ist."
-            : "Bestätigung: Derselbe Ton beginnt noch einmal leiser. Drücken, sobald etwas hörbar ist.";
+            ? Strings.Threshold_PressHint
+            : Strings.Threshold_ConfirmHint;
         _ = ObserveNaturalCompletionAsync(operation);
         return Task.CompletedTask;
     }
@@ -792,7 +799,7 @@ public partial class HearingThresholdViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            StatusMessage = $"Hörschwellenwert konnte nicht gespeichert werden: {exception.Message}";
+            StatusMessage = string.Format(Strings.Threshold_ValueSaveFailed, exception.Message);
             return;
         }
 
@@ -803,7 +810,7 @@ public partial class HearingThresholdViewModel : ObservableObject
             PopulateResults(updatedSession);
             Stage = HearingThresholdStage.Results;
             NotifyResultProperties();
-            StatusMessage = "Hörschwellentest vollständig und lokal gespeichert.";
+            StatusMessage = Strings.Threshold_Completed;
             return;
         }
 
@@ -868,7 +875,7 @@ public partial class HearingThresholdViewModel : ObservableObject
             return;
         IsTonePlaying = false;
         IsBusy = false;
-        StatusMessage = $"Wiedergabe blockiert: {exception.Message}";
+        StatusMessage = string.Format(Strings.Test_PlaybackBlocked, exception.Message);
     }
 
     private void ResetConfirmations()

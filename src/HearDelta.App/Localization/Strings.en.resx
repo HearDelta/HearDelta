@@ -1,0 +1,2147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Adaptive_Better" xml:space="preserve">
+    <value>{0:0.0} dB better</value>
+  </data>
+  <data name="Adaptive_Counts" xml:space="preserve">
+    <value>{0} of {1} correct</value>
+  </data>
+  <data name="Adaptive_Explanation" xml:space="preserve">
+    <value>Adaptive (1-up/1-down): after a correct answer it gets one step harder, after a wrong one easier – 6 dB until the first wrong answer, then 2 dB. The threshold is the mean of the values from the first wrong answer onwards and corresponds to about 50 % correct. Levels are digital dB, not dB SPL.</value>
+  </data>
+  <data name="Adaptive_LevelLabel" xml:space="preserve">
+    <value>Digital speech level for 50 % correct</value>
+  </data>
+  <data name="Adaptive_SnrLabel" xml:space="preserve">
+    <value>Signal-to-noise ratio for 50 % correct</value>
+  </data>
+  <data name="Adaptive_Spread" xml:space="preserve">
+    <value>{0}  ·  spread ±{1:0.0} dB</value>
+  </data>
+  <data name="Adaptive_Worse" xml:space="preserve">
+    <value>{0:0.0} dB worse</value>
+  </data>
+  <data name="Annotation_Comment" xml:space="preserve">
+    <value>Comment, settings (optional)</value>
+  </data>
+  <data name="Annotation_CommentName" xml:space="preserve">
+    <value>Measurement comment</value>
+  </data>
+  <data name="Annotation_Name" xml:space="preserve">
+    <value>Measurement name</value>
+  </data>
+  <data name="Annotation_SaveFailed" xml:space="preserve">
+    <value>Name and comment could not be saved: {0}</value>
+  </data>
+  <data name="Annotation_SaveFailedSuffix" xml:space="preserve">
+    <value>Name and comment could not be saved: {0}</value>
+  </data>
+  <data name="Annotation_Saved" xml:space="preserve">
+    <value>Name and comment of “{0}” saved.</value>
+  </data>
+  <data name="Annotation_Section" xml:space="preserve">
+    <value>Name and comment</value>
+  </data>
+  <data name="Audio_AttenuationAboveLimit" xml:space="preserve">
+    <value>The digital attenuation exceeds the saved level limit.</value>
+  </data>
+  <data name="Audio_ChannelTestFailed" xml:space="preserve">
+    <value>The WASAPI channel test failed.</value>
+  </data>
+  <data name="Audio_ChannelTestSides" xml:space="preserve">
+    <value>The channel test only supports left or right.</value>
+  </data>
+  <data name="Audio_EndpointUnavailable" xml:space="preserve">
+    <value>The saved audio output is not available. No substitute device was chosen.</value>
+  </data>
+  <data name="Audio_MaskingAboveLimit" xml:space="preserve">
+    <value>The masking noise would exceed the level limit.</value>
+  </data>
+  <data name="Audio_MaximumRange" xml:space="preserve">
+    <value>The digital level limit must be between -96 dB and 0 dB.</value>
+  </data>
+  <data name="Audio_NoiseProfileMissing" xml:space="preserve">
+    <value>The material-specific noise profile is missing; the cardinal number stimulus was not rendered.</value>
+  </data>
+  <data name="Audio_NotMono" xml:space="preserve">
+    <value>The stimulus is not mono and was blocked.</value>
+  </data>
+  <data name="Audio_PlaybackFailed" xml:space="preserve">
+    <value>WASAPI playback failed.</value>
+  </data>
+  <data name="Audio_ToneFailed" xml:space="preserve">
+    <value>WASAPI tone playback failed.</value>
+  </data>
+  <data name="Audio_ToneStoppedEarly" xml:space="preserve">
+    <value>WASAPI tone playback ended before reaching the level limit.</value>
+  </data>
+  <data name="Chart_FrequencyAxis" xml:space="preserve">
+    <value>Frequency (Hz)</value>
+  </data>
+  <data name="Chart_LevelAxis" xml:space="preserve">
+    <value>Digital level (dBFS) · louder downwards</value>
+  </data>
+  <data name="Chart_NoData" xml:space="preserve">
+    <value>No frequency measurements yet.</value>
+  </data>
+  <data name="Chart_NotHeardUpTo" xml:space="preserve">
+    <value>not heard up to {0} dBFS</value>
+  </data>
+  <data name="Common_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Common_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Common_DeleteItem" xml:space="preserve">
+    <value>Delete {0}</value>
+  </data>
+  <data name="Common_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Common_EditItem" xml:space="preserve">
+    <value>Edit {0}</value>
+  </data>
+  <data name="Common_Left" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="Common_LeftEar" xml:space="preserve">
+    <value>Left ear</value>
+  </data>
+  <data name="Common_LeftEarLower" xml:space="preserve">
+    <value>left ear</value>
+  </data>
+  <data name="Common_Manufacturer" xml:space="preserve">
+    <value>Manufacturer</value>
+  </data>
+  <data name="Common_Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="Common_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Common_Noise" xml:space="preserve">
+    <value>Noise</value>
+  </data>
+  <data name="Common_Quiet" xml:space="preserve">
+    <value>Quiet</value>
+  </data>
+  <data name="Common_Right" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="Common_RightEar" xml:space="preserve">
+    <value>Right ear</value>
+  </data>
+  <data name="Common_RightEarLower" xml:space="preserve">
+    <value>right ear</value>
+  </data>
+  <data name="Common_SaveChanges" xml:space="preserve">
+    <value>Save changes</value>
+  </data>
+  <data name="Common_StartItem" xml:space="preserve">
+    <value>Start {0}</value>
+  </data>
+  <data name="Common_WithAid" xml:space="preserve">
+    <value>With hearing aid</value>
+  </data>
+  <data name="Common_WithoutAid" xml:space="preserve">
+    <value>Without hearing aid</value>
+  </data>
+  <data name="Condition_WithAidLower" xml:space="preserve">
+    <value>with hearing aid</value>
+  </data>
+  <data name="Condition_WithoutAidLower" xml:space="preserve">
+    <value>without hearing aid</value>
+  </data>
+  <data name="Confusion_OtherResponse" xml:space="preserve">
+    <value>Other answer</value>
+  </data>
+  <data name="Database_BackupFailed" xml:space="preserve">
+    <value>The existing database “{0}” does not match the current schema and could not be backed up to “{1}”: {2} Delete or move it manually and then restart the application.</value>
+  </data>
+  <data name="Database_BackupNotice" xml:space="preserve">
+    <value>The existing database did not match the current database schema of this version.
+
+It was backed up unchanged to:
+{1}
+
+A new, empty database was created at {0}. Previous people, measurement profiles and measurements therefore no longer appear in the application; they are still contained in the backup file.</value>
+  </data>
+  <data name="Dialog_EmptyNameHint" xml:space="preserve">
+    <value>Leave empty to use the hearing aid as the name.</value>
+  </data>
+  <data name="Dialog_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Equalization_ImportFilter" xml:space="preserve">
+    <value>AutoEq Parametric EQ (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="Equalization_ImportTitle" xml:space="preserve">
+    <value>Import AutoEq file “ParametricEQ.txt”</value>
+  </data>
+  <data name="History_AbortedNotComparable" xml:space="preserve">
+    <value>Cancelled measurements cannot be compared directly.</value>
+  </data>
+  <data name="History_AidPrefix" xml:space="preserve">
+    <value>Hearing aid: {0}</value>
+  </data>
+  <data name="History_AllAids" xml:space="preserve">
+    <value>All hearing aids</value>
+  </data>
+  <data name="History_AllEars" xml:space="preserve">
+    <value>All ears</value>
+  </data>
+  <data name="History_AllEnvironments" xml:space="preserve">
+    <value>All environments</value>
+  </data>
+  <data name="History_AllMaterials" xml:space="preserve">
+    <value>All materials</value>
+  </data>
+  <data name="History_AllStatus" xml:space="preserve">
+    <value>All statuses</value>
+  </data>
+  <data name="History_AllTime" xml:space="preserve">
+    <value>All time</value>
+  </data>
+  <data name="History_Better" xml:space="preserve">
+    <value>{0:0.#} dB better</value>
+  </data>
+  <data name="History_BetterNote" xml:space="preserve">
+    <value>“Better” means: test 2 heard a quieter tone. Digital dBFS values, not dB SPL.</value>
+  </data>
+  <data name="History_ClearSelection" xml:space="preserve">
+    <value>Clear selection</value>
+  </data>
+  <data name="History_ColDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="History_ColDifference" xml:space="preserve">
+    <value>Difference</value>
+  </data>
+  <data name="History_ColFrequency" xml:space="preserve">
+    <value>Frequency</value>
+  </data>
+  <data name="History_ColMaterial" xml:space="preserve">
+    <value>Material and environment</value>
+  </data>
+  <data name="History_ColScore" xml:space="preserve">
+    <value>Without → with HA</value>
+  </data>
+  <data name="History_ColTest1" xml:space="preserve">
+    <value>Test 1</value>
+  </data>
+  <data name="History_ColTest2" xml:space="preserve">
+    <value>Test 2</value>
+  </data>
+  <data name="History_ColTest2VsTest1" xml:space="preserve">
+    <value>Test 2 compared with test 1</value>
+  </data>
+  <data name="History_CompareThreshold" xml:space="preserve">
+    <value>Compare hearing threshold test from {0}</value>
+  </data>
+  <data name="History_ComparisonLabel" xml:space="preserve">
+    <value>{0} · {1:M/d h:mm tt} · {2} · {3}</value>
+  </data>
+  <data name="History_DateDotTime" xml:space="preserve">
+    <value>{0:d} · {0:t}</value>
+  </data>
+  <data name="History_DateTime" xml:space="preserve">
+    <value>{0:g}</value>
+  </data>
+  <data name="History_Dbfs" xml:space="preserve">
+    <value>{0:0.#} dBFS</value>
+  </data>
+  <data name="History_DeleteTest" xml:space="preserve">
+    <value>Delete test</value>
+  </data>
+  <data name="History_DeleteThresholdMessage" xml:space="preserve">
+    <value>Permanently delete the hearing threshold test from {0}?</value>
+  </data>
+  <data name="History_DeleteThresholdTitle" xml:space="preserve">
+    <value>Delete hearing threshold test</value>
+  </data>
+  <data name="History_DeleteWordMessage" xml:space="preserve">
+    <value>Permanently delete the word test “{0}” from {1} ({2}, {3})?
+
+Raw answers, result, name and comment of this measurement are removed; other measurements remain untouched.</value>
+  </data>
+  <data name="History_DeleteWordName" xml:space="preserve">
+    <value>Delete word test from {0}</value>
+  </data>
+  <data name="History_DeleteWordTitle" xml:space="preserve">
+    <value>Delete word test</value>
+  </data>
+  <data name="History_DeleteWordTooltip" xml:space="preserve">
+    <value>Delete word test after confirmation</value>
+  </data>
+  <data name="History_DifferenceCaption" xml:space="preserve">
+    <value>Difference with minus without</value>
+  </data>
+  <data name="History_DifferentSetup" xml:space="preserve">
+    <value>Different measurement setup</value>
+  </data>
+  <data name="History_DirectlyComparable" xml:space="preserve">
+    <value>Same ear, measurement conditions, catalog version and compatible hardware snapshots. The values may be compared directly and descriptively.</value>
+  </data>
+  <data name="History_Ear" xml:space="preserve">
+    <value>Ear</value>
+  </data>
+  <data name="History_EditAnnotation" xml:space="preserve">
+    <value>Edit name and comment</value>
+  </data>
+  <data name="History_EditWordAnnotation" xml:space="preserve">
+    <value>Edit name and comment of the word test from {0}</value>
+  </data>
+  <data name="History_Estimate" xml:space="preserve">
+    <value>{0} {3}  ·  95 % interval {1} to {2} {3}</value>
+  </data>
+  <data name="History_ExactlyTwo" xml:space="preserve">
+    <value>For a clear comparison exactly two completed measurements can be selected.</value>
+  </data>
+  <data name="History_HeardOfTested" xml:space="preserve">
+    <value>{0} of {1} tested tones heard</value>
+  </data>
+  <data name="History_IntervalNote" xml:space="preserve">
+    <value>Percentages: 95 % intervals of the 25 answers each. Adaptive number tests: threshold for 50 % correct with the spread of the averaged values. Both are a descriptive orientation, not proof of a device difference.</value>
+  </data>
+  <data name="History_Last30" xml:space="preserve">
+    <value>Last 30 days</value>
+  </data>
+  <data name="History_Last90" xml:space="preserve">
+    <value>Last 90 days</value>
+  </data>
+  <data name="History_LastYear" xml:space="preserve">
+    <value>Last year</value>
+  </data>
+  <data name="History_LeftLower" xml:space="preserve">
+    <value>left</value>
+  </data>
+  <data name="History_LoadFailed" xml:space="preserve">
+    <value>The measurement history could not be loaded: {0}</value>
+  </data>
+  <data name="History_MaskedLower" xml:space="preserve">
+    <value>masked</value>
+  </data>
+  <data name="History_MaskingAndProtocol" xml:space="preserve">
+    <value>Masking and protocol</value>
+  </data>
+  <data name="History_Material" xml:space="preserve">
+    <value>Material</value>
+  </data>
+  <data name="History_MaterialAdaptive" xml:space="preserve">
+    <value>{0} · {1} · adaptive</value>
+  </data>
+  <data name="History_MaterialEnvironment" xml:space="preserve">
+    <value>{0} · {1}</value>
+  </data>
+  <data name="History_MoreFilters" xml:space="preserve">
+    <value>More filters</value>
+  </data>
+  <data name="History_MoreFiltersActive" xml:space="preserve">
+    <value>More filters ({0} active)</value>
+  </data>
+  <data name="History_NoAnswers" xml:space="preserve">
+    <value>no answers</value>
+  </data>
+  <data name="History_NoMaskingLower" xml:space="preserve">
+    <value>no masking</value>
+  </data>
+  <data name="History_NoMatch" xml:space="preserve">
+    <value>No measurement matches the selected filters.</value>
+  </data>
+  <data name="History_NoResultYet" xml:space="preserve">
+    <value>There is no result for this measurement yet.</value>
+  </data>
+  <data name="History_NoSessions" xml:space="preserve">
+    <value>No measurement session saved yet.</value>
+  </data>
+  <data name="History_NoThresholdTests" xml:space="preserve">
+    <value>No hearing threshold tests saved yet.</value>
+  </data>
+  <data name="History_NoThresholdTestsText" xml:space="preserve">
+    <value>Completed and cancelled tests appear here after they are first saved.</value>
+  </data>
+  <data name="History_NoThresholdTestsTitle" xml:space="preserve">
+    <value>No hearing threshold tests yet</value>
+  </data>
+  <data name="History_NoiseWithSnr" xml:space="preserve">
+    <value>Noise ({0} dB SNR)</value>
+  </data>
+  <data name="History_NoneSelected" xml:space="preserve">
+    <value>No measurement selected.</value>
+  </data>
+  <data name="History_NotCompleted" xml:space="preserve">
+    <value>The measurement is not completed yet.</value>
+  </data>
+  <data name="History_NotDirectlyComparable" xml:space="preserve">
+    <value>Not directly comparable</value>
+  </data>
+  <data name="History_NotHeard" xml:space="preserve">
+    <value>not heard</value>
+  </data>
+  <data name="History_NotScorableWithPack" xml:space="preserve">
+    <value>Not scorable with the active stimulus pack: {0}</value>
+  </data>
+  <data name="History_NotTested" xml:space="preserve">
+    <value>not tested</value>
+  </data>
+  <data name="History_Open" xml:space="preserve">
+    <value>Open →</value>
+  </data>
+  <data name="History_Opened" xml:space="preserve">
+    <value>Opened saved result from {0}.</value>
+  </data>
+  <data name="History_OrderCenterOut" xml:space="preserve">
+    <value>from the 500 Hz center outwards</value>
+  </data>
+  <data name="History_OrderRandom" xml:space="preserve">
+    <value>random order after 500 Hz</value>
+  </data>
+  <data name="History_PackMissing" xml:space="preserve">
+    <value>The corresponding stimulus pack is not installed.</value>
+  </data>
+  <data name="History_PercentagePointsShort" xml:space="preserve">
+    <value>{0} pp</value>
+  </data>
+  <data name="History_Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="History_PointsUnit" xml:space="preserve">
+    <value>pp</value>
+  </data>
+  <data name="History_Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="History_PrintComparison" xml:space="preserve">
+    <value>Print comparison</value>
+  </data>
+  <data name="History_PrintComparisonTooltip" xml:space="preserve">
+    <value>Print the comparison or save it as PDF</value>
+  </data>
+  <data name="History_PrintThresholdComparisonTooltip" xml:space="preserve">
+    <value>Print the comparison chart and table or save them as PDF</value>
+  </data>
+  <data name="History_ProtocolText" xml:space="preserve">
+    <value>Protocol v{0} · {1} · level limit {2:0.##} dBFS</value>
+  </data>
+  <data name="History_Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="History_ResetFilters" xml:space="preserve">
+    <value>Reset filters</value>
+  </data>
+  <data name="History_ResultCount" xml:space="preserve">
+    <value>{0} of {1} measurements</value>
+  </data>
+  <data name="History_RightLower" xml:space="preserve">
+    <value>right</value>
+  </data>
+  <data name="History_Same" xml:space="preserve">
+    <value>same</value>
+  </data>
+  <data name="History_Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="History_SearchLabel" xml:space="preserve">
+    <value>Search in name, comment, hearing aid, measurement profile and material</value>
+  </data>
+  <data name="History_SelectForCurve" xml:space="preserve">
+    <value>Select for the curve comparison</value>
+  </data>
+  <data name="History_SelectNone" xml:space="preserve">
+    <value>Tick two completed measurements to compare.</value>
+  </data>
+  <data name="History_SelectOne" xml:space="preserve">
+    <value>Tick a second completed measurement.</value>
+  </data>
+  <data name="History_SelectTwo" xml:space="preserve">
+    <value>Comparison of the two measurements:</value>
+  </data>
+  <data name="History_SelectWordTest" xml:space="preserve">
+    <value>Select word test from {0} for comparison</value>
+  </data>
+  <data name="History_Selectable" xml:space="preserve">
+    <value>Selectable for comparison</value>
+  </data>
+  <data name="History_SelectedChartName" xml:space="preserve">
+    <value>Frequency chart of the selected hearing threshold test</value>
+  </data>
+  <data name="History_SelectionCount" xml:space="preserve">
+    <value>{0} of 2 measurements selected for comparison</value>
+  </data>
+  <data name="History_Setup" xml:space="preserve">
+    <value>Measurement setup</value>
+  </data>
+  <data name="History_ShowStored" xml:space="preserve">
+    <value>Show saved result</value>
+  </data>
+  <data name="History_Shown" xml:space="preserve">
+    <value>{0} shown. Started measurements remain visible in the history.</value>
+  </data>
+  <data name="History_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="History_SymbolNote" xml:space="preserve">
+    <value>Ear shown as a symbol as in an audiogram: X left, O right. Colors distinguish the tests.</value>
+  </data>
+  <data name="History_TestLabels" xml:space="preserve">
+    <value>Test {0}     Test {1}</value>
+  </data>
+  <data name="History_TestType" xml:space="preserve">
+    <value>Test type</value>
+  </data>
+  <data name="History_ThresholdComparison" xml:space="preserve">
+    <value>Comparison of hearing thresholds</value>
+  </data>
+  <data name="History_ThresholdDeleteFailed" xml:space="preserve">
+    <value>The hearing threshold test could not be deleted: {0}</value>
+  </data>
+  <data name="History_ThresholdDeleted" xml:space="preserve">
+    <value>Hearing threshold test deleted.</value>
+  </data>
+  <data name="History_ThresholdHintMany" xml:space="preserve">
+    <value>{0} tests in the comparison</value>
+  </data>
+  <data name="History_ThresholdHintNone" xml:space="preserve">
+    <value>Tick up to {0} tests to compare.</value>
+  </data>
+  <data name="History_ThresholdHintOne" xml:space="preserve">
+    <value>Tick at least one more test.</value>
+  </data>
+  <data name="History_ThresholdLoadFailed" xml:space="preserve">
+    <value>The hearing threshold history could not be loaded: {0}</value>
+  </data>
+  <data name="History_ThresholdMax" xml:space="preserve">
+    <value>At most {0} hearing threshold tests can be compared at once.</value>
+  </data>
+  <data name="History_ThresholdTestFrom" xml:space="preserve">
+    <value>Hearing threshold test from {0}</value>
+  </data>
+  <data name="History_ThresholdTestLoaded" xml:space="preserve">
+    <value>1 hearing threshold test loaded.</value>
+  </data>
+  <data name="History_ThresholdTests" xml:space="preserve">
+    <value>Hearing threshold tests</value>
+  </data>
+  <data name="History_ThresholdTestsLoaded" xml:space="preserve">
+    <value>{0} hearing threshold tests loaded.</value>
+  </data>
+  <data name="History_UnreadableThreshold" xml:space="preserve">
+    <value>{0} saved hearing threshold measurement(s) cannot be read; the others remain available. ID: {1}.</value>
+  </data>
+  <data name="History_UnreadableWord" xml:space="preserve">
+    <value>{0} saved word measurement(s) cannot be read; the others remain available. ID: {1}.</value>
+  </data>
+  <data name="History_WithAidShort" xml:space="preserve">
+    <value>with HA</value>
+  </data>
+  <data name="History_WordDeleteFailed" xml:space="preserve">
+    <value>The word test could not be deleted: {0}</value>
+  </data>
+  <data name="History_WordDeleted" xml:space="preserve">
+    <value>Word test “{0}” from {1} deleted.</value>
+  </data>
+  <data name="History_WordTestFrom" xml:space="preserve">
+    <value>Word test from {0}</value>
+  </data>
+  <data name="History_WordTests" xml:space="preserve">
+    <value>Word tests</value>
+  </data>
+  <data name="History_Worse" xml:space="preserve">
+    <value>{0:0.#} dB worse</value>
+  </data>
+  <data name="Material_Monosyllables" xml:space="preserve">
+    <value>Monosyllables</value>
+  </data>
+  <data name="Material_Numbers" xml:space="preserve">
+    <value>Numbers</value>
+  </data>
+  <data name="Material_PhonemeContrasts" xml:space="preserve">
+    <value>Phoneme contrasts</value>
+  </data>
+  <data name="Material_Polysyllables" xml:space="preserve">
+    <value>Polysyllables</value>
+  </data>
+  <data name="Measure_AbortSaveFailed" xml:space="preserve">
+    <value>Measurement cancelled, but the cancellation status could not be saved: {0}</value>
+  </data>
+  <data name="Measure_Aborted" xml:space="preserve">
+    <value>Measurement cancelled</value>
+  </data>
+  <data name="Measure_AbortedSaved" xml:space="preserve">
+    <value>Measurement cancelled. The results obtained so far were saved locally.</value>
+  </data>
+  <data name="Measure_Adaptive" xml:space="preserve">
+    <value>Adaptive</value>
+  </data>
+  <data name="Measure_AdaptiveNoiseDescription" xml:space="preserve">
+    <value>The noise runs at a fixed level during the whole block; the speech gets quieter or louder (starting at the set volume and the start SNR). Result: SNR for 50 % correct.</value>
+  </data>
+  <data name="Measure_AdaptiveQuietDescription" xml:space="preserve">
+    <value>Starts at the set volume (choose a clearly audible one), at most up to the level limit; the level adapts. Result: level for 50 % correct.</value>
+  </data>
+  <data name="Measure_AiVoice" xml:space="preserve">
+    <value>The stimuli use a synthetically generated voice.</value>
+  </data>
+  <data name="Measure_Aid" xml:space="preserve">
+    <value>Hearing aid</value>
+  </data>
+  <data name="Measure_AidAtEar" xml:space="preserve">
+    <value>Hearing aid on this ear</value>
+  </data>
+  <data name="Measure_AidManageHint" xml:space="preserve">
+    <value>Manage saved hearing aids under “Switch person”.</value>
+  </data>
+  <data name="Measure_AnnotationHint" xml:space="preserve">
+    <value>The default is the selected hearing aid. Name and comment can be changed later in the history.</value>
+  </data>
+  <data name="Measure_AnswerSaveFailed" xml:space="preserve">
+    <value>The answer could not be saved: {0}</value>
+  </data>
+  <data name="Measure_AnswerSaved" xml:space="preserve">
+    <value>Answer saved. The next word follows shortly …</value>
+  </data>
+  <data name="Measure_AudioOutput" xml:space="preserve">
+    <value>Audio output</value>
+  </data>
+  <data name="Measure_BlockTitle" xml:space="preserve">
+    <value>Block {0} of 2</value>
+  </data>
+  <data name="Measure_CappedToLimit" xml:space="preserve">
+    <value>· capped at the level limit of {0:0.#} dB</value>
+  </data>
+  <data name="Measure_ChanceFive" xml:space="preserve">
+    <value>Chance rate with five alternatives: {0:0} %.</value>
+  </data>
+  <data name="Measure_ChanceNumbers" xml:space="preserve">
+    <value>Free three-digit number entry · chance rate 1/900 ({0:0.###} %).</value>
+  </data>
+  <data name="Measure_ChooseOne" xml:space="preserve">
+    <value>Please choose exactly one answer. The stimulus is not repeated.</value>
+  </data>
+  <data name="Measure_ChooseProfileForTestWord" xml:space="preserve">
+    <value>Choose a measurement profile before playing the test word.</value>
+  </data>
+  <data name="Measure_ColChoice" xml:space="preserve">
+    <value>Choice</value>
+  </data>
+  <data name="Measure_ColCondition" xml:space="preserve">
+    <value>Condition</value>
+  </data>
+  <data name="Measure_ColGroup" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="Measure_ColPosition" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="Measure_ColTarget" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="Measure_Completed" xml:space="preserve">
+    <value>Measurement completed and saved locally.</value>
+  </data>
+  <data name="Measure_ConfirmAll" xml:space="preserve">
+    <value>Please confirm all three preparation checks.</value>
+  </data>
+  <data name="Measure_ConfirmFitAid" xml:space="preserve">
+    <value>The headphones sit without contact or feedback on the hearing aid.</value>
+  </data>
+  <data name="Measure_Confusions" xml:space="preserve">
+    <value>Confusions in the phoneme test</value>
+  </data>
+  <data name="Measure_ConfusionsIntro" xml:space="preserve">
+    <value>Counts per target and choice. A description of the answers, not a frequency diagnosis or gain recommendation.</value>
+  </data>
+  <data name="Measure_CorrectOf" xml:space="preserve">
+    <value>{0} of {1} answers correct</value>
+  </data>
+  <data name="Measure_CreateFailed" xml:space="preserve">
+    <value>The measurement could not be created locally: {0}</value>
+  </data>
+  <data name="Measure_Created" xml:space="preserve">
+    <value>The randomized measurement was created locally. Please prepare the first block.</value>
+  </data>
+  <data name="Measure_DifferenceLabel" xml:space="preserve">
+    <value>Difference with minus without hearing aid</value>
+  </data>
+  <data name="Measure_DiscardSeries" xml:space="preserve">
+    <value>Discard series</value>
+  </data>
+  <data name="Measure_EachOnce" xml:space="preserve">
+    <value>Each of the 25 stimuli is played exactly once.</value>
+  </data>
+  <data name="Measure_EarAndAid" xml:space="preserve">
+    <value>Ear and hearing aid</value>
+  </data>
+  <data name="Measure_EnterNumber" xml:space="preserve">
+    <value>Enter a three-digit number</value>
+  </data>
+  <data name="Measure_EnterValidNumber" xml:space="preserve">
+    <value>Please enter a three-digit number from 100 to 999 or choose Not understood.</value>
+  </data>
+  <data name="Measure_Environment" xml:space="preserve">
+    <value>Listening environment</value>
+  </data>
+  <data name="Measure_ExposureCount" xml:space="preserve">
+    <value>Presentations</value>
+  </data>
+  <data name="Measure_ExposureId" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Measure_ExposureNote" xml:space="preserve">
+    <value>Only stimuli actually presented are counted. The display is a repetition indicator, not an assessment.</value>
+  </data>
+  <data name="Measure_ExposureScope" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="Measure_ExposureTitle" xml:space="preserve">
+    <value>Previous presentations per stimulus</value>
+  </data>
+  <data name="Measure_FinishSeries" xml:space="preserve">
+    <value>Finish measurement series</value>
+  </data>
+  <data name="Measure_FirstBlockSaved" xml:space="preserve">
+    <value>First block saved. Please change the hearing aid condition for block 2.</value>
+  </data>
+  <data name="Measure_FixedLevel" xml:space="preserve">
+    <value>Fixed level</value>
+  </data>
+  <data name="Measure_FixedLevelDescription" xml:space="preserve">
+    <value>All numbers are presented at the set volume; result in percent correct.</value>
+  </data>
+  <data name="Measure_GainLabel" xml:space="preserve">
+    <value>Benefit with hearing aid (threshold without minus with)</value>
+  </data>
+  <data name="Measure_HintsText" xml:space="preserve">
+    <value>The saved audio output must be available; there is no switch to the Windows default device. Levels are digital attenuations, not dB SPL. The measurement is not a clinical assessment.</value>
+  </data>
+  <data name="Measure_InitialStatus" xml:space="preserve">
+    <value>Choose measurement profile and ear.</value>
+  </data>
+  <data name="Measure_InsertAidLeft" xml:space="preserve">
+    <value>Insert the hearing aid in the left ear.</value>
+  </data>
+  <data name="Measure_InsertAidRight" xml:space="preserve">
+    <value>Insert the hearing aid in the right ear.</value>
+  </data>
+  <data name="Measure_Intro" xml:space="preserve">
+    <value>Two blocks of 25 stimuli each – once without, once with the hearing aid. Order and lists are chosen at random.</value>
+  </data>
+  <data name="Measure_Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="Measure_LevelMode" xml:space="preserve">
+    <value>Level procedure</value>
+  </data>
+  <data name="Measure_ManualLevel" xml:space="preserve">
+    <value>Set manually. Suggestion was: {0}</value>
+  </data>
+  <data name="Measure_Material" xml:space="preserve">
+    <value>Test material</value>
+  </data>
+  <data name="Measure_MaterialAndEnvironment" xml:space="preserve">
+    <value>Material and environment</value>
+  </data>
+  <data name="Measure_NeedsAid" xml:space="preserve">
+    <value>Please choose the hearing aid or enter manufacturer, model and name; program and volume state are also required.</value>
+  </data>
+  <data name="Measure_NeedsPerson" xml:space="preserve">
+    <value>A person must be selected before a measurement.</value>
+  </data>
+  <data name="Measure_NeedsPersonBefore" xml:space="preserve">
+    <value>A person must be selected before the measurement.</value>
+  </data>
+  <data name="Measure_NeedsProfile" xml:space="preserve">
+    <value>A saved measurement profile must be selected before the measurement.</value>
+  </data>
+  <data name="Measure_NewMeasurement" xml:space="preserve">
+    <value>New measurement</value>
+  </data>
+  <data name="Measure_NextPair" xml:space="preserve">
+    <value>Prepare next series pair</value>
+  </data>
+  <data name="Measure_NoAidLeft" xml:space="preserve">
+    <value>Do not wear a hearing aid for this block. Only the left ear is tested.</value>
+  </data>
+  <data name="Measure_NoAidRight" xml:space="preserve">
+    <value>Do not wear a hearing aid for this block. Only the right ear is tested.</value>
+  </data>
+  <data name="Measure_NoAnswerYet" xml:space="preserve">
+    <value>No answer recorded yet</value>
+  </data>
+  <data name="Measure_NoFeedback" xml:space="preserve">
+    <value>No feedback about right or wrong during the measurement.</value>
+  </data>
+  <data name="Measure_NoiseFailed" xml:space="preserve">
+    <value>The continuous noise could not be prepared: {0}</value>
+  </data>
+  <data name="Measure_NoiseProfileMissing" xml:space="preserve">
+    <value>The verified material-specific noise profile is missing; the cardinal number test in noise remains locked.</value>
+  </data>
+  <data name="Measure_NoiseProfileSampleRate" xml:space="preserve">
+    <value>The material-specific noise profile does not support the saved output sample rate.</value>
+  </data>
+  <data name="Measure_NoiseStarting" xml:space="preserve">
+    <value>Noise is starting …</value>
+  </data>
+  <data name="Measure_NotDocumented" xml:space="preserve">
+    <value>Not documented</value>
+  </data>
+  <data name="Measure_NotUnderstood" xml:space="preserve">
+    <value>Not understood</value>
+  </data>
+  <data name="Measure_NumberMaterial" xml:space="preserve">
+    <value>Numbers · {0}</value>
+  </data>
+  <data name="Measure_OtherDevice" xml:space="preserve">
+    <value>Enter another device</value>
+  </data>
+  <data name="Measure_PairCount" xml:space="preserve">
+    <value>Number of pairs</value>
+  </data>
+  <data name="Measure_Pairs" xml:space="preserve">
+    <value>Pairs</value>
+  </data>
+  <data name="Measure_PartialDescription" xml:space="preserve">
+    <value>Partial result up to cancellation · no clinical assessment</value>
+  </data>
+  <data name="Measure_Paused" xml:space="preserve">
+    <value>Measurement paused. The current word is played again when resuming.</value>
+  </data>
+  <data name="Measure_Percent" xml:space="preserve">
+    <value>{0:0.#} %</value>
+  </data>
+  <data name="Measure_PercentagePoints" xml:space="preserve">
+    <value>{0:+0.#;-0.#;0} percentage points</value>
+  </data>
+  <data name="Measure_PhonemeMaterial" xml:space="preserve">
+    <value>Phoneme contrasts · 5 choices</value>
+  </data>
+  <data name="Measure_PlanSeries" xml:space="preserve">
+    <value>Plan and start measurement series</value>
+  </data>
+  <data name="Measure_PlanStepLeft" xml:space="preserve">
+    <value>Step {0} of 5 of the recommended sequence: {1}, left ear.</value>
+  </data>
+  <data name="Measure_PlanStepRight" xml:space="preserve">
+    <value>Step {0} of 5 of the recommended sequence: {1}, right ear.</value>
+  </data>
+  <data name="Measure_PlayTestWord" xml:space="preserve">
+    <value>Play test word</value>
+  </data>
+  <data name="Measure_Playing" xml:space="preserve">
+    <value>Playing stimulus through the saved output …</value>
+  </data>
+  <data name="Measure_PreparationTitle" xml:space="preserve">
+    <value>Block {0} of 2 · {1}</value>
+  </data>
+  <data name="Measure_Prepare" xml:space="preserve">
+    <value>Prepare measurement</value>
+  </data>
+  <data name="Measure_PrepareFor" xml:space="preserve">
+    <value>Prepare a measurement for {0}.</value>
+  </data>
+  <data name="Measure_PrepareNew" xml:space="preserve">
+    <value>Prepare a new measurement.</value>
+  </data>
+  <data name="Measure_PreparePair" xml:space="preserve">
+    <value>Prepare series pair {0} of {1}.</value>
+  </data>
+  <data name="Measure_PrintTooltip" xml:space="preserve">
+    <value>Print the result or save it as PDF</value>
+  </data>
+  <data name="Measure_ProfileLimit" xml:space="preserve">
+    <value>{0} · level limit {1} dB (digital)</value>
+  </data>
+  <data name="Measure_Program" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="Measure_Progress" xml:space="preserve">
+    <value>{0} of {1}</value>
+  </data>
+  <data name="Measure_ProtocolName" xml:space="preserve">
+    <value>Name in the log</value>
+  </data>
+  <data name="Measure_ResultDescription" xml:space="preserve">
+    <value>Descriptive personal comparison · no clinical assessment</value>
+  </data>
+  <data name="Measure_ResultTitle" xml:space="preserve">
+    <value>Result of the paired measurement</value>
+  </data>
+  <data name="Measure_Resumed" xml:space="preserve">
+    <value>The measurement continues with the current word.</value>
+  </data>
+  <data name="Measure_RetryPlayback" xml:space="preserve">
+    <value>Retry playback</value>
+  </data>
+  <data name="Measure_SaveAnswer" xml:space="preserve">
+    <value>Save answer</value>
+  </data>
+  <data name="Measure_ScoringText" xml:space="preserve">
+    <value>The percentage is correct answers divided by 25. “Not understood” counts as incorrect. Raw answers, order and playback records are kept in the local measurement. No clinical assessment.</value>
+  </data>
+  <data name="Measure_ScoringTitle" xml:space="preserve">
+    <value>How is it scored?</value>
+  </data>
+  <data name="Measure_Sequence" xml:space="preserve">
+    <value>Procedure</value>
+  </data>
+  <data name="Measure_Series" xml:space="preserve">
+    <value>Measurement series</value>
+  </data>
+  <data name="Measure_SeriesDiscarded" xml:space="preserve">
+    <value>Series plan discarded. Prepare a single measurement.</value>
+  </data>
+  <data name="Measure_SeriesFinished" xml:space="preserve">
+    <value>Measurement series finished. Prepare a new single measurement.</value>
+  </data>
+  <data name="Measure_SeriesHint" xml:space="preserve">
+    <value>A measurement series plans several pairs with alternating order and separate lists.</value>
+  </data>
+  <data name="Measure_SeriesLoadFailed" xml:space="preserve">
+    <value>The saved measurement series could not be loaded: {0}</value>
+  </data>
+  <data name="Measure_SeriesNeedsPerson" xml:space="preserve">
+    <value>A person must be selected before planning a series.</value>
+  </data>
+  <data name="Measure_SeriesOptional" xml:space="preserve">
+    <value>Optional: a series plans several pairs with a balanced condition order and separate lists.</value>
+  </data>
+  <data name="Measure_SeriesPairCreated" xml:space="preserve">
+    <value>Series pair {0} of {1} was created locally. Please prepare the first block.</value>
+  </data>
+  <data name="Measure_SeriesPairRange" xml:space="preserve">
+    <value>A measurement series can currently contain 2 to 12 pairs.</value>
+  </data>
+  <data name="Measure_SeriesPlanFailed" xml:space="preserve">
+    <value>The measurement series could not be planned: {0}</value>
+  </data>
+  <data name="Measure_SeriesPrepared" xml:space="preserve">
+    <value>Series prepared · pair {0} of {1} · {2} first.</value>
+  </data>
+  <data name="Measure_SeriesRestored" xml:space="preserve">
+    <value>Saved measurement series restored: {0}</value>
+  </data>
+  <data name="Measure_SetupSaveFailed" xml:space="preserve">
+    <value>The setup state could not be saved locally: {0}</value>
+  </data>
+  <data name="Measure_Single" xml:space="preserve">
+    <value>Single measurement</value>
+  </data>
+  <data name="Measure_Snr" xml:space="preserve">
+    <value>Signal-to-noise ratio</value>
+  </data>
+  <data name="Measure_SnrName" xml:space="preserve">
+    <value>Signal-to-noise ratio in dB</value>
+  </data>
+  <data name="Measure_SnrRange" xml:space="preserve">
+    <value>The signal-to-noise ratio must be between -20 dB and +30 dB.</value>
+  </data>
+  <data name="Measure_SpeechVolumeLabel" xml:space="preserve">
+    <value>Speech volume (digital, not dB SPL)</value>
+  </data>
+  <data name="Measure_SpeechVolumeName" xml:space="preserve">
+    <value>Speech volume</value>
+  </data>
+  <data name="Measure_StartBlock" xml:space="preserve">
+    <value>Start block</value>
+  </data>
+  <data name="Measure_StartSnr" xml:space="preserve">
+    <value>Start SNR</value>
+  </data>
+  <data name="Measure_StartVolumeLabel" xml:space="preserve">
+    <value>Start volume (digital, not dB SPL)</value>
+  </data>
+  <data name="Measure_StoredDescription" xml:space="preserve">
+    <value>{0:g} · {1} · {2} · no clinical assessment</value>
+  </data>
+  <data name="Measure_StoredPartial" xml:space="preserve">
+    <value>Saved partial result</value>
+  </data>
+  <data name="Measure_StoredResult" xml:space="preserve">
+    <value>Saved measurement result</value>
+  </data>
+  <data name="Measure_StoredResultStatus" xml:space="preserve">
+    <value>Saved result from {0:g}.</value>
+  </data>
+  <data name="Measure_TestWordFailed" xml:space="preserve">
+    <value>The test word could not be played: {0}</value>
+  </data>
+  <data name="Measure_TestWordPlayedLeft" xml:space="preserve">
+    <value>Test word played at {0} on the left ear.</value>
+  </data>
+  <data name="Measure_TestWordPlayedRight" xml:space="preserve">
+    <value>Test word played at {0} on the right ear.</value>
+  </data>
+  <data name="Measure_VolumeHint" xml:space="preserve">
+    <value>Volume and SNR are prefilled from this ear’s pretests with the same measurement profile. Each change plays a test word on the tested ear. The volume is saved with the measurement; measurements at a different volume are not directly comparable (except for the adaptive number test in quiet).</value>
+  </data>
+  <data name="Measure_VolumeTooHigh" xml:space="preserve">
+    <value>The volume is {0:0.#} dB too high for the noise test: the quietest stimulus would otherwise exceed the level limit.</value>
+  </data>
+  <data name="Measure_VolumeValue" xml:space="preserve">
+    <value>{0:0} dB</value>
+  </data>
+  <data name="Overview_AllDone" xml:space="preserve">
+    <value>All steps for this ear are done. Repetitions always use the latest pretest values.</value>
+  </data>
+  <data name="Overview_Born" xml:space="preserve">
+    <value>born {0:d}</value>
+  </data>
+  <data name="Overview_Correct" xml:space="preserve">
+    <value>{0} correct</value>
+  </data>
+  <data name="Overview_FreeChoice" xml:space="preserve">
+    <value>Free choice:</value>
+  </data>
+  <data name="Overview_LastDone" xml:space="preserve">
+    <value>Last done on {0:d}: {1}</value>
+  </data>
+  <data name="Overview_LatestOn" xml:space="preserve">
+    <value>latest on {0}</value>
+  </data>
+  <data name="Overview_LegendAborted" xml:space="preserve">
+    <value>aborted</value>
+  </data>
+  <data name="Overview_LegendCompleted" xml:space="preserve">
+    <value>completed</value>
+  </data>
+  <data name="Overview_LegendDifference" xml:space="preserve">
+    <value>Difference</value>
+  </data>
+  <data name="Overview_LegendDifferenceText" xml:space="preserve">
+    <value>= with minus without hearing aid</value>
+  </data>
+  <data name="Overview_LegendLeftEar" xml:space="preserve">
+    <value>left ear</value>
+  </data>
+  <data name="Overview_LegendRightEar" xml:space="preserve">
+    <value>right ear</value>
+  </data>
+  <data name="Overview_Measurements" xml:space="preserve">
+    <value>{0} measurements</value>
+  </data>
+  <data name="Overview_NextRecommended" xml:space="preserve">
+    <value>Recommended next: step {0}. Every step can be started or skipped at any time.</value>
+  </data>
+  <data name="Overview_NoAnswers" xml:space="preserve">
+    <value>No answers recorded</value>
+  </data>
+  <data name="Overview_NoMeasurements" xml:space="preserve">
+    <value>no measurements yet</value>
+  </data>
+  <data name="Overview_NoMeasurementsText" xml:space="preserve">
+    <value>Start a word test or hearing threshold test above. Results will then appear here.</value>
+  </data>
+  <data name="Overview_NoMeasurementsTitle" xml:space="preserve">
+    <value>No measurements yet</value>
+  </data>
+  <data name="Overview_NoPerson" xml:space="preserve">
+    <value>No person selected</value>
+  </data>
+  <data name="Overview_NoPersonHint" xml:space="preserve">
+    <value>Choose or create a person to start tests.</value>
+  </data>
+  <data name="Overview_NotDone" xml:space="preserve">
+    <value>Not done yet</value>
+  </data>
+  <data name="Overview_Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Overview_OneMeasurement" xml:space="preserve">
+    <value>1 measurement</value>
+  </data>
+  <data name="Overview_PlanEar" xml:space="preserve">
+    <value>Ear of the recommended sequence</value>
+  </data>
+  <data name="Overview_PracticeLink" xml:space="preserve">
+    <value>Practice (does not count as a measurement)</value>
+  </data>
+  <data name="Overview_Recent" xml:space="preserve">
+    <value>Recent measurements</value>
+  </data>
+  <data name="Overview_RecommendedFlow" xml:space="preserve">
+    <value>Recommended sequence</value>
+  </data>
+  <data name="Overview_Repeat" xml:space="preserve">
+    <value>Repeat</value>
+  </data>
+  <data name="Overview_ShowAll" xml:space="preserve">
+    <value>Show and compare all →</value>
+  </data>
+  <data name="Overview_Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="Overview_ThresholdTitle" xml:space="preserve">
+    <value>Hearing threshold · {0}</value>
+  </data>
+  <data name="Persons_Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Persons_AddAid" xml:space="preserve">
+    <value>Add hearing aid</value>
+  </data>
+  <data name="Persons_AidAdded" xml:space="preserve">
+    <value>Hearing aid “{0}” added.</value>
+  </data>
+  <data name="Persons_AidDeleteFailed" xml:space="preserve">
+    <value>The hearing aid could not be deleted: {0}</value>
+  </data>
+  <data name="Persons_AidDeleted" xml:space="preserve">
+    <value>Hearing aid “{0}” deleted. Previous measurements remain unchanged.</value>
+  </data>
+  <data name="Persons_AidDisplayName" xml:space="preserve">
+    <value>Name (optional, otherwise “Manufacturer Model”)</value>
+  </data>
+  <data name="Persons_AidDisplayNameName" xml:space="preserve">
+    <value>Hearing aid name</value>
+  </data>
+  <data name="Persons_AidEar" xml:space="preserve">
+    <value>Hearing aid ear</value>
+  </data>
+  <data name="Persons_AidEditing" xml:space="preserve">
+    <value>Editing “{0}”.</value>
+  </data>
+  <data name="Persons_AidSaveFailed" xml:space="preserve">
+    <value>The hearing aid could not be saved: {0}</value>
+  </data>
+  <data name="Persons_AidSaved" xml:space="preserve">
+    <value>Hearing aid “{0}” saved. Previous measurements keep their stored device data.</value>
+  </data>
+  <data name="Persons_BirthDate" xml:space="preserve">
+    <value>Date of birth (optional)</value>
+  </data>
+  <data name="Persons_BirthDateName" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="Persons_BornAt" xml:space="preserve">
+    <value>Born {0:d}</value>
+  </data>
+  <data name="Persons_BornShort" xml:space="preserve">
+    <value>b. {0:d}</value>
+  </data>
+  <data name="Persons_ChooseAidEar" xml:space="preserve">
+    <value>Please choose the ear of the hearing aid.</value>
+  </data>
+  <data name="Persons_ChoosePerson" xml:space="preserve">
+    <value>Choose a person on the left</value>
+  </data>
+  <data name="Persons_ChoosePersonText" xml:space="preserve">
+    <value>All tests and measurements belong to a person. Create a person first if the list is empty.</value>
+  </data>
+  <data name="Persons_CreateButton" xml:space="preserve">
+    <value>Create person</value>
+  </data>
+  <data name="Persons_CreatePerson" xml:space="preserve">
+    <value>Create new person</value>
+  </data>
+  <data name="Persons_Created" xml:space="preserve">
+    <value>Person “{0}” created.</value>
+  </data>
+  <data name="Persons_DeleteAidMessage" xml:space="preserve">
+    <value>Delete the hearing aid “{0}” from this person’s list?
+
+Previous measurements remain unchanged and keep their stored device data.</value>
+  </data>
+  <data name="Persons_DeleteAidTitle" xml:space="preserve">
+    <value>Delete hearing aid</value>
+  </data>
+  <data name="Persons_EditAid" xml:space="preserve">
+    <value>Edit hearing aid</value>
+  </data>
+  <data name="Persons_EditPerson" xml:space="preserve">
+    <value>Edit person</value>
+  </data>
+  <data name="Persons_HearingAids" xml:space="preserve">
+    <value>Hearing aids</value>
+  </data>
+  <data name="Persons_HearingAidsIntro" xml:space="preserve">
+    <value>Saved devices are available when setting up a test. Changes and deletions only affect future measurements.</value>
+  </data>
+  <data name="Persons_Loaded" xml:space="preserve">
+    <value>{0} person(s) loaded.</value>
+  </data>
+  <data name="Persons_NewPerson" xml:space="preserve">
+    <value>New person</value>
+  </data>
+  <data name="Persons_NewPersonButton" xml:space="preserve">
+    <value>+ New person</value>
+  </data>
+  <data name="Persons_NewPersonHint" xml:space="preserve">
+    <value>New person: only the name is required.</value>
+  </data>
+  <data name="Persons_NoBirthDate" xml:space="preserve">
+    <value>No date of birth recorded</value>
+  </data>
+  <data name="Persons_NoHearingAids" xml:space="preserve">
+    <value>No hearing aids recorded yet.</value>
+  </data>
+  <data name="Persons_NoneCreated" xml:space="preserve">
+    <value>No person created yet.</value>
+  </data>
+  <data name="Persons_OpenOverview" xml:space="preserve">
+    <value>Open overview</value>
+  </data>
+  <data name="Persons_OtherInformation" xml:space="preserve">
+    <value>Additional information (optional)</value>
+  </data>
+  <data name="Persons_OtherInformationName" xml:space="preserve">
+    <value>Additional information</value>
+  </data>
+  <data name="Persons_Saved" xml:space="preserve">
+    <value>Changes to “{0}” saved.</value>
+  </data>
+  <data name="Persons_Search" xml:space="preserve">
+    <value>Search person</value>
+  </data>
+  <data name="Persons_SearchTooltip" xml:space="preserve">
+    <value>Search by name</value>
+  </data>
+  <data name="Persons_Title" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="Plan_HearingThreshold" xml:space="preserve">
+    <value>Hearing threshold</value>
+  </data>
+  <data name="Plan_HearingThresholdDescription" xml:space="preserve">
+    <value>Pure tones without hearing aid, optionally with masking of the other ear. Provides a starting value for step 2 as long as no measurement exists there.</value>
+  </data>
+  <data name="Plan_NumbersNoise" xml:space="preserve">
+    <value>Numbers in noise (adaptive)</value>
+  </data>
+  <data name="Plan_NumbersNoiseDescription" xml:space="preserve">
+    <value>SNR threshold without and with hearing aid. Speech {0:0} dB above the threshold in quiet, continuous noise.</value>
+  </data>
+  <data name="Plan_NumbersQuiet" xml:space="preserve">
+    <value>Numbers in quiet (adaptive)</value>
+  </data>
+  <data name="Plan_NumbersQuietDescription" xml:space="preserve">
+    <value>Threshold in quiet without and with hearing aid. Starts {0:0} dB above the (estimated) threshold in quiet; basis for all following levels.</value>
+  </data>
+  <data name="Plan_PhonemesNoise" xml:space="preserve">
+    <value>Phoneme contrasts in noise</value>
+  </data>
+  <data name="Plan_PhonemesNoiseDescription" xml:space="preserve">
+    <value>Percent correct: speech {0:0} dB above the threshold in quiet, SNR {1:0} dB above the SNR threshold.</value>
+  </data>
+  <data name="Plan_PhonemesQuiet" xml:space="preserve">
+    <value>Phoneme contrasts in quiet</value>
+  </data>
+  <data name="Plan_PhonemesQuietDescription" xml:space="preserve">
+    <value>Percent correct at {0:0} dB above the threshold in quiet.</value>
+  </data>
+  <data name="Practice_Abort" xml:space="preserve">
+    <value>Cancel practice</value>
+  </data>
+  <data name="Practice_AbortSaveFailed" xml:space="preserve">
+    <value>Practice cancelled, but the cancellation status could not be saved: {0}</value>
+  </data>
+  <data name="Practice_Aborted" xml:space="preserve">
+    <value>Practice cancelled</value>
+  </data>
+  <data name="Practice_AbortedDescription" xml:space="preserve">
+    <value>The practice answers recorded until cancellation remain stored locally, separate from all measurement values.</value>
+  </data>
+  <data name="Practice_AbortedSaved" xml:space="preserve">
+    <value>Practice cancelled. The answers so far were saved locally and separately.</value>
+  </data>
+  <data name="Practice_Answer" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="Practice_Audio" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="Practice_CheckAnswer" xml:space="preserve">
+    <value>Check answer</value>
+  </data>
+  <data name="Practice_Completed" xml:space="preserve">
+    <value>Practice completed</value>
+  </data>
+  <data name="Practice_CompletedDescription" xml:space="preserve">
+    <value>The feedback and raw answers remain stored locally, separate from all measurement values.</value>
+  </data>
+  <data name="Practice_Confirm" xml:space="preserve">
+    <value>Output and setup are chosen deliberately; the practice is not a measurement run.</value>
+  </data>
+  <data name="Practice_Correct" xml:space="preserve">
+    <value>Correct</value>
+  </data>
+  <data name="Practice_Ear" xml:space="preserve">
+    <value>Practiced ear</value>
+  </data>
+  <data name="Practice_EarAndList" xml:space="preserve">
+    <value>Ear and list</value>
+  </data>
+  <data name="Practice_EnterAnswer" xml:space="preserve">
+    <value>Please enter the target answer you heard. Feedback follows immediately.</value>
+  </data>
+  <data name="Practice_FeedbackNote" xml:space="preserve">
+    <value>The feedback only applies to the practice and is not included in measurement values or comparisons.</value>
+  </data>
+  <data name="Practice_FeedbackShown" xml:space="preserve">
+    <value>Feedback shown. Continue with “Next stimulus”.</value>
+  </data>
+  <data name="Practice_Hints" xml:space="preserve">
+    <value>Notes on the practice</value>
+  </data>
+  <data name="Practice_HintsText" xml:space="preserve">
+    <value>The practice uses the earlier personal word material, separate from the phoneme test. After each entry the target answer is shown; practice sessions are therefore not comparable with measurements. Only the saved output is used, without switching to the Windows default device. The profile’s upper limit is never exceeded.</value>
+  </data>
+  <data name="Practice_InitialStatus" xml:space="preserve">
+    <value>Choose practice material, ear and measurement profile.</value>
+  </data>
+  <data name="Practice_Intro" xml:space="preserve">
+    <value>Free word response with immediate feedback. Practice answers are never measurement values and never appear in a comparison.</value>
+  </data>
+  <data name="Practice_List" xml:space="preserve">
+    <value>Practice list</value>
+  </data>
+  <data name="Practice_NeedsPerson" xml:space="preserve">
+    <value>A person must be selected before a practice session.</value>
+  </data>
+  <data name="Practice_New" xml:space="preserve">
+    <value>New practice</value>
+  </data>
+  <data name="Practice_Next" xml:space="preserve">
+    <value>Next stimulus</value>
+  </data>
+  <data name="Practice_NotUnderstood" xml:space="preserve">
+    <value>Not understood</value>
+  </data>
+  <data name="Practice_OutputUnavailable" xml:space="preserve">
+    <value>The output saved in the measurement profile is not available. The practice does not use a substitute device.</value>
+  </data>
+  <data name="Practice_Pause" xml:space="preserve">
+    <value>Pause practice</value>
+  </data>
+  <data name="Practice_Paused" xml:space="preserve">
+    <value>Practice paused. The current word is played again when resuming.</value>
+  </data>
+  <data name="Practice_PlaybackBlockedPrompt" xml:space="preserve">
+    <value>Playback blocked – please check the status message</value>
+  </data>
+  <data name="Practice_Playing" xml:space="preserve">
+    <value>Playing stimulus …</value>
+  </data>
+  <data name="Practice_Prepare" xml:space="preserve">
+    <value>Prepare a practice session for {0}.</value>
+  </data>
+  <data name="Practice_PrepareFailed" xml:space="preserve">
+    <value>The practice could not be prepared: {0}</value>
+  </data>
+  <data name="Practice_PrepareNew" xml:space="preserve">
+    <value>Prepare a new practice session.</value>
+  </data>
+  <data name="Practice_Progress" xml:space="preserve">
+    <value>{0} of {1}</value>
+  </data>
+  <data name="Practice_Remember" xml:space="preserve">
+    <value>Note this one</value>
+  </data>
+  <data name="Practice_Replay" xml:space="preserve">
+    <value>Play word again</value>
+  </data>
+  <data name="Practice_ResultNote" xml:space="preserve">
+    <value>The practice prepares for the input and the material. It deliberately has no score and no hearing aid comparison.</value>
+  </data>
+  <data name="Practice_Resume" xml:space="preserve">
+    <value>Resume practice</value>
+  </data>
+  <data name="Practice_Resumed" xml:space="preserve">
+    <value>The practice continues with the current word.</value>
+  </data>
+  <data name="Practice_SaveFailed" xml:space="preserve">
+    <value>The practice answer could not be saved: {0}</value>
+  </data>
+  <data name="Practice_SavedComplete" xml:space="preserve">
+    <value>Practice completed and stored locally, separate from measurements.</value>
+  </data>
+  <data name="Practice_Start" xml:space="preserve">
+    <value>Start practice</value>
+  </data>
+  <data name="Practice_Started" xml:space="preserve">
+    <value>Practice started. Feedback appears after each answer; it never enters measurement values.</value>
+  </data>
+  <data name="Practice_TargetWas" xml:space="preserve">
+    <value>The target answer was “{0}”.</value>
+  </data>
+  <data name="Practice_Volume" xml:space="preserve">
+    <value>Practice volume (digital, not dB SPL)</value>
+  </data>
+  <data name="Practice_VolumeName" xml:space="preserve">
+    <value>Practice volume</value>
+  </data>
+  <data name="Practice_VolumeShort" xml:space="preserve">
+    <value>Volume</value>
+  </data>
+  <data name="Practice_VolumeTooltip" xml:space="preserve">
+    <value>The change applies from the next playback</value>
+  </data>
+  <data name="Practice_Volume_Value" xml:space="preserve">
+    <value>{0:0} dBFS</value>
+  </data>
+  <data name="Practice_WhatDidYouHear" xml:space="preserve">
+    <value>What did you hear?</value>
+  </data>
+  <data name="Practice_YourAnswer" xml:space="preserve">
+    <value>Your answer: “{0}” · target answer: “{1}”.</value>
+  </data>
+  <data name="Pretest_Adaptive" xml:space="preserve">
+    <value>without {0}{2} · with {1}{2}</value>
+  </data>
+  <data name="Pretest_Completed" xml:space="preserve">
+    <value>completed</value>
+  </data>
+  <data name="Pretest_Percent" xml:space="preserve">
+    <value>without {0:0.#} % · with {1:0.#} %</value>
+  </data>
+  <data name="Pretest_ToneAverage" xml:space="preserve">
+    <value>Tone average 0.5–2 kHz {0:0.#} dBFS</value>
+  </data>
+  <data name="Report_Aid" xml:space="preserve">
+    <value>Hearing aid</value>
+  </data>
+  <data name="Report_Amplifier" xml:space="preserve">
+    <value>Amplifier</value>
+  </data>
+  <data name="Report_AndDates" xml:space="preserve">
+    <value>{0} and {1}</value>
+  </data>
+  <data name="Report_AudioOutput" xml:space="preserve">
+    <value>Audio output</value>
+  </data>
+  <data name="Report_AudioOutputValue" xml:space="preserve">
+    <value>{0} · {1} Hz · {2} bit</value>
+  </data>
+  <data name="Report_BetterNote" xml:space="preserve">
+    <value>“Better” means: test 2 heard a quieter tone.</value>
+  </data>
+  <data name="Report_Catalog" xml:space="preserve">
+    <value>Catalog</value>
+  </data>
+  <data name="Report_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="Report_Condition" xml:space="preserve">
+    <value>Condition</value>
+  </data>
+  <data name="Report_DateEarEnvironment" xml:space="preserve">
+    <value>Date · ear · environment</value>
+  </data>
+  <data name="Report_Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Report_DifferentSetup" xml:space="preserve">
+    <value>Different measurement setup: {0}</value>
+  </data>
+  <data name="Report_Disclaimer" xml:space="preserve">
+    <value>Personal relative comparison. Levels are digital attenuations in dBFS without coupler calibration, not dB SPL. Not a clinical audiogram, not validated speech audiometry and no substitute for a medical examination.</value>
+  </data>
+  <data name="Report_Ear" xml:space="preserve">
+    <value>Ear</value>
+  </data>
+  <data name="Report_Equalization" xml:space="preserve">
+    <value>Headphone equalization</value>
+  </data>
+  <data name="Report_Frequency" xml:space="preserve">
+    <value>Frequency</value>
+  </data>
+  <data name="Report_Gain" xml:space="preserve">
+    <value>Gain {0}</value>
+  </data>
+  <data name="Report_Headphones" xml:space="preserve">
+    <value>Headphones</value>
+  </data>
+  <data name="Report_LegacyAid" xml:space="preserve">
+    <value>{0} (older protocol)</value>
+  </data>
+  <data name="Report_Masking" xml:space="preserve">
+    <value>Masking</value>
+  </data>
+  <data name="Report_Material" xml:space="preserve">
+    <value>Material</value>
+  </data>
+  <data name="Report_Measurement1" xml:space="preserve">
+    <value>Measurement 1</value>
+  </data>
+  <data name="Report_Measurement2" xml:space="preserve">
+    <value>Measurement 2</value>
+  </data>
+  <data name="Report_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Report_NoEqualization" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="Report_NotDirectlyComparable" xml:space="preserve">
+    <value>Not directly comparable: {0}</value>
+  </data>
+  <data name="Report_Person" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="Report_PrintFailed" xml:space="preserve">
+    <value>Printing failed: {0}</value>
+  </data>
+  <data name="Report_PrintedAt" xml:space="preserve">
+    <value>Printed on {0:g}</value>
+  </data>
+  <data name="Report_Procedure" xml:space="preserve">
+    <value>Procedure</value>
+  </data>
+  <data name="Report_Profile" xml:space="preserve">
+    <value>Measurement profile</value>
+  </data>
+  <data name="Report_Result" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="Report_SentToPrinter" xml:space="preserve">
+    <value>“{0}” sent to the printer.</value>
+  </data>
+  <data name="Report_Setup" xml:space="preserve">
+    <value>Measurement setup</value>
+  </data>
+  <data name="Report_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Report_Test" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="Report_TestN" xml:space="preserve">
+    <value>Test {0}</value>
+  </data>
+  <data name="Report_Threshold" xml:space="preserve">
+    <value>Hearing threshold</value>
+  </data>
+  <data name="Report_ThresholdProcedure" xml:space="preserve">
+    <value>Protocol v{0} · {1} · level limit {2} dBFS</value>
+  </data>
+  <data name="Report_ThresholdTestCount" xml:space="preserve">
+    <value>{0} hearing threshold tests</value>
+  </data>
+  <data name="Report_ThresholdsPerFrequency" xml:space="preserve">
+    <value>Hearing thresholds per frequency</value>
+  </data>
+  <data name="Report_Volume" xml:space="preserve">
+    <value>Volume</value>
+  </data>
+  <data name="Report_VolumeValue" xml:space="preserve">
+    <value>{0} dB · upper limit {1} dB (digital attenuation)</value>
+  </data>
+  <data name="Report_WordComparisonTitle" xml:space="preserve">
+    <value>Comparison of two word tests</value>
+  </data>
+  <data name="Settings_ActionClose" xml:space="preserve">
+    <value>close the application</value>
+  </data>
+  <data name="Settings_ActionCloseCancel" xml:space="preserve">
+    <value>keep the application open</value>
+  </data>
+  <data name="Settings_ActionLanguage" xml:space="preserve">
+    <value>switch the language</value>
+  </data>
+  <data name="Settings_ActionLanguageCancel" xml:space="preserve">
+    <value>keep the current language</value>
+  </data>
+  <data name="Settings_ActionNewProfile" xml:space="preserve">
+    <value>create a new profile</value>
+  </data>
+  <data name="Settings_ActionStay" xml:space="preserve">
+    <value>stay with the current profile</value>
+  </data>
+  <data name="Settings_ActionSwitch" xml:space="preserve">
+    <value>switch</value>
+  </data>
+  <data name="Settings_AmplifierOutput" xml:space="preserve">
+    <value>Amplifier output (WASAPI)</value>
+  </data>
+  <data name="Settings_AmplifierOutputName" xml:space="preserve">
+    <value>Amplifier output</value>
+  </data>
+  <data name="Settings_CatalogLoadFailed" xml:space="preserve">
+    <value>The equalization catalog could not be loaded: {0}</value>
+  </data>
+  <data name="Settings_CatalogMatches" xml:space="preserve">
+    <value>Matches in the AutoEq catalog</value>
+  </data>
+  <data name="Settings_CatalogPick" xml:space="preserve">
+    <value>Choose from the AutoEq catalog (over-ear, passively driven headphones)</value>
+  </data>
+  <data name="Settings_CatalogSearch" xml:space="preserve">
+    <value>Search headphones in the AutoEq catalog</value>
+  </data>
+  <data name="Settings_ChangedAt" xml:space="preserve">
+    <value>Changed {0:g}</value>
+  </data>
+  <data name="Settings_ChannelTest" xml:space="preserve">
+    <value>Channel test (quiet, one after the other)</value>
+  </data>
+  <data name="Settings_ChannelTestDone" xml:space="preserve">
+    <value>Channel test completed.</value>
+  </data>
+  <data name="Settings_ChannelsSuffix" xml:space="preserve">
+    <value>{0} channels · {1} Hz · {2} bit</value>
+  </data>
+  <data name="Settings_Design" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="Settings_DesignClosed" xml:space="preserve">
+    <value>Over-ear, closed</value>
+  </data>
+  <data name="Settings_DesignHintLegacy" xml:space="preserve">
+    <value>“{0}” is an older free-text value. Please choose one of the fixed designs.</value>
+  </data>
+  <data name="Settings_DesignHintOnEar" xml:space="preserve">
+    <value>On-ear headphones press on a behind-the-ear hearing aid; fit and feedback are hardly reproducible. Use over-ear headphones for measurements with a hearing aid.</value>
+  </data>
+  <data name="Settings_DesignNotSpecified" xml:space="preserve">
+    <value>Not specified</value>
+  </data>
+  <data name="Settings_DesignOnEar" xml:space="preserve">
+    <value>On-ear</value>
+  </data>
+  <data name="Settings_DesignOpen" xml:space="preserve">
+    <value>Over-ear, open</value>
+  </data>
+  <data name="Settings_DesignSemiOpen" xml:space="preserve">
+    <value>Over-ear, semi-open</value>
+  </data>
+  <data name="Settings_DetectingOutputs" xml:space="preserve">
+    <value>Detecting audio outputs …</value>
+  </data>
+  <data name="Settings_EndpointMissing" xml:space="preserve">
+    <value>The saved audio output is missing. Please select one deliberately; there is no automatic switch.</value>
+  </data>
+  <data name="Settings_EndpointSelected" xml:space="preserve">
+    <value>Audio output “{0}” selected ({1} channels, {2} Hz, {3} bit).</value>
+  </data>
+  <data name="Settings_Equalization" xml:space="preserve">
+    <value>Headphone equalization</value>
+  </data>
+  <data name="Settings_EqualizationApplied" xml:space="preserve">
+    <value>Equalization “{0}” ({1}) applied. Takes effect after saving the measurement profile.</value>
+  </data>
+  <data name="Settings_EqualizationDetails" xml:space="preserve">
+    <value>{0} filters · preamp {1:0.0} dB at {2:0.#} kHz (file: {3:0.0} dB)</value>
+  </data>
+  <data name="Settings_EqualizationFailed" xml:space="preserve">
+    <value>The equalization could not be applied: {0}</value>
+  </data>
+  <data name="Settings_EqualizationImported" xml:space="preserve">
+    <value>Equalization imported from “{0}”. Takes effect after saving the measurement profile.</value>
+  </data>
+  <data name="Settings_EqualizationNote" xml:space="preserve">
+    <value>The equalization brings the headphones approximately to a diffuse-field target (calculated with AutoEq, without bass boost), not to a flat frequency response. It is part of the measurement profile; measurements with different equalization are not directly comparable. Levels remain digital dBFS values.</value>
+  </data>
+  <data name="Settings_EqualizationRemoved" xml:space="preserve">
+    <value>Equalization removed. Takes effect after saving the measurement profile.</value>
+  </data>
+  <data name="Settings_ExclusiveMode" xml:space="preserve">
+    <value>Use exclusive mode</value>
+  </data>
+  <data name="Settings_Gain" xml:space="preserve">
+    <value>Amplifier gain</value>
+  </data>
+  <data name="Settings_GainName" xml:space="preserve">
+    <value>Gain</value>
+  </data>
+  <data name="Settings_HeadphoneManufacturer" xml:space="preserve">
+    <value>Headphone manufacturer</value>
+  </data>
+  <data name="Settings_HeadphoneModel" xml:space="preserve">
+    <value>Headphone model</value>
+  </data>
+  <data name="Settings_HeadphoneSection" xml:space="preserve">
+    <value>2 · Headphones</value>
+  </data>
+  <data name="Settings_Impedance" xml:space="preserve">
+    <value>Impedance (optional)</value>
+  </data>
+  <data name="Settings_ImpedanceName" xml:space="preserve">
+    <value>Impedance</value>
+  </data>
+  <data name="Settings_ImportAutoEq" xml:space="preserve">
+    <value>Import AutoEq file …</value>
+  </data>
+  <data name="Settings_InvalidAutoEq" xml:space="preserve">
+    <value>The file is not a valid AutoEq file: {0}</value>
+  </data>
+  <data name="Settings_LevelSection" xml:space="preserve">
+    <value>3 · Levels</value>
+  </data>
+  <data name="Settings_Manufacturer" xml:space="preserve">
+    <value>Manufacturer</value>
+  </data>
+  <data name="Settings_ManyMatches" xml:space="preserve">
+    <value>{0} matches, showing the first {1}.</value>
+  </data>
+  <data name="Settings_Matches" xml:space="preserve">
+    <value>{0} matches.</value>
+  </data>
+  <data name="Settings_MaximumVolume" xml:space="preserve">
+    <value>Upper limit (dB)</value>
+  </data>
+  <data name="Settings_MaximumVolumeName" xml:space="preserve">
+    <value>Upper limit</value>
+  </data>
+  <data name="Settings_Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="Settings_NewProfile" xml:space="preserve">
+    <value>New measurement profile</value>
+  </data>
+  <data name="Settings_NewProfileButton" xml:space="preserve">
+    <value>+ New profile</value>
+  </data>
+  <data name="Settings_NewProfileStatus" xml:space="preserve">
+    <value>New, unsaved measurement profile.</value>
+  </data>
+  <data name="Settings_NoCalibration" xml:space="preserve">
+    <value>These details document the setup; they do not provide an SPL calibration.</value>
+  </data>
+  <data name="Settings_NoCatalog" xml:space="preserve">
+    <value>No equalization catalog available.</value>
+  </data>
+  <data name="Settings_NoEqualization" xml:space="preserve">
+    <value>No equalization</value>
+  </data>
+  <data name="Settings_NoEqualizationDetails" xml:space="preserve">
+    <value>Without equalization: signals are output unchanged.</value>
+  </data>
+  <data name="Settings_NoMatches" xml:space="preserve">
+    <value>No entry found. Import your own AutoEq file or measure without equalization.</value>
+  </data>
+  <data name="Settings_NoOutputs" xml:space="preserve">
+    <value>No active audio outputs found.</value>
+  </data>
+  <data name="Settings_NoProfilesText" xml:space="preserve">
+    <value>Enter output, headphones and levels on the right and choose “Save measurement profile”. Tests cannot be started without a measurement profile.</value>
+  </data>
+  <data name="Settings_NoProfilesTitle" xml:space="preserve">
+    <value>No measurement profiles yet</value>
+  </data>
+  <data name="Settings_NotCalibrated" xml:space="preserve">
+    <value>Not yet calibrated with a coupler: the values are digital attenuations in dB, not dB SPL.</value>
+  </data>
+  <data name="Settings_OutputRequired" xml:space="preserve">
+    <value>The saved output must be available before every measurement; there is no automatic switch to the Windows default device.</value>
+  </data>
+  <data name="Settings_OutputSection" xml:space="preserve">
+    <value>1 · Audio output</value>
+  </data>
+  <data name="Settings_OutputsFound" xml:space="preserve">
+    <value>{0} active audio outputs found. Please select the measurement output deliberately.</value>
+  </data>
+  <data name="Settings_ProfileLoaded" xml:space="preserve">
+    <value>Measurement profile loaded. The saved audio output is available.</value>
+  </data>
+  <data name="Settings_ProfileName" xml:space="preserve">
+    <value>Profile name</value>
+  </data>
+  <data name="Settings_ProfileSaved" xml:space="preserve">
+    <value>Measurement profile saved locally.</value>
+  </data>
+  <data name="Settings_ProfilesIntro" xml:space="preserve">
+    <value>A measurement profile records output, headphones and levels. Measurements are only directly comparable with the same profile.</value>
+  </data>
+  <data name="Settings_ProfilesTitle" xml:space="preserve">
+    <value>Measurement profiles</value>
+  </data>
+  <data name="Settings_RefreshOutputs" xml:space="preserve">
+    <value>Refresh outputs</value>
+  </data>
+  <data name="Settings_SaveNeedsOutput" xml:space="preserve">
+    <value>Cannot save: a detected audio output must be selected.</value>
+  </data>
+  <data name="Settings_SaveProfile" xml:space="preserve">
+    <value>Save measurement profile</value>
+  </data>
+  <data name="Settings_SaveStateNew" xml:space="preserve">
+    <value>New measurement profile, not saved yet</value>
+  </data>
+  <data name="Settings_SaveStateSaved" xml:space="preserve">
+    <value>All changes are saved</value>
+  </data>
+  <data name="Settings_SaveStateUnsaved" xml:space="preserve">
+    <value>Unsaved changes</value>
+  </data>
+  <data name="Settings_SearchHint" xml:space="preserve">
+    <value>Enter a model, e.g. “HD 600”. Source: AutoEq.</value>
+  </data>
+  <data name="Settings_StartVolume" xml:space="preserve">
+    <value>Start volume (dB)</value>
+  </data>
+  <data name="Settings_StartVolumeName" xml:space="preserve">
+    <value>Start volume</value>
+  </data>
+  <data name="Settings_Target" xml:space="preserve">
+    <value>Target:</value>
+  </data>
+  <data name="Settings_TestLeft" xml:space="preserve">
+    <value>Test left channel</value>
+  </data>
+  <data name="Settings_TestRight" xml:space="preserve">
+    <value>Test right channel</value>
+  </data>
+  <data name="Settings_TestingLeft" xml:space="preserve">
+    <value>Testing left channel with a digital attenuation of {0:0.##} dB …</value>
+  </data>
+  <data name="Settings_TestingRight" xml:space="preserve">
+    <value>Testing right channel with a digital attenuation of {0:0.##} dB …</value>
+  </data>
+  <data name="Settings_UnsavedMessage" xml:space="preserve">
+    <value>The measurement profile “{0}” has unsaved changes.
+
+Yes: save the changes and {1}
+No: discard the changes and {1}
+Cancel: {2}</value>
+  </data>
+  <data name="Settings_UnsavedTitle" xml:space="preserve">
+    <value>Unsaved changes</value>
+  </data>
+  <data name="Settings_WithoutEqualization" xml:space="preserve">
+    <value>Without equalization</value>
+  </data>
+  <data name="Shell_AudioSettings" xml:space="preserve">
+    <value>Audio &amp; headphones</value>
+  </data>
+  <data name="Shell_CancelTestMessage" xml:space="preserve">
+    <value>{0} will be cancelled. Answers already given remain saved as a partial result.
+
+Switch anyway?</value>
+  </data>
+  <data name="Shell_CancelTestTitle" xml:space="preserve">
+    <value>Cancel test?</value>
+  </data>
+  <data name="Shell_DatabaseBackupTitle" xml:space="preserve">
+    <value>Database backed up</value>
+  </data>
+  <data name="Shell_EvaluationSection" xml:space="preserve">
+    <value>RESULTS</value>
+  </data>
+  <data name="Shell_HearingThreshold" xml:space="preserve">
+    <value>Hearing threshold</value>
+  </data>
+  <data name="Shell_History" xml:space="preserve">
+    <value>History &amp; comparison</value>
+  </data>
+  <data name="Shell_LanguageAutomatic" xml:space="preserve">
+    <value>Automatic ({0})</value>
+  </data>
+  <data name="Shell_LanguageSaveFailed" xml:space="preserve">
+    <value>The language choice could not be saved:
+{0}</value>
+  </data>
+  <data name="Shell_LanguageTooltip" xml:space="preserve">
+    <value>User interface language</value>
+  </data>
+  <data name="Shell_NoPerson" xml:space="preserve">
+    <value>No person</value>
+  </data>
+  <data name="Shell_NoProfile" xml:space="preserve">
+    <value>No measurement profile</value>
+  </data>
+  <data name="Shell_Overview" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="Shell_PersonSwitch" xml:space="preserve">
+    <value>Switch person</value>
+  </data>
+  <data name="Shell_PersonSwitchTooltip" xml:space="preserve">
+    <value>Switch or add a person</value>
+  </data>
+  <data name="Shell_Practice" xml:space="preserve">
+    <value>Practice</value>
+  </data>
+  <data name="Shell_ProfileCount" xml:space="preserve">
+    <value>{0} measurement profiles</value>
+  </data>
+  <data name="Shell_RunningHearingThreshold" xml:space="preserve">
+    <value>The running hearing threshold test</value>
+  </data>
+  <data name="Shell_RunningPractice" xml:space="preserve">
+    <value>The running practice session</value>
+  </data>
+  <data name="Shell_RunningWordTest" xml:space="preserve">
+    <value>The running word test</value>
+  </data>
+  <data name="Shell_TestsSection" xml:space="preserve">
+    <value>TESTS</value>
+  </data>
+  <data name="Shell_WordTest" xml:space="preserve">
+    <value>Word test</value>
+  </data>
+  <data name="Status_Aborted" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="Status_Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="Status_Incomplete" xml:space="preserve">
+    <value>Incomplete</value>
+  </data>
+  <data name="Status_NotScorable" xml:space="preserve">
+    <value>Not scorable</value>
+  </data>
+  <data name="Status_Started" xml:space="preserve">
+    <value>Started</value>
+  </data>
+  <data name="Step_Result" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="Step_Run" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="Step_Setup" xml:space="preserve">
+    <value>Set up</value>
+  </data>
+  <data name="Test_Abort" xml:space="preserve">
+    <value>Cancel test</value>
+  </data>
+  <data name="Test_ConfirmBeforeStart" xml:space="preserve">
+    <value>Confirm before starting</value>
+  </data>
+  <data name="Test_ConfirmEar" xml:space="preserve">
+    <value>The displayed ear and the headphone channel match.</value>
+  </data>
+  <data name="Test_ConfirmFit" xml:space="preserve">
+    <value>The headphones fit correctly without contact or feedback.</value>
+  </data>
+  <data name="Test_Hints" xml:space="preserve">
+    <value>Notes on the measurement</value>
+  </data>
+  <data name="Test_NoProfileWarning" xml:space="preserve">
+    <value>No measurement profile yet. Create one under “Audio and headphones”.</value>
+  </data>
+  <data name="Test_OutputsCheckFailed" xml:space="preserve">
+    <value>Audio outputs could not be checked: {0}</value>
+  </data>
+  <data name="Test_Pause" xml:space="preserve">
+    <value>Pause test</value>
+  </data>
+  <data name="Test_PlaybackBlocked" xml:space="preserve">
+    <value>Playback blocked: {0}</value>
+  </data>
+  <data name="Test_Print" xml:space="preserve">
+    <value>Print …</value>
+  </data>
+  <data name="Test_PrintTooltip" xml:space="preserve">
+    <value>Print the chart and result or save them as PDF</value>
+  </data>
+  <data name="Test_Profile" xml:space="preserve">
+    <value>Measurement profile</value>
+  </data>
+  <data name="Test_Resume" xml:space="preserve">
+    <value>Resume test</value>
+  </data>
+  <data name="Threshold_AbortSaveFailed" xml:space="preserve">
+    <value>Hearing threshold test cancelled, but the cancellation status could not be saved: {0}</value>
+  </data>
+  <data name="Threshold_Aborted" xml:space="preserve">
+    <value>Hearing threshold test cancelled</value>
+  </data>
+  <data name="Threshold_AbortedSaved" xml:space="preserve">
+    <value>Hearing threshold test cancelled. The results obtained so far were saved locally.</value>
+  </data>
+  <data name="Threshold_AnnotationHint" xml:space="preserve">
+    <value>The default is “Hearing threshold” or “Hearing threshold with masking”. Name and comment can be changed later in the history.</value>
+  </data>
+  <data name="Threshold_AsSoonAsHeard" xml:space="preserve">
+    <value>As soon as you hear something:</value>
+  </data>
+  <data name="Threshold_CenterNotHeard" xml:space="preserve">
+    <value>Center tone 500 Hz: not heard up to {0:0.##} dBFS</value>
+  </data>
+  <data name="Threshold_CenterNotTested" xml:space="preserve">
+    <value>Center tone 500 Hz: not tested</value>
+  </data>
+  <data name="Threshold_CenterValue" xml:space="preserve">
+    <value>Center tone 500 Hz: {0:0.##} dBFS</value>
+  </data>
+  <data name="Threshold_ChartName" xml:space="preserve">
+    <value>Frequency chart of the measured hearing thresholds in dBFS</value>
+  </data>
+  <data name="Threshold_Completed" xml:space="preserve">
+    <value>Hearing threshold test completed and saved locally.</value>
+  </data>
+  <data name="Threshold_ConfirmAll" xml:space="preserve">
+    <value>Please choose a measurement profile and confirm all three checks.</value>
+  </data>
+  <data name="Threshold_ConfirmHint" xml:space="preserve">
+    <value>Confirmation: the same tone starts again more quietly. Press as soon as something is audible.</value>
+  </data>
+  <data name="Threshold_DefaultMaskedName" xml:space="preserve">
+    <value>Hearing threshold with masking</value>
+  </data>
+  <data name="Threshold_DefaultName" xml:space="preserve">
+    <value>Hearing threshold</value>
+  </data>
+  <data name="Threshold_DefaultStart" xml:space="preserve">
+    <value>Default {0} dBFS</value>
+  </data>
+  <data name="Threshold_Disclosure" xml:space="preserve">
+    <value>500 Hz is tested first. Frequency and current digital level stay hidden during the tone; every value is logged locally with the endpoint and hardware snapshot.</value>
+  </data>
+  <data name="Threshold_EarAndMasking" xml:space="preserve">
+    <value>Ear and masking</value>
+  </data>
+  <data name="Threshold_HeardOfAll" xml:space="preserve">
+    <value>{0} of {1} tones heard</value>
+  </data>
+  <data name="Threshold_HeardOfTested" xml:space="preserve">
+    <value>{0} of {1} tested tones heard</value>
+  </data>
+  <data name="Threshold_IHearIt" xml:space="preserve">
+    <value>I HEAR THE TONE</value>
+  </data>
+  <data name="Threshold_InitialStatus" xml:space="preserve">
+    <value>Choose measurement profile, ear, masking and order.</value>
+  </data>
+  <data name="Threshold_Intro" xml:space="preserve">
+    <value>14 pure tones from 62.5 Hz to 10 kHz, starting with 500 Hz. Each tone starts quietly and gets louder step by step. Measured without a hearing aid.</value>
+  </data>
+  <data name="Threshold_LegacyWithAid" xml:space="preserve">
+    <value>With hearing aid (older protocol v{0})</value>
+  </data>
+  <data name="Threshold_LevelsNote" xml:space="preserve">
+    <value>The values are digital dBFS levels and, without coupler calibration, not dB SPL. The test is not a clinical audiogram.</value>
+  </data>
+  <data name="Threshold_MaskOtherEar" xml:space="preserve">
+    <value>Mask the other ear</value>
+  </data>
+  <data name="Threshold_Masked" xml:space="preserve">
+    <value>Other ear masked · {0} dBFS</value>
+  </data>
+  <data name="Threshold_MaskingDescription" xml:space="preserve">
+    <value>Measurements are always taken without a hearing aid, because hearing aids suppress steady pure tones as feedback or noise. With masking, third-octave narrow-band noise around the test frequency plays at a fixed level on the other ear during each tone; it starts {0:0.#} s before the first tone. This prevents a loud tone from being heard across the head by the better ear. The noise should be clearly audible but not unpleasant.</value>
+  </data>
+  <data name="Threshold_MaskingLevel" xml:space="preserve">
+    <value>Masking noise level</value>
+  </data>
+  <data name="Threshold_MaskingLevelText" xml:space="preserve">
+    <value>{0} dBFS (RMS)</value>
+  </data>
+  <data name="Threshold_MaskingNoiseHint" xml:space="preserve">
+    <value>Third-octave narrow-band noise around the respective test frequency at a fixed level. It should be clearly audible but not unpleasant.</value>
+  </data>
+  <data name="Threshold_MaskingPreviewHint" xml:space="preserve">
+    <value>3 s sample around 500 Hz on the other ear</value>
+  </data>
+  <data name="Threshold_NeedsPerson" xml:space="preserve">
+    <value>A person must be selected before a hearing threshold test.</value>
+  </data>
+  <data name="Threshold_New" xml:space="preserve">
+    <value>New hearing threshold test</value>
+  </data>
+  <data name="Threshold_NoMasking" xml:space="preserve">
+    <value>Without masking</value>
+  </data>
+  <data name="Threshold_NoiseOnLeft" xml:space="preserve">
+    <value>Noise on the left ear</value>
+  </data>
+  <data name="Threshold_NoiseOnRight" xml:space="preserve">
+    <value>Noise on the right ear</value>
+  </data>
+  <data name="Threshold_NotConfirmed" xml:space="preserve">
+    <value>not confirmed up to {0:0.##} dBFS (first response at {1:0.##} dBFS)</value>
+  </data>
+  <data name="Threshold_NotHeard" xml:space="preserve">
+    <value>not heard up to {0:0.##} dBFS</value>
+  </data>
+  <data name="Threshold_Order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="Threshold_OrderAfter500" xml:space="preserve">
+    <value>Order after 500 Hz</value>
+  </data>
+  <data name="Threshold_OrderCenterOut" xml:space="preserve">
+    <value>From the center outwards</value>
+  </data>
+  <data name="Threshold_OrderRandom" xml:space="preserve">
+    <value>Random</value>
+  </data>
+  <data name="Threshold_Paused" xml:space="preserve">
+    <value>Hearing threshold test paused. The current frequency restarts when resuming.</value>
+  </data>
+  <data name="Threshold_PlayPreview" xml:space="preserve">
+    <value>Listen to the noise</value>
+  </data>
+  <data name="Threshold_Prepare" xml:space="preserve">
+    <value>Prepare a hearing threshold test for {0}.</value>
+  </data>
+  <data name="Threshold_PrepareNew" xml:space="preserve">
+    <value>Prepare a new hearing threshold test.</value>
+  </data>
+  <data name="Threshold_PressHint" xml:space="preserve">
+    <value>Each level step sounds twice as a sequence of short tones. Press as soon as something is audible.</value>
+  </data>
+  <data name="Threshold_PreviewBlocked" xml:space="preserve">
+    <value>Sample blocked: {0}</value>
+  </data>
+  <data name="Threshold_PreviewEnded" xml:space="preserve">
+    <value>Masking noise sample ({0}) ended.</value>
+  </data>
+  <data name="Threshold_ProfileRamp" xml:space="preserve">
+    <value>{0} · level ramp {1} to {2} dBFS</value>
+  </data>
+  <data name="Threshold_Progress" xml:space="preserve">
+    <value>Tone {0} of {1}</value>
+  </data>
+  <data name="Threshold_RampDescription" xml:space="preserve">
+    <value>Each level step sounds twice as the signal “3 short tones · {0} ms pause · 3 short tones” ({1} ms per tone, {2} ms pause after each signal). Then the level rises by {3:0} dB. After the button is pressed, the tone is repeated for confirmation, starting {4:0} dB below the detected level; the value of the repetition is saved. Following tones start {5:0} dB below the nearest already heard tone towards 500 Hz.</value>
+  </data>
+  <data name="Threshold_RepeatLast" xml:space="preserve">
+    <value>Repeat last measurement</value>
+  </data>
+  <data name="Threshold_RepeatingLast" xml:space="preserve">
+    <value>The last frequency measurement is being repeated.</value>
+  </data>
+  <data name="Threshold_ResetFailed" xml:space="preserve">
+    <value>The last measurement could not be reset: {0}</value>
+  </data>
+  <data name="Threshold_ResetStartVolume" xml:space="preserve">
+    <value>Reset the start volume to the default</value>
+  </data>
+  <data name="Threshold_ResultNote" xml:space="preserve">
+    <value>{0} · digital dBFS values, not dB SPL, not a clinical audiogram</value>
+  </data>
+  <data name="Threshold_ResultTitle" xml:space="preserve">
+    <value>Hearing threshold test result</value>
+  </data>
+  <data name="Threshold_Resumed" xml:space="preserve">
+    <value>The hearing threshold test continues with the current frequency.</value>
+  </data>
+  <data name="Threshold_SequenceAndAudio" xml:space="preserve">
+    <value>Sequence and audio</value>
+  </data>
+  <data name="Threshold_SessionCreateFailed" xml:space="preserve">
+    <value>The hearing threshold session could not be created locally: {0}</value>
+  </data>
+  <data name="Threshold_Start" xml:space="preserve">
+    <value>Start hearing threshold test</value>
+  </data>
+  <data name="Threshold_StartVolume" xml:space="preserve">
+    <value>Start volume</value>
+  </data>
+  <data name="Threshold_StartVolumeHint" xml:space="preserve">
+    <value>The first tone (500 Hz) starts at this volume; no following tone starts quieter. With severe hearing loss start louder, but well below the expected threshold (about 10–15 dB).</value>
+  </data>
+  <data name="Threshold_Starting" xml:space="preserve">
+    <value>The hearing threshold test starts with the center tone at 500 Hz.</value>
+  </data>
+  <data name="Threshold_StopPreview" xml:space="preserve">
+    <value>Stop sample</value>
+  </data>
+  <data name="Threshold_TestedEar" xml:space="preserve">
+    <value>Tested ear</value>
+  </data>
+  <data name="Threshold_ValueDbfs" xml:space="preserve">
+    <value>{0:0.##} dBFS</value>
+  </data>
+  <data name="Threshold_ValueSaveFailed" xml:space="preserve">
+    <value>The hearing threshold value could not be saved: {0}</value>
+  </data>
+</root>

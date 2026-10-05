@@ -37,9 +37,9 @@ public static class MeasurementAnnotationRules
             errors.Add("Name und Kommentar benötigen die ID der Messung.");
         var name = annotation.Name?.Trim() ?? string.Empty;
         if (name.Length is < 1 or > MaximumNameLength)
-            errors.Add($"Der Name der Messung muss 1 bis {MaximumNameLength} Zeichen enthalten.");
+            errors.Add(string.Format(CoreStrings.Annotation_NameLength, MaximumNameLength));
         if (annotation.Comment?.Length > MaximumCommentLength)
-            errors.Add("Der Kommentar darf höchstens 4.000 Zeichen enthalten.");
+            errors.Add(CoreStrings.Annotation_CommentLength);
         if (annotation.UpdatedAt == default)
             errors.Add("Der Änderungszeitpunkt von Name und Kommentar fehlt.");
         return errors;

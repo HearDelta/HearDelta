@@ -29,7 +29,7 @@ public static class MeasurementSeriesPlanner
         var listIds = catalog.Lists.Where(list => list.Material == material)
             .Select(list => list.Id).Order(StringComparer.Ordinal).ToArray();
         if (listIds.Length < 2)
-            throw new InvalidOperationException("Eine Messserie benötigt mindestens zwei getrennte Stimuluslisten.");
+            throw new InvalidOperationException(CoreStrings.Series_TwoLists);
 
         var rounds = Enumerable.Range(0, pairCount).Select(index =>
         {

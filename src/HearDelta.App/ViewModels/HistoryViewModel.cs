@@ -93,15 +93,15 @@ public sealed class HearingThresholdHistoryItem : AnnotatedHistoryItem
     public override string DefaultName => HearingThresholdResultPresentation.DefaultNameFor(Session);
     public TestedEar Ear => Session.Ear;
     public double MaximumAttenuationDbfs => (double)Session.MaximumAttenuationDbfs;
-    public string StartedAtText => Session.StartedAt.ToLocalTime().ToString("dd.MM.yyyy · HH:mm", CultureInfo.GetCultureInfo("de-DE"));
-    public string EarText => Session.Ear == TestedEar.Left ? "Linkes Ohr" : "Rechtes Ohr";
+    public string StartedAtText => string.Format(Strings.History_DateDotTime, Session.StartedAt.ToLocalTime());
+    public string EarText => Session.Ear == TestedEar.Left ? Strings.Common_LeftEar : Strings.Common_RightEar;
     public string ConditionText => HearingThresholdResultPresentation.ConditionText(Session);
     public string StatusText => Session.AbortedAt is not null
-        ? "Abgebrochen"
+        ? Strings.Status_Aborted
         : Session.CompletedAt is not null
-            ? "Abgeschlossen"
-            : "Unvollständig";
-    public string ResultText => $"{Session.Observations.Count(observation => observation.Heard)} von {Session.Observations.Count} geprüften Tönen gehört";
+            ? Strings.Status_Completed
+            : Strings.Status_Incomplete;
+    public string ResultText => string.Format(Strings.History_HeardOfTested, Session.Observations.Count(observation => observation.Heard), Session.Observations.Count);
     public BadgeTone EarTone => BadgeTones.ForEar(Session.Ear);
     public string EarLetter => BadgeTones.EarLetter(Session.Ear);
     public BadgeTone ConditionTone => HearingThresholdResultPresentation.ConditionTone(Session);
@@ -114,7 +114,6 @@ public sealed record ThresholdComparisonRowItem(string FrequencyText, string Fir
 
 public sealed class HistorySessionItemViewModel : AnnotatedHistoryItem
 {
-    private static readonly CultureInfo German = CultureInfo.GetCultureInfo("de-DE");
     private readonly Action<HistorySessionItemViewModel> selectionChanged;
     private bool isSelected;
 
@@ -141,32 +140,32 @@ public sealed class HistorySessionItemViewModel : AnnotatedHistoryItem
     public override Guid Id => Session.Id;
     public override string DefaultName => MeasurementAnnotationRules.DefaultName(Session.HearingAid);
     public Guid HearingAidId => Session.HearingAid.DeviceId;
-    public string StartedAtText => Session.StartedAt.ToLocalTime().ToString("dd.MM.yyyy HH:mm", German);
-    public string EarText => Session.Ear == TestedEar.Left ? "Links" : "Rechts";
+    public string StartedAtText => string.Format(Strings.History_DateTime, Session.StartedAt.ToLocalTime());
+    public string EarText => Session.Ear == TestedEar.Left ? Strings.Common_Left : Strings.Common_Right;
     public string HearingAidText => Session.HearingAid.DisplayName;
     public string MaterialText => Session.Material switch
     {
-        SpeechMaterial.Numbers => "Zahlen",
-        SpeechMaterial.Monosyllables => "Einsilber",
-        SpeechMaterial.Polysyllables => "Mehrsilber",
-        SpeechMaterial.PhonemeContrasts => "Phonemkontraste",
+        SpeechMaterial.Numbers => Strings.Material_Numbers,
+        SpeechMaterial.Monosyllables => Strings.Material_Monosyllables,
+        SpeechMaterial.Polysyllables => Strings.Material_Polysyllables,
+        SpeechMaterial.PhonemeContrasts => Strings.Material_PhonemeContrasts,
         _ => Session.Material.ToString()
     };
     public string EnvironmentText => Session.Environment == ListeningEnvironment.Quiet
-        ? "Ruhe"
+        ? Strings.Common_Quiet
         : FormatNoiseEnvironment();
     public string StatusText => Session.AbortedAt is not null
-        ? "Abgebrochen"
+        ? Strings.Status_Aborted
         : Session.CompletedAt is null
-            ? "Begonnen"
+            ? Strings.Status_Started
             : Result is null
-                ? "Nicht auswertbar"
-                : "Abgeschlossen";
+                ? Strings.Status_NotScorable
+                : Strings.Status_Completed;
     public BadgeTone EarTone => BadgeTones.ForEar(Session.Ear);
     public string EarLetter => BadgeTones.EarLetter(Session.Ear);
     public string MaterialEnvironmentText => Session.IsAdaptive
-        ? $"{MaterialText} · {EnvironmentText} · adaptiv"
-        : $"{MaterialText} · {EnvironmentText}";
+        ? string.Format(Strings.History_MaterialAdaptive, MaterialText, EnvironmentText)
+        : string.Format(Strings.History_MaterialEnvironment, MaterialText, EnvironmentText);
     public bool IsAdaptive => Session.IsAdaptive;
     private decimal? ComparableDifference => IsAdaptive
         ? Result?.ThresholdImprovementDb
@@ -193,21 +192,21 @@ public sealed class HistorySessionItemViewModel : AnnotatedHistoryItem
     public string DifferenceText => IsAdaptive
         ? AdaptiveResultText.ShortImprovement(Result?.ThresholdImprovementDb)
         : ComparableDifference is { } difference
-            ? $"{FormatSigned(difference)} PP"
+            ? string.Format(Strings.History_PercentagePointsShort, FormatSigned(difference))
             : "–";
     public bool CanShowResult => Result is not null;
-    public string ScoreDisplayText => HasScores ? ScoreText : "keine Antworten";
+    public string ScoreDisplayText => HasScores ? ScoreText : Strings.History_NoAnswers;
     public bool HasScores => Result is not null &&
         (Result.WithoutHearingAid.TotalResponses > 0 || Result.WithHearingAid.TotalResponses > 0);
     public string ResultAvailabilityText => CanShowResult
-        ? "Gespeichertes Ergebnis anzeigen"
-        : ScoringError ?? "Für diese Messung liegt noch kein Ergebnis vor.";
+        ? Strings.History_ShowStored
+        : ScoringError ?? Strings.History_NoResultYet;
     public bool CanSelectForComparison => Session.AbortedAt is null && Result is not null && (Estimate is not null || IsAdaptive);
     public string ComparisonAvailabilityText => CanSelectForComparison
-        ? "Für den Vergleich auswählbar"
+        ? Strings.History_Selectable
         : Session.AbortedAt is not null
-            ? "Abgebrochene Messungen können nicht direkt verglichen werden."
-            : ScoringError ?? "Die Messung ist noch nicht abgeschlossen.";
+            ? Strings.History_AbortedNotComparable
+            : ScoringError ?? Strings.History_NotCompleted;
     public string WithoutEstimateText => IsAdaptive
         ? AdaptiveResultText.ThresholdWithSpread(Result?.WithoutHearingAid.Adaptive, Result?.AdaptiveParameter)
         : FormatEstimate(Estimate?.WithoutHearingAid, "%");
@@ -216,8 +215,8 @@ public sealed class HistorySessionItemViewModel : AnnotatedHistoryItem
         : FormatEstimate(Estimate?.WithHearingAid, "%");
     public string DifferenceEstimateText => IsAdaptive
         ? AdaptiveResultText.Improvement(Result?.ThresholdImprovementDb)
-        : FormatEstimate(Estimate?.DifferencePercentagePoints, "PP", signed: true);
-    public string DifferenceCaption => IsAdaptive ? "Gewinn mit Hörgerät (Schwelle ohne minus mit)" : "Differenz mit minus ohne";
+        : FormatEstimate(Estimate?.DifferencePercentagePoints, Strings.History_PointsUnit, signed: true);
+    public string DifferenceCaption => IsAdaptive ? Strings.Measure_GainLabel : Strings.History_DifferenceCaption;
     public string ComparisonSubtitle => $"{StartedAtText} · {EarText} · {EnvironmentText}";
 
     public bool IsSelected
@@ -240,8 +239,8 @@ public sealed class HistorySessionItemViewModel : AnnotatedHistoryItem
             .Distinct()
             .ToArray();
         return values.Length == 1 && values[0] is { } snr
-            ? $"Störgeräusch ({FormatSigned(snr)} dB SNR)"
-            : "Störgeräusch";
+            ? string.Format(Strings.History_NoiseWithSnr, FormatSigned(snr))
+            : Strings.Common_Noise;
     }
 
     private static string FormatEstimate(PercentageEstimate? estimate, string unit, bool signed = false)
@@ -251,16 +250,16 @@ public sealed class HistorySessionItemViewModel : AnnotatedHistoryItem
         var point = signed ? FormatSigned(estimate.EstimatePercent) : FormatNumber(estimate.EstimatePercent);
         var lower = signed ? FormatSigned(estimate.Lower95Percent) : FormatNumber(estimate.Lower95Percent);
         var upper = signed ? FormatSigned(estimate.Upper95Percent) : FormatNumber(estimate.Upper95Percent);
-        return $"{point} {unit}  ·  95 %-Intervall {lower} bis {upper} {unit}";
+        return string.Format(Strings.History_Estimate, point, lower, upper, unit);
     }
 
-    private static string FormatNumber(decimal value) => value.ToString("0.#", German);
+    private static string FormatNumber(decimal value) => value.ToString("0.#", CultureInfo.CurrentCulture);
 
-    private static string FormatSigned(decimal value) => value.ToString("+0.#;-0.#;0", German);
+    private static string FormatSigned(decimal value) => value.ToString("+0.#;-0.#;0", CultureInfo.CurrentCulture);
 
     private static string FormatBlockScore(MeasurementBlockResult result) => result.TotalResponses == 0
         ? "–"
-        : $"{FormatNumber(result.PercentCorrect)} %";
+        : string.Format(Strings.Measure_Percent, result.PercentCorrect);
 }
 
 public partial class HistoryViewModel : ObservableObject
@@ -343,9 +342,9 @@ public partial class HistoryViewModel : ObservableObject
     public double ThresholdComparisonMaximumDbfs { get; private set; } = -6d;
     public string ThresholdComparisonHint => ThresholdComparisonCount switch
     {
-        0 => $"Zum Vergleichen bis zu {MaximumThresholdComparisonCount} Tests anhaken.",
-        1 => "Noch mindestens einen weiteren Test anhaken.",
-        _ => $"{ThresholdComparisonCount} Tests im Vergleich"
+        0 => string.Format(Strings.History_ThresholdHintNone, MaximumThresholdComparisonCount),
+        1 => Strings.History_ThresholdHintOne,
+        _ => string.Format(Strings.History_ThresholdHintMany, ThresholdComparisonCount)
     };
 
     [RelayCommand]
@@ -361,7 +360,7 @@ public partial class HistoryViewModel : ObservableObject
         if (item.IsComparisonSelected && ThresholdComparisonCount > MaximumThresholdComparisonCount)
         {
             item.SetComparisonSelectedSilently(false);
-            ThresholdStatusMessage = $"Es können höchstens {MaximumThresholdComparisonCount} Hörschwellentests gleichzeitig verglichen werden.";
+            ThresholdStatusMessage = string.Format(Strings.History_ThresholdMax, MaximumThresholdComparisonCount);
         }
         UpdateThresholdComparison();
     }
@@ -401,9 +400,9 @@ public partial class HistoryViewModel : ObservableObject
                         row.ImprovementDb switch
                         {
                             null => "–",
-                            > 0 => $"{row.ImprovementDb:0.#} dB besser",
-                            < 0 => $"{-row.ImprovementDb:0.#} dB schlechter",
-                            _ => "gleich"
+                            > 0 => string.Format(Strings.History_Better, row.ImprovementDb),
+                            < 0 => string.Format(Strings.History_Worse, -row.ImprovementDb),
+                            _ => Strings.History_Same
                         },
                         row.ImprovementDb switch
                         {
@@ -471,50 +470,54 @@ public partial class HistoryViewModel : ObservableObject
     }
 
     private static string ComparisonLabel(int index, HearingThresholdHistoryItem item) =>
-        $"{index + 1} · {item.Session.StartedAt.ToLocalTime():dd.MM. HH:mm} · {(item.Ear == TestedEar.Left ? "links" : "rechts")} · {(item.Session.IsLegacyWithHearingAid ? "mit HG" : item.Session.Masking is null ? "ohne Vertäubung" : "vertäubt")}";
+        string.Format(
+            Strings.History_ComparisonLabel,
+            index + 1,
+            item.Session.StartedAt.ToLocalTime(),
+            item.Ear == TestedEar.Left ? Strings.History_LeftLower : Strings.History_RightLower,
+            item.Session.IsLegacyWithHearingAid ? Strings.History_WithAidShort
+                : item.Session.Masking is null ? Strings.History_NoMaskingLower : Strings.History_MaskedLower);
 
-    private static string FormatFrequency(double frequencyHz) => frequencyHz < 1_000d
-        ? $"{frequencyHz.ToString("0.##", CultureInfo.GetCultureInfo("de-DE"))} Hz"
-        : $"{(frequencyHz / 1_000d).ToString("0.##", CultureInfo.GetCultureInfo("de-DE"))} kHz";
+    private static string FormatFrequency(double frequencyHz) => HearingThresholdResultPresentation.FormatFrequency(frequencyHz);
 
     private static string FormatThresholdValue(HearingThresholdComparisonValue value) =>
-        !value.Tested ? "nicht geprüft"
-        : value.Heard && value.ThresholdAttenuationDbfs is { } level ? $"{level.ToString("0.#", CultureInfo.GetCultureInfo("de-DE"))} dBFS"
-        : "nicht gehört";
+        !value.Tested ? Strings.History_NotTested
+        : value.Heard && value.ThresholdAttenuationDbfs is { } level ? string.Format(Strings.History_Dbfs, level)
+        : Strings.History_NotHeard;
     public IReadOnlyList<HistoryEarFilterOption> EarFilters { get; } =
     [
-        new("Alle Ohren", null),
-        new("Links", TestedEar.Left),
-        new("Rechts", TestedEar.Right)
+        new(Strings.History_AllEars, null),
+        new(Strings.Common_Left, TestedEar.Left),
+        new(Strings.Common_Right, TestedEar.Right)
     ];
-    public ObservableCollection<HistoryDeviceFilterOption> DeviceFilters { get; } = [new("Alle Hörgeräte", null)];
+    public ObservableCollection<HistoryDeviceFilterOption> DeviceFilters { get; } = [new(Strings.History_AllAids, null)];
     public IReadOnlyList<HistoryPeriodFilterOption> PeriodFilters { get; } =
     [
-        new("Gesamter Zeitraum", null),
-        new("Letzte 30 Tage", 30),
-        new("Letzte 90 Tage", 90),
-        new("Letztes Jahr", 365)
+        new(Strings.History_AllTime, null),
+        new(Strings.History_Last30, 30),
+        new(Strings.History_Last90, 90),
+        new(Strings.History_LastYear, 365)
     ];
     public IReadOnlyList<HistoryCompletionFilterOption> CompletionFilters { get; } =
     [
-        new("Alle Status", HistoryCompletionFilter.All),
-        new("Abgeschlossen", HistoryCompletionFilter.Completed),
-        new("Abgebrochen", HistoryCompletionFilter.Aborted),
-        new("Begonnen", HistoryCompletionFilter.InProgress)
+        new(Strings.History_AllStatus, HistoryCompletionFilter.All),
+        new(Strings.Status_Completed, HistoryCompletionFilter.Completed),
+        new(Strings.Status_Aborted, HistoryCompletionFilter.Aborted),
+        new(Strings.Status_Started, HistoryCompletionFilter.InProgress)
     ];
     public IReadOnlyList<HistoryMaterialFilterOption> MaterialFilters { get; } =
     [
-        new("Alle Materialien", null),
-        new("Phonemkontraste", SpeechMaterial.PhonemeContrasts),
-        new("Zahlen", SpeechMaterial.Numbers),
-        new("Einsilber", SpeechMaterial.Monosyllables),
-        new("Mehrsilber", SpeechMaterial.Polysyllables)
+        new(Strings.History_AllMaterials, null),
+        new(Strings.Material_PhonemeContrasts, SpeechMaterial.PhonemeContrasts),
+        new(Strings.Material_Numbers, SpeechMaterial.Numbers),
+        new(Strings.Material_Monosyllables, SpeechMaterial.Monosyllables),
+        new(Strings.Material_Polysyllables, SpeechMaterial.Polysyllables)
     ];
     public IReadOnlyList<HistoryEnvironmentFilterOption> EnvironmentFilters { get; } =
     [
-        new("Alle Umgebungen", null),
-        new("Ruhe", ListeningEnvironment.Quiet),
-        new("Störgeräusch", ListeningEnvironment.BackgroundNoise)
+        new(Strings.History_AllEnvironments, null),
+        new(Strings.Common_Quiet, ListeningEnvironment.Quiet),
+        new(Strings.Common_Noise, ListeningEnvironment.BackgroundNoise)
     ];
 
     public HistoryEarFilterOption SelectedEarFilter
@@ -610,15 +613,15 @@ public partial class HistoryViewModel : ObservableObject
     public bool HasComparison => FirstComparison is not null && SecondComparison is not null;
     public bool HasComparisonWarning => HasComparison && !IsDirectlyComparable;
     public bool HasDirectComparison => HasComparison && IsDirectlyComparable;
-    public string ResultCountText => $"{FilteredSessionCount} von {TotalSessionCount} Messungen";
-    public string SelectionText => $"{allSessions.Count(session => session.IsSelected)} von 2 Messungen für den Vergleich ausgewählt";
+    public string ResultCountText => string.Format(Strings.History_ResultCount, FilteredSessionCount, TotalSessionCount);
+    public string SelectionText => string.Format(Strings.History_SelectionCount, allSessions.Count(session => session.IsSelected));
     public int SelectedCount => allSessions.Count(session => session.IsSelected);
     public bool HasSelection => SelectedCount > 0;
     public string SelectionHintText => SelectedCount switch
     {
-        0 => "Zum Vergleichen zwei abgeschlossene Messungen anhaken.",
-        1 => "Noch eine zweite abgeschlossene Messung anhaken.",
-        _ => "Vergleich der beiden Messungen:"
+        0 => Strings.History_SelectNone,
+        1 => Strings.History_SelectOne,
+        _ => Strings.History_SelectTwo
     };
 
     /// <summary>Anzahl der aktiven Filter außerhalb der sichtbaren Schnellfilter (Ohr, Material).</summary>
@@ -628,7 +631,7 @@ public partial class HistoryViewModel : ObservableObject
         (SelectedCompletionFilter.Value == HistoryCompletionFilter.All ? 0 : 1) +
         (SelectedEnvironmentFilter.Value is null ? 0 : 1) +
         (string.IsNullOrWhiteSpace(SearchText) ? 0 : 1);
-    public string MoreFiltersHeader => ActiveMoreFilterCount == 0 ? "Weitere Filter" : $"Weitere Filter ({ActiveMoreFilterCount} aktiv)";
+    public string MoreFiltersHeader => ActiveMoreFilterCount == 0 ? Strings.History_MoreFilters : string.Format(Strings.History_MoreFiltersActive, ActiveMoreFilterCount);
     public bool HasAnyFilter => ActiveMoreFilterCount > 0 || SelectedEarFilter.Value is not null || SelectedMaterialFilter.Value is not null;
 
     [RelayCommand]
@@ -656,7 +659,7 @@ public partial class HistoryViewModel : ObservableObject
     public BadgeTone SelectedThresholdConditionTone => SelectedThresholdTest?.ConditionTone ?? BadgeTone.Neutral;
     public string SelectedThresholdTitle => SelectedThresholdTest is null
         ? string.Empty
-        : $"Hörschwellentest vom {SelectedThresholdTest.StartedAtText}";
+        : string.Format(Strings.History_ThresholdTestFrom, SelectedThresholdTest.StartedAtText);
     public string SelectedThresholdConditionText => SelectedThresholdTest is { } test
         ? test.Session.IsLegacyWithHearingAid
             ? $"{test.ConditionText}: {test.Session.HearingAid?.DisplayName}"
@@ -667,7 +670,11 @@ public partial class HistoryViewModel : ObservableObject
         : $"{SelectedThresholdTest.Session.Hardware.ProfileName} · {SelectedThresholdTest.Session.Hardware.EndpointName} · {SelectedThresholdTest.Session.Hardware.HeadphoneManufacturer} {SelectedThresholdTest.Session.Hardware.HeadphoneModel}";
     public string SelectedThresholdProtocolText => SelectedThresholdTest is null
         ? string.Empty
-        : $"Protokoll v{SelectedThresholdTest.Session.ProtocolVersion} · {FormatThresholdOrder(SelectedThresholdTest.Session)} · Pegelobergrenze {SelectedThresholdTest.Session.MaximumAttenuationDbfs:0.##} dBFS";
+        : string.Format(
+            Strings.History_ProtocolText,
+            SelectedThresholdTest.Session.ProtocolVersion,
+            FormatThresholdOrder(SelectedThresholdTest.Session),
+            SelectedThresholdTest.Session.MaximumAttenuationDbfs);
 
     [RelayCommand]
     public void ReloadAll()
@@ -711,7 +718,7 @@ public partial class HistoryViewModel : ObservableObject
                     }
                     catch (Exception exception) when (exception is ArgumentException or InvalidOperationException or KeyNotFoundException)
                     {
-                        scoringError = $"Nicht mit dem aktiven Stimuluspaket auswertbar: {exception.Message}";
+                        scoringError = string.Format(Strings.History_NotScorableWithPack, exception.Message);
                     }
                 }
 
@@ -724,13 +731,13 @@ public partial class HistoryViewModel : ObservableObject
             ApplyFilters();
             UpdateComparison();
             if (repository is IRepositoryReadDiagnostics { LastReadErrors.Count: > 0 } diagnostics)
-                WordStatusMessage = $"{diagnostics.LastReadErrors.Count} gespeicherte Wortmessung(en) sind nicht lesbar; die übrigen bleiben verfügbar. ID: {diagnostics.LastReadErrors[0].RecordId}.";
+                WordStatusMessage = string.Format(Strings.History_UnreadableWord, diagnostics.LastReadErrors.Count, diagnostics.LastReadErrors[0].RecordId);
         }
         catch (Exception exception) when (exception is IOException or InvalidDataException or InvalidOperationException)
         {
             allSessions.Clear();
             Sessions.Clear();
-            WordStatusMessage = $"Messverlauf konnte nicht geladen werden: {exception.Message}";
+            WordStatusMessage = string.Format(Strings.History_LoadFailed, exception.Message);
             NotifySummaryChanged();
         }
     }
@@ -739,7 +746,7 @@ public partial class HistoryViewModel : ObservableObject
     {
         var catalogId = session.MaterialIdentity.CatalogId;
         if (string.IsNullOrWhiteSpace(catalogId) || !packsByCatalogId.TryGetValue(catalogId, out var pack))
-            throw new InvalidOperationException("Das zugehörige Stimuluspaket ist nicht installiert.");
+            throw new InvalidOperationException(Strings.History_PackMissing);
         return pack;
     }
 
@@ -756,12 +763,12 @@ public partial class HistoryViewModel : ObservableObject
     {
         if (item?.Result is null)
         {
-            WordStatusMessage = item?.ResultAvailabilityText ?? "Keine Messung ausgewählt.";
+            WordStatusMessage = item?.ResultAvailabilityText ?? Strings.History_NoneSelected;
             return;
         }
 
         ResultRequested?.Invoke(item);
-        WordStatusMessage = $"Gespeichertes Ergebnis vom {item.StartedAtText} geöffnet.";
+        WordStatusMessage = string.Format(Strings.History_Opened, item.StartedAtText);
     }
 
     [RelayCommand]
@@ -775,7 +782,7 @@ public partial class HistoryViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            ThresholdStatusMessage = $"Hörschwellenverlauf konnte nicht geladen werden: {exception.Message}";
+            ThresholdStatusMessage = string.Format(Strings.History_ThresholdLoadFailed, exception.Message);
             return;
         }
 
@@ -790,10 +797,12 @@ public partial class HistoryViewModel : ObservableObject
         NotifyThresholdCollectionState();
         UpdateThresholdComparison();
         ThresholdStatusMessage = HearingThresholdTests.Count == 0
-            ? "Noch keine Hörschwellentests gespeichert."
-            : $"{HearingThresholdTests.Count} Hörschwellentest{(HearingThresholdTests.Count == 1 ? string.Empty : "s")} geladen.";
+            ? Strings.History_NoThresholdTests
+            : HearingThresholdTests.Count == 1
+                ? Strings.History_ThresholdTestLoaded
+                : string.Format(Strings.History_ThresholdTestsLoaded, HearingThresholdTests.Count);
         if (hearingThresholdRepository is IRepositoryReadDiagnostics { LastReadErrors.Count: > 0 } diagnostics)
-            ThresholdStatusMessage = $"{diagnostics.LastReadErrors.Count} gespeicherte Hörschwellenmessung(en) sind nicht lesbar; die übrigen bleiben verfügbar. ID: {diagnostics.LastReadErrors[0].RecordId}.";
+            ThresholdStatusMessage = string.Format(Strings.History_UnreadableThreshold, diagnostics.LastReadErrors.Count, diagnostics.LastReadErrors[0].RecordId);
     }
 
     partial void OnSelectedThresholdTestChanged(HearingThresholdHistoryItem? value)
@@ -816,8 +825,8 @@ public partial class HistoryViewModel : ObservableObject
     {
         var item = SelectedThresholdTest;
         if (item is null || !confirmation.Confirm(
-                "Hörschwellentest löschen",
-                $"Soll der Hörschwellentest vom {item.StartedAtText} dauerhaft gelöscht werden?"))
+                Strings.History_DeleteThresholdTitle,
+                string.Format(Strings.History_DeleteThresholdMessage, item.StartedAtText)))
             return;
 
         try
@@ -830,11 +839,11 @@ public partial class HistoryViewModel : ObservableObject
                 ? null
                 : HearingThresholdTests[Math.Min(index, HearingThresholdTests.Count - 1)];
             NotifyThresholdCollectionState();
-            ThresholdStatusMessage = "Hörschwellentest gelöscht.";
+            ThresholdStatusMessage = Strings.History_ThresholdDeleted;
         }
         catch (Exception exception)
         {
-            ThresholdStatusMessage = $"Hörschwellentest konnte nicht gelöscht werden: {exception.Message}";
+            ThresholdStatusMessage = string.Format(Strings.History_ThresholdDeleteFailed, exception.Message);
         }
     }
 
@@ -842,10 +851,8 @@ public partial class HistoryViewModel : ObservableObject
     private void DeleteWordTest(HistorySessionItemViewModel? item)
     {
         if (item is null || !confirmation.Confirm(
-                "Worttest löschen",
-                $"Soll der Worttest „{item.Name}“ vom {item.StartedAtText} ({item.EarText}, {item.MaterialEnvironmentText}) " +
-                "dauerhaft gelöscht werden?\n\nRohantworten, Ergebnis, Name und Kommentar dieser Messung werden entfernt; " +
-                "andere Messungen bleiben unberührt."))
+                Strings.History_DeleteWordTitle,
+                string.Format(Strings.History_DeleteWordMessage, item.Name, item.StartedAtText, item.EarText, item.MaterialEnvironmentText)))
             return;
 
         try
@@ -855,11 +862,11 @@ public partial class HistoryViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            WordStatusMessage = $"Worttest konnte nicht gelöscht werden: {exception.Message}";
+            WordStatusMessage = string.Format(Strings.History_WordDeleteFailed, exception.Message);
             return;
         }
         ReloadAll();
-        WordStatusMessage = $"Worttest „{item.Name}“ vom {item.StartedAtText} gelöscht.";
+        WordStatusMessage = string.Format(Strings.History_WordDeleted, item.Name, item.StartedAtText);
     }
 
     private IReadOnlyDictionary<Guid, MeasurementAnnotation> LoadAnnotations()
@@ -879,7 +886,7 @@ public partial class HistoryViewModel : ObservableObject
     private void EditWordTestAnnotation(HistorySessionItemViewModel? item)
     {
         if (item is not null)
-            WordStatusMessage = EditAnnotation(item, $"Worttest vom {item.StartedAtText}", WordStatusMessage);
+            WordStatusMessage = EditAnnotation(item, string.Format(Strings.History_WordTestFrom, item.StartedAtText), WordStatusMessage);
     }
 
     private bool CanEditSelectedThresholdAnnotation() => SelectedThresholdTest is not null;
@@ -888,7 +895,7 @@ public partial class HistoryViewModel : ObservableObject
     private void EditSelectedThresholdAnnotation()
     {
         if (SelectedThresholdTest is { } item)
-            ThresholdStatusMessage = EditAnnotation(item, $"Hörschwellentest vom {item.StartedAtText}", ThresholdStatusMessage);
+            ThresholdStatusMessage = EditAnnotation(item, string.Format(Strings.History_ThresholdTestFrom, item.StartedAtText), ThresholdStatusMessage);
     }
 
     /// <summary>Lässt Name und Kommentar bearbeiten, speichert sie und liefert die neue Statusmeldung.</summary>
@@ -907,7 +914,7 @@ public partial class HistoryViewModel : ObservableObject
         }
         catch (Exception exception)
         {
-            return $"Name und Kommentar konnten nicht gespeichert werden: {exception.Message}";
+            return string.Format(Strings.Annotation_SaveFailed, exception.Message);
         }
         item.ApplyAnnotation(annotation);
         if (item is HearingThresholdHistoryItem)
@@ -915,14 +922,14 @@ public partial class HistoryViewModel : ObservableObject
         else
             ApplyFilters();
         Reloaded?.Invoke();
-        return $"Name und Kommentar von „{annotation.Name}“ gespeichert.";
+        return string.Format(Strings.Annotation_Saved, annotation.Name);
     }
 
     private void RebuildDeviceFilters()
     {
         var selectedId = SelectedDeviceFilter.Value;
         DeviceFilters.Clear();
-        DeviceFilters.Add(new HistoryDeviceFilterOption("Alle Hörgeräte", null));
+        DeviceFilters.Add(new HistoryDeviceFilterOption(Strings.History_AllAids, null));
         foreach (var device in allSessions
             .GroupBy(session => session.HearingAidId)
             .Select(group => new HistoryDeviceFilterOption(group.First().HearingAidText, group.Key))
@@ -974,8 +981,8 @@ public partial class HistoryViewModel : ObservableObject
         foreach (var item in query.OrderByDescending(item => item.Session.StartedAt))
             Sessions.Add(item);
         WordStatusMessage = allSessions.Count == 0
-            ? "Noch keine Messsitzung gespeichert."
-            : $"{ResultCountText} angezeigt. Begonnene Messungen bleiben im Verlauf sichtbar.";
+            ? Strings.History_NoSessions
+            : string.Format(Strings.History_Shown, ResultCountText);
         NotifySummaryChanged();
     }
 
@@ -990,7 +997,7 @@ public partial class HistoryViewModel : ObservableObject
         if (item.IsSelected && allSessions.Count(session => session.IsSelected) > 2)
         {
             item.SetSelectedSilently(false);
-            WordStatusMessage = "Für eine klare Gegenüberstellung können genau zwei abgeschlossene Messungen ausgewählt werden.";
+            WordStatusMessage = Strings.History_ExactlyTwo;
             return;
         }
         UpdateComparison();
@@ -1008,7 +1015,7 @@ public partial class HistoryViewModel : ObservableObject
             var assessment = MeasurementComparisonRules.Assess(FirstComparison.Session, SecondComparison.Session);
             IsDirectlyComparable = assessment.IsDirectlyComparable;
             ComparisonAssessmentText = assessment.IsDirectlyComparable
-                ? "Gleiche Hörseite, Messbedingungen, Katalogversion und kompatible Hardware-Snapshots. Die Werte dürfen direkt deskriptiv gegenübergestellt werden."
+                ? Strings.History_DirectlyComparable
                 : string.Join(" ", assessment.Differences);
         }
         else
@@ -1049,7 +1056,7 @@ public partial class HistoryViewModel : ObservableObject
 
     private static string FormatThresholdOrder(HearingThresholdSession session) => session.ToneOrder switch
     {
-        ThresholdToneOrder.Random => "zufällige Reihenfolge nach 500 Hz",
-        _ => "vom 500-Hz-Zentrum nach außen"
+        ThresholdToneOrder.Random => Strings.History_OrderRandom,
+        _ => Strings.History_OrderCenterOut
     };
 }

@@ -82,7 +82,7 @@ public sealed class PretestResultsService
         return
         [
             new TestPlanStatus(TestPlanStep.HearingThreshold, tone?.StartedAt,
-                tone is null ? null : toneAverage is { } average ? $"Tonmittel 0,5–2 kHz {average:0.#} dBFS" : "abgeschlossen"),
+                tone is null ? null : toneAverage is { } average ? string.Format(Strings.Pretest_ToneAverage, average) : Strings.Pretest_Completed),
             AdaptiveStatus(TestPlanStep.NumbersQuiet, adaptive.FirstOrDefault(value => value.Session.Environment == ListeningEnvironment.Quiet), " dB"),
             AdaptiveStatus(TestPlanStep.NumbersNoise, adaptive.FirstOrDefault(value => value.Session.Environment == ListeningEnvironment.BackgroundNoise), " dB SNR"),
             PercentStatus(TestPlanStep.PhonemesQuiet, phonemes.FirstOrDefault(session => session.Environment == ListeningEnvironment.Quiet)),
@@ -97,7 +97,7 @@ public sealed class PretestResultsService
         value.Session is null
             ? new TestPlanStatus(step, null, null)
             : new TestPlanStatus(step, value.Session.StartedAt,
-                $"ohne {Format(value.Result.WithoutHearingAid.Adaptive?.ThresholdDb)}{unit} · mit {Format(value.Result.WithHearingAid.Adaptive?.ThresholdDb)}{unit}");
+                string.Format(Strings.Pretest_Adaptive, Format(value.Result.WithoutHearingAid.Adaptive?.ThresholdDb), Format(value.Result.WithHearingAid.Adaptive?.ThresholdDb), unit));
 
     private TestPlanStatus PercentStatus(TestPlanStep step, PairedMeasurementSession? session)
     {
@@ -105,8 +105,8 @@ public sealed class PretestResultsService
             return new TestPlanStatus(step, null, null);
         var result = TryScore(session);
         return new TestPlanStatus(step, session.StartedAt, result is null
-            ? "abgeschlossen"
-            : $"ohne {result.WithoutHearingAid.PercentCorrect:0.#} % · mit {result.WithHearingAid.PercentCorrect:0.#} %");
+            ? Strings.Pretest_Completed
+            : string.Format(Strings.Pretest_Percent, result.WithoutHearingAid.PercentCorrect, result.WithHearingAid.PercentCorrect));
     }
 
     private IEnumerable<(PairedMeasurementSession Session, decimal? Threshold, PairedMeasurementResult Result)> ScoredAdaptiveNumberTests(
@@ -140,5 +140,5 @@ public sealed class PretestResultsService
         MeasurementProfileRules.GetComparisonDifferences(measured, current with { StartVolumeDb = measured.StartVolumeDb }).Count == 0;
 
     private static string Format(decimal? value) =>
-        value is { } number ? number.ToString("+0.0;-0.0;0.0", System.Globalization.CultureInfo.GetCultureInfo("de-DE")) : "–";
+        value is { } number ? number.ToString("+0.0;-0.0;0.0", System.Globalization.CultureInfo.CurrentCulture) : "–";
 }
