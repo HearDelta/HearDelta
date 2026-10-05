@@ -1,0 +1,3420 @@
+{
+  "schemaVersion": 2,
+  "catalogId": "de-DE-personal-phoneme-contrast-v1",
+  "catalogVersion": "1.0.0",
+  "catalogSha256": "301163bcc56895dd88d0cbf9f4ff0f83d6f4f9241c15dd4f7b5388dc22d0a438",
+  "sourceGroupsFile": "contrast-groups.csv",
+  "sourceGroupsSha256": "3baf2a7a72c6fad57ce0e3b7e821a26d0a8e8806b7594814902d5774e392c957",
+  "audioFormat": {
+    "encoding": "PCM_SIGNED",
+    "sampleRate": 22050,
+    "bitsPerSample": 16,
+    "channels": 1
+  },
+  "generator": {
+    "name": "Azure AI Speech",
+    "version": "cognitiveservices/v1",
+    "executableSha256": "not-applicable-remote-api",
+    "modelRepository": "Microsoft Azure AI Speech",
+    "modelRevision": "service-managed-current-2026-09-03",
+    "modelName": "de-DE-RalfNeural",
+    "modelSha256": "not-published-by-provider",
+    "configSha256": "1724abf3370eeabe8e5175d0f952db6d49553ea03e954cbdf7d02c12fcbc5a4e",
+    "modelLicense": "Microsoft Azure service terms",
+    "datasetLicense": "not disclosed by provider",
+    "syntheticVoice": true,
+    "noiseScale": 0,
+    "phonemeWidthNoise": 0,
+    "lengthScale": 1.0,
+    "sentenceSilenceSeconds": 0,
+    "voice": "ralf",
+    "voiceName": "de-DE-RalfNeural",
+    "aiGeneratedVoice": true,
+    "aiGeneratedVoiceDisclosure": "Alle Audiodateien dieses Pakets enthalten die KI-generierte Azure-Stimme Ralf und keine menschliche Aufnahme.",
+    "instructions": "Isoliertes deutsches Zielwort mit kataloggebundener IPA-Aussprache und SSML-Tempo -30 Prozent; kein Trägersatz und kein nachträglicher Schnitt.",
+    "phonemeAlphabet": "ipa",
+    "speed": 0.7,
+    "ssmlRatePercent": -30,
+    "responseFormat": "wav",
+    "sourceAudioFormat": "PCM_SIGNED, 24000 Hz, 16 bit, mono",
+    "normalization": "Two-pass FFmpeg resampling and sample-peak normalization to PCM16 mono 22050 Hz at -6.0 dBFS; ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+    "generatedAt": "2026-09-03T19:51:29.0082258+02:00"
+  },
+  "entries": [
+    {
+      "stimulusId": "initial-01-1",
+      "audioFile": "audio/initial-01-1.wav",
+      "sha256": "039143454b18f74b543f45bd1aa06f2c07282160dee5f9562c815ab9e7b1dd25",
+      "byteLength": 84520,
+      "sourceAudioFile": "source-audio/initial-01-1.wav",
+      "sourceSha256": "bb3d294e0585adacef470949c16489c0a68dd944515724d996ed8517d98ba093",
+      "sourceByteLength": 91952,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.416,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "bant"
+    },
+    {
+      "stimulusId": "initial-02-2",
+      "audioFile": "audio/initial-02-2.wav",
+      "sha256": "84db2086bf82f4f95a556c77e63b38eb27dd37c749341c31783ed54cf39f16c6",
+      "byteLength": 86820,
+      "sourceAudioFile": "source-audio/initial-02-2.wav",
+      "sourceSha256": "5bc9b00c1d7ad91dc19688fe89ba6b245b5db9d23f0c0b2eb35020ba35a27635",
+      "sourceByteLength": 94456,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.967
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.967
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.415,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "fal"
+    },
+    {
+      "stimulusId": "initial-03-3",
+      "audioFile": "audio/initial-03-3.wav",
+      "sha256": "483e6edf8b2896e4770d0fef81897c6b1ba7c7351874a70fe7c3df60187961c4",
+      "byteLength": 83732,
+      "sourceAudioFile": "source-audio/initial-03-3.wav",
+      "sourceSha256": "0f06b88eab1028a956e46b8d3fb5a0fde556e4d30eee3013b5a5aa1489affb43",
+      "sourceByteLength": 91094,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.409,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "hʊnt"
+    },
+    {
+      "stimulusId": "initial-04-4",
+      "audioFile": "audio/initial-04-4.wav",
+      "sha256": "931d4eb984ac2779e6328e29341be6756e4a37d2e59ade20f8aacadb221153af",
+      "byteLength": 85302,
+      "sourceAudioFile": "source-audio/initial-04-4.wav",
+      "sourceSha256": "ea075a35ff84dbea1db7695693775b27ef6a47945ea915773883611e478ddb75",
+      "sourceByteLength": 92806,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.933
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.933
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.477,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "nas"
+    },
+    {
+      "stimulusId": "initial-05-5",
+      "audioFile": "audio/initial-05-5.wav",
+      "sha256": "221ba9e1b04e2689dc1896ad5b826424758cfc984872a374a3cb49788214bf82",
+      "byteLength": 84458,
+      "sourceAudioFile": "source-audio/initial-05-5.wav",
+      "sourceSha256": "b5353f2d1c67b37effcd8847fee3fdc5f39bd835cce25df63a52e2716ee46d78",
+      "sourceByteLength": 91886,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.402,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "nɪçt"
+    },
+    {
+      "stimulusId": "initial-06-1",
+      "audioFile": "audio/initial-06-1.wav",
+      "sha256": "c6e025dc430a1d410ad8638619eb6ee6e01dbfa01586bdcbb67ea848946ce2b5",
+      "byteLength": 82156,
+      "sourceAudioFile": "source-audio/initial-06-1.wav",
+      "sourceSha256": "32fc99d79c46569b1f443a177698ce957216b4518468a084b30e4f8f7a1ac639",
+      "sourceByteLength": 89380,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.861
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.861
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.342,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "boːt"
+    },
+    {
+      "stimulusId": "initial-07-2",
+      "audioFile": "audio/initial-07-2.wav",
+      "sha256": "0deee68497f4a0d035fdbfbdefdd89306c8889bae2a8af0cc6fed331ba2cbf08",
+      "byteLength": 86030,
+      "sourceAudioFile": "source-audio/initial-07-2.wav",
+      "sourceSha256": "c698334ffad9393c9e6148293b1e562a9ddffa36b88698e7d8a73dfad5e1b1db",
+      "sourceByteLength": 93596,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.491,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "laɪç"
+    },
+    {
+      "stimulusId": "initial-08-3",
+      "audioFile": "audio/initial-08-3.wav",
+      "sha256": "c69afb5721e9238993b62c85528653743acc9ed07bab47e1e13fb5df0ffe634f",
+      "byteLength": 85306,
+      "sourceAudioFile": "source-audio/initial-08-3.wav",
+      "sourceSha256": "baa6326de23e13d30677f7d044104266d9b074763114d5cf05a06d5c2e5195e8",
+      "sourceByteLength": 92808,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.933
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.933
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.38,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "hɔʁt"
+    },
+    {
+      "stimulusId": "vowel-01-4",
+      "audioFile": "audio/vowel-01-4.wav",
+      "sha256": "b34974c37dec047b902e16c919bcea1c2c4ef39041752140e93ba05f730cc311",
+      "byteLength": 79002,
+      "sourceAudioFile": "source-audio/vowel-01-4.wav",
+      "sourceSha256": "42cccdfa3308c3aef613c388fa7cfa1ca7287e25927a3f3f07cf4ba90a42a5dd",
+      "sourceByteLength": 85946,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.79
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.79
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.343,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "bɪt"
+    },
+    {
+      "stimulusId": "vowel-02-5",
+      "audioFile": "audio/vowel-02-5.wav",
+      "sha256": "a653fffc56095a1d56fbf9cb294eede898d2debf78c70eb70e6622c16e11d99f",
+      "byteLength": 88396,
+      "sourceAudioFile": "source-audio/vowel-02-5.wav",
+      "sourceSha256": "80502657c79808ec172111c6e457dc03d20ab3c48fb6b01f92d512090d856988",
+      "sourceByteLength": 96172,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 2.003
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 2.003
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.468,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "faʊl"
+    },
+    {
+      "stimulusId": "vowel-03-1",
+      "audioFile": "audio/vowel-03-1.wav",
+      "sha256": "a8d8128e8e75ae107a3701d3faab5a8ce9d762d64490a1ec8e805dea07864caf",
+      "byteLength": 81366,
+      "sourceAudioFile": "source-audio/vowel-03-1.wav",
+      "sourceSha256": "bf8885c988e19713d2e9f9b521fe1f35a418499b5ad2e7fb9ef883c2808cf270",
+      "sourceByteLength": 88522,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.843
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.843
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.379,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "bɪs"
+    },
+    {
+      "stimulusId": "vowel-04-2",
+      "audioFile": "audio/vowel-04-2.wav",
+      "sha256": "1e3f10ef7b5a0f83c55b7d55545de2dedd61b25a03db26793c707ea5969dc262",
+      "byteLength": 83666,
+      "sourceAudioFile": "source-audio/vowel-04-2.wav",
+      "sourceSha256": "63529306c2f163b898a31c663f873d6618f1991ed51a7e99070dd6ec3c486960",
+      "sourceByteLength": 91024,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.447,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁɔs"
+    },
+    {
+      "stimulusId": "vowel-05-3",
+      "audioFile": "audio/vowel-05-3.wav",
+      "sha256": "b364f927b88e4e0cd34b98fca384df76757bd71afe971d0d5c099a48a1d607f1",
+      "byteLength": 84456,
+      "sourceAudioFile": "source-audio/vowel-05-3.wav",
+      "sourceSha256": "fd89f6737b1fa8a69855ae3bc6b73d2f262a698e0f3b6b635ad3b75c28da9b29",
+      "sourceByteLength": 91882,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.378,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "vɪl"
+    },
+    {
+      "stimulusId": "vowel-06-4",
+      "audioFile": "audio/vowel-06-4.wav",
+      "sha256": "b108e7d7c082cdf2988dddfc0f7939f7399c792b9d16391bd659638e3be7a103",
+      "byteLength": 86092,
+      "sourceAudioFile": "source-audio/vowel-06-4.wav",
+      "sourceSha256": "68a247eb13e3dcd565c53b82e685f14d3653b6bf1e7b25963f741f165939887d",
+      "sourceByteLength": 93664,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.95
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.95
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.433,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "laʊt"
+    },
+    {
+      "stimulusId": "vowel-07-5",
+      "audioFile": "audio/vowel-07-5.wav",
+      "sha256": "5e2883982b5daa96fa2f34e0a4d20e3a91caf226e9e76eaf41be68bf2a930858",
+      "byteLength": 84456,
+      "sourceAudioFile": "source-audio/vowel-07-5.wav",
+      "sourceSha256": "8ab8e69ad215a38fe4a4d8bab7090fd2236c44dd1083fc3ebf6cdd438ffd8e5f",
+      "sourceByteLength": 91882,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.399,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "tuːɐ̯"
+    },
+    {
+      "stimulusId": "vowel-08-1",
+      "audioFile": "audio/vowel-08-1.wav",
+      "sha256": "cb5fb3afdbcfbb972ce95c745d167264fd1a15030c769c5629e97442208fd5ac",
+      "byteLength": 82878,
+      "sourceAudioFile": "source-audio/vowel-08-1.wav",
+      "sourceSha256": "b2ff838b4c0b8cd82117a541efa74c7336cc642fac2a82f131869e55ba2e0c54",
+      "sourceByteLength": 90166,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.354,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "haːn"
+    },
+    {
+      "stimulusId": "vowel-09-2",
+      "audioFile": "audio/vowel-09-2.wav",
+      "sha256": "3a2c797af858e3ad885f28d82fb3d99057fd639a2180667d7b3f53191b76fd6e",
+      "byteLength": 82878,
+      "sourceAudioFile": "source-audio/vowel-09-2.wav",
+      "sourceSha256": "2f09b93a50a2a3074e77c5c14b99ace7d5510ba63f0558218b4d6d4355a2eb1d",
+      "sourceByteLength": 90166,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.377,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "meːl"
+    },
+    {
+      "stimulusId": "final-01-3",
+      "audioFile": "audio/final-01-3.wav",
+      "sha256": "d8cf84c4b43f100de1d1daf9a2c41f6ca06acdc795609e36aba3a71c93d9ad74",
+      "byteLength": 83670,
+      "sourceAudioFile": "source-audio/final-01-3.wav",
+      "sourceSha256": "63f7c826a5eab8a0a749ee1d57bc8d53726efbb02a5da48721dcaf5a8e9187f9",
+      "sourceByteLength": 91028,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.896
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.896
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.424,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁaʊf"
+    },
+    {
+      "stimulusId": "final-02-4",
+      "audioFile": "audio/final-02-4.wav",
+      "sha256": "4600008d943115a48349f38c6a7f66ae9f43581022053ad74e42b8b61d13f932",
+      "byteLength": 85306,
+      "sourceAudioFile": "source-audio/final-02-4.wav",
+      "sourceSha256": "46cda36a35fe09e124ee2e293d725ac30205061eaf1cbb0a9ec047b65a48a060",
+      "sourceByteLength": 92808,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.933
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.933
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.411,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "vaɪl"
+    },
+    {
+      "stimulusId": "final-03-5",
+      "audioFile": "audio/final-03-5.wav",
+      "sha256": "0242f012ad431143bc9247fb2b9cd623d9094142f5a60e27bc1aeb30b4ca380c",
+      "byteLength": 81366,
+      "sourceAudioFile": "source-audio/final-03-5.wav",
+      "sourceSha256": "caba0485a81d2d415a44d017c68220819c4928a49bca39f4db20da782433e4d1",
+      "sourceByteLength": 88522,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.843
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.843
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.305,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁaɪp"
+    },
+    {
+      "stimulusId": "final-04-1",
+      "audioFile": "audio/final-04-1.wav",
+      "sha256": "3c394b8931646486b4284323501fcbd28b37894dbcbb831e7bd287473eabdefb",
+      "byteLength": 83666,
+      "sourceAudioFile": "source-audio/final-04-1.wav",
+      "sourceSha256": "95546cc6ceb44fd186208b4bc5b87ad72a6081a4a7b0280f09ef16f345873655",
+      "sourceByteLength": 91022,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.422,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "loːn"
+    },
+    {
+      "stimulusId": "final-05-2",
+      "audioFile": "audio/final-05-2.wav",
+      "sha256": "121dfeafeb77c9c0d349f38e010f94af1da923fb276ed71d6368c93efacf1fd1",
+      "byteLength": 85244,
+      "sourceAudioFile": "source-audio/final-05-2.wav",
+      "sourceSha256": "df3bd14e95f24987972e4b97d38e0e741a55ddbf250b59565469051993b88910",
+      "sourceByteLength": 92740,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.438,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ɡʁaːm"
+    },
+    {
+      "stimulusId": "final-06-3",
+      "audioFile": "audio/final-06-3.wav",
+      "sha256": "57fa266f3f0bcdbbe41273a2d601e0cedcba220274888744850b26cb87badfe9",
+      "byteLength": 83730,
+      "sourceAudioFile": "source-audio/final-06-3.wav",
+      "sourceSha256": "76517907d00c1fa6b134797081d3e08d77ddb220543a4743ab504714ad0121f3",
+      "sourceByteLength": 91092,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.378,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "veːn"
+    },
+    {
+      "stimulusId": "final-07-4",
+      "audioFile": "audio/final-07-4.wav",
+      "sha256": "f94e11061435c61c6ad5bb529939aababc4482fb78855668b08fc84f67472a04",
+      "byteLength": 81308,
+      "sourceAudioFile": "source-audio/final-07-4.wav",
+      "sourceSha256": "a4d66e6727d91f7e0b9958dc35255a13619188fa9279ef48c933b78ea880b895",
+      "sourceByteLength": 88456,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.842
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.842
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.343,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "hoːl"
+    },
+    {
+      "stimulusId": "final-08-5",
+      "audioFile": "audio/final-08-5.wav",
+      "sha256": "84ceb859cc79e8f09848a7f8a43559c8de425699672836a36d72b4f86eadbf47",
+      "byteLength": 87672,
+      "sourceAudioFile": "source-audio/final-08-5.wav",
+      "sourceSha256": "7531215c9abac22d55023aec4858a21657c62481b5a219f8d3488ddbe8993031",
+      "sourceByteLength": 95384,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.986
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.986
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.508,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʃaʁf"
+    },
+    {
+      "stimulusId": "initial-01-2",
+      "audioFile": "audio/initial-01-2.wav",
+      "sha256": "ce18f3f6cb579bebc6195310344fc676534e1823eef48322e5d1f669997286ff",
+      "byteLength": 83732,
+      "sourceAudioFile": "source-audio/initial-01-2.wav",
+      "sourceSha256": "6118223faafcd7df6b21abbddddd8c52782022f62e0c504b498d5c3f4a5ca78b",
+      "sourceByteLength": 91094,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.41,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "hant"
+    },
+    {
+      "stimulusId": "initial-02-3",
+      "audioFile": "audio/initial-02-3.wav",
+      "sha256": "c8f005ce64f0f9551420f2a3d740905468c0dc5ea5805e20326bd4564678e52d",
+      "byteLength": 80580,
+      "sourceAudioFile": "source-audio/initial-02-3.wav",
+      "sourceSha256": "b3c79cf2fd18195a47a61686c4ec0b176579428b54f499a37bd658cc357fc61d",
+      "sourceByteLength": 87664,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.825
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.825
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.307,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "hal"
+    },
+    {
+      "stimulusId": "initial-03-4",
+      "audioFile": "audio/initial-03-4.wav",
+      "sha256": "3b5b2403ced28f2b1e14b7d2d9ce6da70b99571038d1d57729532b629c314842",
+      "byteLength": 83666,
+      "sourceAudioFile": "source-audio/initial-03-4.wav",
+      "sourceSha256": "828a908c61f01dd715851cbdc5fa834ad9790919e075f82fed166d589cb62a00",
+      "sourceByteLength": 91022,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.425,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "mʊnt"
+    },
+    {
+      "stimulusId": "initial-04-5",
+      "audioFile": "audio/initial-04-5.wav",
+      "sha256": "e16d24d380c4244622eeeafeb5567a4cc6050346a9761313a1a27647a7409f23",
+      "byteLength": 83668,
+      "sourceAudioFile": "source-audio/initial-04-5.wav",
+      "sourceSha256": "fee6fb09f14e9969dda9a884ee99b34ce47c7918c69ddbfadd850bfbd9aee872",
+      "sourceByteLength": 91026,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.431,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "vas"
+    },
+    {
+      "stimulusId": "initial-05-1",
+      "audioFile": "audio/initial-05-1.wav",
+      "sha256": "633a55b3d4bf87ce2cb667012329d14fc7870113436da7a86cd518673bed6a5e",
+      "byteLength": 89248,
+      "sourceAudioFile": "source-audio/initial-05-1.wav",
+      "sourceSha256": "c2a98991cc538a74e95463ceb9e3090a4cd7271a35f98953a2142be462da2267",
+      "sourceByteLength": 97098,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 2.022
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 2.022
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.503,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "zɪçt"
+    },
+    {
+      "stimulusId": "initial-06-2",
+      "audioFile": "audio/initial-06-2.wav",
+      "sha256": "9aa8c826ad52544a100b9a06c2b7890192716a7dfcafce19c42667f4726c9a71",
+      "byteLength": 80520,
+      "sourceAudioFile": "source-audio/initial-06-2.wav",
+      "sourceSha256": "534d4081940aaf7901b7537601a2f6c5d07353ec4b8f9d733816769ee2ea5d02",
+      "sourceByteLength": 87598,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.824
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.824
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.311,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "koːt"
+    },
+    {
+      "stimulusId": "initial-07-3",
+      "audioFile": "audio/initial-07-3.wav",
+      "sha256": "272602db7e44ba27ca2d61d1702db094a00297e20dacc84a561c9d4f2d76623c",
+      "byteLength": 85244,
+      "sourceAudioFile": "source-audio/initial-07-3.wav",
+      "sourceSha256": "58363427f872ce8aef5b5185fc641775b6d91171de02cfa146b100ebf7e51884",
+      "sourceByteLength": 92740,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.488,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁaɪç"
+    },
+    {
+      "stimulusId": "initial-08-4",
+      "audioFile": "audio/initial-08-4.wav",
+      "sha256": "76eb91605c07bcb358b1866bef7d25958da4a77169dc11089d8ac898f490a724",
+      "byteLength": 83732,
+      "sourceAudioFile": "source-audio/initial-08-4.wav",
+      "sourceSha256": "a8a2d37760488c0691587bd20ea5e95e49d54253e690a9e9fdae361b28011323",
+      "sourceByteLength": 91094,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.379,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "mɔʁt"
+    },
+    {
+      "stimulusId": "vowel-01-5",
+      "audioFile": "audio/vowel-01-5.wav",
+      "sha256": "861af3a5b03f9330ac14c8ecb11610207dc878c6c5bc273e585e0bd3587cd597",
+      "byteLength": 80578,
+      "sourceAudioFile": "source-audio/vowel-01-5.wav",
+      "sourceSha256": "65753500277736c3204ef3f902414ea159f5b03f5633d37dcd4f0c3236360043",
+      "sourceByteLength": 87662,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.825
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.825
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.305,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "bʊt"
+    },
+    {
+      "stimulusId": "vowel-02-1",
+      "audioFile": "audio/vowel-02-1.wav",
+      "sha256": "3cb9b1993bba30325aa7539d98d9241bb301d84a2990bc1eb4465f07efd34352",
+      "byteLength": 85306,
+      "sourceAudioFile": "source-audio/vowel-02-1.wav",
+      "sourceSha256": "20c5883f0e1e878100ef4186608eaf99198ef4ee28767f17cff8034c880c46aa",
+      "sourceByteLength": 92808,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.933
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.933
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.399,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "fɛl"
+    },
+    {
+      "stimulusId": "vowel-03-2",
+      "audioFile": "audio/vowel-03-2.wav",
+      "sha256": "40441bd538862b683c5f2231f0aa86d489d9d30587b10d6ce98e66df811410c3",
+      "byteLength": 81302,
+      "sourceAudioFile": "source-audio/vowel-03-2.wav",
+      "sourceSha256": "43fb300177d265e0e7bd664b7f4f483ba3e209391e3ab7d75c3586770d60ad40",
+      "sourceByteLength": 88450,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.842
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.842
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.38,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "bʊs"
+    },
+    {
+      "stimulusId": "vowel-04-3",
+      "audioFile": "audio/vowel-04-3.wav",
+      "sha256": "2a01a7815ad30969f1dea2af956b1c1a9279b936cc9e2788f40d9c16c5d57be0",
+      "byteLength": 84456,
+      "sourceAudioFile": "source-audio/vowel-04-3.wav",
+      "sourceSha256": "b8b7505029c192e78c253ec4a443a448382e710f263827217cdecbd709c9d69b",
+      "sourceByteLength": 91882,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.47,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁuːs"
+    },
+    {
+      "stimulusId": "vowel-05-4",
+      "audioFile": "audio/vowel-05-4.wav",
+      "sha256": "1284543b5d3893ae1336f362b1fdbc28f985d554a89aed71fcc69d0ffd2011c9",
+      "byteLength": 83666,
+      "sourceAudioFile": "source-audio/vowel-05-4.wav",
+      "sourceSha256": "ef6c2855c201e1219856a6911dd7d4cf891edca95a2124ac7d401ae8f3fe19b4",
+      "sourceByteLength": 91024,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.385,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "voːl"
+    },
+    {
+      "stimulusId": "vowel-06-5",
+      "audioFile": "audio/vowel-06-5.wav",
+      "sha256": "5a668accdd10c4b0739402acf17076ff03fab3836c2733a3d8f05521a869d7ca",
+      "byteLength": 86092,
+      "sourceAudioFile": "source-audio/vowel-06-5.wav",
+      "sourceSha256": "a92f702da7d5d883e627ba30a1eeb67a926a73404aab00c0c14e838d90c8c82c",
+      "sourceByteLength": 93666,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.95
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.95
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.429,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "løːt"
+    },
+    {
+      "stimulusId": "vowel-07-1",
+      "audioFile": "audio/vowel-07-1.wav",
+      "sha256": "866574d84c66a2fffd044b4b48bab0640da4a58bb2aafcab2411d053bdcfdf1a",
+      "byteLength": 83668,
+      "sourceAudioFile": "source-audio/vowel-07-1.wav",
+      "sourceSha256": "cceff193dd49e0c2fa2b8bf19ee7876eb10e8b160500561774d0ab188a223aaf",
+      "sourceByteLength": 91026,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.384,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "tiːɐ̯"
+    },
+    {
+      "stimulusId": "vowel-08-2",
+      "audioFile": "audio/vowel-08-2.wav",
+      "sha256": "2f144a7637710de53af438f288525b7c0d3b1e3e37daf9d2320a2dd64e2bff3a",
+      "byteLength": 78216,
+      "sourceAudioFile": "source-audio/vowel-08-2.wav",
+      "sourceSha256": "d04029130d5852d7ff455824e5e173d9c8a8eb50da863897ddb39bd8dc651f30",
+      "sourceByteLength": 85090,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.772
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.772
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.281,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "hɪn"
+    },
+    {
+      "stimulusId": "vowel-09-3",
+      "audioFile": "audio/vowel-09-3.wav",
+      "sha256": "ab311aa28acf3b97ec24f3511ec713f80892f69fc7f14fcf4bb769f2ddef990a",
+      "byteLength": 80516,
+      "sourceAudioFile": "source-audio/vowel-09-3.wav",
+      "sourceSha256": "40a63f66a585b3ad5018b3770b9c12f057a28247fe68e778608dff118ef613b3",
+      "sourceByteLength": 87594,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.824
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.824
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.329,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "mʏl"
+    },
+    {
+      "stimulusId": "final-01-4",
+      "audioFile": "audio/final-01-4.wav",
+      "sha256": "dd2ab8c5360b3e3be772ec4193f2ddde8fc4efe32c1686a7541a4e1aa22f373c",
+      "byteLength": 84520,
+      "sourceAudioFile": "source-audio/final-01-4.wav",
+      "sourceSha256": "d45cff2592ecfbffc6564bcef9d2c038428eb3d075efd13fa7cdb8f6e7b78073",
+      "sourceByteLength": 91952,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.36,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁaʊp"
+    },
+    {
+      "stimulusId": "final-02-5",
+      "audioFile": "audio/final-02-5.wav",
+      "sha256": "2af1a7f19944ed110980e332a4540590205247076ad356dbf9bcb9c82ded24d2",
+      "byteLength": 82878,
+      "sourceAudioFile": "source-audio/final-02-5.wav",
+      "sourceSha256": "6cab5de1eb1011baf402a711bac1b6f887dbfaa882805247798b3678876823eb",
+      "sourceByteLength": 90166,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.34,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "vaɪp"
+    },
+    {
+      "stimulusId": "final-03-1",
+      "audioFile": "audio/final-03-1.wav",
+      "sha256": "ece78d6108eb109c3891290d66bc80603bf11063cf3954c19ecc6e99d0e7b198",
+      "byteLength": 82878,
+      "sourceAudioFile": "source-audio/final-03-1.wav",
+      "sourceSha256": "1bcfbb63f14b46df9e6ef268f68e8c74fd9bfe95ca468692cc574d00ad163de8",
+      "sourceByteLength": 90166,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.389,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁaɪm"
+    },
+    {
+      "stimulusId": "final-04-2",
+      "audioFile": "audio/final-04-2.wav",
+      "sha256": "79f7ebbd3a66bd8223875472181d7ece136ac68c1070c66b8c17e06272b061b2",
+      "byteLength": 86030,
+      "sourceAudioFile": "source-audio/final-04-2.wav",
+      "sourceSha256": "8cf0a7a8ccb95d73605810f239d559ce6084ac95255b6c09052f0a644d292be5",
+      "sourceByteLength": 93596,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.491,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "loːs"
+    },
+    {
+      "stimulusId": "final-05-3",
+      "audioFile": "audio/final-05-3.wav",
+      "sha256": "326955714c75e027052611f38ab8548106bb79ce346b57c1a9bbc30dae53257d",
+      "byteLength": 86036,
+      "sourceAudioFile": "source-audio/final-05-3.wav",
+      "sourceSha256": "695598367898abf60ac2dd50091bf21e791e7eeaf34a431aeb0f82654a4f548b",
+      "sourceByteLength": 93602,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.402,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ɡʁaːt"
+    },
+    {
+      "stimulusId": "final-06-4",
+      "audioFile": "audio/final-06-4.wav",
+      "sha256": "fe0e01de84de160b75fada38b6367012647d5595977a148c954f52b6ec9bb4c3",
+      "byteLength": 84520,
+      "sourceAudioFile": "source-audio/final-06-4.wav",
+      "sourceSha256": "ee5afe3bad57ca0ca8fa5b3426df684fd5dd19f7303311140ee66fff0d630f35",
+      "sourceByteLength": 91952,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.403,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "veːm"
+    },
+    {
+      "stimulusId": "final-07-5",
+      "audioFile": "audio/final-07-5.wav",
+      "sha256": "0b031170258cad0323080365d679ced7c255df5eed0f8fa8aace49bb3a6843b0",
+      "byteLength": 79796,
+      "sourceAudioFile": "source-audio/final-07-5.wav",
+      "sourceSha256": "6acc5f3e5561bf2229cb3f5f6b774b8dd01858f26ae83581d57bd26449a39fdb",
+      "sourceByteLength": 86810,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.808
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.808
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.256,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "hoːp"
+    },
+    {
+      "stimulusId": "final-08-1",
+      "audioFile": "audio/final-08-1.wav",
+      "sha256": "b73affd6f60e00e52047c31e6b52a960b95edac9f634fe7723c1a7ac6d98c2ea",
+      "byteLength": 86032,
+      "sourceAudioFile": "source-audio/final-08-1.wav",
+      "sourceSha256": "66bad4294ab95290812214c2ae45ab6ab9c722660343e6fadc62ce159bc4a7f5",
+      "sourceByteLength": 93598,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.472,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʃaːf"
+    },
+    {
+      "stimulusId": "initial-01-3",
+      "audioFile": "audio/initial-01-3.wav",
+      "sha256": "5436d4f5fd4bb335aa06acfab4a5eef774d29acd1dbc908a128714d2367ffde8",
+      "byteLength": 87604,
+      "sourceAudioFile": "source-audio/initial-01-3.wav",
+      "sourceSha256": "3cf4846dd8eafd452402a110778c6d935ef4fb1afd3db024ff942b48c36a4db5",
+      "sourceByteLength": 95310,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.985
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.985
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.52,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "lant"
+    },
+    {
+      "stimulusId": "initial-02-4",
+      "audioFile": "audio/initial-02-4.wav",
+      "sha256": "2ce97255e0297eab5bf71b71ca5b8eabee9f3b9c57493ed9f3924dfaca86fe59",
+      "byteLength": 86028,
+      "sourceAudioFile": "source-audio/initial-02-4.wav",
+      "sourceSha256": "baff58937124a9a42c40f85a76c7443ea411a34ca38a4fffd3624688b78d5202",
+      "sourceByteLength": 93594,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.438,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʃal"
+    },
+    {
+      "stimulusId": "initial-03-5",
+      "audioFile": "audio/initial-03-5.wav",
+      "sha256": "4549729af365b2ca3e6451d85bfbcf0444ff337b29721ed1bf7e589e2d965859",
+      "byteLength": 82942,
+      "sourceAudioFile": "source-audio/initial-03-5.wav",
+      "sourceSha256": "38926e36294e52504f16a3bfeac5cf131d0305f7436742d789e5b89d6dab2e9a",
+      "sourceByteLength": 90236,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.879
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.879
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.401,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁʊnt"
+    },
+    {
+      "stimulusId": "initial-04-1",
+      "audioFile": "audio/initial-04-1.wav",
+      "sha256": "ceec1afd8dbef1d74315b24c37c0c2bb8a15ddf9107bc43d99cad426451b5f6b",
+      "byteLength": 82880,
+      "sourceAudioFile": "source-audio/initial-04-1.wav",
+      "sourceSha256": "683ab0865d5d74175d33d99ae64224f91fb4d970af7d5df444cb535802b48b3d",
+      "sourceByteLength": 90168,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.407,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "bas"
+    },
+    {
+      "stimulusId": "initial-05-2",
+      "audioFile": "audio/initial-05-2.wav",
+      "sha256": "3a0484800c57e7cab1f71d3a42abbe9574d963695838f5a5e63ded3a71879c5f",
+      "byteLength": 87608,
+      "sourceAudioFile": "source-audio/initial-05-2.wav",
+      "sourceSha256": "d3c59cbe797852682dd7ee878b394b1e811f92a7531ba0b42472e037cea2164c",
+      "sourceByteLength": 95316,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.985
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.985
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.472,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʃɪçt"
+    },
+    {
+      "stimulusId": "initial-06-3",
+      "audioFile": "audio/initial-06-3.wav",
+      "sha256": "d48fc03a73f4e2800ff96e6819a839486f8064cd0f43dfe7c2c0c930d9c93ac0",
+      "byteLength": 80516,
+      "sourceAudioFile": "source-audio/initial-06-3.wav",
+      "sourceSha256": "7d95aafe24fd53dbefadce331af103e8301b3435cead1cf2ff1f7a20c396c461",
+      "sourceByteLength": 87594,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.824
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.824
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.323,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "noːt"
+    },
+    {
+      "stimulusId": "initial-07-4",
+      "audioFile": "audio/initial-07-4.wav",
+      "sha256": "74c7b166aa0c285e89582c7695d58125586c48aaef52ccba87111a60427c4c2f",
+      "byteLength": 83668,
+      "sourceAudioFile": "source-audio/initial-07-4.wav",
+      "sourceSha256": "e34c15e12c4dbb7338ee543cf16e803fe00ad73fd499f16f95f2b5bbf93999ed",
+      "sourceByteLength": 91026,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.438,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "taɪç"
+    },
+    {
+      "stimulusId": "initial-08-5",
+      "audioFile": "audio/initial-08-5.wav",
+      "sha256": "537982823882c2750abc5fbbc42d659c8bd8fb124ff34a4f7c79051c9dc05988",
+      "byteLength": 85242,
+      "sourceAudioFile": "source-audio/initial-08-5.wav",
+      "sourceSha256": "4c2959d8413fea1c2e4f3a6fcf4d4ae9c0ac25f617a2f8c0fb0a0d21eb687376",
+      "sourceByteLength": 92738,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.38,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "vɔʁt"
+    },
+    {
+      "stimulusId": "vowel-01-1",
+      "audioFile": "audio/vowel-01-1.wav",
+      "sha256": "2c7e2c2684250a5658523cc2e902680e6f7ac5128105fef9ca439088a5497936",
+      "byteLength": 82094,
+      "sourceAudioFile": "source-audio/vowel-01-1.wav",
+      "sourceSha256": "a83a0df11e99df255d67a5eb53414665ae0a1e69e95dd5d5f1a889e7c039ec91",
+      "sourceByteLength": 89312,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.86
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.86
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.327,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "baːt"
+    },
+    {
+      "stimulusId": "vowel-02-2",
+      "audioFile": "audio/vowel-02-2.wav",
+      "sha256": "8fab4a9c1dc9f47c3da2a7112d75088c679563c5d712cc625d74a46085fe9038",
+      "byteLength": 84458,
+      "sourceAudioFile": "source-audio/vowel-02-2.wav",
+      "sourceSha256": "58da0f33a501c3e6f0448448ae39adf92f77233f8880745bc46cc31d903e4729",
+      "sourceByteLength": 91886,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.418,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "fiːl"
+    },
+    {
+      "stimulusId": "vowel-03-3",
+      "audioFile": "audio/vowel-03-3.wav",
+      "sha256": "a7b44be95a836d0da9cd2ff77bd406cc47be6cf9222cec91d61dfb79a248dd58",
+      "byteLength": 81306,
+      "sourceAudioFile": "source-audio/vowel-03-3.wav",
+      "sourceSha256": "e49cc120713525841668fc4d4bb8130b372d98b8c6002e133393207dc71a4fdb",
+      "sourceByteLength": 88454,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.842
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.842
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.391,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "bɔs"
+    },
+    {
+      "stimulusId": "vowel-04-4",
+      "audioFile": "audio/vowel-04-4.wav",
+      "sha256": "f749b9972a7d023205b2716237e47849a2e63172615ac0884a35ca1e334de44f",
+      "byteLength": 85246,
+      "sourceAudioFile": "source-audio/vowel-04-4.wav",
+      "sourceSha256": "e9b90c3d30f3fc1cccb0d08791671676d402ed7ec05baede2d1609739299c970",
+      "sourceByteLength": 92742,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.497,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁaɪs"
+    },
+    {
+      "stimulusId": "vowel-05-5",
+      "audioFile": "audio/vowel-05-5.wav",
+      "sha256": "b9a201e6faf4f494331d2f265db0ab9389e540f54cbe1a84e5c90ce86e4782f5",
+      "byteLength": 85242,
+      "sourceAudioFile": "source-audio/vowel-05-5.wav",
+      "sourceSha256": "858734326d1d0674bc3e47108775ee555dc72b59f3f325773118b6dd46eb9db5",
+      "sourceByteLength": 92738,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.437,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "vyːl"
+    },
+    {
+      "stimulusId": "vowel-06-1",
+      "audioFile": "audio/vowel-06-1.wav",
+      "sha256": "fb98e99098631b2fa37b1234912e38d57600d8fcd015b208f0617827895be2d5",
+      "byteLength": 82942,
+      "sourceAudioFile": "source-audio/vowel-06-1.wav",
+      "sourceSha256": "efe78d842252284b18880b1e082e77e7d07c6eb704cc910a862af4af6a260796",
+      "sourceByteLength": 90234,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.879
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.879
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.389,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "liːt"
+    },
+    {
+      "stimulusId": "vowel-07-2",
+      "audioFile": "audio/vowel-07-2.wav",
+      "sha256": "2f52c33671784159578502d781c73f0773e2980b481b17a62b93875073f766fe",
+      "byteLength": 84520,
+      "sourceAudioFile": "source-audio/vowel-07-2.wav",
+      "sourceSha256": "53a66be0524d1aef2c6926c4f4d04c93fcadf08dce9983670baa3ed466230a2d",
+      "sourceByteLength": 91952,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.408,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "tyːɐ̯"
+    },
+    {
+      "stimulusId": "vowel-08-3",
+      "audioFile": "audio/vowel-08-3.wav",
+      "sha256": "4abcc286097e812c3b402b9ddc8e213414d5b6d934ab39d9e47f14890e661c67",
+      "byteLength": 79792,
+      "sourceAudioFile": "source-audio/vowel-08-3.wav",
+      "sourceSha256": "e26b35bfa9e97fef756c71e936d10a0fa0d0aace8ce52392436b6b899af5b7cb",
+      "sourceByteLength": 86806,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.808
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.808
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.318,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "huːn"
+    },
+    {
+      "stimulusId": "vowel-09-4",
+      "audioFile": "audio/vowel-09-4.wav",
+      "sha256": "785095d9da2fff61403f880376a196d8bbee2cc0d4351fed39a055c057246e7c",
+      "byteLength": 81298,
+      "sourceAudioFile": "source-audio/vowel-09-4.wav",
+      "sourceSha256": "71892d5441ae3c42e8d28a05421a06ecba798c45334f7bbf7dd686c5155de6ce",
+      "sourceByteLength": 88448,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.842
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.842
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.338,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "mɔl"
+    },
+    {
+      "stimulusId": "final-01-5",
+      "audioFile": "audio/final-01-5.wav",
+      "sha256": "fa5495baf39525c365fbb65e8ee611493d1bc792cb495af95398f22e9b50116c",
+      "byteLength": 84456,
+      "sourceAudioFile": "source-audio/final-01-5.wav",
+      "sourceSha256": "a0712c485b60c46acba1f0435ca24aa4dc14eeef1cc66b2b619812542b45857e",
+      "sourceByteLength": 91882,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.489,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁaʊʃ"
+    },
+    {
+      "stimulusId": "final-02-1",
+      "audioFile": "audio/final-02-1.wav",
+      "sha256": "a3d64bb53e3bb360edde51296c4ce113ec5b8bc11e97c13e15928fdcab4dd637",
+      "byteLength": 84456,
+      "sourceAudioFile": "source-audio/final-02-1.wav",
+      "sourceSha256": "7f987e4a3bb3d02b53ab4f73ac16d84b75538b8e3b795cf748865624e26198d5",
+      "sourceByteLength": 91882,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.423,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "vaɪn"
+    },
+    {
+      "stimulusId": "final-03-2",
+      "audioFile": "audio/final-03-2.wav",
+      "sha256": "67ab8cb683edbadde5df2b6cbae8f6a8f307a2e99f028665a7c58cb4d3133915",
+      "byteLength": 82940,
+      "sourceAudioFile": "source-audio/final-03-2.wav",
+      "sourceSha256": "553eee55a2d7b0a52b816a391b116bbecfd5c7c7ccfff5366a02956da08a3135",
+      "sourceByteLength": 90232,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.879
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.879
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.402,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁaɪn"
+    },
+    {
+      "stimulusId": "final-04-3",
+      "audioFile": "audio/final-04-3.wav",
+      "sha256": "10bcd1de46c29219003a1070c6db59a915d223bf4307c6ecb625cbfb825c48ab",
+      "byteLength": 83666,
+      "sourceAudioFile": "source-audio/final-04-3.wav",
+      "sourceSha256": "85faf8f0788fe934df04ab4519bcb4876f7c38d2e7590c3a4e8725cfbb2b78a0",
+      "sourceByteLength": 91024,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.379,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "loːt"
+    },
+    {
+      "stimulusId": "final-05-4",
+      "audioFile": "audio/final-05-4.wav",
+      "sha256": "4f8c6cfa15f6b9f31ad3e77e482585386aac687708a6ae3fa6e192223ff9cf26",
+      "byteLength": 86030,
+      "sourceAudioFile": "source-audio/final-05-4.wav",
+      "sourceSha256": "c4764065aca403f84efd41d61a8c1075b1aefb570a16aa1f5d5c61984703b5a4",
+      "sourceByteLength": 93596,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.379,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ɡʁaːp"
+    },
+    {
+      "stimulusId": "final-06-5",
+      "audioFile": "audio/final-06-5.wav",
+      "sha256": "2b4dc7b478b273cbaf50ce2d21d0ad5d45a71ada85f73b38ec9fad2b1b480831",
+      "byteLength": 86030,
+      "sourceAudioFile": "source-audio/final-06-5.wav",
+      "sourceSha256": "6d30374ffd5adfe7a736f44e558d46261e7fd42b4b7319ab9269b210c1fafc07",
+      "sourceByteLength": 93596,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.419,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "veːɐ̯"
+    },
+    {
+      "stimulusId": "final-07-1",
+      "audioFile": "audio/final-07-1.wav",
+      "sha256": "50d8253756b53e7ec1f95978494f22c04b079b0062ccb99dd338b64109197b70",
+      "byteLength": 79788,
+      "sourceAudioFile": "source-audio/final-07-1.wav",
+      "sourceSha256": "abee74e9c2a701dc4bc5bc462420ceaa08dda3793c99682a3a97805900d439bd",
+      "sourceByteLength": 86802,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.807
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.807
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.359,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "hoːf"
+    },
+    {
+      "stimulusId": "final-08-2",
+      "audioFile": "audio/final-08-2.wav",
+      "sha256": "fc328557476d2a366594409ed4910691e3ca08fd98f7f7d4411d6f160b0f5513",
+      "byteLength": 87604,
+      "sourceAudioFile": "source-audio/final-08-2.wav",
+      "sourceSha256": "f978db7a7e910bb151e2079c00daa8383b7135f837a75ab49ed32f41a57ccaf4",
+      "sourceByteLength": 95310,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.985
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.985
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.46,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʃaːl"
+    },
+    {
+      "stimulusId": "initial-01-4",
+      "audioFile": "audio/initial-01-4.wav",
+      "sha256": "55c49a13f754124405449846a2bf5cdeb91dca2c568039e050d57f7a28d93f53",
+      "byteLength": 84516,
+      "sourceAudioFile": "source-audio/initial-01-4.wav",
+      "sourceSha256": "137678b86c291fe11d2cb41dacdd57107f1270948bf710656959a7e23dd3654e",
+      "sourceByteLength": 91948,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.44,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁant"
+    },
+    {
+      "stimulusId": "initial-02-5",
+      "audioFile": "audio/initial-02-5.wav",
+      "sha256": "50102dd6a32263165fde1f9a834a62ac297d7fd5bb531b11f08dc3b531388ad9",
+      "byteLength": 82090,
+      "sourceAudioFile": "source-audio/initial-02-5.wav",
+      "sourceSha256": "701633df1541342b1c631314303cf1e4dad61e85dcf3d0d8d579337b31e542a9",
+      "sourceByteLength": 89308,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.86
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.86
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.337,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "val"
+    },
+    {
+      "stimulusId": "initial-03-1",
+      "audioFile": "audio/initial-03-1.wav",
+      "sha256": "676c76b0475972ad63f8586a9e9bc298971db866ccff30c973ea5969d6e616a3",
+      "byteLength": 82090,
+      "sourceAudioFile": "source-audio/initial-03-1.wav",
+      "sourceSha256": "2d3da7d1736929bad120901793c40bb4b85d1336fc8c72b7e45cb46b3945a579",
+      "sourceByteLength": 89308,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.86
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.86
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.395,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "bʊnt"
+    },
+    {
+      "stimulusId": "initial-04-2",
+      "audioFile": "audio/initial-04-2.wav",
+      "sha256": "c31c624990fefc493db0fa846c330532b6693f05a0043dc0030d666df70deced",
+      "byteLength": 86884,
+      "sourceAudioFile": "source-audio/initial-04-2.wav",
+      "sourceSha256": "c32cb82a9208687696d347b57759c932b35f802ce8fc0285491ed75dd769c5e6",
+      "sourceByteLength": 94526,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.968
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.968
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.485,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "fas"
+    },
+    {
+      "stimulusId": "initial-05-3",
+      "audioFile": "audio/initial-05-3.wav",
+      "sha256": "8ceda3632c86c80f6d67937044ab10ac82157397df7af6dad6e10788872557dd",
+      "byteLength": 83734,
+      "sourceAudioFile": "source-audio/initial-05-3.wav",
+      "sourceSha256": "d37e8d5e0bb58aba71e9b38dcb0be18e33ea2f2abd28ed44410312c92e8476cf",
+      "sourceByteLength": 91096,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.379,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "dɪçt"
+    },
+    {
+      "stimulusId": "initial-06-4",
+      "audioFile": "audio/initial-06-4.wav",
+      "sha256": "90a81a6fe252ca147c744f8d140937da7bc9ba423056682fc3850b6aae446b23",
+      "byteLength": 80516,
+      "sourceAudioFile": "source-audio/initial-06-4.wav",
+      "sourceSha256": "5ef87ecc4a7074150e27554f4a9eb46c03f185669929c7ed5319f1f67d5b7118",
+      "sourceByteLength": 87594,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.824
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.824
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.316,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁoːt"
+    },
+    {
+      "stimulusId": "initial-07-5",
+      "audioFile": "audio/initial-07-5.wav",
+      "sha256": "3800e7c16626f19bbe02bc309f3fee63843f9dfb8724466525395f5d0b30a28d",
+      "byteLength": 84520,
+      "sourceAudioFile": "source-audio/initial-07-5.wav",
+      "sourceSha256": "23c3d893f24ddf9ee2eaa7d45142d9511b2369732e30194a5d491f28360092e5",
+      "sourceByteLength": 91952,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.472,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "vaɪç"
+    },
+    {
+      "stimulusId": "initial-08-1",
+      "audioFile": "audio/initial-08-1.wav",
+      "sha256": "ecc9b200adc94eb67b3e36c7c8ff79d6584f3a592432614652ab2d196cfe38e1",
+      "byteLength": 82878,
+      "sourceAudioFile": "source-audio/initial-08-1.wav",
+      "sourceSha256": "9b3b9b233ef3093948e01889cba0888c869826a8ac9dec8d5cb92fc20bb78725",
+      "sourceByteLength": 90166,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.323,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "dɔʁt"
+    },
+    {
+      "stimulusId": "vowel-01-2",
+      "audioFile": "audio/vowel-01-2.wav",
+      "sha256": "ad0e4a61ecd251fbba1ff8d34a0ece6d2b8d215e369c75f112114564d230c442",
+      "byteLength": 81366,
+      "sourceAudioFile": "source-audio/vowel-01-2.wav",
+      "sourceSha256": "9475dccef9554690c0c85f047a44458eda8be7cb317f24de8aaebf67becc16ea",
+      "sourceByteLength": 88520,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.843
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.843
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.303,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "bɛt"
+    },
+    {
+      "stimulusId": "vowel-02-3",
+      "audioFile": "audio/vowel-02-3.wav",
+      "sha256": "d7f7faa30ec5405e2f7a317439395ad1fe4c2e392f8d6b287a58bdddb1489259",
+      "byteLength": 86028,
+      "sourceAudioFile": "source-audio/vowel-02-3.wav",
+      "sourceSha256": "d3aa45e6d286ba4efff20a98356032bdd8764a29b17514c81f13a403af22a6cc",
+      "sourceByteLength": 93594,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.412,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "fɔl"
+    },
+    {
+      "stimulusId": "vowel-03-4",
+      "audioFile": "audio/vowel-03-4.wav",
+      "sha256": "010aeb6eb263fe72b81e7e0cec96a8bb352cbc6ea93da7362efba06dbc45e880",
+      "byteLength": 82942,
+      "sourceAudioFile": "source-audio/vowel-03-4.wav",
+      "sourceSha256": "5874cb05bacfe0716eb267aa58724f57b37f38ba9397a332cbb828065fe38c94",
+      "sourceByteLength": 90234,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.879
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.879
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.432,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "byːs"
+    },
+    {
+      "stimulusId": "vowel-04-5",
+      "audioFile": "audio/vowel-04-5.wav",
+      "sha256": "4b6f8c5245f6eb5feb081bc1410c6a58e7d67fc669d095006bda8dfc3b148030",
+      "byteLength": 86882,
+      "sourceAudioFile": "source-audio/vowel-04-5.wav",
+      "sourceSha256": "f47e533e274b1a94540c1a786d21fcfada43b75a39583fb006544f3abe353031",
+      "sourceByteLength": 94524,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.968
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.968
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.521,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁaʊs"
+    },
+    {
+      "stimulusId": "vowel-05-1",
+      "audioFile": "audio/vowel-05-1.wav",
+      "sha256": "efaa06bc5ebcaa9966b00e6f9cf7801a46ddb86031cb29954c53cfaedb7ab076",
+      "byteLength": 85240,
+      "sourceAudioFile": "source-audio/vowel-05-1.wav",
+      "sourceSha256": "8ae0d16cf602077695ca5f8df085a7463e553ec237cd005eeb7d3bd61cc73248",
+      "sourceByteLength": 92736,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.396,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "vaːl"
+    },
+    {
+      "stimulusId": "vowel-06-2",
+      "audioFile": "audio/vowel-06-2.wav",
+      "sha256": "59ca37cf46bc060a845cb26e825fd8d89368b4347fcd32aeb1ed94cd5a437101",
+      "byteLength": 86088,
+      "sourceAudioFile": "source-audio/vowel-06-2.wav",
+      "sourceSha256": "164e7c49ac730df606b546c29a7a0f8ce0cbe35605e3a5c661c772b5df7ebfcd",
+      "sourceByteLength": 93660,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.95
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.95
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.432,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "lɛːt"
+    },
+    {
+      "stimulusId": "vowel-07-3",
+      "audioFile": "audio/vowel-07-3.wav",
+      "sha256": "65c8ee4f44bb04e55e863669a225c1215477e12a0cca21436cbd820fad4e82ec",
+      "byteLength": 82878,
+      "sourceAudioFile": "source-audio/vowel-07-3.wav",
+      "sourceSha256": "b21ef38ae7425715d8c872dda16f73c5b60f77727ddcf3660f8614d78267427c",
+      "sourceByteLength": 90166,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.376,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "toːɐ̯"
+    },
+    {
+      "stimulusId": "vowel-08-4",
+      "audioFile": "audio/vowel-08-4.wav",
+      "sha256": "1c241157d7c532dcf888f45133fbd4f1865fe2f68b49cadc7d1162c84c5e5e27",
+      "byteLength": 82880,
+      "sourceAudioFile": "source-audio/vowel-08-4.wav",
+      "sourceSha256": "decff81997a46bdf07c2339c8caa7e8663e420244c15acbae5b112c3f3c13608",
+      "sourceByteLength": 90168,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.878
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.346,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "høːn"
+    },
+    {
+      "stimulusId": "vowel-09-5",
+      "audioFile": "audio/vowel-09-5.wav",
+      "sha256": "5d48ed27dc809a16132007ef53b244e9c272a25b74ade15bbca8280352b9622b",
+      "byteLength": 86030,
+      "sourceAudioFile": "source-audio/vowel-09-5.wav",
+      "sourceSha256": "88d88af2a5faeaedc19c1bb4d51b59ff39c7a8c2047a802279003751ad894484",
+      "sourceByteLength": 93596,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.444,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "maʊl"
+    },
+    {
+      "stimulusId": "final-01-1",
+      "audioFile": "audio/final-01-1.wav",
+      "sha256": "e81ebf31d9a95d9e3803563c942593d9acab5d22e32fa7734541d346740a8d19",
+      "byteLength": 82154,
+      "sourceAudioFile": "source-audio/final-01-1.wav",
+      "sourceSha256": "d2c5a62eb256cec6b90d7d6859827f57310a2480d89c0f3b4a1f29025592c15f",
+      "sourceByteLength": 89378,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.861
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.861
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.392,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁaʊx"
+    },
+    {
+      "stimulusId": "final-02-2",
+      "audioFile": "audio/final-02-2.wav",
+      "sha256": "e85d342481e6c7a748843fd9aedd9d7ad1dbbbc8259f689589319763b3a73f3f",
+      "byteLength": 84518,
+      "sourceAudioFile": "source-audio/final-02-2.wav",
+      "sourceSha256": "57628eb98f3f21e4225a3f98d645b9900a4e82bf82bc7b7fb51741d7997d686d",
+      "sourceByteLength": 91950,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.403,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "vaɪt"
+    },
+    {
+      "stimulusId": "final-03-3",
+      "audioFile": "audio/final-03-3.wav",
+      "sha256": "f761a9170dc10f7201fa36d486669b41436a9469c9b87c5c98f32c0d68d1af75",
+      "byteLength": 86030,
+      "sourceAudioFile": "source-audio/final-03-3.wav",
+      "sourceSha256": "eb4cc89d626ce744bad94902afbd7649cb2e437ef51fa30b01889c5166d073f4",
+      "sourceByteLength": 93596,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.442,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁaɪts"
+    },
+    {
+      "stimulusId": "final-04-4",
+      "audioFile": "audio/final-04-4.wav",
+      "sha256": "856e6db40fe63c459e0a9a1fe094aaea378b0ee2668b4d6c06ba7a019af358ff",
+      "byteLength": 82152,
+      "sourceAudioFile": "source-audio/final-04-4.wav",
+      "sourceSha256": "ab24d8b0209670830d1d391251e151891478d5f4116b98810720dd5161ef524f",
+      "sourceByteLength": 89376,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.861
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.861
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.329,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "loːp"
+    },
+    {
+      "stimulusId": "final-05-5",
+      "audioFile": "audio/final-05-5.wav",
+      "sha256": "43407935989e4fabeb1d7c7c7dac23f6df89de7c3e2d315ff13bc4d9609f0279",
+      "byteLength": 89248,
+      "sourceAudioFile": "source-audio/final-05-5.wav",
+      "sourceSha256": "f10e573ea183b081c5bf8aa9741dbb9a365f510ba5a67a9e456569d98c7aea2a",
+      "sourceByteLength": 97098,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 2.022
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 2.022
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.556,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ɡʁaːs"
+    },
+    {
+      "stimulusId": "final-06-1",
+      "audioFile": "audio/final-06-1.wav",
+      "sha256": "4639e448abdac127ee9edd56243511ebc9a652c6d177315b7bf6a1fb02bb345d",
+      "byteLength": 81370,
+      "sourceAudioFile": "source-audio/final-06-1.wav",
+      "sourceSha256": "b32894a8ff0a7797b0977e1d0933eb8550b8b88c64118023f5f7e6bde4ec7db4",
+      "sourceByteLength": 88524,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.843
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.843
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.332,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "veːk"
+    },
+    {
+      "stimulusId": "final-07-2",
+      "audioFile": "audio/final-07-2.wav",
+      "sha256": "3db544d93b9ccec028cd6b865e718a315244de71b2834ce95b52a052a8e3c031",
+      "byteLength": 78940,
+      "sourceAudioFile": "source-audio/final-07-2.wav",
+      "sourceSha256": "c83d33f71714b67c49ee72e92be00511e95acf1e35e4a03da271a371b6d0b7de",
+      "sourceByteLength": 85880,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.788
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.788
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.319,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "hoːn"
+    },
+    {
+      "stimulusId": "final-08-3",
+      "audioFile": "audio/final-08-3.wav",
+      "sha256": "95217d056939d6349c1d8af5e4ba5e5809d3cd7bf8a365dbdffc519c205e6542",
+      "byteLength": 86030,
+      "sourceAudioFile": "source-audio/final-08-3.wav",
+      "sourceSha256": "6140dab1fc3e289da1c2c76eda6585c93dc44fcf35688a55c026f47a64e22f08",
+      "sourceByteLength": 93596,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.949
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.456,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʃaːm"
+    },
+    {
+      "stimulusId": "initial-01-5",
+      "audioFile": "audio/initial-01-5.wav",
+      "sha256": "b7287fa3dbcc1053e1ea54640c51e55052dd3f25dad120a0b24360c88ebf355f",
+      "byteLength": 88392,
+      "sourceAudioFile": "source-audio/initial-01-5.wav",
+      "sourceSha256": "367963766da0011aa75f7d2d9ed0e2360d2e293590832ef413f1ba140de210cb",
+      "sourceByteLength": 96168,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 2.003
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 2.003
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.53,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "zant"
+    },
+    {
+      "stimulusId": "initial-02-1",
+      "audioFile": "audio/initial-02-1.wav",
+      "sha256": "4e86bcfedacc4f9aec17cdb8c7a6557889caaa93511269b69dda1e2925ce4518",
+      "byteLength": 82150,
+      "sourceAudioFile": "source-audio/initial-02-1.wav",
+      "sourceSha256": "6d5e918532cc7085a8a7d8e37bb673ca83da386d261e793118230fa03d0a7479",
+      "sourceByteLength": 89374,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.861
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.861
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.314,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "bal"
+    },
+    {
+      "stimulusId": "initial-03-2",
+      "audioFile": "audio/initial-03-2.wav",
+      "sha256": "c37cbe754b97cbf2dc2533f8a8316199ad470b01f2dcdb984b62c4a44fa0327a",
+      "byteLength": 83732,
+      "sourceAudioFile": "source-audio/initial-03-2.wav",
+      "sourceSha256": "6e9eb007c2eaaee4d127dcfec2e556ff3ed1e2c67232292f2a52d52fb9a423d3",
+      "sourceByteLength": 91094,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.44,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "fʊnt"
+    },
+    {
+      "stimulusId": "initial-04-3",
+      "audioFile": "audio/initial-04-3.wav",
+      "sha256": "03958594017cd25b84f1aef815feebec812daa0b65a20d45018af8bb3e7a85e1",
+      "byteLength": 82948,
+      "sourceAudioFile": "source-audio/initial-04-3.wav",
+      "sourceSha256": "cdabeecdd2894f5a590d8edbb0790cce836d0cefa35ee1988c3f453fe70a8625",
+      "sourceByteLength": 90242,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.879
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.879
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.425,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "has"
+    },
+    {
+      "stimulusId": "initial-05-4",
+      "audioFile": "audio/initial-05-4.wav",
+      "sha256": "9e1182f4a09c2d82b979d9808eccf77bc21f8e29c45425cc8db93724bdc6f05a",
+      "byteLength": 88460,
+      "sourceAudioFile": "source-audio/initial-05-4.wav",
+      "sourceSha256": "4bde37eb44a94ea8705fa92ffe16584a88a631d6bbcdbe526d09e982f6e840ae",
+      "sourceByteLength": 96240,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 2.004
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 2.004
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.459,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "lɪçt"
+    },
+    {
+      "stimulusId": "initial-06-5",
+      "audioFile": "audio/initial-06-5.wav",
+      "sha256": "eab3c602b3940dc5c6574fa603553dbc459484617b294cad75024ecd011becde",
+      "byteLength": 82094,
+      "sourceAudioFile": "source-audio/initial-06-5.wav",
+      "sourceSha256": "7a0f07a80bff6c937c546cd079e2fd8f9246e1be81dddd403f7a5bc945eee6e1",
+      "sourceByteLength": 89312,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.86
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.86
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.34,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "toːt"
+    },
+    {
+      "stimulusId": "initial-07-1",
+      "audioFile": "audio/initial-07-1.wav",
+      "sha256": "9ac62117f2db1320f6ce65469ef79e25d554b30afccb29095ea82fe188909d55",
+      "byteLength": 82944,
+      "sourceAudioFile": "source-audio/initial-07-1.wav",
+      "sourceSha256": "80ca95e7b9307cb0ce6930f3a5b408effe55d4f4a763848bfdccd03dfde988b4",
+      "sourceByteLength": 90238,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.879
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.879
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.424,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "daɪç"
+    },
+    {
+      "stimulusId": "initial-08-2",
+      "audioFile": "audio/initial-08-2.wav",
+      "sha256": "760742a9551c702da0793c385c9e41abc28774cdfac73eafa0d5014a3242ab4b",
+      "byteLength": 87672,
+      "sourceAudioFile": "source-audio/initial-08-2.wav",
+      "sourceSha256": "f86df6c2ec82e2558f36418ed1723e817b39c60369b418f38587508f3d156642",
+      "sourceByteLength": 95384,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.986
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.986
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.426,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "fɔʁt"
+    },
+    {
+      "stimulusId": "vowel-01-3",
+      "audioFile": "audio/vowel-01-3.wav",
+      "sha256": "743fce41bd93b3b0131564d6c0519420aa773276ba71157cfa1148513dab7331",
+      "byteLength": 81364,
+      "sourceAudioFile": "source-audio/vowel-01-3.wav",
+      "sourceSha256": "cc2f6b9c6962234c10ede97602d1734ab6371577a7ea6702bd11c40ba0d76264",
+      "sourceByteLength": 88518,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.843
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.843
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.32,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "beːt"
+    },
+    {
+      "stimulusId": "vowel-02-4",
+      "audioFile": "audio/vowel-02-4.wav",
+      "sha256": "d64e99d3062ebe6033d772e205f801bc2c79915fc10e292cc55e5b3fa4360269",
+      "byteLength": 85242,
+      "sourceAudioFile": "source-audio/vowel-02-4.wav",
+      "sourceSha256": "120a7a0bdff0109fad40055e425d8bda59ccd3a4ad92dccd1bce93177492f692",
+      "sourceByteLength": 92738,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.431,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "fyːl"
+    },
+    {
+      "stimulusId": "vowel-03-5",
+      "audioFile": "audio/vowel-03-5.wav",
+      "sha256": "6e8d4ff51ca0198c4f42bca8818d6403d4297dce43ea3d857d93419f4537f219",
+      "byteLength": 84456,
+      "sourceAudioFile": "source-audio/vowel-03-5.wav",
+      "sourceSha256": "6a7798a4979053739641d2388274c30f2ef2663e7ad3a345ecd87c86d7bd88bc",
+      "sourceByteLength": 91884,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.461,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "baɪs"
+    },
+    {
+      "stimulusId": "vowel-04-1",
+      "audioFile": "audio/vowel-04-1.wav",
+      "sha256": "703b57e0830fddf496be8b64b18719943b155c52c9579cd1a850ad74b7ece09a",
+      "byteLength": 82944,
+      "sourceAudioFile": "source-audio/vowel-04-1.wav",
+      "sourceSha256": "cb62bc110a596ebc258bd4d5f68b1befe22e6b1b5f37a1051bdb1ac7afe678e8",
+      "sourceByteLength": 90238,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.879
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.879
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.432,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁɪs"
+    },
+    {
+      "stimulusId": "vowel-05-2",
+      "audioFile": "audio/vowel-05-2.wav",
+      "sha256": "420fbdf8ea5725f58811b5e882935ac0dd1e29828d1f0ef8ed50efa11ee43cb2",
+      "byteLength": 85244,
+      "sourceAudioFile": "source-audio/vowel-05-2.wav",
+      "sourceSha256": "bd0b38d96602597615d102922a38135e32dbf84251ec5ced228f74a8833c4fd2",
+      "sourceByteLength": 92740,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.931
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.435,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "vɛːl"
+    },
+    {
+      "stimulusId": "vowel-06-3",
+      "audioFile": "audio/vowel-06-3.wav",
+      "sha256": "b1c593f286b49d07f68604ae53ae3220791eb2f683f3379fd59527ed5ebeef24",
+      "byteLength": 83728,
+      "sourceAudioFile": "source-audio/vowel-06-3.wav",
+      "sourceSha256": "03951b974adc0e1e773799ab1d9cab56b74b04c93ae6da34430babad9f3d9d1e",
+      "sourceByteLength": 91090,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.36,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "lɪt"
+    },
+    {
+      "stimulusId": "vowel-07-4",
+      "audioFile": "audio/vowel-07-4.wav",
+      "sha256": "bf17a99b31fd399bfb999f60500daeced316cf7209bf02657a3ad61722ba72ad",
+      "byteLength": 84456,
+      "sourceAudioFile": "source-audio/vowel-07-4.wav",
+      "sourceSha256": "a93c2442de6cd489ac3eabb46174bae9d5c374b3e3def66a2ff1f4a535f681d6",
+      "sourceByteLength": 91882,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.393,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "teːɐ̯"
+    },
+    {
+      "stimulusId": "vowel-08-5",
+      "audioFile": "audio/vowel-08-5.wav",
+      "sha256": "5e34612cd18c7f292d5f5ed3d15ad1bc59d0807cfc679875cd935512b36c14c6",
+      "byteLength": 82152,
+      "sourceAudioFile": "source-audio/vowel-08-5.wav",
+      "sourceSha256": "59e79566079018f8ee47e165766ba4c6882b70c05ed22bbd09ba609652dfdd0f",
+      "sourceByteLength": 89376,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.861
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.861
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.357,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "haɪn"
+    },
+    {
+      "stimulusId": "vowel-09-1",
+      "audioFile": "audio/vowel-09-1.wav",
+      "sha256": "b51a679d5182a05d156597d0c1c32d1ceeb96772db2e01a60f6d53bb9b7195fc",
+      "byteLength": 84452,
+      "sourceAudioFile": "source-audio/vowel-09-1.wav",
+      "sourceSha256": "01aa193ee39b98763898d0192cd1ed421e656ce684f00b60310b1027dd7a15f7",
+      "sourceByteLength": 91878,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.913
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.392,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "maːl"
+    },
+    {
+      "stimulusId": "final-01-2",
+      "audioFile": "audio/final-01-2.wav",
+      "sha256": "d509d670cebe9c55e7aa36d82bb74132bc006665f50d56f6ba5f1085e941835e",
+      "byteLength": 84514,
+      "sourceAudioFile": "source-audio/final-01-2.wav",
+      "sourceSha256": "f6412db20eb6244633d67e4620c0705ad180ce65a60736031a1ca43351f2a748",
+      "sourceByteLength": 91946,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.915
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.406,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁaʊm"
+    },
+    {
+      "stimulusId": "final-02-3",
+      "audioFile": "audio/final-02-3.wav",
+      "sha256": "bda65266fac323446b3375df5b5219c8be625c3337e55c4465e38f61a8027953",
+      "byteLength": 85310,
+      "sourceAudioFile": "source-audio/final-02-3.wav",
+      "sourceSha256": "31bb2884fed4f4aa0b44c8affde8ce5b8684dde3c004b98ba504c42d20d69da2",
+      "sourceByteLength": 92812,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.933
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.933
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.488,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "vaɪs"
+    },
+    {
+      "stimulusId": "final-03-4",
+      "audioFile": "audio/final-03-4.wav",
+      "sha256": "950da5b51bec995b12f2c319287f1ab0b6b04a771181e9aa3ddc3430705e3b5f",
+      "byteLength": 83732,
+      "sourceAudioFile": "source-audio/final-03-4.wav",
+      "sourceSha256": "de00ca53a910c9b85c085babfe1d42616c828b0076274200775c32bdc69a5be5",
+      "sourceByteLength": 91094,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.897
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.432,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʁaɪf"
+    },
+    {
+      "stimulusId": "final-04-5",
+      "audioFile": "audio/final-04-5.wav",
+      "sha256": "f917f0d65836bfdc983d91422b21b876cd5efa71d751c9ef1a1dbe1f9608db42",
+      "byteLength": 83668,
+      "sourceAudioFile": "source-audio/final-04-5.wav",
+      "sourceSha256": "2d5186ce756a85923bebd0cdc99ca8234de073a5e4cd0ec94f81ad47dfda4af1",
+      "sourceByteLength": 91026,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.895
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.346,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "loːk"
+    },
+    {
+      "stimulusId": "final-05-1",
+      "audioFile": "audio/final-05-1.wav",
+      "sha256": "b6749ab8dad274b79b55d69155517b648b0f6912d3336ea65e238ee855b58576",
+      "byteLength": 86880,
+      "sourceAudioFile": "source-audio/final-05-1.wav",
+      "sourceSha256": "e21f4380e1b55757004de81692940d8fce6fe36529c059057c334607445a5252",
+      "sourceByteLength": 94522,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.968
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.968
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.498,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ɡʁaːf"
+    },
+    {
+      "stimulusId": "final-06-2",
+      "audioFile": "audio/final-06-2.wav",
+      "sha256": "be2ec8132b27107f3a9a63097fae71adee18f815f967cf8dd0e7641efb3006ad",
+      "byteLength": 79790,
+      "sourceAudioFile": "source-audio/final-06-2.wav",
+      "sourceSha256": "133273b06c3e62a1d74c7945a7b5f9f15bf376261411e13aa5c6f88184cd3736",
+      "sourceByteLength": 86804,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.808
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.808
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.341,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "veː"
+    },
+    {
+      "stimulusId": "final-07-3",
+      "audioFile": "audio/final-07-3.wav",
+      "sha256": "0a9b6baf8619ad6f67f71b67745458227c9fa698783bcf90baaade12a29eceee",
+      "byteLength": 80580,
+      "sourceAudioFile": "source-audio/final-07-3.wav",
+      "sourceSha256": "5ded7d459dd0a37db2fcd245ff88c6a6367153d5647a2dcf0231436c94acc04a",
+      "sourceByteLength": 87664,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.825
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 1.825
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.35,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "hoːx"
+    },
+    {
+      "stimulusId": "final-08-4",
+      "audioFile": "audio/final-08-4.wav",
+      "sha256": "ae4713011e9500e4925a702bab8e216e3fa1296d509da3c423c5f3796c96bfb5",
+      "byteLength": 90820,
+      "sourceAudioFile": "source-audio/final-08-4.wav",
+      "sourceSha256": "75a21f91b166fabb051acb7f90fa15b9423cb28147d37c089e907329e701f3c1",
+      "sourceByteLength": 98810,
+      "sourceMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 2.058
+      },
+      "normalizedMetadata": {
+        "codec": "pcm_s16le",
+        "sampleRate": 22050,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationSeconds": 2.058
+      },
+      "peakDbfs": -6.0,
+      "activeSignalSeconds": 0.489,
+      "phonemeAlphabet": "ipa",
+      "phonemeValue": "ʃaːɐ̯"
+    }
+  ]
+}

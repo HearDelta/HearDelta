@@ -1,0 +1,54 @@
+<UserControl x:Class="HearDelta.App.Views.PersonListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Margin="24,28,20,14">
+            <TextBlock Text="Personen" Style="{StaticResource PageTitle}" VerticalAlignment="Center" />
+            <Button Content="+ Neue Person" Command="{Binding NewPersonCommand}" HorizontalAlignment="Right" Padding="12,4" MinHeight="32" FontSize="14" />
+        </Grid>
+        <TextBox Grid.Row="1" Margin="24,0,20,12" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" AutomationProperties.Name="Person suchen" ToolTip="Nach Namen suchen" />
+        <ListBox Grid.Row="2" Margin="16,0,12,12" ItemsSource="{Binding People}" SelectedItem="{Binding SelectedPerson}"
+                 BorderThickness="0" Background="Transparent" HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="Padding" Value="0" /><Setter Property="Margin" Value="0,0,0,4" /><Setter Property="Cursor" Value="Hand" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListBoxItem">
+                                <Border x:Name="Root" CornerRadius="8" Padding="10,8" Background="Transparent"><ContentPresenter /></Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Root" Property="Background" Value="{StaticResource PageBrush}" /></Trigger>
+                                    <Trigger Property="IsSelected" Value="True"><Setter TargetName="Root" Property="Background" Value="{StaticResource AccentSoftBrush}" /></Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Border Width="36" Height="36" CornerRadius="18" Background="{StaticResource AccentSoftBrush}" Margin="0,0,12,0">
+                            <TextBlock Text="{Binding DisplayName, Converter={StaticResource Initials}}" Foreground="{StaticResource AccentBrush}" FontWeight="SemiBold" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <StackPanel VerticalAlignment="Center">
+                            <TextBlock Text="{Binding DisplayName}" FontSize="15" FontWeight="SemiBold" />
+                            <TextBlock Text="{Binding DateOfBirth, StringFormat='geb. {0:dd.MM.yyyy}'}">
+                                <TextBlock.Style>
+                                    <Style TargetType="TextBlock" BasedOn="{StaticResource Caption}">
+                                        <Style.Triggers><DataTrigger Binding="{Binding DateOfBirth}" Value="{x:Null}"><Setter Property="Visibility" Value="Collapsed" /></DataTrigger></Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>

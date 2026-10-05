@@ -1,0 +1,5 @@
+scripts/*.py text eol=lf
+stimuli/de-DE/cardinal-speech-shaped-noise-v1/** text eol=lf
+docs/reports/cardinal-speech-shaped-noise-v1/** text eol=lf
+hardware/headphone-equalization/** text eol=lf
+*.wav filter=lfs diff=lfs merge=lfs -text

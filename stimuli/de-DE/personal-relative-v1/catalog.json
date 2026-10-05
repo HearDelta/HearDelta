@@ -1,0 +1,1524 @@
+{
+  "schemaVersion": 1,
+  "id": "de-DE-personal-relative-v1",
+  "version": "1.0.0",
+  "language": "de-DE",
+  "title": "Deutsches persönliches Vergleichsmaterial v1",
+  "license": "CC0-1.0",
+  "clinicallyValidated": false,
+  "itemsPerList": 20,
+  "lists": [
+    {
+      "id": "de-mono-a-v1",
+      "material": "Monosyllables",
+      "items": [
+        {
+          "id": "mono-a-01",
+          "spokenText": "Haus",
+          "canonicalResponse": "Haus",
+          "audioFile": "audio/mono-a-01.wav"
+        },
+        {
+          "id": "mono-a-02",
+          "spokenText": "Baum",
+          "canonicalResponse": "Baum",
+          "audioFile": "audio/mono-a-02.wav"
+        },
+        {
+          "id": "mono-a-03",
+          "spokenText": "Tisch",
+          "canonicalResponse": "Tisch",
+          "audioFile": "audio/mono-a-03.wav"
+        },
+        {
+          "id": "mono-a-04",
+          "spokenText": "Stuhl",
+          "canonicalResponse": "Stuhl",
+          "audioFile": "audio/mono-a-04.wav"
+        },
+        {
+          "id": "mono-a-05",
+          "spokenText": "Brot",
+          "canonicalResponse": "Brot",
+          "audioFile": "audio/mono-a-05.wav"
+        },
+        {
+          "id": "mono-a-06",
+          "spokenText": "Fisch",
+          "canonicalResponse": "Fisch",
+          "audioFile": "audio/mono-a-06.wav"
+        },
+        {
+          "id": "mono-a-07",
+          "spokenText": "Hund",
+          "canonicalResponse": "Hund",
+          "audioFile": "audio/mono-a-07.wav"
+        },
+        {
+          "id": "mono-a-08",
+          "spokenText": "Pferd",
+          "canonicalResponse": "Pferd",
+          "audioFile": "audio/mono-a-08.wav"
+        },
+        {
+          "id": "mono-a-09",
+          "spokenText": "Glas",
+          "canonicalResponse": "Glas",
+          "audioFile": "audio/mono-a-09.wav"
+        },
+        {
+          "id": "mono-a-10",
+          "spokenText": "Stein",
+          "canonicalResponse": "Stein",
+          "audioFile": "audio/mono-a-10.wav"
+        },
+        {
+          "id": "mono-a-11",
+          "spokenText": "Wind",
+          "canonicalResponse": "Wind",
+          "audioFile": "audio/mono-a-11.wav"
+        },
+        {
+          "id": "mono-a-12",
+          "spokenText": "Licht",
+          "canonicalResponse": "Licht",
+          "audioFile": "audio/mono-a-12.wav"
+        },
+        {
+          "id": "mono-a-13",
+          "spokenText": "Buch",
+          "canonicalResponse": "Buch",
+          "audioFile": "audio/mono-a-13.wav"
+        },
+        {
+          "id": "mono-a-14",
+          "spokenText": "Hand",
+          "canonicalResponse": "Hand",
+          "audioFile": "audio/mono-a-14.wav"
+        },
+        {
+          "id": "mono-a-15",
+          "spokenText": "Kopf",
+          "canonicalResponse": "Kopf",
+          "audioFile": "audio/mono-a-15.wav"
+        },
+        {
+          "id": "mono-a-16",
+          "spokenText": "Mund",
+          "canonicalResponse": "Mund",
+          "audioFile": "audio/mono-a-16.wav"
+        },
+        {
+          "id": "mono-a-17",
+          "spokenText": "Fuß",
+          "canonicalResponse": "Fuß",
+          "audioFile": "audio/mono-a-17.wav"
+        },
+        {
+          "id": "mono-a-18",
+          "spokenText": "Herz",
+          "canonicalResponse": "Herz",
+          "audioFile": "audio/mono-a-18.wav"
+        },
+        {
+          "id": "mono-a-19",
+          "spokenText": "Kleid",
+          "canonicalResponse": "Kleid",
+          "audioFile": "audio/mono-a-19.wav"
+        },
+        {
+          "id": "mono-a-20",
+          "spokenText": "Schuh",
+          "canonicalResponse": "Schuh",
+          "audioFile": "audio/mono-a-20.wav"
+        }
+      ]
+    },
+    {
+      "id": "de-mono-b-v1",
+      "material": "Monosyllables",
+      "items": [
+        {
+          "id": "mono-b-01",
+          "spokenText": "Stern",
+          "canonicalResponse": "Stern",
+          "audioFile": "audio/mono-b-01.wav"
+        },
+        {
+          "id": "mono-b-02",
+          "spokenText": "Mond",
+          "canonicalResponse": "Mond",
+          "audioFile": "audio/mono-b-02.wav"
+        },
+        {
+          "id": "mono-b-03",
+          "spokenText": "Wald",
+          "canonicalResponse": "Wald",
+          "audioFile": "audio/mono-b-03.wav"
+        },
+        {
+          "id": "mono-b-04",
+          "spokenText": "Feld",
+          "canonicalResponse": "Feld",
+          "audioFile": "audio/mono-b-04.wav"
+        },
+        {
+          "id": "mono-b-05",
+          "spokenText": "Berg",
+          "canonicalResponse": "Berg",
+          "audioFile": "audio/mono-b-05.wav"
+        },
+        {
+          "id": "mono-b-06",
+          "spokenText": "Tal",
+          "canonicalResponse": "Tal",
+          "audioFile": "audio/mono-b-06.wav"
+        },
+        {
+          "id": "mono-b-07",
+          "spokenText": "See",
+          "canonicalResponse": "See",
+          "audioFile": "audio/mono-b-07.wav"
+        },
+        {
+          "id": "mono-b-08",
+          "spokenText": "Bach",
+          "canonicalResponse": "Bach",
+          "audioFile": "audio/mono-b-08.wav"
+        },
+        {
+          "id": "mono-b-09",
+          "spokenText": "Fluss",
+          "canonicalResponse": "Fluss",
+          "audioFile": "audio/mono-b-09.wav"
+        },
+        {
+          "id": "mono-b-10",
+          "spokenText": "Strand",
+          "canonicalResponse": "Strand",
+          "audioFile": "audio/mono-b-10.wav"
+        },
+        {
+          "id": "mono-b-11",
+          "spokenText": "Sand",
+          "canonicalResponse": "Sand",
+          "audioFile": "audio/mono-b-11.wav"
+        },
+        {
+          "id": "mono-b-12",
+          "spokenText": "Schnee",
+          "canonicalResponse": "Schnee",
+          "audioFile": "audio/mono-b-12.wav"
+        },
+        {
+          "id": "mono-b-13",
+          "spokenText": "Eis",
+          "canonicalResponse": "Eis",
+          "audioFile": "audio/mono-b-13.wav"
+        },
+        {
+          "id": "mono-b-14",
+          "spokenText": "Rauch",
+          "canonicalResponse": "Rauch",
+          "audioFile": "audio/mono-b-14.wav"
+        },
+        {
+          "id": "mono-b-15",
+          "spokenText": "Zug",
+          "canonicalResponse": "Zug",
+          "audioFile": "audio/mono-b-15.wav"
+        },
+        {
+          "id": "mono-b-16",
+          "spokenText": "Bus",
+          "canonicalResponse": "Bus",
+          "audioFile": "audio/mono-b-16.wav"
+        },
+        {
+          "id": "mono-b-17",
+          "spokenText": "Schiff",
+          "canonicalResponse": "Schiff",
+          "audioFile": "audio/mono-b-17.wav"
+        },
+        {
+          "id": "mono-b-18",
+          "spokenText": "Rad",
+          "canonicalResponse": "Rad",
+          "audioFile": "audio/mono-b-18.wav"
+        },
+        {
+          "id": "mono-b-19",
+          "spokenText": "Seil",
+          "canonicalResponse": "Seil",
+          "audioFile": "audio/mono-b-19.wav"
+        },
+        {
+          "id": "mono-b-20",
+          "spokenText": "Ring",
+          "canonicalResponse": "Ring",
+          "audioFile": "audio/mono-b-20.wav"
+        }
+      ]
+    },
+    {
+      "id": "de-mono-c-v1",
+      "material": "Monosyllables",
+      "items": [
+        {
+          "id": "mono-c-01",
+          "spokenText": "Ball",
+          "canonicalResponse": "Ball",
+          "audioFile": "audio/mono-c-01.wav"
+        },
+        {
+          "id": "mono-c-02",
+          "spokenText": "Spiel",
+          "canonicalResponse": "Spiel",
+          "audioFile": "audio/mono-c-02.wav"
+        },
+        {
+          "id": "mono-c-03",
+          "spokenText": "Kind",
+          "canonicalResponse": "Kind",
+          "audioFile": "audio/mono-c-03.wav"
+        },
+        {
+          "id": "mono-c-04",
+          "spokenText": "Mann",
+          "canonicalResponse": "Mann",
+          "audioFile": "audio/mono-c-04.wav"
+        },
+        {
+          "id": "mono-c-05",
+          "spokenText": "Frau",
+          "canonicalResponse": "Frau",
+          "audioFile": "audio/mono-c-05.wav"
+        },
+        {
+          "id": "mono-c-06",
+          "spokenText": "Sohn",
+          "canonicalResponse": "Sohn",
+          "audioFile": "audio/mono-c-06.wav"
+        },
+        {
+          "id": "mono-c-07",
+          "spokenText": "Freund",
+          "canonicalResponse": "Freund",
+          "audioFile": "audio/mono-c-07.wav"
+        },
+        {
+          "id": "mono-c-08",
+          "spokenText": "Feind",
+          "canonicalResponse": "Feind",
+          "audioFile": "audio/mono-c-08.wav"
+        },
+        {
+          "id": "mono-c-09",
+          "spokenText": "Tag",
+          "canonicalResponse": "Tag",
+          "audioFile": "audio/mono-c-09.wav"
+        },
+        {
+          "id": "mono-c-10",
+          "spokenText": "Nacht",
+          "canonicalResponse": "Nacht",
+          "audioFile": "audio/mono-c-10.wav"
+        },
+        {
+          "id": "mono-c-11",
+          "spokenText": "Zeit",
+          "canonicalResponse": "Zeit",
+          "audioFile": "audio/mono-c-11.wav"
+        },
+        {
+          "id": "mono-c-12",
+          "spokenText": "Jahr",
+          "canonicalResponse": "Jahr",
+          "audioFile": "audio/mono-c-12.wav"
+        },
+        {
+          "id": "mono-c-13",
+          "spokenText": "Uhr",
+          "canonicalResponse": "Uhr",
+          "audioFile": "audio/mono-c-13.wav"
+        },
+        {
+          "id": "mono-c-14",
+          "spokenText": "Geld",
+          "canonicalResponse": "Geld",
+          "audioFile": "audio/mono-c-14.wav"
+        },
+        {
+          "id": "mono-c-15",
+          "spokenText": "Brief",
+          "canonicalResponse": "Brief",
+          "audioFile": "audio/mono-c-15.wav"
+        },
+        {
+          "id": "mono-c-16",
+          "spokenText": "Bild",
+          "canonicalResponse": "Bild",
+          "audioFile": "audio/mono-c-16.wav"
+        },
+        {
+          "id": "mono-c-17",
+          "spokenText": "Wand",
+          "canonicalResponse": "Wand",
+          "audioFile": "audio/mono-c-17.wav"
+        },
+        {
+          "id": "mono-c-18",
+          "spokenText": "Dach",
+          "canonicalResponse": "Dach",
+          "audioFile": "audio/mono-c-18.wav"
+        },
+        {
+          "id": "mono-c-19",
+          "spokenText": "Tür",
+          "canonicalResponse": "Tür",
+          "audioFile": "audio/mono-c-19.wav"
+        },
+        {
+          "id": "mono-c-20",
+          "spokenText": "Tor",
+          "canonicalResponse": "Tor",
+          "audioFile": "audio/mono-c-20.wav"
+        }
+      ]
+    },
+    {
+      "id": "de-mono-d-v1",
+      "material": "Monosyllables",
+      "items": [
+        {
+          "id": "mono-d-01",
+          "spokenText": "Gras",
+          "canonicalResponse": "Gras",
+          "audioFile": "audio/mono-d-01.wav"
+        },
+        {
+          "id": "mono-d-02",
+          "spokenText": "Blatt",
+          "canonicalResponse": "Blatt",
+          "audioFile": "audio/mono-d-02.wav"
+        },
+        {
+          "id": "mono-d-03",
+          "spokenText": "Ast",
+          "canonicalResponse": "Ast",
+          "audioFile": "audio/mono-d-03.wav"
+        },
+        {
+          "id": "mono-d-04",
+          "spokenText": "Stamm",
+          "canonicalResponse": "Stamm",
+          "audioFile": "audio/mono-d-04.wav"
+        },
+        {
+          "id": "mono-d-05",
+          "spokenText": "Frucht",
+          "canonicalResponse": "Frucht",
+          "audioFile": "audio/mono-d-05.wav"
+        },
+        {
+          "id": "mono-d-06",
+          "spokenText": "Milch",
+          "canonicalResponse": "Milch",
+          "audioFile": "audio/mono-d-06.wav"
+        },
+        {
+          "id": "mono-d-07",
+          "spokenText": "Salz",
+          "canonicalResponse": "Salz",
+          "audioFile": "audio/mono-d-07.wav"
+        },
+        {
+          "id": "mono-d-08",
+          "spokenText": "Saft",
+          "canonicalResponse": "Saft",
+          "audioFile": "audio/mono-d-08.wav"
+        },
+        {
+          "id": "mono-d-09",
+          "spokenText": "Topf",
+          "canonicalResponse": "Topf",
+          "audioFile": "audio/mono-d-09.wav"
+        },
+        {
+          "id": "mono-d-10",
+          "spokenText": "Herd",
+          "canonicalResponse": "Herd",
+          "audioFile": "audio/mono-d-10.wav"
+        },
+        {
+          "id": "mono-d-11",
+          "spokenText": "Brett",
+          "canonicalResponse": "Brett",
+          "audioFile": "audio/mono-d-11.wav"
+        },
+        {
+          "id": "mono-d-12",
+          "spokenText": "Schrank",
+          "canonicalResponse": "Schrank",
+          "audioFile": "audio/mono-d-12.wav"
+        },
+        {
+          "id": "mono-d-13",
+          "spokenText": "Bett",
+          "canonicalResponse": "Bett",
+          "audioFile": "audio/mono-d-13.wav"
+        },
+        {
+          "id": "mono-d-14",
+          "spokenText": "Kamm",
+          "canonicalResponse": "Kamm",
+          "audioFile": "audio/mono-d-14.wav"
+        },
+        {
+          "id": "mono-d-15",
+          "spokenText": "Haut",
+          "canonicalResponse": "Haut",
+          "audioFile": "audio/mono-d-15.wav"
+        },
+        {
+          "id": "mono-d-16",
+          "spokenText": "Zahn",
+          "canonicalResponse": "Zahn",
+          "audioFile": "audio/mono-d-16.wav"
+        },
+        {
+          "id": "mono-d-17",
+          "spokenText": "Ohr",
+          "canonicalResponse": "Ohr",
+          "audioFile": "audio/mono-d-17.wav"
+        },
+        {
+          "id": "mono-d-18",
+          "spokenText": "Blick",
+          "canonicalResponse": "Blick",
+          "audioFile": "audio/mono-d-18.wav"
+        },
+        {
+          "id": "mono-d-19",
+          "spokenText": "Klang",
+          "canonicalResponse": "Klang",
+          "audioFile": "audio/mono-d-19.wav"
+        },
+        {
+          "id": "mono-d-20",
+          "spokenText": "Wort",
+          "canonicalResponse": "Wort",
+          "audioFile": "audio/mono-d-20.wav"
+        }
+      ]
+    },
+    {
+      "id": "de-num-a-v1",
+      "material": "Numbers",
+      "items": [
+        {
+          "id": "num-a-01",
+          "spokenText": "dreizehn",
+          "canonicalResponse": "13",
+          "audioFile": "audio/num-a-01.wav"
+        },
+        {
+          "id": "num-a-02",
+          "spokenText": "achtundzwanzig",
+          "canonicalResponse": "28",
+          "audioFile": "audio/num-a-02.wav"
+        },
+        {
+          "id": "num-a-03",
+          "spokenText": "einundvierzig",
+          "canonicalResponse": "41",
+          "audioFile": "audio/num-a-03.wav"
+        },
+        {
+          "id": "num-a-04",
+          "spokenText": "sechsundfünfzig",
+          "canonicalResponse": "56",
+          "audioFile": "audio/num-a-04.wav"
+        },
+        {
+          "id": "num-a-05",
+          "spokenText": "zweiundsiebzig",
+          "canonicalResponse": "72",
+          "audioFile": "audio/num-a-05.wav"
+        },
+        {
+          "id": "num-a-06",
+          "spokenText": "neunundachtzig",
+          "canonicalResponse": "89",
+          "audioFile": "audio/num-a-06.wav"
+        },
+        {
+          "id": "num-a-07",
+          "spokenText": "vierundzwanzig",
+          "canonicalResponse": "24",
+          "audioFile": "audio/num-a-07.wav"
+        },
+        {
+          "id": "num-a-08",
+          "spokenText": "siebenunddreißig",
+          "canonicalResponse": "37",
+          "audioFile": "audio/num-a-08.wav"
+        },
+        {
+          "id": "num-a-09",
+          "spokenText": "fünfundsechzig",
+          "canonicalResponse": "65",
+          "audioFile": "audio/num-a-09.wav"
+        },
+        {
+          "id": "num-a-10",
+          "spokenText": "einundneunzig",
+          "canonicalResponse": "91",
+          "audioFile": "audio/num-a-10.wav"
+        },
+        {
+          "id": "num-a-11",
+          "spokenText": "achtundvierzig",
+          "canonicalResponse": "48",
+          "audioFile": "audio/num-a-11.wav"
+        },
+        {
+          "id": "num-a-12",
+          "spokenText": "sechsundsiebzig",
+          "canonicalResponse": "76",
+          "audioFile": "audio/num-a-12.wav"
+        },
+        {
+          "id": "num-a-13",
+          "spokenText": "zweiunddreißig",
+          "canonicalResponse": "32",
+          "audioFile": "audio/num-a-13.wav"
+        },
+        {
+          "id": "num-a-14",
+          "spokenText": "neunundfünfzig",
+          "canonicalResponse": "59",
+          "audioFile": "audio/num-a-14.wav"
+        },
+        {
+          "id": "num-a-15",
+          "spokenText": "dreiundachtzig",
+          "canonicalResponse": "83",
+          "audioFile": "audio/num-a-15.wav"
+        },
+        {
+          "id": "num-a-16",
+          "spokenText": "siebzehn",
+          "canonicalResponse": "17",
+          "audioFile": "audio/num-a-16.wav"
+        },
+        {
+          "id": "num-a-17",
+          "spokenText": "vierundvierzig",
+          "canonicalResponse": "44",
+          "audioFile": "audio/num-a-17.wav"
+        },
+        {
+          "id": "num-a-18",
+          "spokenText": "achtundsechzig",
+          "canonicalResponse": "68",
+          "audioFile": "audio/num-a-18.wav"
+        },
+        {
+          "id": "num-a-19",
+          "spokenText": "fünfundneunzig",
+          "canonicalResponse": "95",
+          "audioFile": "audio/num-a-19.wav"
+        },
+        {
+          "id": "num-a-20",
+          "spokenText": "einundzwanzig",
+          "canonicalResponse": "21",
+          "audioFile": "audio/num-a-20.wav"
+        }
+      ]
+    },
+    {
+      "id": "de-num-b-v1",
+      "material": "Numbers",
+      "items": [
+        {
+          "id": "num-b-01",
+          "spokenText": "vierzehn",
+          "canonicalResponse": "14",
+          "audioFile": "audio/num-b-01.wav"
+        },
+        {
+          "id": "num-b-02",
+          "spokenText": "neunundzwanzig",
+          "canonicalResponse": "29",
+          "audioFile": "audio/num-b-02.wav"
+        },
+        {
+          "id": "num-b-03",
+          "spokenText": "zweiundvierzig",
+          "canonicalResponse": "42",
+          "audioFile": "audio/num-b-03.wav"
+        },
+        {
+          "id": "num-b-04",
+          "spokenText": "siebenundfünfzig",
+          "canonicalResponse": "57",
+          "audioFile": "audio/num-b-04.wav"
+        },
+        {
+          "id": "num-b-05",
+          "spokenText": "dreiundsiebzig",
+          "canonicalResponse": "73",
+          "audioFile": "audio/num-b-05.wav"
+        },
+        {
+          "id": "num-b-06",
+          "spokenText": "sechsundachtzig",
+          "canonicalResponse": "86",
+          "audioFile": "audio/num-b-06.wav"
+        },
+        {
+          "id": "num-b-07",
+          "spokenText": "fünfundzwanzig",
+          "canonicalResponse": "25",
+          "audioFile": "audio/num-b-07.wav"
+        },
+        {
+          "id": "num-b-08",
+          "spokenText": "achtunddreißig",
+          "canonicalResponse": "38",
+          "audioFile": "audio/num-b-08.wav"
+        },
+        {
+          "id": "num-b-09",
+          "spokenText": "vierundsechzig",
+          "canonicalResponse": "64",
+          "audioFile": "audio/num-b-09.wav"
+        },
+        {
+          "id": "num-b-10",
+          "spokenText": "zweiundneunzig",
+          "canonicalResponse": "92",
+          "audioFile": "audio/num-b-10.wav"
+        },
+        {
+          "id": "num-b-11",
+          "spokenText": "neunundvierzig",
+          "canonicalResponse": "49",
+          "audioFile": "audio/num-b-11.wav"
+        },
+        {
+          "id": "num-b-12",
+          "spokenText": "siebenundsiebzig",
+          "canonicalResponse": "77",
+          "audioFile": "audio/num-b-12.wav"
+        },
+        {
+          "id": "num-b-13",
+          "spokenText": "einunddreißig",
+          "canonicalResponse": "31",
+          "audioFile": "audio/num-b-13.wav"
+        },
+        {
+          "id": "num-b-14",
+          "spokenText": "achtundfünfzig",
+          "canonicalResponse": "58",
+          "audioFile": "audio/num-b-14.wav"
+        },
+        {
+          "id": "num-b-15",
+          "spokenText": "vierundachtzig",
+          "canonicalResponse": "84",
+          "audioFile": "audio/num-b-15.wav"
+        },
+        {
+          "id": "num-b-16",
+          "spokenText": "sechzehn",
+          "canonicalResponse": "16",
+          "audioFile": "audio/num-b-16.wav"
+        },
+        {
+          "id": "num-b-17",
+          "spokenText": "fünfundvierzig",
+          "canonicalResponse": "45",
+          "audioFile": "audio/num-b-17.wav"
+        },
+        {
+          "id": "num-b-18",
+          "spokenText": "neunundsechzig",
+          "canonicalResponse": "69",
+          "audioFile": "audio/num-b-18.wav"
+        },
+        {
+          "id": "num-b-19",
+          "spokenText": "sechsundneunzig",
+          "canonicalResponse": "96",
+          "audioFile": "audio/num-b-19.wav"
+        },
+        {
+          "id": "num-b-20",
+          "spokenText": "zweiundzwanzig",
+          "canonicalResponse": "22",
+          "audioFile": "audio/num-b-20.wav"
+        }
+      ]
+    },
+    {
+      "id": "de-num-c-v1",
+      "material": "Numbers",
+      "items": [
+        {
+          "id": "num-c-01",
+          "spokenText": "fünfzehn",
+          "canonicalResponse": "15",
+          "audioFile": "audio/num-c-01.wav"
+        },
+        {
+          "id": "num-c-02",
+          "spokenText": "siebenundzwanzig",
+          "canonicalResponse": "27",
+          "audioFile": "audio/num-c-02.wav"
+        },
+        {
+          "id": "num-c-03",
+          "spokenText": "dreiundvierzig",
+          "canonicalResponse": "43",
+          "audioFile": "audio/num-c-03.wav"
+        },
+        {
+          "id": "num-c-04",
+          "spokenText": "vierundfünfzig",
+          "canonicalResponse": "54",
+          "audioFile": "audio/num-c-04.wav"
+        },
+        {
+          "id": "num-c-05",
+          "spokenText": "einundsiebzig",
+          "canonicalResponse": "71",
+          "audioFile": "audio/num-c-05.wav"
+        },
+        {
+          "id": "num-c-06",
+          "spokenText": "achtundachtzig",
+          "canonicalResponse": "88",
+          "audioFile": "audio/num-c-06.wav"
+        },
+        {
+          "id": "num-c-07",
+          "spokenText": "dreiundzwanzig",
+          "canonicalResponse": "23",
+          "audioFile": "audio/num-c-07.wav"
+        },
+        {
+          "id": "num-c-08",
+          "spokenText": "neununddreißig",
+          "canonicalResponse": "39",
+          "audioFile": "audio/num-c-08.wav"
+        },
+        {
+          "id": "num-c-09",
+          "spokenText": "sechsundsechzig",
+          "canonicalResponse": "66",
+          "audioFile": "audio/num-c-09.wav"
+        },
+        {
+          "id": "num-c-10",
+          "spokenText": "dreiundneunzig",
+          "canonicalResponse": "93",
+          "audioFile": "audio/num-c-10.wav"
+        },
+        {
+          "id": "num-c-11",
+          "spokenText": "siebenundvierzig",
+          "canonicalResponse": "47",
+          "audioFile": "audio/num-c-11.wav"
+        },
+        {
+          "id": "num-c-12",
+          "spokenText": "fünfundsiebzig",
+          "canonicalResponse": "75",
+          "audioFile": "audio/num-c-12.wav"
+        },
+        {
+          "id": "num-c-13",
+          "spokenText": "vierunddreißig",
+          "canonicalResponse": "34",
+          "audioFile": "audio/num-c-13.wav"
+        },
+        {
+          "id": "num-c-14",
+          "spokenText": "zweiundfünfzig",
+          "canonicalResponse": "52",
+          "audioFile": "audio/num-c-14.wav"
+        },
+        {
+          "id": "num-c-15",
+          "spokenText": "einundachtzig",
+          "canonicalResponse": "81",
+          "audioFile": "audio/num-c-15.wav"
+        },
+        {
+          "id": "num-c-16",
+          "spokenText": "achtzehn",
+          "canonicalResponse": "18",
+          "audioFile": "audio/num-c-16.wav"
+        },
+        {
+          "id": "num-c-17",
+          "spokenText": "sechsundvierzig",
+          "canonicalResponse": "46",
+          "audioFile": "audio/num-c-17.wav"
+        },
+        {
+          "id": "num-c-18",
+          "spokenText": "siebenundsechzig",
+          "canonicalResponse": "67",
+          "audioFile": "audio/num-c-18.wav"
+        },
+        {
+          "id": "num-c-19",
+          "spokenText": "vierundneunzig",
+          "canonicalResponse": "94",
+          "audioFile": "audio/num-c-19.wav"
+        },
+        {
+          "id": "num-c-20",
+          "spokenText": "sechsundzwanzig",
+          "canonicalResponse": "26",
+          "audioFile": "audio/num-c-20.wav"
+        }
+      ]
+    },
+    {
+      "id": "de-num-d-v1",
+      "material": "Numbers",
+      "items": [
+        {
+          "id": "num-d-01",
+          "spokenText": "zwölf",
+          "canonicalResponse": "12",
+          "audioFile": "audio/num-d-01.wav"
+        },
+        {
+          "id": "num-d-02",
+          "spokenText": "neunzehn",
+          "canonicalResponse": "19",
+          "audioFile": "audio/num-d-02.wav"
+        },
+        {
+          "id": "num-d-03",
+          "spokenText": "dreiunddreißig",
+          "canonicalResponse": "33",
+          "audioFile": "audio/num-d-03.wav"
+        },
+        {
+          "id": "num-d-04",
+          "spokenText": "einundfünfzig",
+          "canonicalResponse": "51",
+          "audioFile": "audio/num-d-04.wav"
+        },
+        {
+          "id": "num-d-05",
+          "spokenText": "einundsechzig",
+          "canonicalResponse": "61",
+          "audioFile": "audio/num-d-05.wav"
+        },
+        {
+          "id": "num-d-06",
+          "spokenText": "achtundsiebzig",
+          "canonicalResponse": "78",
+          "audioFile": "audio/num-d-06.wav"
+        },
+        {
+          "id": "num-d-07",
+          "spokenText": "fünfunddreißig",
+          "canonicalResponse": "35",
+          "audioFile": "audio/num-d-07.wav"
+        },
+        {
+          "id": "num-d-08",
+          "spokenText": "dreiundfünfzig",
+          "canonicalResponse": "53",
+          "audioFile": "audio/num-d-08.wav"
+        },
+        {
+          "id": "num-d-09",
+          "spokenText": "zweiundsechzig",
+          "canonicalResponse": "62",
+          "audioFile": "audio/num-d-09.wav"
+        },
+        {
+          "id": "num-d-10",
+          "spokenText": "siebenundachtzig",
+          "canonicalResponse": "87",
+          "audioFile": "audio/num-d-10.wav"
+        },
+        {
+          "id": "num-d-11",
+          "spokenText": "vierundsiebzig",
+          "canonicalResponse": "74",
+          "audioFile": "audio/num-d-11.wav"
+        },
+        {
+          "id": "num-d-12",
+          "spokenText": "zweiundachtzig",
+          "canonicalResponse": "82",
+          "audioFile": "audio/num-d-12.wav"
+        },
+        {
+          "id": "num-d-13",
+          "spokenText": "siebenundneunzig",
+          "canonicalResponse": "97",
+          "audioFile": "audio/num-d-13.wav"
+        },
+        {
+          "id": "num-d-14",
+          "spokenText": "sechsunddreißig",
+          "canonicalResponse": "36",
+          "audioFile": "audio/num-d-14.wav"
+        },
+        {
+          "id": "num-d-15",
+          "spokenText": "dreiundsechzig",
+          "canonicalResponse": "63",
+          "audioFile": "audio/num-d-15.wav"
+        },
+        {
+          "id": "num-d-16",
+          "spokenText": "neunundsiebzig",
+          "canonicalResponse": "79",
+          "audioFile": "audio/num-d-16.wav"
+        },
+        {
+          "id": "num-d-17",
+          "spokenText": "achtundneunzig",
+          "canonicalResponse": "98",
+          "audioFile": "audio/num-d-17.wav"
+        },
+        {
+          "id": "num-d-18",
+          "spokenText": "elf",
+          "canonicalResponse": "11",
+          "audioFile": "audio/num-d-18.wav"
+        },
+        {
+          "id": "num-d-19",
+          "spokenText": "neunundneunzig",
+          "canonicalResponse": "99",
+          "audioFile": "audio/num-d-19.wav"
+        },
+        {
+          "id": "num-d-20",
+          "spokenText": "fünfundachtzig",
+          "canonicalResponse": "85",
+          "audioFile": "audio/num-d-20.wav"
+        }
+      ]
+    },
+    {
+      "id": "de-poly-a-v1",
+      "material": "Polysyllables",
+      "items": [
+        {
+          "id": "poly-a-01",
+          "spokenText": "Apfel",
+          "canonicalResponse": "Apfel",
+          "audioFile": "audio/poly-a-01.wav"
+        },
+        {
+          "id": "poly-a-02",
+          "spokenText": "Blume",
+          "canonicalResponse": "Blume",
+          "audioFile": "audio/poly-a-02.wav"
+        },
+        {
+          "id": "poly-a-03",
+          "spokenText": "Nase",
+          "canonicalResponse": "Nase",
+          "audioFile": "audio/poly-a-03.wav"
+        },
+        {
+          "id": "poly-a-04",
+          "spokenText": "Auge",
+          "canonicalResponse": "Auge",
+          "audioFile": "audio/poly-a-04.wav"
+        },
+        {
+          "id": "poly-a-05",
+          "spokenText": "Hase",
+          "canonicalResponse": "Hase",
+          "audioFile": "audio/poly-a-05.wav"
+        },
+        {
+          "id": "poly-a-06",
+          "spokenText": "Katze",
+          "canonicalResponse": "Katze",
+          "audioFile": "audio/poly-a-06.wav"
+        },
+        {
+          "id": "poly-a-07",
+          "spokenText": "Gabel",
+          "canonicalResponse": "Gabel",
+          "audioFile": "audio/poly-a-07.wav"
+        },
+        {
+          "id": "poly-a-08",
+          "spokenText": "Löffel",
+          "canonicalResponse": "Löffel",
+          "audioFile": "audio/poly-a-08.wav"
+        },
+        {
+          "id": "poly-a-09",
+          "spokenText": "Teller",
+          "canonicalResponse": "Teller",
+          "audioFile": "audio/poly-a-09.wav"
+        },
+        {
+          "id": "poly-a-10",
+          "spokenText": "Tasse",
+          "canonicalResponse": "Tasse",
+          "audioFile": "audio/poly-a-10.wav"
+        },
+        {
+          "id": "poly-a-11",
+          "spokenText": "Jacke",
+          "canonicalResponse": "Jacke",
+          "audioFile": "audio/poly-a-11.wav"
+        },
+        {
+          "id": "poly-a-12",
+          "spokenText": "Hose",
+          "canonicalResponse": "Hose",
+          "audioFile": "audio/poly-a-12.wav"
+        },
+        {
+          "id": "poly-a-13",
+          "spokenText": "Mütze",
+          "canonicalResponse": "Mütze",
+          "audioFile": "audio/poly-a-13.wav"
+        },
+        {
+          "id": "poly-a-14",
+          "spokenText": "Wolke",
+          "canonicalResponse": "Wolke",
+          "audioFile": "audio/poly-a-14.wav"
+        },
+        {
+          "id": "poly-a-15",
+          "spokenText": "Sonne",
+          "canonicalResponse": "Sonne",
+          "audioFile": "audio/poly-a-15.wav"
+        },
+        {
+          "id": "poly-a-16",
+          "spokenText": "Regen",
+          "canonicalResponse": "Regen",
+          "audioFile": "audio/poly-a-16.wav"
+        },
+        {
+          "id": "poly-a-17",
+          "spokenText": "Insel",
+          "canonicalResponse": "Insel",
+          "audioFile": "audio/poly-a-17.wav"
+        },
+        {
+          "id": "poly-a-18",
+          "spokenText": "Straße",
+          "canonicalResponse": "Straße",
+          "audioFile": "audio/poly-a-18.wav"
+        },
+        {
+          "id": "poly-a-19",
+          "spokenText": "Küche",
+          "canonicalResponse": "Küche",
+          "audioFile": "audio/poly-a-19.wav"
+        },
+        {
+          "id": "poly-a-20",
+          "spokenText": "Fenster",
+          "canonicalResponse": "Fenster",
+          "audioFile": "audio/poly-a-20.wav"
+        }
+      ]
+    },
+    {
+      "id": "de-poly-b-v1",
+      "material": "Polysyllables",
+      "items": [
+        {
+          "id": "poly-b-01",
+          "spokenText": "Auto",
+          "canonicalResponse": "Auto",
+          "audioFile": "audio/poly-b-01.wav"
+        },
+        {
+          "id": "poly-b-02",
+          "spokenText": "Fahrrad",
+          "canonicalResponse": "Fahrrad",
+          "audioFile": "audio/poly-b-02.wav"
+        },
+        {
+          "id": "poly-b-03",
+          "spokenText": "Lampe",
+          "canonicalResponse": "Lampe",
+          "audioFile": "audio/poly-b-03.wav"
+        },
+        {
+          "id": "poly-b-04",
+          "spokenText": "Kissen",
+          "canonicalResponse": "Kissen",
+          "audioFile": "audio/poly-b-04.wav"
+        },
+        {
+          "id": "poly-b-05",
+          "spokenText": "Decke",
+          "canonicalResponse": "Decke",
+          "audioFile": "audio/poly-b-05.wav"
+        },
+        {
+          "id": "poly-b-06",
+          "spokenText": "Spiegel",
+          "canonicalResponse": "Spiegel",
+          "audioFile": "audio/poly-b-06.wav"
+        },
+        {
+          "id": "poly-b-07",
+          "spokenText": "Garten",
+          "canonicalResponse": "Garten",
+          "audioFile": "audio/poly-b-07.wav"
+        },
+        {
+          "id": "poly-b-08",
+          "spokenText": "Wiese",
+          "canonicalResponse": "Wiese",
+          "audioFile": "audio/poly-b-08.wav"
+        },
+        {
+          "id": "poly-b-09",
+          "spokenText": "Vogel",
+          "canonicalResponse": "Vogel",
+          "audioFile": "audio/poly-b-09.wav"
+        },
+        {
+          "id": "poly-b-10",
+          "spokenText": "Biene",
+          "canonicalResponse": "Biene",
+          "audioFile": "audio/poly-b-10.wav"
+        },
+        {
+          "id": "poly-b-11",
+          "spokenText": "Käfer",
+          "canonicalResponse": "Käfer",
+          "audioFile": "audio/poly-b-11.wav"
+        },
+        {
+          "id": "poly-b-12",
+          "spokenText": "Löwe",
+          "canonicalResponse": "Löwe",
+          "audioFile": "audio/poly-b-12.wav"
+        },
+        {
+          "id": "poly-b-13",
+          "spokenText": "Tiger",
+          "canonicalResponse": "Tiger",
+          "audioFile": "audio/poly-b-13.wav"
+        },
+        {
+          "id": "poly-b-14",
+          "spokenText": "Affe",
+          "canonicalResponse": "Affe",
+          "audioFile": "audio/poly-b-14.wav"
+        },
+        {
+          "id": "poly-b-15",
+          "spokenText": "Zebra",
+          "canonicalResponse": "Zebra",
+          "audioFile": "audio/poly-b-15.wav"
+        },
+        {
+          "id": "poly-b-16",
+          "spokenText": "Schule",
+          "canonicalResponse": "Schule",
+          "audioFile": "audio/poly-b-16.wav"
+        },
+        {
+          "id": "poly-b-17",
+          "spokenText": "Lehrer",
+          "canonicalResponse": "Lehrer",
+          "audioFile": "audio/poly-b-17.wav"
+        },
+        {
+          "id": "poly-b-18",
+          "spokenText": "Pause",
+          "canonicalResponse": "Pause",
+          "audioFile": "audio/poly-b-18.wav"
+        },
+        {
+          "id": "poly-b-19",
+          "spokenText": "Zeitung",
+          "canonicalResponse": "Zeitung",
+          "audioFile": "audio/poly-b-19.wav"
+        },
+        {
+          "id": "poly-b-20",
+          "spokenText": "Radio",
+          "canonicalResponse": "Radio",
+          "audioFile": "audio/poly-b-20.wav"
+        }
+      ]
+    },
+    {
+      "id": "de-poly-c-v1",
+      "material": "Polysyllables",
+      "items": [
+        {
+          "id": "poly-c-01",
+          "spokenText": "Banane",
+          "canonicalResponse": "Banane",
+          "audioFile": "audio/poly-c-01.wav"
+        },
+        {
+          "id": "poly-c-02",
+          "spokenText": "Tomate",
+          "canonicalResponse": "Tomate",
+          "audioFile": "audio/poly-c-02.wav"
+        },
+        {
+          "id": "poly-c-03",
+          "spokenText": "Kartoffel",
+          "canonicalResponse": "Kartoffel",
+          "audioFile": "audio/poly-c-03.wav"
+        },
+        {
+          "id": "poly-c-04",
+          "spokenText": "Karotte",
+          "canonicalResponse": "Karotte",
+          "audioFile": "audio/poly-c-04.wav"
+        },
+        {
+          "id": "poly-c-05",
+          "spokenText": "Zitrone",
+          "canonicalResponse": "Zitrone",
+          "audioFile": "audio/poly-c-05.wav"
+        },
+        {
+          "id": "poly-c-06",
+          "spokenText": "Orange",
+          "canonicalResponse": "Orange",
+          "audioFile": "audio/poly-c-06.wav"
+        },
+        {
+          "id": "poly-c-07",
+          "spokenText": "Butter",
+          "canonicalResponse": "Butter",
+          "audioFile": "audio/poly-c-07.wav"
+        },
+        {
+          "id": "poly-c-08",
+          "spokenText": "Nudeln",
+          "canonicalResponse": "Nudeln",
+          "audioFile": "audio/poly-c-08.wav"
+        },
+        {
+          "id": "poly-c-09",
+          "spokenText": "Suppe",
+          "canonicalResponse": "Suppe",
+          "audioFile": "audio/poly-c-09.wav"
+        },
+        {
+          "id": "poly-c-10",
+          "spokenText": "Kuchen",
+          "canonicalResponse": "Kuchen",
+          "audioFile": "audio/poly-c-10.wav"
+        },
+        {
+          "id": "poly-c-11",
+          "spokenText": "Flasche",
+          "canonicalResponse": "Flasche",
+          "audioFile": "audio/poly-c-11.wav"
+        },
+        {
+          "id": "poly-c-12",
+          "spokenText": "Papier",
+          "canonicalResponse": "Papier",
+          "audioFile": "audio/poly-c-12.wav"
+        },
+        {
+          "id": "poly-c-13",
+          "spokenText": "Schere",
+          "canonicalResponse": "Schere",
+          "audioFile": "audio/poly-c-13.wav"
+        },
+        {
+          "id": "poly-c-14",
+          "spokenText": "Bleistift",
+          "canonicalResponse": "Bleistift",
+          "audioFile": "audio/poly-c-14.wav"
+        },
+        {
+          "id": "poly-c-15",
+          "spokenText": "Kalender",
+          "canonicalResponse": "Kalender",
+          "audioFile": "audio/poly-c-15.wav"
+        },
+        {
+          "id": "poly-c-16",
+          "spokenText": "Computer",
+          "canonicalResponse": "Computer",
+          "audioFile": "audio/poly-c-16.wav"
+        },
+        {
+          "id": "poly-c-17",
+          "spokenText": "Telefon",
+          "canonicalResponse": "Telefon",
+          "audioFile": "audio/poly-c-17.wav"
+        },
+        {
+          "id": "poly-c-18",
+          "spokenText": "Kamera",
+          "canonicalResponse": "Kamera",
+          "audioFile": "audio/poly-c-18.wav"
+        },
+        {
+          "id": "poly-c-19",
+          "spokenText": "Musik",
+          "canonicalResponse": "Musik",
+          "audioFile": "audio/poly-c-19.wav"
+        },
+        {
+          "id": "poly-c-20",
+          "spokenText": "Gitarre",
+          "canonicalResponse": "Gitarre",
+          "audioFile": "audio/poly-c-20.wav"
+        }
+      ]
+    },
+    {
+      "id": "de-poly-d-v1",
+      "material": "Polysyllables",
+      "items": [
+        {
+          "id": "poly-d-01",
+          "spokenText": "Familie",
+          "canonicalResponse": "Familie",
+          "audioFile": "audio/poly-d-01.wav"
+        },
+        {
+          "id": "poly-d-02",
+          "spokenText": "Wohnung",
+          "canonicalResponse": "Wohnung",
+          "audioFile": "audio/poly-d-02.wav"
+        },
+        {
+          "id": "poly-d-03",
+          "spokenText": "Balkon",
+          "canonicalResponse": "Balkon",
+          "audioFile": "audio/poly-d-03.wav"
+        },
+        {
+          "id": "poly-d-04",
+          "spokenText": "Treppe",
+          "canonicalResponse": "Treppe",
+          "audioFile": "audio/poly-d-04.wav"
+        },
+        {
+          "id": "poly-d-05",
+          "spokenText": "Garage",
+          "canonicalResponse": "Garage",
+          "audioFile": "audio/poly-d-05.wav"
+        },
+        {
+          "id": "poly-d-06",
+          "spokenText": "Keller",
+          "canonicalResponse": "Keller",
+          "audioFile": "audio/poly-d-06.wav"
+        },
+        {
+          "id": "poly-d-07",
+          "spokenText": "Urlaub",
+          "canonicalResponse": "Urlaub",
+          "audioFile": "audio/poly-d-07.wav"
+        },
+        {
+          "id": "poly-d-08",
+          "spokenText": "Koffer",
+          "canonicalResponse": "Koffer",
+          "audioFile": "audio/poly-d-08.wav"
+        },
+        {
+          "id": "poly-d-09",
+          "spokenText": "Bahnhof",
+          "canonicalResponse": "Bahnhof",
+          "audioFile": "audio/poly-d-09.wav"
+        },
+        {
+          "id": "poly-d-10",
+          "spokenText": "Haltestelle",
+          "canonicalResponse": "Haltestelle",
+          "audioFile": "audio/poly-d-10.wav"
+        },
+        {
+          "id": "poly-d-11",
+          "spokenText": "Ampel",
+          "canonicalResponse": "Ampel",
+          "audioFile": "audio/poly-d-11.wav"
+        },
+        {
+          "id": "poly-d-12",
+          "spokenText": "Brücke",
+          "canonicalResponse": "Brücke",
+          "audioFile": "audio/poly-d-12.wav"
+        },
+        {
+          "id": "poly-d-13",
+          "spokenText": "Tunnel",
+          "canonicalResponse": "Tunnel",
+          "audioFile": "audio/poly-d-13.wav"
+        },
+        {
+          "id": "poly-d-14",
+          "spokenText": "Maschine",
+          "canonicalResponse": "Maschine",
+          "audioFile": "audio/poly-d-14.wav"
+        },
+        {
+          "id": "poly-d-15",
+          "spokenText": "Motor",
+          "canonicalResponse": "Motor",
+          "audioFile": "audio/poly-d-15.wav"
+        },
+        {
+          "id": "poly-d-16",
+          "spokenText": "Rakete",
+          "canonicalResponse": "Rakete",
+          "audioFile": "audio/poly-d-16.wav"
+        },
+        {
+          "id": "poly-d-17",
+          "spokenText": "Paket",
+          "canonicalResponse": "Paket",
+          "audioFile": "audio/poly-d-17.wav"
+        },
+        {
+          "id": "poly-d-18",
+          "spokenText": "Geschenk",
+          "canonicalResponse": "Geschenk",
+          "audioFile": "audio/poly-d-18.wav"
+        },
+        {
+          "id": "poly-d-19",
+          "spokenText": "Geburtstag",
+          "canonicalResponse": "Geburtstag",
+          "audioFile": "audio/poly-d-19.wav"
+        },
+        {
+          "id": "poly-d-20",
+          "spokenText": "Abenteuer",
+          "canonicalResponse": "Abenteuer",
+          "audioFile": "audio/poly-d-20.wav"
+        }
+      ]
+    }
+  ]
+}

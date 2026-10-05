@@ -1,0 +1,5545 @@
+{
+  "schemaVersion": 2,
+  "id": "de-DE-personal-phoneme-contrast-v1",
+  "version": "1.0.0",
+  "language": "de-DE",
+  "title": "Deutsches persönliches Phonemkontrastmaterial v1",
+  "license": "CC0-1.0",
+  "clinicallyValidated": false,
+  "itemsPerList": 25,
+  "lists": [
+    {
+      "id": "contrast-a",
+      "material": "phonemeContrasts",
+      "items": [
+        {
+          "id": "initial-01-1",
+          "spokenText": "Band",
+          "canonicalResponse": "Band",
+          "audioFile": "audio/initial-01-1.wav",
+          "contrastGroupId": "initial-01",
+          "contrastPosition": "initial",
+          "targetIpa": "/bant/",
+          "targetPhoneme": "b",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Band",
+              "ipa": "/bant/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Hand",
+              "ipa": "/hant/",
+              "phoneme": "h"
+            },
+            {
+              "index": 3,
+              "text": "Land",
+              "ipa": "/lant/",
+              "phoneme": "l"
+            },
+            {
+              "index": 4,
+              "text": "Rand",
+              "ipa": "/ʁant/",
+              "phoneme": "ʁ"
+            },
+            {
+              "index": 5,
+              "text": "Sand",
+              "ipa": "/zant/",
+              "phoneme": "z"
+            }
+          ]
+        },
+        {
+          "id": "initial-02-2",
+          "spokenText": "Fall",
+          "canonicalResponse": "Fall",
+          "audioFile": "audio/initial-02-2.wav",
+          "contrastGroupId": "initial-02",
+          "contrastPosition": "initial",
+          "targetIpa": "/fal/",
+          "targetPhoneme": "f",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Ball",
+              "ipa": "/bal/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Fall",
+              "ipa": "/fal/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hall",
+              "ipa": "/hal/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "Schall",
+              "ipa": "/ʃal/",
+              "phoneme": "ʃ"
+            },
+            {
+              "index": 5,
+              "text": "Wall",
+              "ipa": "/val/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "initial-03-3",
+          "spokenText": "Hund",
+          "canonicalResponse": "Hund",
+          "audioFile": "audio/initial-03-3.wav",
+          "contrastGroupId": "initial-03",
+          "contrastPosition": "initial",
+          "targetIpa": "/hʊnt/",
+          "targetPhoneme": "h",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Bund",
+              "ipa": "/bʊnt/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Fund",
+              "ipa": "/fʊnt/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hund",
+              "ipa": "/hʊnt/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "Mund",
+              "ipa": "/mʊnt/",
+              "phoneme": "m"
+            },
+            {
+              "index": 5,
+              "text": "rund",
+              "ipa": "/ʁʊnt/",
+              "phoneme": "ʁ"
+            }
+          ]
+        },
+        {
+          "id": "initial-04-4",
+          "spokenText": "nass",
+          "canonicalResponse": "nass",
+          "audioFile": "audio/initial-04-4.wav",
+          "contrastGroupId": "initial-04",
+          "contrastPosition": "initial",
+          "targetIpa": "/nas/",
+          "targetPhoneme": "n",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Bass",
+              "ipa": "/bas/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Fass",
+              "ipa": "/fas/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hass",
+              "ipa": "/has/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "nass",
+              "ipa": "/nas/",
+              "phoneme": "n"
+            },
+            {
+              "index": 5,
+              "text": "was",
+              "ipa": "/vas/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "initial-05-5",
+          "spokenText": "nicht",
+          "canonicalResponse": "nicht",
+          "audioFile": "audio/initial-05-5.wav",
+          "contrastGroupId": "initial-05",
+          "contrastPosition": "initial",
+          "targetIpa": "/nɪçt/",
+          "targetPhoneme": "n",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Sicht",
+              "ipa": "/zɪçt/",
+              "phoneme": "z"
+            },
+            {
+              "index": 2,
+              "text": "Schicht",
+              "ipa": "/ʃɪçt/",
+              "phoneme": "ʃ"
+            },
+            {
+              "index": 3,
+              "text": "dicht",
+              "ipa": "/dɪçt/",
+              "phoneme": "d"
+            },
+            {
+              "index": 4,
+              "text": "Licht",
+              "ipa": "/lɪçt/",
+              "phoneme": "l"
+            },
+            {
+              "index": 5,
+              "text": "nicht",
+              "ipa": "/nɪçt/",
+              "phoneme": "n"
+            }
+          ]
+        },
+        {
+          "id": "initial-06-1",
+          "spokenText": "Boot",
+          "canonicalResponse": "Boot",
+          "audioFile": "audio/initial-06-1.wav",
+          "contrastGroupId": "initial-06",
+          "contrastPosition": "initial",
+          "targetIpa": "/boːt/",
+          "targetPhoneme": "b",
+          "cueCategory": "mid",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Boot",
+              "ipa": "/boːt/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Kot",
+              "ipa": "/koːt/",
+              "phoneme": "k"
+            },
+            {
+              "index": 3,
+              "text": "Not",
+              "ipa": "/noːt/",
+              "phoneme": "n"
+            },
+            {
+              "index": 4,
+              "text": "rot",
+              "ipa": "/ʁoːt/",
+              "phoneme": "ʁ"
+            },
+            {
+              "index": 5,
+              "text": "tot",
+              "ipa": "/toːt/",
+              "phoneme": "t"
+            }
+          ]
+        },
+        {
+          "id": "initial-07-2",
+          "spokenText": "Laich",
+          "canonicalResponse": "Laich",
+          "audioFile": "audio/initial-07-2.wav",
+          "contrastGroupId": "initial-07",
+          "contrastPosition": "initial",
+          "targetIpa": "/laɪç/",
+          "targetPhoneme": "l",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Deich",
+              "ipa": "/daɪç/",
+              "phoneme": "d"
+            },
+            {
+              "index": 2,
+              "text": "Laich",
+              "ipa": "/laɪç/",
+              "phoneme": "l"
+            },
+            {
+              "index": 3,
+              "text": "Reich",
+              "ipa": "/ʁaɪç/",
+              "phoneme": "ʁ"
+            },
+            {
+              "index": 4,
+              "text": "Teich",
+              "ipa": "/taɪç/",
+              "phoneme": "t"
+            },
+            {
+              "index": 5,
+              "text": "weich",
+              "ipa": "/vaɪç/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "initial-08-3",
+          "spokenText": "Hort",
+          "canonicalResponse": "Hort",
+          "audioFile": "audio/initial-08-3.wav",
+          "contrastGroupId": "initial-08",
+          "contrastPosition": "initial",
+          "targetIpa": "/hɔʁt/",
+          "targetPhoneme": "h",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "dort",
+              "ipa": "/dɔʁt/",
+              "phoneme": "d"
+            },
+            {
+              "index": 2,
+              "text": "fort",
+              "ipa": "/fɔʁt/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hort",
+              "ipa": "/hɔʁt/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "Mord",
+              "ipa": "/mɔʁt/",
+              "phoneme": "m"
+            },
+            {
+              "index": 5,
+              "text": "Wort",
+              "ipa": "/vɔʁt/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "vowel-01-4",
+          "spokenText": "Bit",
+          "canonicalResponse": "Bit",
+          "audioFile": "audio/vowel-01-4.wav",
+          "contrastGroupId": "vowel-01",
+          "contrastPosition": "vowel",
+          "targetIpa": "/bɪt/",
+          "targetPhoneme": "ɪ",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Bad",
+              "ipa": "/baːt/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "Bett",
+              "ipa": "/bɛt/",
+              "phoneme": "ɛ"
+            },
+            {
+              "index": 3,
+              "text": "Beet",
+              "ipa": "/beːt/",
+              "phoneme": "eː"
+            },
+            {
+              "index": 4,
+              "text": "Bit",
+              "ipa": "/bɪt/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 5,
+              "text": "Butt",
+              "ipa": "/bʊt/",
+              "phoneme": "ʊ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-02-5",
+          "spokenText": "faul",
+          "canonicalResponse": "faul",
+          "audioFile": "audio/vowel-02-5.wav",
+          "contrastGroupId": "vowel-02",
+          "contrastPosition": "vowel",
+          "targetIpa": "/faʊl/",
+          "targetPhoneme": "aʊ",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Fell",
+              "ipa": "/fɛl/",
+              "phoneme": "ɛ"
+            },
+            {
+              "index": 2,
+              "text": "fiel",
+              "ipa": "/fiːl/",
+              "phoneme": "iː"
+            },
+            {
+              "index": 3,
+              "text": "voll",
+              "ipa": "/fɔl/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 4,
+              "text": "fühl",
+              "ipa": "/fyːl/",
+              "phoneme": "yː"
+            },
+            {
+              "index": 5,
+              "text": "faul",
+              "ipa": "/faʊl/",
+              "phoneme": "aʊ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-03-1",
+          "spokenText": "Biss",
+          "canonicalResponse": "Biss",
+          "audioFile": "audio/vowel-03-1.wav",
+          "contrastGroupId": "vowel-03",
+          "contrastPosition": "vowel",
+          "targetIpa": "/bɪs/",
+          "targetPhoneme": "ɪ",
+          "cueCategory": "mid",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Biss",
+              "ipa": "/bɪs/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 2,
+              "text": "Bus",
+              "ipa": "/bʊs/",
+              "phoneme": "ʊ"
+            },
+            {
+              "index": 3,
+              "text": "Boss",
+              "ipa": "/bɔs/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 4,
+              "text": "büß",
+              "ipa": "/byːs/",
+              "phoneme": "yː"
+            },
+            {
+              "index": 5,
+              "text": "beiß",
+              "ipa": "/baɪs/",
+              "phoneme": "aɪ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-04-2",
+          "spokenText": "Ross",
+          "canonicalResponse": "Ross",
+          "audioFile": "audio/vowel-04-2.wav",
+          "contrastGroupId": "vowel-04",
+          "contrastPosition": "vowel",
+          "targetIpa": "/ʁɔs/",
+          "targetPhoneme": "ɔ",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Riss",
+              "ipa": "/ʁɪs/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 2,
+              "text": "Ross",
+              "ipa": "/ʁɔs/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 3,
+              "text": "Ruß",
+              "ipa": "/ʁuːs/",
+              "phoneme": "uː"
+            },
+            {
+              "index": 4,
+              "text": "Reis",
+              "ipa": "/ʁaɪs/",
+              "phoneme": "aɪ"
+            },
+            {
+              "index": 5,
+              "text": "raus",
+              "ipa": "/ʁaʊs/",
+              "phoneme": "aʊ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-05-3",
+          "spokenText": "will",
+          "canonicalResponse": "will",
+          "audioFile": "audio/vowel-05-3.wav",
+          "contrastGroupId": "vowel-05",
+          "contrastPosition": "vowel",
+          "targetIpa": "/vɪl/",
+          "targetPhoneme": "ɪ",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Wahl",
+              "ipa": "/vaːl/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "wähl",
+              "ipa": "/vɛːl/",
+              "phoneme": "ɛː"
+            },
+            {
+              "index": 3,
+              "text": "will",
+              "ipa": "/vɪl/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 4,
+              "text": "wohl",
+              "ipa": "/voːl/",
+              "phoneme": "oː"
+            },
+            {
+              "index": 5,
+              "text": "wühl",
+              "ipa": "/vyːl/",
+              "phoneme": "yː"
+            }
+          ]
+        },
+        {
+          "id": "vowel-06-4",
+          "spokenText": "laut",
+          "canonicalResponse": "laut",
+          "audioFile": "audio/vowel-06-4.wav",
+          "contrastGroupId": "vowel-06",
+          "contrastPosition": "vowel",
+          "targetIpa": "/laʊt/",
+          "targetPhoneme": "aʊ",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Lied",
+              "ipa": "/liːt/",
+              "phoneme": "iː"
+            },
+            {
+              "index": 2,
+              "text": "lädt",
+              "ipa": "/lɛːt/",
+              "phoneme": "ɛː"
+            },
+            {
+              "index": 3,
+              "text": "litt",
+              "ipa": "/lɪt/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 4,
+              "text": "laut",
+              "ipa": "/laʊt/",
+              "phoneme": "aʊ"
+            },
+            {
+              "index": 5,
+              "text": "löt",
+              "ipa": "/løːt/",
+              "phoneme": "øː"
+            }
+          ]
+        },
+        {
+          "id": "vowel-07-5",
+          "spokenText": "Tour",
+          "canonicalResponse": "Tour",
+          "audioFile": "audio/vowel-07-5.wav",
+          "contrastGroupId": "vowel-07",
+          "contrastPosition": "vowel",
+          "targetIpa": "/tuːɐ̯/",
+          "targetPhoneme": "uː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Tier",
+              "ipa": "/tiːɐ̯/",
+              "phoneme": "iː"
+            },
+            {
+              "index": 2,
+              "text": "Tür",
+              "ipa": "/tyːɐ̯/",
+              "phoneme": "yː"
+            },
+            {
+              "index": 3,
+              "text": "Tor",
+              "ipa": "/toːɐ̯/",
+              "phoneme": "oː"
+            },
+            {
+              "index": 4,
+              "text": "Teer",
+              "ipa": "/teːɐ̯/",
+              "phoneme": "eː"
+            },
+            {
+              "index": 5,
+              "text": "Tour",
+              "ipa": "/tuːɐ̯/",
+              "phoneme": "uː"
+            }
+          ]
+        },
+        {
+          "id": "vowel-08-1",
+          "spokenText": "Hahn",
+          "canonicalResponse": "Hahn",
+          "audioFile": "audio/vowel-08-1.wav",
+          "contrastGroupId": "vowel-08",
+          "contrastPosition": "vowel",
+          "targetIpa": "/haːn/",
+          "targetPhoneme": "aː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Hahn",
+              "ipa": "/haːn/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "hin",
+              "ipa": "/hɪn/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 3,
+              "text": "Huhn",
+              "ipa": "/huːn/",
+              "phoneme": "uː"
+            },
+            {
+              "index": 4,
+              "text": "höhn",
+              "ipa": "/høːn/",
+              "phoneme": "øː"
+            },
+            {
+              "index": 5,
+              "text": "Hain",
+              "ipa": "/haɪn/",
+              "phoneme": "aɪ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-09-2",
+          "spokenText": "Mehl",
+          "canonicalResponse": "Mehl",
+          "audioFile": "audio/vowel-09-2.wav",
+          "contrastGroupId": "vowel-09",
+          "contrastPosition": "vowel",
+          "targetIpa": "/meːl/",
+          "targetPhoneme": "eː",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Mal",
+              "ipa": "/maːl/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "Mehl",
+              "ipa": "/meːl/",
+              "phoneme": "eː"
+            },
+            {
+              "index": 3,
+              "text": "Müll",
+              "ipa": "/mʏl/",
+              "phoneme": "ʏ"
+            },
+            {
+              "index": 4,
+              "text": "Moll",
+              "ipa": "/mɔl/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 5,
+              "text": "Maul",
+              "ipa": "/maʊl/",
+              "phoneme": "aʊ"
+            }
+          ]
+        },
+        {
+          "id": "final-01-3",
+          "spokenText": "rauf",
+          "canonicalResponse": "rauf",
+          "audioFile": "audio/final-01-3.wav",
+          "contrastGroupId": "final-01",
+          "contrastPosition": "final",
+          "targetIpa": "/ʁaʊf/",
+          "targetPhoneme": "f",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Rauch",
+              "ipa": "/ʁaʊx/",
+              "phoneme": "x"
+            },
+            {
+              "index": 2,
+              "text": "Raum",
+              "ipa": "/ʁaʊm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 3,
+              "text": "rauf",
+              "ipa": "/ʁaʊf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 4,
+              "text": "Raub",
+              "ipa": "/ʁaʊp/",
+              "phoneme": "p"
+            },
+            {
+              "index": 5,
+              "text": "Rausch",
+              "ipa": "/ʁaʊʃ/",
+              "phoneme": "ʃ"
+            }
+          ]
+        },
+        {
+          "id": "final-02-4",
+          "spokenText": "weil",
+          "canonicalResponse": "weil",
+          "audioFile": "audio/final-02-4.wav",
+          "contrastGroupId": "final-02",
+          "contrastPosition": "final",
+          "targetIpa": "/vaɪl/",
+          "targetPhoneme": "l",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Wein",
+              "ipa": "/vaɪn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 2,
+              "text": "weit",
+              "ipa": "/vaɪt/",
+              "phoneme": "t"
+            },
+            {
+              "index": 3,
+              "text": "weiß",
+              "ipa": "/vaɪs/",
+              "phoneme": "s"
+            },
+            {
+              "index": 4,
+              "text": "weil",
+              "ipa": "/vaɪl/",
+              "phoneme": "l"
+            },
+            {
+              "index": 5,
+              "text": "Weib",
+              "ipa": "/vaɪp/",
+              "phoneme": "p"
+            }
+          ]
+        },
+        {
+          "id": "final-03-5",
+          "spokenText": "reib",
+          "canonicalResponse": "reib",
+          "audioFile": "audio/final-03-5.wav",
+          "contrastGroupId": "final-03",
+          "contrastPosition": "final",
+          "targetIpa": "/ʁaɪp/",
+          "targetPhoneme": "p",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Reim",
+              "ipa": "/ʁaɪm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 2,
+              "text": "rein",
+              "ipa": "/ʁaɪn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 3,
+              "text": "Reiz",
+              "ipa": "/ʁaɪts/",
+              "phoneme": "ts"
+            },
+            {
+              "index": 4,
+              "text": "reif",
+              "ipa": "/ʁaɪf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 5,
+              "text": "reib",
+              "ipa": "/ʁaɪp/",
+              "phoneme": "p"
+            }
+          ]
+        },
+        {
+          "id": "final-04-1",
+          "spokenText": "Lohn",
+          "canonicalResponse": "Lohn",
+          "audioFile": "audio/final-04-1.wav",
+          "contrastGroupId": "final-04",
+          "contrastPosition": "final",
+          "targetIpa": "/loːn/",
+          "targetPhoneme": "n",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Lohn",
+              "ipa": "/loːn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 2,
+              "text": "Los",
+              "ipa": "/loːs/",
+              "phoneme": "s"
+            },
+            {
+              "index": 3,
+              "text": "Lot",
+              "ipa": "/loːt/",
+              "phoneme": "t"
+            },
+            {
+              "index": 4,
+              "text": "Lob",
+              "ipa": "/loːp/",
+              "phoneme": "p"
+            },
+            {
+              "index": 5,
+              "text": "log",
+              "ipa": "/loːk/",
+              "phoneme": "k"
+            }
+          ]
+        },
+        {
+          "id": "final-05-2",
+          "spokenText": "Gram",
+          "canonicalResponse": "Gram",
+          "audioFile": "audio/final-05-2.wav",
+          "contrastGroupId": "final-05",
+          "contrastPosition": "final",
+          "targetIpa": "/ɡʁaːm/",
+          "targetPhoneme": "m",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Graf",
+              "ipa": "/ɡʁaːf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 2,
+              "text": "Gram",
+              "ipa": "/ɡʁaːm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 3,
+              "text": "Grat",
+              "ipa": "/ɡʁaːt/",
+              "phoneme": "t"
+            },
+            {
+              "index": 4,
+              "text": "Grab",
+              "ipa": "/ɡʁaːp/",
+              "phoneme": "p"
+            },
+            {
+              "index": 5,
+              "text": "Gras",
+              "ipa": "/ɡʁaːs/",
+              "phoneme": "s"
+            }
+          ]
+        },
+        {
+          "id": "final-06-3",
+          "spokenText": "wen",
+          "canonicalResponse": "wen",
+          "audioFile": "audio/final-06-3.wav",
+          "contrastGroupId": "final-06",
+          "contrastPosition": "final",
+          "targetIpa": "/veːn/",
+          "targetPhoneme": "n",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Weg",
+              "ipa": "/veːk/",
+              "phoneme": "k"
+            },
+            {
+              "index": 2,
+              "text": "weh",
+              "ipa": "/veː/",
+              "phoneme": "∅"
+            },
+            {
+              "index": 3,
+              "text": "wen",
+              "ipa": "/veːn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 4,
+              "text": "wem",
+              "ipa": "/veːm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 5,
+              "text": "wer",
+              "ipa": "/veːɐ̯/",
+              "phoneme": "ɐ̯"
+            }
+          ]
+        },
+        {
+          "id": "final-07-4",
+          "spokenText": "hohl",
+          "canonicalResponse": "hohl",
+          "audioFile": "audio/final-07-4.wav",
+          "contrastGroupId": "final-07",
+          "contrastPosition": "final",
+          "targetIpa": "/hoːl/",
+          "targetPhoneme": "l",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Hof",
+              "ipa": "/hoːf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 2,
+              "text": "Hohn",
+              "ipa": "/hoːn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 3,
+              "text": "hoch",
+              "ipa": "/hoːx/",
+              "phoneme": "x"
+            },
+            {
+              "index": 4,
+              "text": "hohl",
+              "ipa": "/hoːl/",
+              "phoneme": "l"
+            },
+            {
+              "index": 5,
+              "text": "hob",
+              "ipa": "/hoːp/",
+              "phoneme": "p"
+            }
+          ]
+        },
+        {
+          "id": "final-08-5",
+          "spokenText": "scharf",
+          "canonicalResponse": "scharf",
+          "audioFile": "audio/final-08-5.wav",
+          "contrastGroupId": "final-08",
+          "contrastPosition": "final",
+          "targetIpa": "/ʃaʁf/",
+          "targetPhoneme": "ʁf",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Schaf",
+              "ipa": "/ʃaːf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 2,
+              "text": "Schal",
+              "ipa": "/ʃaːl/",
+              "phoneme": "l"
+            },
+            {
+              "index": 3,
+              "text": "Scham",
+              "ipa": "/ʃaːm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 4,
+              "text": "Schar",
+              "ipa": "/ʃaːɐ̯/",
+              "phoneme": "ɐ̯"
+            },
+            {
+              "index": 5,
+              "text": "scharf",
+              "ipa": "/ʃaʁf/",
+              "phoneme": "ʁf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contrast-b",
+      "material": "phonemeContrasts",
+      "items": [
+        {
+          "id": "initial-01-2",
+          "spokenText": "Hand",
+          "canonicalResponse": "Hand",
+          "audioFile": "audio/initial-01-2.wav",
+          "contrastGroupId": "initial-01",
+          "contrastPosition": "initial",
+          "targetIpa": "/hant/",
+          "targetPhoneme": "h",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Band",
+              "ipa": "/bant/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Hand",
+              "ipa": "/hant/",
+              "phoneme": "h"
+            },
+            {
+              "index": 3,
+              "text": "Land",
+              "ipa": "/lant/",
+              "phoneme": "l"
+            },
+            {
+              "index": 4,
+              "text": "Rand",
+              "ipa": "/ʁant/",
+              "phoneme": "ʁ"
+            },
+            {
+              "index": 5,
+              "text": "Sand",
+              "ipa": "/zant/",
+              "phoneme": "z"
+            }
+          ]
+        },
+        {
+          "id": "initial-02-3",
+          "spokenText": "Hall",
+          "canonicalResponse": "Hall",
+          "audioFile": "audio/initial-02-3.wav",
+          "contrastGroupId": "initial-02",
+          "contrastPosition": "initial",
+          "targetIpa": "/hal/",
+          "targetPhoneme": "h",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Ball",
+              "ipa": "/bal/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Fall",
+              "ipa": "/fal/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hall",
+              "ipa": "/hal/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "Schall",
+              "ipa": "/ʃal/",
+              "phoneme": "ʃ"
+            },
+            {
+              "index": 5,
+              "text": "Wall",
+              "ipa": "/val/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "initial-03-4",
+          "spokenText": "Mund",
+          "canonicalResponse": "Mund",
+          "audioFile": "audio/initial-03-4.wav",
+          "contrastGroupId": "initial-03",
+          "contrastPosition": "initial",
+          "targetIpa": "/mʊnt/",
+          "targetPhoneme": "m",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Bund",
+              "ipa": "/bʊnt/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Fund",
+              "ipa": "/fʊnt/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hund",
+              "ipa": "/hʊnt/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "Mund",
+              "ipa": "/mʊnt/",
+              "phoneme": "m"
+            },
+            {
+              "index": 5,
+              "text": "rund",
+              "ipa": "/ʁʊnt/",
+              "phoneme": "ʁ"
+            }
+          ]
+        },
+        {
+          "id": "initial-04-5",
+          "spokenText": "was",
+          "canonicalResponse": "was",
+          "audioFile": "audio/initial-04-5.wav",
+          "contrastGroupId": "initial-04",
+          "contrastPosition": "initial",
+          "targetIpa": "/vas/",
+          "targetPhoneme": "v",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Bass",
+              "ipa": "/bas/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Fass",
+              "ipa": "/fas/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hass",
+              "ipa": "/has/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "nass",
+              "ipa": "/nas/",
+              "phoneme": "n"
+            },
+            {
+              "index": 5,
+              "text": "was",
+              "ipa": "/vas/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "initial-05-1",
+          "spokenText": "Sicht",
+          "canonicalResponse": "Sicht",
+          "audioFile": "audio/initial-05-1.wav",
+          "contrastGroupId": "initial-05",
+          "contrastPosition": "initial",
+          "targetIpa": "/zɪçt/",
+          "targetPhoneme": "z",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Sicht",
+              "ipa": "/zɪçt/",
+              "phoneme": "z"
+            },
+            {
+              "index": 2,
+              "text": "Schicht",
+              "ipa": "/ʃɪçt/",
+              "phoneme": "ʃ"
+            },
+            {
+              "index": 3,
+              "text": "dicht",
+              "ipa": "/dɪçt/",
+              "phoneme": "d"
+            },
+            {
+              "index": 4,
+              "text": "Licht",
+              "ipa": "/lɪçt/",
+              "phoneme": "l"
+            },
+            {
+              "index": 5,
+              "text": "nicht",
+              "ipa": "/nɪçt/",
+              "phoneme": "n"
+            }
+          ]
+        },
+        {
+          "id": "initial-06-2",
+          "spokenText": "Kot",
+          "canonicalResponse": "Kot",
+          "audioFile": "audio/initial-06-2.wav",
+          "contrastGroupId": "initial-06",
+          "contrastPosition": "initial",
+          "targetIpa": "/koːt/",
+          "targetPhoneme": "k",
+          "cueCategory": "mid",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Boot",
+              "ipa": "/boːt/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Kot",
+              "ipa": "/koːt/",
+              "phoneme": "k"
+            },
+            {
+              "index": 3,
+              "text": "Not",
+              "ipa": "/noːt/",
+              "phoneme": "n"
+            },
+            {
+              "index": 4,
+              "text": "rot",
+              "ipa": "/ʁoːt/",
+              "phoneme": "ʁ"
+            },
+            {
+              "index": 5,
+              "text": "tot",
+              "ipa": "/toːt/",
+              "phoneme": "t"
+            }
+          ]
+        },
+        {
+          "id": "initial-07-3",
+          "spokenText": "Reich",
+          "canonicalResponse": "Reich",
+          "audioFile": "audio/initial-07-3.wav",
+          "contrastGroupId": "initial-07",
+          "contrastPosition": "initial",
+          "targetIpa": "/ʁaɪç/",
+          "targetPhoneme": "ʁ",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Deich",
+              "ipa": "/daɪç/",
+              "phoneme": "d"
+            },
+            {
+              "index": 2,
+              "text": "Laich",
+              "ipa": "/laɪç/",
+              "phoneme": "l"
+            },
+            {
+              "index": 3,
+              "text": "Reich",
+              "ipa": "/ʁaɪç/",
+              "phoneme": "ʁ"
+            },
+            {
+              "index": 4,
+              "text": "Teich",
+              "ipa": "/taɪç/",
+              "phoneme": "t"
+            },
+            {
+              "index": 5,
+              "text": "weich",
+              "ipa": "/vaɪç/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "initial-08-4",
+          "spokenText": "Mord",
+          "canonicalResponse": "Mord",
+          "audioFile": "audio/initial-08-4.wav",
+          "contrastGroupId": "initial-08",
+          "contrastPosition": "initial",
+          "targetIpa": "/mɔʁt/",
+          "targetPhoneme": "m",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "dort",
+              "ipa": "/dɔʁt/",
+              "phoneme": "d"
+            },
+            {
+              "index": 2,
+              "text": "fort",
+              "ipa": "/fɔʁt/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hort",
+              "ipa": "/hɔʁt/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "Mord",
+              "ipa": "/mɔʁt/",
+              "phoneme": "m"
+            },
+            {
+              "index": 5,
+              "text": "Wort",
+              "ipa": "/vɔʁt/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "vowel-01-5",
+          "spokenText": "Butt",
+          "canonicalResponse": "Butt",
+          "audioFile": "audio/vowel-01-5.wav",
+          "contrastGroupId": "vowel-01",
+          "contrastPosition": "vowel",
+          "targetIpa": "/bʊt/",
+          "targetPhoneme": "ʊ",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Bad",
+              "ipa": "/baːt/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "Bett",
+              "ipa": "/bɛt/",
+              "phoneme": "ɛ"
+            },
+            {
+              "index": 3,
+              "text": "Beet",
+              "ipa": "/beːt/",
+              "phoneme": "eː"
+            },
+            {
+              "index": 4,
+              "text": "Bit",
+              "ipa": "/bɪt/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 5,
+              "text": "Butt",
+              "ipa": "/bʊt/",
+              "phoneme": "ʊ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-02-1",
+          "spokenText": "Fell",
+          "canonicalResponse": "Fell",
+          "audioFile": "audio/vowel-02-1.wav",
+          "contrastGroupId": "vowel-02",
+          "contrastPosition": "vowel",
+          "targetIpa": "/fɛl/",
+          "targetPhoneme": "ɛ",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Fell",
+              "ipa": "/fɛl/",
+              "phoneme": "ɛ"
+            },
+            {
+              "index": 2,
+              "text": "fiel",
+              "ipa": "/fiːl/",
+              "phoneme": "iː"
+            },
+            {
+              "index": 3,
+              "text": "voll",
+              "ipa": "/fɔl/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 4,
+              "text": "fühl",
+              "ipa": "/fyːl/",
+              "phoneme": "yː"
+            },
+            {
+              "index": 5,
+              "text": "faul",
+              "ipa": "/faʊl/",
+              "phoneme": "aʊ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-03-2",
+          "spokenText": "Bus",
+          "canonicalResponse": "Bus",
+          "audioFile": "audio/vowel-03-2.wav",
+          "contrastGroupId": "vowel-03",
+          "contrastPosition": "vowel",
+          "targetIpa": "/bʊs/",
+          "targetPhoneme": "ʊ",
+          "cueCategory": "mid",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Biss",
+              "ipa": "/bɪs/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 2,
+              "text": "Bus",
+              "ipa": "/bʊs/",
+              "phoneme": "ʊ"
+            },
+            {
+              "index": 3,
+              "text": "Boss",
+              "ipa": "/bɔs/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 4,
+              "text": "büß",
+              "ipa": "/byːs/",
+              "phoneme": "yː"
+            },
+            {
+              "index": 5,
+              "text": "beiß",
+              "ipa": "/baɪs/",
+              "phoneme": "aɪ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-04-3",
+          "spokenText": "Ruß",
+          "canonicalResponse": "Ruß",
+          "audioFile": "audio/vowel-04-3.wav",
+          "contrastGroupId": "vowel-04",
+          "contrastPosition": "vowel",
+          "targetIpa": "/ʁuːs/",
+          "targetPhoneme": "uː",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Riss",
+              "ipa": "/ʁɪs/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 2,
+              "text": "Ross",
+              "ipa": "/ʁɔs/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 3,
+              "text": "Ruß",
+              "ipa": "/ʁuːs/",
+              "phoneme": "uː"
+            },
+            {
+              "index": 4,
+              "text": "Reis",
+              "ipa": "/ʁaɪs/",
+              "phoneme": "aɪ"
+            },
+            {
+              "index": 5,
+              "text": "raus",
+              "ipa": "/ʁaʊs/",
+              "phoneme": "aʊ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-05-4",
+          "spokenText": "wohl",
+          "canonicalResponse": "wohl",
+          "audioFile": "audio/vowel-05-4.wav",
+          "contrastGroupId": "vowel-05",
+          "contrastPosition": "vowel",
+          "targetIpa": "/voːl/",
+          "targetPhoneme": "oː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Wahl",
+              "ipa": "/vaːl/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "wähl",
+              "ipa": "/vɛːl/",
+              "phoneme": "ɛː"
+            },
+            {
+              "index": 3,
+              "text": "will",
+              "ipa": "/vɪl/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 4,
+              "text": "wohl",
+              "ipa": "/voːl/",
+              "phoneme": "oː"
+            },
+            {
+              "index": 5,
+              "text": "wühl",
+              "ipa": "/vyːl/",
+              "phoneme": "yː"
+            }
+          ]
+        },
+        {
+          "id": "vowel-06-5",
+          "spokenText": "löt",
+          "canonicalResponse": "löt",
+          "audioFile": "audio/vowel-06-5.wav",
+          "contrastGroupId": "vowel-06",
+          "contrastPosition": "vowel",
+          "targetIpa": "/løːt/",
+          "targetPhoneme": "øː",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Lied",
+              "ipa": "/liːt/",
+              "phoneme": "iː"
+            },
+            {
+              "index": 2,
+              "text": "lädt",
+              "ipa": "/lɛːt/",
+              "phoneme": "ɛː"
+            },
+            {
+              "index": 3,
+              "text": "litt",
+              "ipa": "/lɪt/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 4,
+              "text": "laut",
+              "ipa": "/laʊt/",
+              "phoneme": "aʊ"
+            },
+            {
+              "index": 5,
+              "text": "löt",
+              "ipa": "/løːt/",
+              "phoneme": "øː"
+            }
+          ]
+        },
+        {
+          "id": "vowel-07-1",
+          "spokenText": "Tier",
+          "canonicalResponse": "Tier",
+          "audioFile": "audio/vowel-07-1.wav",
+          "contrastGroupId": "vowel-07",
+          "contrastPosition": "vowel",
+          "targetIpa": "/tiːɐ̯/",
+          "targetPhoneme": "iː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Tier",
+              "ipa": "/tiːɐ̯/",
+              "phoneme": "iː"
+            },
+            {
+              "index": 2,
+              "text": "Tür",
+              "ipa": "/tyːɐ̯/",
+              "phoneme": "yː"
+            },
+            {
+              "index": 3,
+              "text": "Tor",
+              "ipa": "/toːɐ̯/",
+              "phoneme": "oː"
+            },
+            {
+              "index": 4,
+              "text": "Teer",
+              "ipa": "/teːɐ̯/",
+              "phoneme": "eː"
+            },
+            {
+              "index": 5,
+              "text": "Tour",
+              "ipa": "/tuːɐ̯/",
+              "phoneme": "uː"
+            }
+          ]
+        },
+        {
+          "id": "vowel-08-2",
+          "spokenText": "hin",
+          "canonicalResponse": "hin",
+          "audioFile": "audio/vowel-08-2.wav",
+          "contrastGroupId": "vowel-08",
+          "contrastPosition": "vowel",
+          "targetIpa": "/hɪn/",
+          "targetPhoneme": "ɪ",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Hahn",
+              "ipa": "/haːn/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "hin",
+              "ipa": "/hɪn/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 3,
+              "text": "Huhn",
+              "ipa": "/huːn/",
+              "phoneme": "uː"
+            },
+            {
+              "index": 4,
+              "text": "höhn",
+              "ipa": "/høːn/",
+              "phoneme": "øː"
+            },
+            {
+              "index": 5,
+              "text": "Hain",
+              "ipa": "/haɪn/",
+              "phoneme": "aɪ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-09-3",
+          "spokenText": "Müll",
+          "canonicalResponse": "Müll",
+          "audioFile": "audio/vowel-09-3.wav",
+          "contrastGroupId": "vowel-09",
+          "contrastPosition": "vowel",
+          "targetIpa": "/mʏl/",
+          "targetPhoneme": "ʏ",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Mal",
+              "ipa": "/maːl/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "Mehl",
+              "ipa": "/meːl/",
+              "phoneme": "eː"
+            },
+            {
+              "index": 3,
+              "text": "Müll",
+              "ipa": "/mʏl/",
+              "phoneme": "ʏ"
+            },
+            {
+              "index": 4,
+              "text": "Moll",
+              "ipa": "/mɔl/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 5,
+              "text": "Maul",
+              "ipa": "/maʊl/",
+              "phoneme": "aʊ"
+            }
+          ]
+        },
+        {
+          "id": "final-01-4",
+          "spokenText": "Raub",
+          "canonicalResponse": "Raub",
+          "audioFile": "audio/final-01-4.wav",
+          "contrastGroupId": "final-01",
+          "contrastPosition": "final",
+          "targetIpa": "/ʁaʊp/",
+          "targetPhoneme": "p",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Rauch",
+              "ipa": "/ʁaʊx/",
+              "phoneme": "x"
+            },
+            {
+              "index": 2,
+              "text": "Raum",
+              "ipa": "/ʁaʊm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 3,
+              "text": "rauf",
+              "ipa": "/ʁaʊf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 4,
+              "text": "Raub",
+              "ipa": "/ʁaʊp/",
+              "phoneme": "p"
+            },
+            {
+              "index": 5,
+              "text": "Rausch",
+              "ipa": "/ʁaʊʃ/",
+              "phoneme": "ʃ"
+            }
+          ]
+        },
+        {
+          "id": "final-02-5",
+          "spokenText": "Weib",
+          "canonicalResponse": "Weib",
+          "audioFile": "audio/final-02-5.wav",
+          "contrastGroupId": "final-02",
+          "contrastPosition": "final",
+          "targetIpa": "/vaɪp/",
+          "targetPhoneme": "p",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Wein",
+              "ipa": "/vaɪn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 2,
+              "text": "weit",
+              "ipa": "/vaɪt/",
+              "phoneme": "t"
+            },
+            {
+              "index": 3,
+              "text": "weiß",
+              "ipa": "/vaɪs/",
+              "phoneme": "s"
+            },
+            {
+              "index": 4,
+              "text": "weil",
+              "ipa": "/vaɪl/",
+              "phoneme": "l"
+            },
+            {
+              "index": 5,
+              "text": "Weib",
+              "ipa": "/vaɪp/",
+              "phoneme": "p"
+            }
+          ]
+        },
+        {
+          "id": "final-03-1",
+          "spokenText": "Reim",
+          "canonicalResponse": "Reim",
+          "audioFile": "audio/final-03-1.wav",
+          "contrastGroupId": "final-03",
+          "contrastPosition": "final",
+          "targetIpa": "/ʁaɪm/",
+          "targetPhoneme": "m",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Reim",
+              "ipa": "/ʁaɪm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 2,
+              "text": "rein",
+              "ipa": "/ʁaɪn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 3,
+              "text": "Reiz",
+              "ipa": "/ʁaɪts/",
+              "phoneme": "ts"
+            },
+            {
+              "index": 4,
+              "text": "reif",
+              "ipa": "/ʁaɪf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 5,
+              "text": "reib",
+              "ipa": "/ʁaɪp/",
+              "phoneme": "p"
+            }
+          ]
+        },
+        {
+          "id": "final-04-2",
+          "spokenText": "Los",
+          "canonicalResponse": "Los",
+          "audioFile": "audio/final-04-2.wav",
+          "contrastGroupId": "final-04",
+          "contrastPosition": "final",
+          "targetIpa": "/loːs/",
+          "targetPhoneme": "s",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Lohn",
+              "ipa": "/loːn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 2,
+              "text": "Los",
+              "ipa": "/loːs/",
+              "phoneme": "s"
+            },
+            {
+              "index": 3,
+              "text": "Lot",
+              "ipa": "/loːt/",
+              "phoneme": "t"
+            },
+            {
+              "index": 4,
+              "text": "Lob",
+              "ipa": "/loːp/",
+              "phoneme": "p"
+            },
+            {
+              "index": 5,
+              "text": "log",
+              "ipa": "/loːk/",
+              "phoneme": "k"
+            }
+          ]
+        },
+        {
+          "id": "final-05-3",
+          "spokenText": "Grat",
+          "canonicalResponse": "Grat",
+          "audioFile": "audio/final-05-3.wav",
+          "contrastGroupId": "final-05",
+          "contrastPosition": "final",
+          "targetIpa": "/ɡʁaːt/",
+          "targetPhoneme": "t",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Graf",
+              "ipa": "/ɡʁaːf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 2,
+              "text": "Gram",
+              "ipa": "/ɡʁaːm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 3,
+              "text": "Grat",
+              "ipa": "/ɡʁaːt/",
+              "phoneme": "t"
+            },
+            {
+              "index": 4,
+              "text": "Grab",
+              "ipa": "/ɡʁaːp/",
+              "phoneme": "p"
+            },
+            {
+              "index": 5,
+              "text": "Gras",
+              "ipa": "/ɡʁaːs/",
+              "phoneme": "s"
+            }
+          ]
+        },
+        {
+          "id": "final-06-4",
+          "spokenText": "wem",
+          "canonicalResponse": "wem",
+          "audioFile": "audio/final-06-4.wav",
+          "contrastGroupId": "final-06",
+          "contrastPosition": "final",
+          "targetIpa": "/veːm/",
+          "targetPhoneme": "m",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Weg",
+              "ipa": "/veːk/",
+              "phoneme": "k"
+            },
+            {
+              "index": 2,
+              "text": "weh",
+              "ipa": "/veː/",
+              "phoneme": "∅"
+            },
+            {
+              "index": 3,
+              "text": "wen",
+              "ipa": "/veːn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 4,
+              "text": "wem",
+              "ipa": "/veːm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 5,
+              "text": "wer",
+              "ipa": "/veːɐ̯/",
+              "phoneme": "ɐ̯"
+            }
+          ]
+        },
+        {
+          "id": "final-07-5",
+          "spokenText": "hob",
+          "canonicalResponse": "hob",
+          "audioFile": "audio/final-07-5.wav",
+          "contrastGroupId": "final-07",
+          "contrastPosition": "final",
+          "targetIpa": "/hoːp/",
+          "targetPhoneme": "p",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Hof",
+              "ipa": "/hoːf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 2,
+              "text": "Hohn",
+              "ipa": "/hoːn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 3,
+              "text": "hoch",
+              "ipa": "/hoːx/",
+              "phoneme": "x"
+            },
+            {
+              "index": 4,
+              "text": "hohl",
+              "ipa": "/hoːl/",
+              "phoneme": "l"
+            },
+            {
+              "index": 5,
+              "text": "hob",
+              "ipa": "/hoːp/",
+              "phoneme": "p"
+            }
+          ]
+        },
+        {
+          "id": "final-08-1",
+          "spokenText": "Schaf",
+          "canonicalResponse": "Schaf",
+          "audioFile": "audio/final-08-1.wav",
+          "contrastGroupId": "final-08",
+          "contrastPosition": "final",
+          "targetIpa": "/ʃaːf/",
+          "targetPhoneme": "f",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Schaf",
+              "ipa": "/ʃaːf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 2,
+              "text": "Schal",
+              "ipa": "/ʃaːl/",
+              "phoneme": "l"
+            },
+            {
+              "index": 3,
+              "text": "Scham",
+              "ipa": "/ʃaːm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 4,
+              "text": "Schar",
+              "ipa": "/ʃaːɐ̯/",
+              "phoneme": "ɐ̯"
+            },
+            {
+              "index": 5,
+              "text": "scharf",
+              "ipa": "/ʃaʁf/",
+              "phoneme": "ʁf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contrast-c",
+      "material": "phonemeContrasts",
+      "items": [
+        {
+          "id": "initial-01-3",
+          "spokenText": "Land",
+          "canonicalResponse": "Land",
+          "audioFile": "audio/initial-01-3.wav",
+          "contrastGroupId": "initial-01",
+          "contrastPosition": "initial",
+          "targetIpa": "/lant/",
+          "targetPhoneme": "l",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Band",
+              "ipa": "/bant/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Hand",
+              "ipa": "/hant/",
+              "phoneme": "h"
+            },
+            {
+              "index": 3,
+              "text": "Land",
+              "ipa": "/lant/",
+              "phoneme": "l"
+            },
+            {
+              "index": 4,
+              "text": "Rand",
+              "ipa": "/ʁant/",
+              "phoneme": "ʁ"
+            },
+            {
+              "index": 5,
+              "text": "Sand",
+              "ipa": "/zant/",
+              "phoneme": "z"
+            }
+          ]
+        },
+        {
+          "id": "initial-02-4",
+          "spokenText": "Schall",
+          "canonicalResponse": "Schall",
+          "audioFile": "audio/initial-02-4.wav",
+          "contrastGroupId": "initial-02",
+          "contrastPosition": "initial",
+          "targetIpa": "/ʃal/",
+          "targetPhoneme": "ʃ",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Ball",
+              "ipa": "/bal/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Fall",
+              "ipa": "/fal/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hall",
+              "ipa": "/hal/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "Schall",
+              "ipa": "/ʃal/",
+              "phoneme": "ʃ"
+            },
+            {
+              "index": 5,
+              "text": "Wall",
+              "ipa": "/val/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "initial-03-5",
+          "spokenText": "rund",
+          "canonicalResponse": "rund",
+          "audioFile": "audio/initial-03-5.wav",
+          "contrastGroupId": "initial-03",
+          "contrastPosition": "initial",
+          "targetIpa": "/ʁʊnt/",
+          "targetPhoneme": "ʁ",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Bund",
+              "ipa": "/bʊnt/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Fund",
+              "ipa": "/fʊnt/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hund",
+              "ipa": "/hʊnt/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "Mund",
+              "ipa": "/mʊnt/",
+              "phoneme": "m"
+            },
+            {
+              "index": 5,
+              "text": "rund",
+              "ipa": "/ʁʊnt/",
+              "phoneme": "ʁ"
+            }
+          ]
+        },
+        {
+          "id": "initial-04-1",
+          "spokenText": "Bass",
+          "canonicalResponse": "Bass",
+          "audioFile": "audio/initial-04-1.wav",
+          "contrastGroupId": "initial-04",
+          "contrastPosition": "initial",
+          "targetIpa": "/bas/",
+          "targetPhoneme": "b",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Bass",
+              "ipa": "/bas/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Fass",
+              "ipa": "/fas/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hass",
+              "ipa": "/has/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "nass",
+              "ipa": "/nas/",
+              "phoneme": "n"
+            },
+            {
+              "index": 5,
+              "text": "was",
+              "ipa": "/vas/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "initial-05-2",
+          "spokenText": "Schicht",
+          "canonicalResponse": "Schicht",
+          "audioFile": "audio/initial-05-2.wav",
+          "contrastGroupId": "initial-05",
+          "contrastPosition": "initial",
+          "targetIpa": "/ʃɪçt/",
+          "targetPhoneme": "ʃ",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Sicht",
+              "ipa": "/zɪçt/",
+              "phoneme": "z"
+            },
+            {
+              "index": 2,
+              "text": "Schicht",
+              "ipa": "/ʃɪçt/",
+              "phoneme": "ʃ"
+            },
+            {
+              "index": 3,
+              "text": "dicht",
+              "ipa": "/dɪçt/",
+              "phoneme": "d"
+            },
+            {
+              "index": 4,
+              "text": "Licht",
+              "ipa": "/lɪçt/",
+              "phoneme": "l"
+            },
+            {
+              "index": 5,
+              "text": "nicht",
+              "ipa": "/nɪçt/",
+              "phoneme": "n"
+            }
+          ]
+        },
+        {
+          "id": "initial-06-3",
+          "spokenText": "Not",
+          "canonicalResponse": "Not",
+          "audioFile": "audio/initial-06-3.wav",
+          "contrastGroupId": "initial-06",
+          "contrastPosition": "initial",
+          "targetIpa": "/noːt/",
+          "targetPhoneme": "n",
+          "cueCategory": "mid",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Boot",
+              "ipa": "/boːt/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Kot",
+              "ipa": "/koːt/",
+              "phoneme": "k"
+            },
+            {
+              "index": 3,
+              "text": "Not",
+              "ipa": "/noːt/",
+              "phoneme": "n"
+            },
+            {
+              "index": 4,
+              "text": "rot",
+              "ipa": "/ʁoːt/",
+              "phoneme": "ʁ"
+            },
+            {
+              "index": 5,
+              "text": "tot",
+              "ipa": "/toːt/",
+              "phoneme": "t"
+            }
+          ]
+        },
+        {
+          "id": "initial-07-4",
+          "spokenText": "Teich",
+          "canonicalResponse": "Teich",
+          "audioFile": "audio/initial-07-4.wav",
+          "contrastGroupId": "initial-07",
+          "contrastPosition": "initial",
+          "targetIpa": "/taɪç/",
+          "targetPhoneme": "t",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Deich",
+              "ipa": "/daɪç/",
+              "phoneme": "d"
+            },
+            {
+              "index": 2,
+              "text": "Laich",
+              "ipa": "/laɪç/",
+              "phoneme": "l"
+            },
+            {
+              "index": 3,
+              "text": "Reich",
+              "ipa": "/ʁaɪç/",
+              "phoneme": "ʁ"
+            },
+            {
+              "index": 4,
+              "text": "Teich",
+              "ipa": "/taɪç/",
+              "phoneme": "t"
+            },
+            {
+              "index": 5,
+              "text": "weich",
+              "ipa": "/vaɪç/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "initial-08-5",
+          "spokenText": "Wort",
+          "canonicalResponse": "Wort",
+          "audioFile": "audio/initial-08-5.wav",
+          "contrastGroupId": "initial-08",
+          "contrastPosition": "initial",
+          "targetIpa": "/vɔʁt/",
+          "targetPhoneme": "v",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "dort",
+              "ipa": "/dɔʁt/",
+              "phoneme": "d"
+            },
+            {
+              "index": 2,
+              "text": "fort",
+              "ipa": "/fɔʁt/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hort",
+              "ipa": "/hɔʁt/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "Mord",
+              "ipa": "/mɔʁt/",
+              "phoneme": "m"
+            },
+            {
+              "index": 5,
+              "text": "Wort",
+              "ipa": "/vɔʁt/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "vowel-01-1",
+          "spokenText": "Bad",
+          "canonicalResponse": "Bad",
+          "audioFile": "audio/vowel-01-1.wav",
+          "contrastGroupId": "vowel-01",
+          "contrastPosition": "vowel",
+          "targetIpa": "/baːt/",
+          "targetPhoneme": "aː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Bad",
+              "ipa": "/baːt/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "Bett",
+              "ipa": "/bɛt/",
+              "phoneme": "ɛ"
+            },
+            {
+              "index": 3,
+              "text": "Beet",
+              "ipa": "/beːt/",
+              "phoneme": "eː"
+            },
+            {
+              "index": 4,
+              "text": "Bit",
+              "ipa": "/bɪt/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 5,
+              "text": "Butt",
+              "ipa": "/bʊt/",
+              "phoneme": "ʊ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-02-2",
+          "spokenText": "fiel",
+          "canonicalResponse": "fiel",
+          "audioFile": "audio/vowel-02-2.wav",
+          "contrastGroupId": "vowel-02",
+          "contrastPosition": "vowel",
+          "targetIpa": "/fiːl/",
+          "targetPhoneme": "iː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Fell",
+              "ipa": "/fɛl/",
+              "phoneme": "ɛ"
+            },
+            {
+              "index": 2,
+              "text": "fiel",
+              "ipa": "/fiːl/",
+              "phoneme": "iː"
+            },
+            {
+              "index": 3,
+              "text": "voll",
+              "ipa": "/fɔl/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 4,
+              "text": "fühl",
+              "ipa": "/fyːl/",
+              "phoneme": "yː"
+            },
+            {
+              "index": 5,
+              "text": "faul",
+              "ipa": "/faʊl/",
+              "phoneme": "aʊ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-03-3",
+          "spokenText": "Boss",
+          "canonicalResponse": "Boss",
+          "audioFile": "audio/vowel-03-3.wav",
+          "contrastGroupId": "vowel-03",
+          "contrastPosition": "vowel",
+          "targetIpa": "/bɔs/",
+          "targetPhoneme": "ɔ",
+          "cueCategory": "mid",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Biss",
+              "ipa": "/bɪs/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 2,
+              "text": "Bus",
+              "ipa": "/bʊs/",
+              "phoneme": "ʊ"
+            },
+            {
+              "index": 3,
+              "text": "Boss",
+              "ipa": "/bɔs/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 4,
+              "text": "büß",
+              "ipa": "/byːs/",
+              "phoneme": "yː"
+            },
+            {
+              "index": 5,
+              "text": "beiß",
+              "ipa": "/baɪs/",
+              "phoneme": "aɪ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-04-4",
+          "spokenText": "Reis",
+          "canonicalResponse": "Reis",
+          "audioFile": "audio/vowel-04-4.wav",
+          "contrastGroupId": "vowel-04",
+          "contrastPosition": "vowel",
+          "targetIpa": "/ʁaɪs/",
+          "targetPhoneme": "aɪ",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Riss",
+              "ipa": "/ʁɪs/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 2,
+              "text": "Ross",
+              "ipa": "/ʁɔs/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 3,
+              "text": "Ruß",
+              "ipa": "/ʁuːs/",
+              "phoneme": "uː"
+            },
+            {
+              "index": 4,
+              "text": "Reis",
+              "ipa": "/ʁaɪs/",
+              "phoneme": "aɪ"
+            },
+            {
+              "index": 5,
+              "text": "raus",
+              "ipa": "/ʁaʊs/",
+              "phoneme": "aʊ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-05-5",
+          "spokenText": "wühl",
+          "canonicalResponse": "wühl",
+          "audioFile": "audio/vowel-05-5.wav",
+          "contrastGroupId": "vowel-05",
+          "contrastPosition": "vowel",
+          "targetIpa": "/vyːl/",
+          "targetPhoneme": "yː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Wahl",
+              "ipa": "/vaːl/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "wähl",
+              "ipa": "/vɛːl/",
+              "phoneme": "ɛː"
+            },
+            {
+              "index": 3,
+              "text": "will",
+              "ipa": "/vɪl/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 4,
+              "text": "wohl",
+              "ipa": "/voːl/",
+              "phoneme": "oː"
+            },
+            {
+              "index": 5,
+              "text": "wühl",
+              "ipa": "/vyːl/",
+              "phoneme": "yː"
+            }
+          ]
+        },
+        {
+          "id": "vowel-06-1",
+          "spokenText": "Lied",
+          "canonicalResponse": "Lied",
+          "audioFile": "audio/vowel-06-1.wav",
+          "contrastGroupId": "vowel-06",
+          "contrastPosition": "vowel",
+          "targetIpa": "/liːt/",
+          "targetPhoneme": "iː",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Lied",
+              "ipa": "/liːt/",
+              "phoneme": "iː"
+            },
+            {
+              "index": 2,
+              "text": "lädt",
+              "ipa": "/lɛːt/",
+              "phoneme": "ɛː"
+            },
+            {
+              "index": 3,
+              "text": "litt",
+              "ipa": "/lɪt/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 4,
+              "text": "laut",
+              "ipa": "/laʊt/",
+              "phoneme": "aʊ"
+            },
+            {
+              "index": 5,
+              "text": "löt",
+              "ipa": "/løːt/",
+              "phoneme": "øː"
+            }
+          ]
+        },
+        {
+          "id": "vowel-07-2",
+          "spokenText": "Tür",
+          "canonicalResponse": "Tür",
+          "audioFile": "audio/vowel-07-2.wav",
+          "contrastGroupId": "vowel-07",
+          "contrastPosition": "vowel",
+          "targetIpa": "/tyːɐ̯/",
+          "targetPhoneme": "yː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Tier",
+              "ipa": "/tiːɐ̯/",
+              "phoneme": "iː"
+            },
+            {
+              "index": 2,
+              "text": "Tür",
+              "ipa": "/tyːɐ̯/",
+              "phoneme": "yː"
+            },
+            {
+              "index": 3,
+              "text": "Tor",
+              "ipa": "/toːɐ̯/",
+              "phoneme": "oː"
+            },
+            {
+              "index": 4,
+              "text": "Teer",
+              "ipa": "/teːɐ̯/",
+              "phoneme": "eː"
+            },
+            {
+              "index": 5,
+              "text": "Tour",
+              "ipa": "/tuːɐ̯/",
+              "phoneme": "uː"
+            }
+          ]
+        },
+        {
+          "id": "vowel-08-3",
+          "spokenText": "Huhn",
+          "canonicalResponse": "Huhn",
+          "audioFile": "audio/vowel-08-3.wav",
+          "contrastGroupId": "vowel-08",
+          "contrastPosition": "vowel",
+          "targetIpa": "/huːn/",
+          "targetPhoneme": "uː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Hahn",
+              "ipa": "/haːn/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "hin",
+              "ipa": "/hɪn/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 3,
+              "text": "Huhn",
+              "ipa": "/huːn/",
+              "phoneme": "uː"
+            },
+            {
+              "index": 4,
+              "text": "höhn",
+              "ipa": "/høːn/",
+              "phoneme": "øː"
+            },
+            {
+              "index": 5,
+              "text": "Hain",
+              "ipa": "/haɪn/",
+              "phoneme": "aɪ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-09-4",
+          "spokenText": "Moll",
+          "canonicalResponse": "Moll",
+          "audioFile": "audio/vowel-09-4.wav",
+          "contrastGroupId": "vowel-09",
+          "contrastPosition": "vowel",
+          "targetIpa": "/mɔl/",
+          "targetPhoneme": "ɔ",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Mal",
+              "ipa": "/maːl/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "Mehl",
+              "ipa": "/meːl/",
+              "phoneme": "eː"
+            },
+            {
+              "index": 3,
+              "text": "Müll",
+              "ipa": "/mʏl/",
+              "phoneme": "ʏ"
+            },
+            {
+              "index": 4,
+              "text": "Moll",
+              "ipa": "/mɔl/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 5,
+              "text": "Maul",
+              "ipa": "/maʊl/",
+              "phoneme": "aʊ"
+            }
+          ]
+        },
+        {
+          "id": "final-01-5",
+          "spokenText": "Rausch",
+          "canonicalResponse": "Rausch",
+          "audioFile": "audio/final-01-5.wav",
+          "contrastGroupId": "final-01",
+          "contrastPosition": "final",
+          "targetIpa": "/ʁaʊʃ/",
+          "targetPhoneme": "ʃ",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Rauch",
+              "ipa": "/ʁaʊx/",
+              "phoneme": "x"
+            },
+            {
+              "index": 2,
+              "text": "Raum",
+              "ipa": "/ʁaʊm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 3,
+              "text": "rauf",
+              "ipa": "/ʁaʊf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 4,
+              "text": "Raub",
+              "ipa": "/ʁaʊp/",
+              "phoneme": "p"
+            },
+            {
+              "index": 5,
+              "text": "Rausch",
+              "ipa": "/ʁaʊʃ/",
+              "phoneme": "ʃ"
+            }
+          ]
+        },
+        {
+          "id": "final-02-1",
+          "spokenText": "Wein",
+          "canonicalResponse": "Wein",
+          "audioFile": "audio/final-02-1.wav",
+          "contrastGroupId": "final-02",
+          "contrastPosition": "final",
+          "targetIpa": "/vaɪn/",
+          "targetPhoneme": "n",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Wein",
+              "ipa": "/vaɪn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 2,
+              "text": "weit",
+              "ipa": "/vaɪt/",
+              "phoneme": "t"
+            },
+            {
+              "index": 3,
+              "text": "weiß",
+              "ipa": "/vaɪs/",
+              "phoneme": "s"
+            },
+            {
+              "index": 4,
+              "text": "weil",
+              "ipa": "/vaɪl/",
+              "phoneme": "l"
+            },
+            {
+              "index": 5,
+              "text": "Weib",
+              "ipa": "/vaɪp/",
+              "phoneme": "p"
+            }
+          ]
+        },
+        {
+          "id": "final-03-2",
+          "spokenText": "rein",
+          "canonicalResponse": "rein",
+          "audioFile": "audio/final-03-2.wav",
+          "contrastGroupId": "final-03",
+          "contrastPosition": "final",
+          "targetIpa": "/ʁaɪn/",
+          "targetPhoneme": "n",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Reim",
+              "ipa": "/ʁaɪm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 2,
+              "text": "rein",
+              "ipa": "/ʁaɪn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 3,
+              "text": "Reiz",
+              "ipa": "/ʁaɪts/",
+              "phoneme": "ts"
+            },
+            {
+              "index": 4,
+              "text": "reif",
+              "ipa": "/ʁaɪf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 5,
+              "text": "reib",
+              "ipa": "/ʁaɪp/",
+              "phoneme": "p"
+            }
+          ]
+        },
+        {
+          "id": "final-04-3",
+          "spokenText": "Lot",
+          "canonicalResponse": "Lot",
+          "audioFile": "audio/final-04-3.wav",
+          "contrastGroupId": "final-04",
+          "contrastPosition": "final",
+          "targetIpa": "/loːt/",
+          "targetPhoneme": "t",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Lohn",
+              "ipa": "/loːn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 2,
+              "text": "Los",
+              "ipa": "/loːs/",
+              "phoneme": "s"
+            },
+            {
+              "index": 3,
+              "text": "Lot",
+              "ipa": "/loːt/",
+              "phoneme": "t"
+            },
+            {
+              "index": 4,
+              "text": "Lob",
+              "ipa": "/loːp/",
+              "phoneme": "p"
+            },
+            {
+              "index": 5,
+              "text": "log",
+              "ipa": "/loːk/",
+              "phoneme": "k"
+            }
+          ]
+        },
+        {
+          "id": "final-05-4",
+          "spokenText": "Grab",
+          "canonicalResponse": "Grab",
+          "audioFile": "audio/final-05-4.wav",
+          "contrastGroupId": "final-05",
+          "contrastPosition": "final",
+          "targetIpa": "/ɡʁaːp/",
+          "targetPhoneme": "p",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Graf",
+              "ipa": "/ɡʁaːf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 2,
+              "text": "Gram",
+              "ipa": "/ɡʁaːm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 3,
+              "text": "Grat",
+              "ipa": "/ɡʁaːt/",
+              "phoneme": "t"
+            },
+            {
+              "index": 4,
+              "text": "Grab",
+              "ipa": "/ɡʁaːp/",
+              "phoneme": "p"
+            },
+            {
+              "index": 5,
+              "text": "Gras",
+              "ipa": "/ɡʁaːs/",
+              "phoneme": "s"
+            }
+          ]
+        },
+        {
+          "id": "final-06-5",
+          "spokenText": "wer",
+          "canonicalResponse": "wer",
+          "audioFile": "audio/final-06-5.wav",
+          "contrastGroupId": "final-06",
+          "contrastPosition": "final",
+          "targetIpa": "/veːɐ̯/",
+          "targetPhoneme": "ɐ̯",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Weg",
+              "ipa": "/veːk/",
+              "phoneme": "k"
+            },
+            {
+              "index": 2,
+              "text": "weh",
+              "ipa": "/veː/",
+              "phoneme": "∅"
+            },
+            {
+              "index": 3,
+              "text": "wen",
+              "ipa": "/veːn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 4,
+              "text": "wem",
+              "ipa": "/veːm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 5,
+              "text": "wer",
+              "ipa": "/veːɐ̯/",
+              "phoneme": "ɐ̯"
+            }
+          ]
+        },
+        {
+          "id": "final-07-1",
+          "spokenText": "Hof",
+          "canonicalResponse": "Hof",
+          "audioFile": "audio/final-07-1.wav",
+          "contrastGroupId": "final-07",
+          "contrastPosition": "final",
+          "targetIpa": "/hoːf/",
+          "targetPhoneme": "f",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Hof",
+              "ipa": "/hoːf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 2,
+              "text": "Hohn",
+              "ipa": "/hoːn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 3,
+              "text": "hoch",
+              "ipa": "/hoːx/",
+              "phoneme": "x"
+            },
+            {
+              "index": 4,
+              "text": "hohl",
+              "ipa": "/hoːl/",
+              "phoneme": "l"
+            },
+            {
+              "index": 5,
+              "text": "hob",
+              "ipa": "/hoːp/",
+              "phoneme": "p"
+            }
+          ]
+        },
+        {
+          "id": "final-08-2",
+          "spokenText": "Schal",
+          "canonicalResponse": "Schal",
+          "audioFile": "audio/final-08-2.wav",
+          "contrastGroupId": "final-08",
+          "contrastPosition": "final",
+          "targetIpa": "/ʃaːl/",
+          "targetPhoneme": "l",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Schaf",
+              "ipa": "/ʃaːf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 2,
+              "text": "Schal",
+              "ipa": "/ʃaːl/",
+              "phoneme": "l"
+            },
+            {
+              "index": 3,
+              "text": "Scham",
+              "ipa": "/ʃaːm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 4,
+              "text": "Schar",
+              "ipa": "/ʃaːɐ̯/",
+              "phoneme": "ɐ̯"
+            },
+            {
+              "index": 5,
+              "text": "scharf",
+              "ipa": "/ʃaʁf/",
+              "phoneme": "ʁf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contrast-d",
+      "material": "phonemeContrasts",
+      "items": [
+        {
+          "id": "initial-01-4",
+          "spokenText": "Rand",
+          "canonicalResponse": "Rand",
+          "audioFile": "audio/initial-01-4.wav",
+          "contrastGroupId": "initial-01",
+          "contrastPosition": "initial",
+          "targetIpa": "/ʁant/",
+          "targetPhoneme": "ʁ",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Band",
+              "ipa": "/bant/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Hand",
+              "ipa": "/hant/",
+              "phoneme": "h"
+            },
+            {
+              "index": 3,
+              "text": "Land",
+              "ipa": "/lant/",
+              "phoneme": "l"
+            },
+            {
+              "index": 4,
+              "text": "Rand",
+              "ipa": "/ʁant/",
+              "phoneme": "ʁ"
+            },
+            {
+              "index": 5,
+              "text": "Sand",
+              "ipa": "/zant/",
+              "phoneme": "z"
+            }
+          ]
+        },
+        {
+          "id": "initial-02-5",
+          "spokenText": "Wall",
+          "canonicalResponse": "Wall",
+          "audioFile": "audio/initial-02-5.wav",
+          "contrastGroupId": "initial-02",
+          "contrastPosition": "initial",
+          "targetIpa": "/val/",
+          "targetPhoneme": "v",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Ball",
+              "ipa": "/bal/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Fall",
+              "ipa": "/fal/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hall",
+              "ipa": "/hal/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "Schall",
+              "ipa": "/ʃal/",
+              "phoneme": "ʃ"
+            },
+            {
+              "index": 5,
+              "text": "Wall",
+              "ipa": "/val/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "initial-03-1",
+          "spokenText": "Bund",
+          "canonicalResponse": "Bund",
+          "audioFile": "audio/initial-03-1.wav",
+          "contrastGroupId": "initial-03",
+          "contrastPosition": "initial",
+          "targetIpa": "/bʊnt/",
+          "targetPhoneme": "b",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Bund",
+              "ipa": "/bʊnt/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Fund",
+              "ipa": "/fʊnt/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hund",
+              "ipa": "/hʊnt/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "Mund",
+              "ipa": "/mʊnt/",
+              "phoneme": "m"
+            },
+            {
+              "index": 5,
+              "text": "rund",
+              "ipa": "/ʁʊnt/",
+              "phoneme": "ʁ"
+            }
+          ]
+        },
+        {
+          "id": "initial-04-2",
+          "spokenText": "Fass",
+          "canonicalResponse": "Fass",
+          "audioFile": "audio/initial-04-2.wav",
+          "contrastGroupId": "initial-04",
+          "contrastPosition": "initial",
+          "targetIpa": "/fas/",
+          "targetPhoneme": "f",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Bass",
+              "ipa": "/bas/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Fass",
+              "ipa": "/fas/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hass",
+              "ipa": "/has/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "nass",
+              "ipa": "/nas/",
+              "phoneme": "n"
+            },
+            {
+              "index": 5,
+              "text": "was",
+              "ipa": "/vas/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "initial-05-3",
+          "spokenText": "dicht",
+          "canonicalResponse": "dicht",
+          "audioFile": "audio/initial-05-3.wav",
+          "contrastGroupId": "initial-05",
+          "contrastPosition": "initial",
+          "targetIpa": "/dɪçt/",
+          "targetPhoneme": "d",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Sicht",
+              "ipa": "/zɪçt/",
+              "phoneme": "z"
+            },
+            {
+              "index": 2,
+              "text": "Schicht",
+              "ipa": "/ʃɪçt/",
+              "phoneme": "ʃ"
+            },
+            {
+              "index": 3,
+              "text": "dicht",
+              "ipa": "/dɪçt/",
+              "phoneme": "d"
+            },
+            {
+              "index": 4,
+              "text": "Licht",
+              "ipa": "/lɪçt/",
+              "phoneme": "l"
+            },
+            {
+              "index": 5,
+              "text": "nicht",
+              "ipa": "/nɪçt/",
+              "phoneme": "n"
+            }
+          ]
+        },
+        {
+          "id": "initial-06-4",
+          "spokenText": "rot",
+          "canonicalResponse": "rot",
+          "audioFile": "audio/initial-06-4.wav",
+          "contrastGroupId": "initial-06",
+          "contrastPosition": "initial",
+          "targetIpa": "/ʁoːt/",
+          "targetPhoneme": "ʁ",
+          "cueCategory": "mid",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Boot",
+              "ipa": "/boːt/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Kot",
+              "ipa": "/koːt/",
+              "phoneme": "k"
+            },
+            {
+              "index": 3,
+              "text": "Not",
+              "ipa": "/noːt/",
+              "phoneme": "n"
+            },
+            {
+              "index": 4,
+              "text": "rot",
+              "ipa": "/ʁoːt/",
+              "phoneme": "ʁ"
+            },
+            {
+              "index": 5,
+              "text": "tot",
+              "ipa": "/toːt/",
+              "phoneme": "t"
+            }
+          ]
+        },
+        {
+          "id": "initial-07-5",
+          "spokenText": "weich",
+          "canonicalResponse": "weich",
+          "audioFile": "audio/initial-07-5.wav",
+          "contrastGroupId": "initial-07",
+          "contrastPosition": "initial",
+          "targetIpa": "/vaɪç/",
+          "targetPhoneme": "v",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Deich",
+              "ipa": "/daɪç/",
+              "phoneme": "d"
+            },
+            {
+              "index": 2,
+              "text": "Laich",
+              "ipa": "/laɪç/",
+              "phoneme": "l"
+            },
+            {
+              "index": 3,
+              "text": "Reich",
+              "ipa": "/ʁaɪç/",
+              "phoneme": "ʁ"
+            },
+            {
+              "index": 4,
+              "text": "Teich",
+              "ipa": "/taɪç/",
+              "phoneme": "t"
+            },
+            {
+              "index": 5,
+              "text": "weich",
+              "ipa": "/vaɪç/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "initial-08-1",
+          "spokenText": "dort",
+          "canonicalResponse": "dort",
+          "audioFile": "audio/initial-08-1.wav",
+          "contrastGroupId": "initial-08",
+          "contrastPosition": "initial",
+          "targetIpa": "/dɔʁt/",
+          "targetPhoneme": "d",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "dort",
+              "ipa": "/dɔʁt/",
+              "phoneme": "d"
+            },
+            {
+              "index": 2,
+              "text": "fort",
+              "ipa": "/fɔʁt/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hort",
+              "ipa": "/hɔʁt/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "Mord",
+              "ipa": "/mɔʁt/",
+              "phoneme": "m"
+            },
+            {
+              "index": 5,
+              "text": "Wort",
+              "ipa": "/vɔʁt/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "vowel-01-2",
+          "spokenText": "Bett",
+          "canonicalResponse": "Bett",
+          "audioFile": "audio/vowel-01-2.wav",
+          "contrastGroupId": "vowel-01",
+          "contrastPosition": "vowel",
+          "targetIpa": "/bɛt/",
+          "targetPhoneme": "ɛ",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Bad",
+              "ipa": "/baːt/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "Bett",
+              "ipa": "/bɛt/",
+              "phoneme": "ɛ"
+            },
+            {
+              "index": 3,
+              "text": "Beet",
+              "ipa": "/beːt/",
+              "phoneme": "eː"
+            },
+            {
+              "index": 4,
+              "text": "Bit",
+              "ipa": "/bɪt/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 5,
+              "text": "Butt",
+              "ipa": "/bʊt/",
+              "phoneme": "ʊ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-02-3",
+          "spokenText": "voll",
+          "canonicalResponse": "voll",
+          "audioFile": "audio/vowel-02-3.wav",
+          "contrastGroupId": "vowel-02",
+          "contrastPosition": "vowel",
+          "targetIpa": "/fɔl/",
+          "targetPhoneme": "ɔ",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Fell",
+              "ipa": "/fɛl/",
+              "phoneme": "ɛ"
+            },
+            {
+              "index": 2,
+              "text": "fiel",
+              "ipa": "/fiːl/",
+              "phoneme": "iː"
+            },
+            {
+              "index": 3,
+              "text": "voll",
+              "ipa": "/fɔl/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 4,
+              "text": "fühl",
+              "ipa": "/fyːl/",
+              "phoneme": "yː"
+            },
+            {
+              "index": 5,
+              "text": "faul",
+              "ipa": "/faʊl/",
+              "phoneme": "aʊ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-03-4",
+          "spokenText": "büß",
+          "canonicalResponse": "büß",
+          "audioFile": "audio/vowel-03-4.wav",
+          "contrastGroupId": "vowel-03",
+          "contrastPosition": "vowel",
+          "targetIpa": "/byːs/",
+          "targetPhoneme": "yː",
+          "cueCategory": "mid",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Biss",
+              "ipa": "/bɪs/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 2,
+              "text": "Bus",
+              "ipa": "/bʊs/",
+              "phoneme": "ʊ"
+            },
+            {
+              "index": 3,
+              "text": "Boss",
+              "ipa": "/bɔs/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 4,
+              "text": "büß",
+              "ipa": "/byːs/",
+              "phoneme": "yː"
+            },
+            {
+              "index": 5,
+              "text": "beiß",
+              "ipa": "/baɪs/",
+              "phoneme": "aɪ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-04-5",
+          "spokenText": "raus",
+          "canonicalResponse": "raus",
+          "audioFile": "audio/vowel-04-5.wav",
+          "contrastGroupId": "vowel-04",
+          "contrastPosition": "vowel",
+          "targetIpa": "/ʁaʊs/",
+          "targetPhoneme": "aʊ",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Riss",
+              "ipa": "/ʁɪs/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 2,
+              "text": "Ross",
+              "ipa": "/ʁɔs/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 3,
+              "text": "Ruß",
+              "ipa": "/ʁuːs/",
+              "phoneme": "uː"
+            },
+            {
+              "index": 4,
+              "text": "Reis",
+              "ipa": "/ʁaɪs/",
+              "phoneme": "aɪ"
+            },
+            {
+              "index": 5,
+              "text": "raus",
+              "ipa": "/ʁaʊs/",
+              "phoneme": "aʊ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-05-1",
+          "spokenText": "Wahl",
+          "canonicalResponse": "Wahl",
+          "audioFile": "audio/vowel-05-1.wav",
+          "contrastGroupId": "vowel-05",
+          "contrastPosition": "vowel",
+          "targetIpa": "/vaːl/",
+          "targetPhoneme": "aː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Wahl",
+              "ipa": "/vaːl/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "wähl",
+              "ipa": "/vɛːl/",
+              "phoneme": "ɛː"
+            },
+            {
+              "index": 3,
+              "text": "will",
+              "ipa": "/vɪl/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 4,
+              "text": "wohl",
+              "ipa": "/voːl/",
+              "phoneme": "oː"
+            },
+            {
+              "index": 5,
+              "text": "wühl",
+              "ipa": "/vyːl/",
+              "phoneme": "yː"
+            }
+          ]
+        },
+        {
+          "id": "vowel-06-2",
+          "spokenText": "lädt",
+          "canonicalResponse": "lädt",
+          "audioFile": "audio/vowel-06-2.wav",
+          "contrastGroupId": "vowel-06",
+          "contrastPosition": "vowel",
+          "targetIpa": "/lɛːt/",
+          "targetPhoneme": "ɛː",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Lied",
+              "ipa": "/liːt/",
+              "phoneme": "iː"
+            },
+            {
+              "index": 2,
+              "text": "lädt",
+              "ipa": "/lɛːt/",
+              "phoneme": "ɛː"
+            },
+            {
+              "index": 3,
+              "text": "litt",
+              "ipa": "/lɪt/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 4,
+              "text": "laut",
+              "ipa": "/laʊt/",
+              "phoneme": "aʊ"
+            },
+            {
+              "index": 5,
+              "text": "löt",
+              "ipa": "/løːt/",
+              "phoneme": "øː"
+            }
+          ]
+        },
+        {
+          "id": "vowel-07-3",
+          "spokenText": "Tor",
+          "canonicalResponse": "Tor",
+          "audioFile": "audio/vowel-07-3.wav",
+          "contrastGroupId": "vowel-07",
+          "contrastPosition": "vowel",
+          "targetIpa": "/toːɐ̯/",
+          "targetPhoneme": "oː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Tier",
+              "ipa": "/tiːɐ̯/",
+              "phoneme": "iː"
+            },
+            {
+              "index": 2,
+              "text": "Tür",
+              "ipa": "/tyːɐ̯/",
+              "phoneme": "yː"
+            },
+            {
+              "index": 3,
+              "text": "Tor",
+              "ipa": "/toːɐ̯/",
+              "phoneme": "oː"
+            },
+            {
+              "index": 4,
+              "text": "Teer",
+              "ipa": "/teːɐ̯/",
+              "phoneme": "eː"
+            },
+            {
+              "index": 5,
+              "text": "Tour",
+              "ipa": "/tuːɐ̯/",
+              "phoneme": "uː"
+            }
+          ]
+        },
+        {
+          "id": "vowel-08-4",
+          "spokenText": "höhn",
+          "canonicalResponse": "höhn",
+          "audioFile": "audio/vowel-08-4.wav",
+          "contrastGroupId": "vowel-08",
+          "contrastPosition": "vowel",
+          "targetIpa": "/høːn/",
+          "targetPhoneme": "øː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Hahn",
+              "ipa": "/haːn/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "hin",
+              "ipa": "/hɪn/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 3,
+              "text": "Huhn",
+              "ipa": "/huːn/",
+              "phoneme": "uː"
+            },
+            {
+              "index": 4,
+              "text": "höhn",
+              "ipa": "/høːn/",
+              "phoneme": "øː"
+            },
+            {
+              "index": 5,
+              "text": "Hain",
+              "ipa": "/haɪn/",
+              "phoneme": "aɪ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-09-5",
+          "spokenText": "Maul",
+          "canonicalResponse": "Maul",
+          "audioFile": "audio/vowel-09-5.wav",
+          "contrastGroupId": "vowel-09",
+          "contrastPosition": "vowel",
+          "targetIpa": "/maʊl/",
+          "targetPhoneme": "aʊ",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Mal",
+              "ipa": "/maːl/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "Mehl",
+              "ipa": "/meːl/",
+              "phoneme": "eː"
+            },
+            {
+              "index": 3,
+              "text": "Müll",
+              "ipa": "/mʏl/",
+              "phoneme": "ʏ"
+            },
+            {
+              "index": 4,
+              "text": "Moll",
+              "ipa": "/mɔl/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 5,
+              "text": "Maul",
+              "ipa": "/maʊl/",
+              "phoneme": "aʊ"
+            }
+          ]
+        },
+        {
+          "id": "final-01-1",
+          "spokenText": "Rauch",
+          "canonicalResponse": "Rauch",
+          "audioFile": "audio/final-01-1.wav",
+          "contrastGroupId": "final-01",
+          "contrastPosition": "final",
+          "targetIpa": "/ʁaʊx/",
+          "targetPhoneme": "x",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Rauch",
+              "ipa": "/ʁaʊx/",
+              "phoneme": "x"
+            },
+            {
+              "index": 2,
+              "text": "Raum",
+              "ipa": "/ʁaʊm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 3,
+              "text": "rauf",
+              "ipa": "/ʁaʊf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 4,
+              "text": "Raub",
+              "ipa": "/ʁaʊp/",
+              "phoneme": "p"
+            },
+            {
+              "index": 5,
+              "text": "Rausch",
+              "ipa": "/ʁaʊʃ/",
+              "phoneme": "ʃ"
+            }
+          ]
+        },
+        {
+          "id": "final-02-2",
+          "spokenText": "weit",
+          "canonicalResponse": "weit",
+          "audioFile": "audio/final-02-2.wav",
+          "contrastGroupId": "final-02",
+          "contrastPosition": "final",
+          "targetIpa": "/vaɪt/",
+          "targetPhoneme": "t",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Wein",
+              "ipa": "/vaɪn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 2,
+              "text": "weit",
+              "ipa": "/vaɪt/",
+              "phoneme": "t"
+            },
+            {
+              "index": 3,
+              "text": "weiß",
+              "ipa": "/vaɪs/",
+              "phoneme": "s"
+            },
+            {
+              "index": 4,
+              "text": "weil",
+              "ipa": "/vaɪl/",
+              "phoneme": "l"
+            },
+            {
+              "index": 5,
+              "text": "Weib",
+              "ipa": "/vaɪp/",
+              "phoneme": "p"
+            }
+          ]
+        },
+        {
+          "id": "final-03-3",
+          "spokenText": "Reiz",
+          "canonicalResponse": "Reiz",
+          "audioFile": "audio/final-03-3.wav",
+          "contrastGroupId": "final-03",
+          "contrastPosition": "final",
+          "targetIpa": "/ʁaɪts/",
+          "targetPhoneme": "ts",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Reim",
+              "ipa": "/ʁaɪm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 2,
+              "text": "rein",
+              "ipa": "/ʁaɪn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 3,
+              "text": "Reiz",
+              "ipa": "/ʁaɪts/",
+              "phoneme": "ts"
+            },
+            {
+              "index": 4,
+              "text": "reif",
+              "ipa": "/ʁaɪf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 5,
+              "text": "reib",
+              "ipa": "/ʁaɪp/",
+              "phoneme": "p"
+            }
+          ]
+        },
+        {
+          "id": "final-04-4",
+          "spokenText": "Lob",
+          "canonicalResponse": "Lob",
+          "audioFile": "audio/final-04-4.wav",
+          "contrastGroupId": "final-04",
+          "contrastPosition": "final",
+          "targetIpa": "/loːp/",
+          "targetPhoneme": "p",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Lohn",
+              "ipa": "/loːn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 2,
+              "text": "Los",
+              "ipa": "/loːs/",
+              "phoneme": "s"
+            },
+            {
+              "index": 3,
+              "text": "Lot",
+              "ipa": "/loːt/",
+              "phoneme": "t"
+            },
+            {
+              "index": 4,
+              "text": "Lob",
+              "ipa": "/loːp/",
+              "phoneme": "p"
+            },
+            {
+              "index": 5,
+              "text": "log",
+              "ipa": "/loːk/",
+              "phoneme": "k"
+            }
+          ]
+        },
+        {
+          "id": "final-05-5",
+          "spokenText": "Gras",
+          "canonicalResponse": "Gras",
+          "audioFile": "audio/final-05-5.wav",
+          "contrastGroupId": "final-05",
+          "contrastPosition": "final",
+          "targetIpa": "/ɡʁaːs/",
+          "targetPhoneme": "s",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Graf",
+              "ipa": "/ɡʁaːf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 2,
+              "text": "Gram",
+              "ipa": "/ɡʁaːm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 3,
+              "text": "Grat",
+              "ipa": "/ɡʁaːt/",
+              "phoneme": "t"
+            },
+            {
+              "index": 4,
+              "text": "Grab",
+              "ipa": "/ɡʁaːp/",
+              "phoneme": "p"
+            },
+            {
+              "index": 5,
+              "text": "Gras",
+              "ipa": "/ɡʁaːs/",
+              "phoneme": "s"
+            }
+          ]
+        },
+        {
+          "id": "final-06-1",
+          "spokenText": "Weg",
+          "canonicalResponse": "Weg",
+          "audioFile": "audio/final-06-1.wav",
+          "contrastGroupId": "final-06",
+          "contrastPosition": "final",
+          "targetIpa": "/veːk/",
+          "targetPhoneme": "k",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Weg",
+              "ipa": "/veːk/",
+              "phoneme": "k"
+            },
+            {
+              "index": 2,
+              "text": "weh",
+              "ipa": "/veː/",
+              "phoneme": "∅"
+            },
+            {
+              "index": 3,
+              "text": "wen",
+              "ipa": "/veːn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 4,
+              "text": "wem",
+              "ipa": "/veːm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 5,
+              "text": "wer",
+              "ipa": "/veːɐ̯/",
+              "phoneme": "ɐ̯"
+            }
+          ]
+        },
+        {
+          "id": "final-07-2",
+          "spokenText": "Hohn",
+          "canonicalResponse": "Hohn",
+          "audioFile": "audio/final-07-2.wav",
+          "contrastGroupId": "final-07",
+          "contrastPosition": "final",
+          "targetIpa": "/hoːn/",
+          "targetPhoneme": "n",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Hof",
+              "ipa": "/hoːf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 2,
+              "text": "Hohn",
+              "ipa": "/hoːn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 3,
+              "text": "hoch",
+              "ipa": "/hoːx/",
+              "phoneme": "x"
+            },
+            {
+              "index": 4,
+              "text": "hohl",
+              "ipa": "/hoːl/",
+              "phoneme": "l"
+            },
+            {
+              "index": 5,
+              "text": "hob",
+              "ipa": "/hoːp/",
+              "phoneme": "p"
+            }
+          ]
+        },
+        {
+          "id": "final-08-3",
+          "spokenText": "Scham",
+          "canonicalResponse": "Scham",
+          "audioFile": "audio/final-08-3.wav",
+          "contrastGroupId": "final-08",
+          "contrastPosition": "final",
+          "targetIpa": "/ʃaːm/",
+          "targetPhoneme": "m",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Schaf",
+              "ipa": "/ʃaːf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 2,
+              "text": "Schal",
+              "ipa": "/ʃaːl/",
+              "phoneme": "l"
+            },
+            {
+              "index": 3,
+              "text": "Scham",
+              "ipa": "/ʃaːm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 4,
+              "text": "Schar",
+              "ipa": "/ʃaːɐ̯/",
+              "phoneme": "ɐ̯"
+            },
+            {
+              "index": 5,
+              "text": "scharf",
+              "ipa": "/ʃaʁf/",
+              "phoneme": "ʁf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contrast-e",
+      "material": "phonemeContrasts",
+      "items": [
+        {
+          "id": "initial-01-5",
+          "spokenText": "Sand",
+          "canonicalResponse": "Sand",
+          "audioFile": "audio/initial-01-5.wav",
+          "contrastGroupId": "initial-01",
+          "contrastPosition": "initial",
+          "targetIpa": "/zant/",
+          "targetPhoneme": "z",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Band",
+              "ipa": "/bant/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Hand",
+              "ipa": "/hant/",
+              "phoneme": "h"
+            },
+            {
+              "index": 3,
+              "text": "Land",
+              "ipa": "/lant/",
+              "phoneme": "l"
+            },
+            {
+              "index": 4,
+              "text": "Rand",
+              "ipa": "/ʁant/",
+              "phoneme": "ʁ"
+            },
+            {
+              "index": 5,
+              "text": "Sand",
+              "ipa": "/zant/",
+              "phoneme": "z"
+            }
+          ]
+        },
+        {
+          "id": "initial-02-1",
+          "spokenText": "Ball",
+          "canonicalResponse": "Ball",
+          "audioFile": "audio/initial-02-1.wav",
+          "contrastGroupId": "initial-02",
+          "contrastPosition": "initial",
+          "targetIpa": "/bal/",
+          "targetPhoneme": "b",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Ball",
+              "ipa": "/bal/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Fall",
+              "ipa": "/fal/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hall",
+              "ipa": "/hal/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "Schall",
+              "ipa": "/ʃal/",
+              "phoneme": "ʃ"
+            },
+            {
+              "index": 5,
+              "text": "Wall",
+              "ipa": "/val/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "initial-03-2",
+          "spokenText": "Fund",
+          "canonicalResponse": "Fund",
+          "audioFile": "audio/initial-03-2.wav",
+          "contrastGroupId": "initial-03",
+          "contrastPosition": "initial",
+          "targetIpa": "/fʊnt/",
+          "targetPhoneme": "f",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Bund",
+              "ipa": "/bʊnt/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Fund",
+              "ipa": "/fʊnt/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hund",
+              "ipa": "/hʊnt/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "Mund",
+              "ipa": "/mʊnt/",
+              "phoneme": "m"
+            },
+            {
+              "index": 5,
+              "text": "rund",
+              "ipa": "/ʁʊnt/",
+              "phoneme": "ʁ"
+            }
+          ]
+        },
+        {
+          "id": "initial-04-3",
+          "spokenText": "Hass",
+          "canonicalResponse": "Hass",
+          "audioFile": "audio/initial-04-3.wav",
+          "contrastGroupId": "initial-04",
+          "contrastPosition": "initial",
+          "targetIpa": "/has/",
+          "targetPhoneme": "h",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Bass",
+              "ipa": "/bas/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Fass",
+              "ipa": "/fas/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hass",
+              "ipa": "/has/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "nass",
+              "ipa": "/nas/",
+              "phoneme": "n"
+            },
+            {
+              "index": 5,
+              "text": "was",
+              "ipa": "/vas/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "initial-05-4",
+          "spokenText": "Licht",
+          "canonicalResponse": "Licht",
+          "audioFile": "audio/initial-05-4.wav",
+          "contrastGroupId": "initial-05",
+          "contrastPosition": "initial",
+          "targetIpa": "/lɪçt/",
+          "targetPhoneme": "l",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Sicht",
+              "ipa": "/zɪçt/",
+              "phoneme": "z"
+            },
+            {
+              "index": 2,
+              "text": "Schicht",
+              "ipa": "/ʃɪçt/",
+              "phoneme": "ʃ"
+            },
+            {
+              "index": 3,
+              "text": "dicht",
+              "ipa": "/dɪçt/",
+              "phoneme": "d"
+            },
+            {
+              "index": 4,
+              "text": "Licht",
+              "ipa": "/lɪçt/",
+              "phoneme": "l"
+            },
+            {
+              "index": 5,
+              "text": "nicht",
+              "ipa": "/nɪçt/",
+              "phoneme": "n"
+            }
+          ]
+        },
+        {
+          "id": "initial-06-5",
+          "spokenText": "tot",
+          "canonicalResponse": "tot",
+          "audioFile": "audio/initial-06-5.wav",
+          "contrastGroupId": "initial-06",
+          "contrastPosition": "initial",
+          "targetIpa": "/toːt/",
+          "targetPhoneme": "t",
+          "cueCategory": "mid",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Boot",
+              "ipa": "/boːt/",
+              "phoneme": "b"
+            },
+            {
+              "index": 2,
+              "text": "Kot",
+              "ipa": "/koːt/",
+              "phoneme": "k"
+            },
+            {
+              "index": 3,
+              "text": "Not",
+              "ipa": "/noːt/",
+              "phoneme": "n"
+            },
+            {
+              "index": 4,
+              "text": "rot",
+              "ipa": "/ʁoːt/",
+              "phoneme": "ʁ"
+            },
+            {
+              "index": 5,
+              "text": "tot",
+              "ipa": "/toːt/",
+              "phoneme": "t"
+            }
+          ]
+        },
+        {
+          "id": "initial-07-1",
+          "spokenText": "Deich",
+          "canonicalResponse": "Deich",
+          "audioFile": "audio/initial-07-1.wav",
+          "contrastGroupId": "initial-07",
+          "contrastPosition": "initial",
+          "targetIpa": "/daɪç/",
+          "targetPhoneme": "d",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Deich",
+              "ipa": "/daɪç/",
+              "phoneme": "d"
+            },
+            {
+              "index": 2,
+              "text": "Laich",
+              "ipa": "/laɪç/",
+              "phoneme": "l"
+            },
+            {
+              "index": 3,
+              "text": "Reich",
+              "ipa": "/ʁaɪç/",
+              "phoneme": "ʁ"
+            },
+            {
+              "index": 4,
+              "text": "Teich",
+              "ipa": "/taɪç/",
+              "phoneme": "t"
+            },
+            {
+              "index": 5,
+              "text": "weich",
+              "ipa": "/vaɪç/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "initial-08-2",
+          "spokenText": "fort",
+          "canonicalResponse": "fort",
+          "audioFile": "audio/initial-08-2.wav",
+          "contrastGroupId": "initial-08",
+          "contrastPosition": "initial",
+          "targetIpa": "/fɔʁt/",
+          "targetPhoneme": "f",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "dort",
+              "ipa": "/dɔʁt/",
+              "phoneme": "d"
+            },
+            {
+              "index": 2,
+              "text": "fort",
+              "ipa": "/fɔʁt/",
+              "phoneme": "f"
+            },
+            {
+              "index": 3,
+              "text": "Hort",
+              "ipa": "/hɔʁt/",
+              "phoneme": "h"
+            },
+            {
+              "index": 4,
+              "text": "Mord",
+              "ipa": "/mɔʁt/",
+              "phoneme": "m"
+            },
+            {
+              "index": 5,
+              "text": "Wort",
+              "ipa": "/vɔʁt/",
+              "phoneme": "v"
+            }
+          ]
+        },
+        {
+          "id": "vowel-01-3",
+          "spokenText": "Beet",
+          "canonicalResponse": "Beet",
+          "audioFile": "audio/vowel-01-3.wav",
+          "contrastGroupId": "vowel-01",
+          "contrastPosition": "vowel",
+          "targetIpa": "/beːt/",
+          "targetPhoneme": "eː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Bad",
+              "ipa": "/baːt/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "Bett",
+              "ipa": "/bɛt/",
+              "phoneme": "ɛ"
+            },
+            {
+              "index": 3,
+              "text": "Beet",
+              "ipa": "/beːt/",
+              "phoneme": "eː"
+            },
+            {
+              "index": 4,
+              "text": "Bit",
+              "ipa": "/bɪt/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 5,
+              "text": "Butt",
+              "ipa": "/bʊt/",
+              "phoneme": "ʊ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-02-4",
+          "spokenText": "fühl",
+          "canonicalResponse": "fühl",
+          "audioFile": "audio/vowel-02-4.wav",
+          "contrastGroupId": "vowel-02",
+          "contrastPosition": "vowel",
+          "targetIpa": "/fyːl/",
+          "targetPhoneme": "yː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Fell",
+              "ipa": "/fɛl/",
+              "phoneme": "ɛ"
+            },
+            {
+              "index": 2,
+              "text": "fiel",
+              "ipa": "/fiːl/",
+              "phoneme": "iː"
+            },
+            {
+              "index": 3,
+              "text": "voll",
+              "ipa": "/fɔl/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 4,
+              "text": "fühl",
+              "ipa": "/fyːl/",
+              "phoneme": "yː"
+            },
+            {
+              "index": 5,
+              "text": "faul",
+              "ipa": "/faʊl/",
+              "phoneme": "aʊ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-03-5",
+          "spokenText": "beiß",
+          "canonicalResponse": "beiß",
+          "audioFile": "audio/vowel-03-5.wav",
+          "contrastGroupId": "vowel-03",
+          "contrastPosition": "vowel",
+          "targetIpa": "/baɪs/",
+          "targetPhoneme": "aɪ",
+          "cueCategory": "mid",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Biss",
+              "ipa": "/bɪs/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 2,
+              "text": "Bus",
+              "ipa": "/bʊs/",
+              "phoneme": "ʊ"
+            },
+            {
+              "index": 3,
+              "text": "Boss",
+              "ipa": "/bɔs/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 4,
+              "text": "büß",
+              "ipa": "/byːs/",
+              "phoneme": "yː"
+            },
+            {
+              "index": 5,
+              "text": "beiß",
+              "ipa": "/baɪs/",
+              "phoneme": "aɪ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-04-1",
+          "spokenText": "Riss",
+          "canonicalResponse": "Riss",
+          "audioFile": "audio/vowel-04-1.wav",
+          "contrastGroupId": "vowel-04",
+          "contrastPosition": "vowel",
+          "targetIpa": "/ʁɪs/",
+          "targetPhoneme": "ɪ",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Riss",
+              "ipa": "/ʁɪs/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 2,
+              "text": "Ross",
+              "ipa": "/ʁɔs/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 3,
+              "text": "Ruß",
+              "ipa": "/ʁuːs/",
+              "phoneme": "uː"
+            },
+            {
+              "index": 4,
+              "text": "Reis",
+              "ipa": "/ʁaɪs/",
+              "phoneme": "aɪ"
+            },
+            {
+              "index": 5,
+              "text": "raus",
+              "ipa": "/ʁaʊs/",
+              "phoneme": "aʊ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-05-2",
+          "spokenText": "wähl",
+          "canonicalResponse": "wähl",
+          "audioFile": "audio/vowel-05-2.wav",
+          "contrastGroupId": "vowel-05",
+          "contrastPosition": "vowel",
+          "targetIpa": "/vɛːl/",
+          "targetPhoneme": "ɛː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Wahl",
+              "ipa": "/vaːl/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "wähl",
+              "ipa": "/vɛːl/",
+              "phoneme": "ɛː"
+            },
+            {
+              "index": 3,
+              "text": "will",
+              "ipa": "/vɪl/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 4,
+              "text": "wohl",
+              "ipa": "/voːl/",
+              "phoneme": "oː"
+            },
+            {
+              "index": 5,
+              "text": "wühl",
+              "ipa": "/vyːl/",
+              "phoneme": "yː"
+            }
+          ]
+        },
+        {
+          "id": "vowel-06-3",
+          "spokenText": "litt",
+          "canonicalResponse": "litt",
+          "audioFile": "audio/vowel-06-3.wav",
+          "contrastGroupId": "vowel-06",
+          "contrastPosition": "vowel",
+          "targetIpa": "/lɪt/",
+          "targetPhoneme": "ɪ",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Lied",
+              "ipa": "/liːt/",
+              "phoneme": "iː"
+            },
+            {
+              "index": 2,
+              "text": "lädt",
+              "ipa": "/lɛːt/",
+              "phoneme": "ɛː"
+            },
+            {
+              "index": 3,
+              "text": "litt",
+              "ipa": "/lɪt/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 4,
+              "text": "laut",
+              "ipa": "/laʊt/",
+              "phoneme": "aʊ"
+            },
+            {
+              "index": 5,
+              "text": "löt",
+              "ipa": "/løːt/",
+              "phoneme": "øː"
+            }
+          ]
+        },
+        {
+          "id": "vowel-07-4",
+          "spokenText": "Teer",
+          "canonicalResponse": "Teer",
+          "audioFile": "audio/vowel-07-4.wav",
+          "contrastGroupId": "vowel-07",
+          "contrastPosition": "vowel",
+          "targetIpa": "/teːɐ̯/",
+          "targetPhoneme": "eː",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Tier",
+              "ipa": "/tiːɐ̯/",
+              "phoneme": "iː"
+            },
+            {
+              "index": 2,
+              "text": "Tür",
+              "ipa": "/tyːɐ̯/",
+              "phoneme": "yː"
+            },
+            {
+              "index": 3,
+              "text": "Tor",
+              "ipa": "/toːɐ̯/",
+              "phoneme": "oː"
+            },
+            {
+              "index": 4,
+              "text": "Teer",
+              "ipa": "/teːɐ̯/",
+              "phoneme": "eː"
+            },
+            {
+              "index": 5,
+              "text": "Tour",
+              "ipa": "/tuːɐ̯/",
+              "phoneme": "uː"
+            }
+          ]
+        },
+        {
+          "id": "vowel-08-5",
+          "spokenText": "Hain",
+          "canonicalResponse": "Hain",
+          "audioFile": "audio/vowel-08-5.wav",
+          "contrastGroupId": "vowel-08",
+          "contrastPosition": "vowel",
+          "targetIpa": "/haɪn/",
+          "targetPhoneme": "aɪ",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Hahn",
+              "ipa": "/haːn/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "hin",
+              "ipa": "/hɪn/",
+              "phoneme": "ɪ"
+            },
+            {
+              "index": 3,
+              "text": "Huhn",
+              "ipa": "/huːn/",
+              "phoneme": "uː"
+            },
+            {
+              "index": 4,
+              "text": "höhn",
+              "ipa": "/høːn/",
+              "phoneme": "øː"
+            },
+            {
+              "index": 5,
+              "text": "Hain",
+              "ipa": "/haɪn/",
+              "phoneme": "aɪ"
+            }
+          ]
+        },
+        {
+          "id": "vowel-09-1",
+          "spokenText": "Mal",
+          "canonicalResponse": "Mal",
+          "audioFile": "audio/vowel-09-1.wav",
+          "contrastGroupId": "vowel-09",
+          "contrastPosition": "vowel",
+          "targetIpa": "/maːl/",
+          "targetPhoneme": "aː",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Mal",
+              "ipa": "/maːl/",
+              "phoneme": "aː"
+            },
+            {
+              "index": 2,
+              "text": "Mehl",
+              "ipa": "/meːl/",
+              "phoneme": "eː"
+            },
+            {
+              "index": 3,
+              "text": "Müll",
+              "ipa": "/mʏl/",
+              "phoneme": "ʏ"
+            },
+            {
+              "index": 4,
+              "text": "Moll",
+              "ipa": "/mɔl/",
+              "phoneme": "ɔ"
+            },
+            {
+              "index": 5,
+              "text": "Maul",
+              "ipa": "/maʊl/",
+              "phoneme": "aʊ"
+            }
+          ]
+        },
+        {
+          "id": "final-01-2",
+          "spokenText": "Raum",
+          "canonicalResponse": "Raum",
+          "audioFile": "audio/final-01-2.wav",
+          "contrastGroupId": "final-01",
+          "contrastPosition": "final",
+          "targetIpa": "/ʁaʊm/",
+          "targetPhoneme": "m",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Rauch",
+              "ipa": "/ʁaʊx/",
+              "phoneme": "x"
+            },
+            {
+              "index": 2,
+              "text": "Raum",
+              "ipa": "/ʁaʊm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 3,
+              "text": "rauf",
+              "ipa": "/ʁaʊf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 4,
+              "text": "Raub",
+              "ipa": "/ʁaʊp/",
+              "phoneme": "p"
+            },
+            {
+              "index": 5,
+              "text": "Rausch",
+              "ipa": "/ʁaʊʃ/",
+              "phoneme": "ʃ"
+            }
+          ]
+        },
+        {
+          "id": "final-02-3",
+          "spokenText": "weiß",
+          "canonicalResponse": "weiß",
+          "audioFile": "audio/final-02-3.wav",
+          "contrastGroupId": "final-02",
+          "contrastPosition": "final",
+          "targetIpa": "/vaɪs/",
+          "targetPhoneme": "s",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Wein",
+              "ipa": "/vaɪn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 2,
+              "text": "weit",
+              "ipa": "/vaɪt/",
+              "phoneme": "t"
+            },
+            {
+              "index": 3,
+              "text": "weiß",
+              "ipa": "/vaɪs/",
+              "phoneme": "s"
+            },
+            {
+              "index": 4,
+              "text": "weil",
+              "ipa": "/vaɪl/",
+              "phoneme": "l"
+            },
+            {
+              "index": 5,
+              "text": "Weib",
+              "ipa": "/vaɪp/",
+              "phoneme": "p"
+            }
+          ]
+        },
+        {
+          "id": "final-03-4",
+          "spokenText": "reif",
+          "canonicalResponse": "reif",
+          "audioFile": "audio/final-03-4.wav",
+          "contrastGroupId": "final-03",
+          "contrastPosition": "final",
+          "targetIpa": "/ʁaɪf/",
+          "targetPhoneme": "f",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Reim",
+              "ipa": "/ʁaɪm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 2,
+              "text": "rein",
+              "ipa": "/ʁaɪn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 3,
+              "text": "Reiz",
+              "ipa": "/ʁaɪts/",
+              "phoneme": "ts"
+            },
+            {
+              "index": 4,
+              "text": "reif",
+              "ipa": "/ʁaɪf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 5,
+              "text": "reib",
+              "ipa": "/ʁaɪp/",
+              "phoneme": "p"
+            }
+          ]
+        },
+        {
+          "id": "final-04-5",
+          "spokenText": "log",
+          "canonicalResponse": "log",
+          "audioFile": "audio/final-04-5.wav",
+          "contrastGroupId": "final-04",
+          "contrastPosition": "final",
+          "targetIpa": "/loːk/",
+          "targetPhoneme": "k",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 5,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Lohn",
+              "ipa": "/loːn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 2,
+              "text": "Los",
+              "ipa": "/loːs/",
+              "phoneme": "s"
+            },
+            {
+              "index": 3,
+              "text": "Lot",
+              "ipa": "/loːt/",
+              "phoneme": "t"
+            },
+            {
+              "index": 4,
+              "text": "Lob",
+              "ipa": "/loːp/",
+              "phoneme": "p"
+            },
+            {
+              "index": 5,
+              "text": "log",
+              "ipa": "/loːk/",
+              "phoneme": "k"
+            }
+          ]
+        },
+        {
+          "id": "final-05-1",
+          "spokenText": "Graf",
+          "canonicalResponse": "Graf",
+          "audioFile": "audio/final-05-1.wav",
+          "contrastGroupId": "final-05",
+          "contrastPosition": "final",
+          "targetIpa": "/ɡʁaːf/",
+          "targetPhoneme": "f",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 1,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Graf",
+              "ipa": "/ɡʁaːf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 2,
+              "text": "Gram",
+              "ipa": "/ɡʁaːm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 3,
+              "text": "Grat",
+              "ipa": "/ɡʁaːt/",
+              "phoneme": "t"
+            },
+            {
+              "index": 4,
+              "text": "Grab",
+              "ipa": "/ɡʁaːp/",
+              "phoneme": "p"
+            },
+            {
+              "index": 5,
+              "text": "Gras",
+              "ipa": "/ɡʁaːs/",
+              "phoneme": "s"
+            }
+          ]
+        },
+        {
+          "id": "final-06-2",
+          "spokenText": "weh",
+          "canonicalResponse": "weh",
+          "audioFile": "audio/final-06-2.wav",
+          "contrastGroupId": "final-06",
+          "contrastPosition": "final",
+          "targetIpa": "/veː/",
+          "targetPhoneme": "∅",
+          "cueCategory": "low-mid",
+          "targetAlternativeIndex": 2,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Weg",
+              "ipa": "/veːk/",
+              "phoneme": "k"
+            },
+            {
+              "index": 2,
+              "text": "weh",
+              "ipa": "/veː/",
+              "phoneme": "∅"
+            },
+            {
+              "index": 3,
+              "text": "wen",
+              "ipa": "/veːn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 4,
+              "text": "wem",
+              "ipa": "/veːm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 5,
+              "text": "wer",
+              "ipa": "/veːɐ̯/",
+              "phoneme": "ɐ̯"
+            }
+          ]
+        },
+        {
+          "id": "final-07-3",
+          "spokenText": "hoch",
+          "canonicalResponse": "hoch",
+          "audioFile": "audio/final-07-3.wav",
+          "contrastGroupId": "final-07",
+          "contrastPosition": "final",
+          "targetIpa": "/hoːx/",
+          "targetPhoneme": "x",
+          "cueCategory": "broad",
+          "targetAlternativeIndex": 3,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Hof",
+              "ipa": "/hoːf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 2,
+              "text": "Hohn",
+              "ipa": "/hoːn/",
+              "phoneme": "n"
+            },
+            {
+              "index": 3,
+              "text": "hoch",
+              "ipa": "/hoːx/",
+              "phoneme": "x"
+            },
+            {
+              "index": 4,
+              "text": "hohl",
+              "ipa": "/hoːl/",
+              "phoneme": "l"
+            },
+            {
+              "index": 5,
+              "text": "hob",
+              "ipa": "/hoːp/",
+              "phoneme": "p"
+            }
+          ]
+        },
+        {
+          "id": "final-08-4",
+          "spokenText": "Schar",
+          "canonicalResponse": "Schar",
+          "audioFile": "audio/final-08-4.wav",
+          "contrastGroupId": "final-08",
+          "contrastPosition": "final",
+          "targetIpa": "/ʃaːɐ̯/",
+          "targetPhoneme": "ɐ̯",
+          "cueCategory": "high",
+          "targetAlternativeIndex": 4,
+          "responseAlternatives": [
+            {
+              "index": 1,
+              "text": "Schaf",
+              "ipa": "/ʃaːf/",
+              "phoneme": "f"
+            },
+            {
+              "index": 2,
+              "text": "Schal",
+              "ipa": "/ʃaːl/",
+              "phoneme": "l"
+            },
+            {
+              "index": 3,
+              "text": "Scham",
+              "ipa": "/ʃaːm/",
+              "phoneme": "m"
+            },
+            {
+              "index": 4,
+              "text": "Schar",
+              "ipa": "/ʃaːɐ̯/",
+              "phoneme": "ɐ̯"
+            },
+            {
+              "index": 5,
+              "text": "scharf",
+              "ipa": "/ʃaʁf/",
+              "phoneme": "ʁf"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "paradigm": "closed-set-phoneme-contrast",
+  "responseAlternativeCount": 5,
+  "chanceLevelPercent": 20
+}

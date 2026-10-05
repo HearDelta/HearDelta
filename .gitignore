@@ -1,0 +1,20 @@
+**/bin/
+**/obj/
+artifacts/
+*.user
+*.suo
+.vs/
+
+# Persönliche Messdaten bleiben außerhalb des Repositories.
+*.db
+*.db-shm
+*.db-wal
+measurements/
+exports/
+user-data/
+
+# Persönliche Notizen, Pilot-Audio und lokale Hilfsskripte.
+diagnostics/
+scripts/local/
+AGENTS.local.md
+CLAUDE.local.md

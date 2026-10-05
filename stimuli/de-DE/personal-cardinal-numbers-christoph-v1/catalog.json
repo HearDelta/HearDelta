@@ -1,0 +1,5631 @@
+{
+  "schemaVersion": 1,
+  "id": "de-DE-personal-cardinal-numbers-christoph-v1",
+  "version": "1.0.0",
+  "language": "de-DE",
+  "title": "Deutsches persönliches Kardinalzahlmaterial Christoph v1",
+  "license": "Azure AI Speech service output; private personal use",
+  "clinicallyValidated": false,
+  "itemsPerList": 25,
+  "lists": [
+    {
+      "id": "numbers-01",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-100",
+          "spokenText": "einhundert",
+          "canonicalResponse": "100",
+          "audioFile": "audio/cardinal-100.wav"
+        },
+        {
+          "id": "cardinal-136",
+          "spokenText": "einhundertsechsunddreißig",
+          "canonicalResponse": "136",
+          "audioFile": "audio/cardinal-136.wav"
+        },
+        {
+          "id": "cardinal-172",
+          "spokenText": "einhundertzweiundsiebzig",
+          "canonicalResponse": "172",
+          "audioFile": "audio/cardinal-172.wav"
+        },
+        {
+          "id": "cardinal-208",
+          "spokenText": "zweihundertacht",
+          "canonicalResponse": "208",
+          "audioFile": "audio/cardinal-208.wav"
+        },
+        {
+          "id": "cardinal-244",
+          "spokenText": "zweihundertvierundvierzig",
+          "canonicalResponse": "244",
+          "audioFile": "audio/cardinal-244.wav"
+        },
+        {
+          "id": "cardinal-280",
+          "spokenText": "zweihundertachtzig",
+          "canonicalResponse": "280",
+          "audioFile": "audio/cardinal-280.wav"
+        },
+        {
+          "id": "cardinal-316",
+          "spokenText": "dreihundertsechzehn",
+          "canonicalResponse": "316",
+          "audioFile": "audio/cardinal-316.wav"
+        },
+        {
+          "id": "cardinal-352",
+          "spokenText": "dreihundertzweiundfünfzig",
+          "canonicalResponse": "352",
+          "audioFile": "audio/cardinal-352.wav"
+        },
+        {
+          "id": "cardinal-388",
+          "spokenText": "dreihundertachtundachtzig",
+          "canonicalResponse": "388",
+          "audioFile": "audio/cardinal-388.wav"
+        },
+        {
+          "id": "cardinal-424",
+          "spokenText": "vierhundertvierundzwanzig",
+          "canonicalResponse": "424",
+          "audioFile": "audio/cardinal-424.wav"
+        },
+        {
+          "id": "cardinal-460",
+          "spokenText": "vierhundertsechzig",
+          "canonicalResponse": "460",
+          "audioFile": "audio/cardinal-460.wav"
+        },
+        {
+          "id": "cardinal-496",
+          "spokenText": "vierhundertsechsundneunzig",
+          "canonicalResponse": "496",
+          "audioFile": "audio/cardinal-496.wav"
+        },
+        {
+          "id": "cardinal-532",
+          "spokenText": "fünfhundertzweiunddreißig",
+          "canonicalResponse": "532",
+          "audioFile": "audio/cardinal-532.wav"
+        },
+        {
+          "id": "cardinal-568",
+          "spokenText": "fünfhundertachtundsechzig",
+          "canonicalResponse": "568",
+          "audioFile": "audio/cardinal-568.wav"
+        },
+        {
+          "id": "cardinal-604",
+          "spokenText": "sechshundertvier",
+          "canonicalResponse": "604",
+          "audioFile": "audio/cardinal-604.wav"
+        },
+        {
+          "id": "cardinal-640",
+          "spokenText": "sechshundertvierzig",
+          "canonicalResponse": "640",
+          "audioFile": "audio/cardinal-640.wav"
+        },
+        {
+          "id": "cardinal-676",
+          "spokenText": "sechshundertsechsundsiebzig",
+          "canonicalResponse": "676",
+          "audioFile": "audio/cardinal-676.wav"
+        },
+        {
+          "id": "cardinal-712",
+          "spokenText": "siebenhundertzwölf",
+          "canonicalResponse": "712",
+          "audioFile": "audio/cardinal-712.wav"
+        },
+        {
+          "id": "cardinal-748",
+          "spokenText": "siebenhundertachtundvierzig",
+          "canonicalResponse": "748",
+          "audioFile": "audio/cardinal-748.wav"
+        },
+        {
+          "id": "cardinal-784",
+          "spokenText": "siebenhundertvierundachtzig",
+          "canonicalResponse": "784",
+          "audioFile": "audio/cardinal-784.wav"
+        },
+        {
+          "id": "cardinal-820",
+          "spokenText": "achthundertzwanzig",
+          "canonicalResponse": "820",
+          "audioFile": "audio/cardinal-820.wav"
+        },
+        {
+          "id": "cardinal-856",
+          "spokenText": "achthundertsechsundfünfzig",
+          "canonicalResponse": "856",
+          "audioFile": "audio/cardinal-856.wav"
+        },
+        {
+          "id": "cardinal-892",
+          "spokenText": "achthundertzweiundneunzig",
+          "canonicalResponse": "892",
+          "audioFile": "audio/cardinal-892.wav"
+        },
+        {
+          "id": "cardinal-928",
+          "spokenText": "neunhundertachtundzwanzig",
+          "canonicalResponse": "928",
+          "audioFile": "audio/cardinal-928.wav"
+        },
+        {
+          "id": "cardinal-964",
+          "spokenText": "neunhundertvierundsechzig",
+          "canonicalResponse": "964",
+          "audioFile": "audio/cardinal-964.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-02",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-101",
+          "spokenText": "einhunderteins",
+          "canonicalResponse": "101",
+          "audioFile": "audio/cardinal-101.wav"
+        },
+        {
+          "id": "cardinal-137",
+          "spokenText": "einhundertsiebenunddreißig",
+          "canonicalResponse": "137",
+          "audioFile": "audio/cardinal-137.wav"
+        },
+        {
+          "id": "cardinal-173",
+          "spokenText": "einhundertdreiundsiebzig",
+          "canonicalResponse": "173",
+          "audioFile": "audio/cardinal-173.wav"
+        },
+        {
+          "id": "cardinal-209",
+          "spokenText": "zweihundertneun",
+          "canonicalResponse": "209",
+          "audioFile": "audio/cardinal-209.wav"
+        },
+        {
+          "id": "cardinal-245",
+          "spokenText": "zweihundertfünfundvierzig",
+          "canonicalResponse": "245",
+          "audioFile": "audio/cardinal-245.wav"
+        },
+        {
+          "id": "cardinal-281",
+          "spokenText": "zweihunderteinundachtzig",
+          "canonicalResponse": "281",
+          "audioFile": "audio/cardinal-281.wav"
+        },
+        {
+          "id": "cardinal-317",
+          "spokenText": "dreihundertsiebzehn",
+          "canonicalResponse": "317",
+          "audioFile": "audio/cardinal-317.wav"
+        },
+        {
+          "id": "cardinal-353",
+          "spokenText": "dreihundertdreiundfünfzig",
+          "canonicalResponse": "353",
+          "audioFile": "audio/cardinal-353.wav"
+        },
+        {
+          "id": "cardinal-389",
+          "spokenText": "dreihundertneunundachtzig",
+          "canonicalResponse": "389",
+          "audioFile": "audio/cardinal-389.wav"
+        },
+        {
+          "id": "cardinal-425",
+          "spokenText": "vierhundertfünfundzwanzig",
+          "canonicalResponse": "425",
+          "audioFile": "audio/cardinal-425.wav"
+        },
+        {
+          "id": "cardinal-461",
+          "spokenText": "vierhunderteinundsechzig",
+          "canonicalResponse": "461",
+          "audioFile": "audio/cardinal-461.wav"
+        },
+        {
+          "id": "cardinal-497",
+          "spokenText": "vierhundertsiebenundneunzig",
+          "canonicalResponse": "497",
+          "audioFile": "audio/cardinal-497.wav"
+        },
+        {
+          "id": "cardinal-533",
+          "spokenText": "fünfhundertdreiunddreißig",
+          "canonicalResponse": "533",
+          "audioFile": "audio/cardinal-533.wav"
+        },
+        {
+          "id": "cardinal-569",
+          "spokenText": "fünfhundertneunundsechzig",
+          "canonicalResponse": "569",
+          "audioFile": "audio/cardinal-569.wav"
+        },
+        {
+          "id": "cardinal-605",
+          "spokenText": "sechshundertfünf",
+          "canonicalResponse": "605",
+          "audioFile": "audio/cardinal-605.wav"
+        },
+        {
+          "id": "cardinal-641",
+          "spokenText": "sechshunderteinundvierzig",
+          "canonicalResponse": "641",
+          "audioFile": "audio/cardinal-641.wav"
+        },
+        {
+          "id": "cardinal-677",
+          "spokenText": "sechshundertsiebenundsiebzig",
+          "canonicalResponse": "677",
+          "audioFile": "audio/cardinal-677.wav"
+        },
+        {
+          "id": "cardinal-713",
+          "spokenText": "siebenhundertdreizehn",
+          "canonicalResponse": "713",
+          "audioFile": "audio/cardinal-713.wav"
+        },
+        {
+          "id": "cardinal-749",
+          "spokenText": "siebenhundertneunundvierzig",
+          "canonicalResponse": "749",
+          "audioFile": "audio/cardinal-749.wav"
+        },
+        {
+          "id": "cardinal-785",
+          "spokenText": "siebenhundertfünfundachtzig",
+          "canonicalResponse": "785",
+          "audioFile": "audio/cardinal-785.wav"
+        },
+        {
+          "id": "cardinal-821",
+          "spokenText": "achthunderteinundzwanzig",
+          "canonicalResponse": "821",
+          "audioFile": "audio/cardinal-821.wav"
+        },
+        {
+          "id": "cardinal-857",
+          "spokenText": "achthundertsiebenundfünfzig",
+          "canonicalResponse": "857",
+          "audioFile": "audio/cardinal-857.wav"
+        },
+        {
+          "id": "cardinal-893",
+          "spokenText": "achthundertdreiundneunzig",
+          "canonicalResponse": "893",
+          "audioFile": "audio/cardinal-893.wav"
+        },
+        {
+          "id": "cardinal-929",
+          "spokenText": "neunhundertneunundzwanzig",
+          "canonicalResponse": "929",
+          "audioFile": "audio/cardinal-929.wav"
+        },
+        {
+          "id": "cardinal-965",
+          "spokenText": "neunhundertfünfundsechzig",
+          "canonicalResponse": "965",
+          "audioFile": "audio/cardinal-965.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-03",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-102",
+          "spokenText": "einhundertzwei",
+          "canonicalResponse": "102",
+          "audioFile": "audio/cardinal-102.wav"
+        },
+        {
+          "id": "cardinal-138",
+          "spokenText": "einhundertachtunddreißig",
+          "canonicalResponse": "138",
+          "audioFile": "audio/cardinal-138.wav"
+        },
+        {
+          "id": "cardinal-174",
+          "spokenText": "einhundertvierundsiebzig",
+          "canonicalResponse": "174",
+          "audioFile": "audio/cardinal-174.wav"
+        },
+        {
+          "id": "cardinal-210",
+          "spokenText": "zweihundertzehn",
+          "canonicalResponse": "210",
+          "audioFile": "audio/cardinal-210.wav"
+        },
+        {
+          "id": "cardinal-246",
+          "spokenText": "zweihundertsechsundvierzig",
+          "canonicalResponse": "246",
+          "audioFile": "audio/cardinal-246.wav"
+        },
+        {
+          "id": "cardinal-282",
+          "spokenText": "zweihundertzweiundachtzig",
+          "canonicalResponse": "282",
+          "audioFile": "audio/cardinal-282.wav"
+        },
+        {
+          "id": "cardinal-318",
+          "spokenText": "dreihundertachtzehn",
+          "canonicalResponse": "318",
+          "audioFile": "audio/cardinal-318.wav"
+        },
+        {
+          "id": "cardinal-354",
+          "spokenText": "dreihundertvierundfünfzig",
+          "canonicalResponse": "354",
+          "audioFile": "audio/cardinal-354.wav"
+        },
+        {
+          "id": "cardinal-390",
+          "spokenText": "dreihundertneunzig",
+          "canonicalResponse": "390",
+          "audioFile": "audio/cardinal-390.wav"
+        },
+        {
+          "id": "cardinal-426",
+          "spokenText": "vierhundertsechsundzwanzig",
+          "canonicalResponse": "426",
+          "audioFile": "audio/cardinal-426.wav"
+        },
+        {
+          "id": "cardinal-462",
+          "spokenText": "vierhundertzweiundsechzig",
+          "canonicalResponse": "462",
+          "audioFile": "audio/cardinal-462.wav"
+        },
+        {
+          "id": "cardinal-498",
+          "spokenText": "vierhundertachtundneunzig",
+          "canonicalResponse": "498",
+          "audioFile": "audio/cardinal-498.wav"
+        },
+        {
+          "id": "cardinal-534",
+          "spokenText": "fünfhundertvierunddreißig",
+          "canonicalResponse": "534",
+          "audioFile": "audio/cardinal-534.wav"
+        },
+        {
+          "id": "cardinal-570",
+          "spokenText": "fünfhundertsiebzig",
+          "canonicalResponse": "570",
+          "audioFile": "audio/cardinal-570.wav"
+        },
+        {
+          "id": "cardinal-606",
+          "spokenText": "sechshundertsechs",
+          "canonicalResponse": "606",
+          "audioFile": "audio/cardinal-606.wav"
+        },
+        {
+          "id": "cardinal-642",
+          "spokenText": "sechshundertzweiundvierzig",
+          "canonicalResponse": "642",
+          "audioFile": "audio/cardinal-642.wav"
+        },
+        {
+          "id": "cardinal-678",
+          "spokenText": "sechshundertachtundsiebzig",
+          "canonicalResponse": "678",
+          "audioFile": "audio/cardinal-678.wav"
+        },
+        {
+          "id": "cardinal-714",
+          "spokenText": "siebenhundertvierzehn",
+          "canonicalResponse": "714",
+          "audioFile": "audio/cardinal-714.wav"
+        },
+        {
+          "id": "cardinal-750",
+          "spokenText": "siebenhundertfünfzig",
+          "canonicalResponse": "750",
+          "audioFile": "audio/cardinal-750.wav"
+        },
+        {
+          "id": "cardinal-786",
+          "spokenText": "siebenhundertsechsundachtzig",
+          "canonicalResponse": "786",
+          "audioFile": "audio/cardinal-786.wav"
+        },
+        {
+          "id": "cardinal-822",
+          "spokenText": "achthundertzweiundzwanzig",
+          "canonicalResponse": "822",
+          "audioFile": "audio/cardinal-822.wav"
+        },
+        {
+          "id": "cardinal-858",
+          "spokenText": "achthundertachtundfünfzig",
+          "canonicalResponse": "858",
+          "audioFile": "audio/cardinal-858.wav"
+        },
+        {
+          "id": "cardinal-894",
+          "spokenText": "achthundertvierundneunzig",
+          "canonicalResponse": "894",
+          "audioFile": "audio/cardinal-894.wav"
+        },
+        {
+          "id": "cardinal-930",
+          "spokenText": "neunhundertdreißig",
+          "canonicalResponse": "930",
+          "audioFile": "audio/cardinal-930.wav"
+        },
+        {
+          "id": "cardinal-966",
+          "spokenText": "neunhundertsechsundsechzig",
+          "canonicalResponse": "966",
+          "audioFile": "audio/cardinal-966.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-04",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-103",
+          "spokenText": "einhundertdrei",
+          "canonicalResponse": "103",
+          "audioFile": "audio/cardinal-103.wav"
+        },
+        {
+          "id": "cardinal-139",
+          "spokenText": "einhundertneununddreißig",
+          "canonicalResponse": "139",
+          "audioFile": "audio/cardinal-139.wav"
+        },
+        {
+          "id": "cardinal-175",
+          "spokenText": "einhundertfünfundsiebzig",
+          "canonicalResponse": "175",
+          "audioFile": "audio/cardinal-175.wav"
+        },
+        {
+          "id": "cardinal-211",
+          "spokenText": "zweihundertelf",
+          "canonicalResponse": "211",
+          "audioFile": "audio/cardinal-211.wav"
+        },
+        {
+          "id": "cardinal-247",
+          "spokenText": "zweihundertsiebenundvierzig",
+          "canonicalResponse": "247",
+          "audioFile": "audio/cardinal-247.wav"
+        },
+        {
+          "id": "cardinal-283",
+          "spokenText": "zweihundertdreiundachtzig",
+          "canonicalResponse": "283",
+          "audioFile": "audio/cardinal-283.wav"
+        },
+        {
+          "id": "cardinal-319",
+          "spokenText": "dreihundertneunzehn",
+          "canonicalResponse": "319",
+          "audioFile": "audio/cardinal-319.wav"
+        },
+        {
+          "id": "cardinal-355",
+          "spokenText": "dreihundertfünfundfünfzig",
+          "canonicalResponse": "355",
+          "audioFile": "audio/cardinal-355.wav"
+        },
+        {
+          "id": "cardinal-391",
+          "spokenText": "dreihunderteinundneunzig",
+          "canonicalResponse": "391",
+          "audioFile": "audio/cardinal-391.wav"
+        },
+        {
+          "id": "cardinal-427",
+          "spokenText": "vierhundertsiebenundzwanzig",
+          "canonicalResponse": "427",
+          "audioFile": "audio/cardinal-427.wav"
+        },
+        {
+          "id": "cardinal-463",
+          "spokenText": "vierhundertdreiundsechzig",
+          "canonicalResponse": "463",
+          "audioFile": "audio/cardinal-463.wav"
+        },
+        {
+          "id": "cardinal-499",
+          "spokenText": "vierhundertneunundneunzig",
+          "canonicalResponse": "499",
+          "audioFile": "audio/cardinal-499.wav"
+        },
+        {
+          "id": "cardinal-535",
+          "spokenText": "fünfhundertfünfunddreißig",
+          "canonicalResponse": "535",
+          "audioFile": "audio/cardinal-535.wav"
+        },
+        {
+          "id": "cardinal-571",
+          "spokenText": "fünfhunderteinundsiebzig",
+          "canonicalResponse": "571",
+          "audioFile": "audio/cardinal-571.wav"
+        },
+        {
+          "id": "cardinal-607",
+          "spokenText": "sechshundertsieben",
+          "canonicalResponse": "607",
+          "audioFile": "audio/cardinal-607.wav"
+        },
+        {
+          "id": "cardinal-643",
+          "spokenText": "sechshundertdreiundvierzig",
+          "canonicalResponse": "643",
+          "audioFile": "audio/cardinal-643.wav"
+        },
+        {
+          "id": "cardinal-679",
+          "spokenText": "sechshundertneunundsiebzig",
+          "canonicalResponse": "679",
+          "audioFile": "audio/cardinal-679.wav"
+        },
+        {
+          "id": "cardinal-715",
+          "spokenText": "siebenhundertfünfzehn",
+          "canonicalResponse": "715",
+          "audioFile": "audio/cardinal-715.wav"
+        },
+        {
+          "id": "cardinal-751",
+          "spokenText": "siebenhunderteinundfünfzig",
+          "canonicalResponse": "751",
+          "audioFile": "audio/cardinal-751.wav"
+        },
+        {
+          "id": "cardinal-787",
+          "spokenText": "siebenhundertsiebenundachtzig",
+          "canonicalResponse": "787",
+          "audioFile": "audio/cardinal-787.wav"
+        },
+        {
+          "id": "cardinal-823",
+          "spokenText": "achthundertdreiundzwanzig",
+          "canonicalResponse": "823",
+          "audioFile": "audio/cardinal-823.wav"
+        },
+        {
+          "id": "cardinal-859",
+          "spokenText": "achthundertneunundfünfzig",
+          "canonicalResponse": "859",
+          "audioFile": "audio/cardinal-859.wav"
+        },
+        {
+          "id": "cardinal-895",
+          "spokenText": "achthundertfünfundneunzig",
+          "canonicalResponse": "895",
+          "audioFile": "audio/cardinal-895.wav"
+        },
+        {
+          "id": "cardinal-931",
+          "spokenText": "neunhunderteinunddreißig",
+          "canonicalResponse": "931",
+          "audioFile": "audio/cardinal-931.wav"
+        },
+        {
+          "id": "cardinal-967",
+          "spokenText": "neunhundertsiebenundsechzig",
+          "canonicalResponse": "967",
+          "audioFile": "audio/cardinal-967.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-05",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-104",
+          "spokenText": "einhundertvier",
+          "canonicalResponse": "104",
+          "audioFile": "audio/cardinal-104.wav"
+        },
+        {
+          "id": "cardinal-140",
+          "spokenText": "einhundertvierzig",
+          "canonicalResponse": "140",
+          "audioFile": "audio/cardinal-140.wav"
+        },
+        {
+          "id": "cardinal-176",
+          "spokenText": "einhundertsechsundsiebzig",
+          "canonicalResponse": "176",
+          "audioFile": "audio/cardinal-176.wav"
+        },
+        {
+          "id": "cardinal-212",
+          "spokenText": "zweihundertzwölf",
+          "canonicalResponse": "212",
+          "audioFile": "audio/cardinal-212.wav"
+        },
+        {
+          "id": "cardinal-248",
+          "spokenText": "zweihundertachtundvierzig",
+          "canonicalResponse": "248",
+          "audioFile": "audio/cardinal-248.wav"
+        },
+        {
+          "id": "cardinal-284",
+          "spokenText": "zweihundertvierundachtzig",
+          "canonicalResponse": "284",
+          "audioFile": "audio/cardinal-284.wav"
+        },
+        {
+          "id": "cardinal-320",
+          "spokenText": "dreihundertzwanzig",
+          "canonicalResponse": "320",
+          "audioFile": "audio/cardinal-320.wav"
+        },
+        {
+          "id": "cardinal-356",
+          "spokenText": "dreihundertsechsundfünfzig",
+          "canonicalResponse": "356",
+          "audioFile": "audio/cardinal-356.wav"
+        },
+        {
+          "id": "cardinal-392",
+          "spokenText": "dreihundertzweiundneunzig",
+          "canonicalResponse": "392",
+          "audioFile": "audio/cardinal-392.wav"
+        },
+        {
+          "id": "cardinal-428",
+          "spokenText": "vierhundertachtundzwanzig",
+          "canonicalResponse": "428",
+          "audioFile": "audio/cardinal-428.wav"
+        },
+        {
+          "id": "cardinal-464",
+          "spokenText": "vierhundertvierundsechzig",
+          "canonicalResponse": "464",
+          "audioFile": "audio/cardinal-464.wav"
+        },
+        {
+          "id": "cardinal-500",
+          "spokenText": "fünfhundert",
+          "canonicalResponse": "500",
+          "audioFile": "audio/cardinal-500.wav"
+        },
+        {
+          "id": "cardinal-536",
+          "spokenText": "fünfhundertsechsunddreißig",
+          "canonicalResponse": "536",
+          "audioFile": "audio/cardinal-536.wav"
+        },
+        {
+          "id": "cardinal-572",
+          "spokenText": "fünfhundertzweiundsiebzig",
+          "canonicalResponse": "572",
+          "audioFile": "audio/cardinal-572.wav"
+        },
+        {
+          "id": "cardinal-608",
+          "spokenText": "sechshundertacht",
+          "canonicalResponse": "608",
+          "audioFile": "audio/cardinal-608.wav"
+        },
+        {
+          "id": "cardinal-644",
+          "spokenText": "sechshundertvierundvierzig",
+          "canonicalResponse": "644",
+          "audioFile": "audio/cardinal-644.wav"
+        },
+        {
+          "id": "cardinal-680",
+          "spokenText": "sechshundertachtzig",
+          "canonicalResponse": "680",
+          "audioFile": "audio/cardinal-680.wav"
+        },
+        {
+          "id": "cardinal-716",
+          "spokenText": "siebenhundertsechzehn",
+          "canonicalResponse": "716",
+          "audioFile": "audio/cardinal-716.wav"
+        },
+        {
+          "id": "cardinal-752",
+          "spokenText": "siebenhundertzweiundfünfzig",
+          "canonicalResponse": "752",
+          "audioFile": "audio/cardinal-752.wav"
+        },
+        {
+          "id": "cardinal-788",
+          "spokenText": "siebenhundertachtundachtzig",
+          "canonicalResponse": "788",
+          "audioFile": "audio/cardinal-788.wav"
+        },
+        {
+          "id": "cardinal-824",
+          "spokenText": "achthundertvierundzwanzig",
+          "canonicalResponse": "824",
+          "audioFile": "audio/cardinal-824.wav"
+        },
+        {
+          "id": "cardinal-860",
+          "spokenText": "achthundertsechzig",
+          "canonicalResponse": "860",
+          "audioFile": "audio/cardinal-860.wav"
+        },
+        {
+          "id": "cardinal-896",
+          "spokenText": "achthundertsechsundneunzig",
+          "canonicalResponse": "896",
+          "audioFile": "audio/cardinal-896.wav"
+        },
+        {
+          "id": "cardinal-932",
+          "spokenText": "neunhundertzweiunddreißig",
+          "canonicalResponse": "932",
+          "audioFile": "audio/cardinal-932.wav"
+        },
+        {
+          "id": "cardinal-968",
+          "spokenText": "neunhundertachtundsechzig",
+          "canonicalResponse": "968",
+          "audioFile": "audio/cardinal-968.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-06",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-105",
+          "spokenText": "einhundertfünf",
+          "canonicalResponse": "105",
+          "audioFile": "audio/cardinal-105.wav"
+        },
+        {
+          "id": "cardinal-141",
+          "spokenText": "einhunderteinundvierzig",
+          "canonicalResponse": "141",
+          "audioFile": "audio/cardinal-141.wav"
+        },
+        {
+          "id": "cardinal-177",
+          "spokenText": "einhundertsiebenundsiebzig",
+          "canonicalResponse": "177",
+          "audioFile": "audio/cardinal-177.wav"
+        },
+        {
+          "id": "cardinal-213",
+          "spokenText": "zweihundertdreizehn",
+          "canonicalResponse": "213",
+          "audioFile": "audio/cardinal-213.wav"
+        },
+        {
+          "id": "cardinal-249",
+          "spokenText": "zweihundertneunundvierzig",
+          "canonicalResponse": "249",
+          "audioFile": "audio/cardinal-249.wav"
+        },
+        {
+          "id": "cardinal-285",
+          "spokenText": "zweihundertfünfundachtzig",
+          "canonicalResponse": "285",
+          "audioFile": "audio/cardinal-285.wav"
+        },
+        {
+          "id": "cardinal-321",
+          "spokenText": "dreihunderteinundzwanzig",
+          "canonicalResponse": "321",
+          "audioFile": "audio/cardinal-321.wav"
+        },
+        {
+          "id": "cardinal-357",
+          "spokenText": "dreihundertsiebenundfünfzig",
+          "canonicalResponse": "357",
+          "audioFile": "audio/cardinal-357.wav"
+        },
+        {
+          "id": "cardinal-393",
+          "spokenText": "dreihundertdreiundneunzig",
+          "canonicalResponse": "393",
+          "audioFile": "audio/cardinal-393.wav"
+        },
+        {
+          "id": "cardinal-429",
+          "spokenText": "vierhundertneunundzwanzig",
+          "canonicalResponse": "429",
+          "audioFile": "audio/cardinal-429.wav"
+        },
+        {
+          "id": "cardinal-465",
+          "spokenText": "vierhundertfünfundsechzig",
+          "canonicalResponse": "465",
+          "audioFile": "audio/cardinal-465.wav"
+        },
+        {
+          "id": "cardinal-501",
+          "spokenText": "fünfhunderteins",
+          "canonicalResponse": "501",
+          "audioFile": "audio/cardinal-501.wav"
+        },
+        {
+          "id": "cardinal-537",
+          "spokenText": "fünfhundertsiebenunddreißig",
+          "canonicalResponse": "537",
+          "audioFile": "audio/cardinal-537.wav"
+        },
+        {
+          "id": "cardinal-573",
+          "spokenText": "fünfhundertdreiundsiebzig",
+          "canonicalResponse": "573",
+          "audioFile": "audio/cardinal-573.wav"
+        },
+        {
+          "id": "cardinal-609",
+          "spokenText": "sechshundertneun",
+          "canonicalResponse": "609",
+          "audioFile": "audio/cardinal-609.wav"
+        },
+        {
+          "id": "cardinal-645",
+          "spokenText": "sechshundertfünfundvierzig",
+          "canonicalResponse": "645",
+          "audioFile": "audio/cardinal-645.wav"
+        },
+        {
+          "id": "cardinal-681",
+          "spokenText": "sechshunderteinundachtzig",
+          "canonicalResponse": "681",
+          "audioFile": "audio/cardinal-681.wav"
+        },
+        {
+          "id": "cardinal-717",
+          "spokenText": "siebenhundertsiebzehn",
+          "canonicalResponse": "717",
+          "audioFile": "audio/cardinal-717.wav"
+        },
+        {
+          "id": "cardinal-753",
+          "spokenText": "siebenhundertdreiundfünfzig",
+          "canonicalResponse": "753",
+          "audioFile": "audio/cardinal-753.wav"
+        },
+        {
+          "id": "cardinal-789",
+          "spokenText": "siebenhundertneunundachtzig",
+          "canonicalResponse": "789",
+          "audioFile": "audio/cardinal-789.wav"
+        },
+        {
+          "id": "cardinal-825",
+          "spokenText": "achthundertfünfundzwanzig",
+          "canonicalResponse": "825",
+          "audioFile": "audio/cardinal-825.wav"
+        },
+        {
+          "id": "cardinal-861",
+          "spokenText": "achthunderteinundsechzig",
+          "canonicalResponse": "861",
+          "audioFile": "audio/cardinal-861.wav"
+        },
+        {
+          "id": "cardinal-897",
+          "spokenText": "achthundertsiebenundneunzig",
+          "canonicalResponse": "897",
+          "audioFile": "audio/cardinal-897.wav"
+        },
+        {
+          "id": "cardinal-933",
+          "spokenText": "neunhundertdreiunddreißig",
+          "canonicalResponse": "933",
+          "audioFile": "audio/cardinal-933.wav"
+        },
+        {
+          "id": "cardinal-969",
+          "spokenText": "neunhundertneunundsechzig",
+          "canonicalResponse": "969",
+          "audioFile": "audio/cardinal-969.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-07",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-106",
+          "spokenText": "einhundertsechs",
+          "canonicalResponse": "106",
+          "audioFile": "audio/cardinal-106.wav"
+        },
+        {
+          "id": "cardinal-142",
+          "spokenText": "einhundertzweiundvierzig",
+          "canonicalResponse": "142",
+          "audioFile": "audio/cardinal-142.wav"
+        },
+        {
+          "id": "cardinal-178",
+          "spokenText": "einhundertachtundsiebzig",
+          "canonicalResponse": "178",
+          "audioFile": "audio/cardinal-178.wav"
+        },
+        {
+          "id": "cardinal-214",
+          "spokenText": "zweihundertvierzehn",
+          "canonicalResponse": "214",
+          "audioFile": "audio/cardinal-214.wav"
+        },
+        {
+          "id": "cardinal-250",
+          "spokenText": "zweihundertfünfzig",
+          "canonicalResponse": "250",
+          "audioFile": "audio/cardinal-250.wav"
+        },
+        {
+          "id": "cardinal-286",
+          "spokenText": "zweihundertsechsundachtzig",
+          "canonicalResponse": "286",
+          "audioFile": "audio/cardinal-286.wav"
+        },
+        {
+          "id": "cardinal-322",
+          "spokenText": "dreihundertzweiundzwanzig",
+          "canonicalResponse": "322",
+          "audioFile": "audio/cardinal-322.wav"
+        },
+        {
+          "id": "cardinal-358",
+          "spokenText": "dreihundertachtundfünfzig",
+          "canonicalResponse": "358",
+          "audioFile": "audio/cardinal-358.wav"
+        },
+        {
+          "id": "cardinal-394",
+          "spokenText": "dreihundertvierundneunzig",
+          "canonicalResponse": "394",
+          "audioFile": "audio/cardinal-394.wav"
+        },
+        {
+          "id": "cardinal-430",
+          "spokenText": "vierhundertdreißig",
+          "canonicalResponse": "430",
+          "audioFile": "audio/cardinal-430.wav"
+        },
+        {
+          "id": "cardinal-466",
+          "spokenText": "vierhundertsechsundsechzig",
+          "canonicalResponse": "466",
+          "audioFile": "audio/cardinal-466.wav"
+        },
+        {
+          "id": "cardinal-502",
+          "spokenText": "fünfhundertzwei",
+          "canonicalResponse": "502",
+          "audioFile": "audio/cardinal-502.wav"
+        },
+        {
+          "id": "cardinal-538",
+          "spokenText": "fünfhundertachtunddreißig",
+          "canonicalResponse": "538",
+          "audioFile": "audio/cardinal-538.wav"
+        },
+        {
+          "id": "cardinal-574",
+          "spokenText": "fünfhundertvierundsiebzig",
+          "canonicalResponse": "574",
+          "audioFile": "audio/cardinal-574.wav"
+        },
+        {
+          "id": "cardinal-610",
+          "spokenText": "sechshundertzehn",
+          "canonicalResponse": "610",
+          "audioFile": "audio/cardinal-610.wav"
+        },
+        {
+          "id": "cardinal-646",
+          "spokenText": "sechshundertsechsundvierzig",
+          "canonicalResponse": "646",
+          "audioFile": "audio/cardinal-646.wav"
+        },
+        {
+          "id": "cardinal-682",
+          "spokenText": "sechshundertzweiundachtzig",
+          "canonicalResponse": "682",
+          "audioFile": "audio/cardinal-682.wav"
+        },
+        {
+          "id": "cardinal-718",
+          "spokenText": "siebenhundertachtzehn",
+          "canonicalResponse": "718",
+          "audioFile": "audio/cardinal-718.wav"
+        },
+        {
+          "id": "cardinal-754",
+          "spokenText": "siebenhundertvierundfünfzig",
+          "canonicalResponse": "754",
+          "audioFile": "audio/cardinal-754.wav"
+        },
+        {
+          "id": "cardinal-790",
+          "spokenText": "siebenhundertneunzig",
+          "canonicalResponse": "790",
+          "audioFile": "audio/cardinal-790.wav"
+        },
+        {
+          "id": "cardinal-826",
+          "spokenText": "achthundertsechsundzwanzig",
+          "canonicalResponse": "826",
+          "audioFile": "audio/cardinal-826.wav"
+        },
+        {
+          "id": "cardinal-862",
+          "spokenText": "achthundertzweiundsechzig",
+          "canonicalResponse": "862",
+          "audioFile": "audio/cardinal-862.wav"
+        },
+        {
+          "id": "cardinal-898",
+          "spokenText": "achthundertachtundneunzig",
+          "canonicalResponse": "898",
+          "audioFile": "audio/cardinal-898.wav"
+        },
+        {
+          "id": "cardinal-934",
+          "spokenText": "neunhundertvierunddreißig",
+          "canonicalResponse": "934",
+          "audioFile": "audio/cardinal-934.wav"
+        },
+        {
+          "id": "cardinal-970",
+          "spokenText": "neunhundertsiebzig",
+          "canonicalResponse": "970",
+          "audioFile": "audio/cardinal-970.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-08",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-107",
+          "spokenText": "einhundertsieben",
+          "canonicalResponse": "107",
+          "audioFile": "audio/cardinal-107.wav"
+        },
+        {
+          "id": "cardinal-143",
+          "spokenText": "einhundertdreiundvierzig",
+          "canonicalResponse": "143",
+          "audioFile": "audio/cardinal-143.wav"
+        },
+        {
+          "id": "cardinal-179",
+          "spokenText": "einhundertneunundsiebzig",
+          "canonicalResponse": "179",
+          "audioFile": "audio/cardinal-179.wav"
+        },
+        {
+          "id": "cardinal-215",
+          "spokenText": "zweihundertfünfzehn",
+          "canonicalResponse": "215",
+          "audioFile": "audio/cardinal-215.wav"
+        },
+        {
+          "id": "cardinal-251",
+          "spokenText": "zweihunderteinundfünfzig",
+          "canonicalResponse": "251",
+          "audioFile": "audio/cardinal-251.wav"
+        },
+        {
+          "id": "cardinal-287",
+          "spokenText": "zweihundertsiebenundachtzig",
+          "canonicalResponse": "287",
+          "audioFile": "audio/cardinal-287.wav"
+        },
+        {
+          "id": "cardinal-323",
+          "spokenText": "dreihundertdreiundzwanzig",
+          "canonicalResponse": "323",
+          "audioFile": "audio/cardinal-323.wav"
+        },
+        {
+          "id": "cardinal-359",
+          "spokenText": "dreihundertneunundfünfzig",
+          "canonicalResponse": "359",
+          "audioFile": "audio/cardinal-359.wav"
+        },
+        {
+          "id": "cardinal-395",
+          "spokenText": "dreihundertfünfundneunzig",
+          "canonicalResponse": "395",
+          "audioFile": "audio/cardinal-395.wav"
+        },
+        {
+          "id": "cardinal-431",
+          "spokenText": "vierhunderteinunddreißig",
+          "canonicalResponse": "431",
+          "audioFile": "audio/cardinal-431.wav"
+        },
+        {
+          "id": "cardinal-467",
+          "spokenText": "vierhundertsiebenundsechzig",
+          "canonicalResponse": "467",
+          "audioFile": "audio/cardinal-467.wav"
+        },
+        {
+          "id": "cardinal-503",
+          "spokenText": "fünfhundertdrei",
+          "canonicalResponse": "503",
+          "audioFile": "audio/cardinal-503.wav"
+        },
+        {
+          "id": "cardinal-539",
+          "spokenText": "fünfhundertneununddreißig",
+          "canonicalResponse": "539",
+          "audioFile": "audio/cardinal-539.wav"
+        },
+        {
+          "id": "cardinal-575",
+          "spokenText": "fünfhundertfünfundsiebzig",
+          "canonicalResponse": "575",
+          "audioFile": "audio/cardinal-575.wav"
+        },
+        {
+          "id": "cardinal-611",
+          "spokenText": "sechshundertelf",
+          "canonicalResponse": "611",
+          "audioFile": "audio/cardinal-611.wav"
+        },
+        {
+          "id": "cardinal-647",
+          "spokenText": "sechshundertsiebenundvierzig",
+          "canonicalResponse": "647",
+          "audioFile": "audio/cardinal-647.wav"
+        },
+        {
+          "id": "cardinal-683",
+          "spokenText": "sechshundertdreiundachtzig",
+          "canonicalResponse": "683",
+          "audioFile": "audio/cardinal-683.wav"
+        },
+        {
+          "id": "cardinal-719",
+          "spokenText": "siebenhundertneunzehn",
+          "canonicalResponse": "719",
+          "audioFile": "audio/cardinal-719.wav"
+        },
+        {
+          "id": "cardinal-755",
+          "spokenText": "siebenhundertfünfundfünfzig",
+          "canonicalResponse": "755",
+          "audioFile": "audio/cardinal-755.wav"
+        },
+        {
+          "id": "cardinal-791",
+          "spokenText": "siebenhunderteinundneunzig",
+          "canonicalResponse": "791",
+          "audioFile": "audio/cardinal-791.wav"
+        },
+        {
+          "id": "cardinal-827",
+          "spokenText": "achthundertsiebenundzwanzig",
+          "canonicalResponse": "827",
+          "audioFile": "audio/cardinal-827.wav"
+        },
+        {
+          "id": "cardinal-863",
+          "spokenText": "achthundertdreiundsechzig",
+          "canonicalResponse": "863",
+          "audioFile": "audio/cardinal-863.wav"
+        },
+        {
+          "id": "cardinal-899",
+          "spokenText": "achthundertneunundneunzig",
+          "canonicalResponse": "899",
+          "audioFile": "audio/cardinal-899.wav"
+        },
+        {
+          "id": "cardinal-935",
+          "spokenText": "neunhundertfünfunddreißig",
+          "canonicalResponse": "935",
+          "audioFile": "audio/cardinal-935.wav"
+        },
+        {
+          "id": "cardinal-971",
+          "spokenText": "neunhunderteinundsiebzig",
+          "canonicalResponse": "971",
+          "audioFile": "audio/cardinal-971.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-09",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-108",
+          "spokenText": "einhundertacht",
+          "canonicalResponse": "108",
+          "audioFile": "audio/cardinal-108.wav"
+        },
+        {
+          "id": "cardinal-144",
+          "spokenText": "einhundertvierundvierzig",
+          "canonicalResponse": "144",
+          "audioFile": "audio/cardinal-144.wav"
+        },
+        {
+          "id": "cardinal-180",
+          "spokenText": "einhundertachtzig",
+          "canonicalResponse": "180",
+          "audioFile": "audio/cardinal-180.wav"
+        },
+        {
+          "id": "cardinal-216",
+          "spokenText": "zweihundertsechzehn",
+          "canonicalResponse": "216",
+          "audioFile": "audio/cardinal-216.wav"
+        },
+        {
+          "id": "cardinal-252",
+          "spokenText": "zweihundertzweiundfünfzig",
+          "canonicalResponse": "252",
+          "audioFile": "audio/cardinal-252.wav"
+        },
+        {
+          "id": "cardinal-288",
+          "spokenText": "zweihundertachtundachtzig",
+          "canonicalResponse": "288",
+          "audioFile": "audio/cardinal-288.wav"
+        },
+        {
+          "id": "cardinal-324",
+          "spokenText": "dreihundertvierundzwanzig",
+          "canonicalResponse": "324",
+          "audioFile": "audio/cardinal-324.wav"
+        },
+        {
+          "id": "cardinal-360",
+          "spokenText": "dreihundertsechzig",
+          "canonicalResponse": "360",
+          "audioFile": "audio/cardinal-360.wav"
+        },
+        {
+          "id": "cardinal-396",
+          "spokenText": "dreihundertsechsundneunzig",
+          "canonicalResponse": "396",
+          "audioFile": "audio/cardinal-396.wav"
+        },
+        {
+          "id": "cardinal-432",
+          "spokenText": "vierhundertzweiunddreißig",
+          "canonicalResponse": "432",
+          "audioFile": "audio/cardinal-432.wav"
+        },
+        {
+          "id": "cardinal-468",
+          "spokenText": "vierhundertachtundsechzig",
+          "canonicalResponse": "468",
+          "audioFile": "audio/cardinal-468.wav"
+        },
+        {
+          "id": "cardinal-504",
+          "spokenText": "fünfhundertvier",
+          "canonicalResponse": "504",
+          "audioFile": "audio/cardinal-504.wav"
+        },
+        {
+          "id": "cardinal-540",
+          "spokenText": "fünfhundertvierzig",
+          "canonicalResponse": "540",
+          "audioFile": "audio/cardinal-540.wav"
+        },
+        {
+          "id": "cardinal-576",
+          "spokenText": "fünfhundertsechsundsiebzig",
+          "canonicalResponse": "576",
+          "audioFile": "audio/cardinal-576.wav"
+        },
+        {
+          "id": "cardinal-612",
+          "spokenText": "sechshundertzwölf",
+          "canonicalResponse": "612",
+          "audioFile": "audio/cardinal-612.wav"
+        },
+        {
+          "id": "cardinal-648",
+          "spokenText": "sechshundertachtundvierzig",
+          "canonicalResponse": "648",
+          "audioFile": "audio/cardinal-648.wav"
+        },
+        {
+          "id": "cardinal-684",
+          "spokenText": "sechshundertvierundachtzig",
+          "canonicalResponse": "684",
+          "audioFile": "audio/cardinal-684.wav"
+        },
+        {
+          "id": "cardinal-720",
+          "spokenText": "siebenhundertzwanzig",
+          "canonicalResponse": "720",
+          "audioFile": "audio/cardinal-720.wav"
+        },
+        {
+          "id": "cardinal-756",
+          "spokenText": "siebenhundertsechsundfünfzig",
+          "canonicalResponse": "756",
+          "audioFile": "audio/cardinal-756.wav"
+        },
+        {
+          "id": "cardinal-792",
+          "spokenText": "siebenhundertzweiundneunzig",
+          "canonicalResponse": "792",
+          "audioFile": "audio/cardinal-792.wav"
+        },
+        {
+          "id": "cardinal-828",
+          "spokenText": "achthundertachtundzwanzig",
+          "canonicalResponse": "828",
+          "audioFile": "audio/cardinal-828.wav"
+        },
+        {
+          "id": "cardinal-864",
+          "spokenText": "achthundertvierundsechzig",
+          "canonicalResponse": "864",
+          "audioFile": "audio/cardinal-864.wav"
+        },
+        {
+          "id": "cardinal-900",
+          "spokenText": "neunhundert",
+          "canonicalResponse": "900",
+          "audioFile": "audio/cardinal-900.wav"
+        },
+        {
+          "id": "cardinal-936",
+          "spokenText": "neunhundertsechsunddreißig",
+          "canonicalResponse": "936",
+          "audioFile": "audio/cardinal-936.wav"
+        },
+        {
+          "id": "cardinal-972",
+          "spokenText": "neunhundertzweiundsiebzig",
+          "canonicalResponse": "972",
+          "audioFile": "audio/cardinal-972.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-10",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-109",
+          "spokenText": "einhundertneun",
+          "canonicalResponse": "109",
+          "audioFile": "audio/cardinal-109.wav"
+        },
+        {
+          "id": "cardinal-145",
+          "spokenText": "einhundertfünfundvierzig",
+          "canonicalResponse": "145",
+          "audioFile": "audio/cardinal-145.wav"
+        },
+        {
+          "id": "cardinal-181",
+          "spokenText": "einhunderteinundachtzig",
+          "canonicalResponse": "181",
+          "audioFile": "audio/cardinal-181.wav"
+        },
+        {
+          "id": "cardinal-217",
+          "spokenText": "zweihundertsiebzehn",
+          "canonicalResponse": "217",
+          "audioFile": "audio/cardinal-217.wav"
+        },
+        {
+          "id": "cardinal-253",
+          "spokenText": "zweihundertdreiundfünfzig",
+          "canonicalResponse": "253",
+          "audioFile": "audio/cardinal-253.wav"
+        },
+        {
+          "id": "cardinal-289",
+          "spokenText": "zweihundertneunundachtzig",
+          "canonicalResponse": "289",
+          "audioFile": "audio/cardinal-289.wav"
+        },
+        {
+          "id": "cardinal-325",
+          "spokenText": "dreihundertfünfundzwanzig",
+          "canonicalResponse": "325",
+          "audioFile": "audio/cardinal-325.wav"
+        },
+        {
+          "id": "cardinal-361",
+          "spokenText": "dreihunderteinundsechzig",
+          "canonicalResponse": "361",
+          "audioFile": "audio/cardinal-361.wav"
+        },
+        {
+          "id": "cardinal-397",
+          "spokenText": "dreihundertsiebenundneunzig",
+          "canonicalResponse": "397",
+          "audioFile": "audio/cardinal-397.wav"
+        },
+        {
+          "id": "cardinal-433",
+          "spokenText": "vierhundertdreiunddreißig",
+          "canonicalResponse": "433",
+          "audioFile": "audio/cardinal-433.wav"
+        },
+        {
+          "id": "cardinal-469",
+          "spokenText": "vierhundertneunundsechzig",
+          "canonicalResponse": "469",
+          "audioFile": "audio/cardinal-469.wav"
+        },
+        {
+          "id": "cardinal-505",
+          "spokenText": "fünfhundertfünf",
+          "canonicalResponse": "505",
+          "audioFile": "audio/cardinal-505.wav"
+        },
+        {
+          "id": "cardinal-541",
+          "spokenText": "fünfhunderteinundvierzig",
+          "canonicalResponse": "541",
+          "audioFile": "audio/cardinal-541.wav"
+        },
+        {
+          "id": "cardinal-577",
+          "spokenText": "fünfhundertsiebenundsiebzig",
+          "canonicalResponse": "577",
+          "audioFile": "audio/cardinal-577.wav"
+        },
+        {
+          "id": "cardinal-613",
+          "spokenText": "sechshundertdreizehn",
+          "canonicalResponse": "613",
+          "audioFile": "audio/cardinal-613.wav"
+        },
+        {
+          "id": "cardinal-649",
+          "spokenText": "sechshundertneunundvierzig",
+          "canonicalResponse": "649",
+          "audioFile": "audio/cardinal-649.wav"
+        },
+        {
+          "id": "cardinal-685",
+          "spokenText": "sechshundertfünfundachtzig",
+          "canonicalResponse": "685",
+          "audioFile": "audio/cardinal-685.wav"
+        },
+        {
+          "id": "cardinal-721",
+          "spokenText": "siebenhunderteinundzwanzig",
+          "canonicalResponse": "721",
+          "audioFile": "audio/cardinal-721.wav"
+        },
+        {
+          "id": "cardinal-757",
+          "spokenText": "siebenhundertsiebenundfünfzig",
+          "canonicalResponse": "757",
+          "audioFile": "audio/cardinal-757.wav"
+        },
+        {
+          "id": "cardinal-793",
+          "spokenText": "siebenhundertdreiundneunzig",
+          "canonicalResponse": "793",
+          "audioFile": "audio/cardinal-793.wav"
+        },
+        {
+          "id": "cardinal-829",
+          "spokenText": "achthundertneunundzwanzig",
+          "canonicalResponse": "829",
+          "audioFile": "audio/cardinal-829.wav"
+        },
+        {
+          "id": "cardinal-865",
+          "spokenText": "achthundertfünfundsechzig",
+          "canonicalResponse": "865",
+          "audioFile": "audio/cardinal-865.wav"
+        },
+        {
+          "id": "cardinal-901",
+          "spokenText": "neunhunderteins",
+          "canonicalResponse": "901",
+          "audioFile": "audio/cardinal-901.wav"
+        },
+        {
+          "id": "cardinal-937",
+          "spokenText": "neunhundertsiebenunddreißig",
+          "canonicalResponse": "937",
+          "audioFile": "audio/cardinal-937.wav"
+        },
+        {
+          "id": "cardinal-973",
+          "spokenText": "neunhundertdreiundsiebzig",
+          "canonicalResponse": "973",
+          "audioFile": "audio/cardinal-973.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-11",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-110",
+          "spokenText": "einhundertzehn",
+          "canonicalResponse": "110",
+          "audioFile": "audio/cardinal-110.wav"
+        },
+        {
+          "id": "cardinal-146",
+          "spokenText": "einhundertsechsundvierzig",
+          "canonicalResponse": "146",
+          "audioFile": "audio/cardinal-146.wav"
+        },
+        {
+          "id": "cardinal-182",
+          "spokenText": "einhundertzweiundachtzig",
+          "canonicalResponse": "182",
+          "audioFile": "audio/cardinal-182.wav"
+        },
+        {
+          "id": "cardinal-218",
+          "spokenText": "zweihundertachtzehn",
+          "canonicalResponse": "218",
+          "audioFile": "audio/cardinal-218.wav"
+        },
+        {
+          "id": "cardinal-254",
+          "spokenText": "zweihundertvierundfünfzig",
+          "canonicalResponse": "254",
+          "audioFile": "audio/cardinal-254.wav"
+        },
+        {
+          "id": "cardinal-290",
+          "spokenText": "zweihundertneunzig",
+          "canonicalResponse": "290",
+          "audioFile": "audio/cardinal-290.wav"
+        },
+        {
+          "id": "cardinal-326",
+          "spokenText": "dreihundertsechsundzwanzig",
+          "canonicalResponse": "326",
+          "audioFile": "audio/cardinal-326.wav"
+        },
+        {
+          "id": "cardinal-362",
+          "spokenText": "dreihundertzweiundsechzig",
+          "canonicalResponse": "362",
+          "audioFile": "audio/cardinal-362.wav"
+        },
+        {
+          "id": "cardinal-398",
+          "spokenText": "dreihundertachtundneunzig",
+          "canonicalResponse": "398",
+          "audioFile": "audio/cardinal-398.wav"
+        },
+        {
+          "id": "cardinal-434",
+          "spokenText": "vierhundertvierunddreißig",
+          "canonicalResponse": "434",
+          "audioFile": "audio/cardinal-434.wav"
+        },
+        {
+          "id": "cardinal-470",
+          "spokenText": "vierhundertsiebzig",
+          "canonicalResponse": "470",
+          "audioFile": "audio/cardinal-470.wav"
+        },
+        {
+          "id": "cardinal-506",
+          "spokenText": "fünfhundertsechs",
+          "canonicalResponse": "506",
+          "audioFile": "audio/cardinal-506.wav"
+        },
+        {
+          "id": "cardinal-542",
+          "spokenText": "fünfhundertzweiundvierzig",
+          "canonicalResponse": "542",
+          "audioFile": "audio/cardinal-542.wav"
+        },
+        {
+          "id": "cardinal-578",
+          "spokenText": "fünfhundertachtundsiebzig",
+          "canonicalResponse": "578",
+          "audioFile": "audio/cardinal-578.wav"
+        },
+        {
+          "id": "cardinal-614",
+          "spokenText": "sechshundertvierzehn",
+          "canonicalResponse": "614",
+          "audioFile": "audio/cardinal-614.wav"
+        },
+        {
+          "id": "cardinal-650",
+          "spokenText": "sechshundertfünfzig",
+          "canonicalResponse": "650",
+          "audioFile": "audio/cardinal-650.wav"
+        },
+        {
+          "id": "cardinal-686",
+          "spokenText": "sechshundertsechsundachtzig",
+          "canonicalResponse": "686",
+          "audioFile": "audio/cardinal-686.wav"
+        },
+        {
+          "id": "cardinal-722",
+          "spokenText": "siebenhundertzweiundzwanzig",
+          "canonicalResponse": "722",
+          "audioFile": "audio/cardinal-722.wav"
+        },
+        {
+          "id": "cardinal-758",
+          "spokenText": "siebenhundertachtundfünfzig",
+          "canonicalResponse": "758",
+          "audioFile": "audio/cardinal-758.wav"
+        },
+        {
+          "id": "cardinal-794",
+          "spokenText": "siebenhundertvierundneunzig",
+          "canonicalResponse": "794",
+          "audioFile": "audio/cardinal-794.wav"
+        },
+        {
+          "id": "cardinal-830",
+          "spokenText": "achthundertdreißig",
+          "canonicalResponse": "830",
+          "audioFile": "audio/cardinal-830.wav"
+        },
+        {
+          "id": "cardinal-866",
+          "spokenText": "achthundertsechsundsechzig",
+          "canonicalResponse": "866",
+          "audioFile": "audio/cardinal-866.wav"
+        },
+        {
+          "id": "cardinal-902",
+          "spokenText": "neunhundertzwei",
+          "canonicalResponse": "902",
+          "audioFile": "audio/cardinal-902.wav"
+        },
+        {
+          "id": "cardinal-938",
+          "spokenText": "neunhundertachtunddreißig",
+          "canonicalResponse": "938",
+          "audioFile": "audio/cardinal-938.wav"
+        },
+        {
+          "id": "cardinal-974",
+          "spokenText": "neunhundertvierundsiebzig",
+          "canonicalResponse": "974",
+          "audioFile": "audio/cardinal-974.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-12",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-111",
+          "spokenText": "einhundertelf",
+          "canonicalResponse": "111",
+          "audioFile": "audio/cardinal-111.wav"
+        },
+        {
+          "id": "cardinal-147",
+          "spokenText": "einhundertsiebenundvierzig",
+          "canonicalResponse": "147",
+          "audioFile": "audio/cardinal-147.wav"
+        },
+        {
+          "id": "cardinal-183",
+          "spokenText": "einhundertdreiundachtzig",
+          "canonicalResponse": "183",
+          "audioFile": "audio/cardinal-183.wav"
+        },
+        {
+          "id": "cardinal-219",
+          "spokenText": "zweihundertneunzehn",
+          "canonicalResponse": "219",
+          "audioFile": "audio/cardinal-219.wav"
+        },
+        {
+          "id": "cardinal-255",
+          "spokenText": "zweihundertfünfundfünfzig",
+          "canonicalResponse": "255",
+          "audioFile": "audio/cardinal-255.wav"
+        },
+        {
+          "id": "cardinal-291",
+          "spokenText": "zweihunderteinundneunzig",
+          "canonicalResponse": "291",
+          "audioFile": "audio/cardinal-291.wav"
+        },
+        {
+          "id": "cardinal-327",
+          "spokenText": "dreihundertsiebenundzwanzig",
+          "canonicalResponse": "327",
+          "audioFile": "audio/cardinal-327.wav"
+        },
+        {
+          "id": "cardinal-363",
+          "spokenText": "dreihundertdreiundsechzig",
+          "canonicalResponse": "363",
+          "audioFile": "audio/cardinal-363.wav"
+        },
+        {
+          "id": "cardinal-399",
+          "spokenText": "dreihundertneunundneunzig",
+          "canonicalResponse": "399",
+          "audioFile": "audio/cardinal-399.wav"
+        },
+        {
+          "id": "cardinal-435",
+          "spokenText": "vierhundertfünfunddreißig",
+          "canonicalResponse": "435",
+          "audioFile": "audio/cardinal-435.wav"
+        },
+        {
+          "id": "cardinal-471",
+          "spokenText": "vierhunderteinundsiebzig",
+          "canonicalResponse": "471",
+          "audioFile": "audio/cardinal-471.wav"
+        },
+        {
+          "id": "cardinal-507",
+          "spokenText": "fünfhundertsieben",
+          "canonicalResponse": "507",
+          "audioFile": "audio/cardinal-507.wav"
+        },
+        {
+          "id": "cardinal-543",
+          "spokenText": "fünfhundertdreiundvierzig",
+          "canonicalResponse": "543",
+          "audioFile": "audio/cardinal-543.wav"
+        },
+        {
+          "id": "cardinal-579",
+          "spokenText": "fünfhundertneunundsiebzig",
+          "canonicalResponse": "579",
+          "audioFile": "audio/cardinal-579.wav"
+        },
+        {
+          "id": "cardinal-615",
+          "spokenText": "sechshundertfünfzehn",
+          "canonicalResponse": "615",
+          "audioFile": "audio/cardinal-615.wav"
+        },
+        {
+          "id": "cardinal-651",
+          "spokenText": "sechshunderteinundfünfzig",
+          "canonicalResponse": "651",
+          "audioFile": "audio/cardinal-651.wav"
+        },
+        {
+          "id": "cardinal-687",
+          "spokenText": "sechshundertsiebenundachtzig",
+          "canonicalResponse": "687",
+          "audioFile": "audio/cardinal-687.wav"
+        },
+        {
+          "id": "cardinal-723",
+          "spokenText": "siebenhundertdreiundzwanzig",
+          "canonicalResponse": "723",
+          "audioFile": "audio/cardinal-723.wav"
+        },
+        {
+          "id": "cardinal-759",
+          "spokenText": "siebenhundertneunundfünfzig",
+          "canonicalResponse": "759",
+          "audioFile": "audio/cardinal-759.wav"
+        },
+        {
+          "id": "cardinal-795",
+          "spokenText": "siebenhundertfünfundneunzig",
+          "canonicalResponse": "795",
+          "audioFile": "audio/cardinal-795.wav"
+        },
+        {
+          "id": "cardinal-831",
+          "spokenText": "achthunderteinunddreißig",
+          "canonicalResponse": "831",
+          "audioFile": "audio/cardinal-831.wav"
+        },
+        {
+          "id": "cardinal-867",
+          "spokenText": "achthundertsiebenundsechzig",
+          "canonicalResponse": "867",
+          "audioFile": "audio/cardinal-867.wav"
+        },
+        {
+          "id": "cardinal-903",
+          "spokenText": "neunhundertdrei",
+          "canonicalResponse": "903",
+          "audioFile": "audio/cardinal-903.wav"
+        },
+        {
+          "id": "cardinal-939",
+          "spokenText": "neunhundertneununddreißig",
+          "canonicalResponse": "939",
+          "audioFile": "audio/cardinal-939.wav"
+        },
+        {
+          "id": "cardinal-975",
+          "spokenText": "neunhundertfünfundsiebzig",
+          "canonicalResponse": "975",
+          "audioFile": "audio/cardinal-975.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-13",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-112",
+          "spokenText": "einhundertzwölf",
+          "canonicalResponse": "112",
+          "audioFile": "audio/cardinal-112.wav"
+        },
+        {
+          "id": "cardinal-148",
+          "spokenText": "einhundertachtundvierzig",
+          "canonicalResponse": "148",
+          "audioFile": "audio/cardinal-148.wav"
+        },
+        {
+          "id": "cardinal-184",
+          "spokenText": "einhundertvierundachtzig",
+          "canonicalResponse": "184",
+          "audioFile": "audio/cardinal-184.wav"
+        },
+        {
+          "id": "cardinal-220",
+          "spokenText": "zweihundertzwanzig",
+          "canonicalResponse": "220",
+          "audioFile": "audio/cardinal-220.wav"
+        },
+        {
+          "id": "cardinal-256",
+          "spokenText": "zweihundertsechsundfünfzig",
+          "canonicalResponse": "256",
+          "audioFile": "audio/cardinal-256.wav"
+        },
+        {
+          "id": "cardinal-292",
+          "spokenText": "zweihundertzweiundneunzig",
+          "canonicalResponse": "292",
+          "audioFile": "audio/cardinal-292.wav"
+        },
+        {
+          "id": "cardinal-328",
+          "spokenText": "dreihundertachtundzwanzig",
+          "canonicalResponse": "328",
+          "audioFile": "audio/cardinal-328.wav"
+        },
+        {
+          "id": "cardinal-364",
+          "spokenText": "dreihundertvierundsechzig",
+          "canonicalResponse": "364",
+          "audioFile": "audio/cardinal-364.wav"
+        },
+        {
+          "id": "cardinal-400",
+          "spokenText": "vierhundert",
+          "canonicalResponse": "400",
+          "audioFile": "audio/cardinal-400.wav"
+        },
+        {
+          "id": "cardinal-436",
+          "spokenText": "vierhundertsechsunddreißig",
+          "canonicalResponse": "436",
+          "audioFile": "audio/cardinal-436.wav"
+        },
+        {
+          "id": "cardinal-472",
+          "spokenText": "vierhundertzweiundsiebzig",
+          "canonicalResponse": "472",
+          "audioFile": "audio/cardinal-472.wav"
+        },
+        {
+          "id": "cardinal-508",
+          "spokenText": "fünfhundertacht",
+          "canonicalResponse": "508",
+          "audioFile": "audio/cardinal-508.wav"
+        },
+        {
+          "id": "cardinal-544",
+          "spokenText": "fünfhundertvierundvierzig",
+          "canonicalResponse": "544",
+          "audioFile": "audio/cardinal-544.wav"
+        },
+        {
+          "id": "cardinal-580",
+          "spokenText": "fünfhundertachtzig",
+          "canonicalResponse": "580",
+          "audioFile": "audio/cardinal-580.wav"
+        },
+        {
+          "id": "cardinal-616",
+          "spokenText": "sechshundertsechzehn",
+          "canonicalResponse": "616",
+          "audioFile": "audio/cardinal-616.wav"
+        },
+        {
+          "id": "cardinal-652",
+          "spokenText": "sechshundertzweiundfünfzig",
+          "canonicalResponse": "652",
+          "audioFile": "audio/cardinal-652.wav"
+        },
+        {
+          "id": "cardinal-688",
+          "spokenText": "sechshundertachtundachtzig",
+          "canonicalResponse": "688",
+          "audioFile": "audio/cardinal-688.wav"
+        },
+        {
+          "id": "cardinal-724",
+          "spokenText": "siebenhundertvierundzwanzig",
+          "canonicalResponse": "724",
+          "audioFile": "audio/cardinal-724.wav"
+        },
+        {
+          "id": "cardinal-760",
+          "spokenText": "siebenhundertsechzig",
+          "canonicalResponse": "760",
+          "audioFile": "audio/cardinal-760.wav"
+        },
+        {
+          "id": "cardinal-796",
+          "spokenText": "siebenhundertsechsundneunzig",
+          "canonicalResponse": "796",
+          "audioFile": "audio/cardinal-796.wav"
+        },
+        {
+          "id": "cardinal-832",
+          "spokenText": "achthundertzweiunddreißig",
+          "canonicalResponse": "832",
+          "audioFile": "audio/cardinal-832.wav"
+        },
+        {
+          "id": "cardinal-868",
+          "spokenText": "achthundertachtundsechzig",
+          "canonicalResponse": "868",
+          "audioFile": "audio/cardinal-868.wav"
+        },
+        {
+          "id": "cardinal-904",
+          "spokenText": "neunhundertvier",
+          "canonicalResponse": "904",
+          "audioFile": "audio/cardinal-904.wav"
+        },
+        {
+          "id": "cardinal-940",
+          "spokenText": "neunhundertvierzig",
+          "canonicalResponse": "940",
+          "audioFile": "audio/cardinal-940.wav"
+        },
+        {
+          "id": "cardinal-976",
+          "spokenText": "neunhundertsechsundsiebzig",
+          "canonicalResponse": "976",
+          "audioFile": "audio/cardinal-976.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-14",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-113",
+          "spokenText": "einhundertdreizehn",
+          "canonicalResponse": "113",
+          "audioFile": "audio/cardinal-113.wav"
+        },
+        {
+          "id": "cardinal-149",
+          "spokenText": "einhundertneunundvierzig",
+          "canonicalResponse": "149",
+          "audioFile": "audio/cardinal-149.wav"
+        },
+        {
+          "id": "cardinal-185",
+          "spokenText": "einhundertfünfundachtzig",
+          "canonicalResponse": "185",
+          "audioFile": "audio/cardinal-185.wav"
+        },
+        {
+          "id": "cardinal-221",
+          "spokenText": "zweihunderteinundzwanzig",
+          "canonicalResponse": "221",
+          "audioFile": "audio/cardinal-221.wav"
+        },
+        {
+          "id": "cardinal-257",
+          "spokenText": "zweihundertsiebenundfünfzig",
+          "canonicalResponse": "257",
+          "audioFile": "audio/cardinal-257.wav"
+        },
+        {
+          "id": "cardinal-293",
+          "spokenText": "zweihundertdreiundneunzig",
+          "canonicalResponse": "293",
+          "audioFile": "audio/cardinal-293.wav"
+        },
+        {
+          "id": "cardinal-329",
+          "spokenText": "dreihundertneunundzwanzig",
+          "canonicalResponse": "329",
+          "audioFile": "audio/cardinal-329.wav"
+        },
+        {
+          "id": "cardinal-365",
+          "spokenText": "dreihundertfünfundsechzig",
+          "canonicalResponse": "365",
+          "audioFile": "audio/cardinal-365.wav"
+        },
+        {
+          "id": "cardinal-401",
+          "spokenText": "vierhunderteins",
+          "canonicalResponse": "401",
+          "audioFile": "audio/cardinal-401.wav"
+        },
+        {
+          "id": "cardinal-437",
+          "spokenText": "vierhundertsiebenunddreißig",
+          "canonicalResponse": "437",
+          "audioFile": "audio/cardinal-437.wav"
+        },
+        {
+          "id": "cardinal-473",
+          "spokenText": "vierhundertdreiundsiebzig",
+          "canonicalResponse": "473",
+          "audioFile": "audio/cardinal-473.wav"
+        },
+        {
+          "id": "cardinal-509",
+          "spokenText": "fünfhundertneun",
+          "canonicalResponse": "509",
+          "audioFile": "audio/cardinal-509.wav"
+        },
+        {
+          "id": "cardinal-545",
+          "spokenText": "fünfhundertfünfundvierzig",
+          "canonicalResponse": "545",
+          "audioFile": "audio/cardinal-545.wav"
+        },
+        {
+          "id": "cardinal-581",
+          "spokenText": "fünfhunderteinundachtzig",
+          "canonicalResponse": "581",
+          "audioFile": "audio/cardinal-581.wav"
+        },
+        {
+          "id": "cardinal-617",
+          "spokenText": "sechshundertsiebzehn",
+          "canonicalResponse": "617",
+          "audioFile": "audio/cardinal-617.wav"
+        },
+        {
+          "id": "cardinal-653",
+          "spokenText": "sechshundertdreiundfünfzig",
+          "canonicalResponse": "653",
+          "audioFile": "audio/cardinal-653.wav"
+        },
+        {
+          "id": "cardinal-689",
+          "spokenText": "sechshundertneunundachtzig",
+          "canonicalResponse": "689",
+          "audioFile": "audio/cardinal-689.wav"
+        },
+        {
+          "id": "cardinal-725",
+          "spokenText": "siebenhundertfünfundzwanzig",
+          "canonicalResponse": "725",
+          "audioFile": "audio/cardinal-725.wav"
+        },
+        {
+          "id": "cardinal-761",
+          "spokenText": "siebenhunderteinundsechzig",
+          "canonicalResponse": "761",
+          "audioFile": "audio/cardinal-761.wav"
+        },
+        {
+          "id": "cardinal-797",
+          "spokenText": "siebenhundertsiebenundneunzig",
+          "canonicalResponse": "797",
+          "audioFile": "audio/cardinal-797.wav"
+        },
+        {
+          "id": "cardinal-833",
+          "spokenText": "achthundertdreiunddreißig",
+          "canonicalResponse": "833",
+          "audioFile": "audio/cardinal-833.wav"
+        },
+        {
+          "id": "cardinal-869",
+          "spokenText": "achthundertneunundsechzig",
+          "canonicalResponse": "869",
+          "audioFile": "audio/cardinal-869.wav"
+        },
+        {
+          "id": "cardinal-905",
+          "spokenText": "neunhundertfünf",
+          "canonicalResponse": "905",
+          "audioFile": "audio/cardinal-905.wav"
+        },
+        {
+          "id": "cardinal-941",
+          "spokenText": "neunhunderteinundvierzig",
+          "canonicalResponse": "941",
+          "audioFile": "audio/cardinal-941.wav"
+        },
+        {
+          "id": "cardinal-977",
+          "spokenText": "neunhundertsiebenundsiebzig",
+          "canonicalResponse": "977",
+          "audioFile": "audio/cardinal-977.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-15",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-114",
+          "spokenText": "einhundertvierzehn",
+          "canonicalResponse": "114",
+          "audioFile": "audio/cardinal-114.wav"
+        },
+        {
+          "id": "cardinal-150",
+          "spokenText": "einhundertfünfzig",
+          "canonicalResponse": "150",
+          "audioFile": "audio/cardinal-150.wav"
+        },
+        {
+          "id": "cardinal-186",
+          "spokenText": "einhundertsechsundachtzig",
+          "canonicalResponse": "186",
+          "audioFile": "audio/cardinal-186.wav"
+        },
+        {
+          "id": "cardinal-222",
+          "spokenText": "zweihundertzweiundzwanzig",
+          "canonicalResponse": "222",
+          "audioFile": "audio/cardinal-222.wav"
+        },
+        {
+          "id": "cardinal-258",
+          "spokenText": "zweihundertachtundfünfzig",
+          "canonicalResponse": "258",
+          "audioFile": "audio/cardinal-258.wav"
+        },
+        {
+          "id": "cardinal-294",
+          "spokenText": "zweihundertvierundneunzig",
+          "canonicalResponse": "294",
+          "audioFile": "audio/cardinal-294.wav"
+        },
+        {
+          "id": "cardinal-330",
+          "spokenText": "dreihundertdreißig",
+          "canonicalResponse": "330",
+          "audioFile": "audio/cardinal-330.wav"
+        },
+        {
+          "id": "cardinal-366",
+          "spokenText": "dreihundertsechsundsechzig",
+          "canonicalResponse": "366",
+          "audioFile": "audio/cardinal-366.wav"
+        },
+        {
+          "id": "cardinal-402",
+          "spokenText": "vierhundertzwei",
+          "canonicalResponse": "402",
+          "audioFile": "audio/cardinal-402.wav"
+        },
+        {
+          "id": "cardinal-438",
+          "spokenText": "vierhundertachtunddreißig",
+          "canonicalResponse": "438",
+          "audioFile": "audio/cardinal-438.wav"
+        },
+        {
+          "id": "cardinal-474",
+          "spokenText": "vierhundertvierundsiebzig",
+          "canonicalResponse": "474",
+          "audioFile": "audio/cardinal-474.wav"
+        },
+        {
+          "id": "cardinal-510",
+          "spokenText": "fünfhundertzehn",
+          "canonicalResponse": "510",
+          "audioFile": "audio/cardinal-510.wav"
+        },
+        {
+          "id": "cardinal-546",
+          "spokenText": "fünfhundertsechsundvierzig",
+          "canonicalResponse": "546",
+          "audioFile": "audio/cardinal-546.wav"
+        },
+        {
+          "id": "cardinal-582",
+          "spokenText": "fünfhundertzweiundachtzig",
+          "canonicalResponse": "582",
+          "audioFile": "audio/cardinal-582.wav"
+        },
+        {
+          "id": "cardinal-618",
+          "spokenText": "sechshundertachtzehn",
+          "canonicalResponse": "618",
+          "audioFile": "audio/cardinal-618.wav"
+        },
+        {
+          "id": "cardinal-654",
+          "spokenText": "sechshundertvierundfünfzig",
+          "canonicalResponse": "654",
+          "audioFile": "audio/cardinal-654.wav"
+        },
+        {
+          "id": "cardinal-690",
+          "spokenText": "sechshundertneunzig",
+          "canonicalResponse": "690",
+          "audioFile": "audio/cardinal-690.wav"
+        },
+        {
+          "id": "cardinal-726",
+          "spokenText": "siebenhundertsechsundzwanzig",
+          "canonicalResponse": "726",
+          "audioFile": "audio/cardinal-726.wav"
+        },
+        {
+          "id": "cardinal-762",
+          "spokenText": "siebenhundertzweiundsechzig",
+          "canonicalResponse": "762",
+          "audioFile": "audio/cardinal-762.wav"
+        },
+        {
+          "id": "cardinal-798",
+          "spokenText": "siebenhundertachtundneunzig",
+          "canonicalResponse": "798",
+          "audioFile": "audio/cardinal-798.wav"
+        },
+        {
+          "id": "cardinal-834",
+          "spokenText": "achthundertvierunddreißig",
+          "canonicalResponse": "834",
+          "audioFile": "audio/cardinal-834.wav"
+        },
+        {
+          "id": "cardinal-870",
+          "spokenText": "achthundertsiebzig",
+          "canonicalResponse": "870",
+          "audioFile": "audio/cardinal-870.wav"
+        },
+        {
+          "id": "cardinal-906",
+          "spokenText": "neunhundertsechs",
+          "canonicalResponse": "906",
+          "audioFile": "audio/cardinal-906.wav"
+        },
+        {
+          "id": "cardinal-942",
+          "spokenText": "neunhundertzweiundvierzig",
+          "canonicalResponse": "942",
+          "audioFile": "audio/cardinal-942.wav"
+        },
+        {
+          "id": "cardinal-978",
+          "spokenText": "neunhundertachtundsiebzig",
+          "canonicalResponse": "978",
+          "audioFile": "audio/cardinal-978.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-16",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-115",
+          "spokenText": "einhundertfünfzehn",
+          "canonicalResponse": "115",
+          "audioFile": "audio/cardinal-115.wav"
+        },
+        {
+          "id": "cardinal-151",
+          "spokenText": "einhunderteinundfünfzig",
+          "canonicalResponse": "151",
+          "audioFile": "audio/cardinal-151.wav"
+        },
+        {
+          "id": "cardinal-187",
+          "spokenText": "einhundertsiebenundachtzig",
+          "canonicalResponse": "187",
+          "audioFile": "audio/cardinal-187.wav"
+        },
+        {
+          "id": "cardinal-223",
+          "spokenText": "zweihundertdreiundzwanzig",
+          "canonicalResponse": "223",
+          "audioFile": "audio/cardinal-223.wav"
+        },
+        {
+          "id": "cardinal-259",
+          "spokenText": "zweihundertneunundfünfzig",
+          "canonicalResponse": "259",
+          "audioFile": "audio/cardinal-259.wav"
+        },
+        {
+          "id": "cardinal-295",
+          "spokenText": "zweihundertfünfundneunzig",
+          "canonicalResponse": "295",
+          "audioFile": "audio/cardinal-295.wav"
+        },
+        {
+          "id": "cardinal-331",
+          "spokenText": "dreihunderteinunddreißig",
+          "canonicalResponse": "331",
+          "audioFile": "audio/cardinal-331.wav"
+        },
+        {
+          "id": "cardinal-367",
+          "spokenText": "dreihundertsiebenundsechzig",
+          "canonicalResponse": "367",
+          "audioFile": "audio/cardinal-367.wav"
+        },
+        {
+          "id": "cardinal-403",
+          "spokenText": "vierhundertdrei",
+          "canonicalResponse": "403",
+          "audioFile": "audio/cardinal-403.wav"
+        },
+        {
+          "id": "cardinal-439",
+          "spokenText": "vierhundertneununddreißig",
+          "canonicalResponse": "439",
+          "audioFile": "audio/cardinal-439.wav"
+        },
+        {
+          "id": "cardinal-475",
+          "spokenText": "vierhundertfünfundsiebzig",
+          "canonicalResponse": "475",
+          "audioFile": "audio/cardinal-475.wav"
+        },
+        {
+          "id": "cardinal-511",
+          "spokenText": "fünfhundertelf",
+          "canonicalResponse": "511",
+          "audioFile": "audio/cardinal-511.wav"
+        },
+        {
+          "id": "cardinal-547",
+          "spokenText": "fünfhundertsiebenundvierzig",
+          "canonicalResponse": "547",
+          "audioFile": "audio/cardinal-547.wav"
+        },
+        {
+          "id": "cardinal-583",
+          "spokenText": "fünfhundertdreiundachtzig",
+          "canonicalResponse": "583",
+          "audioFile": "audio/cardinal-583.wav"
+        },
+        {
+          "id": "cardinal-619",
+          "spokenText": "sechshundertneunzehn",
+          "canonicalResponse": "619",
+          "audioFile": "audio/cardinal-619.wav"
+        },
+        {
+          "id": "cardinal-655",
+          "spokenText": "sechshundertfünfundfünfzig",
+          "canonicalResponse": "655",
+          "audioFile": "audio/cardinal-655.wav"
+        },
+        {
+          "id": "cardinal-691",
+          "spokenText": "sechshunderteinundneunzig",
+          "canonicalResponse": "691",
+          "audioFile": "audio/cardinal-691.wav"
+        },
+        {
+          "id": "cardinal-727",
+          "spokenText": "siebenhundertsiebenundzwanzig",
+          "canonicalResponse": "727",
+          "audioFile": "audio/cardinal-727.wav"
+        },
+        {
+          "id": "cardinal-763",
+          "spokenText": "siebenhundertdreiundsechzig",
+          "canonicalResponse": "763",
+          "audioFile": "audio/cardinal-763.wav"
+        },
+        {
+          "id": "cardinal-799",
+          "spokenText": "siebenhundertneunundneunzig",
+          "canonicalResponse": "799",
+          "audioFile": "audio/cardinal-799.wav"
+        },
+        {
+          "id": "cardinal-835",
+          "spokenText": "achthundertfünfunddreißig",
+          "canonicalResponse": "835",
+          "audioFile": "audio/cardinal-835.wav"
+        },
+        {
+          "id": "cardinal-871",
+          "spokenText": "achthunderteinundsiebzig",
+          "canonicalResponse": "871",
+          "audioFile": "audio/cardinal-871.wav"
+        },
+        {
+          "id": "cardinal-907",
+          "spokenText": "neunhundertsieben",
+          "canonicalResponse": "907",
+          "audioFile": "audio/cardinal-907.wav"
+        },
+        {
+          "id": "cardinal-943",
+          "spokenText": "neunhundertdreiundvierzig",
+          "canonicalResponse": "943",
+          "audioFile": "audio/cardinal-943.wav"
+        },
+        {
+          "id": "cardinal-979",
+          "spokenText": "neunhundertneunundsiebzig",
+          "canonicalResponse": "979",
+          "audioFile": "audio/cardinal-979.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-17",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-116",
+          "spokenText": "einhundertsechzehn",
+          "canonicalResponse": "116",
+          "audioFile": "audio/cardinal-116.wav"
+        },
+        {
+          "id": "cardinal-152",
+          "spokenText": "einhundertzweiundfünfzig",
+          "canonicalResponse": "152",
+          "audioFile": "audio/cardinal-152.wav"
+        },
+        {
+          "id": "cardinal-188",
+          "spokenText": "einhundertachtundachtzig",
+          "canonicalResponse": "188",
+          "audioFile": "audio/cardinal-188.wav"
+        },
+        {
+          "id": "cardinal-224",
+          "spokenText": "zweihundertvierundzwanzig",
+          "canonicalResponse": "224",
+          "audioFile": "audio/cardinal-224.wav"
+        },
+        {
+          "id": "cardinal-260",
+          "spokenText": "zweihundertsechzig",
+          "canonicalResponse": "260",
+          "audioFile": "audio/cardinal-260.wav"
+        },
+        {
+          "id": "cardinal-296",
+          "spokenText": "zweihundertsechsundneunzig",
+          "canonicalResponse": "296",
+          "audioFile": "audio/cardinal-296.wav"
+        },
+        {
+          "id": "cardinal-332",
+          "spokenText": "dreihundertzweiunddreißig",
+          "canonicalResponse": "332",
+          "audioFile": "audio/cardinal-332.wav"
+        },
+        {
+          "id": "cardinal-368",
+          "spokenText": "dreihundertachtundsechzig",
+          "canonicalResponse": "368",
+          "audioFile": "audio/cardinal-368.wav"
+        },
+        {
+          "id": "cardinal-404",
+          "spokenText": "vierhundertvier",
+          "canonicalResponse": "404",
+          "audioFile": "audio/cardinal-404.wav"
+        },
+        {
+          "id": "cardinal-440",
+          "spokenText": "vierhundertvierzig",
+          "canonicalResponse": "440",
+          "audioFile": "audio/cardinal-440.wav"
+        },
+        {
+          "id": "cardinal-476",
+          "spokenText": "vierhundertsechsundsiebzig",
+          "canonicalResponse": "476",
+          "audioFile": "audio/cardinal-476.wav"
+        },
+        {
+          "id": "cardinal-512",
+          "spokenText": "fünfhundertzwölf",
+          "canonicalResponse": "512",
+          "audioFile": "audio/cardinal-512.wav"
+        },
+        {
+          "id": "cardinal-548",
+          "spokenText": "fünfhundertachtundvierzig",
+          "canonicalResponse": "548",
+          "audioFile": "audio/cardinal-548.wav"
+        },
+        {
+          "id": "cardinal-584",
+          "spokenText": "fünfhundertvierundachtzig",
+          "canonicalResponse": "584",
+          "audioFile": "audio/cardinal-584.wav"
+        },
+        {
+          "id": "cardinal-620",
+          "spokenText": "sechshundertzwanzig",
+          "canonicalResponse": "620",
+          "audioFile": "audio/cardinal-620.wav"
+        },
+        {
+          "id": "cardinal-656",
+          "spokenText": "sechshundertsechsundfünfzig",
+          "canonicalResponse": "656",
+          "audioFile": "audio/cardinal-656.wav"
+        },
+        {
+          "id": "cardinal-692",
+          "spokenText": "sechshundertzweiundneunzig",
+          "canonicalResponse": "692",
+          "audioFile": "audio/cardinal-692.wav"
+        },
+        {
+          "id": "cardinal-728",
+          "spokenText": "siebenhundertachtundzwanzig",
+          "canonicalResponse": "728",
+          "audioFile": "audio/cardinal-728.wav"
+        },
+        {
+          "id": "cardinal-764",
+          "spokenText": "siebenhundertvierundsechzig",
+          "canonicalResponse": "764",
+          "audioFile": "audio/cardinal-764.wav"
+        },
+        {
+          "id": "cardinal-800",
+          "spokenText": "achthundert",
+          "canonicalResponse": "800",
+          "audioFile": "audio/cardinal-800.wav"
+        },
+        {
+          "id": "cardinal-836",
+          "spokenText": "achthundertsechsunddreißig",
+          "canonicalResponse": "836",
+          "audioFile": "audio/cardinal-836.wav"
+        },
+        {
+          "id": "cardinal-872",
+          "spokenText": "achthundertzweiundsiebzig",
+          "canonicalResponse": "872",
+          "audioFile": "audio/cardinal-872.wav"
+        },
+        {
+          "id": "cardinal-908",
+          "spokenText": "neunhundertacht",
+          "canonicalResponse": "908",
+          "audioFile": "audio/cardinal-908.wav"
+        },
+        {
+          "id": "cardinal-944",
+          "spokenText": "neunhundertvierundvierzig",
+          "canonicalResponse": "944",
+          "audioFile": "audio/cardinal-944.wav"
+        },
+        {
+          "id": "cardinal-980",
+          "spokenText": "neunhundertachtzig",
+          "canonicalResponse": "980",
+          "audioFile": "audio/cardinal-980.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-18",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-117",
+          "spokenText": "einhundertsiebzehn",
+          "canonicalResponse": "117",
+          "audioFile": "audio/cardinal-117.wav"
+        },
+        {
+          "id": "cardinal-153",
+          "spokenText": "einhundertdreiundfünfzig",
+          "canonicalResponse": "153",
+          "audioFile": "audio/cardinal-153.wav"
+        },
+        {
+          "id": "cardinal-189",
+          "spokenText": "einhundertneunundachtzig",
+          "canonicalResponse": "189",
+          "audioFile": "audio/cardinal-189.wav"
+        },
+        {
+          "id": "cardinal-225",
+          "spokenText": "zweihundertfünfundzwanzig",
+          "canonicalResponse": "225",
+          "audioFile": "audio/cardinal-225.wav"
+        },
+        {
+          "id": "cardinal-261",
+          "spokenText": "zweihunderteinundsechzig",
+          "canonicalResponse": "261",
+          "audioFile": "audio/cardinal-261.wav"
+        },
+        {
+          "id": "cardinal-297",
+          "spokenText": "zweihundertsiebenundneunzig",
+          "canonicalResponse": "297",
+          "audioFile": "audio/cardinal-297.wav"
+        },
+        {
+          "id": "cardinal-333",
+          "spokenText": "dreihundertdreiunddreißig",
+          "canonicalResponse": "333",
+          "audioFile": "audio/cardinal-333.wav"
+        },
+        {
+          "id": "cardinal-369",
+          "spokenText": "dreihundertneunundsechzig",
+          "canonicalResponse": "369",
+          "audioFile": "audio/cardinal-369.wav"
+        },
+        {
+          "id": "cardinal-405",
+          "spokenText": "vierhundertfünf",
+          "canonicalResponse": "405",
+          "audioFile": "audio/cardinal-405.wav"
+        },
+        {
+          "id": "cardinal-441",
+          "spokenText": "vierhunderteinundvierzig",
+          "canonicalResponse": "441",
+          "audioFile": "audio/cardinal-441.wav"
+        },
+        {
+          "id": "cardinal-477",
+          "spokenText": "vierhundertsiebenundsiebzig",
+          "canonicalResponse": "477",
+          "audioFile": "audio/cardinal-477.wav"
+        },
+        {
+          "id": "cardinal-513",
+          "spokenText": "fünfhundertdreizehn",
+          "canonicalResponse": "513",
+          "audioFile": "audio/cardinal-513.wav"
+        },
+        {
+          "id": "cardinal-549",
+          "spokenText": "fünfhundertneunundvierzig",
+          "canonicalResponse": "549",
+          "audioFile": "audio/cardinal-549.wav"
+        },
+        {
+          "id": "cardinal-585",
+          "spokenText": "fünfhundertfünfundachtzig",
+          "canonicalResponse": "585",
+          "audioFile": "audio/cardinal-585.wav"
+        },
+        {
+          "id": "cardinal-621",
+          "spokenText": "sechshunderteinundzwanzig",
+          "canonicalResponse": "621",
+          "audioFile": "audio/cardinal-621.wav"
+        },
+        {
+          "id": "cardinal-657",
+          "spokenText": "sechshundertsiebenundfünfzig",
+          "canonicalResponse": "657",
+          "audioFile": "audio/cardinal-657.wav"
+        },
+        {
+          "id": "cardinal-693",
+          "spokenText": "sechshundertdreiundneunzig",
+          "canonicalResponse": "693",
+          "audioFile": "audio/cardinal-693.wav"
+        },
+        {
+          "id": "cardinal-729",
+          "spokenText": "siebenhundertneunundzwanzig",
+          "canonicalResponse": "729",
+          "audioFile": "audio/cardinal-729.wav"
+        },
+        {
+          "id": "cardinal-765",
+          "spokenText": "siebenhundertfünfundsechzig",
+          "canonicalResponse": "765",
+          "audioFile": "audio/cardinal-765.wav"
+        },
+        {
+          "id": "cardinal-801",
+          "spokenText": "achthunderteins",
+          "canonicalResponse": "801",
+          "audioFile": "audio/cardinal-801.wav"
+        },
+        {
+          "id": "cardinal-837",
+          "spokenText": "achthundertsiebenunddreißig",
+          "canonicalResponse": "837",
+          "audioFile": "audio/cardinal-837.wav"
+        },
+        {
+          "id": "cardinal-873",
+          "spokenText": "achthundertdreiundsiebzig",
+          "canonicalResponse": "873",
+          "audioFile": "audio/cardinal-873.wav"
+        },
+        {
+          "id": "cardinal-909",
+          "spokenText": "neunhundertneun",
+          "canonicalResponse": "909",
+          "audioFile": "audio/cardinal-909.wav"
+        },
+        {
+          "id": "cardinal-945",
+          "spokenText": "neunhundertfünfundvierzig",
+          "canonicalResponse": "945",
+          "audioFile": "audio/cardinal-945.wav"
+        },
+        {
+          "id": "cardinal-981",
+          "spokenText": "neunhunderteinundachtzig",
+          "canonicalResponse": "981",
+          "audioFile": "audio/cardinal-981.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-19",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-118",
+          "spokenText": "einhundertachtzehn",
+          "canonicalResponse": "118",
+          "audioFile": "audio/cardinal-118.wav"
+        },
+        {
+          "id": "cardinal-154",
+          "spokenText": "einhundertvierundfünfzig",
+          "canonicalResponse": "154",
+          "audioFile": "audio/cardinal-154.wav"
+        },
+        {
+          "id": "cardinal-190",
+          "spokenText": "einhundertneunzig",
+          "canonicalResponse": "190",
+          "audioFile": "audio/cardinal-190.wav"
+        },
+        {
+          "id": "cardinal-226",
+          "spokenText": "zweihundertsechsundzwanzig",
+          "canonicalResponse": "226",
+          "audioFile": "audio/cardinal-226.wav"
+        },
+        {
+          "id": "cardinal-262",
+          "spokenText": "zweihundertzweiundsechzig",
+          "canonicalResponse": "262",
+          "audioFile": "audio/cardinal-262.wav"
+        },
+        {
+          "id": "cardinal-298",
+          "spokenText": "zweihundertachtundneunzig",
+          "canonicalResponse": "298",
+          "audioFile": "audio/cardinal-298.wav"
+        },
+        {
+          "id": "cardinal-334",
+          "spokenText": "dreihundertvierunddreißig",
+          "canonicalResponse": "334",
+          "audioFile": "audio/cardinal-334.wav"
+        },
+        {
+          "id": "cardinal-370",
+          "spokenText": "dreihundertsiebzig",
+          "canonicalResponse": "370",
+          "audioFile": "audio/cardinal-370.wav"
+        },
+        {
+          "id": "cardinal-406",
+          "spokenText": "vierhundertsechs",
+          "canonicalResponse": "406",
+          "audioFile": "audio/cardinal-406.wav"
+        },
+        {
+          "id": "cardinal-442",
+          "spokenText": "vierhundertzweiundvierzig",
+          "canonicalResponse": "442",
+          "audioFile": "audio/cardinal-442.wav"
+        },
+        {
+          "id": "cardinal-478",
+          "spokenText": "vierhundertachtundsiebzig",
+          "canonicalResponse": "478",
+          "audioFile": "audio/cardinal-478.wav"
+        },
+        {
+          "id": "cardinal-514",
+          "spokenText": "fünfhundertvierzehn",
+          "canonicalResponse": "514",
+          "audioFile": "audio/cardinal-514.wav"
+        },
+        {
+          "id": "cardinal-550",
+          "spokenText": "fünfhundertfünfzig",
+          "canonicalResponse": "550",
+          "audioFile": "audio/cardinal-550.wav"
+        },
+        {
+          "id": "cardinal-586",
+          "spokenText": "fünfhundertsechsundachtzig",
+          "canonicalResponse": "586",
+          "audioFile": "audio/cardinal-586.wav"
+        },
+        {
+          "id": "cardinal-622",
+          "spokenText": "sechshundertzweiundzwanzig",
+          "canonicalResponse": "622",
+          "audioFile": "audio/cardinal-622.wav"
+        },
+        {
+          "id": "cardinal-658",
+          "spokenText": "sechshundertachtundfünfzig",
+          "canonicalResponse": "658",
+          "audioFile": "audio/cardinal-658.wav"
+        },
+        {
+          "id": "cardinal-694",
+          "spokenText": "sechshundertvierundneunzig",
+          "canonicalResponse": "694",
+          "audioFile": "audio/cardinal-694.wav"
+        },
+        {
+          "id": "cardinal-730",
+          "spokenText": "siebenhundertdreißig",
+          "canonicalResponse": "730",
+          "audioFile": "audio/cardinal-730.wav"
+        },
+        {
+          "id": "cardinal-766",
+          "spokenText": "siebenhundertsechsundsechzig",
+          "canonicalResponse": "766",
+          "audioFile": "audio/cardinal-766.wav"
+        },
+        {
+          "id": "cardinal-802",
+          "spokenText": "achthundertzwei",
+          "canonicalResponse": "802",
+          "audioFile": "audio/cardinal-802.wav"
+        },
+        {
+          "id": "cardinal-838",
+          "spokenText": "achthundertachtunddreißig",
+          "canonicalResponse": "838",
+          "audioFile": "audio/cardinal-838.wav"
+        },
+        {
+          "id": "cardinal-874",
+          "spokenText": "achthundertvierundsiebzig",
+          "canonicalResponse": "874",
+          "audioFile": "audio/cardinal-874.wav"
+        },
+        {
+          "id": "cardinal-910",
+          "spokenText": "neunhundertzehn",
+          "canonicalResponse": "910",
+          "audioFile": "audio/cardinal-910.wav"
+        },
+        {
+          "id": "cardinal-946",
+          "spokenText": "neunhundertsechsundvierzig",
+          "canonicalResponse": "946",
+          "audioFile": "audio/cardinal-946.wav"
+        },
+        {
+          "id": "cardinal-982",
+          "spokenText": "neunhundertzweiundachtzig",
+          "canonicalResponse": "982",
+          "audioFile": "audio/cardinal-982.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-20",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-119",
+          "spokenText": "einhundertneunzehn",
+          "canonicalResponse": "119",
+          "audioFile": "audio/cardinal-119.wav"
+        },
+        {
+          "id": "cardinal-155",
+          "spokenText": "einhundertfünfundfünfzig",
+          "canonicalResponse": "155",
+          "audioFile": "audio/cardinal-155.wav"
+        },
+        {
+          "id": "cardinal-191",
+          "spokenText": "einhunderteinundneunzig",
+          "canonicalResponse": "191",
+          "audioFile": "audio/cardinal-191.wav"
+        },
+        {
+          "id": "cardinal-227",
+          "spokenText": "zweihundertsiebenundzwanzig",
+          "canonicalResponse": "227",
+          "audioFile": "audio/cardinal-227.wav"
+        },
+        {
+          "id": "cardinal-263",
+          "spokenText": "zweihundertdreiundsechzig",
+          "canonicalResponse": "263",
+          "audioFile": "audio/cardinal-263.wav"
+        },
+        {
+          "id": "cardinal-299",
+          "spokenText": "zweihundertneunundneunzig",
+          "canonicalResponse": "299",
+          "audioFile": "audio/cardinal-299.wav"
+        },
+        {
+          "id": "cardinal-335",
+          "spokenText": "dreihundertfünfunddreißig",
+          "canonicalResponse": "335",
+          "audioFile": "audio/cardinal-335.wav"
+        },
+        {
+          "id": "cardinal-371",
+          "spokenText": "dreihunderteinundsiebzig",
+          "canonicalResponse": "371",
+          "audioFile": "audio/cardinal-371.wav"
+        },
+        {
+          "id": "cardinal-407",
+          "spokenText": "vierhundertsieben",
+          "canonicalResponse": "407",
+          "audioFile": "audio/cardinal-407.wav"
+        },
+        {
+          "id": "cardinal-443",
+          "spokenText": "vierhundertdreiundvierzig",
+          "canonicalResponse": "443",
+          "audioFile": "audio/cardinal-443.wav"
+        },
+        {
+          "id": "cardinal-479",
+          "spokenText": "vierhundertneunundsiebzig",
+          "canonicalResponse": "479",
+          "audioFile": "audio/cardinal-479.wav"
+        },
+        {
+          "id": "cardinal-515",
+          "spokenText": "fünfhundertfünfzehn",
+          "canonicalResponse": "515",
+          "audioFile": "audio/cardinal-515.wav"
+        },
+        {
+          "id": "cardinal-551",
+          "spokenText": "fünfhunderteinundfünfzig",
+          "canonicalResponse": "551",
+          "audioFile": "audio/cardinal-551.wav"
+        },
+        {
+          "id": "cardinal-587",
+          "spokenText": "fünfhundertsiebenundachtzig",
+          "canonicalResponse": "587",
+          "audioFile": "audio/cardinal-587.wav"
+        },
+        {
+          "id": "cardinal-623",
+          "spokenText": "sechshundertdreiundzwanzig",
+          "canonicalResponse": "623",
+          "audioFile": "audio/cardinal-623.wav"
+        },
+        {
+          "id": "cardinal-659",
+          "spokenText": "sechshundertneunundfünfzig",
+          "canonicalResponse": "659",
+          "audioFile": "audio/cardinal-659.wav"
+        },
+        {
+          "id": "cardinal-695",
+          "spokenText": "sechshundertfünfundneunzig",
+          "canonicalResponse": "695",
+          "audioFile": "audio/cardinal-695.wav"
+        },
+        {
+          "id": "cardinal-731",
+          "spokenText": "siebenhunderteinunddreißig",
+          "canonicalResponse": "731",
+          "audioFile": "audio/cardinal-731.wav"
+        },
+        {
+          "id": "cardinal-767",
+          "spokenText": "siebenhundertsiebenundsechzig",
+          "canonicalResponse": "767",
+          "audioFile": "audio/cardinal-767.wav"
+        },
+        {
+          "id": "cardinal-803",
+          "spokenText": "achthundertdrei",
+          "canonicalResponse": "803",
+          "audioFile": "audio/cardinal-803.wav"
+        },
+        {
+          "id": "cardinal-839",
+          "spokenText": "achthundertneununddreißig",
+          "canonicalResponse": "839",
+          "audioFile": "audio/cardinal-839.wav"
+        },
+        {
+          "id": "cardinal-875",
+          "spokenText": "achthundertfünfundsiebzig",
+          "canonicalResponse": "875",
+          "audioFile": "audio/cardinal-875.wav"
+        },
+        {
+          "id": "cardinal-911",
+          "spokenText": "neunhundertelf",
+          "canonicalResponse": "911",
+          "audioFile": "audio/cardinal-911.wav"
+        },
+        {
+          "id": "cardinal-947",
+          "spokenText": "neunhundertsiebenundvierzig",
+          "canonicalResponse": "947",
+          "audioFile": "audio/cardinal-947.wav"
+        },
+        {
+          "id": "cardinal-983",
+          "spokenText": "neunhundertdreiundachtzig",
+          "canonicalResponse": "983",
+          "audioFile": "audio/cardinal-983.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-21",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-120",
+          "spokenText": "einhundertzwanzig",
+          "canonicalResponse": "120",
+          "audioFile": "audio/cardinal-120.wav"
+        },
+        {
+          "id": "cardinal-156",
+          "spokenText": "einhundertsechsundfünfzig",
+          "canonicalResponse": "156",
+          "audioFile": "audio/cardinal-156.wav"
+        },
+        {
+          "id": "cardinal-192",
+          "spokenText": "einhundertzweiundneunzig",
+          "canonicalResponse": "192",
+          "audioFile": "audio/cardinal-192.wav"
+        },
+        {
+          "id": "cardinal-228",
+          "spokenText": "zweihundertachtundzwanzig",
+          "canonicalResponse": "228",
+          "audioFile": "audio/cardinal-228.wav"
+        },
+        {
+          "id": "cardinal-264",
+          "spokenText": "zweihundertvierundsechzig",
+          "canonicalResponse": "264",
+          "audioFile": "audio/cardinal-264.wav"
+        },
+        {
+          "id": "cardinal-300",
+          "spokenText": "dreihundert",
+          "canonicalResponse": "300",
+          "audioFile": "audio/cardinal-300.wav"
+        },
+        {
+          "id": "cardinal-336",
+          "spokenText": "dreihundertsechsunddreißig",
+          "canonicalResponse": "336",
+          "audioFile": "audio/cardinal-336.wav"
+        },
+        {
+          "id": "cardinal-372",
+          "spokenText": "dreihundertzweiundsiebzig",
+          "canonicalResponse": "372",
+          "audioFile": "audio/cardinal-372.wav"
+        },
+        {
+          "id": "cardinal-408",
+          "spokenText": "vierhundertacht",
+          "canonicalResponse": "408",
+          "audioFile": "audio/cardinal-408.wav"
+        },
+        {
+          "id": "cardinal-444",
+          "spokenText": "vierhundertvierundvierzig",
+          "canonicalResponse": "444",
+          "audioFile": "audio/cardinal-444.wav"
+        },
+        {
+          "id": "cardinal-480",
+          "spokenText": "vierhundertachtzig",
+          "canonicalResponse": "480",
+          "audioFile": "audio/cardinal-480.wav"
+        },
+        {
+          "id": "cardinal-516",
+          "spokenText": "fünfhundertsechzehn",
+          "canonicalResponse": "516",
+          "audioFile": "audio/cardinal-516.wav"
+        },
+        {
+          "id": "cardinal-552",
+          "spokenText": "fünfhundertzweiundfünfzig",
+          "canonicalResponse": "552",
+          "audioFile": "audio/cardinal-552.wav"
+        },
+        {
+          "id": "cardinal-588",
+          "spokenText": "fünfhundertachtundachtzig",
+          "canonicalResponse": "588",
+          "audioFile": "audio/cardinal-588.wav"
+        },
+        {
+          "id": "cardinal-624",
+          "spokenText": "sechshundertvierundzwanzig",
+          "canonicalResponse": "624",
+          "audioFile": "audio/cardinal-624.wav"
+        },
+        {
+          "id": "cardinal-660",
+          "spokenText": "sechshundertsechzig",
+          "canonicalResponse": "660",
+          "audioFile": "audio/cardinal-660.wav"
+        },
+        {
+          "id": "cardinal-696",
+          "spokenText": "sechshundertsechsundneunzig",
+          "canonicalResponse": "696",
+          "audioFile": "audio/cardinal-696.wav"
+        },
+        {
+          "id": "cardinal-732",
+          "spokenText": "siebenhundertzweiunddreißig",
+          "canonicalResponse": "732",
+          "audioFile": "audio/cardinal-732.wav"
+        },
+        {
+          "id": "cardinal-768",
+          "spokenText": "siebenhundertachtundsechzig",
+          "canonicalResponse": "768",
+          "audioFile": "audio/cardinal-768.wav"
+        },
+        {
+          "id": "cardinal-804",
+          "spokenText": "achthundertvier",
+          "canonicalResponse": "804",
+          "audioFile": "audio/cardinal-804.wav"
+        },
+        {
+          "id": "cardinal-840",
+          "spokenText": "achthundertvierzig",
+          "canonicalResponse": "840",
+          "audioFile": "audio/cardinal-840.wav"
+        },
+        {
+          "id": "cardinal-876",
+          "spokenText": "achthundertsechsundsiebzig",
+          "canonicalResponse": "876",
+          "audioFile": "audio/cardinal-876.wav"
+        },
+        {
+          "id": "cardinal-912",
+          "spokenText": "neunhundertzwölf",
+          "canonicalResponse": "912",
+          "audioFile": "audio/cardinal-912.wav"
+        },
+        {
+          "id": "cardinal-948",
+          "spokenText": "neunhundertachtundvierzig",
+          "canonicalResponse": "948",
+          "audioFile": "audio/cardinal-948.wav"
+        },
+        {
+          "id": "cardinal-984",
+          "spokenText": "neunhundertvierundachtzig",
+          "canonicalResponse": "984",
+          "audioFile": "audio/cardinal-984.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-22",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-121",
+          "spokenText": "einhunderteinundzwanzig",
+          "canonicalResponse": "121",
+          "audioFile": "audio/cardinal-121.wav"
+        },
+        {
+          "id": "cardinal-157",
+          "spokenText": "einhundertsiebenundfünfzig",
+          "canonicalResponse": "157",
+          "audioFile": "audio/cardinal-157.wav"
+        },
+        {
+          "id": "cardinal-193",
+          "spokenText": "einhundertdreiundneunzig",
+          "canonicalResponse": "193",
+          "audioFile": "audio/cardinal-193.wav"
+        },
+        {
+          "id": "cardinal-229",
+          "spokenText": "zweihundertneunundzwanzig",
+          "canonicalResponse": "229",
+          "audioFile": "audio/cardinal-229.wav"
+        },
+        {
+          "id": "cardinal-265",
+          "spokenText": "zweihundertfünfundsechzig",
+          "canonicalResponse": "265",
+          "audioFile": "audio/cardinal-265.wav"
+        },
+        {
+          "id": "cardinal-301",
+          "spokenText": "dreihunderteins",
+          "canonicalResponse": "301",
+          "audioFile": "audio/cardinal-301.wav"
+        },
+        {
+          "id": "cardinal-337",
+          "spokenText": "dreihundertsiebenunddreißig",
+          "canonicalResponse": "337",
+          "audioFile": "audio/cardinal-337.wav"
+        },
+        {
+          "id": "cardinal-373",
+          "spokenText": "dreihundertdreiundsiebzig",
+          "canonicalResponse": "373",
+          "audioFile": "audio/cardinal-373.wav"
+        },
+        {
+          "id": "cardinal-409",
+          "spokenText": "vierhundertneun",
+          "canonicalResponse": "409",
+          "audioFile": "audio/cardinal-409.wav"
+        },
+        {
+          "id": "cardinal-445",
+          "spokenText": "vierhundertfünfundvierzig",
+          "canonicalResponse": "445",
+          "audioFile": "audio/cardinal-445.wav"
+        },
+        {
+          "id": "cardinal-481",
+          "spokenText": "vierhunderteinundachtzig",
+          "canonicalResponse": "481",
+          "audioFile": "audio/cardinal-481.wav"
+        },
+        {
+          "id": "cardinal-517",
+          "spokenText": "fünfhundertsiebzehn",
+          "canonicalResponse": "517",
+          "audioFile": "audio/cardinal-517.wav"
+        },
+        {
+          "id": "cardinal-553",
+          "spokenText": "fünfhundertdreiundfünfzig",
+          "canonicalResponse": "553",
+          "audioFile": "audio/cardinal-553.wav"
+        },
+        {
+          "id": "cardinal-589",
+          "spokenText": "fünfhundertneunundachtzig",
+          "canonicalResponse": "589",
+          "audioFile": "audio/cardinal-589.wav"
+        },
+        {
+          "id": "cardinal-625",
+          "spokenText": "sechshundertfünfundzwanzig",
+          "canonicalResponse": "625",
+          "audioFile": "audio/cardinal-625.wav"
+        },
+        {
+          "id": "cardinal-661",
+          "spokenText": "sechshunderteinundsechzig",
+          "canonicalResponse": "661",
+          "audioFile": "audio/cardinal-661.wav"
+        },
+        {
+          "id": "cardinal-697",
+          "spokenText": "sechshundertsiebenundneunzig",
+          "canonicalResponse": "697",
+          "audioFile": "audio/cardinal-697.wav"
+        },
+        {
+          "id": "cardinal-733",
+          "spokenText": "siebenhundertdreiunddreißig",
+          "canonicalResponse": "733",
+          "audioFile": "audio/cardinal-733.wav"
+        },
+        {
+          "id": "cardinal-769",
+          "spokenText": "siebenhundertneunundsechzig",
+          "canonicalResponse": "769",
+          "audioFile": "audio/cardinal-769.wav"
+        },
+        {
+          "id": "cardinal-805",
+          "spokenText": "achthundertfünf",
+          "canonicalResponse": "805",
+          "audioFile": "audio/cardinal-805.wav"
+        },
+        {
+          "id": "cardinal-841",
+          "spokenText": "achthunderteinundvierzig",
+          "canonicalResponse": "841",
+          "audioFile": "audio/cardinal-841.wav"
+        },
+        {
+          "id": "cardinal-877",
+          "spokenText": "achthundertsiebenundsiebzig",
+          "canonicalResponse": "877",
+          "audioFile": "audio/cardinal-877.wav"
+        },
+        {
+          "id": "cardinal-913",
+          "spokenText": "neunhundertdreizehn",
+          "canonicalResponse": "913",
+          "audioFile": "audio/cardinal-913.wav"
+        },
+        {
+          "id": "cardinal-949",
+          "spokenText": "neunhundertneunundvierzig",
+          "canonicalResponse": "949",
+          "audioFile": "audio/cardinal-949.wav"
+        },
+        {
+          "id": "cardinal-985",
+          "spokenText": "neunhundertfünfundachtzig",
+          "canonicalResponse": "985",
+          "audioFile": "audio/cardinal-985.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-23",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-122",
+          "spokenText": "einhundertzweiundzwanzig",
+          "canonicalResponse": "122",
+          "audioFile": "audio/cardinal-122.wav"
+        },
+        {
+          "id": "cardinal-158",
+          "spokenText": "einhundertachtundfünfzig",
+          "canonicalResponse": "158",
+          "audioFile": "audio/cardinal-158.wav"
+        },
+        {
+          "id": "cardinal-194",
+          "spokenText": "einhundertvierundneunzig",
+          "canonicalResponse": "194",
+          "audioFile": "audio/cardinal-194.wav"
+        },
+        {
+          "id": "cardinal-230",
+          "spokenText": "zweihundertdreißig",
+          "canonicalResponse": "230",
+          "audioFile": "audio/cardinal-230.wav"
+        },
+        {
+          "id": "cardinal-266",
+          "spokenText": "zweihundertsechsundsechzig",
+          "canonicalResponse": "266",
+          "audioFile": "audio/cardinal-266.wav"
+        },
+        {
+          "id": "cardinal-302",
+          "spokenText": "dreihundertzwei",
+          "canonicalResponse": "302",
+          "audioFile": "audio/cardinal-302.wav"
+        },
+        {
+          "id": "cardinal-338",
+          "spokenText": "dreihundertachtunddreißig",
+          "canonicalResponse": "338",
+          "audioFile": "audio/cardinal-338.wav"
+        },
+        {
+          "id": "cardinal-374",
+          "spokenText": "dreihundertvierundsiebzig",
+          "canonicalResponse": "374",
+          "audioFile": "audio/cardinal-374.wav"
+        },
+        {
+          "id": "cardinal-410",
+          "spokenText": "vierhundertzehn",
+          "canonicalResponse": "410",
+          "audioFile": "audio/cardinal-410.wav"
+        },
+        {
+          "id": "cardinal-446",
+          "spokenText": "vierhundertsechsundvierzig",
+          "canonicalResponse": "446",
+          "audioFile": "audio/cardinal-446.wav"
+        },
+        {
+          "id": "cardinal-482",
+          "spokenText": "vierhundertzweiundachtzig",
+          "canonicalResponse": "482",
+          "audioFile": "audio/cardinal-482.wav"
+        },
+        {
+          "id": "cardinal-518",
+          "spokenText": "fünfhundertachtzehn",
+          "canonicalResponse": "518",
+          "audioFile": "audio/cardinal-518.wav"
+        },
+        {
+          "id": "cardinal-554",
+          "spokenText": "fünfhundertvierundfünfzig",
+          "canonicalResponse": "554",
+          "audioFile": "audio/cardinal-554.wav"
+        },
+        {
+          "id": "cardinal-590",
+          "spokenText": "fünfhundertneunzig",
+          "canonicalResponse": "590",
+          "audioFile": "audio/cardinal-590.wav"
+        },
+        {
+          "id": "cardinal-626",
+          "spokenText": "sechshundertsechsundzwanzig",
+          "canonicalResponse": "626",
+          "audioFile": "audio/cardinal-626.wav"
+        },
+        {
+          "id": "cardinal-662",
+          "spokenText": "sechshundertzweiundsechzig",
+          "canonicalResponse": "662",
+          "audioFile": "audio/cardinal-662.wav"
+        },
+        {
+          "id": "cardinal-698",
+          "spokenText": "sechshundertachtundneunzig",
+          "canonicalResponse": "698",
+          "audioFile": "audio/cardinal-698.wav"
+        },
+        {
+          "id": "cardinal-734",
+          "spokenText": "siebenhundertvierunddreißig",
+          "canonicalResponse": "734",
+          "audioFile": "audio/cardinal-734.wav"
+        },
+        {
+          "id": "cardinal-770",
+          "spokenText": "siebenhundertsiebzig",
+          "canonicalResponse": "770",
+          "audioFile": "audio/cardinal-770.wav"
+        },
+        {
+          "id": "cardinal-806",
+          "spokenText": "achthundertsechs",
+          "canonicalResponse": "806",
+          "audioFile": "audio/cardinal-806.wav"
+        },
+        {
+          "id": "cardinal-842",
+          "spokenText": "achthundertzweiundvierzig",
+          "canonicalResponse": "842",
+          "audioFile": "audio/cardinal-842.wav"
+        },
+        {
+          "id": "cardinal-878",
+          "spokenText": "achthundertachtundsiebzig",
+          "canonicalResponse": "878",
+          "audioFile": "audio/cardinal-878.wav"
+        },
+        {
+          "id": "cardinal-914",
+          "spokenText": "neunhundertvierzehn",
+          "canonicalResponse": "914",
+          "audioFile": "audio/cardinal-914.wav"
+        },
+        {
+          "id": "cardinal-950",
+          "spokenText": "neunhundertfünfzig",
+          "canonicalResponse": "950",
+          "audioFile": "audio/cardinal-950.wav"
+        },
+        {
+          "id": "cardinal-986",
+          "spokenText": "neunhundertsechsundachtzig",
+          "canonicalResponse": "986",
+          "audioFile": "audio/cardinal-986.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-24",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-123",
+          "spokenText": "einhundertdreiundzwanzig",
+          "canonicalResponse": "123",
+          "audioFile": "audio/cardinal-123.wav"
+        },
+        {
+          "id": "cardinal-159",
+          "spokenText": "einhundertneunundfünfzig",
+          "canonicalResponse": "159",
+          "audioFile": "audio/cardinal-159.wav"
+        },
+        {
+          "id": "cardinal-195",
+          "spokenText": "einhundertfünfundneunzig",
+          "canonicalResponse": "195",
+          "audioFile": "audio/cardinal-195.wav"
+        },
+        {
+          "id": "cardinal-231",
+          "spokenText": "zweihunderteinunddreißig",
+          "canonicalResponse": "231",
+          "audioFile": "audio/cardinal-231.wav"
+        },
+        {
+          "id": "cardinal-267",
+          "spokenText": "zweihundertsiebenundsechzig",
+          "canonicalResponse": "267",
+          "audioFile": "audio/cardinal-267.wav"
+        },
+        {
+          "id": "cardinal-303",
+          "spokenText": "dreihundertdrei",
+          "canonicalResponse": "303",
+          "audioFile": "audio/cardinal-303.wav"
+        },
+        {
+          "id": "cardinal-339",
+          "spokenText": "dreihundertneununddreißig",
+          "canonicalResponse": "339",
+          "audioFile": "audio/cardinal-339.wav"
+        },
+        {
+          "id": "cardinal-375",
+          "spokenText": "dreihundertfünfundsiebzig",
+          "canonicalResponse": "375",
+          "audioFile": "audio/cardinal-375.wav"
+        },
+        {
+          "id": "cardinal-411",
+          "spokenText": "vierhundertelf",
+          "canonicalResponse": "411",
+          "audioFile": "audio/cardinal-411.wav"
+        },
+        {
+          "id": "cardinal-447",
+          "spokenText": "vierhundertsiebenundvierzig",
+          "canonicalResponse": "447",
+          "audioFile": "audio/cardinal-447.wav"
+        },
+        {
+          "id": "cardinal-483",
+          "spokenText": "vierhundertdreiundachtzig",
+          "canonicalResponse": "483",
+          "audioFile": "audio/cardinal-483.wav"
+        },
+        {
+          "id": "cardinal-519",
+          "spokenText": "fünfhundertneunzehn",
+          "canonicalResponse": "519",
+          "audioFile": "audio/cardinal-519.wav"
+        },
+        {
+          "id": "cardinal-555",
+          "spokenText": "fünfhundertfünfundfünfzig",
+          "canonicalResponse": "555",
+          "audioFile": "audio/cardinal-555.wav"
+        },
+        {
+          "id": "cardinal-591",
+          "spokenText": "fünfhunderteinundneunzig",
+          "canonicalResponse": "591",
+          "audioFile": "audio/cardinal-591.wav"
+        },
+        {
+          "id": "cardinal-627",
+          "spokenText": "sechshundertsiebenundzwanzig",
+          "canonicalResponse": "627",
+          "audioFile": "audio/cardinal-627.wav"
+        },
+        {
+          "id": "cardinal-663",
+          "spokenText": "sechshundertdreiundsechzig",
+          "canonicalResponse": "663",
+          "audioFile": "audio/cardinal-663.wav"
+        },
+        {
+          "id": "cardinal-699",
+          "spokenText": "sechshundertneunundneunzig",
+          "canonicalResponse": "699",
+          "audioFile": "audio/cardinal-699.wav"
+        },
+        {
+          "id": "cardinal-735",
+          "spokenText": "siebenhundertfünfunddreißig",
+          "canonicalResponse": "735",
+          "audioFile": "audio/cardinal-735.wav"
+        },
+        {
+          "id": "cardinal-771",
+          "spokenText": "siebenhunderteinundsiebzig",
+          "canonicalResponse": "771",
+          "audioFile": "audio/cardinal-771.wav"
+        },
+        {
+          "id": "cardinal-807",
+          "spokenText": "achthundertsieben",
+          "canonicalResponse": "807",
+          "audioFile": "audio/cardinal-807.wav"
+        },
+        {
+          "id": "cardinal-843",
+          "spokenText": "achthundertdreiundvierzig",
+          "canonicalResponse": "843",
+          "audioFile": "audio/cardinal-843.wav"
+        },
+        {
+          "id": "cardinal-879",
+          "spokenText": "achthundertneunundsiebzig",
+          "canonicalResponse": "879",
+          "audioFile": "audio/cardinal-879.wav"
+        },
+        {
+          "id": "cardinal-915",
+          "spokenText": "neunhundertfünfzehn",
+          "canonicalResponse": "915",
+          "audioFile": "audio/cardinal-915.wav"
+        },
+        {
+          "id": "cardinal-951",
+          "spokenText": "neunhunderteinundfünfzig",
+          "canonicalResponse": "951",
+          "audioFile": "audio/cardinal-951.wav"
+        },
+        {
+          "id": "cardinal-987",
+          "spokenText": "neunhundertsiebenundachtzig",
+          "canonicalResponse": "987",
+          "audioFile": "audio/cardinal-987.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-25",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-124",
+          "spokenText": "einhundertvierundzwanzig",
+          "canonicalResponse": "124",
+          "audioFile": "audio/cardinal-124.wav"
+        },
+        {
+          "id": "cardinal-160",
+          "spokenText": "einhundertsechzig",
+          "canonicalResponse": "160",
+          "audioFile": "audio/cardinal-160.wav"
+        },
+        {
+          "id": "cardinal-196",
+          "spokenText": "einhundertsechsundneunzig",
+          "canonicalResponse": "196",
+          "audioFile": "audio/cardinal-196.wav"
+        },
+        {
+          "id": "cardinal-232",
+          "spokenText": "zweihundertzweiunddreißig",
+          "canonicalResponse": "232",
+          "audioFile": "audio/cardinal-232.wav"
+        },
+        {
+          "id": "cardinal-268",
+          "spokenText": "zweihundertachtundsechzig",
+          "canonicalResponse": "268",
+          "audioFile": "audio/cardinal-268.wav"
+        },
+        {
+          "id": "cardinal-304",
+          "spokenText": "dreihundertvier",
+          "canonicalResponse": "304",
+          "audioFile": "audio/cardinal-304.wav"
+        },
+        {
+          "id": "cardinal-340",
+          "spokenText": "dreihundertvierzig",
+          "canonicalResponse": "340",
+          "audioFile": "audio/cardinal-340.wav"
+        },
+        {
+          "id": "cardinal-376",
+          "spokenText": "dreihundertsechsundsiebzig",
+          "canonicalResponse": "376",
+          "audioFile": "audio/cardinal-376.wav"
+        },
+        {
+          "id": "cardinal-412",
+          "spokenText": "vierhundertzwölf",
+          "canonicalResponse": "412",
+          "audioFile": "audio/cardinal-412.wav"
+        },
+        {
+          "id": "cardinal-448",
+          "spokenText": "vierhundertachtundvierzig",
+          "canonicalResponse": "448",
+          "audioFile": "audio/cardinal-448.wav"
+        },
+        {
+          "id": "cardinal-484",
+          "spokenText": "vierhundertvierundachtzig",
+          "canonicalResponse": "484",
+          "audioFile": "audio/cardinal-484.wav"
+        },
+        {
+          "id": "cardinal-520",
+          "spokenText": "fünfhundertzwanzig",
+          "canonicalResponse": "520",
+          "audioFile": "audio/cardinal-520.wav"
+        },
+        {
+          "id": "cardinal-556",
+          "spokenText": "fünfhundertsechsundfünfzig",
+          "canonicalResponse": "556",
+          "audioFile": "audio/cardinal-556.wav"
+        },
+        {
+          "id": "cardinal-592",
+          "spokenText": "fünfhundertzweiundneunzig",
+          "canonicalResponse": "592",
+          "audioFile": "audio/cardinal-592.wav"
+        },
+        {
+          "id": "cardinal-628",
+          "spokenText": "sechshundertachtundzwanzig",
+          "canonicalResponse": "628",
+          "audioFile": "audio/cardinal-628.wav"
+        },
+        {
+          "id": "cardinal-664",
+          "spokenText": "sechshundertvierundsechzig",
+          "canonicalResponse": "664",
+          "audioFile": "audio/cardinal-664.wav"
+        },
+        {
+          "id": "cardinal-700",
+          "spokenText": "siebenhundert",
+          "canonicalResponse": "700",
+          "audioFile": "audio/cardinal-700.wav"
+        },
+        {
+          "id": "cardinal-736",
+          "spokenText": "siebenhundertsechsunddreißig",
+          "canonicalResponse": "736",
+          "audioFile": "audio/cardinal-736.wav"
+        },
+        {
+          "id": "cardinal-772",
+          "spokenText": "siebenhundertzweiundsiebzig",
+          "canonicalResponse": "772",
+          "audioFile": "audio/cardinal-772.wav"
+        },
+        {
+          "id": "cardinal-808",
+          "spokenText": "achthundertacht",
+          "canonicalResponse": "808",
+          "audioFile": "audio/cardinal-808.wav"
+        },
+        {
+          "id": "cardinal-844",
+          "spokenText": "achthundertvierundvierzig",
+          "canonicalResponse": "844",
+          "audioFile": "audio/cardinal-844.wav"
+        },
+        {
+          "id": "cardinal-880",
+          "spokenText": "achthundertachtzig",
+          "canonicalResponse": "880",
+          "audioFile": "audio/cardinal-880.wav"
+        },
+        {
+          "id": "cardinal-916",
+          "spokenText": "neunhundertsechzehn",
+          "canonicalResponse": "916",
+          "audioFile": "audio/cardinal-916.wav"
+        },
+        {
+          "id": "cardinal-952",
+          "spokenText": "neunhundertzweiundfünfzig",
+          "canonicalResponse": "952",
+          "audioFile": "audio/cardinal-952.wav"
+        },
+        {
+          "id": "cardinal-988",
+          "spokenText": "neunhundertachtundachtzig",
+          "canonicalResponse": "988",
+          "audioFile": "audio/cardinal-988.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-26",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-125",
+          "spokenText": "einhundertfünfundzwanzig",
+          "canonicalResponse": "125",
+          "audioFile": "audio/cardinal-125.wav"
+        },
+        {
+          "id": "cardinal-161",
+          "spokenText": "einhunderteinundsechzig",
+          "canonicalResponse": "161",
+          "audioFile": "audio/cardinal-161.wav"
+        },
+        {
+          "id": "cardinal-197",
+          "spokenText": "einhundertsiebenundneunzig",
+          "canonicalResponse": "197",
+          "audioFile": "audio/cardinal-197.wav"
+        },
+        {
+          "id": "cardinal-233",
+          "spokenText": "zweihundertdreiunddreißig",
+          "canonicalResponse": "233",
+          "audioFile": "audio/cardinal-233.wav"
+        },
+        {
+          "id": "cardinal-269",
+          "spokenText": "zweihundertneunundsechzig",
+          "canonicalResponse": "269",
+          "audioFile": "audio/cardinal-269.wav"
+        },
+        {
+          "id": "cardinal-305",
+          "spokenText": "dreihundertfünf",
+          "canonicalResponse": "305",
+          "audioFile": "audio/cardinal-305.wav"
+        },
+        {
+          "id": "cardinal-341",
+          "spokenText": "dreihunderteinundvierzig",
+          "canonicalResponse": "341",
+          "audioFile": "audio/cardinal-341.wav"
+        },
+        {
+          "id": "cardinal-377",
+          "spokenText": "dreihundertsiebenundsiebzig",
+          "canonicalResponse": "377",
+          "audioFile": "audio/cardinal-377.wav"
+        },
+        {
+          "id": "cardinal-413",
+          "spokenText": "vierhundertdreizehn",
+          "canonicalResponse": "413",
+          "audioFile": "audio/cardinal-413.wav"
+        },
+        {
+          "id": "cardinal-449",
+          "spokenText": "vierhundertneunundvierzig",
+          "canonicalResponse": "449",
+          "audioFile": "audio/cardinal-449.wav"
+        },
+        {
+          "id": "cardinal-485",
+          "spokenText": "vierhundertfünfundachtzig",
+          "canonicalResponse": "485",
+          "audioFile": "audio/cardinal-485.wav"
+        },
+        {
+          "id": "cardinal-521",
+          "spokenText": "fünfhunderteinundzwanzig",
+          "canonicalResponse": "521",
+          "audioFile": "audio/cardinal-521.wav"
+        },
+        {
+          "id": "cardinal-557",
+          "spokenText": "fünfhundertsiebenundfünfzig",
+          "canonicalResponse": "557",
+          "audioFile": "audio/cardinal-557.wav"
+        },
+        {
+          "id": "cardinal-593",
+          "spokenText": "fünfhundertdreiundneunzig",
+          "canonicalResponse": "593",
+          "audioFile": "audio/cardinal-593.wav"
+        },
+        {
+          "id": "cardinal-629",
+          "spokenText": "sechshundertneunundzwanzig",
+          "canonicalResponse": "629",
+          "audioFile": "audio/cardinal-629.wav"
+        },
+        {
+          "id": "cardinal-665",
+          "spokenText": "sechshundertfünfundsechzig",
+          "canonicalResponse": "665",
+          "audioFile": "audio/cardinal-665.wav"
+        },
+        {
+          "id": "cardinal-701",
+          "spokenText": "siebenhunderteins",
+          "canonicalResponse": "701",
+          "audioFile": "audio/cardinal-701.wav"
+        },
+        {
+          "id": "cardinal-737",
+          "spokenText": "siebenhundertsiebenunddreißig",
+          "canonicalResponse": "737",
+          "audioFile": "audio/cardinal-737.wav"
+        },
+        {
+          "id": "cardinal-773",
+          "spokenText": "siebenhundertdreiundsiebzig",
+          "canonicalResponse": "773",
+          "audioFile": "audio/cardinal-773.wav"
+        },
+        {
+          "id": "cardinal-809",
+          "spokenText": "achthundertneun",
+          "canonicalResponse": "809",
+          "audioFile": "audio/cardinal-809.wav"
+        },
+        {
+          "id": "cardinal-845",
+          "spokenText": "achthundertfünfundvierzig",
+          "canonicalResponse": "845",
+          "audioFile": "audio/cardinal-845.wav"
+        },
+        {
+          "id": "cardinal-881",
+          "spokenText": "achthunderteinundachtzig",
+          "canonicalResponse": "881",
+          "audioFile": "audio/cardinal-881.wav"
+        },
+        {
+          "id": "cardinal-917",
+          "spokenText": "neunhundertsiebzehn",
+          "canonicalResponse": "917",
+          "audioFile": "audio/cardinal-917.wav"
+        },
+        {
+          "id": "cardinal-953",
+          "spokenText": "neunhundertdreiundfünfzig",
+          "canonicalResponse": "953",
+          "audioFile": "audio/cardinal-953.wav"
+        },
+        {
+          "id": "cardinal-989",
+          "spokenText": "neunhundertneunundachtzig",
+          "canonicalResponse": "989",
+          "audioFile": "audio/cardinal-989.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-27",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-126",
+          "spokenText": "einhundertsechsundzwanzig",
+          "canonicalResponse": "126",
+          "audioFile": "audio/cardinal-126.wav"
+        },
+        {
+          "id": "cardinal-162",
+          "spokenText": "einhundertzweiundsechzig",
+          "canonicalResponse": "162",
+          "audioFile": "audio/cardinal-162.wav"
+        },
+        {
+          "id": "cardinal-198",
+          "spokenText": "einhundertachtundneunzig",
+          "canonicalResponse": "198",
+          "audioFile": "audio/cardinal-198.wav"
+        },
+        {
+          "id": "cardinal-234",
+          "spokenText": "zweihundertvierunddreißig",
+          "canonicalResponse": "234",
+          "audioFile": "audio/cardinal-234.wav"
+        },
+        {
+          "id": "cardinal-270",
+          "spokenText": "zweihundertsiebzig",
+          "canonicalResponse": "270",
+          "audioFile": "audio/cardinal-270.wav"
+        },
+        {
+          "id": "cardinal-306",
+          "spokenText": "dreihundertsechs",
+          "canonicalResponse": "306",
+          "audioFile": "audio/cardinal-306.wav"
+        },
+        {
+          "id": "cardinal-342",
+          "spokenText": "dreihundertzweiundvierzig",
+          "canonicalResponse": "342",
+          "audioFile": "audio/cardinal-342.wav"
+        },
+        {
+          "id": "cardinal-378",
+          "spokenText": "dreihundertachtundsiebzig",
+          "canonicalResponse": "378",
+          "audioFile": "audio/cardinal-378.wav"
+        },
+        {
+          "id": "cardinal-414",
+          "spokenText": "vierhundertvierzehn",
+          "canonicalResponse": "414",
+          "audioFile": "audio/cardinal-414.wav"
+        },
+        {
+          "id": "cardinal-450",
+          "spokenText": "vierhundertfünfzig",
+          "canonicalResponse": "450",
+          "audioFile": "audio/cardinal-450.wav"
+        },
+        {
+          "id": "cardinal-486",
+          "spokenText": "vierhundertsechsundachtzig",
+          "canonicalResponse": "486",
+          "audioFile": "audio/cardinal-486.wav"
+        },
+        {
+          "id": "cardinal-522",
+          "spokenText": "fünfhundertzweiundzwanzig",
+          "canonicalResponse": "522",
+          "audioFile": "audio/cardinal-522.wav"
+        },
+        {
+          "id": "cardinal-558",
+          "spokenText": "fünfhundertachtundfünfzig",
+          "canonicalResponse": "558",
+          "audioFile": "audio/cardinal-558.wav"
+        },
+        {
+          "id": "cardinal-594",
+          "spokenText": "fünfhundertvierundneunzig",
+          "canonicalResponse": "594",
+          "audioFile": "audio/cardinal-594.wav"
+        },
+        {
+          "id": "cardinal-630",
+          "spokenText": "sechshundertdreißig",
+          "canonicalResponse": "630",
+          "audioFile": "audio/cardinal-630.wav"
+        },
+        {
+          "id": "cardinal-666",
+          "spokenText": "sechshundertsechsundsechzig",
+          "canonicalResponse": "666",
+          "audioFile": "audio/cardinal-666.wav"
+        },
+        {
+          "id": "cardinal-702",
+          "spokenText": "siebenhundertzwei",
+          "canonicalResponse": "702",
+          "audioFile": "audio/cardinal-702.wav"
+        },
+        {
+          "id": "cardinal-738",
+          "spokenText": "siebenhundertachtunddreißig",
+          "canonicalResponse": "738",
+          "audioFile": "audio/cardinal-738.wav"
+        },
+        {
+          "id": "cardinal-774",
+          "spokenText": "siebenhundertvierundsiebzig",
+          "canonicalResponse": "774",
+          "audioFile": "audio/cardinal-774.wav"
+        },
+        {
+          "id": "cardinal-810",
+          "spokenText": "achthundertzehn",
+          "canonicalResponse": "810",
+          "audioFile": "audio/cardinal-810.wav"
+        },
+        {
+          "id": "cardinal-846",
+          "spokenText": "achthundertsechsundvierzig",
+          "canonicalResponse": "846",
+          "audioFile": "audio/cardinal-846.wav"
+        },
+        {
+          "id": "cardinal-882",
+          "spokenText": "achthundertzweiundachtzig",
+          "canonicalResponse": "882",
+          "audioFile": "audio/cardinal-882.wav"
+        },
+        {
+          "id": "cardinal-918",
+          "spokenText": "neunhundertachtzehn",
+          "canonicalResponse": "918",
+          "audioFile": "audio/cardinal-918.wav"
+        },
+        {
+          "id": "cardinal-954",
+          "spokenText": "neunhundertvierundfünfzig",
+          "canonicalResponse": "954",
+          "audioFile": "audio/cardinal-954.wav"
+        },
+        {
+          "id": "cardinal-990",
+          "spokenText": "neunhundertneunzig",
+          "canonicalResponse": "990",
+          "audioFile": "audio/cardinal-990.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-28",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-127",
+          "spokenText": "einhundertsiebenundzwanzig",
+          "canonicalResponse": "127",
+          "audioFile": "audio/cardinal-127.wav"
+        },
+        {
+          "id": "cardinal-163",
+          "spokenText": "einhundertdreiundsechzig",
+          "canonicalResponse": "163",
+          "audioFile": "audio/cardinal-163.wav"
+        },
+        {
+          "id": "cardinal-199",
+          "spokenText": "einhundertneunundneunzig",
+          "canonicalResponse": "199",
+          "audioFile": "audio/cardinal-199.wav"
+        },
+        {
+          "id": "cardinal-235",
+          "spokenText": "zweihundertfünfunddreißig",
+          "canonicalResponse": "235",
+          "audioFile": "audio/cardinal-235.wav"
+        },
+        {
+          "id": "cardinal-271",
+          "spokenText": "zweihunderteinundsiebzig",
+          "canonicalResponse": "271",
+          "audioFile": "audio/cardinal-271.wav"
+        },
+        {
+          "id": "cardinal-307",
+          "spokenText": "dreihundertsieben",
+          "canonicalResponse": "307",
+          "audioFile": "audio/cardinal-307.wav"
+        },
+        {
+          "id": "cardinal-343",
+          "spokenText": "dreihundertdreiundvierzig",
+          "canonicalResponse": "343",
+          "audioFile": "audio/cardinal-343.wav"
+        },
+        {
+          "id": "cardinal-379",
+          "spokenText": "dreihundertneunundsiebzig",
+          "canonicalResponse": "379",
+          "audioFile": "audio/cardinal-379.wav"
+        },
+        {
+          "id": "cardinal-415",
+          "spokenText": "vierhundertfünfzehn",
+          "canonicalResponse": "415",
+          "audioFile": "audio/cardinal-415.wav"
+        },
+        {
+          "id": "cardinal-451",
+          "spokenText": "vierhunderteinundfünfzig",
+          "canonicalResponse": "451",
+          "audioFile": "audio/cardinal-451.wav"
+        },
+        {
+          "id": "cardinal-487",
+          "spokenText": "vierhundertsiebenundachtzig",
+          "canonicalResponse": "487",
+          "audioFile": "audio/cardinal-487.wav"
+        },
+        {
+          "id": "cardinal-523",
+          "spokenText": "fünfhundertdreiundzwanzig",
+          "canonicalResponse": "523",
+          "audioFile": "audio/cardinal-523.wav"
+        },
+        {
+          "id": "cardinal-559",
+          "spokenText": "fünfhundertneunundfünfzig",
+          "canonicalResponse": "559",
+          "audioFile": "audio/cardinal-559.wav"
+        },
+        {
+          "id": "cardinal-595",
+          "spokenText": "fünfhundertfünfundneunzig",
+          "canonicalResponse": "595",
+          "audioFile": "audio/cardinal-595.wav"
+        },
+        {
+          "id": "cardinal-631",
+          "spokenText": "sechshunderteinunddreißig",
+          "canonicalResponse": "631",
+          "audioFile": "audio/cardinal-631.wav"
+        },
+        {
+          "id": "cardinal-667",
+          "spokenText": "sechshundertsiebenundsechzig",
+          "canonicalResponse": "667",
+          "audioFile": "audio/cardinal-667.wav"
+        },
+        {
+          "id": "cardinal-703",
+          "spokenText": "siebenhundertdrei",
+          "canonicalResponse": "703",
+          "audioFile": "audio/cardinal-703.wav"
+        },
+        {
+          "id": "cardinal-739",
+          "spokenText": "siebenhundertneununddreißig",
+          "canonicalResponse": "739",
+          "audioFile": "audio/cardinal-739.wav"
+        },
+        {
+          "id": "cardinal-775",
+          "spokenText": "siebenhundertfünfundsiebzig",
+          "canonicalResponse": "775",
+          "audioFile": "audio/cardinal-775.wav"
+        },
+        {
+          "id": "cardinal-811",
+          "spokenText": "achthundertelf",
+          "canonicalResponse": "811",
+          "audioFile": "audio/cardinal-811.wav"
+        },
+        {
+          "id": "cardinal-847",
+          "spokenText": "achthundertsiebenundvierzig",
+          "canonicalResponse": "847",
+          "audioFile": "audio/cardinal-847.wav"
+        },
+        {
+          "id": "cardinal-883",
+          "spokenText": "achthundertdreiundachtzig",
+          "canonicalResponse": "883",
+          "audioFile": "audio/cardinal-883.wav"
+        },
+        {
+          "id": "cardinal-919",
+          "spokenText": "neunhundertneunzehn",
+          "canonicalResponse": "919",
+          "audioFile": "audio/cardinal-919.wav"
+        },
+        {
+          "id": "cardinal-955",
+          "spokenText": "neunhundertfünfundfünfzig",
+          "canonicalResponse": "955",
+          "audioFile": "audio/cardinal-955.wav"
+        },
+        {
+          "id": "cardinal-991",
+          "spokenText": "neunhunderteinundneunzig",
+          "canonicalResponse": "991",
+          "audioFile": "audio/cardinal-991.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-29",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-128",
+          "spokenText": "einhundertachtundzwanzig",
+          "canonicalResponse": "128",
+          "audioFile": "audio/cardinal-128.wav"
+        },
+        {
+          "id": "cardinal-164",
+          "spokenText": "einhundertvierundsechzig",
+          "canonicalResponse": "164",
+          "audioFile": "audio/cardinal-164.wav"
+        },
+        {
+          "id": "cardinal-200",
+          "spokenText": "zweihundert",
+          "canonicalResponse": "200",
+          "audioFile": "audio/cardinal-200.wav"
+        },
+        {
+          "id": "cardinal-236",
+          "spokenText": "zweihundertsechsunddreißig",
+          "canonicalResponse": "236",
+          "audioFile": "audio/cardinal-236.wav"
+        },
+        {
+          "id": "cardinal-272",
+          "spokenText": "zweihundertzweiundsiebzig",
+          "canonicalResponse": "272",
+          "audioFile": "audio/cardinal-272.wav"
+        },
+        {
+          "id": "cardinal-308",
+          "spokenText": "dreihundertacht",
+          "canonicalResponse": "308",
+          "audioFile": "audio/cardinal-308.wav"
+        },
+        {
+          "id": "cardinal-344",
+          "spokenText": "dreihundertvierundvierzig",
+          "canonicalResponse": "344",
+          "audioFile": "audio/cardinal-344.wav"
+        },
+        {
+          "id": "cardinal-380",
+          "spokenText": "dreihundertachtzig",
+          "canonicalResponse": "380",
+          "audioFile": "audio/cardinal-380.wav"
+        },
+        {
+          "id": "cardinal-416",
+          "spokenText": "vierhundertsechzehn",
+          "canonicalResponse": "416",
+          "audioFile": "audio/cardinal-416.wav"
+        },
+        {
+          "id": "cardinal-452",
+          "spokenText": "vierhundertzweiundfünfzig",
+          "canonicalResponse": "452",
+          "audioFile": "audio/cardinal-452.wav"
+        },
+        {
+          "id": "cardinal-488",
+          "spokenText": "vierhundertachtundachtzig",
+          "canonicalResponse": "488",
+          "audioFile": "audio/cardinal-488.wav"
+        },
+        {
+          "id": "cardinal-524",
+          "spokenText": "fünfhundertvierundzwanzig",
+          "canonicalResponse": "524",
+          "audioFile": "audio/cardinal-524.wav"
+        },
+        {
+          "id": "cardinal-560",
+          "spokenText": "fünfhundertsechzig",
+          "canonicalResponse": "560",
+          "audioFile": "audio/cardinal-560.wav"
+        },
+        {
+          "id": "cardinal-596",
+          "spokenText": "fünfhundertsechsundneunzig",
+          "canonicalResponse": "596",
+          "audioFile": "audio/cardinal-596.wav"
+        },
+        {
+          "id": "cardinal-632",
+          "spokenText": "sechshundertzweiunddreißig",
+          "canonicalResponse": "632",
+          "audioFile": "audio/cardinal-632.wav"
+        },
+        {
+          "id": "cardinal-668",
+          "spokenText": "sechshundertachtundsechzig",
+          "canonicalResponse": "668",
+          "audioFile": "audio/cardinal-668.wav"
+        },
+        {
+          "id": "cardinal-704",
+          "spokenText": "siebenhundertvier",
+          "canonicalResponse": "704",
+          "audioFile": "audio/cardinal-704.wav"
+        },
+        {
+          "id": "cardinal-740",
+          "spokenText": "siebenhundertvierzig",
+          "canonicalResponse": "740",
+          "audioFile": "audio/cardinal-740.wav"
+        },
+        {
+          "id": "cardinal-776",
+          "spokenText": "siebenhundertsechsundsiebzig",
+          "canonicalResponse": "776",
+          "audioFile": "audio/cardinal-776.wav"
+        },
+        {
+          "id": "cardinal-812",
+          "spokenText": "achthundertzwölf",
+          "canonicalResponse": "812",
+          "audioFile": "audio/cardinal-812.wav"
+        },
+        {
+          "id": "cardinal-848",
+          "spokenText": "achthundertachtundvierzig",
+          "canonicalResponse": "848",
+          "audioFile": "audio/cardinal-848.wav"
+        },
+        {
+          "id": "cardinal-884",
+          "spokenText": "achthundertvierundachtzig",
+          "canonicalResponse": "884",
+          "audioFile": "audio/cardinal-884.wav"
+        },
+        {
+          "id": "cardinal-920",
+          "spokenText": "neunhundertzwanzig",
+          "canonicalResponse": "920",
+          "audioFile": "audio/cardinal-920.wav"
+        },
+        {
+          "id": "cardinal-956",
+          "spokenText": "neunhundertsechsundfünfzig",
+          "canonicalResponse": "956",
+          "audioFile": "audio/cardinal-956.wav"
+        },
+        {
+          "id": "cardinal-992",
+          "spokenText": "neunhundertzweiundneunzig",
+          "canonicalResponse": "992",
+          "audioFile": "audio/cardinal-992.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-30",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-129",
+          "spokenText": "einhundertneunundzwanzig",
+          "canonicalResponse": "129",
+          "audioFile": "audio/cardinal-129.wav"
+        },
+        {
+          "id": "cardinal-165",
+          "spokenText": "einhundertfünfundsechzig",
+          "canonicalResponse": "165",
+          "audioFile": "audio/cardinal-165.wav"
+        },
+        {
+          "id": "cardinal-201",
+          "spokenText": "zweihunderteins",
+          "canonicalResponse": "201",
+          "audioFile": "audio/cardinal-201.wav"
+        },
+        {
+          "id": "cardinal-237",
+          "spokenText": "zweihundertsiebenunddreißig",
+          "canonicalResponse": "237",
+          "audioFile": "audio/cardinal-237.wav"
+        },
+        {
+          "id": "cardinal-273",
+          "spokenText": "zweihundertdreiundsiebzig",
+          "canonicalResponse": "273",
+          "audioFile": "audio/cardinal-273.wav"
+        },
+        {
+          "id": "cardinal-309",
+          "spokenText": "dreihundertneun",
+          "canonicalResponse": "309",
+          "audioFile": "audio/cardinal-309.wav"
+        },
+        {
+          "id": "cardinal-345",
+          "spokenText": "dreihundertfünfundvierzig",
+          "canonicalResponse": "345",
+          "audioFile": "audio/cardinal-345.wav"
+        },
+        {
+          "id": "cardinal-381",
+          "spokenText": "dreihunderteinundachtzig",
+          "canonicalResponse": "381",
+          "audioFile": "audio/cardinal-381.wav"
+        },
+        {
+          "id": "cardinal-417",
+          "spokenText": "vierhundertsiebzehn",
+          "canonicalResponse": "417",
+          "audioFile": "audio/cardinal-417.wav"
+        },
+        {
+          "id": "cardinal-453",
+          "spokenText": "vierhundertdreiundfünfzig",
+          "canonicalResponse": "453",
+          "audioFile": "audio/cardinal-453.wav"
+        },
+        {
+          "id": "cardinal-489",
+          "spokenText": "vierhundertneunundachtzig",
+          "canonicalResponse": "489",
+          "audioFile": "audio/cardinal-489.wav"
+        },
+        {
+          "id": "cardinal-525",
+          "spokenText": "fünfhundertfünfundzwanzig",
+          "canonicalResponse": "525",
+          "audioFile": "audio/cardinal-525.wav"
+        },
+        {
+          "id": "cardinal-561",
+          "spokenText": "fünfhunderteinundsechzig",
+          "canonicalResponse": "561",
+          "audioFile": "audio/cardinal-561.wav"
+        },
+        {
+          "id": "cardinal-597",
+          "spokenText": "fünfhundertsiebenundneunzig",
+          "canonicalResponse": "597",
+          "audioFile": "audio/cardinal-597.wav"
+        },
+        {
+          "id": "cardinal-633",
+          "spokenText": "sechshundertdreiunddreißig",
+          "canonicalResponse": "633",
+          "audioFile": "audio/cardinal-633.wav"
+        },
+        {
+          "id": "cardinal-669",
+          "spokenText": "sechshundertneunundsechzig",
+          "canonicalResponse": "669",
+          "audioFile": "audio/cardinal-669.wav"
+        },
+        {
+          "id": "cardinal-705",
+          "spokenText": "siebenhundertfünf",
+          "canonicalResponse": "705",
+          "audioFile": "audio/cardinal-705.wav"
+        },
+        {
+          "id": "cardinal-741",
+          "spokenText": "siebenhunderteinundvierzig",
+          "canonicalResponse": "741",
+          "audioFile": "audio/cardinal-741.wav"
+        },
+        {
+          "id": "cardinal-777",
+          "spokenText": "siebenhundertsiebenundsiebzig",
+          "canonicalResponse": "777",
+          "audioFile": "audio/cardinal-777.wav"
+        },
+        {
+          "id": "cardinal-813",
+          "spokenText": "achthundertdreizehn",
+          "canonicalResponse": "813",
+          "audioFile": "audio/cardinal-813.wav"
+        },
+        {
+          "id": "cardinal-849",
+          "spokenText": "achthundertneunundvierzig",
+          "canonicalResponse": "849",
+          "audioFile": "audio/cardinal-849.wav"
+        },
+        {
+          "id": "cardinal-885",
+          "spokenText": "achthundertfünfundachtzig",
+          "canonicalResponse": "885",
+          "audioFile": "audio/cardinal-885.wav"
+        },
+        {
+          "id": "cardinal-921",
+          "spokenText": "neunhunderteinundzwanzig",
+          "canonicalResponse": "921",
+          "audioFile": "audio/cardinal-921.wav"
+        },
+        {
+          "id": "cardinal-957",
+          "spokenText": "neunhundertsiebenundfünfzig",
+          "canonicalResponse": "957",
+          "audioFile": "audio/cardinal-957.wav"
+        },
+        {
+          "id": "cardinal-993",
+          "spokenText": "neunhundertdreiundneunzig",
+          "canonicalResponse": "993",
+          "audioFile": "audio/cardinal-993.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-31",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-130",
+          "spokenText": "einhundertdreißig",
+          "canonicalResponse": "130",
+          "audioFile": "audio/cardinal-130.wav"
+        },
+        {
+          "id": "cardinal-166",
+          "spokenText": "einhundertsechsundsechzig",
+          "canonicalResponse": "166",
+          "audioFile": "audio/cardinal-166.wav"
+        },
+        {
+          "id": "cardinal-202",
+          "spokenText": "zweihundertzwei",
+          "canonicalResponse": "202",
+          "audioFile": "audio/cardinal-202.wav"
+        },
+        {
+          "id": "cardinal-238",
+          "spokenText": "zweihundertachtunddreißig",
+          "canonicalResponse": "238",
+          "audioFile": "audio/cardinal-238.wav"
+        },
+        {
+          "id": "cardinal-274",
+          "spokenText": "zweihundertvierundsiebzig",
+          "canonicalResponse": "274",
+          "audioFile": "audio/cardinal-274.wav"
+        },
+        {
+          "id": "cardinal-310",
+          "spokenText": "dreihundertzehn",
+          "canonicalResponse": "310",
+          "audioFile": "audio/cardinal-310.wav"
+        },
+        {
+          "id": "cardinal-346",
+          "spokenText": "dreihundertsechsundvierzig",
+          "canonicalResponse": "346",
+          "audioFile": "audio/cardinal-346.wav"
+        },
+        {
+          "id": "cardinal-382",
+          "spokenText": "dreihundertzweiundachtzig",
+          "canonicalResponse": "382",
+          "audioFile": "audio/cardinal-382.wav"
+        },
+        {
+          "id": "cardinal-418",
+          "spokenText": "vierhundertachtzehn",
+          "canonicalResponse": "418",
+          "audioFile": "audio/cardinal-418.wav"
+        },
+        {
+          "id": "cardinal-454",
+          "spokenText": "vierhundertvierundfünfzig",
+          "canonicalResponse": "454",
+          "audioFile": "audio/cardinal-454.wav"
+        },
+        {
+          "id": "cardinal-490",
+          "spokenText": "vierhundertneunzig",
+          "canonicalResponse": "490",
+          "audioFile": "audio/cardinal-490.wav"
+        },
+        {
+          "id": "cardinal-526",
+          "spokenText": "fünfhundertsechsundzwanzig",
+          "canonicalResponse": "526",
+          "audioFile": "audio/cardinal-526.wav"
+        },
+        {
+          "id": "cardinal-562",
+          "spokenText": "fünfhundertzweiundsechzig",
+          "canonicalResponse": "562",
+          "audioFile": "audio/cardinal-562.wav"
+        },
+        {
+          "id": "cardinal-598",
+          "spokenText": "fünfhundertachtundneunzig",
+          "canonicalResponse": "598",
+          "audioFile": "audio/cardinal-598.wav"
+        },
+        {
+          "id": "cardinal-634",
+          "spokenText": "sechshundertvierunddreißig",
+          "canonicalResponse": "634",
+          "audioFile": "audio/cardinal-634.wav"
+        },
+        {
+          "id": "cardinal-670",
+          "spokenText": "sechshundertsiebzig",
+          "canonicalResponse": "670",
+          "audioFile": "audio/cardinal-670.wav"
+        },
+        {
+          "id": "cardinal-706",
+          "spokenText": "siebenhundertsechs",
+          "canonicalResponse": "706",
+          "audioFile": "audio/cardinal-706.wav"
+        },
+        {
+          "id": "cardinal-742",
+          "spokenText": "siebenhundertzweiundvierzig",
+          "canonicalResponse": "742",
+          "audioFile": "audio/cardinal-742.wav"
+        },
+        {
+          "id": "cardinal-778",
+          "spokenText": "siebenhundertachtundsiebzig",
+          "canonicalResponse": "778",
+          "audioFile": "audio/cardinal-778.wav"
+        },
+        {
+          "id": "cardinal-814",
+          "spokenText": "achthundertvierzehn",
+          "canonicalResponse": "814",
+          "audioFile": "audio/cardinal-814.wav"
+        },
+        {
+          "id": "cardinal-850",
+          "spokenText": "achthundertfünfzig",
+          "canonicalResponse": "850",
+          "audioFile": "audio/cardinal-850.wav"
+        },
+        {
+          "id": "cardinal-886",
+          "spokenText": "achthundertsechsundachtzig",
+          "canonicalResponse": "886",
+          "audioFile": "audio/cardinal-886.wav"
+        },
+        {
+          "id": "cardinal-922",
+          "spokenText": "neunhundertzweiundzwanzig",
+          "canonicalResponse": "922",
+          "audioFile": "audio/cardinal-922.wav"
+        },
+        {
+          "id": "cardinal-958",
+          "spokenText": "neunhundertachtundfünfzig",
+          "canonicalResponse": "958",
+          "audioFile": "audio/cardinal-958.wav"
+        },
+        {
+          "id": "cardinal-994",
+          "spokenText": "neunhundertvierundneunzig",
+          "canonicalResponse": "994",
+          "audioFile": "audio/cardinal-994.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-32",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-131",
+          "spokenText": "einhunderteinunddreißig",
+          "canonicalResponse": "131",
+          "audioFile": "audio/cardinal-131.wav"
+        },
+        {
+          "id": "cardinal-167",
+          "spokenText": "einhundertsiebenundsechzig",
+          "canonicalResponse": "167",
+          "audioFile": "audio/cardinal-167.wav"
+        },
+        {
+          "id": "cardinal-203",
+          "spokenText": "zweihundertdrei",
+          "canonicalResponse": "203",
+          "audioFile": "audio/cardinal-203.wav"
+        },
+        {
+          "id": "cardinal-239",
+          "spokenText": "zweihundertneununddreißig",
+          "canonicalResponse": "239",
+          "audioFile": "audio/cardinal-239.wav"
+        },
+        {
+          "id": "cardinal-275",
+          "spokenText": "zweihundertfünfundsiebzig",
+          "canonicalResponse": "275",
+          "audioFile": "audio/cardinal-275.wav"
+        },
+        {
+          "id": "cardinal-311",
+          "spokenText": "dreihundertelf",
+          "canonicalResponse": "311",
+          "audioFile": "audio/cardinal-311.wav"
+        },
+        {
+          "id": "cardinal-347",
+          "spokenText": "dreihundertsiebenundvierzig",
+          "canonicalResponse": "347",
+          "audioFile": "audio/cardinal-347.wav"
+        },
+        {
+          "id": "cardinal-383",
+          "spokenText": "dreihundertdreiundachtzig",
+          "canonicalResponse": "383",
+          "audioFile": "audio/cardinal-383.wav"
+        },
+        {
+          "id": "cardinal-419",
+          "spokenText": "vierhundertneunzehn",
+          "canonicalResponse": "419",
+          "audioFile": "audio/cardinal-419.wav"
+        },
+        {
+          "id": "cardinal-455",
+          "spokenText": "vierhundertfünfundfünfzig",
+          "canonicalResponse": "455",
+          "audioFile": "audio/cardinal-455.wav"
+        },
+        {
+          "id": "cardinal-491",
+          "spokenText": "vierhunderteinundneunzig",
+          "canonicalResponse": "491",
+          "audioFile": "audio/cardinal-491.wav"
+        },
+        {
+          "id": "cardinal-527",
+          "spokenText": "fünfhundertsiebenundzwanzig",
+          "canonicalResponse": "527",
+          "audioFile": "audio/cardinal-527.wav"
+        },
+        {
+          "id": "cardinal-563",
+          "spokenText": "fünfhundertdreiundsechzig",
+          "canonicalResponse": "563",
+          "audioFile": "audio/cardinal-563.wav"
+        },
+        {
+          "id": "cardinal-599",
+          "spokenText": "fünfhundertneunundneunzig",
+          "canonicalResponse": "599",
+          "audioFile": "audio/cardinal-599.wav"
+        },
+        {
+          "id": "cardinal-635",
+          "spokenText": "sechshundertfünfunddreißig",
+          "canonicalResponse": "635",
+          "audioFile": "audio/cardinal-635.wav"
+        },
+        {
+          "id": "cardinal-671",
+          "spokenText": "sechshunderteinundsiebzig",
+          "canonicalResponse": "671",
+          "audioFile": "audio/cardinal-671.wav"
+        },
+        {
+          "id": "cardinal-707",
+          "spokenText": "siebenhundertsieben",
+          "canonicalResponse": "707",
+          "audioFile": "audio/cardinal-707.wav"
+        },
+        {
+          "id": "cardinal-743",
+          "spokenText": "siebenhundertdreiundvierzig",
+          "canonicalResponse": "743",
+          "audioFile": "audio/cardinal-743.wav"
+        },
+        {
+          "id": "cardinal-779",
+          "spokenText": "siebenhundertneunundsiebzig",
+          "canonicalResponse": "779",
+          "audioFile": "audio/cardinal-779.wav"
+        },
+        {
+          "id": "cardinal-815",
+          "spokenText": "achthundertfünfzehn",
+          "canonicalResponse": "815",
+          "audioFile": "audio/cardinal-815.wav"
+        },
+        {
+          "id": "cardinal-851",
+          "spokenText": "achthunderteinundfünfzig",
+          "canonicalResponse": "851",
+          "audioFile": "audio/cardinal-851.wav"
+        },
+        {
+          "id": "cardinal-887",
+          "spokenText": "achthundertsiebenundachtzig",
+          "canonicalResponse": "887",
+          "audioFile": "audio/cardinal-887.wav"
+        },
+        {
+          "id": "cardinal-923",
+          "spokenText": "neunhundertdreiundzwanzig",
+          "canonicalResponse": "923",
+          "audioFile": "audio/cardinal-923.wav"
+        },
+        {
+          "id": "cardinal-959",
+          "spokenText": "neunhundertneunundfünfzig",
+          "canonicalResponse": "959",
+          "audioFile": "audio/cardinal-959.wav"
+        },
+        {
+          "id": "cardinal-995",
+          "spokenText": "neunhundertfünfundneunzig",
+          "canonicalResponse": "995",
+          "audioFile": "audio/cardinal-995.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-33",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-132",
+          "spokenText": "einhundertzweiunddreißig",
+          "canonicalResponse": "132",
+          "audioFile": "audio/cardinal-132.wav"
+        },
+        {
+          "id": "cardinal-168",
+          "spokenText": "einhundertachtundsechzig",
+          "canonicalResponse": "168",
+          "audioFile": "audio/cardinal-168.wav"
+        },
+        {
+          "id": "cardinal-204",
+          "spokenText": "zweihundertvier",
+          "canonicalResponse": "204",
+          "audioFile": "audio/cardinal-204.wav"
+        },
+        {
+          "id": "cardinal-240",
+          "spokenText": "zweihundertvierzig",
+          "canonicalResponse": "240",
+          "audioFile": "audio/cardinal-240.wav"
+        },
+        {
+          "id": "cardinal-276",
+          "spokenText": "zweihundertsechsundsiebzig",
+          "canonicalResponse": "276",
+          "audioFile": "audio/cardinal-276.wav"
+        },
+        {
+          "id": "cardinal-312",
+          "spokenText": "dreihundertzwölf",
+          "canonicalResponse": "312",
+          "audioFile": "audio/cardinal-312.wav"
+        },
+        {
+          "id": "cardinal-348",
+          "spokenText": "dreihundertachtundvierzig",
+          "canonicalResponse": "348",
+          "audioFile": "audio/cardinal-348.wav"
+        },
+        {
+          "id": "cardinal-384",
+          "spokenText": "dreihundertvierundachtzig",
+          "canonicalResponse": "384",
+          "audioFile": "audio/cardinal-384.wav"
+        },
+        {
+          "id": "cardinal-420",
+          "spokenText": "vierhundertzwanzig",
+          "canonicalResponse": "420",
+          "audioFile": "audio/cardinal-420.wav"
+        },
+        {
+          "id": "cardinal-456",
+          "spokenText": "vierhundertsechsundfünfzig",
+          "canonicalResponse": "456",
+          "audioFile": "audio/cardinal-456.wav"
+        },
+        {
+          "id": "cardinal-492",
+          "spokenText": "vierhundertzweiundneunzig",
+          "canonicalResponse": "492",
+          "audioFile": "audio/cardinal-492.wav"
+        },
+        {
+          "id": "cardinal-528",
+          "spokenText": "fünfhundertachtundzwanzig",
+          "canonicalResponse": "528",
+          "audioFile": "audio/cardinal-528.wav"
+        },
+        {
+          "id": "cardinal-564",
+          "spokenText": "fünfhundertvierundsechzig",
+          "canonicalResponse": "564",
+          "audioFile": "audio/cardinal-564.wav"
+        },
+        {
+          "id": "cardinal-600",
+          "spokenText": "sechshundert",
+          "canonicalResponse": "600",
+          "audioFile": "audio/cardinal-600.wav"
+        },
+        {
+          "id": "cardinal-636",
+          "spokenText": "sechshundertsechsunddreißig",
+          "canonicalResponse": "636",
+          "audioFile": "audio/cardinal-636.wav"
+        },
+        {
+          "id": "cardinal-672",
+          "spokenText": "sechshundertzweiundsiebzig",
+          "canonicalResponse": "672",
+          "audioFile": "audio/cardinal-672.wav"
+        },
+        {
+          "id": "cardinal-708",
+          "spokenText": "siebenhundertacht",
+          "canonicalResponse": "708",
+          "audioFile": "audio/cardinal-708.wav"
+        },
+        {
+          "id": "cardinal-744",
+          "spokenText": "siebenhundertvierundvierzig",
+          "canonicalResponse": "744",
+          "audioFile": "audio/cardinal-744.wav"
+        },
+        {
+          "id": "cardinal-780",
+          "spokenText": "siebenhundertachtzig",
+          "canonicalResponse": "780",
+          "audioFile": "audio/cardinal-780.wav"
+        },
+        {
+          "id": "cardinal-816",
+          "spokenText": "achthundertsechzehn",
+          "canonicalResponse": "816",
+          "audioFile": "audio/cardinal-816.wav"
+        },
+        {
+          "id": "cardinal-852",
+          "spokenText": "achthundertzweiundfünfzig",
+          "canonicalResponse": "852",
+          "audioFile": "audio/cardinal-852.wav"
+        },
+        {
+          "id": "cardinal-888",
+          "spokenText": "achthundertachtundachtzig",
+          "canonicalResponse": "888",
+          "audioFile": "audio/cardinal-888.wav"
+        },
+        {
+          "id": "cardinal-924",
+          "spokenText": "neunhundertvierundzwanzig",
+          "canonicalResponse": "924",
+          "audioFile": "audio/cardinal-924.wav"
+        },
+        {
+          "id": "cardinal-960",
+          "spokenText": "neunhundertsechzig",
+          "canonicalResponse": "960",
+          "audioFile": "audio/cardinal-960.wav"
+        },
+        {
+          "id": "cardinal-996",
+          "spokenText": "neunhundertsechsundneunzig",
+          "canonicalResponse": "996",
+          "audioFile": "audio/cardinal-996.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-34",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-133",
+          "spokenText": "einhundertdreiunddreißig",
+          "canonicalResponse": "133",
+          "audioFile": "audio/cardinal-133.wav"
+        },
+        {
+          "id": "cardinal-169",
+          "spokenText": "einhundertneunundsechzig",
+          "canonicalResponse": "169",
+          "audioFile": "audio/cardinal-169.wav"
+        },
+        {
+          "id": "cardinal-205",
+          "spokenText": "zweihundertfünf",
+          "canonicalResponse": "205",
+          "audioFile": "audio/cardinal-205.wav"
+        },
+        {
+          "id": "cardinal-241",
+          "spokenText": "zweihunderteinundvierzig",
+          "canonicalResponse": "241",
+          "audioFile": "audio/cardinal-241.wav"
+        },
+        {
+          "id": "cardinal-277",
+          "spokenText": "zweihundertsiebenundsiebzig",
+          "canonicalResponse": "277",
+          "audioFile": "audio/cardinal-277.wav"
+        },
+        {
+          "id": "cardinal-313",
+          "spokenText": "dreihundertdreizehn",
+          "canonicalResponse": "313",
+          "audioFile": "audio/cardinal-313.wav"
+        },
+        {
+          "id": "cardinal-349",
+          "spokenText": "dreihundertneunundvierzig",
+          "canonicalResponse": "349",
+          "audioFile": "audio/cardinal-349.wav"
+        },
+        {
+          "id": "cardinal-385",
+          "spokenText": "dreihundertfünfundachtzig",
+          "canonicalResponse": "385",
+          "audioFile": "audio/cardinal-385.wav"
+        },
+        {
+          "id": "cardinal-421",
+          "spokenText": "vierhunderteinundzwanzig",
+          "canonicalResponse": "421",
+          "audioFile": "audio/cardinal-421.wav"
+        },
+        {
+          "id": "cardinal-457",
+          "spokenText": "vierhundertsiebenundfünfzig",
+          "canonicalResponse": "457",
+          "audioFile": "audio/cardinal-457.wav"
+        },
+        {
+          "id": "cardinal-493",
+          "spokenText": "vierhundertdreiundneunzig",
+          "canonicalResponse": "493",
+          "audioFile": "audio/cardinal-493.wav"
+        },
+        {
+          "id": "cardinal-529",
+          "spokenText": "fünfhundertneunundzwanzig",
+          "canonicalResponse": "529",
+          "audioFile": "audio/cardinal-529.wav"
+        },
+        {
+          "id": "cardinal-565",
+          "spokenText": "fünfhundertfünfundsechzig",
+          "canonicalResponse": "565",
+          "audioFile": "audio/cardinal-565.wav"
+        },
+        {
+          "id": "cardinal-601",
+          "spokenText": "sechshunderteins",
+          "canonicalResponse": "601",
+          "audioFile": "audio/cardinal-601.wav"
+        },
+        {
+          "id": "cardinal-637",
+          "spokenText": "sechshundertsiebenunddreißig",
+          "canonicalResponse": "637",
+          "audioFile": "audio/cardinal-637.wav"
+        },
+        {
+          "id": "cardinal-673",
+          "spokenText": "sechshundertdreiundsiebzig",
+          "canonicalResponse": "673",
+          "audioFile": "audio/cardinal-673.wav"
+        },
+        {
+          "id": "cardinal-709",
+          "spokenText": "siebenhundertneun",
+          "canonicalResponse": "709",
+          "audioFile": "audio/cardinal-709.wav"
+        },
+        {
+          "id": "cardinal-745",
+          "spokenText": "siebenhundertfünfundvierzig",
+          "canonicalResponse": "745",
+          "audioFile": "audio/cardinal-745.wav"
+        },
+        {
+          "id": "cardinal-781",
+          "spokenText": "siebenhunderteinundachtzig",
+          "canonicalResponse": "781",
+          "audioFile": "audio/cardinal-781.wav"
+        },
+        {
+          "id": "cardinal-817",
+          "spokenText": "achthundertsiebzehn",
+          "canonicalResponse": "817",
+          "audioFile": "audio/cardinal-817.wav"
+        },
+        {
+          "id": "cardinal-853",
+          "spokenText": "achthundertdreiundfünfzig",
+          "canonicalResponse": "853",
+          "audioFile": "audio/cardinal-853.wav"
+        },
+        {
+          "id": "cardinal-889",
+          "spokenText": "achthundertneunundachtzig",
+          "canonicalResponse": "889",
+          "audioFile": "audio/cardinal-889.wav"
+        },
+        {
+          "id": "cardinal-925",
+          "spokenText": "neunhundertfünfundzwanzig",
+          "canonicalResponse": "925",
+          "audioFile": "audio/cardinal-925.wav"
+        },
+        {
+          "id": "cardinal-961",
+          "spokenText": "neunhunderteinundsechzig",
+          "canonicalResponse": "961",
+          "audioFile": "audio/cardinal-961.wav"
+        },
+        {
+          "id": "cardinal-997",
+          "spokenText": "neunhundertsiebenundneunzig",
+          "canonicalResponse": "997",
+          "audioFile": "audio/cardinal-997.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-35",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-134",
+          "spokenText": "einhundertvierunddreißig",
+          "canonicalResponse": "134",
+          "audioFile": "audio/cardinal-134.wav"
+        },
+        {
+          "id": "cardinal-170",
+          "spokenText": "einhundertsiebzig",
+          "canonicalResponse": "170",
+          "audioFile": "audio/cardinal-170.wav"
+        },
+        {
+          "id": "cardinal-206",
+          "spokenText": "zweihundertsechs",
+          "canonicalResponse": "206",
+          "audioFile": "audio/cardinal-206.wav"
+        },
+        {
+          "id": "cardinal-242",
+          "spokenText": "zweihundertzweiundvierzig",
+          "canonicalResponse": "242",
+          "audioFile": "audio/cardinal-242.wav"
+        },
+        {
+          "id": "cardinal-278",
+          "spokenText": "zweihundertachtundsiebzig",
+          "canonicalResponse": "278",
+          "audioFile": "audio/cardinal-278.wav"
+        },
+        {
+          "id": "cardinal-314",
+          "spokenText": "dreihundertvierzehn",
+          "canonicalResponse": "314",
+          "audioFile": "audio/cardinal-314.wav"
+        },
+        {
+          "id": "cardinal-350",
+          "spokenText": "dreihundertfünfzig",
+          "canonicalResponse": "350",
+          "audioFile": "audio/cardinal-350.wav"
+        },
+        {
+          "id": "cardinal-386",
+          "spokenText": "dreihundertsechsundachtzig",
+          "canonicalResponse": "386",
+          "audioFile": "audio/cardinal-386.wav"
+        },
+        {
+          "id": "cardinal-422",
+          "spokenText": "vierhundertzweiundzwanzig",
+          "canonicalResponse": "422",
+          "audioFile": "audio/cardinal-422.wav"
+        },
+        {
+          "id": "cardinal-458",
+          "spokenText": "vierhundertachtundfünfzig",
+          "canonicalResponse": "458",
+          "audioFile": "audio/cardinal-458.wav"
+        },
+        {
+          "id": "cardinal-494",
+          "spokenText": "vierhundertvierundneunzig",
+          "canonicalResponse": "494",
+          "audioFile": "audio/cardinal-494.wav"
+        },
+        {
+          "id": "cardinal-530",
+          "spokenText": "fünfhundertdreißig",
+          "canonicalResponse": "530",
+          "audioFile": "audio/cardinal-530.wav"
+        },
+        {
+          "id": "cardinal-566",
+          "spokenText": "fünfhundertsechsundsechzig",
+          "canonicalResponse": "566",
+          "audioFile": "audio/cardinal-566.wav"
+        },
+        {
+          "id": "cardinal-602",
+          "spokenText": "sechshundertzwei",
+          "canonicalResponse": "602",
+          "audioFile": "audio/cardinal-602.wav"
+        },
+        {
+          "id": "cardinal-638",
+          "spokenText": "sechshundertachtunddreißig",
+          "canonicalResponse": "638",
+          "audioFile": "audio/cardinal-638.wav"
+        },
+        {
+          "id": "cardinal-674",
+          "spokenText": "sechshundertvierundsiebzig",
+          "canonicalResponse": "674",
+          "audioFile": "audio/cardinal-674.wav"
+        },
+        {
+          "id": "cardinal-710",
+          "spokenText": "siebenhundertzehn",
+          "canonicalResponse": "710",
+          "audioFile": "audio/cardinal-710.wav"
+        },
+        {
+          "id": "cardinal-746",
+          "spokenText": "siebenhundertsechsundvierzig",
+          "canonicalResponse": "746",
+          "audioFile": "audio/cardinal-746.wav"
+        },
+        {
+          "id": "cardinal-782",
+          "spokenText": "siebenhundertzweiundachtzig",
+          "canonicalResponse": "782",
+          "audioFile": "audio/cardinal-782.wav"
+        },
+        {
+          "id": "cardinal-818",
+          "spokenText": "achthundertachtzehn",
+          "canonicalResponse": "818",
+          "audioFile": "audio/cardinal-818.wav"
+        },
+        {
+          "id": "cardinal-854",
+          "spokenText": "achthundertvierundfünfzig",
+          "canonicalResponse": "854",
+          "audioFile": "audio/cardinal-854.wav"
+        },
+        {
+          "id": "cardinal-890",
+          "spokenText": "achthundertneunzig",
+          "canonicalResponse": "890",
+          "audioFile": "audio/cardinal-890.wav"
+        },
+        {
+          "id": "cardinal-926",
+          "spokenText": "neunhundertsechsundzwanzig",
+          "canonicalResponse": "926",
+          "audioFile": "audio/cardinal-926.wav"
+        },
+        {
+          "id": "cardinal-962",
+          "spokenText": "neunhundertzweiundsechzig",
+          "canonicalResponse": "962",
+          "audioFile": "audio/cardinal-962.wav"
+        },
+        {
+          "id": "cardinal-998",
+          "spokenText": "neunhundertachtundneunzig",
+          "canonicalResponse": "998",
+          "audioFile": "audio/cardinal-998.wav"
+        }
+      ]
+    },
+    {
+      "id": "numbers-36",
+      "material": "numbers",
+      "items": [
+        {
+          "id": "cardinal-135",
+          "spokenText": "einhundertfünfunddreißig",
+          "canonicalResponse": "135",
+          "audioFile": "audio/cardinal-135.wav"
+        },
+        {
+          "id": "cardinal-171",
+          "spokenText": "einhunderteinundsiebzig",
+          "canonicalResponse": "171",
+          "audioFile": "audio/cardinal-171.wav"
+        },
+        {
+          "id": "cardinal-207",
+          "spokenText": "zweihundertsieben",
+          "canonicalResponse": "207",
+          "audioFile": "audio/cardinal-207.wav"
+        },
+        {
+          "id": "cardinal-243",
+          "spokenText": "zweihundertdreiundvierzig",
+          "canonicalResponse": "243",
+          "audioFile": "audio/cardinal-243.wav"
+        },
+        {
+          "id": "cardinal-279",
+          "spokenText": "zweihundertneunundsiebzig",
+          "canonicalResponse": "279",
+          "audioFile": "audio/cardinal-279.wav"
+        },
+        {
+          "id": "cardinal-315",
+          "spokenText": "dreihundertfünfzehn",
+          "canonicalResponse": "315",
+          "audioFile": "audio/cardinal-315.wav"
+        },
+        {
+          "id": "cardinal-351",
+          "spokenText": "dreihunderteinundfünfzig",
+          "canonicalResponse": "351",
+          "audioFile": "audio/cardinal-351.wav"
+        },
+        {
+          "id": "cardinal-387",
+          "spokenText": "dreihundertsiebenundachtzig",
+          "canonicalResponse": "387",
+          "audioFile": "audio/cardinal-387.wav"
+        },
+        {
+          "id": "cardinal-423",
+          "spokenText": "vierhundertdreiundzwanzig",
+          "canonicalResponse": "423",
+          "audioFile": "audio/cardinal-423.wav"
+        },
+        {
+          "id": "cardinal-459",
+          "spokenText": "vierhundertneunundfünfzig",
+          "canonicalResponse": "459",
+          "audioFile": "audio/cardinal-459.wav"
+        },
+        {
+          "id": "cardinal-495",
+          "spokenText": "vierhundertfünfundneunzig",
+          "canonicalResponse": "495",
+          "audioFile": "audio/cardinal-495.wav"
+        },
+        {
+          "id": "cardinal-531",
+          "spokenText": "fünfhunderteinunddreißig",
+          "canonicalResponse": "531",
+          "audioFile": "audio/cardinal-531.wav"
+        },
+        {
+          "id": "cardinal-567",
+          "spokenText": "fünfhundertsiebenundsechzig",
+          "canonicalResponse": "567",
+          "audioFile": "audio/cardinal-567.wav"
+        },
+        {
+          "id": "cardinal-603",
+          "spokenText": "sechshundertdrei",
+          "canonicalResponse": "603",
+          "audioFile": "audio/cardinal-603.wav"
+        },
+        {
+          "id": "cardinal-639",
+          "spokenText": "sechshundertneununddreißig",
+          "canonicalResponse": "639",
+          "audioFile": "audio/cardinal-639.wav"
+        },
+        {
+          "id": "cardinal-675",
+          "spokenText": "sechshundertfünfundsiebzig",
+          "canonicalResponse": "675",
+          "audioFile": "audio/cardinal-675.wav"
+        },
+        {
+          "id": "cardinal-711",
+          "spokenText": "siebenhundertelf",
+          "canonicalResponse": "711",
+          "audioFile": "audio/cardinal-711.wav"
+        },
+        {
+          "id": "cardinal-747",
+          "spokenText": "siebenhundertsiebenundvierzig",
+          "canonicalResponse": "747",
+          "audioFile": "audio/cardinal-747.wav"
+        },
+        {
+          "id": "cardinal-783",
+          "spokenText": "siebenhundertdreiundachtzig",
+          "canonicalResponse": "783",
+          "audioFile": "audio/cardinal-783.wav"
+        },
+        {
+          "id": "cardinal-819",
+          "spokenText": "achthundertneunzehn",
+          "canonicalResponse": "819",
+          "audioFile": "audio/cardinal-819.wav"
+        },
+        {
+          "id": "cardinal-855",
+          "spokenText": "achthundertfünfundfünfzig",
+          "canonicalResponse": "855",
+          "audioFile": "audio/cardinal-855.wav"
+        },
+        {
+          "id": "cardinal-891",
+          "spokenText": "achthunderteinundneunzig",
+          "canonicalResponse": "891",
+          "audioFile": "audio/cardinal-891.wav"
+        },
+        {
+          "id": "cardinal-927",
+          "spokenText": "neunhundertsiebenundzwanzig",
+          "canonicalResponse": "927",
+          "audioFile": "audio/cardinal-927.wav"
+        },
+        {
+          "id": "cardinal-963",
+          "spokenText": "neunhundertdreiundsechzig",
+          "canonicalResponse": "963",
+          "audioFile": "audio/cardinal-963.wav"
+        },
+        {
+          "id": "cardinal-999",
+          "spokenText": "neunhundertneunundneunzig",
+          "canonicalResponse": "999",
+          "audioFile": "audio/cardinal-999.wav"
+        }
+      ]
+    }
+  ],
+  "paradigm": "open-set-cardinal-number",
+  "responseAlternativeCount": null,
+  "chanceLevelPercent": 0.1111111111111111
+}

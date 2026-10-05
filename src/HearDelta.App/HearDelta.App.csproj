@@ -1,0 +1,92 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\HearDelta.Core\HearDelta.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.11" />
+    <PackageReference Include="NAudio" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="HearDelta.App.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\stimuli\de-DE\personal-phoneme-contrast-v1\catalog.json">
+      <Link>stimuli\de-DE\personal-phoneme-contrast-v1\catalog.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\stimuli\de-DE\personal-phoneme-contrast-v1\audio-index.json">
+      <Link>stimuli\de-DE\personal-phoneme-contrast-v1\audio-index.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\stimuli\de-DE\personal-phoneme-contrast-v1\audio\*.wav">
+      <Link>stimuli\de-DE\personal-phoneme-contrast-v1\audio\%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\stimuli\de-DE\personal-relative-v1\catalog.json">
+      <Link>stimuli\de-DE\personal-relative-v1\catalog.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\stimuli\de-DE\personal-relative-v1\audio-index.json">
+      <Link>stimuli\de-DE\personal-relative-v1\audio-index.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\stimuli\de-DE\personal-relative-v1\audio\*.wav">
+      <Link>stimuli\de-DE\personal-relative-v1\audio\%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\stimuli\de-DE\personal-cardinal-numbers-christoph-v1\catalog.json">
+      <Link>stimuli\de-DE\personal-cardinal-numbers-christoph-v1\catalog.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\stimuli\de-DE\personal-cardinal-numbers-christoph-v1\audio-index.json">
+      <Link>stimuli\de-DE\personal-cardinal-numbers-christoph-v1\audio-index.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\stimuli\de-DE\personal-cardinal-numbers-christoph-v1\audio\*.wav">
+      <Link>stimuli\de-DE\personal-cardinal-numbers-christoph-v1\audio\%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\stimuli\de-DE\personal-cardinal-numbers-katja-v1\catalog.json">
+      <Link>stimuli\de-DE\personal-cardinal-numbers-katja-v1\catalog.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\stimuli\de-DE\personal-cardinal-numbers-katja-v1\audio-index.json">
+      <Link>stimuli\de-DE\personal-cardinal-numbers-katja-v1\audio-index.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\stimuli\de-DE\personal-cardinal-numbers-katja-v1\audio\*.wav">
+      <Link>stimuli\de-DE\personal-cardinal-numbers-katja-v1\audio\%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\stimuli\de-DE\cardinal-speech-shaped-noise-v1\de-DE-personal-cardinal-numbers-christoph-v1\profile.json">
+      <Link>stimuli\de-DE\cardinal-speech-shaped-noise-v1\de-DE-personal-cardinal-numbers-christoph-v1\profile.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\stimuli\de-DE\cardinal-speech-shaped-noise-v1\de-DE-personal-cardinal-numbers-katja-v1\profile.json">
+      <Link>stimuli\de-DE\cardinal-speech-shaped-noise-v1\de-DE-personal-cardinal-numbers-katja-v1\profile.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\hardware\headphone-equalization\autoeq-7ae0f56-diffuse-field\catalog.json">
+      <Link>hardware\headphone-equalization\autoeq-7ae0f56-diffuse-field\catalog.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\hardware\headphone-equalization\autoeq-7ae0f56-diffuse-field\LICENSE">
+      <Link>hardware\headphone-equalization\autoeq-7ae0f56-diffuse-field\LICENSE</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+</Project>

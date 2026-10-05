@@ -1,0 +1,1471 @@
+{
+  "schemaVersion": 1,
+  "catalogId": "de-DE-personal-relative-v1",
+  "catalogVersion": "1.0.0",
+  "catalogSha256": "014df3fd4380bcc1b03af90f8aff80d280bd865ca715c63a20d70d4809afc978",
+  "audioFormat": {
+    "encoding": "PCM_SIGNED",
+    "sampleRate": 22050,
+    "bitsPerSample": 16,
+    "channels": 1
+  },
+  "generator": {
+    "name": "Piper",
+    "version": "2023.11.14-2",
+    "executableSha256": "96f3da3811151580073e40bb4dd20eb0fb8115f5f5f76e2fb54282b3edfa5c1f",
+    "modelRepository": "rhasspy/piper-voices",
+    "modelRevision": "39ab474be869e9181350af6a65e4953eef67aaa0",
+    "modelName": "de_DE-thorsten-high",
+    "modelSha256": "9df1c43c61149ef9b39e618e2b861fbe41e1fcea9390b2dac62e8761573ea4f1",
+    "configSha256": "6de734444e4c3f9e33b7ebe2746dbc19b71e85f613e79c65acf623200b99a76a",
+    "modelLicense": "MIT",
+    "datasetLicense": "CC0-1.0",
+    "syntheticVoice": true,
+    "noiseScale": 0,
+    "phonemeWidthNoise": 0,
+    "lengthScale": 1,
+    "sentenceSilenceSeconds": 0.2
+  },
+  "entries": [
+    {
+      "stimulusId": "num-a-01",
+      "audioFile": "audio/num-a-01.wav",
+      "sha256": "d39b7903af659754d8d4853367790a837d1dc7eba7046791463f88c2bb2f1dc2",
+      "byteLength": 44192
+    },
+    {
+      "stimulusId": "num-a-02",
+      "audioFile": "audio/num-a-02.wav",
+      "sha256": "f7625910a45cf250b4e9913afb199b14d77712264360feb723ebda5a0e904f54",
+      "byteLength": 55456
+    },
+    {
+      "stimulusId": "num-a-03",
+      "audioFile": "audio/num-a-03.wav",
+      "sha256": "3e906559b03a35cc6d23928e1ab7a431e9de224c9728340b37d078cb548e59a1",
+      "byteLength": 45728
+    },
+    {
+      "stimulusId": "num-a-04",
+      "audioFile": "audio/num-a-04.wav",
+      "sha256": "8dead07c8441ff91638e95e09c098464aeb604481fe8630db7c046ba328764e6",
+      "byteLength": 59552
+    },
+    {
+      "stimulusId": "num-a-05",
+      "audioFile": "audio/num-a-05.wav",
+      "sha256": "c6fd510b354fdc17ea93ba80f36458512baaad1295683c7b6eb9954f68d93e06",
+      "byteLength": 55968
+    },
+    {
+      "stimulusId": "num-a-06",
+      "audioFile": "audio/num-a-06.wav",
+      "sha256": "52bff0fd5f961f68da6d60df5c31aad977dbd87e5c69f05ceb8c8c2ceca99c41",
+      "byteLength": 51360
+    },
+    {
+      "stimulusId": "num-a-07",
+      "audioFile": "audio/num-a-07.wav",
+      "sha256": "f52eeff7e2948e5998d8aff6d3b2cc9225e8e7a14fa21be07cd392de023d7957",
+      "byteLength": 51872
+    },
+    {
+      "stimulusId": "num-a-08",
+      "audioFile": "audio/num-a-08.wav",
+      "sha256": "c465a32d450a79b46359bbec28d886d6e76fffe9d34af51c4336fafff109b22c",
+      "byteLength": 52384
+    },
+    {
+      "stimulusId": "num-a-09",
+      "audioFile": "audio/num-a-09.wav",
+      "sha256": "b0116bb720469bef4a8efe06c2e63fb5145948a90421e5cca220761b7efed333",
+      "byteLength": 56480
+    },
+    {
+      "stimulusId": "num-a-10",
+      "audioFile": "audio/num-a-10.wav",
+      "sha256": "884a18f384cd45ccbc794941c17d3ba84eeccf1ecd3ee9b0916ea0bbc2091bb4",
+      "byteLength": 50848
+    },
+    {
+      "stimulusId": "num-a-11",
+      "audioFile": "audio/num-a-11.wav",
+      "sha256": "1211e7e63a3d2168df69bb3df30c2069a25157dc0004a2c60a91590c944cdb9f",
+      "byteLength": 51360
+    },
+    {
+      "stimulusId": "num-a-12",
+      "audioFile": "audio/num-a-12.wav",
+      "sha256": "2eaf26c952909929678f4b3573725aa07ac956ef8329cb261109720f1ada4297",
+      "byteLength": 51872
+    },
+    {
+      "stimulusId": "num-a-13",
+      "audioFile": "audio/num-a-13.wav",
+      "sha256": "f7ee252a79bb1debaafad4b012a4bcf254c38c2ee43b4b6dea10c955f282050a",
+      "byteLength": 56992
+    },
+    {
+      "stimulusId": "num-a-14",
+      "audioFile": "audio/num-a-14.wav",
+      "sha256": "82a3a723355c792444a09c1ac6022f9851e00b02d5ae1aed82e33d9f044d2ca5",
+      "byteLength": 55456
+    },
+    {
+      "stimulusId": "num-a-15",
+      "audioFile": "audio/num-a-15.wav",
+      "sha256": "873896850aae932eb067f23ca1cfdef471e57e6f082ecf6890064ae7549ac107",
+      "byteLength": 49824
+    },
+    {
+      "stimulusId": "num-a-16",
+      "audioFile": "audio/num-a-16.wav",
+      "sha256": "12914cae77362a7d14bd2be430cfeb0e55e907d26dbd4c5817fa6d076b609382",
+      "byteLength": 44704
+    },
+    {
+      "stimulusId": "num-a-17",
+      "audioFile": "audio/num-a-17.wav",
+      "sha256": "89ae2f9c8e37c21f0ed6b37cccd5b58cfac224e35cd84f13ff2574940f2d91f0",
+      "byteLength": 54432
+    },
+    {
+      "stimulusId": "num-a-18",
+      "audioFile": "audio/num-a-18.wav",
+      "sha256": "8d545c4c8b04458d13b71c0f6cd8e5cd69a1911ea294c4970c0b350719096770",
+      "byteLength": 57504
+    },
+    {
+      "stimulusId": "num-a-19",
+      "audioFile": "audio/num-a-19.wav",
+      "sha256": "74ce6bb5f7064404e6e2a2e8a63458220ca0b45219c182b8700688404e6487fe",
+      "byteLength": 58016
+    },
+    {
+      "stimulusId": "num-a-20",
+      "audioFile": "audio/num-a-20.wav",
+      "sha256": "a98707ccdafb60bf96db21677bab9197001099799db5603607bccf58b36287db",
+      "byteLength": 49824
+    },
+    {
+      "stimulusId": "num-b-01",
+      "audioFile": "audio/num-b-01.wav",
+      "sha256": "8486e706ec713c35ff074286ac3da90d4961b14f0059307750719f3ca42433d3",
+      "byteLength": 39584
+    },
+    {
+      "stimulusId": "num-b-02",
+      "audioFile": "audio/num-b-02.wav",
+      "sha256": "0f8ab71cdcf81b23ff939e3f2eaed4ed6757f12955fa76311e25d71edb93fc60",
+      "byteLength": 56992
+    },
+    {
+      "stimulusId": "num-b-03",
+      "audioFile": "audio/num-b-03.wav",
+      "sha256": "445f5764fec65dad1d7f42efece0c1181e26b3f731e28c21c6863900b63fd9a8",
+      "byteLength": 60576
+    },
+    {
+      "stimulusId": "num-b-04",
+      "audioFile": "audio/num-b-04.wav",
+      "sha256": "7e16123b67609044f9d7d1fe9ec7719b88ea48cdbedcb80995abdafd5d6c51a6",
+      "byteLength": 56480
+    },
+    {
+      "stimulusId": "num-b-05",
+      "audioFile": "audio/num-b-05.wav",
+      "sha256": "39061d23c2441c2b6c195d0248c0c7ad828107332dd1cf716b8a29f765ed5ef4",
+      "byteLength": 49312
+    },
+    {
+      "stimulusId": "num-b-06",
+      "audioFile": "audio/num-b-06.wav",
+      "sha256": "89c0e476057db61a360d6f77fbb184c25bda936a5dee19a7b39b70df97281c2d",
+      "byteLength": 56992
+    },
+    {
+      "stimulusId": "num-b-07",
+      "audioFile": "audio/num-b-07.wav",
+      "sha256": "e2366fdc3d9c8a0a09eaf3f4020ae58fb4689c0102e8bf52af207b312b1fe23b",
+      "byteLength": 57504
+    },
+    {
+      "stimulusId": "num-b-08",
+      "audioFile": "audio/num-b-08.wav",
+      "sha256": "ee2e0895a4891fcbcd53e2ccefa8fb6d8d99215d3ed8a4f96b3c4e119dd6e884",
+      "byteLength": 61600
+    },
+    {
+      "stimulusId": "num-b-09",
+      "audioFile": "audio/num-b-09.wav",
+      "sha256": "cee8b40754a340f029e4723add8fcd0cd3e825ec5e8ec8c359b6076c8d909653",
+      "byteLength": 50848
+    },
+    {
+      "stimulusId": "num-b-10",
+      "audioFile": "audio/num-b-10.wav",
+      "sha256": "ef8a4161cac4f842f82f60992bb9f9385d58d36c6e439bde09960cd9be9766b3",
+      "byteLength": 56480
+    },
+    {
+      "stimulusId": "num-b-11",
+      "audioFile": "audio/num-b-11.wav",
+      "sha256": "1443db2be637a248a860e5b97b30c8d4fe3775141434e82328a99b3b869ed649",
+      "byteLength": 52896
+    },
+    {
+      "stimulusId": "num-b-12",
+      "audioFile": "audio/num-b-12.wav",
+      "sha256": "e178c8c42a06227c0eb6f55f231854fd483b1c417c311057db1554cefc8816c5",
+      "byteLength": 49824
+    },
+    {
+      "stimulusId": "num-b-13",
+      "audioFile": "audio/num-b-13.wav",
+      "sha256": "50a7fa880d2d1c59fe13086285d035b735c3db9d315eae218f796f3ca0167e2e",
+      "byteLength": 47776
+    },
+    {
+      "stimulusId": "num-b-14",
+      "audioFile": "audio/num-b-14.wav",
+      "sha256": "72526a4ef4917369e5e9a5cb663565bf3cd59adeb9bd100e059aca1636cad7a6",
+      "byteLength": 62112
+    },
+    {
+      "stimulusId": "num-b-15",
+      "audioFile": "audio/num-b-15.wav",
+      "sha256": "7b18e6fa4a7bcbea05c230f10502c4ed8a45b583b9a927540b9c06b4ec2b5569",
+      "byteLength": 54944
+    },
+    {
+      "stimulusId": "num-b-16",
+      "audioFile": "audio/num-b-16.wav",
+      "sha256": "5416e89198881ac6a72f131b2c3b7f63a992dbfd4a5e6cafc473e1e7fdc6d426",
+      "byteLength": 47776
+    },
+    {
+      "stimulusId": "num-b-17",
+      "audioFile": "audio/num-b-17.wav",
+      "sha256": "dea63e0b94db1a160b76c86e2af71e8db34a5097f6086dfdd72dcd4ad7dc885d",
+      "byteLength": 51872
+    },
+    {
+      "stimulusId": "num-b-18",
+      "audioFile": "audio/num-b-18.wav",
+      "sha256": "f6351fc3b380f89a7cc3bb1969715d139fd54688aa39ed2b84b68b7b4e00a826",
+      "byteLength": 53408
+    },
+    {
+      "stimulusId": "num-b-19",
+      "audioFile": "audio/num-b-19.wav",
+      "sha256": "d4ae8bfc5f1c8d4a2dbdff5b0bc5eabf802ddbca2db4e9c4ab0d423c3a564617",
+      "byteLength": 58528
+    },
+    {
+      "stimulusId": "num-b-20",
+      "audioFile": "audio/num-b-20.wav",
+      "sha256": "79de6ddf5f7fed2d6b93cc0dcba8977b81c201ea0a70e2fd8254a0d1c43d5906",
+      "byteLength": 59040
+    },
+    {
+      "stimulusId": "num-c-01",
+      "audioFile": "audio/num-c-01.wav",
+      "sha256": "fe7ef01977edda89e1d1f48db78668529f85951a82349413c5cdbb38cb25a442",
+      "byteLength": 43168
+    },
+    {
+      "stimulusId": "num-c-02",
+      "audioFile": "audio/num-c-02.wav",
+      "sha256": "dcc4f79b76c16a58604d9156017006850d5a6e95da52a5b809025dc2237348d2",
+      "byteLength": 53408
+    },
+    {
+      "stimulusId": "num-c-03",
+      "audioFile": "audio/num-c-03.wav",
+      "sha256": "a11f2db16c44ddea3568caf01c97a8c943120b3c0d598ed276af80313dc0f93d",
+      "byteLength": 52384
+    },
+    {
+      "stimulusId": "num-c-04",
+      "audioFile": "audio/num-c-04.wav",
+      "sha256": "765606dc764bdecd8e39a13e39bb852b4652fbef6f90a8535d7c3ccfb267a793",
+      "byteLength": 54944
+    },
+    {
+      "stimulusId": "num-c-05",
+      "audioFile": "audio/num-c-05.wav",
+      "sha256": "880422e63cd11e6767649e9d10618d0c26c3abb369e85ebbbed169cabeaf67f6",
+      "byteLength": 42656
+    },
+    {
+      "stimulusId": "num-c-06",
+      "audioFile": "audio/num-c-06.wav",
+      "sha256": "42c1d770ff336fa3669074b46b8dbc0bc2869665f41c835fd03a32ffdd012f97",
+      "byteLength": 53408
+    },
+    {
+      "stimulusId": "num-c-07",
+      "audioFile": "audio/num-c-07.wav",
+      "sha256": "b6a69d6113e99d48742bb3e723ce8f272803bb737f8e177abac263eef6ba23ee",
+      "byteLength": 54944
+    },
+    {
+      "stimulusId": "num-c-08",
+      "audioFile": "audio/num-c-08.wav",
+      "sha256": "67be9b47e26b32b2a5d4a52eb050eb4dea3e65b67dc8b2746d2e3de8c7cec4d4",
+      "byteLength": 52384
+    },
+    {
+      "stimulusId": "num-c-09",
+      "audioFile": "audio/num-c-09.wav",
+      "sha256": "2fa5eab1cb664e4aa6ce8f0cff9fb28a4b5d809182730c72e252764b5b3b3983",
+      "byteLength": 56480
+    },
+    {
+      "stimulusId": "num-c-10",
+      "audioFile": "audio/num-c-10.wav",
+      "sha256": "c5d0eed739c874263d198634ea7af7f943eff56d66a6d57cc12d1aa7ed9744b6",
+      "byteLength": 58528
+    },
+    {
+      "stimulusId": "num-c-11",
+      "audioFile": "audio/num-c-11.wav",
+      "sha256": "4ab2057bf3e42b5f5bc078f9c74479a7ea968661dc870e36bd8a79cdf4e69357",
+      "byteLength": 54432
+    },
+    {
+      "stimulusId": "num-c-12",
+      "audioFile": "audio/num-c-12.wav",
+      "sha256": "b1b3af1cd13c8c3b681640b280d9cd1d048d25d18cf8b86fe442149627818888",
+      "byteLength": 51872
+    },
+    {
+      "stimulusId": "num-c-13",
+      "audioFile": "audio/num-c-13.wav",
+      "sha256": "8a995f6aaffac6787b7d11c2905b63f3928b40c1d87eb9c87e1cea025e79e39b",
+      "byteLength": 56992
+    },
+    {
+      "stimulusId": "num-c-14",
+      "audioFile": "audio/num-c-14.wav",
+      "sha256": "212ac26279ec38ead12cac8ab9b09731afb33fb74d787e31d13ab9fe18998218",
+      "byteLength": 62112
+    },
+    {
+      "stimulusId": "num-c-15",
+      "audioFile": "audio/num-c-15.wav",
+      "sha256": "16790b7c9b5be282a69b3caec00b0c964d50da6f7173f39612d4eb1d02aff66b",
+      "byteLength": 46752
+    },
+    {
+      "stimulusId": "num-c-16",
+      "audioFile": "audio/num-c-16.wav",
+      "sha256": "296bee42dcb5694804f91c920b60267171e1aac4bcdedecff480872e826550b7",
+      "byteLength": 38560
+    },
+    {
+      "stimulusId": "num-c-17",
+      "audioFile": "audio/num-c-17.wav",
+      "sha256": "a108ed0524d16646a4fc8e1b550febec2d875ad9384c174a67209ab256dcd91b",
+      "byteLength": 50848
+    },
+    {
+      "stimulusId": "num-c-18",
+      "audioFile": "audio/num-c-18.wav",
+      "sha256": "6b3ab8aae81ac6130cc1a1b5393fda6b33181060e0e1c2d1919e3324df85d01d",
+      "byteLength": 51872
+    },
+    {
+      "stimulusId": "num-c-19",
+      "audioFile": "audio/num-c-19.wav",
+      "sha256": "77269765c05d8689ad90eb266c04e70da5182fb695341952caff743a6c219234",
+      "byteLength": 54944
+    },
+    {
+      "stimulusId": "num-c-20",
+      "audioFile": "audio/num-c-20.wav",
+      "sha256": "ba97bf6ed23f408e4b8aff9e4b71ef49beeac60f5091db30d352db85f8a0af6d",
+      "byteLength": 55456
+    },
+    {
+      "stimulusId": "num-d-01",
+      "audioFile": "audio/num-d-01.wav",
+      "sha256": "0afb8d23f36e704ccbc7875709a70e15c5a127b0a8f6ab5f818e3057a42bf696",
+      "byteLength": 34976
+    },
+    {
+      "stimulusId": "num-d-02",
+      "audioFile": "audio/num-d-02.wav",
+      "sha256": "1a4617ba972c15496edc91af33e769b2e40cbdef5d6713c05ff0bfc1f0d8460d",
+      "byteLength": 47776
+    },
+    {
+      "stimulusId": "num-d-03",
+      "audioFile": "audio/num-d-03.wav",
+      "sha256": "8eaa34304860b825f902dcb535301a8db2e2c808019890021f56aac0b8d59166",
+      "byteLength": 53920
+    },
+    {
+      "stimulusId": "num-d-04",
+      "audioFile": "audio/num-d-04.wav",
+      "sha256": "b00ef794b04d61bed05e1c0194a199189a6d99fe21e9be801c7037cf3269e43c",
+      "byteLength": 52896
+    },
+    {
+      "stimulusId": "num-d-05",
+      "audioFile": "audio/num-d-05.wav",
+      "sha256": "4624054c277137fd05b2e390ae6201ebb0d908550e9e5ec6a510bfb622269920",
+      "byteLength": 46240
+    },
+    {
+      "stimulusId": "num-d-06",
+      "audioFile": "audio/num-d-06.wav",
+      "sha256": "e6005759dd6e5abbc6201b32b73ef1bcf94e98116c3fb9f37026804fd4a1620e",
+      "byteLength": 48800
+    },
+    {
+      "stimulusId": "num-d-07",
+      "audioFile": "audio/num-d-07.wav",
+      "sha256": "d4948cf367f84804d5016d64a9532172a06fa497caf9e1e4d5e244334d53b818",
+      "byteLength": 54432
+    },
+    {
+      "stimulusId": "num-d-08",
+      "audioFile": "audio/num-d-08.wav",
+      "sha256": "e96820257521ff08d18136e16e053b250eebfff22d419e9af98fcd51a5e9d08d",
+      "byteLength": 61600
+    },
+    {
+      "stimulusId": "num-d-09",
+      "audioFile": "audio/num-d-09.wav",
+      "sha256": "221334e4b3a0a7bfecca78bf0450aa31b6418613c6d76fee420201170a0cadc2",
+      "byteLength": 52896
+    },
+    {
+      "stimulusId": "num-d-10",
+      "audioFile": "audio/num-d-10.wav",
+      "sha256": "99509abd1a9d7f28899fb7ca7b95ee28d4894a7e478556f1dd287e82acb83807",
+      "byteLength": 51872
+    },
+    {
+      "stimulusId": "num-d-11",
+      "audioFile": "audio/num-d-11.wav",
+      "sha256": "fe329c611f1f5b42f7194d0b1aa1d5a3f1700d5e2e3cfc3c5e25ec32faccd1af",
+      "byteLength": 46240
+    },
+    {
+      "stimulusId": "num-d-12",
+      "audioFile": "audio/num-d-12.wav",
+      "sha256": "0764ef19ecd32b162dfccfd4ce36a55b77b0e187606df6adfb44a01a6cee01f3",
+      "byteLength": 55456
+    },
+    {
+      "stimulusId": "num-d-13",
+      "audioFile": "audio/num-d-13.wav",
+      "sha256": "c9ea09ce3fd071d0c1e489c3fe35301fbaeb41d9b9b7e8fecde4de928a11f16a",
+      "byteLength": 53920
+    },
+    {
+      "stimulusId": "num-d-14",
+      "audioFile": "audio/num-d-14.wav",
+      "sha256": "67e9a039953ea228dc4533baf1898e50f2011bbed1ed37abd23e45ef8511bffa",
+      "byteLength": 53920
+    },
+    {
+      "stimulusId": "num-d-15",
+      "audioFile": "audio/num-d-15.wav",
+      "sha256": "6bcb46c1a51b944809abede81d65cb9308d90d07af7f89de874ac8829c8a3481",
+      "byteLength": 49312
+    },
+    {
+      "stimulusId": "num-d-16",
+      "audioFile": "audio/num-d-16.wav",
+      "sha256": "bd834f676bb13fd78dc2044a2f8d07746768788808e84418185a67e6b2f28a5c",
+      "byteLength": 49312
+    },
+    {
+      "stimulusId": "num-d-17",
+      "audioFile": "audio/num-d-17.wav",
+      "sha256": "ab0291c54cfcb2a7655ec5469e2cb3b20c2755459e325a049ca27657ad415708",
+      "byteLength": 53408
+    },
+    {
+      "stimulusId": "num-d-18",
+      "audioFile": "audio/num-d-18.wav",
+      "sha256": "7ffc43d7a8dce4d5431c118b990688c2a5ea8c3c0effd5321f4044bd98674a0a",
+      "byteLength": 31392
+    },
+    {
+      "stimulusId": "num-d-19",
+      "audioFile": "audio/num-d-19.wav",
+      "sha256": "07b55b3c0d913169f6957192a7bbd5d94cf887f7f19d7cf9a62a3d9bb2fd7cad",
+      "byteLength": 55456
+    },
+    {
+      "stimulusId": "num-d-20",
+      "audioFile": "audio/num-d-20.wav",
+      "sha256": "c056044107b4bf4dd3de710ab38416f7ed0bb35a063541b7f2193603cc3ba4cb",
+      "byteLength": 56992
+    },
+    {
+      "stimulusId": "mono-a-01",
+      "audioFile": "audio/mono-a-01.wav",
+      "sha256": "37d201253f6cec951e692dc487cec3c25edc366be9978e40befdad040bd8cb6a",
+      "byteLength": 31392
+    },
+    {
+      "stimulusId": "mono-a-02",
+      "audioFile": "audio/mono-a-02.wav",
+      "sha256": "1bda31027e510029ffaa965614003a4bc05af323785a87bee075666f69a16b0e",
+      "byteLength": 29856
+    },
+    {
+      "stimulusId": "mono-a-03",
+      "audioFile": "audio/mono-a-03.wav",
+      "sha256": "cfa733625a3595c872bca380a14355f7dcb9ad366e4dfccf767569f62098c428",
+      "byteLength": 23712
+    },
+    {
+      "stimulusId": "mono-a-04",
+      "audioFile": "audio/mono-a-04.wav",
+      "sha256": "022a2c80badb3d7d343f2270a22ffd269965e879c87b3d5767c5e00254b5be2e",
+      "byteLength": 37536
+    },
+    {
+      "stimulusId": "mono-a-05",
+      "audioFile": "audio/mono-a-05.wav",
+      "sha256": "8b0fc7712d3977d5085d7bf91828958b16da6a833ebe5e54cbee847476fda513",
+      "byteLength": 26272
+    },
+    {
+      "stimulusId": "mono-a-06",
+      "audioFile": "audio/mono-a-06.wav",
+      "sha256": "2f41d9acedc1adc6b11c535430b000506c5f3060d7f42dc8d94edf36a5558678",
+      "byteLength": 26272
+    },
+    {
+      "stimulusId": "mono-a-07",
+      "audioFile": "audio/mono-a-07.wav",
+      "sha256": "9915050d5968e80f21e4193466eaaf7222a85464c4671d4357ab59c23a885753",
+      "byteLength": 27296
+    },
+    {
+      "stimulusId": "mono-a-08",
+      "audioFile": "audio/mono-a-08.wav",
+      "sha256": "1535cd1e536cc1287ebf40beff6bf88c0ac6c5ac48fa47731d518fcedb539c43",
+      "byteLength": 28832
+    },
+    {
+      "stimulusId": "mono-a-09",
+      "audioFile": "audio/mono-a-09.wav",
+      "sha256": "8787da443e805f844c6673c50eb903aa2b1631a0cfc947d9e2ad4f32b480f489",
+      "byteLength": 29856
+    },
+    {
+      "stimulusId": "mono-a-10",
+      "audioFile": "audio/mono-a-10.wav",
+      "sha256": "c8b674fcc412b3fa7dfa95fd78618524ec21145db7d3ea3064ebdcd21aba9677",
+      "byteLength": 33952
+    },
+    {
+      "stimulusId": "mono-a-11",
+      "audioFile": "audio/mono-a-11.wav",
+      "sha256": "489b6cc5a2d3b6a9243105e6983928da9e1b3d239e06798394f0836bc55da1fb",
+      "byteLength": 26272
+    },
+    {
+      "stimulusId": "mono-a-12",
+      "audioFile": "audio/mono-a-12.wav",
+      "sha256": "e9b625a66da0df885ff35d0d56474f33bf420e601682998217ec42b2fdeac36d",
+      "byteLength": 31904
+    },
+    {
+      "stimulusId": "mono-a-13",
+      "audioFile": "audio/mono-a-13.wav",
+      "sha256": "d914b19fecfdb56ca6bf468f5474f657ce043b24f6a3cb6c938587fd7fb0bf03",
+      "byteLength": 25760
+    },
+    {
+      "stimulusId": "mono-a-14",
+      "audioFile": "audio/mono-a-14.wav",
+      "sha256": "412ee2db119d0a0b8606014ff8a7ed95e7952525c08f22f8a97331d4b0f1b795",
+      "byteLength": 27808
+    },
+    {
+      "stimulusId": "mono-a-15",
+      "audioFile": "audio/mono-a-15.wav",
+      "sha256": "896565474e50f6bd6b2b4c33373be4b2d7b520d1410c7d4b8ad45f529f565dd2",
+      "byteLength": 24736
+    },
+    {
+      "stimulusId": "mono-a-16",
+      "audioFile": "audio/mono-a-16.wav",
+      "sha256": "2d0f5bfc8fc4330142297161445f0790b705550a2aa6becf0ba965a0f691be24",
+      "byteLength": 26784
+    },
+    {
+      "stimulusId": "mono-a-17",
+      "audioFile": "audio/mono-a-17.wav",
+      "sha256": "081abee9ee0167d56c0352f630c784187d18243c1f9416a5bddaba99b43eb50d",
+      "byteLength": 31904
+    },
+    {
+      "stimulusId": "mono-a-18",
+      "audioFile": "audio/mono-a-18.wav",
+      "sha256": "82bb2a2ea59c72441f7f5e19251411b4c99de0a1942792725a2041fa535f90d2",
+      "byteLength": 38560
+    },
+    {
+      "stimulusId": "mono-a-19",
+      "audioFile": "audio/mono-a-19.wav",
+      "sha256": "b7be0db5cdf6e9fb7b23b12dca6a89dddcc27c945be17098780d3600ae165536",
+      "byteLength": 31392
+    },
+    {
+      "stimulusId": "mono-a-20",
+      "audioFile": "audio/mono-a-20.wav",
+      "sha256": "4b8d27b16586a32724d48d48e7635ea3d3ce9591cb43b1a486970905d83560c3",
+      "byteLength": 30368
+    },
+    {
+      "stimulusId": "mono-b-01",
+      "audioFile": "audio/mono-b-01.wav",
+      "sha256": "d3d40eeb1914f5828a2911453dc08ff269d0fa5effac8bf838f2d2bb2de9b51b",
+      "byteLength": 36512
+    },
+    {
+      "stimulusId": "mono-b-02",
+      "audioFile": "audio/mono-b-02.wav",
+      "sha256": "d563e9856cd317a03fe59df96e9f27cf64d82c6b4cf9c64c86ef5bf7cd71137c",
+      "byteLength": 31392
+    },
+    {
+      "stimulusId": "mono-b-03",
+      "audioFile": "audio/mono-b-03.wav",
+      "sha256": "89ffa2efa28785cfced7d3a867e11bcd6bb9ae2057b0561e08e7400ead822a22",
+      "byteLength": 29856
+    },
+    {
+      "stimulusId": "mono-b-04",
+      "audioFile": "audio/mono-b-04.wav",
+      "sha256": "fc8e84c99e41a680fe6824325bf4ea8cfa20f1847984e58f44301d088723b406",
+      "byteLength": 31392
+    },
+    {
+      "stimulusId": "mono-b-05",
+      "audioFile": "audio/mono-b-05.wav",
+      "sha256": "0e5c1dd1ed8accd30f23b2b61c8784a5b4597699929c627da8cf549f394c0178",
+      "byteLength": 29856
+    },
+    {
+      "stimulusId": "mono-b-06",
+      "audioFile": "audio/mono-b-06.wav",
+      "sha256": "e0ef49559ca523caef5d00035826d9f10fcf7fe908172a3b3f951463b4939bdc",
+      "byteLength": 33440
+    },
+    {
+      "stimulusId": "mono-b-07",
+      "audioFile": "audio/mono-b-07.wav",
+      "sha256": "ed80146184f98f5e771eef15b9eecda3fc0f1471b995fcd31d3cc8a5b1c40ce1",
+      "byteLength": 26272
+    },
+    {
+      "stimulusId": "mono-b-08",
+      "audioFile": "audio/mono-b-08.wav",
+      "sha256": "20541e4e1ec4d6e800e8a664f96b8afbbec06ff2c35063ffdaaad14278c7219a",
+      "byteLength": 26784
+    },
+    {
+      "stimulusId": "mono-b-09",
+      "audioFile": "audio/mono-b-09.wav",
+      "sha256": "4df046b0eb1a25cce37efecd20dcff0f41126c0dc8a0fa83d11310a006e73fd7",
+      "byteLength": 31392
+    },
+    {
+      "stimulusId": "mono-b-10",
+      "audioFile": "audio/mono-b-10.wav",
+      "sha256": "4020bf754667872a4e52dbf9f81f00ecab552f77f0a96a826ed46396b9d86990",
+      "byteLength": 34976
+    },
+    {
+      "stimulusId": "mono-b-11",
+      "audioFile": "audio/mono-b-11.wav",
+      "sha256": "eaf5307b387906f68106e59663f83c21fdd2ab221a385410c584af2ab563d936",
+      "byteLength": 32416
+    },
+    {
+      "stimulusId": "mono-b-12",
+      "audioFile": "audio/mono-b-12.wav",
+      "sha256": "183dd6c25669e064c28d1645541a1ce2467ec7b680a5e47ec23a32ee5cad072d",
+      "byteLength": 31904
+    },
+    {
+      "stimulusId": "mono-b-13",
+      "audioFile": "audio/mono-b-13.wav",
+      "sha256": "0269395e734d2b992e50bc7ca1b3e62a09ff97a840bbc2968840d33f00e35106",
+      "byteLength": 28320
+    },
+    {
+      "stimulusId": "mono-b-14",
+      "audioFile": "audio/mono-b-14.wav",
+      "sha256": "0f899a3e50aafcabbba05676c2a2c02265a90022cd8daaf1046f5600a2a4e06d",
+      "byteLength": 29344
+    },
+    {
+      "stimulusId": "mono-b-15",
+      "audioFile": "audio/mono-b-15.wav",
+      "sha256": "a5128702e7e23cbc809d73185fa3b3e1bee1d8be1fb4f0b1d02b92ef24f79109",
+      "byteLength": 32416
+    },
+    {
+      "stimulusId": "mono-b-16",
+      "audioFile": "audio/mono-b-16.wav",
+      "sha256": "afed71ff2bbf5e1ff275a240c5fd6b3da72e1ba6841d729a27671a9f228f5755",
+      "byteLength": 26784
+    },
+    {
+      "stimulusId": "mono-b-17",
+      "audioFile": "audio/mono-b-17.wav",
+      "sha256": "029dd83bbb7d5b31d15961242bf07c547648f33e63b56060e585c185df3f29c5",
+      "byteLength": 29344
+    },
+    {
+      "stimulusId": "mono-b-18",
+      "audioFile": "audio/mono-b-18.wav",
+      "sha256": "85017d424e25301ee2604a34950aca8666770b1855b3d24e74cb1c446d9b2011",
+      "byteLength": 23200
+    },
+    {
+      "stimulusId": "mono-b-19",
+      "audioFile": "audio/mono-b-19.wav",
+      "sha256": "9b37fc833132f4d1285df0f4735a5f0edeeb3fe2c49bb052a5e688ad3f59df9d",
+      "byteLength": 37536
+    },
+    {
+      "stimulusId": "mono-b-20",
+      "audioFile": "audio/mono-b-20.wav",
+      "sha256": "bb5133cab2276406cf1e36de05d91f402baf1ca91da1612f4e7c559aa92d4c46",
+      "byteLength": 26272
+    },
+    {
+      "stimulusId": "mono-c-01",
+      "audioFile": "audio/mono-c-01.wav",
+      "sha256": "a5be13e0cbbc5c8a696be68806b09e3fae7de4859bc2beda12a0a716029b4d6f",
+      "byteLength": 27808
+    },
+    {
+      "stimulusId": "mono-c-02",
+      "audioFile": "audio/mono-c-02.wav",
+      "sha256": "e57d25cc874e05f99f503a756ee77edc2c899abc02e8d6ff77280af28bbf102d",
+      "byteLength": 37024
+    },
+    {
+      "stimulusId": "mono-c-03",
+      "audioFile": "audio/mono-c-03.wav",
+      "sha256": "44825358427ab670df69c2331a185c9ae0308f11c3ff442fa777175f05de172a",
+      "byteLength": 27296
+    },
+    {
+      "stimulusId": "mono-c-04",
+      "audioFile": "audio/mono-c-04.wav",
+      "sha256": "2890e0725ff4fd2abf90c8d3aaa1cecb1b23363af04f204a29bc13cb9680d152",
+      "byteLength": 30880
+    },
+    {
+      "stimulusId": "mono-c-05",
+      "audioFile": "audio/mono-c-05.wav",
+      "sha256": "8e564189912ca03500a38f93e6d873abdaa22d58b0752798d72e3c0917195952",
+      "byteLength": 26272
+    },
+    {
+      "stimulusId": "mono-c-06",
+      "audioFile": "audio/mono-c-06.wav",
+      "sha256": "8d84fb8d659ddc7242419f660784a0ccdf16a6b491dedf141df308ffedf48450",
+      "byteLength": 34464
+    },
+    {
+      "stimulusId": "mono-c-07",
+      "audioFile": "audio/mono-c-07.wav",
+      "sha256": "eace0836d22ccb26af2e092f0dba8918cee24d1d1353fad5e3b6ad36f4a98b56",
+      "byteLength": 29344
+    },
+    {
+      "stimulusId": "mono-c-08",
+      "audioFile": "audio/mono-c-08.wav",
+      "sha256": "2b42a64df0d2d39195a5a6965f60d08ad6e5879b8c8f2a244aaa625a41b95c86",
+      "byteLength": 36512
+    },
+    {
+      "stimulusId": "mono-c-09",
+      "audioFile": "audio/mono-c-09.wav",
+      "sha256": "214746fdc990c28f411aaffa1e0178791ec1721e92a2524722ae08e80ed4c804",
+      "byteLength": 25248
+    },
+    {
+      "stimulusId": "mono-c-10",
+      "audioFile": "audio/mono-c-10.wav",
+      "sha256": "2a292e45e3ec71de8b04ac9f4cf25ea32b588c82e38e81d34ace1ac543bbcda2",
+      "byteLength": 28832
+    },
+    {
+      "stimulusId": "mono-c-11",
+      "audioFile": "audio/mono-c-11.wav",
+      "sha256": "0012771a07cb2c15baed75a4d7867074d9478dfa59ab083c6615b4177be934ef",
+      "byteLength": 32416
+    },
+    {
+      "stimulusId": "mono-c-12",
+      "audioFile": "audio/mono-c-12.wav",
+      "sha256": "968611cf94b2da1599aa6ac6d68e2e1413e42c450a338e0554ef15344848b954",
+      "byteLength": 29344
+    },
+    {
+      "stimulusId": "mono-c-13",
+      "audioFile": "audio/mono-c-13.wav",
+      "sha256": "3c1963d68e147b0b8c4b7c936bd8d722b52678fae666915a13f85578c20f27e0",
+      "byteLength": 24736
+    },
+    {
+      "stimulusId": "mono-c-14",
+      "audioFile": "audio/mono-c-14.wav",
+      "sha256": "578d6119b51212063366abcfe75f611f5704840f468d1704128deb0d37aa5709",
+      "byteLength": 26272
+    },
+    {
+      "stimulusId": "mono-c-15",
+      "audioFile": "audio/mono-c-15.wav",
+      "sha256": "40ef4c399047af9216fa48c0540889fedf5b995fd53ba61e630962d18982476a",
+      "byteLength": 36000
+    },
+    {
+      "stimulusId": "mono-c-16",
+      "audioFile": "audio/mono-c-16.wav",
+      "sha256": "c325604d3622583ea28687ccf4592657ba33c6841651b4f8de7e2995420a9132",
+      "byteLength": 27296
+    },
+    {
+      "stimulusId": "mono-c-17",
+      "audioFile": "audio/mono-c-17.wav",
+      "sha256": "e08454fe75e9f50de302a7b6a8cf0a9fa749256a4ed6ae1033034399e137693b",
+      "byteLength": 25760
+    },
+    {
+      "stimulusId": "mono-c-18",
+      "audioFile": "audio/mono-c-18.wav",
+      "sha256": "23daa2e5ff1eb074c02cf32cb5da4080e5ebd8ed2e4ce54263e4df14311169e7",
+      "byteLength": 25248
+    },
+    {
+      "stimulusId": "mono-c-19",
+      "audioFile": "audio/mono-c-19.wav",
+      "sha256": "50525f7bad53d199878355caec3722486289bda09984d4e182b7dc5d9f3a628b",
+      "byteLength": 28832
+    },
+    {
+      "stimulusId": "mono-c-20",
+      "audioFile": "audio/mono-c-20.wav",
+      "sha256": "b8994929c9f59712c5e1d46d42497001c416cdd263140656934fe1be7006b40f",
+      "byteLength": 29856
+    },
+    {
+      "stimulusId": "mono-d-01",
+      "audioFile": "audio/mono-d-01.wav",
+      "sha256": "78540945836bd26fa825b79d4c1a82aa408ff74dde0f51c564e6a5752ee918a5",
+      "byteLength": 28320
+    },
+    {
+      "stimulusId": "mono-d-02",
+      "audioFile": "audio/mono-d-02.wav",
+      "sha256": "4da0c39995503ff60d58f02c17733d4827f7b82453623a1efb952259042c78d6",
+      "byteLength": 29344
+    },
+    {
+      "stimulusId": "mono-d-03",
+      "audioFile": "audio/mono-d-03.wav",
+      "sha256": "18d69a645de3526c7f73a775f8facc5dd0def83a773f46036ffcf6d945a9a7de",
+      "byteLength": 26272
+    },
+    {
+      "stimulusId": "mono-d-04",
+      "audioFile": "audio/mono-d-04.wav",
+      "sha256": "79c888222b4f91eb28f14729d6bc86c5aa29d4172b838e0ea1de29073c864c1e",
+      "byteLength": 34464
+    },
+    {
+      "stimulusId": "mono-d-05",
+      "audioFile": "audio/mono-d-05.wav",
+      "sha256": "5ea32dc099a20f5eefc2bda6e8637946345c6ce90ee7710eda65cfd188d6388a",
+      "byteLength": 35488
+    },
+    {
+      "stimulusId": "mono-d-06",
+      "audioFile": "audio/mono-d-06.wav",
+      "sha256": "5ae0e955e9dd2a1b73cb3bab90f8772e331500577839cb4eb89fccfbceac0eca",
+      "byteLength": 30368
+    },
+    {
+      "stimulusId": "mono-d-07",
+      "audioFile": "audio/mono-d-07.wav",
+      "sha256": "a0b66b5bd5b757739fba900341d499ff9925ba0399f82c26f6b492d0dcb0c29a",
+      "byteLength": 32928
+    },
+    {
+      "stimulusId": "mono-d-08",
+      "audioFile": "audio/mono-d-08.wav",
+      "sha256": "012495053a868d8ca4b3ad699198b2cbd862a7f7825a917cd76bd11838732da9",
+      "byteLength": 32928
+    },
+    {
+      "stimulusId": "mono-d-09",
+      "audioFile": "audio/mono-d-09.wav",
+      "sha256": "f2b1077317de25fdbc61cb7deedf34cf77286f1bc12d78dfa81df34f806ef89f",
+      "byteLength": 26784
+    },
+    {
+      "stimulusId": "mono-d-10",
+      "audioFile": "audio/mono-d-10.wav",
+      "sha256": "74a5461cb2b444b4d3aaa8e4757ec9b39f22cac7107edd0afbfb88e4b47fbe57",
+      "byteLength": 37536
+    },
+    {
+      "stimulusId": "mono-d-11",
+      "audioFile": "audio/mono-d-11.wav",
+      "sha256": "afd31e5606dcd59b3f6d7328049b789adfb9f5eca826ebecad552dd78e7c3fc7",
+      "byteLength": 36000
+    },
+    {
+      "stimulusId": "mono-d-12",
+      "audioFile": "audio/mono-d-12.wav",
+      "sha256": "4b016c6a513572a55e252e8b3a249954cf68d50111d525d51a811bc27b1dcf51",
+      "byteLength": 34464
+    },
+    {
+      "stimulusId": "mono-d-13",
+      "audioFile": "audio/mono-d-13.wav",
+      "sha256": "28ec3e2805857f2c8e5244def1c8ba96d0067594d40c371458cca30649190573",
+      "byteLength": 24224
+    },
+    {
+      "stimulusId": "mono-d-14",
+      "audioFile": "audio/mono-d-14.wav",
+      "sha256": "3c824de596785a848344ed7965184d503b9ce1a487057b2533df0fdd10670eec",
+      "byteLength": 28320
+    },
+    {
+      "stimulusId": "mono-d-15",
+      "audioFile": "audio/mono-d-15.wav",
+      "sha256": "773d626842155a731ff9e8b5e8175b15ef45fbf99eee9817babbd9682c05b135",
+      "byteLength": 30368
+    },
+    {
+      "stimulusId": "mono-d-16",
+      "audioFile": "audio/mono-d-16.wav",
+      "sha256": "163812cc9ed16948104663504b3fe339914f2b1adbfcbaafb9ecaf51bf7cd0fd",
+      "byteLength": 34976
+    },
+    {
+      "stimulusId": "mono-d-17",
+      "audioFile": "audio/mono-d-17.wav",
+      "sha256": "463127200ec0747602435bddce5233bbfd4eb50dd89a03874894352f9eb1e2a6",
+      "byteLength": 26272
+    },
+    {
+      "stimulusId": "mono-d-18",
+      "audioFile": "audio/mono-d-18.wav",
+      "sha256": "4b76c89cccaeca18183ce300410851d77eb5837671e03ba762bb8054d6c01365",
+      "byteLength": 25248
+    },
+    {
+      "stimulusId": "mono-d-19",
+      "audioFile": "audio/mono-d-19.wav",
+      "sha256": "eec5ca7ab71080c23f6d6cd6139ad59fefc131c0825526fcd0520683faa46b71",
+      "byteLength": 36512
+    },
+    {
+      "stimulusId": "mono-d-20",
+      "audioFile": "audio/mono-d-20.wav",
+      "sha256": "9f33beba7f644ceac24bb30bf79dba2c6a99c855dc3935b859d291931f31d78c",
+      "byteLength": 28832
+    },
+    {
+      "stimulusId": "poly-a-01",
+      "audioFile": "audio/poly-a-01.wav",
+      "sha256": "1d48101331cbf7ce4b50ab1027daaedd4b0b3c0fb7eaec222906b4a484ac080a",
+      "byteLength": 37024
+    },
+    {
+      "stimulusId": "poly-a-02",
+      "audioFile": "audio/poly-a-02.wav",
+      "sha256": "7b2de9e8bcbb86a0f8eeb109d265c244c3ca5f27a2261d4f7bfe41b19579d42d",
+      "byteLength": 27808
+    },
+    {
+      "stimulusId": "poly-a-03",
+      "audioFile": "audio/poly-a-03.wav",
+      "sha256": "a3e110670f9db32ed84fdacb61aa3f7786568ee070ed5f26c4983229bf847077",
+      "byteLength": 32928
+    },
+    {
+      "stimulusId": "poly-a-04",
+      "audioFile": "audio/poly-a-04.wav",
+      "sha256": "a7e6439ce896388357a0fa071e1cb8185a20a6c9393cf7bd1a491b5fc3bc7a32",
+      "byteLength": 28832
+    },
+    {
+      "stimulusId": "poly-a-05",
+      "audioFile": "audio/poly-a-05.wav",
+      "sha256": "5c1e20ee292fdfd4b3e487dd717aa871a3cdc76b7261ae109a3144ee198adc48",
+      "byteLength": 32928
+    },
+    {
+      "stimulusId": "poly-a-06",
+      "audioFile": "audio/poly-a-06.wav",
+      "sha256": "b3cbc05fb25963a0cae93849eaa2ed6a66047bdd4f4f174ada603f196519144a",
+      "byteLength": 29344
+    },
+    {
+      "stimulusId": "poly-a-07",
+      "audioFile": "audio/poly-a-07.wav",
+      "sha256": "967fc70f92511f4cfc6dd6964e9b4f9caf16ce0391c4fee464038edaa3bb00f1",
+      "byteLength": 40608
+    },
+    {
+      "stimulusId": "poly-a-08",
+      "audioFile": "audio/poly-a-08.wav",
+      "sha256": "0934c2fdb44c2fb442aedb104e1657eb078bac09b519a3b3737e600fa131b770",
+      "byteLength": 36512
+    },
+    {
+      "stimulusId": "poly-a-09",
+      "audioFile": "audio/poly-a-09.wav",
+      "sha256": "0ee4658e7c0e2fee49efcb6a8a8dbd84aff9ae7b2ba83a4c9f77387d359159ff",
+      "byteLength": 27296
+    },
+    {
+      "stimulusId": "poly-a-10",
+      "audioFile": "audio/poly-a-10.wav",
+      "sha256": "40ae80bbc52c290b9f505eaf4ea0dce8551589c13c8ae917ee5aa603d17db649",
+      "byteLength": 30880
+    },
+    {
+      "stimulusId": "poly-a-11",
+      "audioFile": "audio/poly-a-11.wav",
+      "sha256": "85c6d40bc4208dcd1a9d8bfebf74dbdae7afbb2913103ab824cb0060d66dc167",
+      "byteLength": 29344
+    },
+    {
+      "stimulusId": "poly-a-12",
+      "audioFile": "audio/poly-a-12.wav",
+      "sha256": "7ff8abfb0c7114a28450598b94329b4f27c6975d6666358bc9649bfdcd5a780f",
+      "byteLength": 33952
+    },
+    {
+      "stimulusId": "poly-a-13",
+      "audioFile": "audio/poly-a-13.wav",
+      "sha256": "6962de2b8d1e454697ed30b597fc1421fbb7cd85082af535b5d3d45890dff58a",
+      "byteLength": 29344
+    },
+    {
+      "stimulusId": "poly-a-14",
+      "audioFile": "audio/poly-a-14.wav",
+      "sha256": "c286a22a806e1de3a4e49abd22b2e38b8f34f3fb62c3657fa258b58f4af56149",
+      "byteLength": 31392
+    },
+    {
+      "stimulusId": "poly-a-15",
+      "audioFile": "audio/poly-a-15.wav",
+      "sha256": "f510db0a3122cd07771c71c93ca0331aa7e6d0af033c5438b4c4e0547588eaac",
+      "byteLength": 31392
+    },
+    {
+      "stimulusId": "poly-a-16",
+      "audioFile": "audio/poly-a-16.wav",
+      "sha256": "e11ed72f1d22365100bbf1f12fcae11fa8c885e763e57de0c9c76f5cde33943d",
+      "byteLength": 36512
+    },
+    {
+      "stimulusId": "poly-a-17",
+      "audioFile": "audio/poly-a-17.wav",
+      "sha256": "556de875816ac3ebede2b065d084550fd972a40a34e1c35fdcbbf822c6e6e77a",
+      "byteLength": 31904
+    },
+    {
+      "stimulusId": "poly-a-18",
+      "audioFile": "audio/poly-a-18.wav",
+      "sha256": "8d94ec8156641465db7046777e445a238113e10c7fabe2ff42cf7268f08e6fc8",
+      "byteLength": 36000
+    },
+    {
+      "stimulusId": "poly-a-19",
+      "audioFile": "audio/poly-a-19.wav",
+      "sha256": "a2b7ed21a34a486092b06a87be20151e4041d2474bc02cec0512623708a68ddd",
+      "byteLength": 33440
+    },
+    {
+      "stimulusId": "poly-a-20",
+      "audioFile": "audio/poly-a-20.wav",
+      "sha256": "10e0733f75070a964cf85b011364915ac9fd540ab37cc2bac002659422f71ca2",
+      "byteLength": 36000
+    },
+    {
+      "stimulusId": "poly-b-01",
+      "audioFile": "audio/poly-b-01.wav",
+      "sha256": "40a2c11189e6999e0ab9880dea34a0bd85bfd45f9933ce3c681532417bf22efe",
+      "byteLength": 33440
+    },
+    {
+      "stimulusId": "poly-b-02",
+      "audioFile": "audio/poly-b-02.wav",
+      "sha256": "8874d8d56074843720365fc7d8d380256d940f51890de4707f5b36cb968f9a3c",
+      "byteLength": 34464
+    },
+    {
+      "stimulusId": "poly-b-03",
+      "audioFile": "audio/poly-b-03.wav",
+      "sha256": "00f665c489f72092a4ae6dcd2445d5bf040c84445722bbc6e91eaf0fb3745cf5",
+      "byteLength": 32928
+    },
+    {
+      "stimulusId": "poly-b-04",
+      "audioFile": "audio/poly-b-04.wav",
+      "sha256": "a6054bf00a16494132ab9f42fadb3e0c9be339c7e1f3b96ac8fed4160ae40e29",
+      "byteLength": 32928
+    },
+    {
+      "stimulusId": "poly-b-05",
+      "audioFile": "audio/poly-b-05.wav",
+      "sha256": "1ee1825272032316622ddd58c4a517417e2ac36b44fc2de5eeee1c69dca823ce",
+      "byteLength": 26272
+    },
+    {
+      "stimulusId": "poly-b-06",
+      "audioFile": "audio/poly-b-06.wav",
+      "sha256": "da7c5a44bd88676eb2bbfead7a22c3181e93cf1f92aaba8dd91dfe1508fedbfa",
+      "byteLength": 40096
+    },
+    {
+      "stimulusId": "poly-b-07",
+      "audioFile": "audio/poly-b-07.wav",
+      "sha256": "fb37e377ebfd85554e8087652c0e7c134e6d2f4e7ea162b3e036fff1e18c3a9b",
+      "byteLength": 33440
+    },
+    {
+      "stimulusId": "poly-b-08",
+      "audioFile": "audio/poly-b-08.wav",
+      "sha256": "7a2be7e6dfc8c3238a4027034f89bcf51c7439c47702a75b50f7009470973a40",
+      "byteLength": 31392
+    },
+    {
+      "stimulusId": "poly-b-09",
+      "audioFile": "audio/poly-b-09.wav",
+      "sha256": "4dd6a39035ba013aea390b61e0b5b891418fde40165fdc8931ae1f126e06e3e4",
+      "byteLength": 36512
+    },
+    {
+      "stimulusId": "poly-b-10",
+      "audioFile": "audio/poly-b-10.wav",
+      "sha256": "e9f4171afac90f115798178b9b15e94f8f80104431098b7cd2e35d0c13de11ca",
+      "byteLength": 35488
+    },
+    {
+      "stimulusId": "poly-b-11",
+      "audioFile": "audio/poly-b-11.wav",
+      "sha256": "9fa9695c00d19eeaf0361de92f3c29f98b22f6292a6a113469d59cf2bc1d22ec",
+      "byteLength": 29856
+    },
+    {
+      "stimulusId": "poly-b-12",
+      "audioFile": "audio/poly-b-12.wav",
+      "sha256": "3614bc444fe6dbb705266d0a8a6d463edf24456d4e77d8bb55520dfd380832a9",
+      "byteLength": 31904
+    },
+    {
+      "stimulusId": "poly-b-13",
+      "audioFile": "audio/poly-b-13.wav",
+      "sha256": "a36f3a4f9e5dc2d15b0011c4ab6974e7296b151f58b583217c60c43c698ef306",
+      "byteLength": 31392
+    },
+    {
+      "stimulusId": "poly-b-14",
+      "audioFile": "audio/poly-b-14.wav",
+      "sha256": "e95da39f2399279d365add20a0275adf63bfc5a0c0e46ecdf55ef111221e417e",
+      "byteLength": 28832
+    },
+    {
+      "stimulusId": "poly-b-15",
+      "audioFile": "audio/poly-b-15.wav",
+      "sha256": "fae088353182f6c96d54a26a1a0d2b89c55b378927b730c1c2ed70efaa4b3a78",
+      "byteLength": 34464
+    },
+    {
+      "stimulusId": "poly-b-16",
+      "audioFile": "audio/poly-b-16.wav",
+      "sha256": "0e4a34b5b7d2a536a080724d4245c98b74a19e5a3d5623e044021f95e1e9f228",
+      "byteLength": 37536
+    },
+    {
+      "stimulusId": "poly-b-17",
+      "audioFile": "audio/poly-b-17.wav",
+      "sha256": "af9baf2c538a246dad8670bc596a5e28592fa07d4a13061e8720e9e7a3ac9d25",
+      "byteLength": 36000
+    },
+    {
+      "stimulusId": "poly-b-18",
+      "audioFile": "audio/poly-b-18.wav",
+      "sha256": "61ee1175082f6b83befd6c2ef589e24ea7837aa2b6c5967755d1e1febd82bd37",
+      "byteLength": 32928
+    },
+    {
+      "stimulusId": "poly-b-19",
+      "audioFile": "audio/poly-b-19.wav",
+      "sha256": "11800f6d6a33b943dd6ad14f1fbaba32a8004dd6fe72f76b0d41c94aadbf1cb0",
+      "byteLength": 41632
+    },
+    {
+      "stimulusId": "poly-b-20",
+      "audioFile": "audio/poly-b-20.wav",
+      "sha256": "99b75f87c2adceaf6cbb1f54b8611ee6ff36c1fe499ab000e5a99b4902c16fbf",
+      "byteLength": 35488
+    },
+    {
+      "stimulusId": "poly-c-01",
+      "audioFile": "audio/poly-c-01.wav",
+      "sha256": "37d8270ac63bbf4e5008ae36683ff6ffaec487bfb8be937d18de58c9dc99b996",
+      "byteLength": 37536
+    },
+    {
+      "stimulusId": "poly-c-02",
+      "audioFile": "audio/poly-c-02.wav",
+      "sha256": "bc9c577b875a1f5d60c2e071458092859a3ebcaeba488d9b081254ac70056a6a",
+      "byteLength": 34976
+    },
+    {
+      "stimulusId": "poly-c-03",
+      "audioFile": "audio/poly-c-03.wav",
+      "sha256": "c4383d7a27137df3d0fa454c11d130ddd2ca2a32b44d308921e38c2324c8d35d",
+      "byteLength": 37536
+    },
+    {
+      "stimulusId": "poly-c-04",
+      "audioFile": "audio/poly-c-04.wav",
+      "sha256": "6f820ececc15cf36334d517fda5ca8eb13c4bf132ddd68e3257c206d844f6b39",
+      "byteLength": 30368
+    },
+    {
+      "stimulusId": "poly-c-05",
+      "audioFile": "audio/poly-c-05.wav",
+      "sha256": "a2d93f7d2db144f17760e663591bd59e6d9b66545a313248d1f32b74db6e8fb0",
+      "byteLength": 37024
+    },
+    {
+      "stimulusId": "poly-c-06",
+      "audioFile": "audio/poly-c-06.wav",
+      "sha256": "97605750cae1141a55b8815794da59447a5edd9f5ba220488080c72cc64df171",
+      "byteLength": 30880
+    },
+    {
+      "stimulusId": "poly-c-07",
+      "audioFile": "audio/poly-c-07.wav",
+      "sha256": "7328648d92e132e8eaa7b8b6f786eaa8e3df2682d7ca3a32c4fa10f98f13dd07",
+      "byteLength": 26272
+    },
+    {
+      "stimulusId": "poly-c-08",
+      "audioFile": "audio/poly-c-08.wav",
+      "sha256": "afd50ad24bc1345d5b0b5e7d3b1a862d64e86afd68f1c431820db0da924509fc",
+      "byteLength": 33952
+    },
+    {
+      "stimulusId": "poly-c-09",
+      "audioFile": "audio/poly-c-09.wav",
+      "sha256": "e636088f65ced33c25949a9cbee535e64b7bb4ff993c487f1cac2445a111fc6b",
+      "byteLength": 30880
+    },
+    {
+      "stimulusId": "poly-c-10",
+      "audioFile": "audio/poly-c-10.wav",
+      "sha256": "820f55f618a9f37b9d6468f0ec6ecd2efeda1c2e02b769701c38494843eae100",
+      "byteLength": 32416
+    },
+    {
+      "stimulusId": "poly-c-11",
+      "audioFile": "audio/poly-c-11.wav",
+      "sha256": "c17ecb9cac35075d582352049dde445f30e048541342075d504b7053eb18c815",
+      "byteLength": 41632
+    },
+    {
+      "stimulusId": "poly-c-12",
+      "audioFile": "audio/poly-c-12.wav",
+      "sha256": "6e47918f28c6c67ca3af6f9ad309f24a8f39532ab880088bf90eed4ffe525d44",
+      "byteLength": 33440
+    },
+    {
+      "stimulusId": "poly-c-13",
+      "audioFile": "audio/poly-c-13.wav",
+      "sha256": "41a52dedffa979ae52765de7668ab3c403097ba8dc5c7ad17f40166e06741af0",
+      "byteLength": 34976
+    },
+    {
+      "stimulusId": "poly-c-14",
+      "audioFile": "audio/poly-c-14.wav",
+      "sha256": "5854cab20a1fcc4baabc7aab1214ac7f0ba27f9775da2fd05dd775281638f255",
+      "byteLength": 40608
+    },
+    {
+      "stimulusId": "poly-c-15",
+      "audioFile": "audio/poly-c-15.wav",
+      "sha256": "124242b58874cf6cb6f0e10fba9fde54a02e3f645e6a7bd7b485d12a283192a9",
+      "byteLength": 35488
+    },
+    {
+      "stimulusId": "poly-c-16",
+      "audioFile": "audio/poly-c-16.wav",
+      "sha256": "bb968b9e19adf38ac8e9ac55f602f8416f233fdb987f803be8b778d76ce485b8",
+      "byteLength": 38560
+    },
+    {
+      "stimulusId": "poly-c-17",
+      "audioFile": "audio/poly-c-17.wav",
+      "sha256": "26cc8a8a5376c50f2f445c3b2f2f3f55ce6abd3c2cd5253108bc43cbbc341677",
+      "byteLength": 39072
+    },
+    {
+      "stimulusId": "poly-c-18",
+      "audioFile": "audio/poly-c-18.wav",
+      "sha256": "f4c0e7f990dc09ce31c05fb27570156f0afe37972484799c8d0cbf80a0b538d2",
+      "byteLength": 34976
+    },
+    {
+      "stimulusId": "poly-c-19",
+      "audioFile": "audio/poly-c-19.wav",
+      "sha256": "74286b076b3c63934f23997c758285c5eaa790e48a895068b1d7f90e44fab9eb",
+      "byteLength": 37024
+    },
+    {
+      "stimulusId": "poly-c-20",
+      "audioFile": "audio/poly-c-20.wav",
+      "sha256": "c0f608bf5d2995c9b1df001f98bf10285fb6711130de6eafe959589c919b66b6",
+      "byteLength": 36512
+    },
+    {
+      "stimulusId": "poly-d-01",
+      "audioFile": "audio/poly-d-01.wav",
+      "sha256": "04d302066dd418087264195166cee7394b343581d72aa12c74bd5c02ea90f10f",
+      "byteLength": 44192
+    },
+    {
+      "stimulusId": "poly-d-02",
+      "audioFile": "audio/poly-d-02.wav",
+      "sha256": "14b148968f526514c95c69dc2fcd2d2620578c56e0373ccb6f2b07142d6a5132",
+      "byteLength": 31392
+    },
+    {
+      "stimulusId": "poly-d-03",
+      "audioFile": "audio/poly-d-03.wav",
+      "sha256": "5fbc51da226d4c2c94719a49852d4f2324e3f42e61bea910a575614d38bc42b4",
+      "byteLength": 33440
+    },
+    {
+      "stimulusId": "poly-d-04",
+      "audioFile": "audio/poly-d-04.wav",
+      "sha256": "5c27afe7d09fd0dfd3c9198eba6e97073e6d52ae1d4811e452f79e88a5b2064b",
+      "byteLength": 34976
+    },
+    {
+      "stimulusId": "poly-d-05",
+      "audioFile": "audio/poly-d-05.wav",
+      "sha256": "1ff7a42c696556048758d783999670b42a7e920e30ae6297ab44a93611d6b386",
+      "byteLength": 26784
+    },
+    {
+      "stimulusId": "poly-d-06",
+      "audioFile": "audio/poly-d-06.wav",
+      "sha256": "562dcf4aa33fa2835bc3cbee98640c90e4ef632f86b72b27e416db8deb9190c9",
+      "byteLength": 28320
+    },
+    {
+      "stimulusId": "poly-d-07",
+      "audioFile": "audio/poly-d-07.wav",
+      "sha256": "a3c03fda1c3df306dd2405210f0dae254a7935fda8e502d22ecb9c02ad7216f8",
+      "byteLength": 30368
+    },
+    {
+      "stimulusId": "poly-d-08",
+      "audioFile": "audio/poly-d-08.wav",
+      "sha256": "ca94bf8c7e1229336694e9be28679c8aa22ee24157b1ed581b7bd1fa1a6d8208",
+      "byteLength": 29344
+    },
+    {
+      "stimulusId": "poly-d-09",
+      "audioFile": "audio/poly-d-09.wav",
+      "sha256": "259c6612a627be3d66684db741e3629f756c43022b985036d8e098cd1e629f53",
+      "byteLength": 31904
+    },
+    {
+      "stimulusId": "poly-d-10",
+      "audioFile": "audio/poly-d-10.wav",
+      "sha256": "7825d3ffb2b5058180eafa3a2e52bad909262dbf50573973f0be8efb1165f0f2",
+      "byteLength": 43680
+    },
+    {
+      "stimulusId": "poly-d-11",
+      "audioFile": "audio/poly-d-11.wav",
+      "sha256": "a03f2d59310b697c80458874bd1c0fa180881804399ef57c347e8e72242f1eb4",
+      "byteLength": 33440
+    },
+    {
+      "stimulusId": "poly-d-12",
+      "audioFile": "audio/poly-d-12.wav",
+      "sha256": "ccf4a8109b8922173933e5a4ea9851422462c165bffd3a8edd15d3065610e84b",
+      "byteLength": 30368
+    },
+    {
+      "stimulusId": "poly-d-13",
+      "audioFile": "audio/poly-d-13.wav",
+      "sha256": "b6898623892c7b946d8dfbf8185cd979010bb7b43679bcb0e77dd87585b59790",
+      "byteLength": 28832
+    },
+    {
+      "stimulusId": "poly-d-14",
+      "audioFile": "audio/poly-d-14.wav",
+      "sha256": "e38870ee1d44b2ef062e0cce9d251c9024c09da45116556c74512dfedd899d4b",
+      "byteLength": 35488
+    },
+    {
+      "stimulusId": "poly-d-15",
+      "audioFile": "audio/poly-d-15.wav",
+      "sha256": "0c58ca06272221ece9cd96a6add0797f3d5dcbe578e44d7da7d272ea5442d6f9",
+      "byteLength": 33440
+    },
+    {
+      "stimulusId": "poly-d-16",
+      "audioFile": "audio/poly-d-16.wav",
+      "sha256": "f5f2e593bd24b6186352b59c10c04e5c1bac5f51e0de8ad07cded6e45da522ad",
+      "byteLength": 36512
+    },
+    {
+      "stimulusId": "poly-d-17",
+      "audioFile": "audio/poly-d-17.wav",
+      "sha256": "f23ff89384767fb9283ce467604d2fc4278bf8bdd0c5c7f29fada1c63342abd0",
+      "byteLength": 32928
+    },
+    {
+      "stimulusId": "poly-d-18",
+      "audioFile": "audio/poly-d-18.wav",
+      "sha256": "0772d30b5afa3f3c64edc6bb00616947a0c81c24de2dd0ac18d68099f723f5bb",
+      "byteLength": 33952
+    },
+    {
+      "stimulusId": "poly-d-19",
+      "audioFile": "audio/poly-d-19.wav",
+      "sha256": "2a45f1294d2198e5c647b3f9a825a698ab495b033656fd4471bc3a93e1361e8b",
+      "byteLength": 47264
+    },
+    {
+      "stimulusId": "poly-d-20",
+      "audioFile": "audio/poly-d-20.wav",
+      "sha256": "d9ddb1647e4af8ff4f78523a6f8c0bb25c1c5b432486268f70449b2b34f71704",
+      "byteLength": 40608
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "protocolId": "cardinal-speech-shaped-noise",
+  "protocolVersion": 1,
+  "reports": [
+    {
+      "material": {
+        "audioIndexSha256": "f62ac9efce375213a5c3b0254ce7855bd371b9f63e4531723e15f3e1a191581f",
+        "catalogSha256": "2f243101f65bf7e19688e31bcba3b849662119b2071a06ccc90bf73c11431670",
+        "materialId": "de-DE-personal-cardinal-numbers-christoph-v1",
+        "maximumActiveRegionSeconds": 2.7010430839002266,
+        "maximumSpeechRmsDbfs": -19.75590197570638,
+        "minimumActiveRegionSeconds": 0.9170068027210885,
+        "minimumSpeechRmsDbfs": -24.53042025006244,
+        "packagePath": "stimuli/de-DE/personal-cardinal-numbers-christoph-v1",
+        "stimulusCount": 900,
+        "thirdOctaveCentersHz": [
+          125.0,
+          157.49013123685916,
+          198.42513149602493,
+          250.0,
+          314.9802624737183,
+          396.8502629920499,
+          500.0,
+          629.9605249474366,
+          793.7005259840997,
+          1000.0,
+          1259.9210498948732,
+          1587.4010519681995,
+          2000.0,
+          2519.842099789746,
+          3174.8021039364,
+          4000.0,
+          5039.684199579492,
+          6349.6042078728,
+          8000.0
+        ],
+        "thirdOctaveMeanPsd": [
+          35.86103567149237,
+          30.75234722719489,
+          40.24859550524759,
+          39.18573593923278,
+          11.953794452689197,
+          8.89155391567727,
+          6.94473777522924,
+          2.483112459249821,
+          0.9044403335662972,
+          0.33252622320316727,
+          0.6827859784490405,
+          0.4419005806363068,
+          0.09512407056722338,
+          0.08895279785138373,
+          0.02309476168306039,
+          0.0314016396201598,
+          0.06732952135279813,
+          0.10408319283668295,
+          0.09407218681697424
+        ],
+        "thirdOctaveRelativeDb": [
+          -0.5012790215658259,
+          -1.1687246037679409,
+          0.0,
+          -0.11622722470700729,
+          -5.272449462441137,
+          -6.557730637859338,
+          -7.63094878089552,
+          -12.097543410091145,
+          -16.483708085549885,
+          -20.82924830352056,
+          -17.704661360933734,
+          -19.594261578414923,
+          -26.264603036265058,
+          -26.555911174543795,
+          -32.41237244964861,
+          -31.07798404922338,
+          -27.76545202977512,
+          -25.87370123951718,
+          -26.31289490225733
+        ]
+      },
+      "materialId": "de-DE-personal-cardinal-numbers-christoph-v1",
+      "mixBoundaryValidation": [
+        {
+          "acceptedCaseCount": 2700,
+          "blockedForFullScaleCaseCount": 900,
+          "channelValidation": "mono profile; left/right isolation remains a renderer responsibility",
+          "digitalAttenuationBoundariesDb": [
+            -96.0,
+            0.0
+          ],
+          "edgeFadeSeconds": 0.02,
+          "maximumSnrErrorDb": 3.552713678800501e-15,
+          "maximumUnblockedOrBlockedFloatPeak": 4.461174772531969,
+          "postRollSeconds": 0.2,
+          "preRollSeconds": 0.2,
+          "renderCaseCount": 3600,
+          "sampleRate": 44100,
+          "snrBoundariesDb": [
+            -20.0,
+            30.0
+          ],
+          "stimulusCount": 900
+        },
+        {
+          "acceptedCaseCount": 2700,
+          "blockedForFullScaleCaseCount": 900,
+          "channelValidation": "mono profile; left/right isolation remains a renderer responsibility",
+          "digitalAttenuationBoundariesDb": [
+            -96.0,
+            0.0
+          ],
+          "edgeFadeSeconds": 0.02,
+          "maximumSnrErrorDb": 3.552713678800501e-15,
+          "maximumUnblockedOrBlockedFloatPeak": 3.9417485013441054,
+          "postRollSeconds": 0.2,
+          "preRollSeconds": 0.2,
+          "renderCaseCount": 3600,
+          "sampleRate": 48000,
+          "snrBoundariesDb": [
+            -20.0,
+            30.0
+          ],
+          "stimulusCount": 900
+        }
+      ],
+      "notes": [
+        "No audio endpoint was opened and no physical playback occurred.",
+        "Full-scale violations are expected to be blocked, not normalized.",
+        "Perceptual masking, item equality and test-retest reliability remain unvalidated."
+      ],
+      "profilePath": "stimuli/de-DE/cardinal-speech-shaped-noise-v1/de-DE-personal-cardinal-numbers-christoph-v1/profile.json",
+      "profileSha256": "40a88ad7891c705bd2f87f4712100c063da72dc74430d0b693933d167a8c7d44",
+      "spectrumValidation": [
+        {
+          "alternateSeedFloat64Sha256": "fbf65eb58e1c1ee502d33f9512d88012f4d8eadcf04de543e5f7f955279d08b9",
+          "durationSeconds": 60,
+          "float64Sha256": "1e9e6bd15416636d9f674f20afb1cbdb3b4ac253d7cb4b84339fbc82e69e7e45",
+          "maximumThirdOctaveDeviationDb": 0.3055328253069156,
+          "sampleRate": 44100,
+          "seed": 1779033703,
+          "thirdOctaveDeviationDb": [
+            -0.07477032385256699,
+            0.3055328253069156,
+            0.010063480246270018,
+            0.05216714514071796,
+            -0.0786000798168125,
+            -0.3055328253069156,
+            -0.24066605155181087,
+            -0.2100065840910803,
+            -0.1224046152397289,
+            -0.05357098547557548,
+            -0.17265471208572647,
+            -0.09991696327179334,
+            -0.17979977365129507,
+            -0.1442422357428832,
+            -0.09049351748846846,
+            -0.01697101392822198,
+            -0.05938383651045065,
+            -0.09161080503110064,
+            -0.11936624357340264
+          ]
+        },
+        {
+          "alternateSeedFloat64Sha256": "69c0681bcff9cfa8a8c580632398a72befdd87604c0863e2e7e4bd659cdb7973",
+          "durationSeconds": 60,
+          "float64Sha256": "5eaa129d8e405f130006f4a1a1b3eb0085b678995b0f1d322c468b9280d9108c",
+          "maximumThirdOctaveDeviationDb": 0.29426406555161044,
+          "sampleRate": 48000,
+          "seed": 1779033703,
+          "thirdOctaveDeviationDb": [
+            -0.1495832260543608,
+            0.29426406555161044,
+            -0.08715904308898281,
+            -0.21331791399190436,
+            -0.14263205506632737,
+            -0.29426406555161044,
+            -0.16196986503407906,
+            -0.24015168021714262,
+            -0.19967730739692735,
+            -0.2095081509855765,
+            -0.2585777541763301,
+            -0.2435062982567633,
+            -0.24838689475690323,
+            -0.26252360211982406,
+            -0.2739091573551704,
+            -0.21068067272786628,
+            -0.28205592724405726,
+            -0.23097640197391733,
+            -0.23169317425084124
+          ]
+        }
+      ],
+      "validationResult": "passed"
+    },
+    {
+      "material": {
+        "audioIndexSha256": "2ec2ab0ff9a9a276207716d80c16fcd3f01eb2d2de318d875b65600a933e9e03",
+        "catalogSha256": "d5d644261519e3ba4690bd161fbfefdf57c965e0d297ba53e327ab0da930f46e",
+        "materialId": "de-DE-personal-cardinal-numbers-katja-v1",
+        "maximumActiveRegionSeconds": 2.8012698412698414,
+        "maximumSpeechRmsDbfs": -15.535343281508098,
+        "minimumActiveRegionSeconds": 1.107437641723356,
+        "minimumSpeechRmsDbfs": -25.598082027470426,
+        "packagePath": "stimuli/de-DE/personal-cardinal-numbers-katja-v1",
+        "stimulusCount": 900,
+        "thirdOctaveCentersHz": [
+          125.0,
+          157.49013123685916,
+          198.42513149602493,
+          250.0,
+          314.9802624737183,
+          396.8502629920499,
+          500.0,
+          629.9605249474366,
+          793.7005259840997,
+          1000.0,
+          1259.9210498948732,
+          1587.4010519681995,
+          2000.0,
+          2519.842099789746,
+          3174.8021039364,
+          4000.0,
+          5039.684199579492,
+          6349.6042078728,
+          8000.0
+        ],
+        "thirdOctaveMeanPsd": [
+          3.1178582785681352,
+          16.75842605616418,
+          55.88162493436336,
+          53.97584153724612,
+          23.568364245157884,
+          7.393615655254741,
+          3.8472759454795407,
+          2.5828092091095973,
+          2.651252418782623,
+          2.496191285478773,
+          0.6881385463571337,
+          0.704685575564014,
+          0.2982942568116974,
+          0.11242625274604057,
+          0.04793541897175832,
+          0.010638761569709599,
+          0.015403697603047016,
+          0.027174655841486494,
+          0.05632693188505603
+        ],
+        "thirdOctaveRelativeDb": [
+          -12.534126555470742,
+          -5.230357986393422,
+          0.0,
+          -0.15069603963031208,
+          -3.7493958460699024,
+          -8.784121553550525,
+          -11.62115688954623,
+          -13.351766998756347,
+          -13.238179483675196,
+          -13.499911634275804,
+          -19.09593140398905,
+          -18.992736442319142,
+          -22.726241343234356,
+          -26.964012905722754,
+          -30.666124985021476,
+          -37.20377950285174,
+          -35.59644041903529,
+          -33.131049735171175,
+          -29.96552930146879
+        ]
+      },
+      "materialId": "de-DE-personal-cardinal-numbers-katja-v1",
+      "mixBoundaryValidation": [
+        {
+          "acceptedCaseCount": 2700,
+          "blockedForFullScaleCaseCount": 900,
+          "channelValidation": "mono profile; left/right isolation remains a renderer responsibility",
+          "digitalAttenuationBoundariesDb": [
+            -96.0,
+            0.0
+          ],
+          "edgeFadeSeconds": 0.02,
+          "maximumSnrErrorDb": 3.552713678800501e-15,
+          "maximumUnblockedOrBlockedFloatPeak": 7.450285983162361,
+          "postRollSeconds": 0.2,
+          "preRollSeconds": 0.2,
+          "renderCaseCount": 3600,
+          "sampleRate": 44100,
+          "snrBoundariesDb": [
+            -20.0,
+            30.0
+          ],
+          "stimulusCount": 900
+        },
+        {
+          "acceptedCaseCount": 2700,
+          "blockedForFullScaleCaseCount": 900,
+          "channelValidation": "mono profile; left/right isolation remains a renderer responsibility",
+          "digitalAttenuationBoundariesDb": [
+            -96.0,
+            0.0
+          ],
+          "edgeFadeSeconds": 0.02,
+          "maximumSnrErrorDb": 3.552713678800501e-15,
+          "maximumUnblockedOrBlockedFloatPeak": 7.114473661328156,
+          "postRollSeconds": 0.2,
+          "preRollSeconds": 0.2,
+          "renderCaseCount": 3600,
+          "sampleRate": 48000,
+          "snrBoundariesDb": [
+            -20.0,
+            30.0
+          ],
+          "stimulusCount": 900
+        }
+      ],
+      "notes": [
+        "No audio endpoint was opened and no physical playback occurred.",
+        "Full-scale violations are expected to be blocked, not normalized.",
+        "Perceptual masking, item equality and test-retest reliability remain unvalidated."
+      ],
+      "profilePath": "stimuli/de-DE/cardinal-speech-shaped-noise-v1/de-DE-personal-cardinal-numbers-katja-v1/profile.json",
+      "profileSha256": "01fa0cda34b60dc253edf6f40ed43beb1ef180cada3116d81ccf2e6876943c27",
+      "spectrumValidation": [
+        {
+          "alternateSeedFloat64Sha256": "7288802fff4a9bd22ba74843f0b1aeb708fd4726060c29ed77730d8aa8ff0dbe",
+          "durationSeconds": 60,
+          "float64Sha256": "046226e10daaa83a62f2f5dcf391a85668803a3a6bec0049343b1dd42314b64d",
+          "maximumThirdOctaveDeviationDb": 0.40013350357051225,
+          "sampleRate": 44100,
+          "seed": 1779033703,
+          "thirdOctaveDeviationDb": [
+            -0.08460863031709964,
+            0.40013350357051225,
+            -0.15552561646631125,
+            -0.0595526483287272,
+            -0.3106155394318715,
+            -0.40013350357051225,
+            -0.3766301607340705,
+            -0.33720477549317396,
+            -0.25689904333710656,
+            -0.17452271637337002,
+            -0.2746379842394808,
+            -0.20862361361488513,
+            -0.3189926480883343,
+            -0.27023098191525596,
+            -0.21841194125260754,
+            -0.1309283072741141,
+            -0.19608377890515838,
+            -0.22674179209581835,
+            -0.2558781455369359
+          ]
+        },
+        {
+          "alternateSeedFloat64Sha256": "a311e9e6570fee4b80313ec200f51e2c1f239963ad49ce1cf6b7d70eb9660b6f",
+          "durationSeconds": 60,
+          "float64Sha256": "5e325cb3f7a07b2198b78ce166cdcb6709c02038f5b0ef0a382df613f18d259d",
+          "maximumThirdOctaveDeviationDb": 0.314834236477481,
+          "sampleRate": 48000,
+          "seed": 1779033703,
+          "thirdOctaveDeviationDb": [
+            -0.314834236477481,
+            0.314834236477481,
+            0.016423100615322372,
+            -0.06925641866285259,
+            -0.09009953164435158,
+            -0.18922504605796542,
+            -0.05567210477890905,
+            -0.14938853137635721,
+            -0.08675766295386067,
+            -0.09084998050259552,
+            -0.16035599953477542,
+            -0.1203570255306643,
+            -0.15925318609288963,
+            -0.153963478375434,
+            -0.1818873723006269,
+            -0.12214790457400815,
+            -0.17731666124953582,
+            -0.125852458675888,
+            -0.1304895368578971
+          ]
+        }
+      ],
+      "validationResult": "passed"
+    }
+  ],
+  "toolSha256": "3fb021fed9c3dbb94d1228d93ebc41a092ee798ca27254952ab15c51c2427c03"
+}
