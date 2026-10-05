@@ -1,5 +1,38 @@
 # HearDelta
 
+## In English
+
+HearDelta is a local Windows application (C#/WPF, .NET 10) for comparing your
+own speech understanding with and without a single hearing aid. Each ear is
+measured separately, and results are stored on your computer in a local SQLite
+database; nothing is sent anywhere.
+
+- paired word and number tests without and with the hearing aid, in quiet or
+  in noise, including an adaptive number test that reports a 50 % threshold
+- pure-tone hearing thresholds from 62.5 Hz to 10 kHz, optionally with
+  narrow-band masking of the other ear
+- history and side-by-side comparison of measurements and hearing aids,
+  printable reports
+- every measurement records the exact audio output device and headphone
+  profile; optional headphone equalization based on AutoEq
+
+**HearDelta is not a medical device.** It is meant for personal, relative
+comparisons only and does not replace clinical audiometry or a hearing aid
+fitting. Without coupler calibration, levels are digital attenuations in dB,
+not dB SPL.
+
+The user interface, the documentation below and the speech material are
+currently German only. Contributions of word lists and speech material for
+other languages are welcome.
+
+To build: install the .NET 10 SDK and [Git LFS](https://git-lfs.com) (the
+stimulus audio is stored in LFS), clone the repository and run
+`dotnet build HearDelta.sln`; see “Bauen, testen und bereitstellen” for the
+full commands. HearDelta is licensed under `GPL-3.0-or-later` (see
+[`LICENSE`](LICENSE)); the bundled AutoEq data remains under the MIT license.
+
+---
+
 HearDelta ist eine lokale C#-/WPF-Anwendung zur wiederholbaren,
 seitengetrennten Erprobung des Wortverständnisses mit und ohne ein einzelnes Hörgerät.
 
